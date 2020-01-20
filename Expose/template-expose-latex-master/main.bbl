@@ -1,0 +1,270 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{Albanese2004}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=37927a0be9114584dbc3c05806fd55e8}{%
+           family={Albanese},
+           familyi={A\bibinitperiod},
+           given={Massimiliano},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=735f8b31ea6b3b3f7cc69877a6329fbd}{%
+           family={Chianese},
+           familyi={C\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a43189f8c7a507069c87128c6cb17bb}{%
+           family={Moscato},
+           familyi={M\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79260a446fc80703910b62c4f77d58cd}{%
+           family={Sansone},
+           familyi={S\bibinitperiod},
+           given={Lucio},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{633c040b1294a1bc685b07f5a4c63570}
+      \strng{fullhash}{4aba8278f7638f9c1f7cbd7c7ab356db}
+      \strng{bibnamehash}{4aba8278f7638f9c1f7cbd7c7ab356db}
+      \strng{authorbibnamehash}{4aba8278f7638f9c1f7cbd7c7ab356db}
+      \strng{authornamehash}{633c040b1294a1bc685b07f5a4c63570}
+      \strng{authorfullhash}{4aba8278f7638f9c1f7cbd7c7ab356db}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The first step in a video indexing process is the segmentation of videos into meaningful parts called shots. In this paper we present a formal model of the video shot segmentation process. Starting from a mathematical characterization of the most common transition effects, a video segmentation algorithm capable to detect both abrupt and gradual transitions is proposed. The proposed algorithm is based on the computation of an arbitrary similarity measure between consecutive frames of a video. The algorithm has been tested adopting a similarity metric based on the Animate Vision theory and results have been reported.}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{number}{3}
+      \field{title}{{A Formal Model for Video Shot Segmentation and its Application via Animate Vision}}
+      \field{volume}{24}
+      \field{year}{2004}
+      \true{nocite}
+      \field{pages}{253\bibrangedash 272}
+      \range{pages}{20}
+    \endentry
+    \entry{Bosch2014}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=18cab294e24609e59502742029bfa055}{%
+           family={Bosch},
+           familyi={B\bibinitperiod},
+           given={Mart{í}},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c59dbe7440ddb527d380227eae622ab9}{%
+           family={Genev{è}s},
+           familyi={G\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1d9540f662a2181bd270a55406e642e}{%
+           family={Laya{ï}ida},
+           familyi={L\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \strng{fullhash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \strng{bibnamehash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \strng{authorbibnamehash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \strng{authornamehash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \strng{authorfullhash}{aad03984f13e2c70d4b9250ea7d825b5}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cascading Style Sheets (CSS) is a standard language for stylizing and formatting web documents. Its role in web user experience becomes increasingly important. However, CSS files tend to be designed from a result-driven point of view, without much attention devoted to the CSS file structure as long as it produces the desired results. Furthermore, the rendering intended in the browser is often checked and debugged with a document instance. Style sheets normally apply to a set of documents, therefore modifications added while focusing on a particular instance might affect other documents of the set. We present a first prototype of static CSS semantical analyzer and optimizer that is capable of automatically detecting and removing redundant property declarations and rules. We build on earlier work on tree logics to locate redundancies due to the semantics of selectors and properties. Existing purely syntactic CSS optimizers might be used in conjunction with our tool, for performing complementary (and orthogonal) size reduction, toward the common goal of providing smaller and cleaner CSS files.}
+      \field{isbn}{9781450329491}
+      \field{journaltitle}{Proceedings of the 2014 ACM Symposium on Document Engineering}
+      \field{title}{{Automated refactoring for size reduction of CSS style sheets}}
+      \field{year}{2014}
+      \true{nocite}
+      \field{pages}{13\bibrangedash 16}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/2644866.2644885
+      \endverb
+      \keyw{css,debugging,style sheets,web development}
+    \endentry
+    \entry{Fried2008}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d03d6e96699b18c3cea80d87367b3d1a}{%
+           family={Fried},
+           familyi={F\bibinitperiod},
+           given={Carrie\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \strng{fullhash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \strng{bibnamehash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \strng{authorbibnamehash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \strng{authornamehash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \strng{authorfullhash}{d03d6e96699b18c3cea80d87367b3d1a}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, a debate has begun over whether in-class laptops aid or hinder learning. While some research demonstrates that laptops can be an important learning tool, anecdotal evidence suggests more and more faculty are banning laptops from their classrooms because of perceptions that they distract students and detract from learning. The current research examines the nature of in-class laptop use in a large lecture course and how that use is related to student learning. Students completed weekly surveys of attendance, laptop use, and aspects of the classroom environment. Results showed that students who used laptops in class spent considerable time multitasking and that the laptop use posed a significant distraction to both users and fellow students. Most importantly, the level of laptop use was negatively related to several measures of student learning, including self-reported understanding of course material and overall course performance. The practical implications of these findings are discussed.}
+      \field{journaltitle}{Computers {\&} Education}
+      \field{number}{3}
+      \field{title}{{In-class laptop use and its effects on student learning}}
+      \field{volume}{50}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{906\bibrangedash 914}
+      \range{pages}{9}
+      \keyw{Academic Achievement,Attention,Classroom Environment,Classroom Research,College Students,Computers,Student Attitudes,Student Behavior,Student Surveys,Time on Task}
+    \endentry
+    \entry{McConnell:2004:CCS:1096143}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0a24dd755989d4a28eedb62395b1a514}{%
+           family={McConnell},
+           familyi={M\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Redmond, WA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Microsoft Press}%
+      }
+      \strng{namehash}{0a24dd755989d4a28eedb62395b1a514}
+      \strng{fullhash}{0a24dd755989d4a28eedb62395b1a514}
+      \strng{bibnamehash}{0a24dd755989d4a28eedb62395b1a514}
+      \strng{authorbibnamehash}{0a24dd755989d4a28eedb62395b1a514}
+      \strng{authornamehash}{0a24dd755989d4a28eedb62395b1a514}
+      \strng{authorfullhash}{0a24dd755989d4a28eedb62395b1a514}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0735619670}
+      \field{title}{Code Complete, Second Edition}
+      \field{year}{2004}
+    \endentry
+    \entry{Mulloni:2010:ZIA:1851600.1851629}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=69f7eb15b01bb2eaf5b1fd5f31d9a0c3}{%
+           family={Mulloni},
+           familyi={M\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efb68c143d738cf24ea17c64e0b6a7aa}{%
+           family={Dünser},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b31d42dd4ba4466eb4b996d6e714dc68}{%
+           family={Schmalstieg},
+           familyi={S\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Lisbon, Portugal}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d98e0cbde512e78d078b486e21f58601}
+      \strng{fullhash}{d98e0cbde512e78d078b486e21f58601}
+      \strng{bibnamehash}{d98e0cbde512e78d078b486e21f58601}
+      \strng{authorbibnamehash}{d98e0cbde512e78d078b486e21f58601}
+      \strng{authornamehash}{d98e0cbde512e78d078b486e21f58601}
+      \strng{authorfullhash}{d98e0cbde512e78d078b486e21f58601}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 12th International Conference on Human Computer Interaction with Mobile Devices and Services}
+      \field{isbn}{978-1-60558-835-3}
+      \field{series}{MobileHCI '10}
+      \field{title}{Zooming Interfaces for Augmented Reality Browsers}
+      \field{year}{2010}
+      \true{nocite}
+      \field{pages}{161\bibrangedash 170}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/1851600.1851629
+      \endverb
+      \keyw{mobile augmented reality,zooming interfaces}
+    \endentry
+    \entry{Vandevoorde:2002}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=100fc4da52c7db55f32141ac7c64aa7b}{%
+           family={Vandevoorde},
+           familyi={V\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=696aaa42846cc8620450c5e3bdc9e534}{%
+           family={Josuttis},
+           familyi={J\bibinitperiod},
+           given={Nicolai\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \strng{fullhash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \strng{bibnamehash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \strng{authorbibnamehash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \strng{authornamehash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \strng{authorfullhash}{52d1ad3c83ff9a55c8549b2a4a492c69}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0201734842}
+      \field{month}{11}
+      \field{title}{{C++ Templates: The Complete Guide}}
+      \field{year}{2002}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
