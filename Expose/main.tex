@@ -31,31 +31,70 @@
 
 \section*{Concept}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua \autocite[]{McConnell:2004:CCS:1096143}.
-
-\textcite[]{Vandevoorde:2002} defined at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-If you mention Web pages that are not proper scientific sources, just put the URL in a footnote, e.g. documentation for \LaTeX\footnote{\url{http://en.wikibooks.org/wiki/LaTeX}}
-or when refering to an online service like  sharelatex\footnote{\url{https://de.sharelatex.com/}}.
+% Talk about SmartEater.
+SmartEater is an upcoming mHealth (mobile health) app, which uses smartphone data to predict stress and therefore upcoming eating crises. The app uses the smartphone to record various sensor data. This data includes background noises, time and length of phone calls, screen on time, data volume per unit of time and several other statistics. The recorded situational context data will aid in predicting stress. Through predicting eating crises, the app can provide the user with content-dependent feedback and tips with the goal to avert a craving episode. 
 
 
-% Wörtliches Zitat:
-% select proper language!
-% \selectlanguage{ngerman}
-\selectlanguage{english}
-\begin{quote}
-``Erwin Unruh discovered that templates can be used to compute
-something at compile time. [...] The intriguing part of this exercise, however, was that the production of the prime numbers was performed by the compiler during the compilation process and not at run time.''
-\autocite[305]{Vandevoorde:2002}
-\end{quote}
-%select English again
-\selectlanguage{english}
+% the book
+Data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data and extracting and evaluating data patterns.(page 17, 18) 
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into classes (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms. (page 32, 362, 363, 367)
 
-\textcite[]{Vandevoorde:2002} first introduced Lorem ipsum, and definined it as dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet 
+% end of the book
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Different methods have been applied to solve this particular problem \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}. 
 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet .
+
+The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions in the future. In order to determine which time period is most fitting, this thesis will compare different clusters 
+
+
+Therefore, the goal of this thesis, is to find
+
+
+This thesis will focus on declaring the most fitting length of time period to log the smartphone data, in order to gain clear clusters.
+
+
+
+
+% Talk about what data mining and clustering is 
+% Range Clustering : An Algorithm for Empirical Evaluation of Classical Clustering Algorithms
+Why am I clustering data -> To predict similarities - similar behaviour which can then be used to create a pattern to predict stress - also to remove outliers (remove noist/clean the data) - curse of dimensionality
+- clusters that cause stress and clusters that don't
+
+
+% Talk about clustering algorithms & dimensionality
+
+
+% talk about how to evaluate the clusters (similarity and dissimilarity)
+
+% Highlight outline of paper
+
+
+
+
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua \autocite[]{McConnell:2004:CCS:1096143}.
+
+% \textcite[]{Vandevoorde:2002} defined at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+% If you mention Web pages that are not proper scientific sources, just put the URL in a footnote, e.g. documentation for \LaTeX\footnote{\url{http://en.wikibooks.org/wiki/LaTeX}}
+% or when refering to an online service like  sharelatex\footnote{\url{https://de.sharelatex.com/}}.
+
+
+% % Wörtliches Zitat:
+% % select proper language!
+% % \selectlanguage{ngerman}
+% \selectlanguage{english}
+% \begin{quote}
+% ``Erwin Unruh discovered that templates can be used to compute
+% something at compile time. [...] The intriguing part of this exercise, however, was that the production of the prime numbers was performed by the compiler during the compilation process and not at run time.''
+% \autocite[305]{Vandevoorde:2002}
+% \end{quote}
+% %select English again
+% \selectlanguage{english}
+
+% \textcite[]{Vandevoorde:2002} first introduced Lorem ipsum, and definined it as dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet 
+
+% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Different methods have been applied to solve this particular problem \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}. 
+
+% Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet .
 
 
 
@@ -63,12 +102,23 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 
 \begin{enumerate}
 	\item Introduction
-	\item Chapter
+	\item Theory
 	\begin{enumerate}
-		\item Subchapter
-		\item Subchapter
+		\item UnsupervisedData Mining 
+		\item Cluster Analysis
+		\begin{enumerate}
+			\item Overview of Clustering Algorithms (in high dimensions ??, talk about the curse of dimensionality)
+			\item Dimensionality Reduction
+			\item ...
+		\end{enumerate}
 	\end{enumerate}
-	\item Other Chapter
+	\item Experiment
+	\begin{enumerate}
+		\item K-Means
+		\item Hierarchical
+		\item Comparison of different lengths of time
+		\item ...
+	\end{enumerate}
 	\item Conclusions
 \end{enumerate}
 
@@ -81,16 +131,17 @@ Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit ame
 \section*{Schedule}
 
 \begin{itemize}
-	\item December 17th - hand in this exposé
-	\item ... procrastinate, procrastinate, procrastinate ....
-	\item April 22th - quickly scan my few sources and cobble something together
-	\item April 23th - submission
+	\item 31st January 2020 - Hand in this exposé
+	\item February 2020 - Read papers and do research
+	\item 24th February 2020 - Upload the final exposé onto FHSys
+	\item March 2020 - Meet with supervisor, read literature, analyse and experiment with clustering algorithms and write a rough draft
+	\item April 2020 - Meet with supervisor, finish the paper and print and review details
+	\item 10th May 2020 - Submission of the bachelor thesis
 \end{itemize}
 
 \section*{Supervisor}
 
-Have you discussed this exposé with a potential supervisor?
-What is the status?
+FH-Prof. DI Dr. Simon Ginzinger, MSc
 
 
 

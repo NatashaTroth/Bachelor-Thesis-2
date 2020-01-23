@@ -1,0 +1,8 @@
+similarity and dissimilarity
+
+Clustering is also called data segmentation in some applications because clustering partitions large data sets into groups according to their similarity. Clustering can also be used for outlier detection, where outliers
+
+specify number of clusters before
+
+
+jan 15 2020 3:32pm

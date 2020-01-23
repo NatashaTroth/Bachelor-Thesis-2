@@ -176,6 +176,7 @@
       \field{isbn}{0735619670}
       \field{title}{Code Complete, Second Edition}
       \field{year}{2004}
+      \true{nocite}
     \endentry
     \entry{Mulloni:2010:ZIA:1851600.1851629}{inproceedings}{}
       \name{author}{3}{}{%
@@ -263,6 +264,7 @@
       \field{month}{11}
       \field{title}{{C++ Templates: The Complete Guide}}
       \field{year}{2002}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

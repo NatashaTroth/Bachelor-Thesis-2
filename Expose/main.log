@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  20 JAN 2020 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  23 JAN 2020 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.tex
-(/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.tex
+**/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex
+(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex
 LaTeX2e <2019-10-01> patch level 3
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -373,12 +373,12 @@ Package babel Info: Making " an active character on input line 121.
 \@input{_Configuration.aux}
 \openout2 = `_Configuration.aux'.
 
-(/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/_Configuration.tex)
+(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/_Configuration.tex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
- (/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.aux)
+ (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -487,7 +487,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.bbl)
+ (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.bbl)
 Package biblatex Info: Reference section=0 on input line 27.
 Package biblatex Info: Reference segment=0 on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -496,44 +496,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 38.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 38.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 38.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 38.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 38.
  [1
 
 
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 84.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 128.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 128.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 134.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- [2] [3] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 134.
+ [2] [3] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12628 strings out of 492162
- 231314 string characters out of 6125292
- 1039617 words of memory out of 5000000
- 16857 multiletter control sequences out of 15000+600000
- 21743 words of font info for 47 fonts, out of 8000000 for 9000
+ 12615 strings out of 492162
+ 230849 string characters out of 6125292
+ 1040768 words of memory out of 5000000
+ 16846 multiletter control sequences out of 15000+600000
+ 19643 words of font info for 43 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 59i,7n,63p,1291b,8123s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,7n,63p,1266b,8123s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/Expose/template-expose-latex-master/main.pdf (3 pages, 66175 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf (3 pages, 61584 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

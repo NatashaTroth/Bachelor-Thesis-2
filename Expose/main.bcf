@@ -3861,14 +3861,6 @@
     <bcf:datasource type="file" datatype="bibtex">Bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">McConnell:2004:CCS:1096143</bcf:citekey>
-    <bcf:citekey order="2">Vandevoorde:2002</bcf:citekey>
-    <bcf:citekey order="3">Vandevoorde:2002</bcf:citekey>
-    <bcf:citekey order="4">Vandevoorde:2002</bcf:citekey>
-    <bcf:citekey order="5">Vandevoorde:2002</bcf:citekey>
-    <bcf:citekey order="6">Vandevoorde:2002</bcf:citekey>
-    <bcf:citekey order="7">McConnell:2004:CCS:1096143</bcf:citekey>
-    <bcf:citekey order="7">Vandevoorde:2002</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
