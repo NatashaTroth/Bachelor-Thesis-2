@@ -33,7 +33,7 @@
 
 
 % Talk about SmartEater.
-SmartEater is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data. The following data is recorded by the app:
+SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data. The following data is recorded by the app:
 
 \begin{enumerate}
 	\item Background volume
@@ -53,13 +53,13 @@ SmartEater is an upcoming mHealth (mobile health) app, with the goal to provide 
 The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis, a type of data mining, to determine which time period is most significant.
 
 % the book
-Data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.(page 17, 18) 
-Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms. (page 32, 362, 363, 367)
+\textcite{han2011data}[17, 18] declares that data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms \autocite{han2011data}[32, 362, 363, 367].
 % end of the book
 
 %Springer, principles of data mining book - 311 - 313
 %According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. 
-According to /textcite, grouping similar attibutes is applied in various fields such as economics, marketing, medicine, crime analysis and more.
+According to \textcite{bramer2007principles}[311], grouping similar attibutes is applied in various fields such as economics, marketing, medicine, crime analysis and more.
 %end
 
 
@@ -67,7 +67,7 @@ According to /textcite, grouping similar attibutes is applied in various fields 
 
 
 %book - page 366-368, 373, 374, 385, 392, 414
-There are several different methods to create clustering. /textcite divides them into the following categories:
+There are several different methods to create clustering. \textcite{han2011data}[366-368, 373, 374, 385, 392, 414]  divides them into the following categories:
 \begin{itemize}
 	\item Partitioning methods: The data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Exmaples: k-means, k-medoids
 	\item Hierarchical methods: Data is grouped into a hierarchy of clusters. Either each object creates its own cluster and is then merged to its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach), or all objects for one cluster and are then divided until each object forms its own cluster (divisive or top-down approach). However, once a merge or split has occurred, it cannot be undone. Examples: BIRCH, Chameleon
@@ -86,11 +86,11 @@ To reduce the size and amount of data, dimensionality reduction will be used. Di
 
 %Springer, principles of data mining book - 311 - 313
 %According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. 
- /textcite explains, that data with a maximum number of 3 attibutes (dimensions) can easily be visualised, as can the resulting clusters. Often there is a higher number of attibutes, which is impossible to visualise.
+\textcite{bramer2007principles}[312, 313] explains, that data with a maximum number of 3 attibutes (dimensions) can easily be visualised, as can the resulting clusters. Often there is a higher number of attibutes, which is impossible to visualise.
 %end
 
 %Visualizing Data using t-SNE p2579 (abstract!)
-T-Distributed Stochastic Neighbor Embedding (t-SNE) is used to visualise high-dimensional data and will therefore be employed to depict the data set in this thesis.  
+\textcite{maaten2008visualizing}[2579] introduce T-Distributed Stochastic Neighbor Embedding (t-SNE) which is used to visualise high-dimensional data and will therefore be employed to depict the data set in this thesis.  
 
 %Explain the experiment and explain which python toolkits will be used
 In order to determine how long the smartphone sensor data should be recorded, to receive the best clustering results, the following experiment will be conducted: (--- TODO - prepare the data types). Initially the data for one chosen time length will be be clustered using different clustering methods. These algorithms (--- TODO - say which) will be implemented using the Python library.... (--- TODO - SAY WHICH ONE). Using principal component analysis (PCA), the initial data of the same time length will be reduced and the clustering methods reimplemented. These methods will be reproduced on the other time lengths and compared using ...(--- TODO - how to compare), potentially thus resulting in the time length with the clearest clusters. 
