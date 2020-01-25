@@ -31,33 +31,112 @@
 
 \section*{Concept}
 
-% Talk about SmartEater.
-SmartEater is an upcoming mHealth (mobile health) app, which uses smartphone data to predict stress and therefore upcoming eating crises. The app uses the smartphone to record various sensor data. This data includes background noises, time and length of phone calls, screen on time, data volume per unit of time and several other statistics. The recorded situational context data will aid in predicting stress. Through predicting eating crises, the app can provide the user with content-dependent feedback and tips with the goal to avert a craving episode. 
 
+% Talk about SmartEater.
+SmartEater is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data. The following data is recorded by the app:
+
+\begin{enumerate}
+	\item Background volume
+	\item Relative movement of the mobile phone (Gyro and Accel)
+	\item Time and duration of phone calls (without storing the numbers)
+	\item Time of messages (e.g. SMS, WhatsApp) (without collecting identifying information such as content, addresses, numbers)
+	\item Screen activity (so-called touch events)
+	\item Screen-On-Time (illuminated display)
+	\item Ambient brightness
+	\item Data volume per unit of time (summary value of all smartphone activities on the internet)
+	\item Switch-on and switch-off times of the smartphone
+\end{enumerate}
+ With the help of machine learning algorithms and pattern recognition, the recorded situational context data will aid in predicting stress.
+%cite smarteater website  - as footnote
+
+
+The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This paper will use cluster analysis, a type of data mining, to determine which time period is most significant.
 
 % the book
-Data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data and extracting and evaluating data patterns.(page 17, 18) 
+Data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.(page 17, 18) 
 Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into classes (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms. (page 32, 362, 363, 367)
-
 % end of the book
 
+%Springer, principles of data mining book - 311 - 313
+According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. Grouping similar attibutes is applied for various fields, such as economics, marketing, medicine, crime analysis and more. Data with a maximum number of 3 attibutes (dimensions) can easily be visualised, as can the resulting clusters. Often there is a higher number of attibutes, which is impossible to visualise.
+%end
 
 
-The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions in the future. In order to determine which time period is most fitting, this thesis will compare different clusters 
+
+% Write something here about how it is hard to determine which clustering method is the best
 
 
-Therefore, the goal of this thesis, is to find
+%book - page 366-368, 373, 374, 385, 392, 414
+There are several different methods to create clustering. /textcite divides them into the following categories:
+\begin{itemize}
+	\item Partitioning methods: the data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Exmaples: k-means, k-medoids
+	\item Hierarchical methods: data is grouped into a hierarchy of clusters. Either each object creates its own cluster and is then merged to its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach), or all objects for one cluster and are then divided until each object forms its own cluster (divisive or top-down approach). However, once a merge or split has occurred, it cannot be undone. Examples: BIRCH, Chameleon
+	\item Density-based methods: While partitioning and hierarchical methods only find clusters with spherical shapes, this method finds clusters with random shapes. It can also remove noise and outliers. Examples: DBSCAN, OPTICS
+	\item Grid-based methods: The objects are quantised into grid cells. The operations are performed on the grid structure. This leads to an accelerated processing time. Examples: STING, CLIQUE
+\end{itemize}
+These methods work well with data sets that are not high dimensional an have less than 10 attributes. Since the data set used in this thesis only has 9 dimensions, it is not high-dimensional.
+%end book
+
+%book page 93
+In order to reduce the size and amount of data, dimensionality reduction will be used. Dimensionality reduction is a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will use Principal components analysis (PCA) to reduce the dimensionality.
+
+%Visualizing Data using t-SNE p2579 (abstract!)
+T-Distributed Stochastic Neighbor Embedding (t-SNE) will be used to visualise high-dimensional data.  
 
 
-This thesis will focus on declaring the most fitting length of time period to log the smartphone data, in order to gain clear clusters.
 
 
+
+
+% The examined SmartEater data set used for this thesis contains multiple attributes to be considered in the clustering process. Therefore, appropriate clustering methods will be used to accommodate high-dimensional data.
+
+
+% Book defines high-dimensional data as more than 10 attibutes, while (survey of clustering data mining techniques page 33) argues that high-dimensional data starts with more than 16 attributes.
+
+
+%Survey of Clustering Data Mining Techniques - Pavel Berkhin
+
+%end
+
+%Richard Bellman [1] coined the phrase the curse of dimensionality to describe the extraordinarily rapid growth in the difficulty of problems as the num- ber of variables (or the dimension) increases. A common experience is that the cost of an algo- rithm grows exponentially with dimension, making the cost prohibitive for moderate or large values of the dimension - richard bellman 1957 dynamic programming - trouble finding
+
+since these small dimensions - first dimensionality reduction??
+
+
+%how to handle different data types - say what kind of data there is
+
+
+
+%Analysis and Study of Incremental DBSCAN Clustering Algorithm
+%page 2
+%direct:  Data clustering is the most famous and necessary concepts in data mining
+% Textcite described data mining a non traditional way to reveal new, useful, hidden knowledge from large amounts of data.
+
+% %page 3
+% Different types of data implemented in clustering include interval-scaled variables, binary variables, nominal, ordinal, mixed and ratio variables.
+
+
+%A Comparative Study of Various Clustering Algorithms in Data Mining
+
+
+
+%how to handle different data types
 
 
 % Talk about what data mining and clustering is 
 % Range Clustering : An Algorithm for Empirical Evaluation of Classical Clustering Algorithms
-Why am I clustering data -> To predict similarities - similar behaviour which can then be used to create a pattern to predict stress - also to remove outliers (remove noist/clean the data) - curse of dimensionality
-- clusters that cause stress and clusters that don't
+
+% Why am I clustering data -> To predict similarities - similar behaviour which can then be used to create a pattern to predict stress - also to remove outliers (remove noist/clean the data) - curse of dimensionality
+% - clusters that cause stress and clusters that don't
+
+% Wie findet man sinnvolle Zeitslots?
+% Wie evaluiert man, ob ein Zeitslot sinnvoll ist?
+% Welcher Classifier wird verwendet?
+% Unbegrenzte Nummer an Gruppen
+% Ausreißer: Muss ein Datensatz zu einer Gruppe gehören? Neue Gruppe?
+% Rocchio Classification? KNN Classification?
+% Risiko: Zu genaue / zu ungenaue Klassifizierung
+
 
 
 % Talk about clustering algorithms & dimensionality
@@ -67,15 +146,19 @@ Why am I clustering data -> To predict similarities - similar behaviour which ca
 
 % Highlight outline of paper
 
+%predicting weather
+
+% While doing cluster analysis, we first partition the set of data into groups based on data similarity and then assign the labels to the groups.
 
 
+% This thesis will focus on declaring the most fitting length of time period to log the smartphone data, in order to gain clear clusters.
 
-% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua \autocite[]{McConnell:2004:CCS:1096143}.
-
-% \textcite[]{Vandevoorde:2002} defined at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 % If you mention Web pages that are not proper scientific sources, just put the URL in a footnote, e.g. documentation for \LaTeX\footnote{\url{http://en.wikibooks.org/wiki/LaTeX}}
 % or when refering to an online service like  sharelatex\footnote{\url{https://de.sharelatex.com/}}.
+
+
+
 
 
 % % Wörtliches Zitat:
@@ -90,13 +173,12 @@ Why am I clustering data -> To predict similarities - similar behaviour which ca
 % %select English again
 % \selectlanguage{english}
 
-% \textcite[]{Vandevoorde:2002} first introduced Lorem ipsum, and definined it as dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet 
+% \textcite[]{Vandevoorde:2002} 
 
-% Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Different methods have been applied to solve this particular problem \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}. 
+% \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}.
 
-% Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet .
-
-
+\section*{Research Question}
+What is the ideal length of time to record smartphone sensor data, to construct distinct clusters?
 
 \section*{Outline}
 
