@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  25 JAN 2020 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  25 JAN 2020 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,21 +508,21 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
 
-Overfull \hbox (24.47128pt too wide) in paragraph at lines 84--85
-[]\OT1/ptm/m/n/12 T-Distributed Stochas-tic Neigh-bor Em-bed-ding (t-SNE) will be used to vi-su-alise high-dimensional
+Overfull \hbox (0.1955pt too wide) in paragraph at lines 93--94
+[]\OT1/ptm/m/n/12 T-Distributed Stochas-tic Neigh-bor Em-bed-ding (t-SNE) is used to vi-su-alise high-dimensional
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 210.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 196.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 210.
+(Font)              <12> on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 210.
+(Font)              <8> on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 210.
+(Font)              <6> on input line 196.
  [3] [4] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
@@ -531,13 +531,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  12618 strings out of 492162
  230878 string characters out of 6125292
- 1040696 words of memory out of 5000000
+ 1039696 words of memory out of 5000000
  16847 multiletter control sequences out of 15000+600000
  21327 words of font info for 45 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  59i,7n,63p,1266b,8123s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf (4 pages, 69625 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf (4 pages, 70148 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream

@@ -50,17 +50,17 @@ SmartEater is an upcoming mHealth (mobile health) app, with the goal to provide 
 %cite smarteater website  - as footnote
 
 
-The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This paper will use cluster analysis, a type of data mining, to determine which time period is most significant.
+The sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis, a type of data mining, to determine which time period is most significant.
 
 % the book
 Data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.(page 17, 18) 
-Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into classes (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms. (page 32, 362, 363, 367)
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to preprocess data for other algorithms. (page 32, 362, 363, 367)
 % end of the book
 
 %Springer, principles of data mining book - 311 - 313
-According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. Grouping similar attibutes is applied for various fields, such as economics, marketing, medicine, crime analysis and more. Data with a maximum number of 3 attibutes (dimensions) can easily be visualised, as can the resulting clusters. Often there is a higher number of attibutes, which is impossible to visualise.
+%According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. 
+According to /textcite, grouping similar attibutes is applied in various fields such as economics, marketing, medicine, crime analysis and more.
 %end
-
 
 
 % Write something here about how it is hard to determine which clustering method is the best
@@ -69,62 +69,54 @@ According to /textcite, clustering is used to class similar objects together, an
 %book - page 366-368, 373, 374, 385, 392, 414
 There are several different methods to create clustering. /textcite divides them into the following categories:
 \begin{itemize}
-	\item Partitioning methods: the data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Exmaples: k-means, k-medoids
-	\item Hierarchical methods: data is grouped into a hierarchy of clusters. Either each object creates its own cluster and is then merged to its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach), or all objects for one cluster and are then divided until each object forms its own cluster (divisive or top-down approach). However, once a merge or split has occurred, it cannot be undone. Examples: BIRCH, Chameleon
+	\item Partitioning methods: The data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Exmaples: k-means, k-medoids
+	\item Hierarchical methods: Data is grouped into a hierarchy of clusters. Either each object creates its own cluster and is then merged to its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach), or all objects for one cluster and are then divided until each object forms its own cluster (divisive or top-down approach). However, once a merge or split has occurred, it cannot be undone. Examples: BIRCH, Chameleon
 	\item Density-based methods: While partitioning and hierarchical methods only find clusters with spherical shapes, this method finds clusters with random shapes. It can also remove noise and outliers. Examples: DBSCAN, OPTICS
 	\item Grid-based methods: The objects are quantised into grid cells. The operations are performed on the grid structure. This leads to an accelerated processing time. Examples: STING, CLIQUE
 \end{itemize}
-These methods work well with data sets that are not high dimensional an have less than 10 attributes. Since the data set used in this thesis only has 9 dimensions, it is not high-dimensional.
+These methods work well with data sets that are not high-dimensional an have less than 10 attributes. Since the data set used in this thesis only has 9 dimensions, it is not considered high-dimensional and can be utilised in these methods.
 %end book
 
+%TODO: explain what methods i will use
+%say how have to use different ones to compare
+
 %book page 93
-In order to reduce the size and amount of data, dimensionality reduction will be used. Dimensionality reduction is a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will use Principal components analysis (PCA) to reduce the dimensionality.
-
-%Visualizing Data using t-SNE p2579 (abstract!)
-T-Distributed Stochastic Neighbor Embedding (t-SNE) will be used to visualise high-dimensional data.  
+To reduce the size and amount of data, dimensionality reduction will be used. Dimensionality reduction is a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will use principal component analysis (PCA) to reduce the dimensionality.
 
 
-
-
-
-
-% The examined SmartEater data set used for this thesis contains multiple attributes to be considered in the clustering process. Therefore, appropriate clustering methods will be used to accommodate high-dimensional data.
-
-
-% Book defines high-dimensional data as more than 10 attibutes, while (survey of clustering data mining techniques page 33) argues that high-dimensional data starts with more than 16 attributes.
-
-
-%Survey of Clustering Data Mining Techniques - Pavel Berkhin
-
+%Springer, principles of data mining book - 311 - 313
+%According to /textcite, clustering is used to class similar objects together, and dissimilar objects into other classes. 
+ /textcite explains, that data with a maximum number of 3 attibutes (dimensions) can easily be visualised, as can the resulting clusters. Often there is a higher number of attibutes, which is impossible to visualise.
 %end
 
-%Richard Bellman [1] coined the phrase the curse of dimensionality to describe the extraordinarily rapid growth in the difficulty of problems as the num- ber of variables (or the dimension) increases. A common experience is that the cost of an algo- rithm grows exponentially with dimension, making the cost prohibitive for moderate or large values of the dimension - richard bellman 1957 dynamic programming - trouble finding
+%Visualizing Data using t-SNE p2579 (abstract!)
+T-Distributed Stochastic Neighbor Embedding (t-SNE) is used to visualise high-dimensional data and will therefore be employed to depict the data set in this thesis.  
 
-since these small dimensions - first dimensionality reduction??
+%Explain the experiment and explain which python toolkits will be used
+In order to determine how long the smartphone sensor data should be recorded, to receive the best clustering results, the following experiment will be conducted: (--- TODO - prepare the data types). Initially the data for one chosen time length will be be clustered using different clustering methods. These algorithms (--- TODO - say which) will be implemented using the Python library.... (--- TODO - SAY WHICH ONE). Using principal component analysis (PCA), the initial data of the same time length will be reduced and the clustering methods reimplemented. These methods will be reproduced on the other time lengths and compared using ...(--- TODO - how to compare), potentially thus resulting in the time length with the clearest clusters. 
+
+The thesis will be arranged as following:
+%outline paper
+
+
+%python libs:
+pyclustering
+scikit
+
+
+
 
 
 %how to handle different data types - say what kind of data there is
 
+%add more papers (different papers)
 
-
-%Analysis and Study of Incremental DBSCAN Clustering Algorithm
-%page 2
-%direct:  Data clustering is the most famous and necessary concepts in data mining
-% Textcite described data mining a non traditional way to reveal new, useful, hidden knowledge from large amounts of data.
-
+%how to evaluate if time period cluster is good
+% talk about how to evaluate the clusters
 % %page 3
 % Different types of data implemented in clustering include interval-scaled variables, binary variables, nominal, ordinal, mixed and ratio variables.
 
 
-%A Comparative Study of Various Clustering Algorithms in Data Mining
-
-
-
-%how to handle different data types
-
-
-% Talk about what data mining and clustering is 
-% Range Clustering : An Algorithm for Empirical Evaluation of Classical Clustering Algorithms
 
 % Why am I clustering data -> To predict similarities - similar behaviour which can then be used to create a pattern to predict stress - also to remove outliers (remove noist/clean the data) - curse of dimensionality
 % - clusters that cause stress and clusters that don't
@@ -139,15 +131,9 @@ since these small dimensions - first dimensionality reduction??
 
 
 
-% Talk about clustering algorithms & dimensionality
-
-
-% talk about how to evaluate the clusters (similarity and dissimilarity)
-
 % Highlight outline of paper
 
 %predicting weather
-
 % While doing cluster analysis, we first partition the set of data into groups based on data similarity and then assign the labels to the groups.
 
 
@@ -186,20 +172,20 @@ What is the ideal length of time to record smartphone sensor data, to construct 
 	\item Introduction
 	\item Theory
 	\begin{enumerate}
-		\item UnsupervisedData Mining 
+		\item Data Mining 
 		\item Cluster Analysis
 		\begin{enumerate}
-			\item Overview of Clustering Algorithms (in high dimensions ??, talk about the curse of dimensionality)
+			\item Overview of Clustering Algorithms
 			\item Dimensionality Reduction
 			\item ...
 		\end{enumerate}
 	\end{enumerate}
 	\item Experiment
 	\begin{enumerate}
-		\item K-Means
-		\item Hierarchical
-		\item Comparison of different lengths of time
-		\item ...
+		\item Preparing data
+		\item Clustering (one time length)
+		\item Clustering after Dimensionality Reduction
+		\item Comparison of clusters of different time lengths
 	\end{enumerate}
 	\item Conclusions
 \end{enumerate}

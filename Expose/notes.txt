@@ -6,3 +6,21 @@ specify number of clusters before
 
 
 jan 15 2020 3:32pm
+
+
+
+
+
+% The examined SmartEater data set used for this thesis contains multiple attributes to be considered in the clustering process. Therefore, appropriate clustering methods will be used to accommodate high-dimensional data.
+
+
+% Book defines high-dimensional data as more than 10 attibutes, while (survey of clustering data mining techniques page 33) argues that high-dimensional data starts with more than 16 attributes.
+
+
+%Richard Bellman [1] coined the phrase the curse of dimensionality to describe the extraordinarily rapid growth in the difficulty of problems as the num- ber of variables (or the dimension) increases. A common experience is that the cost of an algo- rithm grows exponentially with dimension, making the cost prohibitive for moderate or large values of the dimension - richard bellman 1957 dynamic programming - trouble finding
+
+
+%Analysis and Study of Incremental DBSCAN Clustering Algorithm
+%page 2
+%direct:  Data clustering is the most famous and necessary concepts in data mining
+% Textcite described data mining a non traditional way to reveal new, useful, hidden knowledge from large amounts of data.
