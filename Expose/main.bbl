@@ -47,6 +47,41 @@
       \field{volume}{180}
       \field{year}{2007}
     \endentry
+    \entry{feldman2007text}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=46ff4917bf210d9d64ff78c0c9042df0}{%
+           family={Feldman},
+           familyi={F\bibinitperiod},
+           given={Ronen},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=676c5b6aaae84ad8288c7d2379fb8107}{%
+           family={Sanger},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{a6c6702fe11c6afccf99426907dacae2}
+      \strng{fullhash}{a6c6702fe11c6afccf99426907dacae2}
+      \strng{bibnamehash}{a6c6702fe11c6afccf99426907dacae2}
+      \strng{authorbibnamehash}{a6c6702fe11c6afccf99426907dacae2}
+      \strng{authornamehash}{a6c6702fe11c6afccf99426907dacae2}
+      \strng{authorfullhash}{a6c6702fe11c6afccf99426907dacae2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The text mining handbook: advanced approaches in analyzing unstructured data}
+      \field{year}{2007}
+    \endentry
     \entry{han2011data}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7cacfe272c4d395c979d6aecd2f5ec9c}{%

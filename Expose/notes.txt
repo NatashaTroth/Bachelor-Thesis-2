@@ -110,3 +110,17 @@ title = {{In-class laptop use and its effects on student learning}},
 volume = {50},
 year = {2008}
 }
+
+
+
+
+
+%book - page 366-368, 373, 374, 385, 392, 414
+There are several different methods to create clustering. \textcite{han2011data}[366-368, 373, 374, 385, 392]  divides them into the following categories:
+\begin{itemize}
+	\item Partitioning methods: The data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Exmaples: k-means, k-medoids
+	\item Hierarchical methods: Data is grouped into a hierarchy of clusters. Either each object creates its own cluster and is then merged to its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach), or all objects for one cluster and are then divided until each object forms its own cluster (divisive or top-down approach). However, once a merge or split has occurred, it cannot be undone. Examples: BIRCH, Chameleon
+	\item Density-based methods: While partitioning and hierarchical methods only find clusters with spherical shapes, this method finds clusters with random shapes. It can also remove noise and outliers. Examples: DBSCAN, OPTICS
+	\item Grid-based methods: The objects are quantised into grid cells. The operations are performed on the grid structure. This leads to an accelerated processing time. Examples: STING, CLIQUE
+\end{itemize}
+%end book
