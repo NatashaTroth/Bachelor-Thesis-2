@@ -3864,20 +3864,21 @@
     <bcf:citekey order="1">han2011data</bcf:citekey>
     <bcf:citekey order="2">han2011data</bcf:citekey>
     <bcf:citekey order="3">han2011data</bcf:citekey>
-    <bcf:citekey order="4">bramer2007principles</bcf:citekey>
-    <bcf:citekey order="5">bramer2007principles</bcf:citekey>
-    <bcf:citekey order="6">han2011data</bcf:citekey>
-    <bcf:citekey order="7">han2011data</bcf:citekey>
-    <bcf:citekey order="8">feldman2007text</bcf:citekey>
-    <bcf:citekey order="9">feldman2007text</bcf:citekey>
+    <bcf:citekey order="4">han2011data</bcf:citekey>
+    <bcf:citekey order="5">han2011data</bcf:citekey>
+    <bcf:citekey order="6">forensics</bcf:citekey>
+    <bcf:citekey order="7">forensics</bcf:citekey>
+    <bcf:citekey order="8">convexhullDbscan</bcf:citekey>
+    <bcf:citekey order="9">convexhullDbscan</bcf:citekey>
     <bcf:citekey order="10">han2011data</bcf:citekey>
     <bcf:citekey order="11">han2011data</bcf:citekey>
     <bcf:citekey order="12">han2011data</bcf:citekey>
     <bcf:citekey order="13">han2011data</bcf:citekey>
     <bcf:citekey order="14">maaten2008visualizing</bcf:citekey>
     <bcf:citekey order="15">maaten2008visualizing</bcf:citekey>
-    <bcf:citekey order="16">han2011data</bcf:citekey>
-    <bcf:citekey order="17">han2011data</bcf:citekey>
+    <bcf:citekey order="16">berkhin2006survey</bcf:citekey>
+    <bcf:citekey order="17">berkhin2006survey</bcf:citekey>
+    <bcf:citekey order="18">kaufman2009finding</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

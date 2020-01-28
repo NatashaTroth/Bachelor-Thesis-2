@@ -32,37 +32,48 @@
 \section*{Concept}
 
 %TODO: RELATED WORK!!!!!
+%TODO: also add a paper on eating crises...
 % the book
-\textcite{han2011data}[17, 18] declare that data mining is used to discover patterns and knowledge from data. This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
+\textcite{han2011data}[18] declare that data mining is used to discover patterns and knowledge from data.
+% (17) This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms \autocite{han2011data}[32, 362, 363, 367]. 
 
-Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms \autocite{han2011data}[32, 362, 363, 367]. According to \textcite{bramer2007principles}[311], the grouping of similar attributes is applied in various fields such as economics, marketing, medicine, crime analysis and more.
-%end
-
-
-% %book - page 366-368, 373, 374, 385, 392, 414
-% There are several different methods to create clustering. \textcite{han2011data}[366-368, 373, 374, 385, 392]  divide them into the following categories:
-% \begin{itemize}
-% 	\item Partitioning methods (examples: k-means, k-medoids)
-% 	\item Hierarchical methods (examples: BIRCH, Chameleon)
-% 	\item Density-based methods (examples: DBSCAN, OPTICS)
-% 	\item Grid-based methods (examples: STING, CLIQUE)
-% \end{itemize}
-% %end book
 
 %Many clustering algorithms determine clusters based on Euclidean or Manhattan distance measures
 %book - page 366-368, 373, 374, 385, 392, 414
-There are several different methods to create clustering. \textcite{han2011data}[362, 364, 366-368, 373, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhatten distance measures). The authors divide the clustering algorithms into the following categories:
+There are several different methods to create clustering. \textcite{han2011data}[362, 364, 366-367, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhatten distance measures). The authors divide the clustering algorithms into the following categories:
 \begin{itemize}
-	\item Partitioning methods: The data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Examples: k-means, k-medoids
-	\item Hierarchical methods: Data is grouped into a hierarchy of clusters. In one approach, each object creates its own cluster and is then merged into its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach). In the other approach, all objects form one cluster and are then divided until each object is contained in its own cluster (divisive or top-down approach). Examples: BIRCH, Chameleon
-	\item Density-based methods: While partitioning and hierarchical methods only find clusters with spherical shapes, this method finds clusters with random shapes. It can also remove noise and outliers. Examples: DBSCAN, OPTICS
-	\item Grid-based methods: The objects are quantised into grid cells. The operations are performed on the grid structure. This leads to an accelerated processing time. Examples: STING, CLIQUE
+	\item Partitioning methods (examples: k-means, k-medoids)
+	\item Hierarchical methods (examples: BIRCH, Chameleon)
+	\item Density-based methods (examples: DBSCAN, OPTICS)
+	\item Grid-based methods (examples: STING, CLIQUE)
 \end{itemize}
 %end book
-\textcite{feldman2007text}[92] outline that the results of clustering need to be judged by a human, thus however introducing subjectivity.
+
+% \begin{itemize}
+% 	\item Partitioning methods: The data is divided into \textit{k} (generally pre-defined) number of groups. A data object can only be classified into one group (fuzzy partitioning methods relax this condition). Examples: k-means, k-medoids
+% 	\item Hierarchical methods: Data is grouped into a hierarchy of clusters. In one approach, each object creates its own cluster and is then merged into its neighbours until all objects belong to one cluster (agglomerative or bottom-up approach). In the other approach, all objects form one cluster and are then divided until each object is contained in its own cluster (divisive or top-down approach). Examples: BIRCH, Chameleon
+% 	\item Density-based methods: While partitioning and hierarchical methods only find clusters with spherical shapes, this method finds clusters with random shapes. It can also remove noise and outliers. Examples: DBSCAN, OPTICS
+% 	\item Grid-based methods: The objects are quantised into grid cells. The operations are performed on the grid structure. This leads to an accelerated processing time. Examples: STING, CLIQUE
+% \end{itemize}
+%end book
+% \textcite{feldman2007text}[92] outline that the results of clustering need to be judged by a human, thus however introducing subjectivity.
+
+
+%Related work
+%Evidence Analysis to Basis of Clustering
+\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading to the incident.
+% The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
+
+%Convex-Hull & DBSCAN Clustering to Predict Future Weather
+% Another example where clustering was implemented was by /textcite. 
+\textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
+
+%end related work
+
 
 % Talk about SmartEater.
-SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data.  With the help of data mining, machine learning algorithms and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
+SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data.  With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
 
 \begin{enumerate}
 	\item Background volume
@@ -77,7 +88,6 @@ SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/reso
 \end{enumerate}
 
 
-
 %cite smarteater website  - as footnote
 This sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
@@ -87,9 +97,13 @@ To reduce the size and amount of data, dimensionality reduction will be used. \t
 %Visualizing Data using t-SNE p2579 (abstract!)
 Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the data set in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
 
-The clustering methods will be implemented using a Python machine learning platform or library (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}, scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}). Next these will be implemented on the other time lengths. The resulting clusters of each time length will be compared to one another and evaluated. Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
+The clustering methods will be implemented using a Python machine learning platform or library (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}, scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}). Next, these will be implemented on the other time lengths. The resulting clusters of each time length will be compared to one another and evaluated. \textcite{berkhin2006survey}[39] states, that the Silhouette Coefficient \autocite{kaufman2009finding}[87] can be used to measure the separation between clusters.
 
-The introduction of the thesis will serve as an overview of the SmartEater project and explain how and why the subsequent experiment will be conducted. The following chapter will concentrate on the theory of data mining and cluster analysis. After covering these topics, the next section will describe the conducted experiment and its results. The conclusion will summarise the findings of the experiment.
+% Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
+
+% (e.g. Silhouette Coefficient \autocite{kaufman2009finding}[87])
+
+The introduction of the thesis will serve as an overview of the SmartEater project and explain how and why the subsequent experiment will be conducted. Secondly, existing work relating to this subject will briefly be presented. The following chapter will concentrate on the theory of data mining and cluster analysis. After covering these topics, the next section will describe the conducted experiment and its results. The conclusion will summarise the findings of the experiment.
 
 
 % Write something here about how it is hard to determine which clustering method is the best
@@ -185,6 +199,7 @@ What is the ideal length of time to record smartphone sensor data, in order to c
 
 \begin{enumerate}
 	\item Introduction
+	\item Related work
 	\item Theory
 	\begin{enumerate}
 		\item Data mining 
