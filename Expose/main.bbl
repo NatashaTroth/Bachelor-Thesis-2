@@ -34,6 +34,9 @@
            giveni={K\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Sivakasi, Tamil Nadu, India}%
+      }
       \strng{namehash}{809de5298e01bf439cb7bb20e6ab283d}
       \strng{fullhash}{809de5298e01bf439cb7bb20e6ab283d}
       \strng{bibnamehash}{809de5298e01bf439cb7bb20e6ab283d}
@@ -139,6 +142,9 @@
            giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Hammamet, Tunisia}%
+      }
       \strng{namehash}{1286800d5c590d82f5e56381999a99ef}
       \strng{fullhash}{1286800d5c590d82f5e56381999a99ef}
       \strng{bibnamehash}{1286800d5c590d82f5e56381999a99ef}
@@ -196,6 +202,9 @@
            giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Singapore, Singapore}%
+      }
       \strng{namehash}{b54b417cafd8a4b8d3fcce9a78fbf244}
       \strng{fullhash}{4128a0229d7bc1d5dad83be735c3448a}
       \strng{bibnamehash}{4128a0229d7bc1d5dad83be735c3448a}
@@ -241,6 +250,9 @@
            given={H.\bibnamedelimi S.},
            giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Qingdao, China}%
       }
       \strng{namehash}{eb42c2a472ae675f6d093379d8646029}
       \strng{fullhash}{eb42c2a472ae675f6d093379d8646029}
@@ -320,6 +332,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the Forty-Seventh Annual ACM Symposium on Theory of Computing}
       \field{isbn}{9781450335362}
+      \field{month}{6}
       \field{series}{STOC ’15}
       \field{title}{Dimensionality Reduction for K-Means Clustering and Low Rank Approximation}
       \field{year}{2015}
@@ -352,6 +365,9 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
       \strng{namehash}{347b356a53f2209656afbac0bee1282d}
       \strng{fullhash}{347b356a53f2209656afbac0bee1282d}
       \strng{bibnamehash}{347b356a53f2209656afbac0bee1282d}
@@ -377,47 +393,49 @@
       \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
     \entry{ester1996density}{inproceedings}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=2c062e64ed26aacc08a62155e7944f04}{%
+        {{un=0,uniquepart=base,hash=13f9e0185bd6f9498266a9e5786eeeda}{%
            family={Ester},
            familyi={E\bibinitperiod},
-           given={Martin},
+           given={M.},
            giveni={M\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+        {{un=0,uniquepart=base,hash=e728719399df90069774282eb47163bf}{%
            family={Kriegel},
            familyi={K\bibinitperiod},
-           given={Hans-Peter},
-           giveni={H\bibinithyphendelim P\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=802157026f850823b2027c2100cb359a}{%
+        {{un=0,uniquepart=base,hash=5e12d4f6bfa86432e3f1696d8a8cb5b8}{%
            family={Sander},
            familyi={S\bibinitperiod},
-           given={J{ö}rg},
+           given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
+        {{un=0,uniquepart=base,hash=86c6b1889f4025da917318172a7c2c4f}{%
            family={Xu},
            familyi={X\bibinitperiod},
-           given={Xiaowei},
+           given={X.},
            giveni={X\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{9158a41d23cb4e154e78366d59c05728}
-      \strng{fullhash}{77089c60a08eb43e856376e88849121a}
-      \strng{bibnamehash}{77089c60a08eb43e856376e88849121a}
-      \strng{authorbibnamehash}{77089c60a08eb43e856376e88849121a}
-      \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
-      \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
+      \list{location}{1}{%
+        {Portland, Oregon}%
+      }
+      \strng{namehash}{78404fefb529e56758fd417e77f47c70}
+      \strng{fullhash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{bibnamehash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{authorbibnamehash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{authornamehash}{78404fefb529e56758fd417e77f47c70}
+      \strng{authorfullhash}{08c9cc8a7faab4e91a0b8c832babf9ea}
       \field{sortinit}{E}
       \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Kdd}
+      \field{booktitle}{Proc. 2nd Int. Conf. Knowledge Discovery and Data Mining (KDD’96)}
+      \field{month}{8}
       \field{number}{34}
       \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise.}
       \field{volume}{96}
@@ -495,6 +513,9 @@
            giveni={T\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Chicago, IL, USA, USA}%
+      }
       \strng{namehash}{c4bb876db0eee99bc949c924e78ad6d6}
       \strng{fullhash}{27dbfd25155d33f1735f14da551893c0}
       \strng{bibnamehash}{27dbfd25155d33f1735f14da551893c0}
@@ -557,6 +578,46 @@
       \field{volume}{344}
       \field{year}{2009}
     \endentry
+    \entry{LaroseDanielT2015Dmap}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fd4e2f788abbbd3b657ca576f059745a}{%
+           family={Larose},
+           familyi={L\bibinitperiod},
+           given={Daniel\bibnamedelima T},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e50c59e4e1c4173e01c345ed67c9da4}{%
+           family={Larose},
+           familyi={L\bibinitperiod},
+           given={Chantal\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{fullhash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{bibnamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authorbibnamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authornamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authorfullhash}{be91ed4cbe49121856f445ab60edcc2a}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. ed..}
+      \field{isbn}{9781118116197}
+      \field{series}{Wiley series on methods and applications in data mining}
+      \field{title}{Data mining and predictive analytics}
+      \field{year}{2015}
+      \true{nocite}
+    \endentry
     \entry{5088944}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f927d87143e561101ab1d8567cfd0ad9}{%
@@ -571,6 +632,9 @@
            given={V.\bibnamedelimi S.},
            giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Taipei, Taiwan}%
       }
       \strng{namehash}{e9df7796d73506a2153621e7c04538af}
       \strng{fullhash}{e9df7796d73506a2153621e7c04538af}
@@ -675,45 +739,8 @@
            giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{7}{}{%
-        {{hash=fbdad7e49e6ac86125e3b7840d972a8a}{%
-           family={Luaces},
-           familyi={L\bibinitperiod},
-           given={Oscar},
-           giveni={O\bibinitperiod}}}%
-        {{hash=207a2c1309f7b1314dcf326d51d6d5ed}{%
-           family={G{á}mez},
-           familyi={G\bibinitperiod},
-           given={Jos{é}\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=e9e33965c69147db8dc66b9d42105f8e}{%
-           family={Barrenechea},
-           familyi={B\bibinitperiod},
-           given={Edurne},
-           giveni={E\bibinitperiod}}}%
-        {{hash=3c768119597ab177854227fe13a1332b}{%
-           family={Troncoso},
-           familyi={T\bibinitperiod},
-           given={Alicia},
-           giveni={A\bibinitperiod}}}%
-        {{hash=0c072b3353a45cbb3b58dc07c0214328}{%
-           family={Galar},
-           familyi={G\bibinitperiod},
-           given={Mikel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=eb250dbeebc17dd419014ee9ec3dddcd}{%
-           family={Quinti{á}n},
-           familyi={Q\bibinitperiod},
-           given={H{é}ctor},
-           giveni={H\bibinitperiod}}}%
-        {{hash=7bbce01858cdf9912c9bc3cbfbc37f4f}{%
-           family={Corchado},
-           familyi={C\bibinitperiod},
-           given={Emilio},
-           giveni={E\bibinitperiod}}}%
-      }
       \list{location}{1}{%
-        {Cham}%
+        {Salamanca, Spain}%
       }
       \list{publisher}{1}{%
         {Springer International Publishing}%
@@ -724,9 +751,6 @@
       \strng{authorbibnamehash}{6740e94fcbfa0fe320f1f38581c639f6}
       \strng{authornamehash}{e40d2e95e8a300ac96e554fda97cbef7}
       \strng{authorfullhash}{6740e94fcbfa0fe320f1f38581c639f6}
-      \strng{editorbibnamehash}{b2c60c3311b8d95bf2068becf831dcd7}
-      \strng{editornamehash}{ee300ff108aaf7803942375d0e80480d}
-      \strng{editorfullhash}{b2c60c3311b8d95bf2068becf831dcd7}
       \field{sortinit}{L}
       \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
       \field{extradatescope}{labelyear}
@@ -735,6 +759,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Artificial Intelligence}
       \field{isbn}{978-3-319-44636-3}
+      \field{month}{9}
       \field{title}{An Approach to Silhouette and Dunn Clustering Indices Applied to Big Data in Spark}
       \field{year}{2016}
       \true{nocite}
@@ -797,6 +822,9 @@
            giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Dhaka, Bangladesh}%
+      }
       \strng{namehash}{7a4b31c54ebe0be2dab79bbc687cbecd}
       \strng{fullhash}{7a4b31c54ebe0be2dab79bbc687cbecd}
       \strng{bibnamehash}{7a4b31c54ebe0be2dab79bbc687cbecd}
@@ -824,28 +852,28 @@
     \endentry
     \entry{patel2016best}{inproceedings}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=e4aedff3c97473656816df3645502552}{%
-           family={Patel},
+        {{un=0,uniquepart=base,hash=b8fa8b5ecbcc722aba84b2c91af1704a}{%
+           family={{Patel}},
            familyi={P\bibinitperiod},
-           given={KM\bibnamedelima Archana},
-           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={K.\bibnamedelimi M.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=3d4abbdaece4ed8ae02269be0e4059e6}{%
-           family={Thakral},
+        {{un=0,uniquepart=base,hash=05c0d23e069810200beb76920f031f18}{%
+           family={{Thakral}},
            familyi={T\bibinitperiod},
-           given={Prateek},
+           given={P.},
            giveni={P\bibinitperiod},
            givenun=0}}%
       }
-      \list{organization}{1}{%
-        {IEEE}%
+      \list{location}{1}{%
+        {Melmaruvathur, India}%
       }
-      \strng{namehash}{92edc69146e68815eb468309b6ddbd76}
-      \strng{fullhash}{92edc69146e68815eb468309b6ddbd76}
-      \strng{bibnamehash}{92edc69146e68815eb468309b6ddbd76}
-      \strng{authorbibnamehash}{92edc69146e68815eb468309b6ddbd76}
-      \strng{authornamehash}{92edc69146e68815eb468309b6ddbd76}
-      \strng{authorfullhash}{92edc69146e68815eb468309b6ddbd76}
+      \strng{namehash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
+      \strng{fullhash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
+      \strng{bibnamehash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
+      \strng{authorbibnamehash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
+      \strng{authornamehash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
+      \strng{authorfullhash}{ad496aeff6b9bedadeb3dcaf44a35c5e}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
       \field{extradatescope}{labelyear}
@@ -853,11 +881,17 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 International Conference on Communication and Signal Processing (ICCSP)}
+      \field{issn}{null}
+      \field{month}{4}
       \field{title}{The best clustering algorithms in data mining}
       \field{year}{2016}
       \true{nocite}
       \field{pages}{2042\bibrangedash 2046}
       \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICCSP.2016.7754534
+      \endverb
+      \keyw{data mining;pattern clustering;data mining;unsupervised learning;data object similarity;hierarchical clustering algorithm;density-based clustering algorithm;partitioning clustering algorithm;graph-based algorithm;grid-based algorithm;model-based clustering algorithm;combinational clustering algorithm;k-medoids;distributed k-means clustering algorithm;Clustering algorithms;Signal processing algorithms;Partitioning algorithms;Data mining;Algorithm design and analysis;Time complexity;Distributed databases;Cluster size;Clustering Algorithms;Data normalization;Time complexity of algorithm}
     \endentry
     \entry{patel2011impact}{article}{}
       \name{author}{2}{}{%
@@ -895,8 +929,8 @@
       \field{volume}{8}
       \field{year}{2011}
       \true{nocite}
-      \field{pages}{331}
-      \range{pages}{1}
+      \field{pages}{331\bibrangedash 336}
+      \range{pages}{6}
     \endentry
     \entry{sajana2016survey}{article}{}
       \name{author}{3}{}{%
@@ -972,6 +1006,9 @@
            given={A.\bibnamedelimi K.},
            giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Faridabad, India}%
       }
       \strng{namehash}{12fa079a050e69f2df3d2a7c34a5b506}
       \strng{fullhash}{06f8584e0697e610b4dc36ee0aa4e9fa}

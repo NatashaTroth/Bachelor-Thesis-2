@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  29 JAN 2020 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  31 JAN 2020 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex
+**main.tex
 (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex
 LaTeX2e <2019-10-01> patch level 3
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
@@ -519,30 +519,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (3.56319pt too wide) in paragraph at lines 226--226
+Overfull \hbox (3.56319pt too wide) in paragraph at lines 230--230
 [][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. []  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather.\
  []
 
-
-Overfull \hbox (2.2154pt too wide) in paragraph at lines 226--226
+[4]
+Overfull \hbox (2.2154pt too wide) in paragraph at lines 230--230
 [][]\OT1/ptm/m/n/12 Lu, E. H., and V. S. Tseng. 2009. []  Min-ing Cluster-Based Mo-bile Se-quen-tial Pat-terns in Location-
  []
 
-[4] [5] [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux)
+[5] [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12694 strings out of 492162
- 238205 string characters out of 6125292
- 1046401 words of memory out of 5000000
- 16923 multiletter control sequences out of 15000+600000
+ 12695 strings out of 492162
+ 238885 string characters out of 6125292
+ 1045428 words of memory out of 5000000
+ 16924 multiletter control sequences out of 15000+600000
  21743 words of font info for 47 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 59i,7n,63p,1507b,8123s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,7n,63p,1447b,8123s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf (6 pages, 81836 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf (6 pages, 82405 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

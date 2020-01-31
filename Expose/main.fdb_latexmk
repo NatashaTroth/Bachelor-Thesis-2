@@ -1,13 +1,12 @@
 # Fdb version 3
-["biber main"] 1580250738 "main.bcf" "main.bbl" "main" 1580253448
-  "Bibliography.bib" 1580250738 15243 6117be68be7a93e7fae80d342e314106 ""
-  "main.bcf" 1580253448 161783 c955791c605b4b95d6246bf64edd043c "pdflatex"
+["biber main"] 1580464903 "main.bcf" "main.bbl" "main" 1580466633
+  "Bibliography.bib" 1580464902 16714 9b89de4488b98ef107cee782311e2e75 ""
+  "main.bcf" 1580466633 161729 015807547e63cf08dba20c697f80e23e "pdflatex"
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1580253447 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf" "main" 1580253448
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux" 1580253448 3866 99d7ec0c7aedabc1688ac224a61ed5e8 ""
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex" 1580253447 13728 49c223ee9b0bdb6011e6453f059b5d5d ""
+["pdflatex"] 1580466631 "main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf" "main" 1580466633
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux" 1580466633 3887 89461626574909174b5f5491ec24420d "pdflatex"
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -97,17 +96,18 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1579553870 4737805 f5bfc89ada5a75b63768b066b00c965c ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1579553974 4294833 e8f2ed06d324da413dd6f4fbe186a767 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "_Configuration.tex" 1580067511 740 4783dcc86f512e030704255e663c7769 ""
-  "main.aux" 1580253448 3866 99d7ec0c7aedabc1688ac224a61ed5e8 "pdflatex"
-  "main.bbl" 1580250740 49682 2691b10987883854858ca0a9d729f971 "biber main"
-  "main.run.xml" 1580253448 2539 e7d3e124fe4220c8915b4546aac67335 "pdflatex"
-  "main.tex" 1580253447 13728 49c223ee9b0bdb6011e6453f059b5d5d ""
+  "_Configuration.tex" 1580398595 740 4783dcc86f512e030704255e663c7769 ""
+  "main.aux" 1580466633 3887 89461626574909174b5f5491ec24420d "pdflatex"
+  "main.bbl" 1580464905 51224 5420587818182569a7dabcfd161c7ec1 "biber main"
+  "main.run.xml" 1580466633 2539 e7d3e124fe4220c8915b4546aac67335 "pdflatex"
+  "main.tex" 1580466631 13952 c679fcba1f1ec61d470d8950c486b718 ""
   (generated)
   "main.log"
-  "main.aux"
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.log"
   "main.run.xml"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux"
+  "main.bcf"
+  "main.aux"
   "main.pdf"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.log"
   "_Configuration.aux"
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf"
-  "main.bcf"

@@ -34,9 +34,9 @@
 %TODO: RELATED WORK!!!!!
 %TODO: also add a paper on eating crises...
 % the book
-\textcite{han2011data}[18] declare that data mining is used to discover patterns and knowledge from data.
+\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data.
 % (17) This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
-Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms \autocite{han2011data}[32, 362, 363, 367]. 
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
 
 
 %Many clustering algorithms determine clusters based on Euclidean or Manhattan distance measures
@@ -62,7 +62,7 @@ There are several different methods to create clustering. \textcite{han2011data}
 
 %Related work
 %Evidence Analysis to Basis of Clustering
-\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading to the incident.
+\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
 % The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
 
 %Convex-Hull & DBSCAN Clustering to Predict Future Weather
@@ -89,9 +89,10 @@ SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/reso
 
 
 %cite smarteater website  - as footnote
-This sensor data will be recorded for different lengths of time. It is necessary to determine which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
+This sensor data will be recorded for different lengths of time. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with data sets that are not high-dimensional an have less than 10 attributes. Since the SmartEater data set only has 9 dimensions, it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with data sets that are not high-dimensional and have less than 10 attributes. Since the SmartEater data set only has 9 dimensions, it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+
 %book page 93
 To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will use principal component analysis (PCA) to reduce the dimensionality.
 %Visualizing Data using t-SNE p2579 (abstract!)
@@ -103,7 +104,7 @@ The clustering methods will be implemented using a Python machine learning platf
 
 % (e.g. Silhouette Coefficient \autocite{kaufman2009finding}[87])
 
-The introduction of the thesis will serve as an overview of the SmartEater project and explain how and why the subsequent experiment will be conducted. Secondly, existing work relating to this subject will briefly be presented. The following chapter will concentrate on the theory of data mining and cluster analysis. After covering these topics, the next section will describe the conducted experiment and its results. The conclusion will summarise the findings of the experiment.
+The introduction of the thesis will serve as an overview of the SmartEater project and explain how and why the subsequent experiment will be conducted. Secondly, existing work relating to this subject will briefly be presented. The following chapter will concentrate on the theory of data mining and cluster analysis. After covering these topics, the next section will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
 
 
 % Write something here about how it is hard to determine which clustering method is the best
@@ -193,14 +194,16 @@ The introduction of the thesis will serve as an overview of the SmartEater proje
 % \autocite[]{McConnell:2004:CCS:1096143,Vandevoorde:2002}.
 
 \section*{Research Question}
-What is the ideal length of time to record smartphone sensor data, in order to construct distinct clusters?
+% What is the ideal length of time to record smartphone sensor data, in order to construct distinct clusters?
+Which time delta for aggregation is ideal to construct high quality clusterings from smartphone sensor and usage data?
+
 
 \section*{Outline}
 
 \begin{enumerate}
-	\item Introduction
-	\item Related work
-	\item Theory
+	\item Introduction (500 words)
+	\item Related work (500 words)
+	\item Theory (4000 words)
 	\begin{enumerate}
 		\item Data mining 
 		\item Cluster analysis
@@ -209,14 +212,15 @@ What is the ideal length of time to record smartphone sensor data, in order to c
 			\item Dimensionality reduction
 		\end{enumerate}
 	\end{enumerate}
-	\item Experiment
+	\item Experiment (4000 words)
 	\begin{enumerate}
 		\item Preparation of the data set
 		\item Clustering
 		\item Clustering after dimensionality reduction
 		\item Comparison and evaluation of clusters of different time lengths
 	\end{enumerate}
-	\item Conclusions
+	\item Discussion (1000 words)
+	\item Conclusion (500 words)
 \end{enumerate}
 
 % nocite print the whole bibliography. Remove nocite to
