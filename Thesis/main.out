@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related work}{}% 2
+\BOOKMARK [1][-]{section.3}{Theory}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Data mining}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Cluster Analysis}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Overview of clustering algorithms}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Dimensionality reduction}{subsection.3.2}% 7
+\BOOKMARK [1][-]{section.4}{Experiment}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Clustering after dimensionality reduction}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Comparison and evaluation of clusters of different time lengths}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 13
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 14
+\BOOKMARK [1][-]{section*.9}{Appendices}{}% 15
+\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 16
+\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 17
+\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 18
