@@ -16,5 +16,311 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{berkhin2006survey}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d8c0ed15e4ce4b259a7f63a46cba61b7}{%
+           family={Berkhin},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=75dd8505191775de2c6a7571e5808181}{%
+           family={Kogan},
+           familyi={K\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e28885f5b0e11ece7e7434891b2467b}{%
+           family={Nicholas},
+           familyi={N\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+        {{hash=009141d6de34d70316721834af7f1e0b}{%
+           family={Teboulle},
+           familyi={T\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{fullhash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{bibnamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{authorbibnamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{authornamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{authorfullhash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
+      \strng{editorbibnamehash}{cb4af877c0cb61a04d71f10802f5d60a}
+      \strng{editornamehash}{cb4af877c0cb61a04d71f10802f5d60a}
+      \strng{editorfullhash}{cb4af877c0cb61a04d71f10802f5d60a}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Clustering is the division of data into groups of similar objects. In clustering, some details are disregarded in exchange for data simplification. Clustering can be viewed as a data modeling technique that provides for concise summaries of the data. Clustering is therefore related to many disciplines and plays an important role in a broad range of applications. The applications of clustering usually deal with large datasets and data with many attributes. Exploration of such data is a subject of data mining. This survey concentrates on clustering algorithms from a data mining perspective.}
+      \field{booktitle}{Grouping Multidimensional Data: Recent Advances in Clustering}
+      \field{isbn}{978-3-540-28349-2}
+      \field{title}{A Survey of Clustering Data Mining Techniques}
+      \field{year}{2006}
+      \field{pages}{25\bibrangedash 71}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1007/3-540-28349-8_2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/3-540-28349-8_2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/3-540-28349-8_2
+      \endverb
+    \endentry
+    \entry{forensics}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4b89471bcba1a4f1def0101c8d10366}{%
+           family={{Bermad}},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f24f6c25f9869b9bc454b00bf55093}{%
+           family={{Kechadi}},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hammamet, Tunisia}%
+      }
+      \strng{namehash}{1286800d5c590d82f5e56381999a99ef}
+      \strng{fullhash}{1286800d5c590d82f5e56381999a99ef}
+      \strng{bibnamehash}{1286800d5c590d82f5e56381999a99ef}
+      \strng{authorbibnamehash}{1286800d5c590d82f5e56381999a99ef}
+      \strng{authornamehash}{1286800d5c590d82f5e56381999a99ef}
+      \strng{authorfullhash}{1286800d5c590d82f5e56381999a99ef}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 7th International Conference on Sciences of Electronics, Technologies of Information and Telecommunications (SETIT)}
+      \field{issn}{null}
+      \field{month}{12}
+      \field{title}{Evidence analysis to basis of clustering: Approach based on mobile forensic investigation}
+      \field{year}{2016}
+      \field{pages}{300\bibrangedash 307}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/SETIT.2016.7939884
+      \endverb
+      \keyw{data mining;mobile investigation process;relational combinations;crime reconstruction;functional analysis;temporal and functional analysis;data mining;dynamic causality;reconstruction events;Forensics;Classification algorithms;Clustering algorithms;Mobile communication;Telecommunications;Functional analysis;Data mining;Digital Forensic Investigation;Mobile Forensic Investigation;Evidences Analysis;Smartphone;Data Mining;Clustering;Dynamic Causal;Temporal and Functional Analysis}
+    \endentry
+    \entry{convexhullDbscan}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%
+           family={{Dey}},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17d777989c89ecf12f1ff3b51386964b}{%
+           family={{Chakraborty}},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \strng{namehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{fullhash}{347b356a53f2209656afbac0bee1282d}
+      \strng{bibnamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authorbibnamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authornamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authorfullhash}{347b356a53f2209656afbac0bee1282d}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 International Conference and Workshop on Computing and Communication (IEMCON)}
+      \field{issn}{null}
+      \field{month}{10}
+      \field{title}{Convex-hull DBSCAN clustering to predict future weather}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IEMCON.2015.7344438
+      \endverb
+      \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
+    \endentry
+    \entry{han2011data}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7cacfe272c4d395c979d6aecd2f5ec9c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jiawei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56af930e1f5e2c9a791b71e7b347c0ba}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=795a5b818011e939f0720e02f58fc3b7}{%
+           family={Kamber},
+           familyi={K\bibinitperiod},
+           given={Micheline},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Burlington, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6486f748a9f7a7f717ddead87edb0f52}
+      \strng{fullhash}{6486f748a9f7a7f717ddead87edb0f52}
+      \strng{bibnamehash}{6486f748a9f7a7f717ddead87edb0f52}
+      \strng{authorbibnamehash}{6486f748a9f7a7f717ddead87edb0f52}
+      \strng{authornamehash}{6486f748a9f7a7f717ddead87edb0f52}
+      \strng{authorfullhash}{6486f748a9f7a7f717ddead87edb0f52}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data mining: concepts and techniques}
+      \field{year}{2011}
+    \endentry
+    \entry{kaufman2009finding}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=362891924a56b4d25f9a399dfc3198f9}{%
+           family={Kaufman},
+           familyi={K\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
+           family={Rousseeuw},
+           familyi={R\bibinitperiod},
+           given={Peter\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{e410ff139c15ddddf1cde01b477e5635}
+      \strng{fullhash}{e410ff139c15ddddf1cde01b477e5635}
+      \strng{bibnamehash}{e410ff139c15ddddf1cde01b477e5635}
+      \strng{authorbibnamehash}{e410ff139c15ddddf1cde01b477e5635}
+      \strng{authornamehash}{e410ff139c15ddddf1cde01b477e5635}
+      \strng{authorfullhash}{e410ff139c15ddddf1cde01b477e5635}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finding groups in data: an introduction to cluster analysis}
+      \field{volume}{344}
+      \field{year}{2009}
+    \endentry
+    \entry{DataMiningAndPredictiveAnalytics}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fd4e2f788abbbd3b657ca576f059745a}{%
+           family={Larose},
+           familyi={L\bibinitperiod},
+           given={Daniel\bibnamedelima T},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e50c59e4e1c4173e01c345ed67c9da4}{%
+           family={Larose},
+           familyi={L\bibinitperiod},
+           given={Chantal\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{fullhash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{bibnamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authorbibnamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authornamehash}{be91ed4cbe49121856f445ab60edcc2a}
+      \strng{authorfullhash}{be91ed4cbe49121856f445ab60edcc2a}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. ed..}
+      \field{isbn}{9781118116197}
+      \field{series}{Wiley series on methods and applications in data mining}
+      \field{title}{Data mining and predictive analytics}
+      \field{year}{2015}
+    \endentry
+    \entry{maaten2008visualizing}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=47fbe2837893a84fb516e9e85ba7aa36}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={Laurens\bibnamedelimb van\bibnamedelima der},
+           giveni={L\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{fullhash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{bibnamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authorbibnamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authornamehash}{07df37c1f29fdfb7765c821206be824a}
+      \strng{authorfullhash}{07df37c1f29fdfb7765c821206be824a}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning research}
+      \field{number}{Nov}
+      \field{title}{Visualizing data using t-SNE}
+      \field{volume}{9}
+      \field{year}{2008}
+      \field{pages}{2579\bibrangedash 2605}
+      \range{pages}{27}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

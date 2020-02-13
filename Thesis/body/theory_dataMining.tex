@@ -1,1 +1,50 @@
-in data mining
+%DataMiningAndPredictiveAnalytics
+%THERE ARE CASE STUDIES AT THE END OF THIS BOOK
+\textcite{DataMiningAndPredictiveAnalytics}[4] declares that data mining is used to recognise patterns and trends in large amounts of data.
+
+%page 9 - there are other fallacies on this page that may be interesting
+Data mining requires continuous human supervision for quality monitoring and evaluation. Data mining software alone will server wrong results.
+
+%page 10-13, 15-16
+Data mining is used for description of patterns and trends, estimation of numerical values, prediction of future results, classification of categorical variables, clustering of similar objects and association of attributes.
+
+%page 17 - introduction into R
+
+\subsubsection{Data preprocessing}
+%page 20
+Data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. This aids in making the data useful in data mining. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
+
+%page 26-27
+There are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots.
+%38
+The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
+
+%page 21-22
+Data cleaning is used to handle outliers, errors and unusual values found in the data set.
+
+%page 23, 25
+One approach to handle records with missing values, is to delete said record. The author does not recommend this, since it could lead to a biased subset of data, if the missing values are systematic. Furthermore, it would mean wasting the data stored in the other fields of that record. A preferred approach is to substitute the missing value. The value can be replaced, either with a constant determined by the data analyst, with a field mean (for numerical values) or mode (for categorical values), with a random value, or with imputed values based on different features of the record. Replacing missing values can be a gamble, since it can possibly lead to invalid results. For example, the authors experimented with a database of cars. Substituting a missing brand with a random value (here "Japan") led to a car, that doesn't even exist. Data imputation takes into account the other attributes stored in the record and from these, calculates what the missing value would most likely be.
+%%for more on data imputation - see chapter 27 
+
+%page 25
+Another step in data preprocessing is identifying misclassifications. An example given by the authors, is classifiying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
+
+%page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
+
+%page 30, 31
+In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. Typical nomalisation techniques includ "min-max normalization" and "Z-score standardization".
+%not sure if should explain these more, page 32 has Decimal Scaling.
+
+%should state the difference between categorical and numerical data - maybe page 333
+%page 39-41
+Flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+
+
+
+
+
+%OTHER TOPICS - NOT SURE IF NEED:
+%page 38- z-score for detecting outliers, like in boxplot
+%page 39 - Flag Variables
+%page 40 - Transforming categorical variables into numerical variables
+%page 41 - Binning numerical variables
