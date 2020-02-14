@@ -3,9 +3,9 @@
 \BOOKMARK [1][-]{section.3}{Theory}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Data mining}{section.3}% 4
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Data preprocessing}{subsection.3.1}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Cluster Analysis}{section.3}% 6
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Overview of clustering algorithms}{subsection.3.2}% 7
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Dimensionality reduction}{subsection.3.2}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Dimensionality reduction}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Cluster Analysis}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Overview of clustering algorithms}{subsection.3.3}% 8
 \BOOKMARK [1][-]{section.4}{Experiment}{}% 9
 \BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 10
 \BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 11

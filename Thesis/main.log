@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  13 FEB 2020 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  14 FEB 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,12 +898,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
  [1
 
-]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [2] [3]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_dimensionalityReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) [4] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [5]
+]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [2] [3]) [4] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dimensionalityReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [6]
 Overfull \hbox (4.0431pt too wide) in paragraph at lines 214--214
 [][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. \  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather."
  []
 
-[6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
+[7] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 14.
@@ -944,33 +944,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
- [7
+ [8
 
-] [8]
+] [9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D7DDECA2D9E946D0CD3F69BF769DDFA;1220.
+(rerunfilecheck)             Checksum: D3E3F3EB17BBE612D1426CFD764F3BDC;1210.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
- 19868 strings out of 492162
- 348203 string characters out of 6125292
- 1173078 words of memory out of 5000000
- 23762 multiletter control sequences out of 15000+600000
+ 19877 strings out of 492162
+ 348199 string characters out of 6125292
+ 1174075 words of memory out of 5000000
+ 23763 multiletter control sequences out of 15000+600000
  43286 words of font info for 85 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  80i,6n,131p,1124b,8676s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (14 pages, 162013 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (15 pages, 165051 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

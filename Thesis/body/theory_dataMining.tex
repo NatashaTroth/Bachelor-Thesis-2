@@ -10,6 +10,16 @@ Data mining is used for description of patterns and trends, estimation of numeri
 
 %page 17 - introduction into R
 
+%page 160-163
+There are two types of data mining methods: supervised and unsupervised.
+The majority of methods are supervised. In supervised methods, there is a predefined target variable. The method receives several examples, where the target variable value is defined, thus learning which values of the target variable correspond to which values of the predictor variable.
+The goal of the unsupervised approach is to find patterns and structure in the inserted variables. Therefore, no target variable is established. Clustering is the most known unsupervised method.
+Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
+%WHAT ABOUT UNDER FITTING
+Overfitting arises, when the provisional model trys to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set. ???
+BIAS-VARIANCE  TRADE-OFF
+
+
 \subsubsection{Data preprocessing}
 %page 20
 Data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. This aids in making the data useful in data mining. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
@@ -27,24 +37,53 @@ One approach to handle records with missing values, is to delete said record. Th
 %%for more on data imputation - see chapter 27 
 
 %page 25
-Another step in data preprocessing is identifying misclassifications. An example given by the authors, is classifiying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
+Another step in data preprocessing is identifying misclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
 
 %page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
 
 %page 30, 31
-In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. Typical nomalisation techniques includ "min-max normalization" and "Z-score standardization".
+In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. Typical normalisation techniques include "min-max normalization" and "Z-score standardization".
 %not sure if should explain these more, page 32 has Decimal Scaling.
 
 %should state the difference between categorical and numerical data - maybe page 333
 %page 39-41
 Flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
-
-
-
+%page 45
+ID fields should be removed from the dataset, since the value is different for each record and not helpful.
 
 %OTHER TOPICS - NOT SURE IF NEED:
 %page 38- z-score for detecting outliers, like in boxplot
 %page 39 - Flag Variables
 %page 40 - Transforming categorical variables into numerical variables
 %page 41 - Binning numerical variables
+%page 56 - exploring categorical variables
+%page 64 - exploring numerical variables
+
+
+% \subsubsection{Something, not sure what yet}
+
+
+
+
+%BOOK Data mining concepts and techniques
+%page 12 and 13 explains how much data exists, goes through google, basically why we need data mining
+\textcite{han2011data}[16, 17] explain, that the term "data mining" is a misnomer. A more suitable phrase would be "knowledge mining from data". The word "mining" represents valuable nuggets found within large amounts of raw material. Other names used to describe the same process include: knowledge discovery from data (KDD), knowledge extraction, data/pattern analysis, data archaeology, and data dredging.
+According to the authors, the discovery of data is an iterative process represented in the following steps
+
+\begin{enumerate}
+  \item Data cleaning
+  \item Data integration (combine multiple data sources)
+  \item Data selection (relevant data is extracted)
+  \item Data transformation (into applicable forms for data mining )
+  \item Data mining (discover patterns)
+  \item Pattern evaluation (determine if patterns have a meaning)
+  \item Knowledge presentation
+\end{enumerate}
+
+%page 18 - another sentence explaining what data mining is, but similar to one from other book
+%page 18
+Typical data forms used for mining can be database data, data warehouse data, and transactional data. Other forms include data streams, ordered/sequence data, graph or networked data, spatial data, text data, multimedia data, and the World Wide Web.
+
+%page 28, 29 - outlier analysis
+Outliers are objects that vary to the general behaviour or model of the data. In some cases, the uncommon events are of more interest. One of these instances is detecting unusually large payments compared to the card holders normal payments, to uncover fraudulent usage of credit cards.
