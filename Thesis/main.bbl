@@ -19,6 +19,33 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
+    \entry{bellman2015adaptive}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b0e24f47216c32d9ca0eb6f643646da}{%
+           family={Bellman},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton university press}%
+      }
+      \strng{namehash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{fullhash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{bibnamehash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{authorbibnamehash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{authornamehash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{authorfullhash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Adaptive control processes: a guided tour}
+      \field{year}{2015}
+    \endentry
     \entry{berkhin2006survey}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d8c0ed15e4ce4b259a7f63a46cba61b7}{%

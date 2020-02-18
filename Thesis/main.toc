@@ -9,36 +9,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Related work}{2}{section.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Theory}{2}{section.3}%
+\contentsline {section}{\numberline {3}Theory}{3}{section.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Data mining}{3}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.1}Data preprocessing}{3}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Dimensionality reduction}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Dimensionality reduction}{6}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Cluster Analysis}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Cluster Analysis}{6}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Overview of clustering algorithms}{5}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1}Overview of clustering algorithms}{7}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment}{5}{section.4}%
+\contentsline {section}{\numberline {4}Experiment}{7}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{7}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Clustering}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Clustering}{7}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{7}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{5}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{7}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{6}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{7}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{6}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{8}{section*.9}%
+\contentsline {section}{Appendices}{9}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{8}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}git-Repository}{9}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{8}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{9}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{9}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{10}{Appendix.a.C}%

@@ -1,1 +1,31 @@
-Dimensionality Reduction
+%book data mining and predictive analysis
+%TODO: CHECK IF OK TO DO THIS WITH BELLMAN: CAUSE DON'T HAVE THE PAPER - maybe better with footnote
+According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], Bellman \textcite{bellman2015adaptive} explains, that the data in high dimensional spaces is sparse.
+.....FIND SOMEWHERE THAT THIS MEANS THE CURSE OF DIMENSIONALITY.....
+High dimensional data sets arise, when a database has multiple  variables. A high amount of predictor variables in a model can make the interpretation of an analysis more complicated. It can lead to overfitting and overlooking crucial relationships between predictors. Furthermore, visualising higher dimensions becomes more challenging. High quality visualisation methods usually cannot depict more than five dimensions. Humans use these visualisations for visual pattern recognition. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
+
+%page 93-
+Principal components analysis (PCA) is a dimensionality reduction method. 
+
+
+
+%Data mining concepts and techniques
+%also page 93
+As stated by \textcite{han2011data}[93, 95-96], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. PCA projects the initial data onto a smaller space, thus removing random variables. The data it is applied to can be ordered or unordered, sparse and skewed. PCA is conducted in the following steps:
+\begin{enumerate}
+  \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
+  \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
+  \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
+  \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
+\end{enumerate}
+
+%TODO: EXPLAIN MORE IN DETAIL!! ALTHOUGH - MIGHT BE DONE IN PRACTICAL PART - ASK
+
+%TODO: explain what variance is, maybe also skewed data
+%variance = range, want data as spread out as we can find it
+%either, find highest variance (where points are spread out the most), or minimum error(distance to axis)
+%retain most of the information
+%since eigenvalues - each principal component ends up orthogonal
+%youtuber video: which direction will you pick, that maximizes the variance
+%page 93
+Other methods of dimensionality reduction include wavelet transforms (e.g. discrete wavelet transform (DWT)).

@@ -1,4 +1,4 @@
-%DataMiningAndPredictiveAnalytics
+
 %THERE ARE CASE STUDIES AT THE END OF THIS BOOK
 \textcite{DataMiningAndPredictiveAnalytics}[4] declares that data mining is used to recognise patterns and trends in large amounts of data.
 
@@ -42,37 +42,12 @@ Another step in data preprocessing is identifying misclassifications. An example
 %page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
 
 %page 30, 31
-In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
-
-%data mining concepts and techniques
-\textcite{han2011data}[105-106] describes normalisation as giving the attributes equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. For example, income would have a larger range than binary attributes. Typical normalisation techniques include \textit{min-max normalization}, \textit{Z-score standardization} and \textit{decimal scaling}. For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v\textsubscript{i}}:
-\begin{itemize}
-  \item Min-max normalization uses linear transformation to normalise the original value to a newly defined minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) value (e.g. 0.0 and 1.0). The minimum and maximum value found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}}:
-  \[
-    v'_i = \frac{v_i - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
-  \]
-  If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
-
-  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of A.
-  \[
-    v'_i = \frac{v_i - \overline{A}}{\sigma_A}
-  \]
-  The advantage of this normalisation method, is that the min and max of A do not need to be known, or when there are outliers that would overrule the min-max method.
-
-  \item The decimal scaling method moves the decimal point as many spaces, so that the maximum absolute attribute value of \textit{A} is below zero. The smallest number of digits that the decimal point has to be moved, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
-  \[
-    v'_i = \frac{v_i}{10^j}
-  \]
-\end{itemize}
-
-
-
-
+In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. Typical normalisation techniques include "min-max normalization" and "Z-score standardization".
 %not sure if should explain these more, page 32 has Decimal Scaling.
 
 %should state the difference between categorical and numerical data - maybe page 333
 %page 39-41
-According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+Flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
 %page 45
 ID fields should be removed from the dataset, since the value is different for each record and not helpful.
@@ -87,35 +62,3 @@ ID fields should be removed from the dataset, since the value is different for e
 
 
 % \subsubsection{Something, not sure what yet}
-
-
-
-
-%BOOK Data mining concepts and techniques
-%page 12 and 13 explains how much data exists, goes through google, basically why we need data mining
-\textcite{han2011data}[16, 17] explain, that the term "data mining" is a misnomer. A more suitable phrase would be "knowledge mining from data". The word "mining" represents valuable nuggets found within large amounts of raw material. Other names used to describe the same process include: knowledge discovery from data (KDD), knowledge extraction, data/pattern analysis, data archaeology, and data dredging.
-According to the authors, the discovery of data is an iterative process represented in the following steps
-
-\begin{enumerate}
-  \item Data cleaning
-  \item Data integration (combine multiple data sources)
-  \item Data selection (relevant data is extracted)
-  \item Data transformation (into applicable forms for data mining )
-  \item Data mining (discover patterns)
-  \item Pattern evaluation (determine if patterns have a meaning)
-  \item Knowledge presentation
-\end{enumerate}
-
-%page 18 - another sentence explaining what data mining is, but similar to one from other book
-%page 18
-Typical data forms used for mining can be database data, data warehouse data, and transactional data. Other forms include data streams, ordered/sequence data, graph or networked data, spatial data, text data, multimedia data, and the World Wide Web.
-
-%page 28, 29 - outlier analysis
-Outliers are objects that vary to the general behaviour or model of the data. In some cases, the uncommon events are of more interest. One of these instances is detecting unusually large payments compared to the card holders normal payments, to uncover fraudulent usage of credit cards.
-
-%page 32 - there is an example for unsupervised m. l. on this page, but not really sure if need it
-Using unsupervised machine learning, it is possible to detect classes within data.
-
-
-
-%TODO: EXPLAIN HOW TO NORMALIZE - PAGE 105 OF DATA MINING CONCEPTS.. BOOK -> also explained in data mining and predictive analysis - page 94
