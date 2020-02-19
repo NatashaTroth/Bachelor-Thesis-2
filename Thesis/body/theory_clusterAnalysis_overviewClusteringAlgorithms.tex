@@ -1,1 +1,17 @@
-Overview Clustering Algs
+%p 363-365
+\textcite{han2011data}[363-..]
+There are several different clustering methods, each one must meet certain requirements:
+\begin{itemize}
+  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries
+  \item Ability to work with different attribute types: The algortihm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters, usually find clusters of spherical shape. The size and density also tend to be similar. Clusters however could be of any shape, therefore the algorithms need to be capable of detecting any shape.
+  \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+  \item Ability to handle noise
+  \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into it.
+  \item Ability to cluster high-dimensional data %there is quite a good explanation here, but not really sure if need it
+  \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+  \item Interpretablity and usability of the results
+\end{itemize}
+
+ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED

@@ -1,4 +1,5 @@
 %DataMiningAndPredictiveAnalytics
+%TODO: talk about why data mining and clustering is now so important, since so much data - also mentioned in data mining concepts.. book on page 363
 %THERE ARE CASE STUDIES AT THE END OF THIS BOOK
 \textcite{DataMiningAndPredictiveAnalytics}[4] declares that data mining is used to recognise patterns and trends in large amounts of data.
 
@@ -14,6 +15,10 @@ Data mining is used for description of patterns and trends, estimation of numeri
 There are two types of data mining methods: supervised and unsupervised.
 The majority of methods are supervised. In supervised methods, there is a predefined target variable. The method receives several examples, where the target variable value is defined, thus learning which values of the target variable correspond to which values of the predictor variable.
 The goal of the unsupervised approach is to find patterns and structure in the inserted variables. Therefore, no target variable is established. Clustering is the most known unsupervised method.
+
+\textcite{han2011data}[363] describe supervised learning as \textit{learning by examples}, whearas unsupervised learning is \textit{learning by observation}.
+
+%other book (data mining and predictive analysis)
 Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
 %WHAT ABOUT UNDER FITTING
 Overfitting arises, when the provisional model trys to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set. ???
@@ -72,7 +77,8 @@ In some data mining algorithms, variables with higher ranges can unjustly influe
 
 %should state the difference between categorical and numerical data - maybe page 333
 %page 39-41
-According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+
 
 %page 45
 ID fields should be removed from the dataset, since the value is different for each record and not helpful.

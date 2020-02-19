@@ -21,24 +21,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Overview of clustering algorithms}{7}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment}{7}{section.4}%
+\contentsline {section}{\numberline {4}Experiment}{8}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{8}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Clustering}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Clustering}{8}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{8}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{8}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{7}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{8}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{8}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{9}{section*.9}%
+\contentsline {section}{Appendices}{10}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{9}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}git-Repository}{10}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{9}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{10}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{10}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{11}{Appendix.a.C}%
