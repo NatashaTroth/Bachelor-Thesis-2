@@ -122,6 +122,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breakurl/breakurl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/breakurl/breakurl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -423,6 +425,8 @@ INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_cl
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex

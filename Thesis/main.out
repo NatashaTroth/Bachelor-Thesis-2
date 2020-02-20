@@ -6,14 +6,15 @@
 \BOOKMARK [2][-]{subsection.3.2}{Dimensionality reduction}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.3}{Cluster Analysis}{section.3}% 7
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Overview of clustering algorithms}{subsection.3.3}% 8
-\BOOKMARK [1][-]{section.4}{Experiment}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.3}{Clustering after dimensionality reduction}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.4}{Comparison and evaluation of clusters of different time lengths}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 14
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 15
-\BOOKMARK [1][-]{section*.9}{Appendices}{}% 16
-\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 17
-\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 18
-\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 19
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Evaluating clustering results}{subsection.3.3}% 9
+\BOOKMARK [1][-]{section.4}{Experiment}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Clustering after dimensionality reduction}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Comparison and evaluation of clusters of different time lengths}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 15
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 16
+\BOOKMARK [1][-]{section*.1}{Appendices}{}% 17
+\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 18
+\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 19
+\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 20
