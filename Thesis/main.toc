@@ -31,9 +31,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}Evaluating clustering results}{9}{subsubsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment}{9}{section.4}%
+\contentsline {section}{\numberline {4}Experiment}{10}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{10}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Clustering}{10}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 

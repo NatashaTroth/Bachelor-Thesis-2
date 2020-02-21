@@ -3,7 +3,7 @@
 There are several different clustering methods, each one must meet certain requirements:
 \begin{itemize}
   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries
-  \item Ability to work with different attribute types: The algortihm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+  \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters, usually find clusters of spherical shape. The size and density also tend to be similar. Clusters however could be of any shape, therefore the algorithms need to be capable of detecting any shape.
   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
   \item Ability to handle noise
@@ -11,7 +11,7 @@ There are several different clustering methods, each one must meet certain requi
   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into it.
   \item Ability to cluster high-dimensional data %there is quite a good explanation here, but not really sure if need it
   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
-  \item Interpretablity and usability of the results
+  \item Interpretability and usability of the results
 \end{itemize}
 
 ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
@@ -23,7 +23,7 @@ TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT
 %TODO:maybe also look into performance comparisons
   \paragraph{Partitioning Methods}
   Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
-  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-difined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
+  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
   %Sentence directly copied from book p366, not sure whether to add (needs changing): There are various kinds of other criteria for judging the quality of partitions. - WHICH ARE MENTIONED LATER IN SECTION???
   
   Examples: k-means, k-medoids
