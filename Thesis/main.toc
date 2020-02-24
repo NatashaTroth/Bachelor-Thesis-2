@@ -35,20 +35,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Preparation of the data set}{10}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Clustering}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Clustering}{11}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{11}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{10}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{11}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{10}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{11}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{10}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{11}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{12}{section*.1}%
+\contentsline {section}{Appendices}{13}{section*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{12}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}git-Repository}{13}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{12}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{13}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{13}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{14}{Appendix.a.C}%

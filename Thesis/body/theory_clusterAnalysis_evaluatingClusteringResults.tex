@@ -1,14 +1,23 @@
-The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396-..] describe this stage as assessing the quality of the results.
+The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396-401] describe this stage as assessing the quality of the results.
 There are different steps to be taken in evaluating clusters. 
 \begin{itemize}
   \item \textbf{Assessment of the cluster tendency}:
   The tendency must be assessed, meaning it is tested, whether structures exist that aren't random. Running a clustering algorithm on any data set will return clusters. However, only nonrandom structures are significant and not misleading. For example, if a data set consists of data points that are uniformly distributed, if a clustering algorithm delivers clusters, these will be random and have no purpose. Spatial randomness tests (e.g. Hopkins Statistic) can be used to measure how likely the data was created by uniform data distribution.
 
   \item \textbf{Establishing the number of clusters}:
-  Next, the number of clusters found in the data set needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. THERE IS MORE HERE - see page 398
+  Next, the number of clusters found in the data set needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
+  One way to establish the ideal number of clusters is  $\sqrt{\frac{n}{2}}$, n being the number of objects in the data set.
+  Another practice is the elbow method. Increasing the amount of clusters lessen the variance within clusters. Too many clusters will however drop the marginal effect. The turning point in the curve created by the sum of variances in a cluster and number of clusters can be considered a good number of clusters. CAREFUL - WIKIPEDIA SAID THIS IS NOT SO GOOD, SILHOUETTE IS BETTER. FIND DIFFERENT SOURCE!! AND NOT SURE IF EXPLAINED THIS RIGHT
+  Cross-validation can also be used to calculate the suitable number of clusters.
 
   \item \textbf{Evaluation of the cluster quality}:
-  Finally, the cluster quality needs to be evaluated......
+  Finally, the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are.
+  NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
+  The experiment described in this paper will use intrinsic methods, since there is no ground truth for comparison. The \textit{silhouette coefficient} is an intrinsic method for assessing the cluster quality. TRY TO FIND DIFFERENT SOURCE, BUT OTHERWISE GOOD EXPLANATION ON PAGE 401.
+  % The average distance (\textit{a()}) between each object (\textit{o}) and the other objects in the same cluster as \textit{o}. The minimum average distance between \textit{o} and the different clusters that \textit{o} doesn't belong to is represented by \textit{b(o)}.
+  %THERE IS ALSO A FORMULAR, BUT THEN THERE ARE TWO MORE DESCRIBING a(o) and b(o)
+  The silhouette coefficient of an object (\textit{o})  returns a value between -1 and 1. If this value is closer to 1, the cluster to which \textit{o} is assigned is compact. The object \textit{o} is also far away from the other clusters. Therefore it is positioned well. If \textit{o} is negative, the object \textit{o} is positioned closer to objects found in alternative clusters than to the ones in its own cluster.
+  By calculating the silhouette coefficient for each object in a cluster and creating the average, the cluster's strength can be determined. Likewise, the average silhouette coefficient of every object in the data set can be used to estimate the quality of the resulting clusters.
 \end{itemize}
 
 
