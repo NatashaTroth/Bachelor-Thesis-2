@@ -1,13 +1,13 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Related work}{}% 2
-\BOOKMARK [1][-]{section.3}{Theory}{}% 3
+\BOOKMARK [1][-]{section.3}{Theory/Literature Review}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Data mining}{section.3}% 4
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Data preprocessing}{subsection.3.1}% 5
 \BOOKMARK [2][-]{subsection.3.2}{Dimensionality reduction}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.3}{Cluster Analysis}{section.3}% 7
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Overview of clustering algorithms}{subsection.3.3}% 8
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Evaluating clustering results}{subsection.3.3}% 9
-\BOOKMARK [1][-]{section.4}{Experiment}{}% 10
+\BOOKMARK [1][-]{section.4}{Experiment/Method}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 11
 \BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 12
 \BOOKMARK [2][-]{subsection.4.3}{Clustering after dimensionality reduction}{section.4}% 13

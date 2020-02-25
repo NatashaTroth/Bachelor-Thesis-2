@@ -22,8 +22,9 @@ The goal of the unsupervised approach is to find patterns and structure in the i
 Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
 %WHAT ABOUT UNDER FITTING
 Overfitting arises, when the provisional model trys to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set. ???
-BIAS-VARIANCE  TRADE-OFF
 
+\textcite{DataMiningAndPredictiveAnalytics}[164-165] describe another way to describe the overfitting/underfitting problem is through the bias-variance trade-off. Imagine a scatter plot with data points in two different colors, which need to be separated by a line. A low-complexity separator (e.g. a straight line) may have some classification errors (\textit{high bias}), however it needn't change much to accommodate new data points. Therefore, it has \textit{low variance}. A high-complexity separator (e.g. curvy line that can separate more the points correctly) reduces the amount of errors (\textit{low bias}), but has to change a lot when new data points are added. Thus, it has \textit{high variance}. The higher the complexity of the model gets, the bias is reduced, the variance however increases. The ideal model has neither high bias or variance.
+%TODO: MAYBE ADD IMAGES - GOOD ONES ON THIS PAGE  
 
 \subsubsection{Data preprocessing}
 %page 20
@@ -42,7 +43,7 @@ One approach to handle records with missing values, is to delete said record. Th
 %%for more on data imputation - see chapter 27 
 
 %page 25
-Another step in data preprocessing is identifying misclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
+Another step in data preprocessing is identifying missclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
 
 %page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
 
@@ -122,6 +123,12 @@ Outliers are objects that vary to the general behaviour or model of the data. In
 %page 32 - there is an example for unsupervised m. l. on this page, but not really sure if need it
 Using unsupervised machine learning, it is possible to detect classes within data.
 
+%page 416
+The clustering methods mentioned in SECTION.. have a good functionality when used on a dataset with fewer than 10 attributes.
+Other ways to cluster high-dimensional data include \textit{subspace clustering}.Subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
+
 
 
 %TODO: EXPLAIN HOW TO NORMALIZE - PAGE 105 OF DATA MINING CONCEPTS.. BOOK -> also explained in data mining and predictive analysis - page 94
+
+%TODO:  data mining concepts and techniques: outlier detection p445, and "Data mining trends and research frontiers" p481
