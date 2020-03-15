@@ -1,0 +1,96 @@
+
+
+To make data useful in data mining \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
+
+% \textcite{advancedDataPreprocessing}[] concentrate on data preprocessing to prepare their data to extract users' behaviour on websites.
+
+\textcite{dataPreprocessingInDataMining}[45] describe dirty data as either missing data or wrong (noisy) data. The sources of these result from data entry errors, data update errors, data transmission errors and bugs. Dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method.
+%TODO: maybe min max normalisation if can't find any other source
+
+
+\subsubsection{Noisy data}
+
+\textcite{DataMiningAndPredictiveAnalytics}[26-27] 
+There are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots.
+
+In order to smooth the data, \textcite{han2011data}[84] use binning, regression and outlier analysis (e.g. clustering).
+
+% \begin{itemize}
+%   \item Binning: The values are sorted into bins, according to their neighbours. In smoothing by means, each value in the bin is replaced by the bin's mean (or median) value. In smoothing by boundaries, each value is substituted with either the minimum value in the bin, or the maximum, whichever value is closer.
+%   \item Regression: 
+% \end{itemize}
+
+% \textcite{DataMiningAndPredictiveAnalytics}[38] 
+% The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
+
+
+
+% ------------- MISSING VALUES ---------------
+\subsubsection{Missing values}
+%81 - PROVIDE THIS PDF - CAUSE CAN'T FIND ACTUAL COPY SO MIGHT BE WRONG PAGE NUMBERs - MAYBE MENTION THE CHAPTERS?
+According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267] it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values have underlying values that simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record. These fields may contain relevant information. Substituting the value, means that the record can be used. One of the problems with not having these values, is that this missing information content (e.g. predictive or inferential) could be carried by the pattern. Another problem is how to substitute the missing value, without adding bias to the data set. An inadequately chosen replacement value could distort the data set, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables.  Substitute values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
+\textcite{DataMiningAndPredictiveAnalytics}[23, 25] gives an example, of how replacing missing values can lead to invalid results: The authors experimented with a database of cars. Substituting a missing brand with a random value (here "Japan") led to a car, that doesn't even exist. Data imputation takes into account the other attributes stored in the record and from these, calculates what the missing value would most likely be. Larose D. T. and Larose C.D. suggest, that the value can be replaced, either with a constant determined by the data analyst, with a field mean (for numerical values) or mode (for categorical values), with a random value, or with imputed values based on different features of the record.  
+\textcite{dataPreparationForDataMining}[260, 267-269] point out, that regression can be used to find supplement values. Using regression (e.g. linear regression), one can calculate a value, with the help of another given value. There are several different methods to replace missing values, some which promise to generate more information. Such methods are however computationally complex.  
+
+
+%%for more on data imputation - see chapter 27 
+
+% \textcite{DataMiningAndPredictiveAnalytics}[25] 
+% Another step in data preprocessing is identifying missclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
+
+%page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
+
+\subsubsection{Normalisation}
+
+\textcite{DataMiningAndPredictiveAnalytics}[130-31] 
+In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
+
+%data mining concepts and techniques
+Raw data is often transformed to produce new attributes with more fitting applicable properties in the process of normalisation, as explained by \textcite{dataPreprocessingInDataMining}[46] 
+
+
+\textcite{han2011data}[105-106] describes normalisation as giving the attributes equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. For example, income would have a larger range than binary attributes. Typical normalisation techniques include \textit{min-max normalization}, \textit{Z-score standardization} and \textit{decimal scaling}. For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v\textsubscript{i}}:
+\begin{itemize}
+  \item Min-max normalization uses linear transformation to normalise the original value to a newly defined minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) value (e.g. 0.0 and 1.0). The minimum and maximum value found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}}:
+  \[
+    v'_i = \frac{v_i - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
+  \]
+  If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
+
+  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of A.
+  \[
+    v'_i = \frac{v_i - \overline{A}}{\sigma_A}
+  \]
+  The advantage of this normalisation method, is that the min and max of A do not need to be known, or when there are outliers that would overrule the min-max method.
+
+  \item The decimal scaling method moves the decimal point as many spaces, so that the maximum absolute attribute value of \textit{A} is below zero. The smallest number of digits that the decimal point has to be moved, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
+  \[
+    v'_i = \frac{v_i}{10^j}
+  \]
+\end{itemize}
+
+
+
+\subsubsection{Data transformation}
+NOT REALLY SURE WHAT TO DO HERE - LEAVE OPEN, WAIT AND SEE WHAT HAVE TO DO IN THE EXPERIMENT
+%not sure if should explain these more, page 32 has Decimal Scaling.
+
+%should state the difference between categorical and numerical data - maybe page 333
+%page 39-41
+According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+
+
+%page 45
+ID fields should be removed from the dataset, since the value is different for each record and not helpful.
+
+%OTHER TOPICS - NOT SURE IF NEED:
+%page 38- z-score for detecting outliers, like in boxplot
+%page 39 - Flag Variables
+%page 40 - Transforming categorical variables into numerical variables
+%page 41 - Binning numerical variables
+%page 56 - exploring categorical variables
+%page 64 - exploring numerical variables
+
+
+% \subsubsection{Something, not sure what yet}
+

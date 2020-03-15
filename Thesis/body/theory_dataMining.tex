@@ -1,107 +1,10 @@
 %DataMiningAndPredictiveAnalytics
 %TODO: talk about why data mining and clustering is now so important, since so much data - also mentioned in data mining concepts.. book on page 363
 %THERE ARE CASE STUDIES AT THE END OF THIS BOOK
-\textcite{DataMiningAndPredictiveAnalytics}[4] declares that data mining is used to recognise patterns and trends in large amounts of data.
+\textcite{DataMiningAndPredictiveAnalytics}[4] declare that data mining is used to recognise patterns and trends in large amounts of data.
 
-%page 9 - there are other fallacies on this page that may be interesting
-Data mining requires continuous human supervision for quality monitoring and evaluation. Data mining software alone will server wrong results.
-
-%page 10-13, 15-16
-Data mining is used for description of patterns and trends, estimation of numerical values, prediction of future results, classification of categorical variables, clustering of similar objects and association of attributes.
-
-%page 17 - introduction into R
-
-%page 160-163
-There are two types of data mining methods: supervised and unsupervised.
-The majority of methods are supervised. In supervised methods, there is a predefined target variable. The method receives several examples, where the target variable value is defined, thus learning which values of the target variable correspond to which values of the predictor variable.
-The goal of the unsupervised approach is to find patterns and structure in the inserted variables. Therefore, no target variable is established. Clustering is the most known unsupervised method.
-
-\textcite{han2011data}[363] describe supervised learning as \textit{learning by examples}, whearas unsupervised learning is \textit{learning by observation}.
-
-%other book (data mining and predictive analysis)
-Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
-%WHAT ABOUT UNDER FITTING
-Overfitting arises, when the provisional model trys to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set. ???
-
-\textcite{DataMiningAndPredictiveAnalytics}[164-165] describe another way to describe the overfitting/underfitting problem is through the bias-variance trade-off. Imagine a scatter plot with data points in two different colors, which need to be separated by a line. A low-complexity separator (e.g. a straight line) may have some classification errors (\textit{high bias}), however it needn't change much to accommodate new data points. Therefore, it has \textit{low variance}. A high-complexity separator (e.g. curvy line that can separate more the points correctly) reduces the amount of errors (\textit{low bias}), but has to change a lot when new data points are added. Thus, it has \textit{high variance}. The higher the complexity of the model gets, the bias is reduced, the variance however increases. The ideal model has neither high bias or variance.
-%TODO: MAYBE ADD IMAGES - GOOD ONES ON THIS PAGE  
-
-\subsubsection{Data preprocessing}
-%page 20
-Data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. This aids in making the data useful in data mining. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
-
-%page 26-27
-There are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots.
-%38
-The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
-
-%page 21-22
-Data cleaning is used to handle outliers, errors and unusual values found in the data set.
-
-%page 23, 25
-One approach to handle records with missing values, is to delete said record. The author does not recommend this, since it could lead to a biased subset of data, if the missing values are systematic. Furthermore, it would mean wasting the data stored in the other fields of that record. A preferred approach is to substitute the missing value. The value can be replaced, either with a constant determined by the data analyst, with a field mean (for numerical values) or mode (for categorical values), with a random value, or with imputed values based on different features of the record. Replacing missing values can be a gamble, since it can possibly lead to invalid results. For example, the authors experimented with a database of cars. Substituting a missing brand with a random value (here "Japan") led to a car, that doesn't even exist. Data imputation takes into account the other attributes stored in the record and from these, calculates what the missing value would most likely be.
-%%for more on data imputation - see chapter 27 
-
-%page 25
-Another step in data preprocessing is identifying missclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
-
-%page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
-
-%page 30, 31
-In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
-
-%data mining concepts and techniques
-\textcite{han2011data}[105-106] describes normalisation as giving the attributes equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. For example, income would have a larger range than binary attributes. Typical normalisation techniques include \textit{min-max normalization}, \textit{Z-score standardization} and \textit{decimal scaling}. For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v\textsubscript{i}}:
-\begin{itemize}
-  \item Min-max normalization uses linear transformation to normalise the original value to a newly defined minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) value (e.g. 0.0 and 1.0). The minimum and maximum value found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}}:
-  \[
-    v'_i = \frac{v_i - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
-  \]
-  If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
-
-  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of A.
-  \[
-    v'_i = \frac{v_i - \overline{A}}{\sigma_A}
-  \]
-  The advantage of this normalisation method, is that the min and max of A do not need to be known, or when there are outliers that would overrule the min-max method.
-
-  \item The decimal scaling method moves the decimal point as many spaces, so that the maximum absolute attribute value of \textit{A} is below zero. The smallest number of digits that the decimal point has to be moved, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
-  \[
-    v'_i = \frac{v_i}{10^j}
-  \]
-\end{itemize}
-
-
-
-
-%not sure if should explain these more, page 32 has Decimal Scaling.
-
-%should state the difference between categorical and numerical data - maybe page 333
-%page 39-41
-According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
-
-
-%page 45
-ID fields should be removed from the dataset, since the value is different for each record and not helpful.
-
-%OTHER TOPICS - NOT SURE IF NEED:
-%page 38- z-score for detecting outliers, like in boxplot
-%page 39 - Flag Variables
-%page 40 - Transforming categorical variables into numerical variables
-%page 41 - Binning numerical variables
-%page 56 - exploring categorical variables
-%page 64 - exploring numerical variables
-
-
-% \subsubsection{Something, not sure what yet}
-
-
-
-
-%BOOK Data mining concepts and techniques
-%page 12 and 13 explains how much data exists, goes through google, basically why we need data mining
 \textcite{han2011data}[16, 17] explain, that the term "data mining" is a misnomer. A more suitable phrase would be "knowledge mining from data". The word "mining" represents valuable nuggets found within large amounts of raw material. Other names used to describe the same process include: knowledge discovery from data (KDD), knowledge extraction, data/pattern analysis, data archaeology, and data dredging.
-According to the authors, the discovery of data is an iterative process represented in the following steps
+According to the authors, the discovery of data is an iterative process represented in the following steps:
 
 \begin{enumerate}
   \item Data cleaning
@@ -113,18 +16,59 @@ According to the authors, the discovery of data is an iterative process represen
   \item Knowledge presentation
 \end{enumerate}
 
+%page 9 - there are other fallacies on this page that may be interesting
+\textcite{DataMiningAndPredictiveAnalytics}[9-13, 15-16] Data mining requires continuous human supervision for quality monitoring and evaluation. Software alone will serve wrong results. Data mining is used for description of patterns and trends, estimation of numerical values, prediction of future results, classification of categorical variables, clustering of similar objects and association of attributes.
+
+\textcite{han2011data}[18] list the following data forms, which are typically used for mining: database data, data warehouse data, and transactional data. Other forms include data streams, ordered/sequence data, graph or networked data, spatial data, text data, multimedia data, and the World Wide Web.
+
+
+
+%page 17 - introduction into R
+
+
+
+%page 160-163
+\textcite{DataMiningAndPredictiveAnalytics}[160-163] describe the two types of data mining methods: \textit{supervised} and \textit{unsupervised}. The majority of methods are supervised. In supervised methods, there is a predefined target variable. The method receives several examples, where the target variable value is defined, thus learning which values of the target variable correspond to which values of the predictor variable. The goal of the unsupervised approach is to find patterns and structure in the inserted variables. Therefore, no target variable is established. Clustering is the most known unsupervised method.
+
+\textcite{han2011data}[32, 363] describe supervised learning as \textit{learning by examples}, whearas unsupervised learning is \textit{learning by observation}. Using unsupervised machine learning, it is possible to detect classes within data.
+
+%other book (data mining and predictive analysis)
+As stated in \textcite{DataMiningAndPredictiveAnalytics}[160-163], problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
+%WHAT ABOUT UNDER FITTING
+Overfitting arises, when the provisional model tries to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set.
+EXPLAIN UNDERFITTING
+
+\textcite{DataMiningAndPredictiveAnalytics}[164-165] describe another way to describe the overfitting/underfitting problem is through the bias-variance trade-off. Imagine a scatter plot with data points in two different colors, which need to be separated by a line. A low-complexity separator (e.g. a straight line) may have some classification errors (\textit{high bias}), however it needn't change much to accommodate new data points. Therefore, it has \textit{low variance}. A high-complexity separator (e.g. curvy line that can separate more the points correctly) reduces the amount of errors (\textit{low bias}), but has to change a lot when new data points are added. Thus, it has \textit{high variance}. The higher the complexity of the model gets, the bias is reduced, the variance however increases. The ideal model has neither high bias or variance.
+%TODO: MAYBE ADD IMAGES - GOOD ONES ON THIS PAGE  
+
+
+
+
+
+
+
+
+
+%BOOK Data mining concepts and techniques
+%page 12 and 13 explains how much data exists, goes through google, basically why we need data mining
+
+
 %page 18 - another sentence explaining what data mining is, but similar to one from other book
 %page 18
-Typical data forms used for mining can be database data, data warehouse data, and transactional data. Other forms include data streams, ordered/sequence data, graph or networked data, spatial data, text data, multimedia data, and the World Wide Web.
+
 
 %page 28, 29 - outlier analysis
+
+\textcite{dataPreparationForDataMining}[71-72] describes outliers as objects that have low recurrence and separated from the main collection of values. These values are often mistakes and can lead to distortion of the data set. Insurance companies provide a good example of outliers. The majority of insurance claims are only for a small sum, however every so often a customer may be in need of a large claim.
+\textcite{han2011data}[28-29]
 Outliers are objects that vary to the general behaviour or model of the data. In some cases, the uncommon events are of more interest. One of these instances is detecting unusually large payments compared to the card holders normal payments, to uncover fraudulent usage of credit cards.
 
 %page 32 - there is an example for unsupervised m. l. on this page, but not really sure if need it
-Using unsupervised machine learning, it is possible to detect classes within data.
+
 
 %page 416
-The clustering methods mentioned in SECTION.. have a good functionality when used on a dataset with fewer than 10 attributes.
+\textcite{han2011data}[416]
+The clustering methods mentioned in section \ref{section:TheoryClusterAnalysis} have a good functionality when used on a dataset with fewer than 10 attributes.
 Other ways to cluster high-dimensional data include \textit{subspace clustering}.Subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
 
 

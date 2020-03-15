@@ -402,6 +402,8 @@ INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory.te
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining_dataPreprocessing.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining_dataPreprocessing.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -447,12 +449,12 @@ INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussio
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmrc7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm

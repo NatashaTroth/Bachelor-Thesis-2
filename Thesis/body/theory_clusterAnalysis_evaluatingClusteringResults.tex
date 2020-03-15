@@ -21,13 +21,13 @@ There are different steps to be taken in evaluating clusters.
 
 
   %--------------------- other book ----------------------
-  \textcite{DataMiningAndPredictiveAnalytics}[582-..] claim that favourable cluster quality measures should address and include the following criteria: cluster \textit{separation} and cluster \textit{cohesion}. Separation refers to how far apart clusters are from each other. Whereas cohesion describes and similar/close the data objects within the same cluster are. The silhouette method and the pseudo-F statistic are examples for such quality measuring methods. The silhouette method is calculated for each data object \textit{i} as following:
+  \textcite{DataMiningAndPredictiveAnalytics}[582-..] claim that favourable cluster quality measures should address and include the following criteria: cluster \textit{separation} and cluster \textit{cohesion}. Separation refers to how far apart clusters are from each other. Whereas cohesion describes and similar/close the data objects within the same cluster are. The silhouette coefficient and the pseudo-F statistic are examples for such quality measuring methods. The silhouette coefficient is calculated for each data object \textit{i} as following:
   \[
     s_i = \frac{b_i - a_i}{max(b_i, a_i)}  
   \]
 
   \textit{a\textsubscript{i}} represents the distance between the data object \textit{i} and the center of the cluster it is contained in (cohesion). \textit{b\textsubscript{i}} stands for the distance between \textit{i} and the center of the next closest cluster (separation). The resulting value indicates how good the assignment of that data object to its cluster is. A positive result suggests a good assignment, the higher the value, the better the assignment. A result close to zero is a weak assignment. A negative number is regarded as a misclassification, since the next closest cluster is closer and would have been more fitting. 
-    %TODO: GOOD IMAGE IN BOOK SHOWING HOW THE SILHOUETTE METHOD WORKS - page 583
+    %TODO: GOOD IMAGE IN BOOK SHOWING HOW THE silhouette coefficient WORKS - page 583
 
   %SILHOUETTE OF ENTIRE DATASET
   The average silhouette value of an entire data set can be evaluated as follows:
@@ -39,3 +39,4 @@ There are different steps to be taken in evaluating clusters.
 
 %TODO: there is some more about it with examples - but not sure if need - from p. 584
 
+\textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.

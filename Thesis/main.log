@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  26 FEB 2020 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  15 MAR 2020 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,7 +841,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 141.
 Package biblatex Info: Reference segment=0 on input line 141.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/title.tex
-<images/FHSLogo.jpg, id=84, 516.93124pt x 333.245pt>
+<images/FHSLogo.jpg, id=100, 516.93124pt x 333.245pt>
 File: images/FHSLogo.jpg Graphic file (type jpg)
 <use images/FHSLogo.jpg>
 Package pdftex.def Info: images/FHSLogo.jpg  used on input line 76.
@@ -918,24 +918,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
  [1
 
-]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory.tex) [2] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
-Overfull \hbox (7.18413pt too wide) in paragraph at lines 19--20
-[][]\OT1/ptm/m/n/12 Han, Pei, and Kam-ber ([][]2011[][])[363] de-scribe su-per-vised learn-ing as \OT1/ptm/m/it/12 learn-ing by ex-am-ples\OT1/ptm/m/n/12 , whearas
- []
-
-[3]
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 56.
+]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory.tex) [2] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [3]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining_dataPreprocessing.tex [4] [5]
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 54.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
- [4] [5]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dimensionalityReduction.tex [6]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex [7] [8]) [9] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex [10]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex) [11] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [12]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+) [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dimensionalityReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex [7]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex [8] [9]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex [10] [11]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex) [12] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [13]
 Overfull \hbox (4.0431pt too wide) in paragraph at lines 224--224
 [][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. \  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather."
  []
 
-[13] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
+[14] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 
@@ -970,33 +965,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
- [14
+ [15
 
-] [15]
+] [16]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DCC421E82AA98B3FD24917ABB8CF420A;1324.
+(rerunfilecheck)             Checksum: C7A1EE1C263F7D7FA52A46EEBCFEBC15;1610.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
- 20694 strings out of 492162
- 357690 string characters out of 6125292
- 1181513 words of memory out of 5000000
- 24540 multiletter control sequences out of 15000+600000
+ 20740 strings out of 492162
+ 359300 string characters out of 6125292
+ 1182900 words of memory out of 5000000
+ 24575 multiletter control sequences out of 15000+600000
  50223 words of font info for 110 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 80i,6n,131p,1220b,8676s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,6n,131p,1317b,8676s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (21 pages, 213507 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (22 pages, 217925 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 

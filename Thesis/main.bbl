@@ -19,6 +19,49 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
+    \entry{silhouetteRelocatingMeasure}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d0750e7d75a0173546d82f5e2a15314d}{%
+           family={{Aranganayagi}},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7ecaeb0e6e524a395428685bbc359cc}{%
+           family={{Thangavel}},
+           familyi={T\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Sivakasi, Tamil Nadu, India}%
+      }
+      \strng{namehash}{809de5298e01bf439cb7bb20e6ab283d}
+      \strng{fullhash}{809de5298e01bf439cb7bb20e6ab283d}
+      \strng{bibnamehash}{809de5298e01bf439cb7bb20e6ab283d}
+      \strng{authorbibnamehash}{809de5298e01bf439cb7bb20e6ab283d}
+      \strng{authornamehash}{809de5298e01bf439cb7bb20e6ab283d}
+      \strng{authorfullhash}{809de5298e01bf439cb7bb20e6ab283d}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Computational Intelligence and Multimedia Applications (ICCIMA 2007)}
+      \field{issn}{null}
+      \field{month}{12}
+      \field{title}{Clustering Categorical Data Using Silhouette Coefficient as a Relocating Measure}
+      \field{volume}{2}
+      \field{year}{2007}
+      \field{pages}{13\bibrangedash 17}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICCIMA.2007.328
+      \endverb
+      \keyw{data analysis;data mining;pattern clustering;unsupervised learning;clustering categorical data;silhouette coefficient;relocating measure;cluster analysis;unsupervised learning method;intelligent data analysis process;data mining;Clustering algorithms;Data mining;Iterative algorithms;Frequency measurement;Frequency conversion;Application software;Computer science;Computational intelligence;Educational institutions;Art}
+    \endentry
     \entry{bellman2015adaptive}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=2b0e24f47216c32d9ca0eb6f643646da}{%
@@ -194,6 +237,45 @@
       \endverb
       \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
+    \entry{dataPreprocessingInDataMining}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1691f3ff4356c12149ac4f858ead7e04}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Salvador},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b961613b7246367ba81e7015db77421}{%
+           family={Luengo},
+           familyi={L\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f81f46436ba77791311a5db20ff5c25}{%
+           family={Herrera},
+           familyi={H\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{39edeed9bbd585515aefcbc95159ad22}
+      \strng{fullhash}{39edeed9bbd585515aefcbc95159ad22}
+      \strng{bibnamehash}{39edeed9bbd585515aefcbc95159ad22}
+      \strng{authorbibnamehash}{39edeed9bbd585515aefcbc95159ad22}
+      \strng{authornamehash}{39edeed9bbd585515aefcbc95159ad22}
+      \strng{authorfullhash}{39edeed9bbd585515aefcbc95159ad22}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data preprocessing in data mining}
+      \field{year}{2015}
+    \endentry
     \entry{han2011data}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7cacfe272c4d395c979d6aecd2f5ec9c}{%
@@ -346,6 +428,33 @@
       \field{year}{2008}
       \field{pages}{2579\bibrangedash 2605}
       \range{pages}{27}
+    \endentry
+    \entry{dataPreparationForDataMining}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b2ecaa7a0ee1ecf23d81ac45279295bd}{%
+           family={Pyle},
+           familyi={P\bibinitperiod},
+           given={Dorian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {morgan kaufmann}%
+      }
+      \strng{namehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \strng{fullhash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \strng{bibnamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \strng{authorbibnamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \strng{authornamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \strng{authorfullhash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data preparation for data mining}
+      \field{year}{1999}
     \endentry
   \enddatalist
 \endrefsection

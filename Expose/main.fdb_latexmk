@@ -1,12 +1,13 @@
 # Fdb version 3
-["biber main"] 1580464903 "main.bcf" "main.bbl" "main" 1580466633
+["biber main"] 1580464903 "main.bcf" "main.bbl" "main" 1584208209
   "Bibliography.bib" 1580464902 16714 9b89de4488b98ef107cee782311e2e75 ""
   "main.bcf" 1580466633 161729 015807547e63cf08dba20c697f80e23e "pdflatex"
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1580466631 "main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf" "main" 1580466633
+  "main.blg"
+["pdflatex"] 1580466631 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf" "main" 1584208209
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux" 1580466633 3887 89461626574909174b5f5491ec24420d "pdflatex"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.tex" 1580466631 13952 c679fcba1f1ec61d470d8950c486b718 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -102,12 +103,12 @@
   "main.run.xml" 1580466633 2539 e7d3e124fe4220c8915b4546aac67335 "pdflatex"
   "main.tex" 1580466631 13952 c679fcba1f1ec61d470d8950c486b718 ""
   (generated)
-  "main.log"
-  "main.run.xml"
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux"
-  "main.bcf"
-  "main.aux"
-  "main.pdf"
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.log"
   "_Configuration.aux"
+  "main.run.xml"
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.pdf"
+  "main.pdf"
+  "main.log"
+  "main.aux"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Expose/main.aux"
+  "main.bcf"

@@ -13,48 +13,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Data mining}{3}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Data preprocessing}{3}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Data preprocessing}{4}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Dimensionality reduction}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Noisy data}{5}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Cluster Analysis}{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.2}Missing values}{5}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Overview of clustering algorithms}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3}Normalisation}{5}{subsubsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.1.1}Partitioning Methods}{8}{paragraph.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.4}Data transformation}{6}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.1.2}Hierarchical Methods}{9}{paragraph.3.3.1.2}%
+\contentsline {subsection}{\numberline {3.3}Dimensionality reduction}{7}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.1.3}Density-Based Methods}{9}{paragraph.3.3.1.3}%
+\contentsline {subsection}{\numberline {3.4}Cluster Analysis}{8}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.1.4}Grid-Based Methods}{9}{paragraph.3.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Overview of clustering algorithms}{8}{subsubsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Evaluating clustering results}{10}{subsubsection.3.3.2}%
+\contentsline {paragraph}{\numberline {3.4.1.1}Partitioning Methods}{9}{paragraph.3.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.2.1}Assessment of the cluster tendency}{10}{paragraph.3.3.2.1}%
+\contentsline {paragraph}{\numberline {3.4.1.2}Hierarchical Methods}{10}{paragraph.3.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.2.2}Establishing the number of clusters}{10}{paragraph.3.3.2.2}%
+\contentsline {paragraph}{\numberline {3.4.1.3}Density-Based Methods}{10}{paragraph.3.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.3.2.3}Evaluation of the cluster quality}{10}{paragraph.3.3.2.3}%
+\contentsline {paragraph}{\numberline {3.4.1.4}Grid-Based Methods}{10}{paragraph.3.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment/Method}{11}{section.4}%
+\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{10}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{11}{subsection.4.1}%
+\contentsline {paragraph}{\numberline {3.4.2.1}Assessment of the cluster tendency}{11}{paragraph.3.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Clustering}{12}{subsection.4.2}%
+\contentsline {paragraph}{\numberline {3.4.2.2}Establishing the number of clusters}{11}{paragraph.3.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{12}{subsection.4.3}%
+\contentsline {paragraph}{\numberline {3.4.2.3}Evaluation of the cluster quality}{11}{paragraph.3.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{12}{subsection.4.4}%
+\contentsline {section}{\numberline {4}Experiment/Method}{12}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{12}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{12}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}%
+\contentsline {subsection}{\numberline {4.2}Clustering}{13}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{14}{section*.1}%
+\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{13}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{14}{Appendix.a.A}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{13}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{14}{Appendix.a.B}%
+\contentsline {section}{\numberline {5}Discussion}{13}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{15}{Appendix.a.C}%
+\contentsline {section}{\numberline {6}Conclusion}{13}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{15}{section*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}git-Repository}{15}{Appendix.a.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{15}{Appendix.a.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{16}{Appendix.a.C}%
