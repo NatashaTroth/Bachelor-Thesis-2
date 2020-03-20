@@ -62,32 +62,63 @@
       \endverb
       \keyw{data analysis;data mining;pattern clustering;unsupervised learning;clustering categorical data;silhouette coefficient;relocating measure;cluster analysis;unsupervised learning method;intelligent data analysis process;data mining;Clustering algorithms;Data mining;Iterative algorithms;Frequency measurement;Frequency conversion;Application software;Computer science;Computational intelligence;Educational institutions;Art}
     \endentry
-    \entry{bellman2015adaptive}{book}{}
+    \entry{bellman1957dynamic}{book}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2b0e24f47216c32d9ca0eb6f643646da}{%
+        {{un=2,uniquepart=given,hash=3acba33176d80eb086ab17c2fe94f1ee}{%
            family={Bellman},
            familyi={B\bibinitperiod},
-           given={Richard\bibnamedelima E},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=2}}%
       }
       \list{publisher}{1}{%
-        {Princeton university press}%
+        {Princeton University Press}%
       }
-      \strng{namehash}{2b0e24f47216c32d9ca0eb6f643646da}
-      \strng{fullhash}{2b0e24f47216c32d9ca0eb6f643646da}
-      \strng{bibnamehash}{2b0e24f47216c32d9ca0eb6f643646da}
-      \strng{authorbibnamehash}{2b0e24f47216c32d9ca0eb6f643646da}
-      \strng{authornamehash}{2b0e24f47216c32d9ca0eb6f643646da}
-      \strng{authorfullhash}{2b0e24f47216c32d9ca0eb6f643646da}
+      \strng{namehash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{fullhash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{bibnamehash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{authorbibnamehash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{authornamehash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{authorfullhash}{3acba33176d80eb086ab17c2fe94f1ee}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Adaptive control processes: a guided tour}
-      \field{year}{2015}
+      \field{isbn}{9780691079516}
+      \field{series}{Rand Corporation research study}
+      \field{title}{Dynamic Programming}
+      \field{year}{1957}
+    \endentry
+    \entry{bellman2015adaptive}{book}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=484543699a93b5c7a771de9c1b191137}{%
+           family={Bellman},
+           familyi={B\bibinitperiod},
+           given={R.E.},
+           giveni={R\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{fullhash}{484543699a93b5c7a771de9c1b191137}
+      \strng{bibnamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authorbibnamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authornamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authorfullhash}{484543699a93b5c7a771de9c1b191137}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781400874668}
+      \field{series}{Princeton Legacy Library}
+      \field{title}{Adaptive Control Processes: A Guided Tour}
+      \field{year}{1961}
     \endentry
     \entry{berkhin2006survey}{inbook}{}
       \name{author}{1}{}{%
@@ -237,6 +268,41 @@
       \endverb
       \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
+    \entry{OnLinesAndPlanes1901}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=716c197f50c5e070b09b67f32636d3e7}{%
+           family={F.R.S.},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima Pearson},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{716c197f50c5e070b09b67f32636d3e7}
+      \strng{fullhash}{716c197f50c5e070b09b67f32636d3e7}
+      \strng{bibnamehash}{716c197f50c5e070b09b67f32636d3e7}
+      \strng{authorbibnamehash}{716c197f50c5e070b09b67f32636d3e7}
+      \strng{authornamehash}{716c197f50c5e070b09b67f32636d3e7}
+      \strng{authorfullhash}{716c197f50c5e070b09b67f32636d3e7}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}
+      \field{number}{11}
+      \field{title}{LIII. On lines and planes of closest fit to systems of points in space}
+      \field{volume}{2}
+      \field{year}{1901}
+      \field{pages}{559\bibrangedash 572}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/14786440109462720
+      \endverb
+    \endentry
     \entry{dataPreprocessingInDataMining}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1691f3ff4356c12149ac4f858ead7e04}{%
@@ -317,6 +383,44 @@
       \field{labeltitlesource}{title}
       \field{title}{Data mining: concepts and techniques}
       \field{year}{2011}
+    \endentry
+    \entry{hotelling1933analysis}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=628a6bd9bb208bfcbeb8394b69088107}{%
+           family={Hotelling},
+           familyi={H\bibinitperiod},
+           given={Harold},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Warwick \& York}%
+      }
+      \strng{namehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{fullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{bibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorbibnamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authornamehash}{628a6bd9bb208bfcbeb8394b69088107}
+      \strng{authorfullhash}{628a6bd9bb208bfcbeb8394b69088107}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of educational psychology}
+      \field{number}{6}
+      \field{title}{Analysis of a complex of statistical variables into principal components.}
+      \field{volume}{24}
+      \field{year}{1933}
+      \field{pages}{417\bibrangedash 441}
+      \range{pages}{25}
+      \verb{urlraw}
+      \verb https://doi.org/10.1037/h0071325
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1037/h0071325
+      \endverb
     \endentry
     \entry{kaufman2009finding}{book}{}
       \name{author}{2}{}{%

@@ -37,7 +37,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.1.4}Grid-Based Methods}{10}{paragraph.3.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{10}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{11}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.1}Assessment of the cluster tendency}{11}{paragraph.3.4.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -47,7 +47,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Experiment/Method}{12}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{13}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Clustering}{13}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
@@ -59,10 +59,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusion}{13}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{15}{section*.1}%
+\contentsline {section}{Appendices}{16}{section*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{15}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}git-Repository}{16}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{15}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{16}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{16}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{17}{Appendix.a.C}%

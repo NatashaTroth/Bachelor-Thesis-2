@@ -42,30 +42,38 @@ According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267] it is
 
 \subsubsection{Normalisation}
 
-\textcite{DataMiningAndPredictiveAnalytics}[130-31] 
-In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
+%TODO: ADD GRAPHS, CAN ALSO BE FROM A WEBSITE, E.G. https://www.codecademy.com/articles/normalization
 
-%data mining concepts and techniques
-Raw data is often transformed to produce new attributes with more fitting applicable properties in the process of normalisation, as explained by \textcite{dataPreprocessingInDataMining}[46] 
+% \textcite{DataMiningAndPredictiveAnalytics}[130-31] 
+% In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
+
+%THIS IS ALSO EXPLAINED BY DATA PROCESSING IN DATA MINING ON PAGE 47
+\textcite{han2011data}[105-106] describes normalisation as giving the attributes equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. For example, income would have a larger range than binary attributes. 
+
+% %data mining concepts and techniques
+\textcite{dataPreprocessingInDataMining}[46] explains that raw data is often transformed to produce new attributes with more applicable properties in the process of normalisation. These new attributes are then known as \textit{modeling variables} or \textit{analytic variables}. \textit{Min-Max Normalization}, \textit{Z-score Normalization}, and \textit{Decimal Scaling Normalization} are methods that convert the distribution of the existing attributes.
 
 
-\textcite{han2011data}[105-106] describes normalisation as giving the attributes equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. For example, income would have a larger range than binary attributes. Typical normalisation techniques include \textit{min-max normalization}, \textit{Z-score standardization} and \textit{decimal scaling}. For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v\textsubscript{i}}:
+% \textcite{han2011data}[105-106] 
+
+For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v}:
 \begin{itemize}
-  \item Min-max normalization uses linear transformation to normalise the original value to a newly defined minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) value (e.g. 0.0 and 1.0). The minimum and maximum value found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}}:
+  \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
   \[
-    v'_i = \frac{v_i - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
+    v' = \frac{v - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
   \]
-  If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
+  The intervals [0, 1] and [-1, 1] are common intervals for normalisation. 
+  % If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
 
-  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of A.
+  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of the values \textit{A}.
   \[
-    v'_i = \frac{v_i - \overline{A}}{\sigma_A}
+    v' = \frac{v - \overline{A}}{\sigma_A}
   \]
-  The advantage of this normalisation method, is that the min and max of A do not need to be known, or when there are outliers that would overrule the min-max method.
+  After this transformation, the mean equals zero and the standard deviation is one. The advantage of this normalisation method, is that the min and max values of A do not need to be known, or when there are outliers that could bias the min-max method.
 
-  \item The decimal scaling method moves the decimal point as many spaces, so that the maximum absolute attribute value of \textit{A} is below zero. The smallest number of digits that the decimal point has to be moved, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
+  \item The decimal scaling method moves the decimal point as many spaces, so that the maximum absolute attribute value of \textit{A} is below one. The smallest number of digits that the decimal point has to be moved, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
   \[
-    v'_i = \frac{v_i}{10^j}
+    v' = \frac{v}{10^j}
   \]
 \end{itemize}
 
