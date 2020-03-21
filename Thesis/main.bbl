@@ -268,41 +268,6 @@
       \endverb
       \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
-    \entry{OnLinesAndPlanes1901}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=716c197f50c5e070b09b67f32636d3e7}{%
-           family={F.R.S.},
-           familyi={F\bibinitperiod},
-           given={Karl\bibnamedelima Pearson},
-           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor & Francis}%
-      }
-      \strng{namehash}{716c197f50c5e070b09b67f32636d3e7}
-      \strng{fullhash}{716c197f50c5e070b09b67f32636d3e7}
-      \strng{bibnamehash}{716c197f50c5e070b09b67f32636d3e7}
-      \strng{authorbibnamehash}{716c197f50c5e070b09b67f32636d3e7}
-      \strng{authornamehash}{716c197f50c5e070b09b67f32636d3e7}
-      \strng{authorfullhash}{716c197f50c5e070b09b67f32636d3e7}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}
-      \field{number}{11}
-      \field{title}{LIII. On lines and planes of closest fit to systems of points in space}
-      \field{volume}{2}
-      \field{year}{1901}
-      \field{pages}{559\bibrangedash 572}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1080/14786440109462720
-      \endverb
-    \endentry
     \entry{dataPreprocessingInDataMining}{book}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1691f3ff4356c12149ac4f858ead7e04}{%
@@ -532,6 +497,41 @@
       \field{year}{2008}
       \field{pages}{2579\bibrangedash 2605}
       \range{pages}{27}
+    \endentry
+    \entry{OnLinesAndPlanes1901}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b69135425e9c9d6adc927b94c33421d4}{%
+           family={Pearson},
+           familyi={P\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{fullhash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{bibnamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authorbibnamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authornamehash}{b69135425e9c9d6adc927b94c33421d4}
+      \strng{authorfullhash}{b69135425e9c9d6adc927b94c33421d4}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}
+      \field{number}{11}
+      \field{title}{LIII. On lines and planes of closest fit to systems of points in space}
+      \field{volume}{2}
+      \field{year}{1901}
+      \field{pages}{559\bibrangedash 572}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/14786440109462720
+      \endverb
     \endentry
     \entry{dataPreparationForDataMining}{book}{}
       \name{author}{1}{}{%

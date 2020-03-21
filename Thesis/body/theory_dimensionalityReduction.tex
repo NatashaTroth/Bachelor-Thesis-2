@@ -20,32 +20,43 @@
 
 
 
-%TODO - Data Preparation for Data Mining PAGE 329 (but actually page 355)
-
-%book data mining and predictive analysis
-%TODO: CHECK IF OK TO DO THIS WITH BELLMAN: CAUSE DON'T HAVE THE PAPER - maybe better with footnote
-%\textcite{DataMiningAndPredictiveAnalytics}[92, 93]: Furthermore, visualising higher dimensions becomes more challenging.  Humans use these visualisations for visual pattern recognition. 
+%TODO: FIND OUT WHO FIRST SUGGESTED IT FOR DATA MINING? ALTHOUGH DON'T THINK I'LL FIND MUCH
 According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
 As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. 
 
 %Analysis of a complex of statistical variables by harold hotelling
 %https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
-
-%Data mining concepts and techniques
-%also page 93
-% As stated by \textcite{han2011data}[93, 95-96], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. 
-% \textcite{han2011data}[93, 95-96]
-% PCA projects the initial data onto a smaller space, thus removing random variables. The data it is applied to can be ordered or unordered, sparse and skewed. PCA is conducted in the following steps:
+%On lines and planes of closest fit to systems of points in space
+%-pdf
 
 Principal Component Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
+Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
+\textcite{hotelling1933analysis}[4, 5, 10, 15, 18, 24-25] introduces his method as \textit{the method of principal components}. 
+%TODO: NOT SURE WHAT n IS - PAGE 1 SAYS NUMBER OF VARIABLES, BUT NOT SURE IF THAT REALLY MAKES SENCE HERE - pretty sure its dimensions, mentioned in next paragraph:
+When choosing the calculated components, they are chosen with the decreasing amount of variance. Therefore, the one with the highest variance (\textit{$\gamma$\textsubscript{1}}) is chosen first. The next highest (\textit{$\gamma$\textsubscript{2}}) is chosen orthogonal to \textit{$\gamma$\textsubscript{1}} and so on, until the number \textit{n} dimensions are reached (\textit{$\gamma$\textsubscript{n}}). The components left with small variance are disregarded, since they are trivial. The method results in selecting a new set of coordinate axes which correspond to the principal axes of ellipsoids. 
+%NOT SURE IF UNDERSTOOD THIS RIGHT, END PAGE 24&25:
+In an example, Helling selects the two of four calculated principal components with the highest variance, therefore being able to display the data on a two dimensional scatter diagram. (?)
+%10
+Geoemtrically, the new coordinate axes are rotated to lie along the principal axes of the ellipsoids.
+%There must be a distance metric (e.g. Euclidean) must be determined in the \textit{n}-dimensional space. - something about unit, maybe unit vector but not sure
 
-\textcite{han2011data}[93, 95-96]
-\begin{enumerate}
-  \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-  \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
-  \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
-  \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
-\end{enumerate}
+%statistical variables x, x's are correlated, might be some y'S (independent variables) that determine the values x will take
+
+
+%DELELTE Pearson (1901), on the other hand, was concerned with finding lines and planes that best fit a set of points in p-dimensional space, and the geometric optimization problems he considered also lead to PCs, as will be explained in Section 3.2
+
+
+
+\textcite{han2011data}[93, 95-96] stated, in data mining the vectors with the lowest variance that are removed, reduce the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data. The authors suggested wavelet transforms (e.g. discrete wavelet transform (DWT)) as another method of dimensionality reduction.
+
+
+% \textcite{han2011data}[95-96]
+% \begin{enumerate}
+%   \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
+%   \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
+%   \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
+%   \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
+% \end{enumerate}
 
 %TODO: EXPLAIN MORE IN DETAIL!! ALTHOUGH - MIGHT BE DONE IN PRACTICAL PART - ASK
 
@@ -56,4 +67,3 @@ Principal Component Analysis was first proposed by \textcite{OnLinesAndPlanes190
 %since eigenvalues - each principal component ends up orthogonal
 %youtuber video: which direction will you pick, that maximizes the variance
 %page 93
-Other methods of dimensionality reduction include wavelet transforms (e.g. discrete wavelet transform (DWT)).
