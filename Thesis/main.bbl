@@ -349,6 +349,33 @@
       \field{title}{Data mining: concepts and techniques}
       \field{year}{2011}
     \endentry
+    \entry{hartigan1975clustering}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9e9d4c15e872d6867ff4701b9221a46c}{%
+           family={Hartigan},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \strng{namehash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \strng{fullhash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \strng{bibnamehash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \strng{authorbibnamehash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \strng{authornamehash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \strng{authorfullhash}{9e9d4c15e872d6867ff4701b9221a46c}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Clustering algorithms}
+      \field{year}{1975}
+    \endentry
     \entry{hotelling1933analysis}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=628a6bd9bb208bfcbeb8394b69088107}{%
@@ -380,27 +407,56 @@
       \field{year}{1933}
       \field{pages}{417\bibrangedash 441}
       \range{pages}{25}
-      \verb{urlraw}
-      \verb https://doi.org/10.1037/h0071325
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1037/h0071325
-      \endverb
+    \endentry
+    \entry{kaufman1990findingGroupsInData}{book}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=abc1a8ae9b156a9feeff08a6e275ddb5}{%
+           family={Kaufman},
+           familyi={K\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=2}}%
+        {{un=1,uniquepart=given,hash=920e111f29491d8e61a25d54a2878dc0}{%
+           family={Rousseeuw},
+           familyi={R\bibinitperiod},
+           given={P.J.},
+           giveni={P\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \strng{namehash}{6c38369a2668789c6278b07fa3d9ba16}
+      \strng{fullhash}{6c38369a2668789c6278b07fa3d9ba16}
+      \strng{bibnamehash}{6c38369a2668789c6278b07fa3d9ba16}
+      \strng{authorbibnamehash}{6c38369a2668789c6278b07fa3d9ba16}
+      \strng{authornamehash}{6c38369a2668789c6278b07fa3d9ba16}
+      \strng{authorfullhash}{6c38369a2668789c6278b07fa3d9ba16}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470317488}
+      \field{series}{Wiley Series in Probability and Statistics}
+      \field{title}{Finding Groups in Data: An Introduction to Cluster Analysis}
+      \field{year}{1990}
     \endentry
     \entry{kaufman2009finding}{book}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=362891924a56b4d25f9a399dfc3198f9}{%
+        {{un=2,uniquepart=given,hash=362891924a56b4d25f9a399dfc3198f9}{%
            family={Kaufman},
            familyi={K\bibinitperiod},
            given={Leonard},
            giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
+           givenun=2}}%
+        {{un=1,uniquepart=given,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
            family={Rousseeuw},
            familyi={R\bibinitperiod},
            given={Peter\bibnamedelima J},
            giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
       }
       \list{location}{1}{%
         {Hoboken, New Jersey}%
@@ -559,6 +615,34 @@
       \field{labeltitlesource}{title}
       \field{title}{Data preparation for data mining}
       \field{year}{1999}
+    \endentry
+    \entry{romesburg2004cluster}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=957d5b35eceef614bce9b95c97202696}{%
+           family={Romesburg},
+           familyi={R\bibinitperiod},
+           given={H.\bibnamedelimi Charles},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Lulu Press}%
+      }
+      \strng{namehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{fullhash}{957d5b35eceef614bce9b95c97202696}
+      \strng{bibnamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authorbibnamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authornamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authorfullhash}{957d5b35eceef614bce9b95c97202696}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781411606173}
+      \field{title}{Cluster Analysis for Researchers}
+      \field{year}{2004}
     \endentry
   \enddatalist
 \endrefsection

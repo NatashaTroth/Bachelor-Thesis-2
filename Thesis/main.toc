@@ -27,29 +27,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Cluster Analysis}{8}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Overview of clustering algorithms}{8}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1}Overview of clustering algorithms}{9}{subsubsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.1}Partitioning Methods}{9}{paragraph.3.4.1.1}%
+\contentsline {paragraph}{\numberline {3.4.1.1}Partitioning Methods}{10}{paragraph.3.4.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.1.2}Hierarchical Methods}{10}{paragraph.3.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.3}Density-Based Methods}{10}{paragraph.3.4.1.3}%
+\contentsline {paragraph}{\numberline {3.4.1.3}Density-Based Methods}{11}{paragraph.3.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.1.4}Grid-Based Methods}{10}{paragraph.3.4.1.4}%
+\contentsline {paragraph}{\numberline {3.4.1.4}Grid-Based Methods}{11}{paragraph.3.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{10}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{11}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.1}Assessment of the cluster tendency}{11}{paragraph.3.4.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.2}Establishing the number of clusters}{11}{paragraph.3.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.2.3}Evaluation of the cluster quality}{11}{paragraph.3.4.2.3}%
+\contentsline {paragraph}{\numberline {3.4.2.3}Evaluation of the cluster quality}{12}{paragraph.3.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Data Visualisation with t-SNE ?????}{12}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Data Visualisation with t-SNE ?????}{13}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Experiment/Method}{12}{section.4}%
+\contentsline {section}{\numberline {4}Experiment/Method}{13}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{13}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Clustering}{13}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
@@ -57,14 +57,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{13}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{13}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{14}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{13}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{16}{section*.1}%
+\contentsline {section}{Appendices}{17}{section*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{16}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}git-Repository}{17}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{16}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{17}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{17}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{18}{Appendix.a.C}%
