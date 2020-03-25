@@ -3964,6 +3964,10 @@
     <bcf:citekey order="101">rousseeuw1987silhouettes</bcf:citekey>
     <bcf:citekey order="102">silhouetteRelocatingMeasure</bcf:citekey>
     <bcf:citekey order="103">silhouetteRelocatingMeasure</bcf:citekey>
+    <bcf:citekey order="104">han2011data</bcf:citekey>
+    <bcf:citekey order="105">han2011data</bcf:citekey>
+    <bcf:citekey order="106">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="107">rousseeuw1987silhouettes</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

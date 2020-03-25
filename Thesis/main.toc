@@ -41,9 +41,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.1}Assessment of the cluster tendency}{11}{paragraph.3.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.2.2}Establishing the number of clusters}{11}{paragraph.3.4.2.2}%
+\contentsline {paragraph}{\numberline {3.4.2.2}Evaluation of the cluster quality}{11}{paragraph.3.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.4.2.3}Evaluation of the cluster quality}{12}{paragraph.3.4.2.3}%
+\contentsline {paragraph}{\numberline {3.4.2.3}Establishing the number of clusters}{13}{paragraph.3.4.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5}Data Visualisation with t-SNE ?????}{13}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
