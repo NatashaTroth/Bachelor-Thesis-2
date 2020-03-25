@@ -120,70 +120,6 @@
       \field{title}{Adaptive Control Processes: A Guided Tour}
       \field{year}{1961}
     \endentry
-    \entry{berkhin2006survey}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d8c0ed15e4ce4b259a7f63a46cba61b7}{%
-           family={Berkhin},
-           familyi={B\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{3}{}{%
-        {{hash=75dd8505191775de2c6a7571e5808181}{%
-           family={Kogan},
-           familyi={K\bibinitperiod},
-           given={Jacob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4e28885f5b0e11ece7e7434891b2467b}{%
-           family={Nicholas},
-           familyi={N\bibinitperiod},
-           given={Charles},
-           giveni={C\bibinitperiod}}}%
-        {{hash=009141d6de34d70316721834af7f1e0b}{%
-           family={Teboulle},
-           familyi={T\bibinitperiod},
-           given={Marc},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Berlin, Heidelberg}%
-      }
-      \list{publisher}{1}{%
-        {Springer Berlin Heidelberg}%
-      }
-      \strng{namehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{fullhash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{bibnamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{authorbibnamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{authornamehash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{authorfullhash}{d8c0ed15e4ce4b259a7f63a46cba61b7}
-      \strng{editorbibnamehash}{cb4af877c0cb61a04d71f10802f5d60a}
-      \strng{editornamehash}{cb4af877c0cb61a04d71f10802f5d60a}
-      \strng{editorfullhash}{cb4af877c0cb61a04d71f10802f5d60a}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Clustering is the division of data into groups of similar objects. In clustering, some details are disregarded in exchange for data simplification. Clustering can be viewed as a data modeling technique that provides for concise summaries of the data. Clustering is therefore related to many disciplines and plays an important role in a broad range of applications. The applications of clustering usually deal with large datasets and data with many attributes. Exploration of such data is a subject of data mining. This survey concentrates on clustering algorithms from a data mining perspective.}
-      \field{booktitle}{Grouping Multidimensional Data: Recent Advances in Clustering}
-      \field{isbn}{978-3-540-28349-2}
-      \field{title}{A Survey of Clustering Data Mining Techniques}
-      \field{year}{2006}
-      \field{pages}{25\bibrangedash 71}
-      \range{pages}{47}
-      \verb{doi}
-      \verb 10.1007/3-540-28349-8_2
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/3-540-28349-8_2
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/3-540-28349-8_2
-      \endverb
-    \endentry
     \entry{forensics}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b4b89471bcba1a4f1def0101c8d10366}{%
@@ -408,78 +344,6 @@
       \field{pages}{417\bibrangedash 441}
       \range{pages}{25}
     \endentry
-    \entry{kaufman1990findingGroupsInData}{book}{}
-      \name{author}{2}{}{%
-        {{un=2,uniquepart=given,hash=abc1a8ae9b156a9feeff08a6e275ddb5}{%
-           family={Kaufman},
-           familyi={K\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod},
-           givenun=2}}%
-        {{un=1,uniquepart=given,hash=920e111f29491d8e61a25d54a2878dc0}{%
-           family={Rousseeuw},
-           familyi={R\bibinitperiod},
-           given={P.J.},
-           giveni={P\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons, Inc.}%
-      }
-      \strng{namehash}{6c38369a2668789c6278b07fa3d9ba16}
-      \strng{fullhash}{6c38369a2668789c6278b07fa3d9ba16}
-      \strng{bibnamehash}{6c38369a2668789c6278b07fa3d9ba16}
-      \strng{authorbibnamehash}{6c38369a2668789c6278b07fa3d9ba16}
-      \strng{authornamehash}{6c38369a2668789c6278b07fa3d9ba16}
-      \strng{authorfullhash}{6c38369a2668789c6278b07fa3d9ba16}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780470317488}
-      \field{series}{Wiley Series in Probability and Statistics}
-      \field{title}{Finding Groups in Data: An Introduction to Cluster Analysis}
-      \field{year}{1990}
-    \endentry
-    \entry{kaufman2009finding}{book}{}
-      \name{author}{2}{}{%
-        {{un=2,uniquepart=given,hash=362891924a56b4d25f9a399dfc3198f9}{%
-           family={Kaufman},
-           familyi={K\bibinitperiod},
-           given={Leonard},
-           giveni={L\bibinitperiod},
-           givenun=2}}%
-        {{un=1,uniquepart=given,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
-           family={Rousseeuw},
-           familyi={R\bibinitperiod},
-           given={Peter\bibnamedelima J},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=1}}%
-      }
-      \list{location}{1}{%
-        {Hoboken, New Jersey}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons}%
-      }
-      \strng{namehash}{e410ff139c15ddddf1cde01b477e5635}
-      \strng{fullhash}{e410ff139c15ddddf1cde01b477e5635}
-      \strng{bibnamehash}{e410ff139c15ddddf1cde01b477e5635}
-      \strng{authorbibnamehash}{e410ff139c15ddddf1cde01b477e5635}
-      \strng{authornamehash}{e410ff139c15ddddf1cde01b477e5635}
-      \strng{authorfullhash}{e410ff139c15ddddf1cde01b477e5635}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Finding groups in data: an introduction to cluster analysis}
-      \field{volume}{344}
-      \field{year}{2009}
-    \endentry
     \entry{DataMiningAndPredictiveAnalytics}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fd4e2f788abbbd3b657ca576f059745a}{%
@@ -643,6 +507,37 @@
       \field{isbn}{9781411606173}
       \field{title}{Cluster Analysis for Researchers}
       \field{year}{2004}
+    \endentry
+    \entry{rousseeuw1987silhouettes}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
+           family={Rousseeuw},
+           familyi={R\bibinitperiod},
+           given={Peter\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \strng{fullhash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \strng{bibnamehash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \strng{authorbibnamehash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \strng{authornamehash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \strng{authorfullhash}{72d8129c9f4e6afddacb834fb2d8226f}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational and applied mathematics}
+      \field{title}{Silhouettes: a graphical aid to the interpretation and validation of cluster analysis}
+      \field{volume}{20}
+      \field{year}{1987}
+      \field{pages}{53\bibrangedash 65}
+      \range{pages}{13}
     \endentry
   \enddatalist
 \endrefsection

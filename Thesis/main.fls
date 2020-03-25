@@ -435,6 +435,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex

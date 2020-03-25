@@ -11,37 +11,57 @@ There are different steps to be taken in evaluating clusters.
   Cross-validation can also be used to calculate the suitable number of clusters.
 
   \paragraph{Evaluation of the cluster quality}
-  Finally, the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are.
-  NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
-  The experiment described in this paper will use intrinsic methods, since there is no ground truth for comparison. The \textit{silhouette coefficient} is an intrinsic method for assessing the cluster quality. 
-  
-%https://books.google.at/books?hl=en&lr=&id=YeFQHiikNo0C&oi=fnd&pg=PR11&dq=+Finding+groups+in+data+:+An+introduction+to+cluster+analysis&ots=5AvcG7RGuB&sig=fUV5bXFMXE4Q86x24ErujaHX1S0#v=onepage&q&f=false
-  \textcite{kaufman1990findingGroupsInData}  TESTING NEW BOOK
-  
-  %TRY TO FIND DIFFERENT SOURCE, BUT OTHERWISE GOOD EXPLANATION ON PAGE 401.
-  % The average distance (\textit{a()}) between each object (\textit{o}) and the other objects in the same cluster as \textit{o}. The minimum average distance between \textit{o} and the different clusters that \textit{o} doesn't belong to is represented by \textit{b(o)}.
-  %THERE IS ALSO A FORMULAR, BUT THEN THERE ARE TWO MORE DESCRIBING a(o) and b(o)
-  The silhouette coefficient of an object (\textit{o})  returns a value between -1 and 1. If this value is closer to 1, the cluster to which \textit{o} is assigned is compact. The object \textit{o} is also far away from the other clusters. Therefore it is positioned well. If \textit{o} is negative, the object \textit{o} is positioned closer to objects found in alternative clusters than to the ones in its own cluster.
-  By calculating the silhouette coefficient for each object in a cluster and creating the average, the cluster's strength can be determined. Likewise, the average silhouette coefficient of every object in the data set can be used to estimate the quality of the resulting clusters.
+  Lastely, \textcite{han2011data}[399, 401] mentions, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
+  % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
 
-
-  %--------------------- other book ----------------------
-  \textcite{DataMiningAndPredictiveAnalytics}[582-..] claim that favourable cluster quality measures should address and include the following criteria: cluster \textit{separation} and cluster \textit{cohesion}. Separation refers to how far apart clusters are from each other. Whereas cohesion describes and similar/close the data objects within the same cluster are. The silhouette coefficient and the pseudo-F statistic are examples for such quality measuring methods. The silhouette coefficient is calculated for each data object \textit{i} as following:
+  The experiment described in this paper will use the intrinsic method silhouette coefficient, since there is no ground truth for comparison. 
+  In his paper, \textcite{rousseeuw1987silhouettes}[53-57, 59] proposes a new graphical display using silhouettes, to help determine how well objects belong to their assigned clusters. It can be used to interpret and validate the results of clustering. It is also utilised to compare the resulting clusters with those output using alternative algorithms (the input data being the same). In an example, where countries are assigned a value of how dissimilar they are to another country, the results are listed in a table. A structure contained in the results (consisting of 66 numbers), is hard to identify. Therefore, the countries are categorised into clusters using k-median. It is however uncertain, whether the clusters follow a specific structure, or if the groups are simply artificial. With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters)? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the data set? 
+  The silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity ob the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined, by firstly calculating the average dissimilarity, for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}.
+  The formula is as follows:
   \[
-    s_i = \frac{b_i - a_i}{max(b_i, a_i)}  
+    s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
   \]
+  The resulting value \textit{s(i)} is a number in the range of \textit{-1 $\leq$ \textit{s(i)} $\leq$ 1}:
 
-  \textit{a\textsubscript{i}} represents the distance between the data object \textit{i} and the center of the cluster it is contained in (cohesion). \textit{b\textsubscript{i}} stands for the distance between \textit{i} and the center of the next closest cluster (separation). The resulting value indicates how good the assignment of that data object to its cluster is. A positive result suggests a good assignment, the higher the value, the better the assignment. A result close to zero is a weak assignment. A negative number is regarded as a misclassification, since the next closest cluster is closer and would have been more fitting. 
-    %TODO: GOOD IMAGE IN BOOK SHOWING HOW THE silhouette coefficient WORKS - page 583
+  \[ s(i) =
+  \begin{cases}
+    1 - a(i)/b(i)       & \quad \text{if } a(i) < b(i)\\
+    0       & \quad \text{if } a(i) = b(i)\\
+ b(i)/a(i) - 1      & \quad \text{if } a(i) > b(i)
 
-  %SILHOUETTE OF ENTIRE DATASET
-  The average silhouette value of an entire data set can be evaluated as follows:
-  \begin{itemize}
-    \item 0.5 or higher: It is evident that the reality of clusters exist
-    \item 0.25 - 0.5: There is some evidence of the reality of clusters, domain-specific knowledge can be used to confirm or deny these allegations
-    \item 0.25 or lower: There is little evidence indicating the reality of clusters
-  \end{itemize}
+  \end{cases}
+\]
+A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is the most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is unclear whether \textit{A} or the neighbouring cluster is a more suitable fit. If \textit{s(i)} is close to -1, then the dissimilarity within a cluster is larger than the dissimilarity to the neighbouring cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (missclassified). The function can also be adapted to work with similarities.
+The \textit{average silhouette width} for each cluster is received by calculating the average of all objects that belong said cluster. The higher the average silhouette width, the more pronounced the cluster is. An average score can also be calculated from each object \textit{i} for the entire plot (data set), the so called \textit{overall average silhouette width}. 
 
-%TODO: there is some more about it with examples - but not sure if need - from p. 584
+
+
+
+  
+%   %TRY TO FIND DIFFERENT SOURCE, BUT OTHERWISE GOOD EXPLANATION ON PAGE 401.
+%   % The average distance (\textit{a()}) between each object (\textit{o}) and the other objects in the same cluster as \textit{o}. The minimum average distance between \textit{o} and the different clusters that \textit{o} doesn't belong to is represented by \textit{b(o)}.
+%   %THERE IS ALSO A FORMULAR, BUT THEN THERE ARE TWO MORE DESCRIBING a(o) and b(o)
+%   The silhouette coefficient of an object (\textit{o})  returns a value between -1 and 1. If this value is closer to 1, the cluster to which \textit{o} is assigned is compact. The object \textit{o} is also far away from the other clusters. Therefore it is positioned well. If \textit{o} is negative, the object \textit{o} is positioned closer to objects found in alternative clusters than to the ones in its own cluster.
+%   By calculating the silhouette coefficient for each object in a cluster and creating the average, the cluster's strength can be determined. Likewise, the average silhouette coefficient of every object in the data set can be used to estimate the quality of the resulting clusters.
+
+
+%   %--------------------- other book ----------------------
+%   \textcite{DataMiningAndPredictiveAnalytics}[582-..] claim that favourable cluster quality measures should address and include the following criteria: cluster \textit{separation} and cluster \textit{cohesion}. Separation refers to how far apart clusters are from each other. Whereas cohesion describes and similar/close the data objects within the same cluster are. The silhouette coefficient and the pseudo-F statistic are examples for such quality measuring methods. The silhouette coefficient is calculated for each data object \textit{i} as following:
+%   \[
+%     s_i = \frac{b_i - a_i}{max(b_i, a_i)}  
+%   \]
+
+%   \textit{a\textsubscript{i}} represents the distance between the data object \textit{i} and the center of the cluster it is contained in (cohesion). \textit{b\textsubscript{i}} stands for the distance between \textit{i} and the center of the next closest cluster (separation). The resulting value indicates how good the assignment of that data object to its cluster is. A positive result suggests a good assignment, the higher the value, the better the assignment. A result close to zero is a weak assignment. A negative number is regarded as a misclassification, since the next closest cluster is closer and would have been more fitting. 
+%     %TODO: GOOD IMAGE IN BOOK SHOWING HOW THE silhouette coefficient WORKS - page 583
+
+%   %SILHOUETTE OF ENTIRE DATASET
+%   The average silhouette value of an entire data set can be evaluated as follows:
+%   \begin{itemize}
+%     \item 0.5 or higher: It is evident that the reality of clusters exist
+%     \item 0.25 - 0.5: There is some evidence of the reality of clusters, domain-specific knowledge can be used to confirm or deny these allegations
+%     \item 0.25 or lower: There is little evidence indicating the reality of clusters
+%   \end{itemize}
+
+% %TODO: there is some more about it with examples - but not sure if need - from p. 584
 
 \textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
