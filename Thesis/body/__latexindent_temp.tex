@@ -1,77 +1,96 @@
-% As stated by \textcite{hartigan1975clustering}[11-12], clustering algorithms search through clusters to find a match for their data. Hartigan classifies the algorithms with the following properties:
 
+
+To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data.\textcite{dataPreprocessingInDataMining}[45] list the following sources of dirty data: data entry errors, data update errors, data transmission errors and bugs. Dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20] define the goal as to decrease garbage in, garbage out (GIGO). To clarify, decreasing \textit{garbage in} means to reduce the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model (\textit{garbage out}). Further information to different types of dirty data and their solutions are outlined in the next sections below.
+
+%datamining and pred. analy. p20: incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data.  This unpreprocessed data also may not be in a correct form for data mining models.
+
+%TODO: maybe min max normalisation if can't find any other source
+
+
+\subsubsection{Noisy data}
+\textcite{dataPreparationForDataMining}[71-72] interprets outliers, as objects that have low recurrence and that are separated from the main collection of values. These values are often mistakes and can lead to distortion of the data set. Insurance companies provide a good example of outliers. The majority of insurance claims are only for a small sum, however every so often a customer may be in need of a large claim (outlier). \textcite{han2011data}[28-29] mention, that in some cases, these uncommon events are of more interest. One of these instances, is detecting unusually large payments compared to the card holders normal payments, to uncover fraudulent usage of credit cards. As stated by \textcite{DataMiningAndPredictiveAnalytics}[26-27], there are some data mining algorithms that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots. In order to smooth the data, \textcite{han2011data}[84] use binning, regression and outlier analysis (e.g. clustering).
+%TODO: EXPLAIN???
 % \begin{itemize}
-%   \item Sorting:
-%   \item Switching
-%   \item Joining
-%   \item Splitting
-%   \item Adding
-%   \item Searching
+%   \item Binning: The values are sorted into bins, according to their neighbours. In smoothing by means, each value in the bin is replaced by the bin's mean (or median) value. In smoothing by boundaries, each value is substituted with either the minimum value in the bin, or the maximum, whichever value is closer.
+%   \item Regression: 
 % \end{itemize}
 
-%TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
+% \textcite{DataMiningAndPredictiveAnalytics}[38] 
+% The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
 
 
-\textcite{han2011data}[363-365]
-There are several different clustering methods, each one must meet certain requirements:
+
+% ------------- MISSING VALUES ---------------
+\subsubsection{Missing values}
+%81 - PROVIDE THIS PDF - CAUSE CAN'T FIND ACTUAL COPY SO MIGHT BE WRONG PAGE NUMBERs - MAYBE MENTION THE CHAPTERS?
+According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values, however, do have underlying values, they simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record. These fields may contain relevant information. Substituting the value, means that the record can be used. One of the problems with not having these values, is that this missing information content (e.g. predictive or inferential) could be carried by the pattern. Another problem, is how to substitute the missing value, without adding bias to the data set. An inadequately chosen replacement value could distort the data set, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables.  Substitute values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
+
+\textcite{DataMiningAndPredictiveAnalytics}[23, 25] give an example, of how replacing missing values can lead to invalid results. The authors experimented with a database of cars. Substituting a missing brand with a random value (here "Japan") led to a car, that doesn't even exist. Data imputation takes into account the other attributes stored in the record and from these, calculates what the missing value would most likely be. Larose and Larose suggest, that the value can be replaced, either with a constant determined by the data analyst, with a field mean (for numerical values) or mode (for categorical values), with a random value, or with imputed values based on the different features of the record.  
+\textcite{dataPreparationForDataMining}[260, 267-269] point out, that regression can be used to find supplement values. When using regression (e.g. linear regression), one can calculate a value with the help of another given value. There are several different methods to replace missing values. Some of which promise to generate more information. Such methods however are computationally complex.  
+
+
+%%for more on data imputation - see chapter 27 
+
+% \textcite{DataMiningAndPredictiveAnalytics}[25] 
+% Another step in data preprocessing is identifying missclassifications. An example given by the authors, is classifying a record as USA instead of US, or France instead of Europe. These classes only contained one record in comparison to the other more frequently used classes.
+
+%page 27 - chapter measures of center and spread - not sure if need - mean, median and mode
+
+\subsubsection{Normalisation}
+
+%TODO: ADD GRAPHS, CAN ALSO BE FROM A WEBSITE, E.G. https://www.codecademy.com/articles/normalization
+
+% \textcite{DataMiningAndPredictiveAnalytics}[130-31] 
+% In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
+
+%THIS IS ALSO EXPLAINED BY DATA PROCESSING IN DATA MINING ON PAGE 47
+\textcite{han2011data}[105-106] describes normalisation as giving the attributes of a data set equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. Income would, for instance, have a larger range than binary attributes. 
+
+% %data mining concepts and techniques
+\textcite{dataPreprocessingInDataMining}[46-48] explain, that raw data is often transformed to produce new attributes with more applicable properties in the process of normalisation. These new attributes are then known as \textit{modeling variables} or \textit{analytic variables}. 
+\textit{Min-Max Normalization}, \textit{Z-score Normalization}, and \textit{Decimal Scaling Normalization} are methods that convert the distribution of the existing attributes. For the following examples, \textit{A} is a numerical attribute from a data set, a single value of this attribute is represented with \textit{v}:
 \begin{itemize}
-  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries
-  \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
-  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters, usually find clusters of spherical shape. The size and density also tend to be similar. Clusters however could be of any shape, therefore the algorithms need to be capable of detecting any shape.
-  \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
-  \item Ability to handle noise
-  \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
-  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into it.
-  \item Ability to cluster high-dimensional data %there is quite a good explanation here, but not really sure if need it
-  \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
-  \item Interpretability and usability of the results
+  \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
+  \[
+    v' = \frac{v - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
+  \]
+  The intervals [0, 1] and [-1, 1] are common intervals for normalisation. 
+  % If new data is added, that isn't within the min and max of \textit{A} range, an "out-of-bounds" error will occur.
+
+  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of the values \textit{A}.
+  \[
+    v' = \frac{v - \overline{A}}{\sigma_A}
+  \]
+  After this transformation, the mean equals zero and the standard deviation is one. The advantages of this normalisation method take effect, when the min and max values of A are not known, or when there are outliers that could bias the min-max method.
+
+  \item The decimal scaling method moves the decimal point enough spaces, so that the maximum absolute attribute value of \textit{A} is below one. The smallest required number of digits to move the decimal point, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
+  \[
+    v' = \frac{v}{10^j}
+  \]
 \end{itemize}
 
-% TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
-
-%TODO: check if all pages have been used - have been highlighting lines that have used
-%TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
-\textcite{han2011data}[366-396] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
-
-TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT
-%TODO:maybe also look into performance comparisons
-  \paragraph{Partitioning Methods}
-  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
-  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
-  %Sentence directly copied from book p366, not sure whether to add (needs changing): There are various kinds of other criteria for judging the quality of partitions. - WHICH ARE MENTIONED LATER IN SECTION???
-  
-  Examples: k-means, k-medoids
 
 
+\subsubsection{Data transformation}
+\textbf{NOT REALLY SURE WHAT TO DO HERE - LEAVE OPEN, WAIT AND SEE WHAT HAVE TO DO IN THE EXPERIMENT}
+%not sure if should explain these more, page 32 has Decimal Scaling.
 
-  \paragraph{Hierarchical Methods}
-  %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
-  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
-
-  COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
-
-  Examples: BIRCH, Chameleon
-%TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
-  %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
-  
-
-  \paragraph{Density-Based Methods}
-  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches which leads to them only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, the cluster keeps adding objects, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
-  These methods can also be used to cluster sub spaces.
-
-  Examples: DBSCAN, OPTICS, DENCLUE
-  %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
+%should state the difference between categorical and numerical data - maybe page 333
+%page 39-41
+As reported by \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
 
+%page 45
+ID fields should be removed from the dataset, since the value is different for each record and not helpful.
 
-  \paragraph{Grid-Based Methods}
-  %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
-  The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are performed on the grid structure. The processing time depends on the grid size (number of cells) in each dimension and not on the number of objects and is more accelerated than other clustering methods.
-  
-  Examples: STING, CLIQUE
+%OTHER TOPICS - NOT SURE IF NEED:
+%page 38- z-score for detecting outliers, like in boxplot
+%page 39 - Flag Variables
+%page 40 - Transforming categorical variables into numerical variables
+%page 41 - Binning numerical variables
+%page 56 - exploring categorical variables
+%page 64 - exploring numerical variables
 
 
-\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality, when used on a dataset with fewer than 10 attributes. Other ways to cluster high-dimensional data include \textit{subspace clustering}. Subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
+% \subsubsection{Something, not sure what yet}
 
-
-  %TODO: paper book page 542 - kohonen networks
