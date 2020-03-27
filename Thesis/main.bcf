@@ -3929,12 +3929,12 @@
     <bcf:citekey order="68">DataMiningAndPredictiveAnalytics</bcf:citekey>
     <bcf:citekey order="69">bellman1957dynamic</bcf:citekey>
     <bcf:citekey order="70">bellman1957dynamic</bcf:citekey>
-    <bcf:citekey order="71">bellman2015adaptive</bcf:citekey>
-    <bcf:citekey order="72">bellman2015adaptive</bcf:citekey>
+    <bcf:citekey order="71">bellman1961adaptive</bcf:citekey>
+    <bcf:citekey order="72">bellman1961adaptive</bcf:citekey>
     <bcf:citekey order="73">DataMiningAndPredictiveAnalytics</bcf:citekey>
     <bcf:citekey order="74">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="75">bellman2015adaptive</bcf:citekey>
-    <bcf:citekey order="76">bellman2015adaptive</bcf:citekey>
+    <bcf:citekey order="75">bellman1961adaptive</bcf:citekey>
+    <bcf:citekey order="76">bellman1961adaptive</bcf:citekey>
     <bcf:citekey order="77">DataMiningAndPredictiveAnalytics</bcf:citekey>
     <bcf:citekey order="78">DataMiningAndPredictiveAnalytics</bcf:citekey>
     <bcf:citekey order="79">han2011data</bcf:citekey>
@@ -3986,14 +3986,16 @@
     <bcf:citekey order="125">han2011data</bcf:citekey>
     <bcf:citekey order="126">han2011data</bcf:citekey>
     <bcf:citekey order="127">han2011data</bcf:citekey>
-    <bcf:citekey order="128">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="129">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="130">silhouetteRelocatingMeasure</bcf:citekey>
-    <bcf:citekey order="131">silhouetteRelocatingMeasure</bcf:citekey>
-    <bcf:citekey order="132">han2011data</bcf:citekey>
-    <bcf:citekey order="133">han2011data</bcf:citekey>
-    <bcf:citekey order="134">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="135">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="128">han2011data</bcf:citekey>
+    <bcf:citekey order="129">han2011data</bcf:citekey>
+    <bcf:citekey order="130">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="131">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="132">silhouetteRelocatingMeasure</bcf:citekey>
+    <bcf:citekey order="133">silhouetteRelocatingMeasure</bcf:citekey>
+    <bcf:citekey order="134">han2011data</bcf:citekey>
+    <bcf:citekey order="135">han2011data</bcf:citekey>
+    <bcf:citekey order="136">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="137">rousseeuw1987silhouettes</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

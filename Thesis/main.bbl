@@ -136,22 +136,23 @@
     \endentry
     \entry{bellman1957dynamic}{book}{}
       \name{author}{1}{}{%
-        {{un=2,uniquepart=given,hash=3acba33176d80eb086ab17c2fe94f1ee}{%
+        {{un=0,uniquepart=base,hash=484543699a93b5c7a771de9c1b191137}{%
            family={Bellman},
            familyi={B\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=2}}%
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
       }
-      \strng{namehash}{3acba33176d80eb086ab17c2fe94f1ee}
-      \strng{fullhash}{3acba33176d80eb086ab17c2fe94f1ee}
-      \strng{bibnamehash}{3acba33176d80eb086ab17c2fe94f1ee}
-      \strng{authorbibnamehash}{3acba33176d80eb086ab17c2fe94f1ee}
-      \strng{authornamehash}{3acba33176d80eb086ab17c2fe94f1ee}
-      \strng{authorfullhash}{3acba33176d80eb086ab17c2fe94f1ee}
+      \strng{namehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{fullhash}{484543699a93b5c7a771de9c1b191137}
+      \strng{bibnamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authorbibnamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authornamehash}{484543699a93b5c7a771de9c1b191137}
+      \strng{authorfullhash}{484543699a93b5c7a771de9c1b191137}
+      \field{extraname}{1}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}
@@ -163,14 +164,14 @@
       \field{title}{Dynamic Programming}
       \field{year}{1957}
     \endentry
-    \entry{bellman2015adaptive}{book}{}
+    \entry{bellman1961adaptive}{book}{}
       \name{author}{1}{}{%
-        {{un=2,uniquepart=given,hash=484543699a93b5c7a771de9c1b191137}{%
+        {{un=0,uniquepart=base,hash=484543699a93b5c7a771de9c1b191137}{%
            family={Bellman},
            familyi={B\bibinitperiod},
-           given={R.E.},
-           giveni={R\bibinitperiod},
-           givenun=2}}%
+           given={R.\bibnamedelimi E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Princeton University Press}%
@@ -181,6 +182,7 @@
       \strng{authorbibnamehash}{484543699a93b5c7a771de9c1b191137}
       \strng{authornamehash}{484543699a93b5c7a771de9c1b191137}
       \strng{authorfullhash}{484543699a93b5c7a771de9c1b191137}
+      \field{extraname}{2}
       \field{sortinit}{B}
       \field{sortinithash}{8de16967003c7207dae369d874f1456e}
       \field{extradatescope}{labelyear}

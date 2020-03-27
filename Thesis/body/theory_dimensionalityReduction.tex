@@ -1,15 +1,10 @@
 %https://www.amazon.de/dp/069107951X/ref=sr_1_1?dchild=1&keywords=9780691079516&qid=1584700659&sr=8-1
 %  author={Bellman, R. and Rand Corporation and Karreman Mathematics Research Collection},
-\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complicated and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however will not be suitable for prediction.
-
-% Many fields share the same problem, that the expansion of exceedingly difficult problems have gone beyond the confines of conventional mathematical theory
-% number of variables is large
-% portent: a sign or warning that a momentous or calamitous event is likely to happen.
-
 %https://books.google.at/books?hl=en&lr=&id=iwbWCgAAQBAJ&oi=fnd&pg=PR9&dq=Adaptive+Control+Processes&ots=bDJ9XsIa7c&sig=Rc5D_JAZc7a4FigIbt3DmiNYhJI#v=snippet&q=curse%20of%20dimensionality&f=false
-\textcite{bellman2015adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables is however more problematic (both for visualisation and tabulation). According to \textcite{DataMiningAndPredictiveAnalytics}[93], high quality visualisation methods usually cannot depict more than five dimensions.
+\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model, however, will not be suitable for prediction. 
+\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). According to \textcite{DataMiningAndPredictiveAnalytics}[93], high quality visualisation methods usually cannot depict more than five dimensions.
 %TODO: not sure if i've understood this next bit right:
-\textcite{bellman2015adaptive}[94, 198] gives the following example: Imagine if the variables of a function take on the values between 1 and 100. While a function with one variable would need to tabulate 100 values, a function with 2 variables would need to tabulate 100 x 100 = 10\textsuperscript{4} values and a function with 3 variables 10\textsuperscript{6}. Each additional variable adds more complexity.
+\textcite{bellman1961adaptive}[94, 198] further gives the following example: Imagine if the variables of a function take on the values between 1 and 100. While a function with one variable would need to tabulate 100 values, a function with 2 variables would need to tabulate 100 x 100 = 10\textsuperscript{4} values and a function with 3 variables 10\textsuperscript{6}. Each additional variable adds more complexity.
 %...adds more complexity to the ?
 % Multidimensional variational problems require more complex methods to solve them. 
 
@@ -22,19 +17,19 @@
 %TODO: FIND OUT HOW PRINCIPAL COMPONENTS ARE CALCULATED IN THE FIRST PLACE
 %TODO: FIND OUT WHO FIRST SUGGESTED IT FOR DATA MINING? ALTHOUGH DON'T THINK I'LL FIND MUCH
 According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
-As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. 
+As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. Principal components analysis is a dimensionality reduction technique.
 
 %Analysis of a complex of statistical variables by harold hotelling
 %https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
 %On lines and planes of closest fit to systems of points in space
 %-pdf
 
-Principal Component Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
+Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
 Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
 \textcite{hotelling1933analysis}[5] introduces his method as \textit{the method of principal components}. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
 derivation was announced by \textcite{hotelling1933analysis}.
 
-!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data.
+\textbf{!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data}.
 
 \textcite{han2011data}[95-96] lists the first step of PCA is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
 \textcite{han2011data}[95-96] describes the next step, which entails calculation k orthonormal vectors, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system.
