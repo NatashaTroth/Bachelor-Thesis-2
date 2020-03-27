@@ -344,6 +344,38 @@
       \field{pages}{417\bibrangedash 441}
       \range{pages}{25}
     \endentry
+    \entry{jolliffe2002PCA}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=52e21501d20cb537e349fb16dca2c1f2}{%
+           family={Jolliffe},
+           familyi={J\bibinitperiod},
+           given={I.T.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{fullhash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{bibnamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authorbibnamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authornamehash}{52e21501d20cb537e349fb16dca2c1f2}
+      \strng{authorfullhash}{52e21501d20cb537e349fb16dca2c1f2}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-387-95442-2}
+      \field{series}{Springer Series in Statistics}
+      \field{title}{Principal Component Analysis: Second Edition}
+      \field{year}{2002}
+      \verb{doi}
+      \verb 10.1007/b98835
+      \endverb
+    \endentry
     \entry{DataMiningAndPredictiveAnalytics}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=fd4e2f788abbbd3b657ca576f059745a}{%
