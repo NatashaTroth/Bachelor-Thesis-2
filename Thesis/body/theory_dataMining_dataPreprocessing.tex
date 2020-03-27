@@ -4,16 +4,14 @@ To make data useful in data mining \textcite{DataMiningAndPredictiveAnalytics}[2
 
 % \textcite{advancedDataPreprocessing}[] concentrate on data preprocessing to prepare their data to extract users' behaviour on websites.
 
-\textcite{dataPreprocessingInDataMining}[45] describe dirty data as either missing data or wrong (noisy) data. The sources of these result from data entry errors, data update errors, data transmission errors and bugs. Dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method.
+\textcite{dataPreprocessingInDataMining}[45] outlines dirty data as either missing data or wrong (noisy) data. The sources of these result from data entry errors, data update errors, data transmission errors and bugs. Dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method.
 %TODO: maybe min max normalisation if can't find any other source
 
 
 \subsubsection{Noisy data}
+\textcite{dataPreparationForDataMining}[71-72] interprets outliers as objects that have low recurrence and separated from the main collection of values. These values are often mistakes and can lead to distortion of the data set. Insurance companies provide a good example of outliers. The majority of insurance claims are only for a small sum, however every so often a customer may be in need of a large claim. \textcite{han2011data}[28-29] mention, that in some cases, these uncommon events are of more interest. One of these instances is detecting unusually large payments compared to the card holders normal payments, to uncover fraudulent usage of credit cards.
 
-\textcite{DataMiningAndPredictiveAnalytics}[26-27] 
-There are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots.
-
-In order to smooth the data, \textcite{han2011data}[84] use binning, regression and outlier analysis (e.g. clustering).
+As stated by \textcite{DataMiningAndPredictiveAnalytics}[26-27], there are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots. In order to smooth the data, \textcite{han2011data}[84] use binning, regression and outlier analysis (e.g. clustering).
 
 % \begin{itemize}
 %   \item Binning: The values are sorted into bins, according to their neighbours. In smoothing by means, each value in the bin is replaced by the bin's mean (or median) value. In smoothing by boundaries, each value is substituted with either the minimum value in the bin, or the maximum, whichever value is closer.
@@ -85,7 +83,7 @@ NOT REALLY SURE WHAT TO DO HERE - LEAVE OPEN, WAIT AND SEE WHAT HAVE TO DO IN TH
 
 %should state the difference between categorical and numerical data - maybe page 333
 %page 39-41
-According to \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+As reported by \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
 
 %page 45

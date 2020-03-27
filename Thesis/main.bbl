@@ -19,6 +19,78 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
+    \entry{van2010process}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=db3cc5c3ac52a67c524d01a1f5e51928}{%
+           family={Aalst},
+           familyi={A\bibinitperiod},
+           given={W\bibnamedelima M\bibnamedelima P},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=f0aad48c374987fb20568a449a4ad8ab}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6c66f8e3207de935f6d33182b09a2e2}{%
+           family={Verbeek},
+           familyi={V\bibinitperiod},
+           given={H\bibnamedelima M\bibnamedelima W},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6305c32472e584dc2ccccfb59ebcb75a}{%
+           family={Dongen},
+           familyi={D\bibinitperiod},
+           given={B\bibnamedelima F},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+        {{un=0,uniquepart=base,hash=85a4f0d429c3ae117aa6e7a3ef99e01f}{%
+           family={Kindler},
+           familyi={K\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ba00e642bca49d56a81dfa50e91ec26}{%
+           family={G{ü}nther},
+           familyi={G\bibinitperiod},
+           given={C\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c6b745bc3b958101430b324721b5aa42}
+      \strng{fullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{bibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{authorbibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{authornamehash}{c6b745bc3b958101430b324721b5aa42}
+      \strng{authorfullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1619-1374}
+      \field{journaltitle}{Software {\&} Systems Modeling}
+      \field{number}{1}
+      \field{title}{Process mining: a two-step approach to balance between underfitting and overfitting}
+      \field{volume}{9}
+      \field{year}{2010}
+      \field{pages}{87\bibrangedash 111}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s10270-008-0106-z
+      \endverb
+    \endentry
     \entry{silhouetteRelocatingMeasure}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d0750e7d75a0173546d82f5e2a15314d}{%

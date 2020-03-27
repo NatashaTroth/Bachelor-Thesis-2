@@ -1,74 +1,77 @@
-%https://www.amazon.de/dp/069107951X/ref=sr_1_1?dchild=1&keywords=9780691079516&qid=1584700659&sr=8-1
-%  author={Bellman, R. and Rand Corporation and Karreman Mathematics Research Collection},
-\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complicated and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however will not be suitable for prediction.
+% As stated by \textcite{hartigan1975clustering}[11-12], clustering algorithms search through clusters to find a match for their data. Hartigan classifies the algorithms with the following properties:
 
-% Many fields share the same problem, that the expansion of exceedingly difficult problems have gone beyond the confines of conventional mathematical theory
-% number of variables is large
-% portent: a sign or warning that a momentous or calamitous event is likely to happen.
+% \begin{itemize}
+%   \item Sorting:
+%   \item Switching
+%   \item Joining
+%   \item Splitting
+%   \item Adding
+%   \item Searching
+% \end{itemize}
 
-%https://books.google.at/books?hl=en&lr=&id=iwbWCgAAQBAJ&oi=fnd&pg=PR9&dq=Adaptive+Control+Processes&ots=bDJ9XsIa7c&sig=Rc5D_JAZc7a4FigIbt3DmiNYhJI#v=snippet&q=curse%20of%20dimensionality&f=false
-\textcite{bellman2015adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables is however more problematic (both for visualisation and tabulation). According to \textcite{DataMiningAndPredictiveAnalytics}[93], high quality visualisation methods usually cannot depict more than five dimensions.
-%TODO: not sure if i've understood this next bit right:
-\textcite{bellman2015adaptive}[94, 198] gives the following example: Imagine if the variables of a function take on the values between 1 and 100. While a function with one variable would need to tabulate 100 values, a function with 2 variables would need to tabulate 100 x 100 = 10\textsuperscript{4} values and a function with 3 variables 10\textsuperscript{6}. Each additional variable adds more complexity.
-%...adds more complexity to the ?
-% Multidimensional variational problems require more complex methods to solve them. 
-
-% Imagine, for example, the variables are defined between 0 and 1 (e.g. u(t), where 0 $\leq$ t $\leq$ 1), at the points k(0.01). A function with one variable would require 100 values (the variable would take the numbers 0 to 100) to be tabulated. 
+%TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
 
 
+\textcite{han2011data}[363-365]
+There are several different clustering methods, each one must meet certain requirements:
+\begin{itemize}
+  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries
+  \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters, usually find clusters of spherical shape. The size and density also tend to be similar. Clusters however could be of any shape, therefore the algorithms need to be capable of detecting any shape.
+  \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+  \item Ability to handle noise
+  \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into it.
+  \item Ability to cluster high-dimensional data %there is quite a good explanation here, but not really sure if need it
+  \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+  \item Interpretability and usability of the results
+\end{itemize}
 
+% TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
 
+%TODO: check if all pages have been used - have been highlighting lines that have used
+%TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
+\textcite{han2011data}[366-396] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
 
-%TODO: FIND OUT HOW PRINCIPAL COMPONENTS ARE CALCULATED IN THE FIRST PLACE
-%TODO: FIND OUT WHO FIRST SUGGESTED IT FOR DATA MINING? ALTHOUGH DON'T THINK I'LL FIND MUCH
-According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
-As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. 
-
-%Analysis of a complex of statistical variables by harold hotelling
-%https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
-%On lines and planes of closest fit to systems of points in space
-%-pdf
-
-Principal Component Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
-Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
-\textcite{hotelling1933analysis}[5] introduces his method as \textit{the method of principal components}. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
-derivation was announced by \textcite{hotelling1933analysis}.
-
-!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data.
-
-\textcite{han2011data}[95-96] lists the first step of PCA is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-\textcite{han2011data}[95-96] describes the next step, which entails calculation k orthonormal vectors, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system.
-
-In the following step, as stated by \textcite{han2011data}[95-96], the principal components are selected. 
-
-
-%TODO: NOT SURE WHAT n IS - PAGE 1 SAYS NUMBER OF VARIABLES, BUT NOT SURE IF THAT REALLY MAKES SENCE HERE - pretty sure its dimensions, mentioned in next paragraph:
-\textcite{hotelling1933analysis}[4, 5, 15, 18] When choosing the calculated components, they are chosen with the decreasing amount of variance. Therefore, the one with the highest variance (\textit{$\gamma$\textsubscript{1}}) is chosen first. The next highest (\textit{$\gamma$\textsubscript{2}}) is chosen orthogonal to \textit{$\gamma$\textsubscript{1}} and so on, until the number \textit{n} dimensions are reached (\textit{$\gamma$\textsubscript{n}}). The components left with small variance are disregarded, since they are trivial. 
-% The method results in selecting a new set of coordinate axes which correspond to the principal axes of ellipsoids. 
-%NOT SURE IF UNDERSTOOD THIS RIGHT, END PAGE 24&25:
-% In an example, Helling selects the two of four calculated principal components with the highest variance, therefore being able to display the data on a two dimensional scatter diagram. (?)
-%10
-% Geometrically, the new coordinate axes are rotated to lie along the principal axes of the ellipsoids.
+TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT
+%TODO:maybe also look into performance comparisons
+  \paragraph{Partitioning Methods}
+  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
+  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
+  %Sentence directly copied from book p366, not sure whether to add (needs changing): There are various kinds of other criteria for judging the quality of partitions. - WHICH ARE MENTIONED LATER IN SECTION???
+  
+  Examples: k-means, k-medoids
 
 
 
-\textcite{han2011data}[93, 95-96] stated, in data mining the vectors with the lowest variance that are removed, reduce the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data. The authors suggested wavelet transforms (e.g. discrete wavelet transform (DWT)) as another method of dimensionality reduction.
+  \paragraph{Hierarchical Methods}
+  %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
+  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
+
+  COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
+
+  Examples: BIRCH, Chameleon
+%TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
+  %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
+  
+
+  \paragraph{Density-Based Methods}
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches which leads to them only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, the cluster keeps adding objects, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
+  These methods can also be used to cluster sub spaces.
+
+  Examples: DBSCAN, OPTICS, DENCLUE
+  %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
 
 
-% \textcite{han2011data}[95-96]
-% \begin{enumerate}
-%   \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-%   \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
-%   \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
-%   \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
-% \end{enumerate}
 
-%TODO: EXPLAIN MORE IN DETAIL!! ALTHOUGH - MIGHT BE DONE IN PRACTICAL PART - ASK
+  \paragraph{Grid-Based Methods}
+  %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
+  The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are performed on the grid structure. The processing time depends on the grid size (number of cells) in each dimension and not on the number of objects and is more accelerated than other clustering methods.
+  
+  Examples: STING, CLIQUE
 
-%TODO: explain what variance is, maybe also skewed data
-%variance = range, want data as spread out as we can find it
-%either, find highest variance (where points are spread out the most), or minimum error(distance to axis)
-%retain most of the information
-%since eigenvalues - each principal component ends up orthogonal
-%youtuber video: which direction will you pick, that maximizes the variance
-%page 93
+
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality, when used on a dataset with fewer than 10 attributes. Other ways to cluster high-dimensional data include \textit{subspace clustering}. Subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
+
+
+  %TODO: paper book page 542 - kohonen networks
