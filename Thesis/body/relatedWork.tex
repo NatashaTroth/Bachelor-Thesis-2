@@ -1,4 +1,25 @@
 %(500 words)
-Related Work
+% page 3 book from libraary
+%TODO: maybe also write a bit from the smart eater website about how user having to keep up with food journaling is time consuming and in effective
 
-page 3 book from libraary
+As introduced in section \ref{section:Introduction}, SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} will be a mHealth (mobile health) app, that predicts future eating crises based on the user's past behaviour. The predictions are made on smartphone sensor data, therefore reducing strenuous user input. The app will give the user content-dependent feedback, to avert a food craving episode. 
+
+%TODO: this paper also has a lot of helpful related work!!!
+%pages 1
+\textcite{AboutToEat2016Rahman} had a similar idea in their paper. Their goal is to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). Detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
+%page 2 - RELATED WORK
+%page 3:
+Rahman et al. learnt more on how people were currently tracking their meals by conducting a survey. They asked 75 people with varied ages and body sizes. 34 of 75 participants revealed, that they had never used any type of eating tracking or food journals. The remaining 41 respondents were further asked how long they used the respective tool. 48.9\% of these had used the tool for less than a month. 65 of the 75 participants revealed that they no longer use a food tracking/journalling a tool. Further questions resulted in the following revelations: 33 of the 75 respondents wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions. Ideas for interventions, included a calorie calculator, reminders to eat balanced or of calorie allowances, visualisations of previous food eaten, or a breakdown of the nutrients taken in.
+%pages 1-2:
+The authors used a variety of different sensors, which at the time, were not all available in one device. The list of utilised sensors and the recorded data are as follows:
+%pages 2,4:
+\begin{itemize}
+  \item Microsoft Band: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, etc. 
+  \item Affectiva Q sensor: measures electrodermal activity (good indicator for psychological arousal) 
+  \item Wearable microphone: chewing and swallowing sounds (for detection of current eating events)
+  \item Android smartphone application: GPS location, recording self-reports (right before eating: "Start of Eating Event" button, current emotional state when eating, intensity of desire/craving and hunger; when finished eating: "End of Eating Event" button)
+\end{itemize}
+% Through location traces, physical activity traces (step count, speed, and calorie consumption) and the time of user's gestures/movements (accelerometer and gyroscope)
+
+%pages 4-5
+In order to predict "About-to-Eat" moments, eight participants, aged 26-54, wore these four technologies for five days. The recorded data then underwent cleaning and preprocessing, feature extraction, feature selection and machine learning. During the preprocessing, it was made sure that the raw sensor data streams were not dirty and had high accuracy. Some of these steps included resampling, normalisation, recognising chewing and swallowing sounds, extracting longitude and longitude, etc. 

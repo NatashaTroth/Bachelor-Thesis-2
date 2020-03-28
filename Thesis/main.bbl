@@ -586,6 +586,61 @@
       \field{title}{Data preparation for data mining}
       \field{year}{1999}
     \endentry
+    \entry{AboutToEat2016Rahman}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8f31a6e15e1673848d8be074de78098e}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Tauhidur},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a48485736e4d160570aaff34e4c3511}{%
+           family={Czerwinski},
+           familyi={C\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15d9bbbc26f8c23efaddab1d87b26695}{%
+           family={Gilad-Bachrach},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={Ran},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56b3c34514c51725334a185edb135029}{%
+           family={Johns},
+           familyi={J\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{7f26ef5820d92c51c62a9d38db1d95ac}
+      \strng{fullhash}{a5bcc373a7f249bd18cdd6004b37b435}
+      \strng{bibnamehash}{a5bcc373a7f249bd18cdd6004b37b435}
+      \strng{authorbibnamehash}{a5bcc373a7f249bd18cdd6004b37b435}
+      \strng{authornamehash}{7f26ef5820d92c51c62a9d38db1d95ac}
+      \strng{authorfullhash}{a5bcc373a7f249bd18cdd6004b37b435}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 6th International Conference on Digital Health Conference}
+      \field{isbn}{9781450342247}
+      \field{title}{Predicting \enquote{About-to-Eat} Moments for Just-in-Time Eating Intervention}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2896338.2896359
+      \endverb
+    \endentry
     \entry{romesburg2004cluster}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=957d5b35eceef614bce9b95c97202696}{%
