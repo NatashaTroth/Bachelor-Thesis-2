@@ -5,4 +5,6 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces These three scatter plots from \textcite {DataMiningAndPredictiveAnalytics}[164-165] depict the bias-variance trade-off. The first plot portrays a low-complexity resulting in a high error rate. The second plot achieves a low error rate by using a high-complexity separator. The third graph compares the two separators. \relax }}{5}{figure.caption.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.\relax }}{4}{figure.caption.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces These three scatter plots from \textcite {DataMiningAndPredictiveAnalytics}[164-165] depict the bias-variance trade-off. The first plot portrays a low-complexity resulting in a high error rate. The second plot achieves a low error rate by using a high-complexity separator. The third graph compares the two separators. \relax }}{7}{figure.caption.2}%

@@ -700,6 +700,108 @@
       \field{pages}{53\bibrangedash 65}
       \range{pages}{13}
     \endentry
+    \entry{SmartphoneBasedStressPrediction2015}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=1ff4c6febaf001f17b3d216044f774ec}{%
+           family={St{ü}tz},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bfd8e3a4ffdb967f7ecc382664fbfaa6}{%
+           family={Kowar},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=45a778eee02d5970726fc80e7f8389d1}{%
+           family={Kager},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e39c1fab1dedba81d2ee9ceb3224669}{%
+           family={Tiefengrabner},
+           familyi={T\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a47e99adc5c2bc182b05ce4f55c99ddd}{%
+           family={Stuppner},
+           familyi={S\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c12c0b4347e3c15d5b055e61f37c918}{%
+           family={Blechert},
+           familyi={B\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=09652e32469208a0446feaedc0fe72ba}{%
+           family={Wilhelm},
+           familyi={W\bibinitperiod},
+           given={Frank\bibnamedelima H.},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82f3bf09406e7833db9862efc39a3d34}{%
+           family={Ginzinger},
+           familyi={G\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=5abb1d77d80f46918651a5bbc5ee8371}{%
+           family={Ricci},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=188eeff74b94e9549a57c14cf945b8ff}{%
+           family={Bontcheva},
+           familyi={B\bibinitperiod},
+           given={Kalina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d75ff611ebbdbe897bc691814fbd6082}{%
+           family={Conlan},
+           familyi={C\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+        {{hash=21e78b9abba5893ed23d0c39720b97a3}{%
+           family={Lawless},
+           familyi={L\bibinitperiod},
+           given={S{é}amus},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{f4809d1af2c4646ab1bad5c3be914f5c}
+      \strng{fullhash}{f4a6abfc93e0b73b1279554a646c3953}
+      \strng{bibnamehash}{f4a6abfc93e0b73b1279554a646c3953}
+      \strng{authorbibnamehash}{f4a6abfc93e0b73b1279554a646c3953}
+      \strng{authornamehash}{f4809d1af2c4646ab1bad5c3be914f5c}
+      \strng{authorfullhash}{f4a6abfc93e0b73b1279554a646c3953}
+      \strng{editorbibnamehash}{eea5dfda948a2ef103a0c370aee203ac}
+      \strng{editornamehash}{634300cd49419dfc9d76cdc3fd4ecce2}
+      \strng{editorfullhash}{eea5dfda948a2ef103a0c370aee203ac}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Smartphone usage has tremendously increased and most users keep their smartphones close throughout the day. Smartphones have a broad variety of sensors, that could automatically map and track the user's life and behaviour. In this work we investigate whether automatically collected smartphone usage and sensor data can be employed to predict the experienced stress levels of a user using a customized brief version of the Perceived Stress Scale (PSS). To that end we have conducted a user study in which smartphone data and stress (as measured by the PSS seven times a day) were recorded for two weeks. We found significant correlations between stress scores and smartphone usage as well as sensor data, pointing to innovative ways for automatic stress measurements via smartphone technology. Stress is a prevalent risk factor for multiple diseases. Thus accurate and efficient prediction of stress levels could provide means for targeted prevention and intervention.}
+      \field{booktitle}{User Modeling, Adaptation and Personalization}
+      \field{isbn}{978-3-319-20267-9}
+      \field{title}{Smartphone Based Stress Prediction}
+      \field{year}{2015}
+      \field{pages}{240\bibrangedash 251}
+      \range{pages}{12}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

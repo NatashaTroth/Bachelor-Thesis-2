@@ -400,9 +400,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex
-INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
-INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/./images/windowSizePerformance.png
+INPUT ./images/windowSizePerformance.png
+INPUT ./images/windowSizePerformance.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/./images/biasTradeOff.png
 INPUT ./images/biasTradeOff.png
 INPUT ./images/biasTradeOff.png
