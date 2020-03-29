@@ -91,6 +91,75 @@
       \verb 10.1007/s10270-008-0106-z
       \endverb
     \endentry
+    \entry{ClusterPassivelySensedData2018}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=6fd4a34cc17aed930b22aee6fbd0435c}{%
+           family={{Ameko}},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=408557faac3d5186a3a222d0f46c3f50}{%
+           family={{Cai}},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3dbaa6e5b268dddfc0dab3e13937982f}{%
+           family={{Boukhechba}},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b113f01805a167606c1fdfef7b786bdc}{%
+           family={{Daros}},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e98c43a461a1884750e3ffa2d7981c1}{%
+           family={{Chow}},
+           familyi={C\bibinitperiod},
+           given={P.\bibnamedelimi I.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d762e3168ffa42b7f5f6d98497121972}{%
+           family={{Teachman}},
+           familyi={T\bibinitperiod},
+           given={B.\bibnamedelimi A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33d527fc13150011c1c2265498ae73a}{%
+           family={{Gerber}},
+           familyi={G\bibinitperiod},
+           given={M.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94df7cb8ab19d5846fdf021996bddd76}{%
+           family={{Barnes}},
+           familyi={B\bibinitperiod},
+           given={L.\bibnamedelimi E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d97f309c83d01e9bf2353055e7a03918}
+      \strng{fullhash}{a973d4e5e94bc1629b5b79547fd0a136}
+      \strng{bibnamehash}{a973d4e5e94bc1629b5b79547fd0a136}
+      \strng{authorbibnamehash}{a973d4e5e94bc1629b5b79547fd0a136}
+      \strng{authornamehash}{d97f309c83d01e9bf2353055e7a03918}
+      \strng{authorfullhash}{a973d4e5e94bc1629b5b79547fd0a136}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE EMBS International Conference on Biomedical Health Informatics (BHI)}
+      \field{title}{Cluster-based approach to improve affect recognition from passively sensed data}
+      \field{year}{2018}
+      \field{pages}{434\bibrangedash 437}
+      \range{pages}{4}
+    \endentry
     \entry{silhouetteRelocatingMeasure}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d0750e7d75a0173546d82f5e2a15314d}{%
@@ -559,6 +628,50 @@
       \verb 10.1080/14786440109462720
       \endverb
     \endentry
+    \entry{pius2018automatic}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fb111f1811570d95e4773dbd4b1b006c}{%
+           family={Pius\bibnamedelima Owoh},
+           familyi={P\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Nsikak},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1496e67ebd0460d5bdee59137507e2ee}{%
+           family={Mahinderjit\bibnamedelima Singh},
+           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Manmeet},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f131379c288a6c95eeb95018255d5de3}{%
+           family={Zaaba},
+           familyi={Z\bibinitperiod},
+           given={Zarul\bibnamedelima Fitri},
+           giveni={Z\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{dec98bc75d17589c05e680f9fe3415d6}
+      \strng{fullhash}{dec98bc75d17589c05e680f9fe3415d6}
+      \strng{bibnamehash}{dec98bc75d17589c05e680f9fe3415d6}
+      \strng{authorbibnamehash}{dec98bc75d17589c05e680f9fe3415d6}
+      \strng{authornamehash}{dec98bc75d17589c05e680f9fe3415d6}
+      \strng{authorfullhash}{dec98bc75d17589c05e680f9fe3415d6}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{7}
+      \field{title}{Automatic Annotation of Unlabeled Data from Smartphone-Based Motion and Location Sensors}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{pages}{2134}
+      \range{pages}{1}
+    \endentry
     \entry{dataPreparationForDataMining}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b2ecaa7a0ee1ecf23d81ac45279295bd}{%
@@ -699,6 +812,39 @@
       \field{year}{1987}
       \field{pages}{53\bibrangedash 65}
       \range{pages}{13}
+    \endentry
+    \entry{alcoholCravingPrediction}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=751441db0bd95822976d5c8d5e31c123}{%
+           family={{Sornbootnark}},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=87e910468ee3af5f666a5d703102fd80}{%
+           family={{Khoenkaw}},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \strng{fullhash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \strng{bibnamehash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \strng{authorbibnamehash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \strng{authornamehash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \strng{authorfullhash}{3501ddaffe3cb420b12a6b44bfc5648f}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 Joint International Conference on Digital Arts, Media and Technology with ECTI Northern Section Conference on Electrical, Electronics, Computer and Telecommunications Engineering (ECTI DAMT-NCON)}
+      \field{title}{Excessive Alcohol Craving Prediction Algorithm Using Smartphone Accelerometer Sensor}
+      \field{year}{2019}
+      \field{pages}{335\bibrangedash 338}
+      \range{pages}{4}
     \endentry
     \entry{SmartphoneBasedStressPrediction2015}{inproceedings}{}
       \name{author}{8}{}{%

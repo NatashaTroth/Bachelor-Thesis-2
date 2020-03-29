@@ -6,7 +6,7 @@ As introduced in section \ref{section:Introduction}, SmartEater \footnote{\url{h
 
 %TODO: this paper also has a lot of helpful related work!!!
 %pages 1
-%in total, more or less all pages were used
+%in total, more or less all pages were used - therefore no pages
 \textcite{AboutToEat2016Rahman} had a similar idea in their paper. Their goal is to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). Detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
 %page 2 - RELATED WORK
 %page 3:
@@ -29,12 +29,12 @@ In the feature extraction step, two parameters are used on the processed sensor 
 % In the feature selection step, the location features were dropped, since they merely represented noise.
 %TODO: page 5 (left side) - explains what features were good and which ones weren't relevant, might be good to mention somewhere else in the paper
 In the feature selection step, the most relevant features were selected (e.g. the location features were not beneficial and merely represented noise).
-
 In order to train an "About-toEat" moment classifier, signal processing and machine learning were used on the sensor streams. The classifier was trained to recognise the two classes "About-to-Eat" and "Not-About-to-Eat"  The average recall of this model resulted a a recall, precision and F score of 0.77, 0.67 and 0.69 (respectively).
 
 According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
 
-The classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarser ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
+
+\textcite{AboutToEat2016Rahman}'s classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarser ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
 
 \begin{figure*}[h]
   \centering
@@ -48,8 +48,7 @@ The authors further claim, that both models could be improved by incorporating p
 
 
 
-
-\textcite{SmartphoneBasedStressPrediction2015}[240, 242, ..] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. The following data was collected:
+\textcite{SmartphoneBasedStressPrediction2015}[240, 242-249] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. The following data was collected:
 \begin{itemize}
   \item Activity: whether the device on the user is on foot, on a bike, in a vehicle, tilting, still or unknown.
   \item App Usage: apps for information, system, health, entertainment, social, or work
@@ -62,16 +61,12 @@ The authors further claim, that both models could be improved by incorporating p
   \item Screen Activity: duration of a user session (between screen power on and off)
 \end{itemize}
 
-15 participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionaires (at set times), which included the perceived stress score (PSS) and queried them on their current stress status. The stress levels were predicted by WEKA'S machine learning algorithms. The mean absolute error (MAE) and Person correlation were used for the evaluation.The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it easier to spot longer periods of high stress than shorter ones. 
-
-customised brief version of the Perceived Stress Scale (PSS)
-
+15 participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionnaires (at set times), which included the perceived stress score (PSS) and queried them on their current stress status. The stress levels were predicted by WEKA'S machine learning algorithms. The mean absolute error (MAE) and Person correlation were used for the evaluation.The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it easier to spot longer periods of high stress than shorter ones. 
 This paper also a team publication featured in the research project from which SmartEater was developed.
 
+In their experiment, \textcite{ClusterPassivelySensedData2018} intend to predict user's negative affect states, in order to provide targeted just-in-time mental health interventions. 65 students participated in the study. Through a smartphone app, GPS location data, accelerometer (activity) data, phone calls, SMS and ecological momentary assessments (EMA) data were collected and used to cluster participants according to their behavioural profiles. Grouping the participants this way seemed to improve the predictive model's performance.
 
 
 
-
-
-
-
+Other related work: 
+\textcite{pius2018automatic} use the k-means clustering algorithm to create automatic annotation of unlabelled smartphone sensor data, to observe sensitive location information of mobile crowd sensing users. \textcite{alcoholCravingPrediction} who use smartphone sensor data (e.g. accelerometer) to predict excessive alcohol consumption, in order to replace breathalysers. Their algorithm produced 100\% accuracy, however with 15 minute lags.
