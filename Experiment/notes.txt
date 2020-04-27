@@ -12,3 +12,7 @@ with panda - missing values were just empty, so could be found with the pandas i
 Make sure no unexpected values
 
 https://www.geeksforgeeks.org/python-pandas-dataframe/
+
+replaced wrong value types (non numbers) as missing data
+
+

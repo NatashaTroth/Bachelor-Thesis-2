@@ -6,15 +6,8 @@ from pathlib import Path
 
 oneHourFiles = DataFiles(
     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
-# print(oneHourFiles.dataFiles)
-# oneHourFiles.replaceNonIntWithNaN()
-oneHourFiles.printFiles()
-oneHourFiles.cleanData()
-# oneHourFiles.cleanData()
-oneHourFiles.printFiles()
-
-# print(oneHourFiles.dataFiles[0].df["NOTIF1"])
-
+print(oneHourFiles.dataFiles)
+oneHourFiles.replaceNonIntWithNaN()
 
 # threeHourFiles = DataFiles(
 #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/3h")

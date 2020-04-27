@@ -9,12 +9,36 @@ class DataFiles:
         self.dataFiles = self.fetchDataFiles(directoryPath)
 
     def fetchDataFiles(self, directoryPath):
+        print("here 1")
         pathlist = Path(directoryPath).glob('**/*.csv')
         listOfFiles = []
         for path in pathlist:
             listOfFiles.append(DataFile(str(path)))
         return listOfFiles
 
-    def replaceNonIntWithNaN(self):
+    def printFiles(self):
+        for dataFile in self.dataFiles:
+            dataFile.printFile()
+
+    def cleanData(self):
+        # try:
         for dataFile in self.dataFiles:
             dataFile.replaceNonIntWithNaN()
+            # dataFile.replaceMissingValuesZero()
+            dataFile.replaceMissingValuesInterpolate('linear')
+            # dataFile.replaceMissingValueMedian()
+            # dataFile.replaceMissingValueMean()
+            # dataFile.replaceMissingValues()
+        # except:
+        #     print("Something went wrong in the \"cleanData\" function.")
+
+    # def test(self):
+    #     for dataFile in self.dataFiles:
+    #         dataFile.replaceMissingValueMean()
+    # Data cleaning
+
+    # def replaceNonIntWithNaN(self):
+    #     for dataFile in self.dataFiles:
+    #         dataFile.replaceNonIntWithNaN()
+
+    # def handle
