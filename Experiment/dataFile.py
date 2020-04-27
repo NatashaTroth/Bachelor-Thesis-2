@@ -34,7 +34,20 @@ class DataFile:
                     self.df.loc[counter, column] = np.nan
                 counter += 1
 
+    def removeEmptyRows(self):
+        print("in remove empty rows")
+        self.df.dropna(axis=0, how='all',  inplace=True)
+
+        # thresh=None,subset=None,
+        # Axis: Specifies to drop by row or column. 0 means row, 1 means column.
+        # How: Accepts one of two possible values: any or all. This will either drop an axis which is completely empty (all), or an axis with even just a single empty cell (any).
+        # Thresh: Here's an interesting one: thresh accepts an integer, and will drop an axis only if that number threshold of empty cells is breached.
+        # Subset: Accepts an array of which axis' to consider, as opposed to considering all by default.
+        # Inplace: If you haven't come across inplace yet, learn this now: changes will NOT be made to the DataFrame you're touching unless this is set to True. It's False by default.
+
+
 # ------------REPLACE MISSING VALUES-------------
+
     def replaceMissingValuesZero(self):
         print("in replace missing values zero")
         for column in self.df:

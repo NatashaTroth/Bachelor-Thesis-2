@@ -24,11 +24,13 @@ class DataFiles:
         # try:
         for dataFile in self.dataFiles:
             dataFile.replaceNonIntWithNaN()
+            dataFile.removeEmptyRows()
+            # ----ReplaceMissingValues----:
             # dataFile.replaceMissingValuesZero()
-            dataFile.replaceMissingValuesInterpolate('linear')
+            # dataFile.replaceMissingValuesInterpolate('linear')
             # dataFile.replaceMissingValueMedian()
-            # dataFile.replaceMissingValueMean()
-            # dataFile.replaceMissingValues()
+            dataFile.replaceMissingValueMean()
+            # dataFile.replaceMissingValuesCustom()
         # except:
         #     print("Something went wrong in the \"cleanData\" function.")
 

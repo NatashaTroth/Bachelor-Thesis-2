@@ -16,3 +16,5 @@ https://www.geeksforgeeks.org/python-pandas-dataframe/
 replaced wrong value types (non numbers) as missing data
 
 
+https://hackersandslackers.com/pandas-dataframe-drop/
+
