@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from dataFile import DataFile
 from pathlib import Path
+import sys
 
 
 class DataFiles:
@@ -21,18 +22,19 @@ class DataFiles:
             dataFile.printFile()
 
     def cleanData(self):
-        # try:
-        for dataFile in self.dataFiles:
-            dataFile.replaceNonIntWithNaN()
-            dataFile.removeEmptyRows()
-            # ----ReplaceMissingValues----:
-            # dataFile.replaceMissingValuesZero()
-            # dataFile.replaceMissingValuesInterpolate('linear')
-            # dataFile.replaceMissingValueMedian()
-            dataFile.replaceMissingValueMean()
-            # dataFile.replaceMissingValuesCustom()
-        # except:
-        #     print("Something went wrong in the \"cleanData\" function.")
+        try:
+            for dataFile in self.dataFiles:
+                dataFile.replaceNonIntWithNaN()
+                dataFile.removeEmptyRows()
+                # ----ReplaceMissingValues----:
+                # dataFile.replaceMissingValuesZero()
+                # dataFile.replaceMissingValuesInterpolate('linear')
+                # dataFile.replaceMissingValueMedian()
+                dataFile.replaceMissingValueMean()
+                # dataFile.replaceMissingValuesCustom()
+        except:
+            print(
+                "Something went wrong in the cleanData function. ", sys.exc_info()[0])
 
     # def test(self):
     #     for dataFile in self.dataFiles:
