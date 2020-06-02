@@ -24,13 +24,16 @@ class DataFiles:
     def cleanData(self):
         try:
             for dataFile in self.dataFiles:
+                # dataFile.cleanData()
                 dataFile.replaceNonIntWithNaN()
-                dataFile.removeEmptyRows()
+                print("just converted to nan")
+                dataFile.removeRowsWithWrongValues()
+                # dataFile.removeEmptyRows()
                 # ----ReplaceMissingValues----:
                 # dataFile.replaceMissingValuesZero()
                 # dataFile.replaceMissingValuesInterpolate('linear')
                 # dataFile.replaceMissingValueMedian()
-                dataFile.replaceMissingValueMean()
+                # dataFile.replaceMissingValueMean()
                 # dataFile.replaceMissingValuesCustom()
         except:
             print(

@@ -12,11 +12,20 @@ class DataFile:
     def printFile(self):
         print(self.df)
 
+    # def cleanData(self):
+    #     self.
+
     def replaceNonIntWithNaN(self):
         # print("FILE:" + self.filePath)
         for column in self.df:
             if(not column.startswith("TIME")):
                 self.replaceNonIntWithNaNPerColumn(column)
+
+    def removeRowsWithWrongValues(self):
+        print("dropping rows with empty or nan fields")
+        # print("dropped rows with empty or nan fields")
+        # print(self.df.dropna())
+        return self.df.dropna(inplace=True)
 
     def replaceNonIntWithNaNPerColumn(self, column):
         counter = 0

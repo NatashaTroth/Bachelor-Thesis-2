@@ -32,5 +32,6 @@
     "typescriptreact",
     "yaml",
     "yml"
-  ]
+  ],
+  "python.pythonPath": "/Users/natashatroth/opt/anaconda3/bin/python"
 }
