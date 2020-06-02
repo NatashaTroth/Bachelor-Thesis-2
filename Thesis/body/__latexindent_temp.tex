@@ -1,72 +1,82 @@
-%(500 words)
-% page 3 book from libraary
-%TODO: maybe also write a bit from the smart eater website about how user having to keep up with food journaling is time consuming and in effective
+% (500 words)
+%LEITFADEN:
+% Die Einleitung dient der Einführung in das Thema, indem eine spezifische Fragestellung (For- schungsfrage) herausgearbeitet, plausibel formuliert, differenziert und begründet wird. Die methodische Vorgehensweise („Wie wird das Thema bearbeitet?“) muss begründet und auf das Thema und die Frage- und Problemstellung der Arbeit bezogen werden. Des Weiteren sollte in der Einleitung oder in einem gesonderten Kapitel (Verwandte Arbeiten) die zur Bearbeitung herangezogene wissenschaftliche Literatur sowie die spezifische Auswahl von Quellen und Texten dargestellt und erläutert werden.
 
-As introduced in section \ref{section:Introduction}, SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} will be a mHealth (mobile health) app, that predicts future eating crises based on the user's past behaviour. The predictions are made on smartphone sensor data, therefore reducing strenuous user input. The app will give the user content-dependent feedback, to avert a food craving episode. 
 
-%TODO: this paper also has a lot of helpful related work!!!
-%pages 1
-%in total, more or less all pages were used - therefore no pages
-\textcite{AboutToEat2016Rahman} had a similar idea in their paper. Their goal is to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). Detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
-%page 2 - RELATED WORK
-%page 3:
-Rahman et al. learnt more on how people were currently tracking their meals by conducting a survey. They asked 75 people with varied ages and body sizes. 34 of 75 participants revealed, that they had never used any type of eating tracking or food journals. The remaining 41 respondents were further asked how long they used the respective tool. 48.9\% of these had used the tool for less than a month. 65 of the 75 participants revealed that they no longer use a food tracking/journalling a tool. Further questions resulted in the following revelations: 33 of the 75 respondents wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions. Ideas for interventions, included a calorie calculator, reminders to eat balanced or of calorie allowances, visualisations of previous food eaten, or a breakdown of the nutrients taken in.
-%pages 1-2:
-The authors used a variety of different sensors, which at the time, were not all available in one device. The list of utilised sensors and the recorded data are as follows:
-%pages 2,4:
+
+(\textbf{Todo: adapt to experiment})
+
+%TODO: also add a paper on eating crises...
+% the book
+\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data.
+% (17) This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
+Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
+
+There are several different methods to create clustering. \textcite{han2011data}[364, 366-367, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhatten distance measures). 
+The authors divide the clustering algorithms into the following categories:
 \begin{itemize}
-  \item Microsoft Band: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, etc. 
-  \item Affectiva Q sensor: measures electrodermal activity (good indicator for psychological arousal) 
-  \item Wearable microphone: chewing and swallowing sounds (for detection of current eating events)
-  \item Android smartphone application: GPS location, recording self-reports (right before eating: "Start of Eating Event" button, current emotional state when eating, intensity of desire/craving and hunger; when finished eating: "End of Eating Event" button)
-\end{itemize}
-% Through location traces, physical activity traces (step count, speed, and calorie consumption) and the time of user's gestures/movements (accelerometer and gyroscope)
-
-%pages 4-5
-In order to predict "About-to-Eat" moments, eight participants, aged 26-54, wore these four technologies for five days. The recorded data then underwent cleaning and preprocessing, feature extraction, feature selection and machine learning. During the preprocessing, it was made sure that the raw sensor data streams were not dirty and had high accuracy. Some of these steps included resampling, normalisation, recognising chewing and swallowing sounds, extracting longitude and longitude, etc. 
-In the feature extraction step, two parameters are used on the processed sensor time series to create windows. Firstly, the feature extraction window size parameter regulates the time duration in a specific window. While a short window duration could catch immediate characteristics in the sensor time series, a coarse one could be used for long term trends. The authors used a variety of window sizes, varying from 5 to 120 minutes. The prediction model results would decide the best window. The second parameter, the window shift size, establishes the time duration between two neighbouring windows, meaning window \textit{n} is shifted one minute compared to window \textit{(n - 1)}. A constant shift of one minutes was used for all window sizes. Statistical functions (e.g. min, max, mean, standard deviation, etc.) were used to extract a total of 158 window-level features. Two features were added to the sensor streams: current time (minutes since the start of the day) and time since the last eating event (minutes) and number of eating events in that day.
-% Correlation-based Feature Selection (CFS) was used to select the 
-% In the feature selection step, the location features were dropped, since they merely represented noise.
-%TODO: page 5 (left side) - explains what features were good and which ones weren't relevant, might be good to mention somewhere else in the paper
-In the feature selection step, the most relevant features were selected (e.g. the location features were not beneficial and merely represented noise).
-In order to train an "About-toEat" moment classifier, signal processing and machine learning were used on the sensor streams. The classifier was trained to recognise the two classes "About-to-Eat" and "Not-About-to-Eat"  The average recall of this model resulted a a recall, precision and F score of 0.77, 0.67 and 0.69 (respectively).
-
-According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
-
-
-\textcite{AboutToEat2016Rahman}'s classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarser ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/windowSizePerformance.png}
-  \caption{This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.}
-  \label{figure:windowSize}
-\end{figure*}
-
-The performance for the "Time until Next Eating Event" model gained a correlation coefficient of 0.49. The most fitting feature extraction window size was assessed, the best performance was reached with a window size of 100 minutes.
-The authors further claim, that both models could be improved by incorporating person-dependent data from the target user to the models (e.g. person-specific eating pattern, lifestyle).
-
-
-
-\textcite{SmartphoneBasedStressPrediction2015}[240, 242-249] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. The following data was collected:
-\begin{itemize}
-  \item Activity: whether the device on the user is on foot, on a bike, in a vehicle, tilting, still or unknown.
-  \item App Usage: apps for information, system, health, entertainment, social, or work
-  \item Network Traffic: amount of network traffic (received and transmitted)
-  \item Reboot Activity: power on and off events
-  \item Calls: min, max and mean dB-values collected by the microphone
-  \item Light: environment brightness
-  \item Messages: timestamps of received messages
-  \item Noise exposure: min, max and mean dB-values
-  \item Screen Activity: duration of a user session (between screen power on and off)
+	\item Partitioning methods (examples: k-means, k-medoids)
+	\item Hierarchical methods (examples: BIRCH, Chameleon)
+	\item Density-based methods (examples: DBSCAN, OPTICS)
+	\item Grid-based methods (examples: STING, CLIQUE)
 \end{itemize}
 
-15 participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionnaires (at set times), which included the perceived stress score (PSS) and queried them on their current stress status. The stress levels were predicted by WEKA'S machine learning algorithms. The mean absolute error (MAE) and Person correlation were used for the evaluation.The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it easier to spot longer periods of high stress than shorter ones. 
-This paper also a team publication featured in the research project from which SmartEater was developed.
-
-In their experiment, \textcite{ClusterPassivelySensedData2018} intend to predict user's negative affect states, in order to provide targeted just-in-time mental health interventions. 65 students participated in the study. Through a smartphone app, GPS location data, accelerometer (activity) data, phone calls, SMS and ecological momentary assessments (EMA) data were collected and used to cluster participants according to their behavioural profiles. Grouping the participants this way seemed to improve the predictive model's performance.
 
 
 
-Other related work: 
-\textcite{pius2018automatic} use the k-means clustering algorithm to create automatic annotation of unlabelled smartphone sensor data, to observe sensitive location information of mobile crowd sensing users. \textcite{alcoholCravingPrediction} who use smartphone sensor data (e.g. accelerometer) to predict excessive alcohol consumption, in order to replace breathalysers. Their algorithm produced 100\% accuracy, however with 15 minute lags.
+%Related work
+%Evidence Analysis to Basis of Clustering
+\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
+% The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
+
+%Convex-Hull & DBSCAN Clustering to Predict Future Weather
+% Another example where clustering was implemented was by /textcite. 
+\textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
+
+%end related work
+
+% Talk about SmartEater.
+SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data.  With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
+
+\begin{enumerate}
+	\item Background volume
+	\item Relative movement of the smartphone (gyro and accel)
+	\item Time and duration of phone calls (without storing the numbers)
+	\item Time of messages (e.g. SMS, WhatsApp) (without collecting identifying information such as content, addresses, numbers)
+	\item Screen activity (so-called touch events)
+	\item Screen-on-time (illuminated display)
+	\item Ambient brightness
+	\item Data volume per unit of time (summary value of all smartphone activities on the internet)
+	\item Switch-on and switch-off times of the smartphone
+\end{enumerate}
+
+
+%cite smarteater website  - as footnote
+This sensor data will be recorded for different lengths of time (\textbf{TODO: name lengths of time when experiment is complete}). It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
+
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with data sets that are not high-dimensional and have less than 10 attributes. Since the SmartEater data set only has 9 dimensions, it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+
+%book page 93
+To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will use principal component analysis (PCA) to reduce the dimensionality.
+%Visualizing Data using t-SNE p2579 (abstract!)
+Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the data set in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
+
+The clustering methods will be implemented using a Python machine learning platform or library (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}, scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}). Next, these will be implemented on the other time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
+\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters are.
+
+% Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
+
+% (e.g. Silhouette Coefficient \autocite{kaufman2009finding}[87])
+
+The thesis will be structured as follows: The first section will briefly present existing work relating to this subject. The following chapter will concentrate on the theory of data mining and cluster analysis. After covering these topics, the next section will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
+
+
+% \textbf{TODO: !!!WRITE ABOUT EATING DISORDERS..!!, ALSO WRITE ABOUT MOBILE HEALTH APPS} 
+%TODO: from smartphone based stress prediction (paper bei stütz, ginzinger):
+% Stress has become a major concern, as stress-related diseases cause a decrease in life expectancy and in the quality of life, as well as an increase in the number of sick leaves. Stress is a risk factor for a multitude of diseases, also because stress is closely linked to unhealthy behaviour, such as excessive consumption of food and alcoholic beverages [1,21].
+%1: 1. Adam, T.C., Epel, E.S.: Stress, eating and the reward system. Physiology & behavior 91(4), 449–458 (2007)
+%21: 21. Schwabe, L., Dickinson, A., Wolf, O.T.: Stress, habits, and drug addiction: a psychoneuroendocrinological perspective. Experimental and clinical psychopharmacology 19(1), 53 (2011)
+
+%e.g. like: Predicting “About-to-Eat” Moments for Just-in-Time Eating Intervention
+%Snoring paper abstract: Mobile Health broadens the accessibility to healthcare applications using mobile devices, such as smartphones.
+

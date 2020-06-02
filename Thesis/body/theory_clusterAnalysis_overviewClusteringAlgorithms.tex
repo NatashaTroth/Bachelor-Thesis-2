@@ -12,17 +12,16 @@
 %TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
 
 
-\textcite{han2011data}[363-365]
-There are several different clustering methods, each one must meet certain requirements:
+\textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
 \begin{itemize}
-  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries
+  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
-  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters, usually find clusters of spherical shape. The size and density also tend to be similar. Clusters however could be of any shape, therefore the algorithms need to be capable of detecting any shape.
+  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
-  \item Ability to handle noise
+  \item Ability to handle noise (see section \ref{section:NoisyData})
   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
-  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into it.
-  \item Ability to cluster high-dimensional data %there is quite a good explanation here, but not really sure if need it
+  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+  \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
   \item Interpretability and usability of the results
 \end{itemize}
@@ -33,7 +32,8 @@ There are several different clustering methods, each one must meet certain requi
 %TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
 \textcite{han2011data}[366-396] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
 
-\textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
+(\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
+% \textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
 %TODO:maybe also look into performance comparisons
   \paragraph{Partitioning Methods}
   Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
@@ -46,9 +46,9 @@ There are several different clustering methods, each one must meet certain requi
 
   \paragraph{Hierarchical Methods}
   %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
-  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
+  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
 
-  COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
+  % todo COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
 
   Examples: BIRCH, Chameleon
 %TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
@@ -56,13 +56,13 @@ There are several different clustering methods, each one must meet certain requi
   
 
   \paragraph{Density-Based Methods}
-  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches which leads to them only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, the cluster keeps adding objects, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
   These methods can also be used to cluster sub spaces.
 
   Examples: DBSCAN, OPTICS, DENCLUE
   %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
 
-
+ 
 
   \paragraph{Grid-Based Methods}
   %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
@@ -70,8 +70,8 @@ There are several different clustering methods, each one must meet certain requi
   
   Examples: STING, CLIQUE
 
-
-\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality, when used on a dataset with fewer than 10 attributes. Other ways to cluster high-dimensional data include \textit{subspace clustering}. Subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
+  \vspace{5mm} %5mm vertical space
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering.
 
 
   %TODO: paper book page 542 - kohonen networks

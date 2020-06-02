@@ -11,23 +11,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Theory/Literature Review}{6}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Data mining}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Data Mining}{6}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Data preprocessing}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{7}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Noisy data}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Noisy Data}{8}{subsubsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Missing values}{8}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Missing Values}{8}{subsubsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.3}Normalisation}{9}{subsubsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.4}Data transformation}{9}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4}Data Transformation}{9}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Dimensionality reduction}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Dimensionality Reduction}{10}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Cluster Analysis}{11}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Overview of clustering algorithms}{12}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1}Overview of Clustering Algorithms}{12}{subsubsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.1.1}Partitioning Methods}{13}{paragraph.3.4.1.1}%
 \defcounter {refsection}{0}\relax 
@@ -37,7 +37,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.1.4}Grid-Based Methods}{14}{paragraph.3.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Evaluating clustering results}{14}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}Evaluating Clustering Results}{14}{subsubsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.1}Assessment of the cluster tendency}{15}{paragraph.3.4.2.1}%
 \defcounter {refsection}{0}\relax 
@@ -45,21 +45,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.4.2.3}Establishing the number of clusters}{16}{paragraph.3.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Data Visualisation with t-SNE ?????}{17}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Data Visualisation with t-SNE}{17}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Experiment/Method?}{17}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the data set}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the Data Set}{17}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Clustering}{17}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering after dimensionality reduction}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering after Dimensionality Reduction}{17}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of clusters of different time lengths}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of clusters of different time lengths}{17}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical evaluation}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation}{17}{subsubsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}User evaluation}{17}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2}User Evaluation}{17}{subsubsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Discussion}{17}{section.5}%
 \defcounter {refsection}{0}\relax 

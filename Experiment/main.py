@@ -10,7 +10,6 @@ oneHourFiles = DataFiles(
 # oneHourFiles.replaceNonIntWithNaN()
 oneHourFiles.printFiles()
 oneHourFiles.cleanData()
-# oneHourFiles.cleanData()
 oneHourFiles.printFiles()
 
 # print(oneHourFiles.dataFiles[0].df["NOTIF1"])

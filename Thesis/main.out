@@ -1,24 +1,24 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Related work}{}% 2
 \BOOKMARK [1][-]{section.3}{Theory/Literature Review}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Data mining}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Data preprocessing}{section.3}% 5
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Noisy data}{subsection.3.2}% 6
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Missing values}{subsection.3.2}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Data Mining}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Data Preprocessing}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Noisy Data}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Missing Values}{subsection.3.2}% 7
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Normalisation}{subsection.3.2}% 8
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Data transformation}{subsection.3.2}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Dimensionality reduction}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Data Transformation}{subsection.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Dimensionality Reduction}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.4}{Cluster Analysis}{section.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Overview of clustering algorithms}{subsection.3.4}% 12
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Evaluating clustering results}{subsection.3.4}% 13
-\BOOKMARK [2][-]{subsection.3.5}{Data Visualisation with t-SNE ?????}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Overview of Clustering Algorithms}{subsection.3.4}% 12
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Evaluating Clustering Results}{subsection.3.4}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Data Visualisation with t-SNE}{section.3}% 14
 \BOOKMARK [1][-]{section.4}{Experiment/Method?}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Preparation of the data set}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Preparation of the Data Set}{section.4}% 16
 \BOOKMARK [2][-]{subsection.4.2}{Clustering}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.3}{Clustering after dimensionality reduction}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.4}{Comparison and evaluation of clusters of different time lengths}{section.4}% 19
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Mathmatical evaluation}{subsection.4.4}% 20
-\BOOKMARK [3][-]{subsubsection.4.4.2}{User evaluation}{subsection.4.4}% 21
+\BOOKMARK [2][-]{subsection.4.3}{Clustering after Dimensionality Reduction}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.4}{Comparison and Evaluation of clusters of different time lengths}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Mathmatical Evaluation}{subsection.4.4}% 20
+\BOOKMARK [3][-]{subsubsection.4.4.2}{User Evaluation}{subsection.4.4}% 21
 \BOOKMARK [1][-]{section.5}{Discussion}{}% 22
 \BOOKMARK [1][-]{section.6}{Conclusion}{}% 23
 \BOOKMARK [1][-]{section*.3}{Appendices}{}% 24
