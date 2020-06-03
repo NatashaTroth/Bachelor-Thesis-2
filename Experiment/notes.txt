@@ -18,3 +18,9 @@ replaced wrong value types (non numbers) as missing data
 
 https://hackersandslackers.com/pandas-dataframe-drop/
 
+
+remove all row with missing/wrong values - left 3279 from 8283 - from 1h
+
+concatenated all to 1 dataframe
+
+minmax scaler from sklearn used for normalization
