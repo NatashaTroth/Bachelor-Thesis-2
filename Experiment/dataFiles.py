@@ -10,15 +10,12 @@ class DataFiles:
         self.dataFiles = self.fetchDataFiles(directoryPath)
 
     def fetchDataFiles(self, directoryPath):
-        print("here 1")
+        # print("here 1")
         pathlist = Path(directoryPath).glob('**/*.csv')
         listOfFiles = []
         for path in pathlist:
             listOfFiles.append(DataFile(str(path)))
         return listOfFiles
-
-    def concatenateDataFiles(self):
-        return pd.concat(self.dataFiles)
 
     def printFiles(self):
         for dataFile in self.dataFiles:

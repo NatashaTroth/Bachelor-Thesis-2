@@ -2,29 +2,66 @@ import pandas as pd
 import numpy as np
 from sklearn import preprocessing
 from sklearn.preprocessing import MinMaxScaler
-
+from pathlib import Path
+import sys
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
 
 class DataFile:
-    def __init__(self, filePath):
-        self.df = pd.read_csv(filePath)
-        self.filePath = filePath
+    def __init__(self, directoryPath):
+        # self.df = pd.read_csv(filePath)
+        # self.filePath = filePath
+        self.df = self.createDataFrame(directoryPath)
+
+    def createDataFrame(self, directoryPath):
+        print("in createDataFrame")
+        pathlist = Path(directoryPath).glob('**/*.csv')
+        listOfFiles = []
+        for path in pathlist:
+            listOfFiles.append(str(path))
+        # dataFrames = []
+        # # print(pathlist)
+        # for path in pathlist:
+        #     # print(str(path))
+        #     # listOfFiles.append(DataFile(str(path)))
+        #     dataFrames.append(pd.read_csv(str(path)))
+
+        # dataFrame = pd.concat(dataFrames)
+
+        # filepaths = [f for f in listdir(directoryPath) if f.endswith('.csv')]
+        # df = pd.concat(map(pd.read_csv, filepaths))
+        return pd.concat(
+            map(pd.read_csv, listOfFiles), ignore_index=True)
+        # return df
 
     def printFile(self):
         print(self.df)
 
+    # def saveFile(self):
+    #     print("saving file...")
+    #     self.df.to_csv(
+    #         '/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/cleanedFile.csv', index=False)
+
     def plot(self):
         self.df.plot(kind='bar')
 
+    def cleanData(self):
+        # self.replaceNonIntWithNaN()
+        self.removeRowsWithWrongValues()
+        # dataFile.plot()
+        self.normalizeColumns()
+
     def replaceNonIntWithNaN(self):
         # print("FILE:" + self.filePath)
+        print("replacing non int with NaN...")
         for column in self.df:
             if(not column.startswith("TIME")):
                 self.replaceNonIntWithNaNPerColumn(column)
 
     def removeRowsWithWrongValues(self):
+        print("removing rows with wrong values...")
+
         # print(self.df.dropna())
         return self.df.dropna(inplace=True)
 
@@ -47,6 +84,7 @@ class DataFile:
         self.df.dropna(axis=0, how='all',  inplace=True)
 
     def normalizeColumns(self):
+        print("normalizing columns...")
         timeColumn = self.df['TIME']
         self.df = self.df.drop(columns=['TIME'])
         scaler = MinMaxScaler()
