@@ -2,7 +2,7 @@
 
 Bachelor Thesis 2, FH Salzburg, MultiMediaTechnology
 
-Salzburg, Austria, 10.05.2020
+Salzburg, Austria, 29.06.2020
 
 ## Author: 
 Natasha Troth
@@ -11,4 +11,5 @@ Natasha Troth
 FH-Prof. DI Dr. Simon Ginzinger, MSc
 
 ## Contents of this repository: 
-This repository contains the LaTeX source code for the thesis and the papers referenced in the thesis.
+* LaTeX source code for the thesis and the papers referenced in the thesis
+* Experiment source code in python - run with Anaconda from main.py
