@@ -17,35 +17,21 @@ class DataFiles:
             listOfFiles.append(DataFile(str(path)))
         return listOfFiles
 
+    def concatenateDataFiles(self):
+        return pd.concat(self.dataFiles)
+
     def printFiles(self):
         for dataFile in self.dataFiles:
             dataFile.printFile()
 
     def cleanData(self):
-        try:
-            for dataFile in self.dataFiles:
-                # dataFile.cleanData()
-                dataFile.replaceNonIntWithNaN()
-                print("just converted to nan")
-                dataFile.removeRowsWithWrongValues()
-                # dataFile.removeEmptyRows()
-                # ----ReplaceMissingValues----:
-                # dataFile.replaceMissingValuesZero()
-                # dataFile.replaceMissingValuesInterpolate('linear')
-                # dataFile.replaceMissingValueMedian()
-                # dataFile.replaceMissingValueMean()
-                # dataFile.replaceMissingValuesCustom()
-        except:
-            print(
-                "Something went wrong in the cleanData function. ", sys.exc_info()[0])
+        # try:
+        for dataFile in self.dataFiles:
+            dataFile.replaceNonIntWithNaN()
+            dataFile.removeRowsWithWrongValues()
+            # dataFile.plot()
+            dataFile.normalizeColumns()
 
-    # def test(self):
-    #     for dataFile in self.dataFiles:
-    #         dataFile.replaceMissingValueMean()
-    # Data cleaning
-
-    # def replaceNonIntWithNaN(self):
-    #     for dataFile in self.dataFiles:
-    #         dataFile.replaceNonIntWithNaN()
-
-    # def handle
+        # except:
+        #     print(
+        #         "Something went wrong in the cleanData function. ", sys.exc_info()[0])

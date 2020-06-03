@@ -3,14 +3,21 @@ import pandas as pd
 from dataFile import DataFile
 from dataFiles import DataFiles
 from pathlib import Path
+import sys
 
 oneHourFiles = DataFiles(
-    "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
+    "/Volumes/BATroth/aggregated/1h")
+# "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
 # print(oneHourFiles.dataFiles)
 # oneHourFiles.replaceNonIntWithNaN()
-oneHourFiles.printFiles()
-oneHourFiles.cleanData()
-oneHourFiles.printFiles()
+
+
+oneHourFile = oneHourFiles.concatenateDataFiles()
+
+
+# oneHourFiles.printFiles()
+# oneHourFiles.cleanData()
+# oneHourFiles.printFiles()
 
 
 # print(oneHourFiles.dataFiles[0].df["NOTIF1"])
