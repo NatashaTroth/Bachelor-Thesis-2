@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1591269012 "main.bcf" "main.bbl" "main" 1591269025
+["biber main"] 1591269012 "main.bcf" "main.bbl" "main" 1591278751
   "bibliography.bib" 1585502431 24995 37495c831aba2ddc32d592770c8359ee ""
   "main.bcf" 1591269025 170289 978973988089269165c50e795a57dd97 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1591269020 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf" "main" 1591269025
+["pdflatex"] 1591269020 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf" "main" 1591278751
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux" 1591269025 26451 6bc095889e76dfa5e560dfcd3ec4df3a ""
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" 1585331365 5784 eaff8c516601e3d121ef7ded1d1bed25 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -183,7 +183,7 @@
   "body.tex" 1591106062 3018 0f4b582cfc07610bf523f5f60e6a3d32 ""
   "body/conclusion.tex" 1591106139 28 48898f3612897bfc51a0bb3f1b0bd1cd ""
   "body/discussion.tex" 1591106135 33 b751dfce7c5c46465ffa1e2bd0948b7b ""
-  "body/experiment.tex" 1591268998 1985 40735859f18cda7da1da706b3c74c27d ""
+  "body/experiment.tex" 1591278750 1985 40735859f18cda7da1da706b3c74c27d ""
   "body/experiment_clustering.tex" 1591106095 15 7b053b46b9ef57acf563d7829de068b1 ""
   "body/experiment_clusteringAfterDimReduction.tex" 1591106110 29 44b524822ce2036639233848a890c21e ""
   "body/experiment_comparisionTimeLengths.tex" 1591106131 36 8d2966e7c44df14ef747cbd38f855cc4 ""
@@ -213,15 +213,15 @@
   "title.tex" 1535953540 2471 fcf4edee76107b1965a4a424604ec929 ""
   (generated)
   "main.run.xml"
-  "main.lof"
-  "main.pdf"
-  "_configuration.aux"
-  "main.aux"
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.log"
-  "main.out"
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf"
-  "main.log"
   "main.toc"
-  "main.lol"
+  "main.log"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf"
   "main.lot"
+  "main.lol"
+  "main.lof"
   "main.bcf"
+  "main.aux"
+  "_configuration.aux"
+  "main.out"
+  "main.pdf"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.log"

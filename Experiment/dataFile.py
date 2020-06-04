@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 from sklearn.manifold import TSNE
 import ipyvolume as ipv
-from clustering import calculatePCA
+from clustering import calculate_PCA
 import json
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
@@ -14,19 +14,24 @@ import json
 
 class DataFile:
     def __init__(self, directoryPath):
-        self.df = self.createDataFrame(directoryPath)
+        self.df = self.create_data_frame(directoryPath)
 
-    def createDataFrame(self, directoryPath):
+    def create_data_frame(self, directory_path):
         print("in createDataFrame")
-        pathlist = Path(directoryPath).glob('**/*.csv')
-        listOfFiles = []
+        pathlist = Path(directory_path).glob('**/*.csv')
+        list_of_files = []
         for path in pathlist:
-            listOfFiles.append(str(path))
-        return pd.concat(
-            map(pd.read_csv, listOfFiles), ignore_index=True)
+            list_of_files.append(str(path))
+        print(list_of_files)
+        if len(list_of_files) > 1:
+            return pd.concat(map(pd.read_csv, list_of_files), ignore_index=True)
+        if len(list_of_files) == 1:
+            return pd.read_csv(list_of_files[0])
+        raise Exception(
+            "No *.csv files found in the directory " + directory_path)
         # return df
 
-    def printFile(self):
+    def print_file(self):
         print(self.df)
 
     # def saveFile(self):
@@ -37,24 +42,25 @@ class DataFile:
     def plot(self):
         self.df.plot(kind='bar')
 
-    def cleanData(self, numberSameAttributes):
-        timeColumn = self.df['TIME']
+    def clean_data(self, number_same_attributes):
+        time_column = self.df['TIME']
         self.df = self.df.drop(columns=['TIME'])
-        # self.removeColumnsWithManyEmptyValues(30, numberSameAttributes)
-        self.removeRowsWithWrongValues()
-        self.normalizeColumns()
+        self.compress_same_attribute_columns(number_same_attributes)
+        # self.remove_columns_with_many_empty_values(30, numberSameAttributes)
+        self.remove_rows_with_wrong_values()
+        self.normalize_columns()
 
-    def replaceNonIntWithNaN(self):
+    def replace_non_int_with_NaN(self):
         print("replacing non int with NaN...")
         for column in self.df:
             if(not column.startswith("TIME")):
-                self.replaceNonIntWithNaNPerColumn(column)
+                self.replace_non_int_with_NaN_per_column(column)
 
-    def removeRowsWithWrongValues(self):
+    def remove_rows_with_wrong_values(self):
         print("removing rows with wrong values...")
         self.df.dropna(inplace=True)
 
-    def replaceNonIntWithNaNPerColumn(self, column):
+    def replace_non_int_with_NaN_per_column(self, column):
         counter = 0
 
         for row in self.df[column]:
@@ -68,11 +74,11 @@ class DataFile:
                     self.df.loc[counter, column] = np.nan
                 counter += 1
 
-    def removeEmptyRows(self):
+    def remove_empty_rows(self):
         print("in remove empty rows")
         self.df.dropna(axis=0, how='all',  inplace=True)
 
-    def removeColumnsWithManyEmptyValues(self, threshold, numberSameAttributes):
+    def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
         print("removing columns with many empty values...")
         print(self.df.isnull().sum())
         # remove columns where percent of rows with empty is above threshold
@@ -86,15 +92,15 @@ class DataFile:
         for index, row in nulls_count.iterrows():
             average += row[0]
             count += 1
-            if(count == numberSameAttributes):
-                average /= numberSameAttributes
+            if(count == number_same_attributes):
+                average /= number_same_attributes
                 if(100/row_count*average >= threshold):
-                    for i in range(1, numberSameAttributes + 1):
+                    for i in range(1, number_same_attributes + 1):
                         self.df.drop(index[:-1] + str(i), axis=1, inplace=True)
                 count = 0
                 average = 0
 
-    def normalizeColumns(self):
+    def normalize_columns(self):
         print("normalizing columns...")
         # timeColumn = self.df['TIME']
         # self.df = self.df.drop(columns=['TIME'])
@@ -103,10 +109,10 @@ class DataFile:
             self.df[self.df.columns])
         # self.df['TIME'] = timeColumn
 
-    def compressSameAttributeColumns(self, numberSameAttributes):
+    def compress_same_attribute_columns(self, numberSameAttributes):
         # startIndex, EndIndex
         # print(list(self.df.columns))
-        self.printFile()
+        self.print_file()
 
         # columnNames = ['ACC1', 'ACC2', 'ACC3', 'ACC4', 'AUDIO1', 'AUDIO2', 'AUDIO3', 'AUDIO4', 'SCRN1', 'SCRN2', 'SCRN3', 'SCRN4', 'NOTIF1', 'NOTIF2', 'NOTIF3', 'NOTIF4', 'LIGHT1', 'LIGHT2',
         #                'LIGHT3', 'LIGHT4', 'APP_VID1', 'APP_VID2', 'APP_VID3', 'APP_VID4', 'APP_COMM1', 'APP_COMM2', 'APP_COMM3', 'APP_COMM4', 'APP_OTHER1', 'APP_OTHER2', 'APP_OTHER3', 'APP_OTHER4']
@@ -118,15 +124,15 @@ class DataFile:
         newDf = pd.DataFrame()
 
         for attribute in distinctAttributes:
-            if self.containsColumn(attribute):
-                startColumn = attribute + "1"
-                endColumn = attribute + "" + str(numberSameAttributes)
-                col = self.df.loc[:, startColumn:endColumn]
+            if self.contains_column(attribute):
+                start_column = attribute + "1"
+                end_column = attribute + "" + str(numberSameAttributes)
+                col = self.df.loc[:, start_column:end_column]
                 newDf[attribute] = col.mean(axis=1)
 
         self.df = newDf
 
-    def containsColumn(self, attribute):
+    def contains_column(self, attribute):
         if len(self.df.columns[self.df.columns.str.contains(pat=attribute)]) > 0:
             return True
         return False

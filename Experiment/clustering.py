@@ -11,7 +11,7 @@ import seaborn as sns
 import ipyvolume as ipv
 
 
-def calculatePCA(df):
+def calculate_PCA(df):
     print("calculating PCA...")
     pca = PCA()
     pca_result = pca.fit_transform(df[df.columns].values)
@@ -26,8 +26,8 @@ def calculatePCA(df):
     #               'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
 
     # print(df)
-    create2DScatterplot(df)
-    create3DScatterplot(df)
+    create_2DScatterplot(df)
+    create_3DScatterplot(df)
 
     # sns.barplot(x=test, y=pca.explained_variance_ratio_)
     # plt.show()
@@ -41,7 +41,7 @@ def calculatePCA(df):
     # print(pca_result[:, 0])
 
 
-def createBarPlot(x, y, xName, yName):
+def create_bar_plot(x, y, xName, yName):
     plt.figure(figsize=(16, 10))
     data = pd.DataFrame({xName: x, yName: y})
     sns.barplot(x=xName, y=yName, data=data)
@@ -49,7 +49,7 @@ def createBarPlot(x, y, xName, yName):
     plt.show()
 
 
-def create2DScatterplot(data):
+def create_2DScatterplot(data):
     plt.figure(figsize=(16, 10))
     sns.scatterplot(
         x="pca-one", y="pca-two",
@@ -62,7 +62,7 @@ def create2DScatterplot(data):
     plt.show()
 
 
-def create3DScatterplot(data):
+def create_3DScatterplot(data):
     ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
     # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
     #                     'pca-three': 'blue'}

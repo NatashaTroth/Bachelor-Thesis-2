@@ -4,7 +4,7 @@ from dataFile import DataFile
 from dataFiles import DataFiles
 from pathlib import Path
 import sys
-from clustering import calculatePCA
+from clustering import calculate_PCA
 
 
 # oneHourFiles = DataFiles(
@@ -18,23 +18,23 @@ from clustering import calculatePCA
 #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
 
 # ONE HOUR FILES
-oneHourFile = DataFile(
+one_hour_file = DataFile(
     "/Volumes/BATroth/aggregated/1h")
 
-oneHourFile.printFile()
-oneHourFile.cleanData(4)
+one_hour_file.print_file()
+one_hour_file.clean_data(4)
 # calculatePCA(oneHourFile.df)
-oneHourFile.compressSameAttributeColumns(4)
-oneHourFile.printFile()
-calculatePCA(oneHourFile.df)
+# oneHourFile.compress_same_attribute_columns(4)
+one_hour_file.print_file()
+calculate_PCA(one_hour_file.df)
 
 
 # THREE HOUR FILES
-threeHourFile = DataFile(
+three_hour_file = DataFile(
     "/Volumes/BATroth/aggregated/3h")
 
-threeHourFile.printFile()
-threeHourFile.cleanData(6)
-threeHourFile.compressSameAttributeColumns(6)
-threeHourFile.printFile()
-calculatePCA(threeHourFile.df)
+three_hour_file.print_file()
+three_hour_file.clean_data(6)
+# threeHourFile.compress_same_attribute_columns(6)
+three_hour_file.print_file()
+calculate_PCA(three_hour_file.df)
