@@ -22,7 +22,6 @@ class DataFile:
         list_of_files = []
         for path in pathlist:
             list_of_files.append(str(path))
-        print(list_of_files)
         if len(list_of_files) > 1:
             return pd.concat(map(pd.read_csv, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
@@ -43,7 +42,7 @@ class DataFile:
         self.df = self.df.drop(columns=['TIME'])
         # self.remove_columns_with_many_empty_values(30, numberSameAttributes)
         self.remove_rows_with_wrong_values()
-        self.compress_same_attribute_columns(number_same_attributes)
+        # self.compress_same_attribute_columns(number_same_attributes)
         self.normalize_columns()
 
     def remove_rows_with_wrong_values(self):
@@ -52,7 +51,7 @@ class DataFile:
 
     def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
         print("  removing columns with many empty values...")
-        print(self.df.isnull().sum())
+        # print(self.df.isnull().sum())
         # remove columns where percent of rows with empty is above threshold
         # row count ... 100%
         # no of null ... x
@@ -80,7 +79,7 @@ class DataFile:
 
     def compress_same_attribute_columns(self, numberSameAttributes):
         print("  compressing same attribute columns...")
-        self.print_file()
+        # self.print_file()
         distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
                               'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
         newDf = pd.DataFrame()

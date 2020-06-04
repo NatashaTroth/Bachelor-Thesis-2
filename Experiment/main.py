@@ -5,6 +5,7 @@ from dataFiles import DataFiles
 from pathlib import Path
 import sys
 from clustering import calculate_PCA
+from clustering import calculate_TSNE
 
 
 # oneHourFiles = DataFiles(
@@ -21,12 +22,11 @@ from clustering import calculate_PCA
 one_hour_file = DataFile(
     "/Volumes/BATroth/aggregated/1h")
 
-one_hour_file.print_file()
+# one_hour_file.print_file()
 one_hour_file.clean_data(4)
-# calculatePCA(oneHourFile.df)
-# oneHourFile.compress_same_attribute_columns(4)
-one_hour_file.print_file()
-calculate_PCA(one_hour_file.df)
+# one_hour_file.print_file()
+# calculate_PCA(one_hour_file.df)
+calculate_TSNE(one_hour_file.df)
 
 
 # THREE HOUR FILES
@@ -35,6 +35,6 @@ three_hour_file = DataFile(
 
 three_hour_file.print_file()
 three_hour_file.clean_data(6)
-# threeHourFile.compress_same_attribute_columns(6)
 three_hour_file.print_file()
-calculate_PCA(three_hour_file.df)
+# calculate_PCA(three_hour_file.df)
+calculate_TSNE(three_hour_file.df)

@@ -22,8 +22,8 @@ def calculate_PCA(df):
         pca.explained_variance_ratio_))
     print('Explained variation per principal component cumulative: {}'.format(
         pca.explained_variance_ratio_.cumsum()))
-    # createBarPlot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
-    #               'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
+    create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
+                    'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
 
     # print(df)
     create_2DScatterplot(df)
@@ -39,6 +39,34 @@ def calculate_PCA(df):
     # print('Explained variation per principal component: {}'.format(
     #     pca.explained_variance_ratio_))
     # print(pca_result[:, 0])
+
+
+def calculate_TSNE(df):
+    print("calculating TSNE...")
+    tsne = TSNE(n_components=2, init='random')
+    # tsne = TSNE(n_components=2, verbose=0,
+    #             perplexity=40, n_iter=300, init='random')
+    tsne_results = tsne.fit_transform(df)
+    print(df)
+    print(tsne_results)
+
+    df['tsne-one'] = tsne_results[:, 0]
+    df['tsne-two'] = tsne_results[:, 1]
+
+    plt.figure(figsize=(16, 10))
+    sns.scatterplot(
+        x="tsne-one", y="tsne-two",
+        # hue="pca-one",
+        # palette=sns.color_palette("hls", 1),
+
+        data=df,
+        legend="full",
+        alpha=0.3
+    )
+    plt.show()
+
+    # df_subset['tsne-one'] = tsne_pca_results[:,0]
+    # df_subset['tsne-two'] = tsne_pca_results[:,1]
 
 
 def create_bar_plot(x, y, xName, yName):
