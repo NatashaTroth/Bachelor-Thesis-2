@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 from clustering import calculate_PCA
 
-# Disclaimer: the numbers in testData.csv were created using a random generator (see randomNrs.js) - not from test users!!
+# Disclaimer: the numbers in the test *.csv files were created using a random generator (see randomNrs.js) - not from real test users!!
 
 
 class TestStringMethods(unittest.TestCase):
@@ -38,6 +38,17 @@ class TestStringMethods(unittest.TestCase):
             './Experiment/testData/testNormal/resultAfterNormalization.json', orient='index')
         assert_frame_equal(
             data_file.df, result_after_normalization,  check_dtype=False)
+
+    def test_remove_colums_with_many_missing_values(self):
+        data_file = DataFile("./Experiment/testData/testRemoveColumns")
+        # ---remove rows with missing value & time column---
+        data_file.df = data_file.df.drop(columns=['TIME'])
+        print(data_file.df.to_json(orient="index"))
+        data_file.remove_columns_with_many_empty_values(30, 4)
+        result_after_removing_columns = pd.read_json(
+            './Experiment/testData/testRemoveColumns/resultAfterRemovingColumns.json', orient='index')
+        assert_frame_equal(
+            data_file.df, result_after_removing_columns,  check_dtype=False)
 
 
 if __name__ == '__main__':

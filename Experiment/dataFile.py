@@ -34,52 +34,24 @@ class DataFile:
     def print_file(self):
         print(self.df)
 
-    # def saveFile(self):
-    #     print("saving file...")
-    #     self.df.to_csv(
-    #         '/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/cleanedFile.csv', index=False)
-
     def plot(self):
         self.df.plot(kind='bar')
 
     def clean_data(self, number_same_attributes):
-        time_column = self.df['TIME']
+        print("cleaning data...")
+        # time_column = self.df['TIME']
         self.df = self.df.drop(columns=['TIME'])
-        self.compress_same_attribute_columns(number_same_attributes)
         # self.remove_columns_with_many_empty_values(30, numberSameAttributes)
         self.remove_rows_with_wrong_values()
+        self.compress_same_attribute_columns(number_same_attributes)
         self.normalize_columns()
 
-    def replace_non_int_with_NaN(self):
-        print("replacing non int with NaN...")
-        for column in self.df:
-            if(not column.startswith("TIME")):
-                self.replace_non_int_with_NaN_per_column(column)
-
     def remove_rows_with_wrong_values(self):
-        print("removing rows with wrong values...")
+        print("  removing rows with wrong values...")
         self.df.dropna(inplace=True)
 
-    def replace_non_int_with_NaN_per_column(self, column):
-        counter = 0
-
-        for row in self.df[column]:
-            if(not column.startswith("TIME")):
-                try:
-                    # test if value can be converted to an int - if not, it is not a number
-                    float(row)
-                    self.df.loc[counter, column] = float(row)
-                    pass
-                except ValueError:
-                    self.df.loc[counter, column] = np.nan
-                counter += 1
-
-    def remove_empty_rows(self):
-        print("in remove empty rows")
-        self.df.dropna(axis=0, how='all',  inplace=True)
-
     def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
-        print("removing columns with many empty values...")
+        print("  removing columns with many empty values...")
         print(self.df.isnull().sum())
         # remove columns where percent of rows with empty is above threshold
         # row count ... 100%
@@ -101,24 +73,14 @@ class DataFile:
                 average = 0
 
     def normalize_columns(self):
-        print("normalizing columns...")
-        # timeColumn = self.df['TIME']
-        # self.df = self.df.drop(columns=['TIME'])
+        print("  normalizing columns...")
         scaler = MinMaxScaler()
         self.df[self.df.columns] = scaler.fit_transform(
             self.df[self.df.columns])
-        # self.df['TIME'] = timeColumn
 
     def compress_same_attribute_columns(self, numberSameAttributes):
-        # startIndex, EndIndex
-        # print(list(self.df.columns))
+        print("  compressing same attribute columns...")
         self.print_file()
-
-        # columnNames = ['ACC1', 'ACC2', 'ACC3', 'ACC4', 'AUDIO1', 'AUDIO2', 'AUDIO3', 'AUDIO4', 'SCRN1', 'SCRN2', 'SCRN3', 'SCRN4', 'NOTIF1', 'NOTIF2', 'NOTIF3', 'NOTIF4', 'LIGHT1', 'LIGHT2',
-        #                'LIGHT3', 'LIGHT4', 'APP_VID1', 'APP_VID2', 'APP_VID3', 'APP_VID4', 'APP_COMM1', 'APP_COMM2', 'APP_COMM3', 'APP_COMM4', 'APP_OTHER1', 'APP_OTHER2', 'APP_OTHER3', 'APP_OTHER4']
-
-        # columnNames2 = ['ACC1', 'ACC2', 'ACC3', 'ACC4', 'ACC5', 'ACC6', 'AUDIO1', 'AUDIO2', 'AUDIO3', 'AUDIO4', 'AUDIO5', 'AUDIO6', 'SCRN1', 'SCRN2', 'SCRN3', 'SCRN4', 'SCRN5', 'SCRN6', 'NOTIF1', 'NOTIF2', 'NOTIF3', 'NOTIF4', 'NOTIF5', 'NOTIF6', 'LIGHT1', 'LIGHT2', 'LIGHT3',
-        #                 'LIGHT4', 'LIGHT5', 'LIGHT6', 'APP_VID1', 'APP_VID2', 'APP_VID3', 'APP_VID4', 'APP_VID5', 'APP_VID6', 'APP_COMM1', 'APP_COMM2', 'APP_COMM3', 'APP_COMM4', 'APP_COMM5', 'APP_COMM6', 'APP_OTHER1', 'APP_OTHER2', 'APP_OTHER3', 'APP_OTHER4', 'APP_OTHER5', 'APP_OTHER6']
         distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
                               'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
         newDf = pd.DataFrame()
@@ -136,3 +98,32 @@ class DataFile:
         if len(self.df.columns[self.df.columns.str.contains(pat=attribute)]) > 0:
             return True
         return False
+
+    # def saveFile(self):
+    #     print("saving file...")
+    #     self.df.to_csv(
+    #         '/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/cleanedFile.csv', index=False)
+
+  # def replace_non_int_with_NaN(self):
+    #     print("replacing non int with NaN...")
+    #     for column in self.df:
+    #         if(not column.startswith("TIME")):
+    #             self.replace_non_int_with_NaN_per_column(column)
+
+    # def replace_non_int_with_NaN_per_column(self, column):
+    #     counter = 0
+
+    #     for row in self.df[column]:
+    #         if(not column.startswith("TIME")):
+    #             try:
+    #                 # test if value can be converted to an int - if not, it is not a number
+    #                 float(row)
+    #                 self.df.loc[counter, column] = float(row)
+    #                 pass
+    #             except ValueError:
+    #                 self.df.loc[counter, column] = np.nan
+    #             counter += 1
+
+    # def remove_empty_rows(self):
+    #     print("in remove empty rows")
+    #     self.df.dropna(axis=0, how='all',  inplace=True)
