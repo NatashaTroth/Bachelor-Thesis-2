@@ -22,7 +22,10 @@ oneHourFile = DataFile(
     "/Volumes/BATroth/aggregated/1h")
 
 oneHourFile.printFile()
-oneHourFile.cleanData()
+oneHourFile.cleanData(4)
+# calculatePCA(oneHourFile.df)
+oneHourFile.compressSameAttributeColumns(4)
+oneHourFile.printFile()
 calculatePCA(oneHourFile.df)
 
 
@@ -31,5 +34,7 @@ threeHourFile = DataFile(
     "/Volumes/BATroth/aggregated/3h")
 
 threeHourFile.printFile()
-threeHourFile.cleanData()
+threeHourFile.cleanData(6)
+threeHourFile.compressSameAttributeColumns(6)
+threeHourFile.printFile()
 calculatePCA(threeHourFile.df)
