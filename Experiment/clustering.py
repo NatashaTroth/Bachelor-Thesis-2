@@ -13,6 +13,8 @@ from sklearn.cluster import OPTICS
 from plot import create_bar_plot
 from plot import create_2d_scatterplot
 from plot import create_3d_scatterplot
+from plot import create_2d_scatterplot_clustering
+from sklearn.cluster import AgglomerativeClustering
 
 
 def spectral_clustering(df):
@@ -38,12 +40,11 @@ def optics_clustering(df):
     create_2d_scatterplot_clustering(optics, df)
 
 
-def create_2d_scatterplot_clustering(clustering_method, df):
-    plt.figure(figsize=(16, 10))
-    y_pred = clustering_method.fit_predict(df)
-    plt.scatter(df[0], df[1], c=y_pred, cmap='Paired')
-    plt.title("DBSCAN")
-    plt.show()
+def agglomerative_clustering(df):
+    print("agglomerative clustering...")
+    agglomerative = AgglomerativeClustering()
+    clustering = agglomerative.fit(df)
+    create_2d_scatterplot_clustering(agglomerative, df)
 
 
 # -----ipyvolume scatterplot---

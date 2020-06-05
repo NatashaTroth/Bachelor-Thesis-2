@@ -53,3 +53,11 @@ def create_3d_scatterplot(data, xName, yName, zName):
     ax.set_ylabel(yName)
     ax.set_zlabel(zName)
     plt.show()
+
+
+def create_2d_scatterplot_clustering(clustering_method, df):
+    plt.figure(figsize=(16, 10))
+    y_pred = clustering_method.fit_predict(df)
+    plt.scatter(df[0], df[1], c=y_pred, cmap='Paired')
+    plt.title("DBSCAN")
+    plt.show()

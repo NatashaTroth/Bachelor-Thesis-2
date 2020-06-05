@@ -12,6 +12,7 @@ from dimensionalityReduction import calculate_TSNE
 from clustering import spectral_clustering
 from clustering import dbscan_clustering
 from clustering import optics_clustering
+from clustering import agglomerative_clustering
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -131,3 +132,11 @@ class DataFile:
             optics_clustering(self.tsne)
         else:
             optics_clustering(self.df)
+
+    def agglomerative_clustering(self, type):
+        if type == 'PCA':
+            agglomerative_clustering(self.pca)
+        elif type == 'TSNE':
+            agglomerative_clustering(self.tsne)
+        else:
+            agglomerative_clustering(self.df)
