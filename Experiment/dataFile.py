@@ -11,6 +11,7 @@ import json
 from clustering import calculate_PCA
 from clustering import calculate_TSNE
 from clustering import spectral_clustering
+from clustering import dbscan_clustering
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -113,7 +114,15 @@ class DataFile:
         if type == 'PCA':
             spectral_clustering(self.pca.iloc[:, 0:3])
         if type == 'TSNE':
-            spectral_clustering(self.tsne)
+            spectral_clustering(self.tsne.iloc[:, 0:3])
+
+    def dbscan_clustering(self, type):
+        if type == 'PCA':
+            dbscan_clustering(self.pca.iloc[:, 0:3])
+        elif type == 'TSNE':
+            dbscan_clustering(self.tsne.iloc[:, 0:3])
+        else:
+            dbscan_clustering(self.df)
 
     # def saveFile(self):
     #     print("saving file...")

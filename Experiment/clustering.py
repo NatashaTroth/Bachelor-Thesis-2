@@ -10,6 +10,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering
+from sklearn.cluster import DBSCAN
 
 
 def calculate_PCA(df):
@@ -123,9 +124,29 @@ def spectral_clustering(df):
     plt.show()
 
 
-# def dbscan_clustering(df):
-#     clustering = DBSCAN(eps=3, min_samples=2).fit(df)
-#     clustering.labels_
+def dbscan_clustering(df):
+    print("dbscan clustering...")
+    clustering = DBSCAN(eps=3, min_samples=2).fit(df)
+    print(clustering.labels_)
+    colours = {}
+    colours[0] = 'orange'
+    colours[1] = 'turquoise'
+    colours[2] = 'pink'
+    colours[3] = 'blue'
+    colours[4] = 'green'
+
+    # Building the colour vector for each data point
+    cvec = [colours[label] for label in clustering.labels_]
+
+    # Plotting the clustered scatter plot
+
+    # b = plt.scatter(df[0], df[1], color='b')
+    # y = plt.scatter(df[0], df[1], color='y')
+
+    plt.figure(figsize=(16, 10)).gca(projection='3d')
+    plt.scatter(df[0], df[1], df[2], c=cvec)
+    # plt.legend((b, y), ('Label 0', 'Label 1'))
+    plt.show()
 
 # -----ipyvolume scatterplot---
 
