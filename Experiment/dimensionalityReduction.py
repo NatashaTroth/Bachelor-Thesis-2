@@ -16,13 +16,16 @@ from plot import create_2DScatterplot
 from plot import create_3DScatterplot
 
 
-def calculate_PCA(df, graphs):
+def calculate_PCA(df, number_components, graphs):
     print("calculating PCA...")
-    pca = PCA()
-    pca_result = pca.fit_transform(df[df.columns].values)
-    df['pca-one'] = pca_result[:, 0]
-    df['pca-two'] = pca_result[:, 1]
-    df['pca-three'] = pca_result[:, 2]
+    pca = PCA(n_components=number_components)
+    pca_results = pca.fit_transform(df[df.columns].values)
+    df['pca-one'] = pca_results[:, 0]
+    df['pca-two'] = pca_results[:, 1]
+
+    if number_components > 2:
+        df['pca-three'] = pca_results[:, 2]
+
     print('Explained variation per principal component: {}'.format(
         pca.explained_variance_ratio_))
     print('Explained variation per principal component cumulative: {}'.format(
@@ -32,12 +35,14 @@ def calculate_PCA(df, graphs):
         # print(len(pca_result[0]))
         create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
-        create_2DScatterplot(df, "pca-one", "pca-two")
-        create_3DScatterplot(df, "pca-one", "pca-two", "pca-three")
+        if number_components == 2:
+            create_2DScatterplot(df, "pca-one", "pca-two")
+        if number_components == 3:
+            create_3DScatterplot(df, "pca-one", "pca-two", "pca-three")
 
     # calculate_TSNE(pd.DataFrame(pca_result[:, [0, 3]]))
-
-    return pd.DataFrame(pca_result)
+    print(pca_results)
+    return pd.DataFrame(pca_results)
 
 
 def calculate_TSNE(df, number_components, graphs):
@@ -56,7 +61,9 @@ def calculate_TSNE(df, number_components, graphs):
         df['tsne-three'] = tsne_results[:, 2]
 
     if graphs == True:
-        create_2DScatterplot(df, "tsne-one", "tsne-two")
-        create_3DScatterplot(df, "tsne-one", "tsne-two", "tsne-three")
+        if number_components == 2:
+            create_2DScatterplot(df, "tsne-one", "tsne-two")
+        if number_components == 3:
+            create_3DScatterplot(df, "tsne-one", "tsne-two", "tsne-three")
 
     return pd.DataFrame(tsne_results)

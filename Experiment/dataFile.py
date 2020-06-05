@@ -101,8 +101,8 @@ class DataFile:
             return True
         return False
 
-    def calculate_PCA(self, graphs):
-        self.pca = calculate_PCA(self.df, graphs)
+    def calculate_PCA(self, number_components, graphs):
+        self.pca = calculate_PCA(self.df, number_components, graphs)
         print(self.pca)
 
     def calculate_TSNE(self, number_components, graphs):
@@ -111,45 +111,15 @@ class DataFile:
 
     def spectral_clustering(self, type):
         if type == 'PCA':
-            spectral_clustering(self.pca.iloc[:, 0:3])
+            spectral_clustering(self.pca)
         if type == 'TSNE':
-            spectral_clustering(self.tsne.iloc[:, 0:3])
+            spectral_clustering(self.tsne)
 
     def dbscan_clustering(self, type):
         if type == 'PCA':
-            dbscan_clustering(self.pca.iloc[:, 0:2])
+            dbscan_clustering(self.pca)
         elif type == 'TSNE':
             print("TSNE:")
-            print(self.tsne)
             dbscan_clustering(self.tsne)
         else:
             dbscan_clustering(self.df)
-
-    # def saveFile(self):
-    #     print("saving file...")
-    #     self.df.to_csv(
-    #         '/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/cleanedFile.csv', index=False)
-
-   # def replace_non_int_with_NaN(self):
-    #     print("replacing non int with NaN...")
-    #     for column in self.df:
-    #         if(not column.startswith("TIME")):
-    #             self.replace_non_int_with_NaN_per_column(column)
-
-    # def replace_non_int_with_NaN_per_column(self, column):
-    #     counter = 0
-
-    #     for row in self.df[column]:
-    #         if(not column.startswith("TIME")):
-    #             try:
-    #                 # test if value can be converted to an int - if not, it is not a number
-    #                 float(row)
-    #                 self.df.loc[counter, column] = float(row)
-    #                 pass
-    #             except ValueError:
-    #                 self.df.loc[counter, column] = np.nan
-    #             counter += 1
-
-    # def remove_empty_rows(self):
-    #     print("in remove empty rows")
-    #     self.df.dropna(axis=0, how='all',  inplace=True)
