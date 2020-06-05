@@ -26,8 +26,11 @@ one_hour_file.calculate_TSNE(2, False)
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
-one_hour_file.dbscan_clustering('PCA')
-one_hour_file.dbscan_clustering('TSNE')
+# one_hour_file.dbscan_clustering('PCA')
+# one_hour_file.dbscan_clustering('TSNE')
+
+one_hour_file.optics_clustering('PCA')
+one_hour_file.optics_clustering('TSNE')
 
 
 # # ---- THREE HOUR FILES ----

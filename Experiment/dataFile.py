@@ -11,6 +11,7 @@ from dimensionalityReduction import calculate_PCA
 from dimensionalityReduction import calculate_TSNE
 from clustering import spectral_clustering
 from clustering import dbscan_clustering
+from clustering import optics_clustering
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -119,7 +120,14 @@ class DataFile:
         if type == 'PCA':
             dbscan_clustering(self.pca)
         elif type == 'TSNE':
-            print("TSNE:")
             dbscan_clustering(self.tsne)
         else:
             dbscan_clustering(self.df)
+
+    def optics_clustering(self, type):
+        if type == 'PCA':
+            optics_clustering(self.pca)
+        elif type == 'TSNE':
+            optics_clustering(self.tsne)
+        else:
+            optics_clustering(self.df)

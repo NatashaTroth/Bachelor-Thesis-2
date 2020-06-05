@@ -9,6 +9,7 @@ import seaborn as sns
 import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering
 from sklearn.cluster import DBSCAN
+from sklearn.cluster import OPTICS
 from plot import create_bar_plot
 from plot import create_2d_scatterplot
 from plot import create_3d_scatterplot
@@ -28,6 +29,13 @@ def dbscan_clustering(df):
     db = DBSCAN(eps=3, min_samples=2)
     clustering = db.fit(df)
     create_2d_scatterplot_clustering(db, df)
+
+
+def optics_clustering(df):
+    print("optics clustering...")
+    optics = OPTICS(min_samples=2)
+    clustering = optics.fit(df)
+    create_2d_scatterplot_clustering(optics, df)
 
 
 def create_2d_scatterplot_clustering(clustering_method, df):
