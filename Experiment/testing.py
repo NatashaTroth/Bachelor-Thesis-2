@@ -6,7 +6,7 @@ from dataFile import DataFile
 from dataFiles import DataFiles
 from pathlib import Path
 import sys
-from clustering import calculate_PCA
+from dimensionalityReduction import calculate_PCA
 
 # Disclaimer: the numbers in the test *.csv files were created using a random generator (see randomNrs.js) - not from real test users!!
 

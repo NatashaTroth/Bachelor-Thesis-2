@@ -6,10 +6,9 @@ from pathlib import Path
 import sys
 from sklearn.manifold import TSNE
 import ipyvolume as ipv
-from clustering import calculate_PCA
 import json
-from clustering import calculate_PCA
-from clustering import calculate_TSNE
+from dimensionalityReduction import calculate_PCA
+from dimensionalityReduction import calculate_TSNE
 from clustering import spectral_clustering
 from clustering import dbscan_clustering
 
@@ -102,12 +101,12 @@ class DataFile:
             return True
         return False
 
-    def calculate_PCA(self):
-        self.pca = calculate_PCA(self.df)
+    def calculate_PCA(self, graphs):
+        self.pca = calculate_PCA(self.df, graphs)
         print(self.pca)
 
-    def calculate_TSNE(self):
-        self.tsne = calculate_TSNE(self.df)
+    def calculate_TSNE(self, number_components, graphs):
+        self.tsne = calculate_TSNE(self.df, number_components, graphs)
         print(self.tsne)
 
     def spectral_clustering(self, type):
@@ -118,9 +117,11 @@ class DataFile:
 
     def dbscan_clustering(self, type):
         if type == 'PCA':
-            dbscan_clustering(self.pca.iloc[:, 0:3])
+            dbscan_clustering(self.pca.iloc[:, 0:2])
         elif type == 'TSNE':
-            dbscan_clustering(self.tsne.iloc[:, 0:3])
+            print("TSNE:")
+            print(self.tsne)
+            dbscan_clustering(self.tsne)
         else:
             dbscan_clustering(self.df)
 
