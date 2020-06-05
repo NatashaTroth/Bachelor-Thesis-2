@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
+from sklearn.cluster import SpectralClustering
 
 
 def calculate_PCA(df):
@@ -24,10 +25,10 @@ def calculate_PCA(df):
         pca.explained_variance_ratio_.cumsum()))
 
     # print(len(pca_result[0]))
-    create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
-                    'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
-    create_2DScatterplot(df, "pca-one", "pca-two")
-    create_3DScatterplot(df, "pca-one", "pca-two", "pca-three")
+    # create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
+    #                 'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
+    # create_2DScatterplot(df, "pca-one", "pca-two")
+    # create_3DScatterplot(df, "pca-one", "pca-two", "pca-three")
 
     # calculate_TSNE(pd.DataFrame(pca_result[:, [0, 3]]))
 
@@ -46,8 +47,9 @@ def calculate_TSNE(df):
     df['tsne-one'] = tsne_results[:, 0]
     df['tsne-two'] = tsne_results[:, 1]
     df['tsne-three'] = tsne_results[:, 2]
-    create_2DScatterplot(df, "tsne-one", "tsne-two")
-    create_3DScatterplot(df, "tsne-one", "tsne-two", "tsne-three")
+
+    # create_2DScatterplot(df, "tsne-one", "tsne-two")
+    # create_3DScatterplot(df, "tsne-one", "tsne-two", "tsne-three")
 
     return pd.DataFrame(tsne_results)
 
@@ -94,9 +96,36 @@ def create_3DScatterplot(data, xName, yName, zName):
     plt.show()
 
 
-def spectral_clustering():
+def spectral_clustering(df):
+    print("spectral clustering...")
+    print(df)
     clustering = SpectralClustering(
-        n_clusters=3, assign_labels="discretize", random_state=0).fit(X)
+        n_clusters=3, assign_labels="discretize", random_state=0).fit(df)
+    labels_rbf = clustering.fit_predict(df)
+    print(labels_rbf)
+    # Building the label to colour mapping
+    colours = {}
+    colours[0] = 'orange'
+    colours[1] = 'turquoise'
+    colours[2] = 'pink'
+
+    # Building the colour vector for each data point
+    cvec = [colours[label] for label in labels_rbf]
+
+    # Plotting the clustered scatter plot
+
+    # b = plt.scatter(df[0], df[1], color='b')
+    # y = plt.scatter(df[0], df[1], color='y')
+
+    plt.figure(figsize=(9, 9))
+    plt.scatter(df[0], df[1], c=cvec)
+    # plt.legend((b, y), ('Label 0', 'Label 1'))
+    plt.show()
+
+
+# def dbscan_clustering(df):
+#     clustering = DBSCAN(eps=3, min_samples=2).fit(df)
+#     clustering.labels_
 
 # -----ipyvolume scatterplot---
 

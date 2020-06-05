@@ -10,6 +10,7 @@ from clustering import calculate_PCA
 import json
 from clustering import calculate_PCA
 from clustering import calculate_TSNE
+from clustering import spectral_clustering
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -44,7 +45,7 @@ class DataFile:
         self.df = self.df.drop(columns=['TIME'])
         # self.remove_columns_with_many_empty_values(30, number_same_attributes)
         self.remove_rows_with_wrong_values()
-        # self.compress_same_attribute_columns(number_same_attributes)
+        self.compress_same_attribute_columns(number_same_attributes)
         self.normalize_columns()
 
     def remove_rows_with_wrong_values(self):
@@ -105,15 +106,21 @@ class DataFile:
         print(self.pca)
 
     def calculate_TSNE(self):
-        self.tsne = calculate_TSNE()
+        self.tsne = calculate_TSNE(self.df)
         print(self.tsne)
+
+    def spectral_clustering(self, type):
+        if type == 'PCA':
+            spectral_clustering(self.pca.iloc[:, 0:3])
+        if type == 'TSNE':
+            spectral_clustering(self.tsne)
 
     # def saveFile(self):
     #     print("saving file...")
     #     self.df.to_csv(
     #         '/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/cleanedFile.csv', index=False)
 
-  # def replace_non_int_with_NaN(self):
+   # def replace_non_int_with_NaN(self):
     #     print("replacing non int with NaN...")
     #     for column in self.df:
     #         if(not column.startswith("TIME")):
