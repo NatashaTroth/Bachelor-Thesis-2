@@ -8,6 +8,8 @@ from sklearn.manifold import TSNE
 import ipyvolume as ipv
 from clustering import calculate_PCA
 import json
+from clustering import calculate_PCA
+from clustering import calculate_TSNE
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -40,7 +42,7 @@ class DataFile:
         print("cleaning data...")
         # time_column = self.df['TIME']
         self.df = self.df.drop(columns=['TIME'])
-        # self.remove_columns_with_many_empty_values(30, numberSameAttributes)
+        # self.remove_columns_with_many_empty_values(30, number_same_attributes)
         self.remove_rows_with_wrong_values()
         # self.compress_same_attribute_columns(number_same_attributes)
         self.normalize_columns()
@@ -97,6 +99,14 @@ class DataFile:
         if len(self.df.columns[self.df.columns.str.contains(pat=attribute)]) > 0:
             return True
         return False
+
+    def calculate_PCA(self):
+        self.pca = calculate_PCA(self.df)
+        print(self.pca)
+
+    def calculate_TSNE(self):
+        self.tsne = calculate_TSNE()
+        print(self.tsne)
 
     # def saveFile(self):
     #     print("saving file...")
