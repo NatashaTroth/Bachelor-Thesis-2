@@ -21,7 +21,7 @@ def create_bar_plot(x, y, xName, yName):
     plt.show()
 
 
-def create_2DScatterplot(data, xName, yName):
+def create_2d_scatterplot(data, xName, yName):
     plt.figure(figsize=(16, 10))
     sns.scatterplot(
         x=xName, y=yName,
@@ -35,7 +35,7 @@ def create_2DScatterplot(data, xName, yName):
     plt.show()
 
 
-def create_3DScatterplot(data, xName, yName, zName):
+def create_3d_scatterplot(data, xName, yName, zName):
     ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
     # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
     #                     'pca-three': 'blue'}

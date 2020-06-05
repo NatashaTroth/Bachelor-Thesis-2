@@ -12,8 +12,8 @@ import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering
 from sklearn.cluster import DBSCAN
 from plot import create_bar_plot
-from plot import create_2DScatterplot
-from plot import create_3DScatterplot
+from plot import create_2d_scatterplot
+from plot import create_3d_scatterplot
 
 
 def calculate_PCA(df, number_components, graphs):
@@ -36,9 +36,9 @@ def calculate_PCA(df, number_components, graphs):
         create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
         if number_components == 2:
-            create_2DScatterplot(df, "pca-one", "pca-two")
+            create_2d_scatterplot(df, "pca-one", "pca-two")
         if number_components == 3:
-            create_3DScatterplot(df, "pca-one", "pca-two", "pca-three")
+            create_3d_scatterplot(df, "pca-one", "pca-two", "pca-three")
 
     # calculate_TSNE(pd.DataFrame(pca_result[:, [0, 3]]))
     print(pca_results)
@@ -62,8 +62,8 @@ def calculate_TSNE(df, number_components, graphs):
 
     if graphs == True:
         if number_components == 2:
-            create_2DScatterplot(df, "tsne-one", "tsne-two")
+            create_2d_scatterplot(df, "tsne-one", "tsne-two")
         if number_components == 3:
-            create_3DScatterplot(df, "tsne-one", "tsne-two", "tsne-three")
+            create_3d_scatterplot(df, "tsne-one", "tsne-two", "tsne-three")
 
     return pd.DataFrame(tsne_results)

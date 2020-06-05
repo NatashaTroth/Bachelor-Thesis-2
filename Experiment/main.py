@@ -19,14 +19,14 @@ one_hour_file.clean_data(4)
 # one_hour_file.print_file()
 
 # ---dimensionality reductions---
-one_hour_file.calculate_PCA(2, True)
-one_hour_file.calculate_TSNE(2, True)
+one_hour_file.calculate_PCA(2, False)
+one_hour_file.calculate_TSNE(2, False)
 
 # ---clustering---
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
-# one_hour_file.dbscan_clustering('PCA')
+one_hour_file.dbscan_clustering('PCA')
 one_hour_file.dbscan_clustering('TSNE')
 
 
