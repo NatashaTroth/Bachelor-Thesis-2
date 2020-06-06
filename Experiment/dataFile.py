@@ -106,38 +106,36 @@ class DataFile:
 
     def calculate_PCA(self, number_components, graphs):
         self.pca = calculate_PCA(self.df, number_components, graphs)
-        print(self.pca)
 
     def calculate_TSNE(self, number_components, graphs):
         self.tsne = calculate_TSNE(self.df, number_components, graphs)
-        print(self.tsne)
 
-    def spectral_clustering(self, type):
-        if type == 'PCA':
-            spectral_clustering(self.pca)
-        if type == 'TSNE':
-            spectral_clustering(self.tsne)
+    def spectral_clustering(self, dataType, graphs=False):
+        if dataType == 'PCA':
+            spectral_clustering(self.pca, dataType, graphs)
+        if dataType == 'TSNE':
+            spectral_clustering(self.tsne, dataType, graphs)
 
-    def dbscan_clustering(self, type):
-        if type == 'PCA':
-            dbscan_clustering(self.pca)
-        elif type == 'TSNE':
-            dbscan_clustering(self.tsne)
+    def dbscan_clustering(self, dataType, graphs=False):
+        if dataType == 'PCA':
+            dbscan_clustering(self.pca, dataType, graphs)
+        elif dataType == 'TSNE':
+            dbscan_clustering(self.tsne, dataType, graphs)
         else:
             dbscan_clustering(self.df)
 
-    def optics_clustering(self, type):
-        if type == 'PCA':
-            optics_clustering(self.pca)
-        elif type == 'TSNE':
-            optics_clustering(self.tsne)
+    def optics_clustering(self, dataType, graphs=False):
+        if dataType == 'PCA':
+            optics_clustering(self.pca, dataType, graphs)
+        elif dataType == 'TSNE':
+            optics_clustering(self.tsne, dataType, graphs)
         else:
             optics_clustering(self.df)
 
-    def agglomerative_clustering(self, type):
-        if type == 'PCA':
-            agglomerative_clustering(self.pca)
-        elif type == 'TSNE':
-            agglomerative_clustering(self.tsne)
+    def agglomerative_clustering(self, dataType, graphs=False):
+        if dataType == 'PCA':
+            agglomerative_clustering(self.pca, dataType, graphs)
+        elif dataType == 'TSNE':
+            agglomerative_clustering(self.tsne, dataType, graphs)
         else:
             agglomerative_clustering(self.df)

@@ -55,9 +55,20 @@ def create_3d_scatterplot(data, xName, yName, zName):
     plt.show()
 
 
-def create_2d_scatterplot_clustering(clustering_method, df):
+def create_2d_scatterplot_clustering(clustering_method, df, title):
     plt.figure(figsize=(16, 10))
     cluster_labels = clustering_method.fit_predict(df)
     plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
-    plt.title("DBSCAN")
+    plt.title(title)
     plt.show()
+
+
+# -----ipyvolume scatterplot---
+
+# x = df["pca-one"],
+# y = df["pca-two"],
+# z = df["pca-three"],
+
+# fig = ipv.figure()
+# scatter = ipv.scatter(x, y, z)
+# ipv.show()

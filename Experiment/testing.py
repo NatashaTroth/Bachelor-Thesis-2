@@ -43,7 +43,7 @@ class TestStringMethods(unittest.TestCase):
         data_file = DataFile("./Experiment/testData/testRemoveColumns")
         # ---remove rows with missing value & time column---
         data_file.df = data_file.df.drop(columns=['TIME'])
-        print(data_file.df.to_json(orient="index"))
+        # print(data_file.df.to_json(orient="index"))
         data_file.remove_columns_with_many_empty_values(30, 4)
         result_after_removing_columns = pd.read_json(
             './Experiment/testData/testRemoveColumns/resultAfterRemovingColumns.json', orient='index')

@@ -41,7 +41,7 @@ def calculate_PCA(df, number_components, graphs):
             create_3d_scatterplot(df, "pca-one", "pca-two", "pca-three")
 
     # calculate_TSNE(pd.DataFrame(pca_result[:, [0, 3]]))
-    print(pca_results)
+    # print(pca_results)
     return pd.DataFrame(pca_results)
 
 
@@ -51,8 +51,8 @@ def calculate_TSNE(df, number_components, graphs):
     # tsne = TSNE(n_components=2, verbose=0,
     #             perplexity=40, n_iter=300, init='random')
     tsne_results = tsne.fit_transform(df)
-    print(df)
-    print(tsne_results)
+    # print(df)
+    # print(tsne_results)
 
     df['tsne-one'] = tsne_results[:, 0]
     df['tsne-two'] = tsne_results[:, 1]
