@@ -5,7 +5,7 @@ from dataFiles import DataFiles
 from pathlib import Path
 import sys
 
-number_dimensions = 4
+number_dimensions = 3
 
 # oneHourFile = DataFile(
 #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
@@ -18,24 +18,25 @@ one_hour_file = DataFile(
 # ---clean data (preprocessing)---
 # one_hour_file.print_file()
 one_hour_file.clean_data(4)
+
 # one_hour_file.print_file()
 
 # ---dimensionality reductions---
-one_hour_file.calculate_PCA(number_dimensions, False)
-one_hour_file.calculate_TSNE(number_dimensions, False)
+# one_hour_file.calculate_PCA(number_dimensions, False)
+# one_hour_file.calculate_TSNE(number_dimensions, False)
 
 # ---clustering---
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
-one_hour_file.dbscan_clustering('PCA')
-one_hour_file.dbscan_clustering('TSNE')
+# one_hour_file.dbscan_clustering('PCA', True)
+# one_hour_file.dbscan_clustering('TSNE', True)
 
-one_hour_file.optics_clustering('PCA')
-one_hour_file.optics_clustering('TSNE')
+# one_hour_file.optics_clustering('PCA')
+# one_hour_file.optics_clustering('TSNE')
 
-one_hour_file.agglomerative_clustering('PCA')
-one_hour_file.agglomerative_clustering('TSNE')
+# one_hour_file.agglomerative_clustering('PCA')
+# one_hour_file.agglomerative_clustering('TSNE')
 
 
 # ---- THREE HOUR FILES ----
@@ -49,18 +50,18 @@ three_hour_file.clean_data(6)
 # three_hour_file.print_file()
 
 # ---dimensionality reductions---
-three_hour_file.calculate_PCA(number_dimensions, False)
-three_hour_file.calculate_TSNE(number_dimensions, False)
+# three_hour_file.calculate_PCA(number_dimensions, False)
+# three_hour_file.calculate_TSNE(number_dimensions, False)
 
 # ---clustering---
 # three_hour_file.spectral_clustering('PCA')
 # three_hour_file.spectral_clustering('TSNE')
 
-three_hour_file.dbscan_clustering('PCA')
-three_hour_file.dbscan_clustering('TSNE')
+# three_hour_file.dbscan_clustering('PCA')
+# three_hour_file.dbscan_clustering('TSNE')
 
-three_hour_file.optics_clustering('PCA')
-three_hour_file.optics_clustering('TSNE')
+# three_hour_file.optics_clustering('PCA')
+# three_hour_file.optics_clustering('TSNE')
 
-three_hour_file.agglomerative_clustering('PCA')
-three_hour_file.agglomerative_clustering('TSNE')
+# three_hour_file.agglomerative_clustering('PCA')
+# three_hour_file.agglomerative_clustering('TSNE')

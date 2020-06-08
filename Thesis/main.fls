@@ -331,9 +331,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-american
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-ngerman.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx
-OUTPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+OUTPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.toc
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx
@@ -442,10 +442,10 @@ INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experimen
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
-INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex
-INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clusteringAfterDimReduction.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex

@@ -2,15 +2,11 @@
 # import time
 import numpy as np
 import pandas as pd
-from sklearn.decomposition import PCA
-from sklearn.manifold import TSNE
 # matplotlib inline
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
-from sklearn.cluster import SpectralClustering
-from sklearn.cluster import DBSCAN
 
 
 def create_bar_plot(x, y, xName, yName):
@@ -55,10 +51,47 @@ def create_3d_scatterplot(data, xName, yName, zName):
     plt.show()
 
 
+def create_clustering_plot(clustering_method, df, title):
+    print(str(len(df.columns)))
+    if len(df.columns) == 2:
+        create_2d_scatterplot_clustering(clustering_method, df, title)
+    if len(df.columns) == 3:
+        create_3d_scatterplot_clustering(clustering_method, df, title)
+
+
 def create_2d_scatterplot_clustering(clustering_method, df, title):
     plt.figure(figsize=(16, 10))
     cluster_labels = clustering_method.fit_predict(df)
     plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
+    plt.title(title)
+    plt.show()
+
+
+def create_3d_scatterplot_clustering(clustering_method, df, title):
+
+    ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
+    cluster_labels = clustering_method.fit_predict(df)
+
+    # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
+    #                     'pca-three': 'blue'}
+    # labels = ["pca-one", "pca-two", "pca-three"]
+    # cvec = [label_color_dict[label] for label in labels]
+    ax.scatter(
+        xs=df[0],
+        ys=df[1],
+        zs=df[2],
+        # c=cvec
+        # c=list(range(0, 8)),
+        # cmap='tab10'
+        c=cluster_labels
+    )
+    ax.set_xlabel("test1")
+    ax.set_ylabel("test2")
+    ax.set_zlabel("test3")
+
+    # plt.figure(figsize=(16, 10)).gca(projection='3d')
+    # cluster_labels = clustering_method.fit_predict(df)
+    # plt.scatter(xs=df[0], ys=df[1], zs=df[2], c=cluster_labels)
     plt.title(title)
     plt.show()
 

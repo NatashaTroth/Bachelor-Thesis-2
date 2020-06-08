@@ -593,6 +593,40 @@
       \field{pages}{2579\bibrangedash 2605}
       \range{pages}{27}
     \endentry
+    \entry{mccue2014data}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8cf89383a9846b47b555597a35b807ff}{%
+           family={McCue},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann (Elsevier)}%
+      }
+      \strng{namehash}{8cf89383a9846b47b555597a35b807ff}
+      \strng{fullhash}{8cf89383a9846b47b555597a35b807ff}
+      \strng{bibnamehash}{8cf89383a9846b47b555597a35b807ff}
+      \strng{authorbibnamehash}{8cf89383a9846b47b555597a35b807ff}
+      \strng{authornamehash}{8cf89383a9846b47b555597a35b807ff}
+      \strng{authorfullhash}{8cf89383a9846b47b555597a35b807ff}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780128004081}
+      \field{title}{Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.at/books?id=re1MBAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.at/books?id=re1MBAAAQBAJ
+      \endverb
+    \endentry
     \entry{OnLinesAndPlanes1901}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b69135425e9c9d6adc927b94c33421d4}{%

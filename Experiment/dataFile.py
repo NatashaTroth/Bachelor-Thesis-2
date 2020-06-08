@@ -48,7 +48,11 @@ class DataFile:
         self.df = self.df.drop(columns=['TIME'])
         # self.remove_columns_with_many_empty_values(30, number_same_attributes)
         self.remove_rows_with_wrong_values()
-        self.compress_same_attribute_columns(number_same_attributes)
+        # self.compress_same_attribute_columns(number_same_attributes)
+        # print("MAX VALUES...")
+        # print(self.df.max(axis=0))
+        # print("\nMIN VALUES...")
+        # print(self.df.min(axis=0))
         self.normalize_columns()
 
     def remove_rows_with_wrong_values(self):

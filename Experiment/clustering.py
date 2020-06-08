@@ -7,14 +7,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
-from sklearn.cluster import SpectralClustering
-from sklearn.cluster import DBSCAN
-from sklearn.cluster import OPTICS
-from plot import create_bar_plot
-from plot import create_2d_scatterplot
-from plot import create_3d_scatterplot
-from plot import create_2d_scatterplot_clustering
-from sklearn.cluster import AgglomerativeClustering
+from sklearn.cluster import SpectralClustering, DBSCAN, OPTICS, AgglomerativeClustering
+from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_clustering, create_clustering_plot
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 
 
@@ -33,8 +27,11 @@ def dbscan_clustering(df, dataType="", graphs=False):
     print("\n- dbscan clustering (" + dataType + ")...")
     db = DBSCAN(eps=3, min_samples=2)
     clustering = db.fit(df)
+
+    # print(str(len(df.columns)))
     if graphs == True:
-        create_2d_scatterplot_clustering(db, df, "DBSCAN (" + dataType + ")")
+        create_clustering_plot(db, df, "DBSCAN (" + dataType + ")")
+        # create_3d_scatterplot_clustering
     cluster_evaluation(db, df)
 
 

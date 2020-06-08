@@ -9,11 +9,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
-from sklearn.cluster import SpectralClustering
-from sklearn.cluster import DBSCAN
-from plot import create_bar_plot
-from plot import create_2d_scatterplot
-from plot import create_3d_scatterplot
+from sklearn.cluster import SpectralClustering, DBSCAN
+from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot
 
 
 def calculate_PCA(df, number_components, graphs):
