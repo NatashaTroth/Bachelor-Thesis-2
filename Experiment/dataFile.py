@@ -22,6 +22,8 @@ from clustering import agglomerative_clustering
 class DataFile:
     def __init__(self, directoryPath):
         self.df = self.create_data_frame(directoryPath)
+        self.distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
+                                   'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
 
     def create_data_frame(self, directory_path):
         print("in createDataFrame")
@@ -43,14 +45,20 @@ class DataFile:
     def plot(self):
         self.df.plot(kind='bar')
 
-    def clean_data(self, number_same_attributes):
+    def clean_data(self, number_columns_to_use=1):
         print("cleaning data...")
         # time_column = self.df['TIME']
         self.df = self.df.drop(columns=['TIME'])
-        # self.remove_columns_with_many_empty_values(30, number_same_attributes)
+        # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
-        # self.compress_same_attribute_columns(number_same_attributes)
+
+        self.extract_columns(number_columns_to_use)
+
+        if number_columns_to_use > 1:
+            self.compress_same_attribute_columns(number_columns_to_use)
+
         self.normalize_columns()
+
         # print(self.df)
         # print("MAX VALUES...")
         # print(self.df.max(axis=0))
@@ -83,33 +91,47 @@ class DataFile:
                 count = 0
                 average = 0
 
+    def extract_columns(self, number_columns_to_use):
+        print("  extracting " + str(number_columns_to_use) + " column(s)...")
+        new_df = pd.DataFrame()
+        counter = 1
+        for attribute in self.distinctAttributes:
+            if self.contains_column(attribute):
+                while counter <= number_columns_to_use:
+                    new_df[attribute + str(counter)
+                           ] = self.df[attribute + str(counter)]
+                    counter += 1
+
+            counter = 1
+        self.df = new_df
+
+    def compress_same_attribute_columns(self, numberSameAttributes):
+        print("  compressing same attribute columns...")
+        # self.print_file()
+        # distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
+        #                       'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
+        new_df = pd.DataFrame()
+
+        for attribute in self.distinctAttributes:
+            if self.contains_column(attribute):
+                start_column = attribute + "1"
+                end_column = attribute + "" + str(numberSameAttributes)
+                col = self.df.loc[:, start_column:end_column]
+                new_df[attribute] = col.mean(axis=1)
+
+        self.df = new_df
+
+    def contains_column(self, attribute):
+        if len(self.df.columns[self.df.columns.str.contains(pat=attribute)]) > 0:
+            return True
+        return False
+
     def normalize_columns(self):
         print("  normalizing columns...")
         # scaler = MinMaxScaler()
         scaler = StandardScaler()
         self.df[self.df.columns] = scaler.fit_transform(
             self.df[self.df.columns])
-
-    def compress_same_attribute_columns(self, numberSameAttributes):
-        print("  compressing same attribute columns...")
-        # self.print_file()
-        distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
-                              'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
-        newDf = pd.DataFrame()
-
-        for attribute in distinctAttributes:
-            if self.contains_column(attribute):
-                start_column = attribute + "1"
-                end_column = attribute + "" + str(numberSameAttributes)
-                col = self.df.loc[:, start_column:end_column]
-                newDf[attribute] = col.mean(axis=1)
-
-        self.df = newDf
-
-    def contains_column(self, attribute):
-        if len(self.df.columns[self.df.columns.str.contains(pat=attribute)]) > 0:
-            return True
-        return False
 
     def calculate_PCA(self, number_components, graphs):
         self.pca = calculate_PCA(self.df, number_components, graphs)
