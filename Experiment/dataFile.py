@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 from pathlib import Path
 import sys
 from sklearn.manifold import TSNE
@@ -49,11 +50,12 @@ class DataFile:
         # self.remove_columns_with_many_empty_values(30, number_same_attributes)
         self.remove_rows_with_wrong_values()
         # self.compress_same_attribute_columns(number_same_attributes)
+        self.normalize_columns()
+        # print(self.df)
         # print("MAX VALUES...")
         # print(self.df.max(axis=0))
         # print("\nMIN VALUES...")
         # print(self.df.min(axis=0))
-        self.normalize_columns()
 
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")
@@ -83,7 +85,8 @@ class DataFile:
 
     def normalize_columns(self):
         print("  normalizing columns...")
-        scaler = MinMaxScaler()
+        # scaler = MinMaxScaler()
+        scaler = StandardScaler()
         self.df[self.df.columns] = scaler.fit_transform(
             self.df[self.df.columns])
 

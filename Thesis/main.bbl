@@ -455,6 +455,43 @@
       \field{title}{Clustering algorithms}
       \field{year}{1975}
     \endentry
+    \entry{hinton2003stochastic}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89a3b977a0617edc15b2d82b36929f3}{%
+           family={Roweis},
+           familyi={R\bibinitperiod},
+           given={Sam\bibnamedelima T},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \strng{namehash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \strng{fullhash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \strng{bibnamehash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \strng{authorbibnamehash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \strng{authornamehash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \strng{authorfullhash}{a8ef005b7a61ac40a7afa915fd0de2bb}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Stochastic neighbor embedding}
+      \field{volume}{15}
+      \field{year}{2003}
+      \field{pages}{833\bibrangedash 840}
+      \range{pages}{8}
+    \endentry
     \entry{hotelling1933analysis}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=628a6bd9bb208bfcbeb8394b69088107}{%

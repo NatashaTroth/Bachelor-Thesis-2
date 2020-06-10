@@ -23,7 +23,7 @@ As stated by \textcite{han2011data}[93], dimensionality reduction is a data redu
 %https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
 %On lines and planes of closest fit to systems of points in space
 %-pdf
-
+\subsubsection{Principal Components Analysis (PCA)}
 Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
 Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
 \textcite{hotelling1933analysis}[5] introduces his method as \textit{the method of principal components}. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
@@ -71,3 +71,48 @@ In the following step, as stated by \textcite{han2011data}[95-96], the principal
 %since eigenvalues - each principal component ends up orthogonal
 %youtuber video: which direction will you pick, that maximizes the variance
 %page 93
+
+
+
+\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
+In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE. It is a method of visualising high dimensional data on a two or three-dimensional plot. This technique is therefore also used for reducing the number of dimensions. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points apart from each other, they are typically unable to bring similar low-dimensional representations near.
+The authors describe, that T-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. The basic algorithm, as explained by \textcite{maaten2008visualizing}[2581-2582] and introduced by \textcite{hinton2003stochastic}[2] is as follows:
+%todo: not sure if this next part is described correctly - might be better to ask
+The first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. For example, the conditional probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two datapoints \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This probability is, would \textit{x\textsubscript{i}} pick the point \textit{x\textsubscript{j}} as its neighbour, under the circumstance that the neihbours were chosen according to their probablity density under a Gaussian, \textit{x\textsubscript{i}} being its centre.
+This results in the conditional probability being high for close data points and imperceptible for those further apart.
+
+In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}} is calculated. If the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. Kullback-Leibler divergence is used to measure the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. The goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data.
+
+
+\textcite{maaten2008visualizing}[2583] further explains the advantages of t-SNE over SNE are the improvement of its cost function and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
+
+
+% would be the conditional probability, that the point \textit{x\textsubscript{i}} would pick the point \textit{x\textsubscript{j}} as its' neighbour.
+
+
+% The similarity
+% of datapoint x j to datapoint xi is the conditional probability, p jji, that xi would pick x j as its neighbor
+% if neighbors were picked in proportion to their probability density under a Gaussian centered at xi.
+
+
+
+% Notes from https://www.youtube.com/watch?v=RJVL80Gg3lA :
+% Represent each highdimensional data by a point
+% similar data by close points
+% dissimilar data by points further away
+% embed points in low dimensional map - visualise as scattterplot
+
+% distances in the low d map should reflect the similarities in the high d map
+
+% discrepancy: an illogical or surprising lack of compatibility or similarity between two or more facts.pca -  concerned with preserving large pairwise distances in the map - but are such distances very reliable?
+
+% tsne: in hd space- measure similarities between points.
+% gaussian over point and measure density of all other points under it and then renormalize
+%  - like probability of points where probability is proportional to similarity of the points
+%  - We set the bandwith sigmai such that the conditional has a fixed perplexity (fixed number of points in gaussian, to account for denser regions)
+
+%  then do the same for low dim space (qij) - if qij and pij are similar - then good mapping - qij should reflect pijs as well as possible
+ 
+%  layout qijs values in map so that as similar as possible to pij - move points around, so that kl kullback-leibler divergence becomes small
+
+%  2 hd points similar (close together) - large pij value - have to make sure also gets large qij value

@@ -18,7 +18,7 @@ def spectral_clustering(df, dataType="", graphs=False):
         n_clusters=3, assign_labels="discretize", random_state=0)
     clustering = sc.fit(df)
     if graphs == True:
-        create_2d_scatterplot_clustering(
+        create_clustering_plot(
             sc, df, "Spectral Clustering (" + dataType + ")")
     cluster_evaluation(sc, df)
 
@@ -27,7 +27,7 @@ def dbscan_clustering(df, dataType="", graphs=False):
     print("\n- dbscan clustering (" + dataType + ")...")
     db = DBSCAN(eps=3, min_samples=2)
     clustering = db.fit(df)
-
+    # print(db)
     # print(str(len(df.columns)))
     if graphs == True:
         create_clustering_plot(db, df, "DBSCAN (" + dataType + ")")
@@ -37,10 +37,10 @@ def dbscan_clustering(df, dataType="", graphs=False):
 
 def optics_clustering(df, dataType="", graphs=False):
     print("\n- optics clustering (" + dataType + ")...")
-    optics = OPTICS(min_samples=2)
+    optics = OPTICS(min_samples=2, cluster_method="xi")
     clustering = optics.fit(df)
     if graphs == True:
-        create_2d_scatterplot_clustering(
+        create_clustering_plot(
             optics, df, "OPTICS (" + dataType + ")")
     cluster_evaluation(optics, df)
 
@@ -50,7 +50,7 @@ def agglomerative_clustering(df, dataType="", graphs=False):
     agglomerative = AgglomerativeClustering()
     clustering = agglomerative.fit(df)
     if graphs == True:
-        create_2d_scatterplot_clustering(
+        create_clustering_plot(
             agglomerative, df, "Agglomerative Clustering (" + dataType + ")")
     cluster_evaluation(agglomerative, df)
 
@@ -66,7 +66,9 @@ def cluster_evaluation(clustering_method, df):
 def silhouette_score_evaluation(clustering_method, df):
     # print("calculation silhouette score...")
     cluster_labels = clustering_method.fit_predict(df)
-
+    print("labels: ")
+    print(np.unique(cluster_labels))
+    # print(cluster_labels)
     # The silhouette_score gives the average value for all the samples.
     # This gives a perspective into the density and separation of the formed
     # clusters
@@ -94,6 +96,6 @@ def calinski_harabasz_score_evaluation(clustering_method, df):
     cluster_labels = clustering_method.fit_predict(df)
     if len(np.unique(cluster_labels)) > 1:
         score = calinski_harabasz_score(df, cluster_labels)
-        print("Calinski harabasz score: " + str(score))
+        print("Calinski Harabasz score: " + str(score))
     else:
-        print("Only one cluster - there have to be at least 2 clusters to calculation the Calinski harabasz score.")
+        print("Only one cluster - there have to be at least 2 clusters to calculation the Calinski Harabasz score.")
