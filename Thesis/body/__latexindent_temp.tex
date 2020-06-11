@@ -1,118 +1,54 @@
-%https://www.amazon.de/dp/069107951X/ref=sr_1_1?dchild=1&keywords=9780691079516&qid=1584700659&sr=8-1
-%  author={Bellman, R. and Rand Corporation and Karreman Mathematics Research Collection},
-%https://books.google.at/books?hl=en&lr=&id=iwbWCgAAQBAJ&oi=fnd&pg=PR9&dq=Adaptive+Control+Processes&ots=bDJ9XsIa7c&sig=Rc5D_JAZc7a4FigIbt3DmiNYhJI#v=snippet&q=curse%20of%20dimensionality&f=false
-\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model, however, will not be suitable for prediction. 
-\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). According to \textcite{DataMiningAndPredictiveAnalytics}[93], high quality visualisation methods usually cannot depict more than five dimensions.
-%TODO: not sure if i've understood this next bit right:
-\textcite{bellman1961adaptive}[94, 198] further gives the following example: Imagine if the variables of a function take on the values between 1 and 100. While a function with one variable would need to tabulate 100 values, a function with 2 variables would need to tabulate 100 x 100 = 10\textsuperscript{4} values and a function with 3 variables 10\textsuperscript{6}. Each additional variable adds more complexity.
-%...adds more complexity to the ?
-% Multidimensional variational problems require more complex methods to solve them. 
-
-% Imagine, for example, the variables are defined between 0 and 1 (e.g. u(t), where 0 $\leq$ t $\leq$ 1), at the points k(0.01). A function with one variable would require 100 values (the variable would take the numbers 0 to 100) to be tabulated. 
-
-
-
-
-
-%TODO: FIND OUT HOW PRINCIPAL COMPONENTS ARE CALCULATED IN THE FIRST PLACE
-%TODO: FIND OUT WHO FIRST SUGGESTED IT FOR DATA MINING? ALTHOUGH DON'T THINK I'LL FIND MUCH
-According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
-As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. Principal components analysis is a dimensionality reduction technique.
-
-%Analysis of a complex of statistical variables by harold hotelling
-%https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
-%On lines and planes of closest fit to systems of points in space
-%-pdf
-\subsubsection{Principal Components Analysis (PCA)}
-Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
-Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
-\textcite{hotelling1933analysis}[5] introduces his method as \textit{the method of principal components}. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
-derivation was announced by \textcite{hotelling1933analysis}.
-
-
-
-\textcite{han2011data}[95-96] lists the first step of PCA is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-\textcite{han2011data}[95-96] describes the next step, which entails calculation k orthonormal vectors, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system.
-
-In the following step, as stated by \textcite{han2011data}[95-96], the principal components are selected. 
-
-
-%TODO: NOT SURE WHAT n IS - PAGE 1 SAYS NUMBER OF VARIABLES, BUT NOT SURE IF THAT REALLY MAKES SENCE HERE - pretty sure its dimensions, mentioned in next paragraph:
-\textcite{hotelling1933analysis}[4, 5, 15, 18] When choosing the calculated components, they are chosen with the decreasing amount of variance. Therefore, the one with the highest variance (\textit{$\gamma$\textsubscript{1}}) is chosen first. The next highest (\textit{$\gamma$\textsubscript{2}}) is chosen orthogonal to \textit{$\gamma$\textsubscript{1}} and so on, until the number \textit{n} dimensions are reached (\textit{$\gamma$\textsubscript{n}}). The components left with small variance are disregarded, since they are trivial. 
-% The method results in selecting a new set of coordinate axes which correspond to the principal axes of ellipsoids. 
-%NOT SURE IF UNDERSTOOD THIS RIGHT, END PAGE 24&25:
-% In an example, Helling selects the two of four calculated principal components with the highest variance, therefore being able to display the data on a two dimensional scatter diagram. (?)
-%10
-% Geometrically, the new coordinate axes are rotated to lie along the principal axes of the ellipsoids.
-
-
-
-\textcite{han2011data}[93, 95-96] stated, in data mining the vectors with the lowest variance that are removed, reduce the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data. The authors suggested wavelet transforms (e.g. discrete wavelet transform (DWT)) as another method of dimensionality reduction.
-
-
-% \textbf{!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data}.
-\textbf{todo: more detail (if use PCA in experiment)}.
-
-
-% \textcite{han2011data}[95-96]
-% \begin{enumerate}
-%   \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-%   \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
-%   \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
-%   \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
-% \end{enumerate}
-
-%TODO: EXPLAIN MORE IN DETAIL!! ALTHOUGH - MIGHT BE DONE IN PRACTICAL PART - ASK
-
-%TODO: explain what variance is, maybe also skewed data
-%variance = range, want data as spread out as we can find it
-%either, find highest variance (where points are spread out the most), or minimum error(distance to axis)
-%retain most of the information
-%since eigenvalues - each principal component ends up orthogonal
-%youtuber video: which direction will you pick, that maximizes the variance
-%page 93
-
-
-
-\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
-In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE. It is a method of visualising high dimensional data on a two or three-dimensional plot. This technique is therefore also used for reducing the number of dimensions. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points apart from each other, they are typically unable to bring similar low-dimensional representations near.
-The authors describe, that T-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. The basic algorithm, as explained by \textcite{maaten2008visualizing}[2581-2582] and introduced by \textcite{hinton2003stochastic}[2] is as follows:
-%todo: not sure if this next part is described correctly - might be better to ask
-The first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. For example, the conditional probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two datapoints \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This probability is, would \textit{x\textsubscript{i}} pick the point \textit{x\textsubscript{j}} as its neighbour, under the circumstance that the neihbours were chosen according to their probablity density under a Gaussian, \textit{x\textsubscript{i}} being its centre.
-This results in the conditional probability being high for close data points and imperceptible for those further apart.
-
-In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}} is calculated. If the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. Kullback-Leibler divergence is used to measure the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. The goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data.
-
-
-\textcite{maaten2008visualizing}[2583] further explains the advantages of t-SNE over SNE are the improvement of its cost function and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
-%TODO!!! FINISH
-
-% would be the conditional probability, that the point \textit{x\textsubscript{i}} would pick the point \textit{x\textsubscript{j}} as its' neighbour.
-
-
-% The similarity
-% of datapoint x j to datapoint xi is the conditional probability, p jji, that xi would pick x j as its neighbor
-% if neighbors were picked in proportion to their probability density under a Gaussian centered at xi.
-
-
-
-% Notes from https://www.youtube.com/watch?v=RJVL80Gg3lA :
-% Represent each highdimensional data by a point
-% similar data by close points
-% dissimilar data by points further away
-% embed points in low dimensional map - visualise as scattterplot
-
-% distances in the low d map should reflect the similarities in the high d map
-
-% discrepancy: an illogical or surprising lack of compatibility or similarity between two or more facts.pca -  concerned with preserving large pairwise distances in the map - but are such distances very reliable?
-
-% tsne: in hd space- measure similarities between points.
-% gaussian over point and measure density of all other points under it and then renormalize
-%  - like probability of points where probability is proportional to similarity of the points
-%  - We set the bandwith sigmai such that the conditional has a fixed perplexity (fixed number of points in gaussian, to account for denser regions)
-
-%  then do the same for low dim space (qij) - if qij and pij are similar - then good mapping - qij should reflect pijs as well as possible
+The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396] describe this stage as assessing the quality of the results.
+There are different steps to be taken in evaluating clusters. 
  
-%  layout qijs values in map so that as similar as possible to pij - move points around, so that kl kullback-leibler divergence becomes small
+  \subsubsection{Assessment of the cluster tendency}
+  As explained by \textcite{han2011data}[396-397], the tendency must be assessed, meaning it is tested, whether structures exist that aren't random. Running a clustering algorithm on any data set will return clusters. However, only non random structures are significant and not misleading. For example, if a data set consists of data points that are uniformly distributed, if a clustering algorithm delivers clusters, these will be random and have no purpose. Spatial randomness tests (e.g. Hopkins Statistic) can be used to measure how likely the data was created by uniform data distribution.
 
-%  2 hd points similar (close together) - large pij value - have to make sure also gets large qij value
+ 
+
+  \subsubsection{Evaluation of the cluster quality}
+  (\textbf{Todo: adjust to the methods used in the experiment})
+
+  \textcite{han2011data}[399, 401] further mentions, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
+  % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
+  The experiment described in this paper uses the intrinsic method silhouette coefficient, since there is no ground truth for comparison.
+  
+  
+  \paragraph{Silhouette Coefficient}
+  In his paper, \textcite{rousseeuw1987silhouettes}[53-57, 59] proposes a new graphical display using silhouettes, to help determine how well objects belong to their assigned clusters. It can be used to interpret and validate the results of clustering. It is also utilised to compare the resulting clusters with those output using alternative algorithms (the input data being the same). In an example, where countries are assigned a value of how dissimilar they are to another country, the results are listed in a table. A structure contained in the results (consisting of 66 numbers), is hard to identify. Therefore, the countries are categorised into clusters using k-median. It is however uncertain, whether the clusters follow a specific structure, or if the groups are simply artificial. With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the data set? \\
+  According to Rousseeuw, the silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity ob the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined, by firstly calculating the average dissimilarity, for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}.
+  The formula is as follows:
+  \[
+    s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
+  \]
+  The resulting value \textit{s(i)} is a number in the range of \textit{-1 $\leq$ \textit{s(i)} $\leq$ 1}:
+
+  \[ s(i) =
+  \begin{cases}
+    1 - a(i)/b(i)       & \quad \text{if } a(i) < b(i)\\
+    0       & \quad \text{if } a(i) = b(i)\\
+ b(i)/a(i) - 1      & \quad \text{if } a(i) > b(i)
+
+  \end{cases}
+\]
+A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is the most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is unclear whether \textit{A} or the neighbouring cluster is a more suitable fit. If \textit{s(i)} is close to -1, then the dissimilarity within a cluster is larger than the dissimilarity to the neighbouring cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (misclassified). The function can also be adapted to work with similarities.
+The \textit{average silhouette width} for each cluster is received by calculating the average of all objects that belong said cluster. The higher the average silhouette width, the more pronounced the cluster is. An average score can also be calculated from each object \textit{i} for the entire plot (data set), the so called \textit{overall average silhouette width}. 
+
+\textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm, which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
+
+
+\subsubsection{Establishing the number of clusters}
+ \textcite{han2011data}[398] states, that the number of clusters (\textit{k}) found in the data set needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
+\textcite{rousseeuw1987silhouettes}[59] describes, how silhouettes can be used to determine the ideal amount of clusters. Picture a data set with dense clusters which each have large distances to the other clusters. When \textit{k} is chosen too small, naturally occurring clusters must be artificially joined, to satisfy the value \textit{k}. Implementing the silhouette calculation will result in high within-cluster dissimilarities (\textit{a(i)}) leading to a narrow silhouette (small \textit{s(i)}). Likewise, if \textit{k} is chosen too large, natural clusters will have to be artificially split, in order to gain \textit{k} clusters. The objects in a split natural cluster will however still be very close to the other half of their cluster, therefore resulting in low dissimilarities between clusters (\textit{b(i)}) and a small \textit{s(i)}.
+This logic denotes, that silhouettes should be capable of finding the most 'natural' number of clusters in a data set.
+
+
+  
+% %TODO: there is some more about it with examples - but not sure if need - from p. 584
+
+\paragraph{Davies-Bouldin Index}
+
+
+
+\paragraph{Calinski-Harabasz Index}
+\textcite{calinskiHarabasz} introduce their

@@ -35,7 +35,7 @@
 (\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
 % \textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
 %TODO:maybe also look into performance comparisons
-  \paragraph{Partitioning Methods}
+  \subsubsection{Partitioning Methods}
   Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
   Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
   %Sentence directly copied from book p366, not sure whether to add (needs changing): There are various kinds of other criteria for judging the quality of partitions. - WHICH ARE MENTIONED LATER IN SECTION???
@@ -44,7 +44,7 @@
 
 
 
-  \paragraph{Hierarchical Methods}
+  \subsubsection{Hierarchical Methods}
   %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
   The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
 
@@ -55,7 +55,7 @@
   %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
   
 
-  \paragraph{Density-Based Methods}
+  \subsubsection{Density-Based Methods}
   The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
   These methods can also be used to cluster sub spaces.
 
@@ -64,7 +64,7 @@
 
  
 
-  \paragraph{Grid-Based Methods}
+  \subsubsection{Grid-Based Methods}
   %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
   The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are performed on the grid structure. The processing time depends on the grid size (number of cells) in each dimension and not on the number of objects and is more accelerated than other clustering methods.
   

@@ -305,6 +305,44 @@
       \endverb
       \keyw{data mining;mobile investigation process;relational combinations;crime reconstruction;functional analysis;temporal and functional analysis;data mining;dynamic causality;reconstruction events;Forensics;Classification algorithms;Clustering algorithms;Mobile communication;Telecommunications;Functional analysis;Data mining;Digital Forensic Investigation;Mobile Forensic Investigation;Evidences Analysis;Smartphone;Data Mining;Clustering;Dynamic Causal;Temporal and Functional Analysis}
     \endentry
+    \entry{calinskiHarabasz}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=74b28f30912e45b424de18f111b69b81}{%
+           family={Caliński},
+           familyi={C\bibinitperiod},
+           given={Tadeusz},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cf2025c111a14c25a5710b8191d3409}{%
+           family={JA},
+           familyi={J\bibinitperiod},
+           given={Harabasz},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{fullhash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{bibnamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{authorbibnamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{authornamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{authorfullhash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Statistics - Theory and Methods}
+      \field{month}{01}
+      \field{title}{A Dendrite Method for Cluster Analysis}
+      \field{volume}{3}
+      \field{year}{1974}
+      \field{pages}{1\bibrangedash 27}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1080/03610927408827101
+      \endverb
+    \endentry
     \entry{convexhullDbscan}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%

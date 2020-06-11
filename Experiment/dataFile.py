@@ -53,17 +53,18 @@ class DataFile:
         self.remove_rows_with_wrong_values()
 
         self.extract_columns(number_columns_to_use)
-
+        print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
+        print(self.df)
+
+        print(self.df)
+        print("MAX VALUES...")
+        print(self.df.max(axis=0))
+        print("\nMIN VALUES...")
+        print(self.df.min(axis=0))
 
         self.normalize_columns()
-
-        # print(self.df)
-        # print("MAX VALUES...")
-        # print(self.df.max(axis=0))
-        # print("\nMIN VALUES...")
-        # print(self.df.min(axis=0))
 
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")

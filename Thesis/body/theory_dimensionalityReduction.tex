@@ -19,6 +19,9 @@
 According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
 As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated data set, whilst mostly keeping the integrity of the initial data set. Principal components analysis is a dimensionality reduction technique.
 
+
+
+
 %Analysis of a complex of statistical variables by harold hotelling
 %https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
 %On lines and planes of closest fit to systems of points in space
@@ -28,8 +31,6 @@ Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes19
 Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
 \textcite{hotelling1933analysis}[5] introduces his method as \textit{the method of principal components}. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
 derivation was announced by \textcite{hotelling1933analysis}.
-
-
 
 \textcite{han2011data}[95-96] lists the first step of PCA is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
 \textcite{han2011data}[95-96] describes the next step, which entails calculation k orthonormal vectors, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system.
@@ -75,7 +76,7 @@ In the following step, as stated by \textcite{han2011data}[95-96], the principal
 
 
 \subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
-In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE. It is a method of visualising high dimensional data on a two or three-dimensional plot. This technique is therefore also used for reducing the number of dimensions. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points apart from each other, they are typically unable to bring similar low-dimensional representations near.
+In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE. It is a method of visualising high dimensional data on a two or three-dimensional plot. This technique is also used to reduce the number of dimensions. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points apart from each other, they are typically unable to bring similar low-dimensional representations near.
 The authors describe, that T-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. The basic algorithm, as explained by \textcite{maaten2008visualizing}[2581-2582] and introduced by \textcite{hinton2003stochastic}[2] is as follows:
 %todo: not sure if this next part is described correctly - might be better to ask
 The first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. For example, the conditional probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two datapoints \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This probability is, would \textit{x\textsubscript{i}} pick the point \textit{x\textsubscript{j}} as its neighbour, under the circumstance that the neihbours were chosen according to their probablity density under a Gaussian, \textit{x\textsubscript{i}} being its centre.
@@ -86,6 +87,8 @@ In a similar way, the conditional probability between the low-dimensional data p
 
 \textcite{maaten2008visualizing}[2583] further explains the advantages of t-SNE over SNE are the improvement of its cost function and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
 %TODO!!! FINISH
+
+
 
 % would be the conditional probability, that the point \textit{x\textsubscript{i}} would pick the point \textit{x\textsubscript{j}} as its' neighbour.
 

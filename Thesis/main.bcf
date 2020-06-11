@@ -4022,6 +4022,8 @@
     <bcf:citekey order="161">han2011data</bcf:citekey>
     <bcf:citekey order="162">rousseeuw1987silhouettes</bcf:citekey>
     <bcf:citekey order="163">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="164">calinskiHarabasz</bcf:citekey>
+    <bcf:citekey order="165">calinskiHarabasz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

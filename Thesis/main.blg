@@ -1,62 +1,62 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[92] biber-darwin:322> INFO - === Wed Jun 10, 2020, 15:12:46
-[117] Biber.pm:415> INFO - Reading 'main.bcf'
-[332] Biber.pm:943> INFO - Found 24 citekeys in bib section 0
-[350] Biber.pm:4256> INFO - Processing section 0
-[351] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
-[351] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
-[368] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[373] bibtex.pm:1653> INFO - LaTeX decoding ...
-[494] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
-[498] Utils.pm:304> WARN - Duplicate entry key: 'mccue2014data' in file 'bibliography.bib', skipping ...
-[526] Utils.pm:304> WARN - month field 'Dec' in entry 'forensics' is not an integer - this will probably not sort properly.
-[531] Utils.pm:304> WARN - month field 'Oct' in entry 'convexhullDbscan' is not an integer - this will probably not sort properly.
-[692] Utils.pm:304> WARN - month field 'Dec' in entry 'silhouetteRelocatingMeasure' is not an integer - this will probably not sort properly.
-[693] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 15, warning: 31 characters of junk seen at toplevel
-[693] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 25, warning: 1 characters of junk seen at toplevel
-[693] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 49, warning: 145 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 63, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 78, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 88, warning: 39 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 102, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 120, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 134, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 145, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 159, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 175, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 188, warning: 1 characters of junk seen at toplevel
-[694] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 202, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 216, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 237, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 255, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 284, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 294, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 303, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 326, warning: 13 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 337, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 350, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 363, warning: 1 characters of junk seen at toplevel
-[695] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 370, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 377, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 396, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 408, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 420, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 428, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 435, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 444, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 454, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 464, warning: 1 characters of junk seen at toplevel
-[696] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 478, warning: 1 characters of junk seen at toplevel
-[697] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 491, warning: 1 characters of junk seen at toplevel
-[697] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 514, warning: 1 characters of junk seen at toplevel
-[697] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 523, warning: 1 characters of junk seen at toplevel
-[697] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_EQMW/bibliography.bib_42194.utf8, line 534, warning: 1 characters of junk seen at toplevel
-[782] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[782] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
-[782] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[783] Biber.pm:4084> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
-[783] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[831] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[854] bbl.pm:755> INFO - Output to main.bbl
-[854] Biber.pm:128> INFO - WARNINGS: 43
+[87] biber-darwin:322> INFO - === Thu Jun 11, 2020, 16:51:29
+[111] Biber.pm:415> INFO - Reading 'main.bcf'
+[298] Biber.pm:943> INFO - Found 25 citekeys in bib section 0
+[312] Biber.pm:4256> INFO - Processing section 0
+[312] Utils.pm:75> INFO - Globbing data source 'bibliography.bib'
+[313] Utils.pm:91> INFO - Globbed data source 'bibliography.bib' to bibliography.bib
+[325] Biber.pm:4455> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[329] bibtex.pm:1653> INFO - LaTeX decoding ...
+[418] bibtex.pm:1471> INFO - Found BibTeX data source 'bibliography.bib'
+[423] Utils.pm:304> WARN - Duplicate entry key: 'mccue2014data' in file 'bibliography.bib', skipping ...
+[451] Utils.pm:304> WARN - month field 'Dec' in entry 'forensics' is not an integer - this will probably not sort properly.
+[456] Utils.pm:304> WARN - month field 'Oct' in entry 'convexhullDbscan' is not an integer - this will probably not sort properly.
+[591] Utils.pm:304> WARN - month field 'Dec' in entry 'silhouetteRelocatingMeasure' is not an integer - this will probably not sort properly.
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 15, warning: 31 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 25, warning: 1 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 49, warning: 145 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 63, warning: 1 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 78, warning: 1 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 88, warning: 39 characters of junk seen at toplevel
+[597] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 102, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 120, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 134, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 145, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 159, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 175, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 188, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 202, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 216, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 237, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 255, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 284, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 294, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 303, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 326, warning: 13 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 337, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 350, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 363, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 370, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 377, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 396, warning: 1 characters of junk seen at toplevel
+[598] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 408, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 420, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 428, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 435, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 444, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 454, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 464, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 478, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 491, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 514, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 523, warning: 1 characters of junk seen at toplevel
+[599] Utils.pm:304> WARN - BibTeX subsystem: /var/folders/pg/hvgm2j2j38d01qw2mzfgvyp00000gn/T/biber_tmp_jR3y/bibliography.bib_90568.utf8, line 534, warning: 1 characters of junk seen at toplevel
+[650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[650] Biber.pm:4084> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[650] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[685] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[705] bbl.pm:755> INFO - Output to main.bbl
+[705] Biber.pm:128> INFO - WARNINGS: 43
