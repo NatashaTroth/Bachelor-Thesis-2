@@ -75,12 +75,24 @@
 %todo: rewrite - that uses two global parameters instead of one - or say that only with one paramter
 According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
 
-\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters.
+\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the appropriate parameters for the "thinnest" cluster. The first step is to construct a sorted k-dist graph. For a specific \textit{k}, calculate the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour. Sort these distances in descending order and depict them on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour (the "thinnest" cluster). The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left with higher distances are likely to be noise and the points after are part of clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
+
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/sortedKGraphDBSCAN.png}
+  \caption{Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) \autocite{DBSCAN}[230].}
+  \label{figure:sortedKGraphDBSCAN}
+\end{figure*}
+
+% d = distance of point p to its k-th nearest neighbourhood
+% d-neighbourhood of p contains more than k+1 points - if several points have the same distance d from p as the kth point - unlikely
+%map each point from database to the distance from its kth nearest neighbour - sort in descending order - graph gives hints concerning density distribution in the db (= sorted k-dist graph)
 
 
 
 \paragraph{OPTICS}
-\textcite{han2011data}[388] mentions, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
+\textcite{han2011data}[388] mentions, that OPTICS was create d to improve the selection of global parameters problem in DBSCAN.
 \textcite{OPTICS}[49, 51-] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the data set according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}  is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the {reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
 
 \begin{figure*}[h]
