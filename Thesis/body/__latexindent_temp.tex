@@ -1,54 +1,129 @@
-The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396] describe this stage as assessing the quality of the results.
-There are different steps to be taken in evaluating clusters. 
+% As stated by \textcite{hartigan1975clustering}[11-12], clustering algorithms search through clusters to find a match for their data. Hartigan classifies the algorithms with the following properties:
+
+% \begin{itemize}
+%   \item Sorting:
+%   \item Switching
+%   \item Joining
+%   \item Splitting
+%   \item Adding
+%   \item Searching
+% \end{itemize}
+
+%TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
+
+
+
+\textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
+\begin{itemize}
+  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
+  \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
+  \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+  \item Ability to handle noise (see section \ref{section:NoisyData})
+  \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+  \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
+  \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+  \item Interpretability and usability of the results
+\end{itemize}
+
+% TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
+
+%TODO: check if all pages have been used - have been highlighting lines that have used
+%TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
+
+
+\textbf{todo: add images to compare how different methods cluster}
+\textcite{han2011data}[366-396] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
+
+(\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
+% \textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
+%TODO:maybe also look into performance comparisons
+  \subsubsection{Partitioning Methods}
+  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
+  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data). 
+  %Sentence directly copied from book p366, not sure whether to add (needs changing): There are various kinds of other criteria for judging the quality of partitions. - WHICH ARE MENTIONED LATER IN SECTION???
+  
+  Examples: k-means, k-medoids
+
+
+
+  \subsubsection{Hierarchical Methods}
+  %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
+  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based.
+
+  % todo COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
+
+  Examples: BIRCH, Chameleon
+%TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
+  %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
+  
+
+  \subsubsection{Density-Based Methods}
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
+  These methods can also be used to cluster sub spaces.
+
+  Examples: DBSCAN, OPTICS, DENCLUE
+  %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
+
+
+
+\paragraph{DBSCAN}
+\textcite{DBSCAN}[226-229] introduce a new density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters no with different shapes and work efficiently on large spatial datasets. The algorithm searches in a give radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exist, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of the Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius).
+% The goal is to keep adding neighbouring data points to the cluster
+% In doing so, core points and border points are distinguished.
+%todo: rewrite - that uses two global parameters instead of one - or say that only with one paramter
+According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
+
+\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters.
+
+
+
+\paragraph{OPTICS}
+\textcite{han2011data}[388] mentions, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
+\textcite{OPTICS}[49, 51-] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the data set according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}  is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the {reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
+  \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
+  \label{figure:reachabilityDistanceOPTICS}
+\end{figure*}
+
+%TODO: i wrote this from the paper - not sure whether to add - end is missing - see optics page 53 - pseudo code explanation
+%The OPTICS algorithm takes an arbitrary core point, and orders its directly density-reachable objects (according to Eps and MinPts) and sorts them by their reachability-distance (to the selected core point). From the smallest to the largest reachability-distance, each point is selected and added to an OrderedFile, along with its calculated core-distance and reachability-distance.
+
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D data set is depicted. 
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
+  \caption{OPTICS reachability plot for a 2D data set. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
+  \label{figure:reachabilityPlotOPTICS}
+\end{figure*}
+
+The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots (as can also be seen in figure \ref{figure:reachabilityPlotOPTICS}). In figure \ref{figure:clusterExtractionOPTICS}
+
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
+  \caption{Since clusters are defined as the dips/dents in the reachability plots create by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
+  \label{figure:clusterExtractionOPTICS}
+\end{figure*}
+
+%todo: In comparison to DBSCAN - problem with containment - optics page 52
+
  
-  \subsubsection{Assessment of the cluster tendency}
-  As explained by \textcite{han2011data}[396-397], the tendency must be assessed, meaning it is tested, whether structures exist that aren't random. Running a clustering algorithm on any data set will return clusters. However, only non random structures are significant and not misleading. For example, if a data set consists of data points that are uniformly distributed, if a clustering algorithm delivers clusters, these will be random and have no purpose. Spatial randomness tests (e.g. Hopkins Statistic) can be used to measure how likely the data was created by uniform data distribution.
 
- 
-
-  \subsubsection{Evaluation of the cluster quality}
-  (\textbf{Todo: adjust to the methods used in the experiment})
-
-  \textcite{han2011data}[399, 401] further mentions, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
-  % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
-  The experiment described in this paper uses the intrinsic method silhouette coefficient, since there is no ground truth for comparison.
+  \subsubsection{Grid-Based Methods}
+  %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
+  The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are performed on the grid structure. The processing time depends on the grid size (number of cells) in each dimension and not on the number of objects and is more accelerated than other clustering methods.
   
-  
-  \paragraph{Silhouette Coefficient}
-  In his paper, \textcite{rousseeuw1987silhouettes}[53-57, 59] proposes a new graphical display using silhouettes, to help determine how well objects belong to their assigned clusters. It can be used to interpret and validate the results of clustering. It is also utilised to compare the resulting clusters with those output using alternative algorithms (the input data being the same). In an example, where countries are assigned a value of how dissimilar they are to another country, the results are listed in a table. A structure contained in the results (consisting of 66 numbers), is hard to identify. Therefore, the countries are categorised into clusters using k-median. It is however uncertain, whether the clusters follow a specific structure, or if the groups are simply artificial. With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the data set? \\
-  According to Rousseeuw, the silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity ob the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined, by firstly calculating the average dissimilarity, for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}.
-  The formula is as follows:
-  \[
-    s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
-  \]
-  The resulting value \textit{s(i)} is a number in the range of \textit{-1 $\leq$ \textit{s(i)} $\leq$ 1}:
+  Examples: STING, CLIQUE
 
-  \[ s(i) =
-  \begin{cases}
-    1 - a(i)/b(i)       & \quad \text{if } a(i) < b(i)\\
-    0       & \quad \text{if } a(i) = b(i)\\
- b(i)/a(i) - 1      & \quad \text{if } a(i) > b(i)
-
-  \end{cases}
-\]
-A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is the most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is unclear whether \textit{A} or the neighbouring cluster is a more suitable fit. If \textit{s(i)} is close to -1, then the dissimilarity within a cluster is larger than the dissimilarity to the neighbouring cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (misclassified). The function can also be adapted to work with similarities.
-The \textit{average silhouette width} for each cluster is received by calculating the average of all objects that belong said cluster. The higher the average silhouette width, the more pronounced the cluster is. An average score can also be calculated from each object \textit{i} for the entire plot (data set), the so called \textit{overall average silhouette width}. 
-
-\textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm, which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
+  \vspace{5mm} %5mm vertical space
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a data set with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
 
 
-\subsubsection{Establishing the number of clusters}
- \textcite{han2011data}[398] states, that the number of clusters (\textit{k}) found in the data set needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
-\textcite{rousseeuw1987silhouettes}[59] describes, how silhouettes can be used to determine the ideal amount of clusters. Picture a data set with dense clusters which each have large distances to the other clusters. When \textit{k} is chosen too small, naturally occurring clusters must be artificially joined, to satisfy the value \textit{k}. Implementing the silhouette calculation will result in high within-cluster dissimilarities (\textit{a(i)}) leading to a narrow silhouette (small \textit{s(i)}). Likewise, if \textit{k} is chosen too large, natural clusters will have to be artificially split, in order to gain \textit{k} clusters. The objects in a split natural cluster will however still be very close to the other half of their cluster, therefore resulting in low dissimilarities between clusters (\textit{b(i)}) and a small \textit{s(i)}.
-This logic denotes, that silhouettes should be capable of finding the most 'natural' number of clusters in a data set.
-
-
-  
-% %TODO: there is some more about it with examples - but not sure if need - from p. 584
-
-\paragraph{Davies-Bouldin Index}
-
-
-
-\paragraph{Calinski-Harabasz Index}
-\textcite{calinskiHarabasz} introduce their
+  %TODO: paper book page 542 - kohonen networks

@@ -12,6 +12,7 @@
 %TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
 
 
+
 \textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
 \begin{itemize}
   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
@@ -30,6 +31,9 @@
 
 %TODO: check if all pages have been used - have been highlighting lines that have used
 %TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
+
+
+\textbf{todo: add images to compare how different methods cluster}
 \textcite{han2011data}[366-396] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
 
 (\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
@@ -61,6 +65,54 @@
 
   Examples: DBSCAN, OPTICS, DENCLUE
   %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
+
+
+
+\paragraph{DBSCAN}
+\textcite{DBSCAN}[226-229] introduce a new density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters no with different shapes and work efficiently on large spatial datasets. The algorithm searches in a give radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exist, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of the Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius).
+% The goal is to keep adding neighbouring data points to the cluster
+% In doing so, core points and border points are distinguished.
+%todo: rewrite - that uses two global parameters instead of one - or say that only with one paramter
+According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
+
+\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters.
+
+
+
+\paragraph{OPTICS}
+\textcite{han2011data}[388] mentions, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
+\textcite{OPTICS}[49, 51-] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the data set according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}  is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the {reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
+  \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
+  \label{figure:reachabilityDistanceOPTICS}
+\end{figure*}
+
+%TODO: i wrote this from the paper - not sure whether to add - end is missing - see optics page 53 - pseudo code explanation
+%The OPTICS algorithm takes an arbitrary core point, and orders its directly density-reachable objects (according to Eps and MinPts) and sorts them by their reachability-distance (to the selected core point). From the smallest to the largest reachability-distance, each point is selected and added to an OrderedFile, along with its calculated core-distance and reachability-distance.
+
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D data set is depicted. 
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
+  \caption{OPTICS reachability plot for a 2D data set. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
+  \label{figure:reachabilityPlotOPTICS}
+\end{figure*}
+
+The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots (as can also be seen in figure \ref{figure:reachabilityPlotOPTICS}). In figure \ref{figure:clusterExtractionOPTICS}
+
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
+  \caption{Since clusters are defined as the dips/dents in the reachability plots create by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
+  \label{figure:clusterExtractionOPTICS}
+\end{figure*}
+
+%todo: In comparison to DBSCAN - problem with containment - optics page 52
 
  
 

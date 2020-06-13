@@ -160,6 +160,72 @@
       \field{pages}{434\bibrangedash 437}
       \range{pages}{4}
     \endentry
+    \entry{OPTICS}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=30218301c8db6744d898cf2fbef485e7}{%
+           family={Ankerst},
+           familyi={A\bibinitperiod},
+           given={Mihael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=346772f472393316fd22dd8a300d2e7d}{%
+           family={Breunig},
+           familyi={B\bibinitperiod},
+           given={Markus\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, Pennsylvania, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{353216c878e06e428094c446e94c76c7}
+      \strng{fullhash}{290606bde793f0e777a1762cbed5719f}
+      \strng{bibnamehash}{290606bde793f0e777a1762cbed5719f}
+      \strng{authorbibnamehash}{290606bde793f0e777a1762cbed5719f}
+      \strng{authornamehash}{353216c878e06e428094c446e94c76c7}
+      \strng{authorfullhash}{290606bde793f0e777a1762cbed5719f}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0163-5808}
+      \field{journaltitle}{SIGMOD Rec.}
+      \field{month}{6}
+      \field{number}{2}
+      \field{series}{SIGMOD ’99}
+      \field{title}{OPTICS: Ordering Points to Identify the Clustering Structure}
+      \field{volume}{28}
+      \field{year}{1999}
+      \field{pages}{49\bibrangedash 60}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/304181.304187
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/304181.304187
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/304181.304187
+      \endverb
+      \keyw{cluster analysis,database mining,visualization}
+    \endentry
     \entry{silhouetteRelocatingMeasure}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=d0750e7d75a0173546d82f5e2a15314d}{%
@@ -343,6 +409,41 @@
       \verb 10.1080/03610927408827101
       \endverb
     \endentry
+    \entry{DaviesBouldin}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=942ab34ba922ad6a1382fab461f33e7c}{%
+           family={{Davies}},
+           familyi={D\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=762db9c2260e54400956830bd9917692}{%
+           family={{Bouldin}},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{131bf68b18c868d52d0fff9471194303}
+      \strng{fullhash}{131bf68b18c868d52d0fff9471194303}
+      \strng{bibnamehash}{131bf68b18c868d52d0fff9471194303}
+      \strng{authorbibnamehash}{131bf68b18c868d52d0fff9471194303}
+      \strng{authornamehash}{131bf68b18c868d52d0fff9471194303}
+      \strng{authorfullhash}{131bf68b18c868d52d0fff9471194303}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{2}
+      \field{title}{A Cluster Separation Measure}
+      \field{volume}{PAMI-1}
+      \field{year}{1979}
+      \field{pages}{224\bibrangedash 227}
+      \range{pages}{4}
+    \endentry
     \entry{convexhullDbscan}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%
@@ -384,6 +485,57 @@
       \verb 10.1109/IEMCON.2015.7344438
       \endverb
       \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
+    \endentry
+    \entry{DBSCAN}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=13f9e0185bd6f9498266a9e5786eeeda}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e728719399df90069774282eb47163bf}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e12d4f6bfa86432e3f1696d8a8cb5b8}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86c6b1889f4025da917318172a7c2c4f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Portland, Oregon}%
+      }
+      \strng{namehash}{78404fefb529e56758fd417e77f47c70}
+      \strng{fullhash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{bibnamehash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{authorbibnamehash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \strng{authornamehash}{78404fefb529e56758fd417e77f47c70}
+      \strng{authorfullhash}{08c9cc8a7faab4e91a0b8c832babf9ea}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. 2nd Int. Conf. Knowledge Discovery and Data Mining (KDD’96)}
+      \field{month}{8}
+      \field{number}{34}
+      \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise.}
+      \field{volume}{96}
+      \field{year}{1996}
+      \field{pages}{226\bibrangedash 231}
+      \range{pages}{6}
     \endentry
     \entry{dataPreprocessingInDataMining}{book}{}
       \name{author}{3}{}{%

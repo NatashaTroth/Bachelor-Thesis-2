@@ -23,22 +23,22 @@ one_hour_file.clean_data(1)
 
 # ---dimensionality reductions---
 # one_hour_file.calculate_PCA(number_dimensions, False)
-# one_hour_file.calculate_TSNE(number_dimensions, False)
+one_hour_file.calculate_TSNE(number_dimensions, False)
 
 # ---clustering---
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
 # one_hour_file.dbscan_clustering('PCA', True)
-# one_hour_file.dbscan_clustering('TSNE', True)
+one_hour_file.dbscan_clustering('TSNE', True)
 # one_hour_file.dbscan_clustering('', True)
 
 # one_hour_file.optics_clustering('PCA', True)
-# one_hour_file.optics_clustering('TSNE', True)
+one_hour_file.optics_clustering('TSNE', True)
 # one_hour_file.optics_clustering('', True)
 
 # one_hour_file.agglomerative_clustering('PCA', True)
-# one_hour_file.agglomerative_clustering('TSNE', True)
+one_hour_file.agglomerative_clustering('TSNE', True)
 # one_hour_file.agglomerative_clustering('', True)
 
 
@@ -54,20 +54,20 @@ three_hour_file.clean_data(1)
 
 # # ---dimensionality reductions---
 # three_hour_file.calculate_PCA(number_dimensions, False)
-# three_hour_file.calculate_TSNE(number_dimensions, True)
+three_hour_file.calculate_TSNE(number_dimensions, True)
 
 # # ---clustering---
 # # three_hour_file.spectral_clustering('PCA')
 # three_hour_file.spectral_clustering('TSNE')
 
 # three_hour_file.dbscan_clustering('PCA', True)
-# three_hour_file.dbscan_clustering('TSNE', True)
+three_hour_file.dbscan_clustering('TSNE', True)
 # three_hour_file.dbscan_clustering('', True)
 
 # three_hour_file.optics_clustering('PCA', True)
-# three_hour_file.optics_clustering('TSNE', True)
+three_hour_file.optics_clustering('TSNE', True)
 # three_hour_file.optics_clustering('', True)
 
 # three_hour_file.agglomerative_clustering('PCA', True)
-# three_hour_file.agglomerative_clustering('TSNE', True)
+three_hour_file.agglomerative_clustering('TSNE', True)
 # three_hour_file.agglomerative_clustering('', True)

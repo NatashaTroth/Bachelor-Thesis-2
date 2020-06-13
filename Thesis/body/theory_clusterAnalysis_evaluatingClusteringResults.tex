@@ -37,6 +37,32 @@ The \textit{average silhouette width} for each cluster is received by calculatin
 \textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm, which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
 
 
+
+% %TODO: there is some more about it with examples - but not sure if need - from p. 584
+
+\paragraph{Davies-Bouldin Index}
+A second cluster evaluation method is the Davies-Bouldin Index, which was announced by \textcite{DaviesBouldin}[224-227]. 
+% The goal is to calculate the average similarity of a cluster with the cluster that is most similar to it. 
+
+The succeeding formula describes the average similarity of a cluster with the cluster that is most similar to it (\textit{R\textsubscript{ij}} ).
+\textit{i} and \textit{j} represent the determined clusters,\textit{S\textsubscript{i}} and \textit{S\textsubscript{j}} stand for the dispersions of the clusters, and \textit{M\textsubscript{ij}} is the distance between the two cluster centroids. 
+
+\[
+  R_{ij} = \frac{S_i + S_j}{M_{ij}}  
+\]
+
+The Davies-Bouldin Index equals:
+\[
+\overline{R} = \frac{1}{N}\sum_{i=1}^{N}R_i
+\]
+
+This metric can be used, to compare clustering results. The lower of the two \textit{\=R} values indicates the better partitioning.
+
+\paragraph{Calinski-Harabasz Index}
+\textcite{calinskiHarabasz} introduce their
+
+
+
 \subsubsection{Establishing the number of clusters}
  \textcite{han2011data}[398] states, that the number of clusters (\textit{k}) found in the data set needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
 \textcite{rousseeuw1987silhouettes}[59] describes, how silhouettes can be used to determine the ideal amount of clusters. Picture a data set with dense clusters which each have large distances to the other clusters. When \textit{k} is chosen too small, naturally occurring clusters must be artificially joined, to satisfy the value \textit{k}. Implementing the silhouette calculation will result in high within-cluster dissimilarities (\textit{a(i)}) leading to a narrow silhouette (small \textit{s(i)}). Likewise, if \textit{k} is chosen too large, natural clusters will have to be artificially split, in order to gain \textit{k} clusters. The objects in a split natural cluster will however still be very close to the other half of their cluster, therefore resulting in low dissimilarities between clusters (\textit{b(i)}) and a small \textit{s(i)}.
@@ -44,11 +70,3 @@ This logic denotes, that silhouettes should be capable of finding the most 'natu
 
 
   
-% %TODO: there is some more about it with examples - but not sure if need - from p. 584
-
-\paragraph{Davies-Bouldin Index}
-
-
-
-\paragraph{Calinski-Harabasz Index}
-\textcite{calinskiHarabasz} introduce their

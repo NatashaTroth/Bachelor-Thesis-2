@@ -60,7 +60,7 @@ def create_clustering_plot(clustering_method, df, title):
 
 
 def create_2d_scatterplot_clustering(clustering_method, df, title):
-    plt.figure(figsize=(16, 10))
+    plt.figure(figsize=(10, 7))
     cluster_labels = clustering_method.fit_predict(df)
     plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
     plt.title(title)
