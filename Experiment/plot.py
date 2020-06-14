@@ -52,7 +52,7 @@ def create_3d_scatterplot(data, xName, yName, zName):
 
 
 def create_clustering_plot(clustering_method, df, title):
-    print(str(len(df.columns)))
+    # print(str(len(df.columns)))
     if len(df.columns) == 2:
         create_2d_scatterplot_clustering(clustering_method, df, title)
     if len(df.columns) == 3:
@@ -95,6 +95,13 @@ def create_3d_scatterplot_clustering(clustering_method, df, title):
     plt.title(title)
     plt.show()
 
+
+def create_2d_pyplot(data):
+    plt.figure(figsize=(16, 10))
+    plt.plot(data, "ro")
+    plt.title('n-dist sorted graph')
+    plt.ylabel('distance to 4th nearest neighbor')
+    plt.show()
 
 # -----ipyvolume scatterplot---
 

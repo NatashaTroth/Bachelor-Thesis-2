@@ -145,12 +145,14 @@ class DataFile:
                 self.tsne, dataType, graphs)
 
     def dbscan_clustering(self, dataType, graphs=False):
-        # predict_eps_dbscan_parameter(self.tsne)
         if dataType == 'PCA':
+            # predict_eps_dbscan_parameter(self.pca)
             self.dbscan_scores = dbscan_clustering(self.pca, dataType, graphs)
         elif dataType == 'TSNE':
+            # predict_eps_dbscan_parameter(self.tsne)
             self.dbscan_scores = dbscan_clustering(self.tsne, dataType, graphs)
         else:
+            # predict_eps_dbscan_parameter(self.df)
             self.dbscan_scores = dbscan_clustering(self.df)
 
     def optics_clustering(self, dataType, graphs=False):

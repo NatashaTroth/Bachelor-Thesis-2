@@ -7,6 +7,7 @@ from dataFiles import DataFiles
 from pathlib import Path
 import sys
 from dimensionalityReduction import calculate_PCA
+from clusterEvaluation import compare_scores
 
 # Disclaimer: the numbers in the test *.csv files were created using a random generator (see randomNrs.js) - not from real test users!!
 
@@ -66,6 +67,20 @@ class TestStringMethods(unittest.TestCase):
             './testData/testRemoveColumns/resultAfterRemovingColumns.json', orient='index')
         assert_frame_equal(
             data_file.df, result_after_removing_columns,  check_dtype=False)
+
+    def test_evaluation_compare_scores(self):
+        scores_1h_dbscan = [-0.4465066, 2.3737173437900196, 34.818951039037465]
+        scores_3h_dbscan = [-0.2325946, 2.082509570770939, 176.03847255411213]
+
+        result_dbscan = compare_scores(scores_1h_dbscan, scores_3h_dbscan)
+        self.assertEqual(result_dbscan, 2)
+
+        scores_1h_optics = [-0.10805944, 1.234722639643406, 18.19778900973744]
+        scores_3h_optics = [-0.06738582,
+                            1.6176452947156887, 16.683104491741254]
+
+        result_optics = compare_scores(scores_1h_optics, scores_3h_optics)
+        self.assertEqual(result_optics, 1)
 
 
 if __name__ == '__main__':

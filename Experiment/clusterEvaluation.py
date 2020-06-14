@@ -19,8 +19,8 @@ def cluster_evaluation(clustering_method, df):
 def silhouette_score_evaluation(clustering_method, df):
     # print("calculation silhouette score...")
     cluster_labels = clustering_method.fit_predict(df)
-    print("labels: ")
-    print(np.unique(cluster_labels))
+    # print("labels: ")
+    # print(np.unique(cluster_labels))
     # print(cluster_labels)
     # The silhouette_score gives the average value for all the samples.
     # This gives a perspective into the density and separation of the formed
@@ -77,9 +77,9 @@ def compare_scores(scores_1, scores_2):
         scores_2_wins += 1
 
     # calinksi harabasz score (higher score relates to a model with better defined clusters - higher values better)
-    if scores_1[0] > scores_2[0]:
+    if scores_1[2] > scores_2[2]:
         scores_1_wins += 1
-    elif scores_1[0] < scores_2[0]:
+    elif scores_1[2] < scores_2[2]:
         scores_2_wins += 1
 
     # results
