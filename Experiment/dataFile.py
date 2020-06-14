@@ -8,12 +8,8 @@ import sys
 from sklearn.manifold import TSNE
 import ipyvolume as ipv
 import json
-from dimensionalityReduction import calculate_PCA
-from dimensionalityReduction import calculate_TSNE
-from clustering import spectral_clustering
-from clustering import dbscan_clustering
-from clustering import optics_clustering
-from clustering import agglomerative_clustering
+from dimensionalityReduction import calculate_PCA, calculate_TSNE
+from clustering import spectral_clustering, dbscan_clustering, optics_clustering, agglomerative_clustering, predict_eps_dbscan_parameter
 
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
@@ -53,16 +49,16 @@ class DataFile:
         self.remove_rows_with_wrong_values()
 
         self.extract_columns(number_columns_to_use)
-        print(self.df)
+        # print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
-        print(self.df)
+        # print(self.df)
 
-        print(self.df)
-        print("MAX VALUES...")
-        print(self.df.max(axis=0))
-        print("\nMIN VALUES...")
-        print(self.df.min(axis=0))
+        # print(self.df)
+        # print("MAX VALUES...")
+        # print(self.df.max(axis=0))
+        # print("\nMIN VALUES...")
+        # print(self.df.min(axis=0))
 
         self.normalize_columns()
 
@@ -142,30 +138,35 @@ class DataFile:
 
     def spectral_clustering(self, dataType, graphs=False):
         if dataType == 'PCA':
-            spectral_clustering(self.pca, dataType, graphs)
+            self.spectral_scores = spectral_clustering(
+                self.pca, dataType, graphs)
         if dataType == 'TSNE':
-            spectral_clustering(self.tsne, dataType, graphs)
+            self.spectral_scores = spectral_clustering(
+                self.tsne, dataType, graphs)
 
     def dbscan_clustering(self, dataType, graphs=False):
+        # predict_eps_dbscan_parameter(self.tsne)
         if dataType == 'PCA':
-            dbscan_clustering(self.pca, dataType, graphs)
+            self.dbscan_scores = dbscan_clustering(self.pca, dataType, graphs)
         elif dataType == 'TSNE':
-            dbscan_clustering(self.tsne, dataType, graphs)
+            self.dbscan_scores = dbscan_clustering(self.tsne, dataType, graphs)
         else:
-            dbscan_clustering(self.df)
+            self.dbscan_scores = dbscan_clustering(self.df)
 
     def optics_clustering(self, dataType, graphs=False):
         if dataType == 'PCA':
-            optics_clustering(self.pca, dataType, graphs)
+            self.optics_scores = optics_clustering(self.pca, dataType, graphs)
         elif dataType == 'TSNE':
-            optics_clustering(self.tsne, dataType, graphs)
+            self.optics_scores = optics_clustering(self.tsne, dataType, graphs)
         else:
-            optics_clustering(self.df)
+            self.optics_scores = optics_clustering(self.df)
 
     def agglomerative_clustering(self, dataType, graphs=False):
         if dataType == 'PCA':
-            agglomerative_clustering(self.pca, dataType, graphs)
+            self.agglomerative_scores = agglomerative_clustering(
+                self.pca, dataType, graphs)
         elif dataType == 'TSNE':
-            agglomerative_clustering(self.tsne, dataType, graphs)
+            self.agglomerative_scores = agglomerative_clustering(
+                self.tsne, dataType, graphs)
         else:
-            agglomerative_clustering(self.df)
+            self.agglomerative_scores = agglomerative_clustering(self.df)

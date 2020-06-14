@@ -43,9 +43,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.5.3.2}OPTICS}{15}{paragraph.3.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.4}Grid-Based Methods}{16}{subsubsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4}Grid-Based Methods}{17}{subsubsection.3.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Evaluating Clustering Results}{17}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.6}Evaluating Clustering Results}{18}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.6.1}Assessment of the cluster tendency}{18}{subsubsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
@@ -65,7 +65,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.1}Missing Values}{22}{subsubsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{22}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{23}{subsubsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.3}Selection of columns (attributes)}{23}{subsubsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
@@ -73,7 +73,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{23}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering}{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering}{24}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of clusters of different time lengths}{24}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
