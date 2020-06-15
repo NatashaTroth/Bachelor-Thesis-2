@@ -49,10 +49,10 @@ class DataFile:
         self.remove_rows_with_wrong_values()
 
         self.extract_columns(number_columns_to_use)
-        # print(self.df)
+        print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
-        # print(self.df)
+        print(self.df)
 
         # print(self.df)
         # print("MAX VALUES...")

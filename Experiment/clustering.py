@@ -8,7 +8,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering, DBSCAN, OPTICS, AgglomerativeClustering
-from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_clustering, create_clustering_plot, create_2d_pyplot
+from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_clustering, create_clustering_plot, create_2d_pyplot, create_reachability_plot
 from sklearn.neighbors import NearestNeighbors
 from sklearn.neighbors import KNeighborsClassifier
 from clusterEvaluation import cluster_evaluation
@@ -67,13 +67,51 @@ def predict_eps_dbscan_parameter(df):
 
 def optics_clustering(df, dataType="", graphs=False):
     print("\n- optics clustering (" + dataType + ")...")
-    optics = OPTICS(cluster_method="xi")
+    optics = OPTICS(min_samples=10,  min_cluster_size=0.05)
+    # optics = OPTICS(cluster_method='dbscan', eps=2)
     # optics = OPTICS(min_samples=4, cluster_method="xi")
     clustering = optics.fit(df)
     if graphs == True:
         create_clustering_plot(
             optics, df, "OPTICS (" + dataType + ")")
-    return cluster_evaluation(optics, df)
+
+    create_reachability_plot(df, clustering)
+
+    # space = np.arange(len(df))
+    # reachability = clustering.reachability_[clustering.ordering_]
+    # labels = clustering.labels_[clustering.ordering_]
+
+    # # Reachability plot
+    # colors = ['g.', 'r.', 'b.', 'y.', 'c.']
+    # for klass, color in zip(range(0, 5), colors):
+    #     Xk = space[labels == klass]
+    #     Rk = reachability[labels == klass]
+    #     plt.plot(Xk, Rk, color, alpha=0.3)
+    # plt.plot(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
+    # plt.plot(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
+    # plt.plot(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
+    # # plt.set_ylabel('Reachability (epsilon distance)')
+    # # plt.set_title('Reachability Plot')
+    # plt.show()
+
+    # # Defining the framework of the visualization
+    # plt.figure(figsize=(10, 7))
+    # # G = gridspec.GridSpec(2, 3)
+    # ax1 = plt.subplot()
+
+    # # Plotting the Reachability-Distance Plot
+    # colors = ['c.', 'b.', 'r.', 'y.', 'g.']
+    # for Class, colour in zip(range(0, 5), colors):
+    #     Xk = space[labels == Class]
+    #     Rk = reachability[labels == Class]
+    #     ax1.plot(Xk, Rk, colour, alpha=0.3)
+    # ax1.plot(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
+    # ax1.plot(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
+    # ax1.plot(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
+    # ax1.set_ylabel('Reachability Distance')
+    # ax1.set_title('Reachability Plot')
+    # plt.show()
+    # return cluster_evaluation(optics, df)
 
 
 def agglomerative_clustering(df, dataType="", graphs=False):

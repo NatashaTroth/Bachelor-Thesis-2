@@ -103,6 +103,31 @@ def create_2d_pyplot(data):
     plt.ylabel('distance to 4th nearest neighbor')
     plt.show()
 
+
+def create_reachability_plot(df, clustering):
+
+    space = np.arange(len(df))
+    reachability = clustering.reachability_[clustering.ordering_]
+    labels = clustering.labels_[clustering.ordering_]
+    # Defining the framework of the visualization
+    plt.figure(figsize=(16, 10))
+    # G = gridspec.GridSpec(2, 3)
+    ax1 = plt.subplot()
+
+    # Plotting the Reachability-Distance Plot
+    colors = ['c.', 'b.', 'r.', 'y.', 'g.']
+    for Class, colour in zip(range(0, 5), colors):
+        Xk = space[labels == Class]
+        Rk = reachability[labels == Class]
+        ax1.plot(Xk, Rk, colour, alpha=0.3)
+    ax1.plot(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
+    ax1.plot(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
+    ax1.plot(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
+    ax1.set_ylabel('Reachability Distance')
+    ax1.set_title('Reachability Plot')
+    plt.show()
+    return cluster_evaluation(optics, df)
+
 # -----ipyvolume scatterplot---
 
 # x = df["pca-one"],

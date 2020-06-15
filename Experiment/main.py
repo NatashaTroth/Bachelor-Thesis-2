@@ -9,7 +9,7 @@ import sys
 number_dimensions = 2
 
 # oneHourFile = DataFile(
-#     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
+# "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
 
 # ---- ONE HOUR FILES ----
 print("----1 HOUR FILE----")
@@ -24,14 +24,14 @@ one_hour_file.clean_data(1)
 
 # ---dimensionality reductions---
 # one_hour_file.calculate_PCA(number_dimensions, False)
-one_hour_file.calculate_TSNE(number_dimensions, True)
+one_hour_file.calculate_TSNE(number_dimensions, False)
 
 # ---clustering---
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
 # one_hour_file.dbscan_clustering('PCA', True)
-one_hour_file.dbscan_clustering('TSNE', True)
+# one_hour_file.dbscan_clustering('TSNE', True)
 # one_hour_file.dbscan_clustering('', True)
 
 
@@ -51,7 +51,7 @@ three_hour_file = DataFile(
 
 # # ---clean data (preprocessing)---
 # # three_hour_file.print_file()
-three_hour_file.clean_data(1)
+three_hour_file.clean_data(6)
 # # three_hour_file.print_file()
 
 # # ---dimensionality reductions---
@@ -75,14 +75,14 @@ three_hour_file.optics_clustering('TSNE', True)
 # three_hour_file.agglomerative_clustering('', True)
 
 
-# ----- Compare Results -----
-print("\n\n----Compare Results----")
-result_dbscan = compare_scores(
-    one_hour_file.dbscan_scores, three_hour_file.dbscan_scores)
-print("result_dbscan " + str(result_dbscan))
-result_optics = compare_scores(
-    one_hour_file.optics_scores, three_hour_file.optics_scores)
-print("result_optics " + str(result_optics))
-# result_agglomerative = compare_scores(
-#     one_hour_file.agglomerative_scores, three_hour_file.agglomerative_scores)
-# print("result_agglomerative " + str(result_agglomerative))
+# # ----- Compare Results -----
+# print("\n\n----Compare Results----")
+# result_dbscan = compare_scores(
+#     one_hour_file.dbscan_scores, three_hour_file.dbscan_scores)
+# print("result_dbscan " + str(result_dbscan))
+# result_optics = compare_scores(
+#     one_hour_file.optics_scores, three_hour_file.optics_scores)
+# print("result_optics " + str(result_optics))
+# # result_agglomerative = compare_scores(
+# #     one_hour_file.agglomerative_scores, three_hour_file.agglomerative_scores)
+# # print("result_agglomerative " + str(result_agglomerative))
