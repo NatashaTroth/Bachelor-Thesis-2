@@ -17,6 +17,7 @@ import random
 
 class DataFile:
     def __init__(self, directoryPath):
+        self.color_random_int = 0
         self.df = self.create_data_frame(directoryPath)
         self.distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
                                    'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
@@ -30,9 +31,9 @@ class DataFile:
         for path in pathlist:
             list_of_files.append(str(path))
 
-            test += 1
-            if test == 25:
-                break
+            # test += 1
+            # if test == 20:
+            #     break
         #     df = pd.read_csv(str(path), index_col=None, header=0)
         #     li.append(df)
 
@@ -51,6 +52,8 @@ class DataFile:
     def read_csv_file_add_color(self, path):
         df = pd.read_csv(path)
         # print("%06x" % random.randint(0, 0xFFFFFF))
+        random.seed(self.color_random_int)
+        self.color_random_int += 1
         random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
         print(random_color)
         df["COLOR"] = random_color
@@ -68,12 +71,14 @@ class DataFile:
         # self.df = self.df.drop(columns=['TIME'])
         print(self.df)
         # self.df = pd.DataFrame([np.arange(len(self.df)) % 2 == 1])
-        # self.df = self.df.iloc[::2, :]
+        # self.df = self.df.iloc[::3, :]
         # self.df = self.df.iloc[::3, :]
         # print(self.df)
         print(self.df)
 
         self.remove_columns(["TIME"])
+
+        # self.remove_columns(["TIME", "APP", "NOTIF", "SCRN", "LIGHT"])
 
         # self.remove_columns(["TIME", "AUDIO", "SCRN", "LIGHT", "NOTIF", "APP"])
         # self.remove_columns(["TIME", "APP", "SCRN", "LIGHT", "NOTIF", "AUDIO"])
@@ -82,9 +87,17 @@ class DataFile:
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
 
+        print(self.df)
+        print("MAX VALUES...")
+        print(self.df.max(axis=0))
+        print("\nMIN VALUES...")
+        print(self.df.min(axis=0))
+
         self.colors = self.df["COLOR"].to_numpy()
         print(self.colors)
         self.remove_columns(["COLOR"])
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings6-beforecompression.csv")
 
         self.extract_columns(number_columns_to_use)
         # print(self.df)
@@ -101,6 +114,8 @@ class DataFile:
         # print(self.df)
 
         self.normalize_columns()
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings6.csv")
         # self.df = self.df.iloc[::2]
         # self.df = self.df.iloc[::1]
         # print(self.df)
@@ -181,7 +196,8 @@ class DataFile:
             self.df[self.df.columns])
 
     def calculate_PCA(self, number_components, graphs):
-        self.pca = calculate_PCA(self.df, number_components, graphs)
+        self.pca = calculate_PCA(
+            self.df, number_components, graphs, self.colors)
 
     def calculate_TSNE(self, number_components, graphs):
         self.tsne = calculate_TSNE(

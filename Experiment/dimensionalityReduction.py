@@ -13,7 +13,7 @@ from sklearn.cluster import SpectralClustering, DBSCAN
 from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_tester_colors
 
 
-def calculate_PCA(df, number_components, graphs):
+def calculate_PCA(df, number_components, graphs, colors):
     print("calculating PCA...")
     pca = PCA(n_components=number_components)
     pca_results = pca.fit_transform(df[df.columns].values)
@@ -33,7 +33,9 @@ def calculate_PCA(df, number_components, graphs):
         create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
         if number_components == 2:
-            create_2d_scatterplot(df, "pca-one", "pca-two")
+            create_2d_scatterplot_tester_colors(
+                df,  "pca-one", "pca-two", colors)
+           # create_2d_scatterplot(df, "pca-one", "pca-two")
         if number_components == 3:
             create_3d_scatterplot(df, "pca-one", "pca-two", "pca-three")
 
@@ -45,8 +47,10 @@ def calculate_PCA(df, number_components, graphs):
 def calculate_TSNE(df, number_components, graphs, colors):
     print("calculating TSNE...")
     print(df)
+    # tsne = TSNE(n_components=number_components,
+    # init='random', perplexity=10, n_iter=5000, learning_rate=250)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=45, n_iter=5000, learning_rate=50)
+                init='random', perplexity=45, n_iter=15000, learning_rate=50)
 
     # very good
     # tsne = TSNE(n_components=number_components,

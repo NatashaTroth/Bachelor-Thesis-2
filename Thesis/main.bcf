@@ -4044,8 +4044,10 @@
     <bcf:citekey order="187">han2011data</bcf:citekey>
     <bcf:citekey order="188">rousseeuw1987silhouettes</bcf:citekey>
     <bcf:citekey order="189">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="190">OPTICS</bcf:citekey>
-    <bcf:citekey order="191">OPTICS</bcf:citekey>
+    <bcf:citekey order="190">DBSCAN</bcf:citekey>
+    <bcf:citekey order="191">DBSCAN</bcf:citekey>
+    <bcf:citekey order="192">OPTICS</bcf:citekey>
+    <bcf:citekey order="193">OPTICS</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

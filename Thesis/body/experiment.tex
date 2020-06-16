@@ -1,3 +1,41 @@
+
+
+The goal of this paper is to identify, which time delta for aggregation is ideal to construct distinct clusters from smartphone sensor and usage data. The data for this experiment was collected for the upcoming SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} mobile health app. The goal of this app is to present the user with content-dependent feedback, with the hope to prevent food craving episodes. By evaluating the user's behaviour (through smartphone sensor and usage data), the app predicts eating crises (through stress), therefore eliminating the need of intense user input. 
+
+
+% \textbf{Todo: more information about the collection of the data (how many people, how long, demographics...)}
+
+% This project used data recorded for the SmartEater project. 46 participants recorded data
+Various sensor and usage data was recorded for the SmartEater project, by the 46 testers' smartphones (for different periods of time). The columns of the data were organised as follows (N is the number of times the data was recorded in the time period):
+ 
+%TODO: N averages of lag-interval minutes over the aggregation interval in the past???
+
+\begin{itemize}
+	\item TIME: timestamp, when the data was aggregated (format: YYYY-DD-MM hh:mm:ss)
+	\item ACC (1-N): values received from the accelerometer (average jerk)
+	\item AUDIO (1-N): volume of the audio 
+	\item SCRN (1-N): percentage of screen on time
+	\item NOTIF (1-N): number of notifications
+	\item LIGHT (1-N): light sensor values
+	\item APP\_COM (1-N): app usage in the category \textit{communication} in percent of lag-interval minutes (if communication apps were used for 5 minutes in a 15 minute interval, the value would be 0.66666)
+	\item APP\_VID (1-N): app usage in the category \textit{video players}
+	\item APP\_OTHER (1-N): app usage of all other categories (excluding \textit{video players} and \textit{communication})
+\end{itemize}
+
+
+The recorded smartphone sensor and usage data was aggregated into multiple .csv (Comma-Separated values\footnote{\url{https://tools.ietf.org/html/rfc4180}}) files. Furthermore, these files were distinguished into folders, according to their time delta. Two different time lengths were used:
+
+\begin{itemize}
+  \item 1h: The data was aggregated in 2.5 hour intervals, whereby each row contained data from an aggregation of 1 hour, in four 15 minute lags.
+  \item 3h: The data was aggregated in 1.5 hour intervals, whereby each row contained data from an aggregation of 3 hours, in six 30 minute lags.
+\end{itemize}
+
+Each row contains the data value of a specific test user for one of the time periods (e.g. 1h or 3h).
+
+Python was used to conduct the experiment, more specifically using the Anaconda\footnote{\url{https://www.anaconda.com/}} Python distribution platform, specific for data science. The scikit-learn\footnote{\url{https://scikit-learn.org/stable/index.html}} (short sklearn) Python package provides simple tools for predictive data analysis and was used for data preparation, dimensionality reduction and clustering.
+
+
+
 %(4000 words)
 % in experiment
 
@@ -25,47 +63,25 @@
 % 	APP_OTHER (1-N):	App usage of all other categories (excluding 'Video_Players' and 'Communication')
 
 
-The goal of this paper is to identify, which time delta for aggregation is ideal to construct high quality clusterings from smartphone sensor and usage data. The data for this experiment was collected by/for ??? the upcoming SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} mobile health app. The goal of this app is to present the user with content-dependent feedback, with the hope to prevent food craving episodes. By evaluating the user's behaviour (through smartphone sensor and usage data), the app predicts eating crises (through stress), therefore eliminating the need of intense user input.
-
-\textbf{Todo: more information about the collection of the data (how many people, how long, demographics...)}
 
 
-The following  sensor and usage data was recorded for the SmartEater project, by the tester's smartphone:
 
-\begin{enumerate}
-	\item Background volume
-	\item Relative movement of the smartphone (gyro and accel)
-	\item Time and duration of phone calls (without storing the numbers)
-	\item Time of messages (e.g. SMS, WhatsApp) (without collecting identifying information such as content, addresses, numbers)
-	\item Screen activity (so-called touch events)
-	\item Screen-on-time (illuminated display)
-	\item Ambient brightness
-	\item Data volume per unit of time (summary value of all smartphone activities on the internet)
-	\item Switch-on and switch-off times of the smartphone
-\end{enumerate}
+% \begin{enumerate}
+% 	\item Background volume
+% 	\item Relative movement of the smartphone (gyro and accel)
+% 	\item Time and duration of phone calls (without storing the numbers)
+% 	\item Time of messages (e.g. SMS, WhatsApp) (without collecting identifying information such as content, addresses, numbers)
+% 	\item Screen activity (so-called touch events)
+% 	\item Screen-on-time (illuminated display)
+% 	\item Ambient brightness
+% 	\item Data volume per unit of time (summary value of all smartphone activities on the internet)
+% 	\item Switch-on and switch-off times of the smartphone
+% \end{enumerate}
 %Timedeltas are differences in times, expressed in difference units, e.g. days, hours, minutes, seconds. They can be both positive and negative.
 
-The recorded smartphone sensor and usage data was aggregated into multiple .csv (Comma-Separated values\footnote{\url{https://tools.ietf.org/html/rfc4180}}) files. Furthermore, these files were distinguished into folders, according to their time delta. Two different time lengths were used:
 
-\begin{itemize}
-  \item 1h: The data was aggregated in 2.5 hour intervals, whereby each row contained data from an aggregation of 1 hour, in four 15 minute lagizes.
-  \item 3h: The data was aggregated in 1.5 hour intervals, whereby each row contained data from an aggregation of 3 hours, in six 30 minute lags.
-\end{itemize}
 
-The columns of the data were organised as follows(N is the number of times the data was recorded in the time period): 
-%TODO: N averages of lag-interval minutes over the aggregation interval in the past???
 
-\begin{itemize}
-	\item TIME: timestamp, when the data was aggregated (format: YYYY-DD-MM hh:mm:ss)
-	\item ACC (1-N): values received from the accelerometer (average jerk)
-	\item AUDIO (1-N): volume of the audio 
-	\item SCRN (1-N): percentage of screen on time
-	\item NOTIF (1-N): number of notifications
-	\item LIGHT (1-N): light sensor values
-	\item APP\_COM (1-N): app usage in the category \textit{communication} in percent of lag-interval minutes (if communication apps were used for 5 minutes in the 15 minute interval, the value would be 0.66666)
-	\item APP\_VID (1-N): app usage in the category \textit{video players}
-	\item APP\_OTHER (1-N): app usage of all other categories (excluding \textit{video players} and \textit{communication})
-\end{itemize}
 % Columns:
 % 	TIME: 			The timestamp of where the data is aggregated from (in format YYYY-DD-MM hh:mm:ss)
 % 	ACC (1-N): 		Accelerometer values (we calculate the "average jerk"; N averages of lag-interval minutes over the aggregation interval in the past)
@@ -76,12 +92,3 @@ The columns of the data were organised as follows(N is the number of times the d
 % 	APP_COM (1-N):		App usage of category 'Communication' in percent of lag-interval minutes (i.e. if apps of this category were used for 5 minutes in the past 15 minutes the value is 0.66666)
 % 	APP_VID (1-N):		App usage of category 'Video_Players', same principle as APP_COM
 % 	APP_OTHER (1-N):	App usage of all other categories (excluding 'Video_Players' and 'Communication')
-
-Each row contains the data value of a specific test user for one time periods (e.g. 1h or 3h).
-
-Python was used to conduct the experiment, more specifically using the Anaconda\footnote{\url{https://www.anaconda.com/}} Python distribution platform, specific for data science. The scikit-learn\footnote{\url{https://scikit-learn.org/stable/index.html}}  (short sklearn) Python package provides simple tools for predictive data analysis and was used for data preparation, dimenstionality reduction and clustering.
-
-
-
-
-

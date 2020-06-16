@@ -60,6 +60,7 @@
   
 
   \subsubsection{Density-Based Methods}
+  \label{section:densityBasedMethods}
   The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers.
   These methods can also be used to cluster sub spaces.
 
@@ -69,6 +70,7 @@
 
 
 \paragraph{DBSCAN}
+\label{section:DBSCAN}
 \textcite{DBSCAN}[226-229] introduce a new density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters no with different shapes and work efficiently on large spatial datasets. The algorithm searches in a give radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exist, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of the Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius).
 % The goal is to keep adding neighbouring data points to the cluster
 % In doing so, core points and border points are distinguished.
