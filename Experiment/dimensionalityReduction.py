@@ -45,7 +45,7 @@ def calculate_PCA(df, number_components, graphs):
 def calculate_TSNE(df, number_components, graphs):
     print("calculating TSNE...")
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=50, n_iter=5000, learning_rate=50)
+                init='random', perplexity=45, n_iter=5000, learning_rate=50)
 
     # very good
     # tsne = TSNE(n_components=number_components,
@@ -58,7 +58,12 @@ def calculate_TSNE(df, number_components, graphs):
     #             init='random', perplexity=25, n_iter=2000, learning_rate=10)
     # tsne = TSNE(n_components=2, verbose=0,
     #             perplexity=40, n_iter=300, init='random')
-    tsne_results = tsne.fit_transform(df)
+    # print(df)
+    # print("--------------------------END---------------------------")
+    # print(df.to_numpy())
+
+    # tsne_results = tsne.fit_transform(df)
+    tsne_results = tsne.fit_transform(df.to_numpy())
     # print(df)
     # print(tsne_results)
 

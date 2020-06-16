@@ -19,12 +19,6 @@ def cluster_evaluation(clustering_method, df):
 def silhouette_score_evaluation(clustering_method, df):
     # print("calculation silhouette score...")
     cluster_labels = clustering_method.fit_predict(df)
-    # print("labels: ")
-    # print(np.unique(cluster_labels))
-    # print(cluster_labels)
-    # The silhouette_score gives the average value for all the samples.
-    # This gives a perspective into the density and separation of the formed
-    # clusters
     if len(np.unique(cluster_labels)) > 1:
         score = silhouette_score(df, cluster_labels)
         print("Silhouette score: " + str(score))
@@ -36,7 +30,6 @@ def silhouette_score_evaluation(clustering_method, df):
 
 def davies_bouldin_score_evaluation(clustering_method, df):
     # print("calculation davies bouldin score...")
-
     cluster_labels = clustering_method.fit_predict(df)
 
     if len(np.unique(cluster_labels)) > 1:

@@ -25,8 +25,13 @@ class DataFile:
         print("in createDataFrame")
         pathlist = Path(directory_path).glob('**/*.csv')
         list_of_files = []
+        test = 0
         for path in pathlist:
             list_of_files.append(str(path))
+            test += 1
+            if test == 25:
+                break
+        print(list_of_files)
         if len(list_of_files) > 1:
             return pd.concat(map(pd.read_csv, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
@@ -44,23 +49,40 @@ class DataFile:
     def clean_data(self, number_columns_to_use=1):
         print("cleaning data...")
         # time_column = self.df['TIME']
-        self.df = self.df.drop(columns=['TIME'])
+        # self.df = self.df.drop(columns=['TIME'])
+        print(self.df)
+        # self.df = pd.DataFrame([np.arange(len(self.df)) % 2 == 1])
+        # self.df = self.df.iloc[::2]
+        # print(self.df)
+
+        self.remove_columns(["TIME", "APP", "SCRN"])
+        print(self.df)
+
+        # self.remove_columns(["TIME", "AUDIO", "SCRN", "LIGHT", "NOTIF", "APP"])
+        # self.remove_columns(["TIME", "APP", "SCRN", "LIGHT", "NOTIF", "AUDIO"])
+        # print("----------here---------------")
+        # print(self.df)
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
 
         self.extract_columns(number_columns_to_use)
-        print(self.df)
+        # print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
-        print(self.df)
+        # print(self.df)
 
         # print(self.df)
         # print("MAX VALUES...")
         # print(self.df.max(axis=0))
         # print("\nMIN VALUES...")
         # print(self.df.min(axis=0))
+        # print("---------------HERE.----------------")
+        # print(self.df)
 
         self.normalize_columns()
+        # self.df = self.df.iloc[::2]
+        # self.df = self.df.iloc[::1]
+        # print(self.df)
 
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")
@@ -101,6 +123,13 @@ class DataFile:
 
             counter = 1
         self.df = new_df
+
+    def remove_columns(self, column_names):
+        for column_name in column_names:
+            print(column_name)
+            self.df = self.df.drop(self.df.filter(
+                regex=column_name).columns, axis=1)
+        # self.df = self.df.drop(columns=column_names)
 
     def compress_same_attribute_columns(self, numberSameAttributes):
         print("  compressing same attribute columns...")

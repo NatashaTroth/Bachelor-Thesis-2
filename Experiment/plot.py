@@ -19,15 +19,28 @@ def create_bar_plot(x, y, xName, yName):
 
 def create_2d_scatterplot(data, xName, yName):
     plt.figure(figsize=(16, 10))
-    sns.scatterplot(
+    p1 = sns.scatterplot(
         x=xName, y=yName,
         # x="pca-one", y="pca-two",
         # hue="pca-one",
         # palette=sns.color_palette("hls", 1),
         data=data,
         legend="full",
-        alpha=0.3
+        alpha=0.3,
+
     )
+    # rows, cols = df.shape
+    # add annotations one by one with a loop
+    df = pd.DataFrame(data[[xName, yName]])
+
+    print(df)
+    print("---------------------")
+    print(df.iat[0, 0])
+    print(df.iat[0, 1])
+    print(df.iat[1, 1])
+    for line in range(0, data.shape[0]):
+        p1.text(df.iat[line, 0]+0.2, df.iat[line, 1], line,
+                horizontalalignment='left', size='small', color='black', weight='regular')
     plt.show()
 
 
@@ -65,6 +78,28 @@ def create_2d_scatterplot_clustering(clustering_method, df, title):
     plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
     plt.title(title)
     plt.show()
+
+
+# def create_2d_scatterplot_clustering(clustering_method, df, title):
+#     # plt.figure(figsize=(10, 7))
+#     cluster_labels = clustering_method.fit_predict(df)
+
+#     rows, cols = df.shape
+#     fig, ax = plt.subplots(figsize=(50/10, 25/10))
+#     # df.plot(ax=ax)
+#     ax.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
+#     plt.title(title)
+#     # print(list(df.index.values))
+
+#     for col in range(cols):
+#         for i in range(rows):
+#             ax.annotate('{}'.format(df.iloc[i, col]), xy=(i, df.iloc[i, col]))
+
+#     # for i in list(df.index.values):
+#     #     plt.text(df[i, 0], df[i, 1], str(i))
+#     # for i in list(df.index.values):
+#     #     plt.text(df[i, 0], df[i, 1], str(i))
+#     plt.show()
 
 
 def create_3d_scatterplot_clustering(clustering_method, df, title):
@@ -110,7 +145,7 @@ def create_reachability_plot(df, clustering):
     reachability = clustering.reachability_[clustering.ordering_]
     labels = clustering.labels_[clustering.ordering_]
     # Defining the framework of the visualization
-    plt.figure(figsize=(16, 10))
+    plt.figure(figsize=(50, 10))
     # G = gridspec.GridSpec(2, 3)
     ax1 = plt.subplot()
 
@@ -126,7 +161,6 @@ def create_reachability_plot(df, clustering):
     ax1.set_ylabel('Reachability Distance')
     ax1.set_title('Reachability Plot')
     plt.show()
-    return cluster_evaluation(optics, df)
 
 # -----ipyvolume scatterplot---
 
