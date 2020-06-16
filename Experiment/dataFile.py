@@ -10,7 +10,7 @@ import ipyvolume as ipv
 import json
 from dimensionalityReduction import calculate_PCA, calculate_TSNE
 from clustering import spectral_clustering, dbscan_clustering, optics_clustering, agglomerative_clustering, predict_eps_dbscan_parameter
-
+import random
 
 # TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
@@ -25,20 +25,36 @@ class DataFile:
         print("in createDataFrame")
         pathlist = Path(directory_path).glob('**/*.csv')
         list_of_files = []
+        list_of_dataframes = []
         test = 0
         for path in pathlist:
             list_of_files.append(str(path))
+
             test += 1
             if test == 25:
                 break
+        #     df = pd.read_csv(str(path), index_col=None, header=0)
+        #     li.append(df)
+
+        # frame = pd.concat(li, axis=0, ignore_index=True)
+
+        # color = "%06x" % random.randint(0, 0xFFFFFF)
         print(list_of_files)
         if len(list_of_files) > 1:
-            return pd.concat(map(pd.read_csv, list_of_files), ignore_index=True)
+            return pd.concat(map(self.read_csv_file_add_color, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
             return pd.read_csv(list_of_files[0])
         raise Exception(
             "No *.csv files found in the directory " + directory_path)
         # return df
+
+    def read_csv_file_add_color(self, path):
+        df = pd.read_csv(path)
+        # print("%06x" % random.randint(0, 0xFFFFFF))
+        random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
+        print(random_color)
+        df["COLOR"] = random_color
+        return df
 
     def print_file(self):
         print(self.df)
@@ -52,11 +68,12 @@ class DataFile:
         # self.df = self.df.drop(columns=['TIME'])
         print(self.df)
         # self.df = pd.DataFrame([np.arange(len(self.df)) % 2 == 1])
-        # self.df = self.df.iloc[::2]
+        # self.df = self.df.iloc[::2, :]
+        # self.df = self.df.iloc[::3, :]
         # print(self.df)
-
-        self.remove_columns(["TIME", "APP", "SCRN"])
         print(self.df)
+
+        self.remove_columns(["TIME"])
 
         # self.remove_columns(["TIME", "AUDIO", "SCRN", "LIGHT", "NOTIF", "APP"])
         # self.remove_columns(["TIME", "APP", "SCRN", "LIGHT", "NOTIF", "AUDIO"])
@@ -64,6 +81,10 @@ class DataFile:
         # print(self.df)
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
+
+        self.colors = self.df["COLOR"].to_numpy()
+        print(self.colors)
+        self.remove_columns(["COLOR"])
 
         self.extract_columns(number_columns_to_use)
         # print(self.df)
@@ -163,7 +184,8 @@ class DataFile:
         self.pca = calculate_PCA(self.df, number_components, graphs)
 
     def calculate_TSNE(self, number_components, graphs):
-        self.tsne = calculate_TSNE(self.df, number_components, graphs)
+        self.tsne = calculate_TSNE(
+            self.df, number_components, graphs, self.colors)
 
     def spectral_clustering(self, dataType, graphs=False):
         if dataType == 'PCA':

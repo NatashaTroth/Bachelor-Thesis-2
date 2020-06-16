@@ -40,7 +40,22 @@ def create_2d_scatterplot(data, xName, yName):
     print(df.iat[1, 1])
     for line in range(0, data.shape[0]):
         p1.text(df.iat[line, 0]+0.2, df.iat[line, 1], line,
-                horizontalalignment='left', size='small', color='black', weight='regular')
+                horizontalalignment='left', size=4, color='black', weight='regular')
+    plt.show()
+
+
+def create_2d_scatterplot_tester_colors(data, xName, yName, colors):
+    print("CREATING TSNE PLOT-------")
+    df = pd.DataFrame(data[[xName, yName]])
+    plt.figure(figsize=(20, 10))
+
+    # for i in range(0, data.shape[0]):
+    #     plt.scatter(df.iat[0, i], df.iat[1, i], c=colors[i])
+    p1 = plt.scatter(df[xName], df[yName], c=colors)
+    for line in range(0, data.shape[0]):
+        plt.text(df.iat[line, 0]+0.2, df.iat[line, 1], line,
+                 horizontalalignment='left', size=4, color='black', weight='regular')
+    plt.title("test")
     plt.show()
 
 

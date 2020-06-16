@@ -10,7 +10,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import seaborn as sns
 import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering, DBSCAN
-from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot
+from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_tester_colors
 
 
 def calculate_PCA(df, number_components, graphs):
@@ -42,8 +42,9 @@ def calculate_PCA(df, number_components, graphs):
     return pd.DataFrame(pca_results)
 
 
-def calculate_TSNE(df, number_components, graphs):
+def calculate_TSNE(df, number_components, graphs, colors):
     print("calculating TSNE...")
+    print(df)
     tsne = TSNE(n_components=number_components,
                 init='random', perplexity=45, n_iter=5000, learning_rate=50)
 
@@ -75,7 +76,9 @@ def calculate_TSNE(df, number_components, graphs):
 
     if graphs == True:
         if number_components == 2:
-            create_2d_scatterplot(df, "tsne-one", "tsne-two")
+            # create_2d_scatterplot(df, "tsne-one", "tsne-two")
+            create_2d_scatterplot_tester_colors(
+                df,  "tsne-one", "tsne-two", colors)
         if number_components == 3:
             create_3d_scatterplot(df, "tsne-one", "tsne-two", "tsne-three")
 

@@ -16,6 +16,10 @@ print("----1 HOUR FILE----")
 one_hour_file = DataFile(
     "/Volumes/BATroth/aggregated/1h")
 
+
+one_hour_file.df.to_csv(
+    "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings")
+
 # ---clean data (preprocessing)---
 # one_hour_file.print_file()
 one_hour_file.clean_data(1)
