@@ -50,9 +50,9 @@ An initial thought, was that this chain was the result of the utilised t-SNE par
   \label{figure:tsne10Files2Features}
 \end{figure*}
 
-One theory was that points from a same test subject were similar and might be causing the chain. To see which data points were contained in the chain, the row index number was added as a label to each data point in the scatter plot. Furthermore, each test user data file was assigned a different random colour, so that in the plot it was visible, which data points belonged to the same user. The resulting scatter plot is visualised in figure \ref{figure:tsneTestSubjectsColor}. From this plot it can be seen, that several data points from the same test subject cluster together in the chain, indicating similarity. There are however points from each user in different locations of the chart, not only in the chain. This implied, that the chain was not being caused by the subjects. The next step was to use the data point indices and to look for similarities in the values. Several rows found in the chain were extracted from the cleaned data set, directly before being fed into the t-SNE algorithm. After comparing these, it was evident that they shared a lot of the same feature values. Rows not in the chain however had different values. Looking at the same rows in the uncleaned data set (after concatenation of the .csv data files and removal of rows with missing values), rows found in the chain had several columns all with the value 0.  Further inspection showed, that when the SCRN value was 0, LIGHT, NOTIF and the APP columns where also 0. When a smartphone screen is off, the apps are not being used, which explains why the APP columns were mostly 0. The NOTIF values were often 0, presumably because the user was not constantly receiving notifications. The environment light is also often 0 when a phone is not being used, maybe because it is in a pocket or bag. To test whether these rows were causing the chain to occur, rows with less than 50\% of values that weren't 0 were removed. As can be seen in figure \textbf{TODO: ADD FIGURE FROM LATEST}, the chain is only slightly visible.
+One theory was that points from a same test subject were similar and might be causing the chain. To see which data points were contained in the chain, the row index number was added as a label to each data point in the scatter plot. Furthermore, each test user data file was assigned a different random colour, so that in the plot it was visible, which data points belonged to the same user. The resulting scatter plot is visualised in figure \ref{figure:tsneTestSubjectsColor}. From this plot it can be seen, that several data points from the same test subject cluster together in the chain, indicating similarity. There are however points from each user in different locations of the chart, not only in the chain. This implied, that the chain was not being caused by the subjects. 
 
-
+The next step was to use the data point indices and to look for similarities in the values. Several rows found in the chain were extracted from the cleaned data set, directly before being fed into the t-SNE algorithm. After comparing these, it was evident that they shared a lot of the same feature values. Rows not in the chain however had different values. Looking at the same rows in the uncleaned data set (after concatenation of the .csv data files and removal of rows with missing values), rows found in the chain had several columns all with the value 0. Further inspection showed, that when the SCRN value was 0, LIGHT, NOTIF and the APP columns where also 0. When a smartphone screen is off, the apps are not being used, which explains why the APP columns were mostly 0. The NOTIF values were often 0, presumably because the user was not constantly receiving notifications. The environment light is also often 0 when a phone is not being used, maybe because it is in a pocket or bag. To test whether these rows were causing the chain to occur, rows with less than 50\% of values that weren't 0 were removed. As can be seen in figure \ref{figure:tsneAfterChainRemoved} \textbf{TODO: ADD FIGURE FROM LATEST}, the chain is only slightly visible.
 
 
 \begin{figure*}[h]
@@ -60,6 +60,13 @@ One theory was that points from a same test subject were similar and might be ca
   \includegraphics[width=0.9\textwidth]{./images/tsneTestSubjectsColor.png}
   \caption{}
   \label{figure:tsneTestSubjectsColor}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./images/tsneAfterChainRemoved.png}
+  \caption{}
+  \label{figure:tsneAfterChainRemoved}
 \end{figure*}
 
 % \begin{figure*}[h]
@@ -82,7 +89,6 @@ One theory was that points from a same test subject were similar and might be ca
 %   \caption{}
 %   \label{figure:tsneTestSubjectsColorZoom3}
 % \end{figure*}
-also thought from same person
 
 
 

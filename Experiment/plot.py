@@ -52,9 +52,9 @@ def create_2d_scatterplot_tester_colors(data, xName, yName, colors):
     # for i in range(0, data.shape[0]):
     #     plt.scatter(df.iat[0, i], df.iat[1, i], c=colors[i])
     p1 = plt.scatter(df[xName], df[yName], c=colors)
-    for line in range(0, data.shape[0]):
-        plt.text(df.iat[line, 0], df.iat[line, 1], line,
-                 horizontalalignment='left', size=4, color='black', weight='regular')
+    # for line in range(0, data.shape[0]):
+    #     plt.text(df.iat[line, 0], df.iat[line, 1], line,
+    #              horizontalalignment='left', size=4, color='black', weight='regular')
     plt.title("TSNE")
     plt.show()
 

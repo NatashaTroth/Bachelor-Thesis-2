@@ -107,7 +107,11 @@ class DataFile:
 
         # if remove rows, also need to adjust the colors for the tester subjects
         self.df["COLOR"] = self.colors
-        self.remove_rows_with_percent_zero(50)
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/beforeRowRemoval.csv")
+        self.extract_rows_with_percent_non_zero_values(50)
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/afterRowRemoval.csv")
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
 
@@ -139,15 +143,34 @@ class DataFile:
         print("  removing rows with wrong values...")
         self.df.dropna(inplace=True)
 
-    def remove_rows_with_percent_zero(self, percent):
+    def extract_rows_with_percent_non_zero_values(self, percent):
         # e.g. percent = 60: removes rows with 60 percent or more 0s (where less than 40% other values that != 0)
 
         # remove rows with more than percent
         # self.df = self.df[self.df.astype('bool').mean(axis=1) >= percent / 100]
         # self.df = self.df[(self.df == 0).sum(axis=1) <
         #                   self.df.shape[1] * (1 - (percent / 100))]
-        self.df = self.df[(self.df == 0).sum(axis=1) /
-                          len(self.df.columns) <= percent/100]
+
+        # Color column added (but shouldn't count in percent)- 1  column to even it out
+
+        # print((self.df == 0).sum(axis=1))
+        # print((self.df != 0).sum(axis=1) - 1)
+        # print("nr not 0:")
+        # print(((self.df != 0).sum(axis=1) - 1))
+        # print("length:")
+        # print(len(self.df.columns) - 1)
+        # print("percent:")
+
+        # print(percent/100)
+        # print(self.df)
+        # print(((self.df != 0).sum(axis=1) - 1) /
+        #       (len(self.df.columns) - 1) >= percent/100)
+        self.df = self.df[((self.df != 0).sum(axis=1) - 1) /
+                          (len(self.df.columns) - 1) >= percent/100]
+        # print(self.df)
+
+        # self.df = self.df[((self.df == 0).sum(axis=1) + 1) /
+        #                   len(self.df.columns) <= percent/100]
 
     def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
         print("  removing columns with many empty values...")

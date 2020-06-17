@@ -11,7 +11,8 @@
     "SCRN1": 0,
     "SCRN2": 0,
     "SCRN3": 2,
-    "SCRN4": 0
+    "SCRN4": 0,
+    "COLOR": "#ffffff"
   },
   "1": {
     "ACC1": 0.04,
@@ -25,7 +26,8 @@
     "SCRN1": 0,
     "SCRN2": 0,
     "SCRN3": 0.079323543,
-    "SCRN4": 0.078663244
+    "SCRN4": 0.078663244,
+    "COLOR": "#ffffff"
   },
   "3": {
     "ACC1": 0.072,
@@ -39,7 +41,8 @@
     "SCRN1": 0,
     "SCRN2": 0,
     "SCRN3": 0,
-    "SCRN4": 0
+    "SCRN4": 0,
+    "COLOR": "#ffffff"
   },
   "4": {
     "ACC1": 0.072,
@@ -53,6 +56,7 @@
     "SCRN1": 0,
     "SCRN2": 0,
     "SCRN3": 0,
-    "SCRN4": 0
+    "SCRN4": 0,
+    "COLOR": "#ffffff"
   }
 }
