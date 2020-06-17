@@ -1,2 +1,13 @@
 %(1000 words)
 % in discussion.tex
+
+
+CHAIN ARGUMENTATION
+% Spalten wie NOTIF, SCRN, APP.. haben sehr oft 0 und sind auch teilweise von einander abhängig. Z.B. Wenn SCRN ausgeschaltet ist, ist in den meisten Spalten auch LIGHT, die APP Spalten und auch oft NOTIF 0. NOTIF ist generell sehr oft 0, weil man nicht ständig Notifikationen bekommt. LIGHT ist die Umgebungslicht. Oft wenn man das Handy nicht benutzt, hat man es in eine Tasche. Aus diesem Grund gibt es sehr viele ähnliche Spalten. (Ich habe auch nachgeschaut welche Spalten in diese Schleife sind und es sind fast immer solche (außer ein paar Ausreßer)).
+% Weiters kann man sehen, wenn SCRN 0 ist und es gibt Notifikationen, dann gibt es auch bei einer der APP Spalten Aktivität. Od ab und zu, wenn der SCRN angegangen ist, dann zeigt auch eine APP Aktivität.
+
+% Warum die Schleife noch da war, wie nur die AUDIO und ACC Spalten verwendet werden, ist vermutlich deshalb, weil die Accelerometer Werte auch sehr ähnlich waren. Beim Untersuchen der Tabelle, wo nur diese zwei Spalten verwendet wurden ist aufgefallen, dass mehr als 50% der ACC Werte zwischen in ein Intervall von 0.1 (z.B. zwischen 0.2 & 0.3) lagen, obwohl die ACC Werte in dem Bespiel insgesamt eine Spannungsbreite von 7.89069115 Werte (z.B. zw. 0 & 7.89069115) einnahmen.
+
+% Man sieht auch, dass öfters die Punkte von der gleichen Test Person gemeinsam „angehäufelt“ sind. Dies könnte sich vielleicht erklären lassen, dass die Daten einer Testperson ähnlich sind, weil er/sie die ähnlichen Handlungen machen (z.B. ähnliche schnelle Bewegungen, ähnliche Lautstärke, …)
+
+

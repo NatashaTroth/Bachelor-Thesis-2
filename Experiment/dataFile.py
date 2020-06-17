@@ -23,7 +23,7 @@ class DataFile:
                                    'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
 
     def create_data_frame(self, directory_path):
-        print("in createDataFrame")
+        # print("in createDataFrame")
         pathlist = Path(directory_path).glob('**/*.csv')
         list_of_files = []
         list_of_dataframes = []
@@ -32,7 +32,7 @@ class DataFile:
             list_of_files.append(str(path))
 
             # test += 1
-            # if test == 20:
+            # if test == 25:
             #     break
         #     df = pd.read_csv(str(path), index_col=None, header=0)
         #     li.append(df)
@@ -51,11 +51,10 @@ class DataFile:
 
     def read_csv_file_add_color(self, path):
         df = pd.read_csv(path)
-        # print("%06x" % random.randint(0, 0xFFFFFF))
+        # add color to each user to tell which data points belong to the same user (to tell where the chain was coming from)
         random.seed(self.color_random_int)
         self.color_random_int += 1
         random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
-        print(random_color)
         df["COLOR"] = random_color
         return df
 
@@ -74,7 +73,7 @@ class DataFile:
         # self.df = self.df.iloc[::3, :]
         # self.df = self.df.iloc[::3, :]
         # print(self.df)
-        print(self.df)
+        # print(self.df)
 
         self.remove_columns(["TIME"])
 
@@ -87,19 +86,35 @@ class DataFile:
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
 
-        print(self.df)
-        print("MAX VALUES...")
-        print(self.df.max(axis=0))
-        print("\nMIN VALUES...")
-        print(self.df.min(axis=0))
+        # print(self.df)
+        # print("MAX VALUES...")
+        # print(self.df.max(axis=0))
+        # print("\nMIN VALUES...")
+        # print(self.df.min(axis=0))
 
         self.colors = self.df["COLOR"].to_numpy()
-        print(self.colors)
+        # print(self.colors)
         self.remove_columns(["COLOR"])
         # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings6-beforecompression.csv")
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings7-beforecompression.csv")
 
+        # print("----------------HERE..................")
         self.extract_columns(number_columns_to_use)
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/compareBefore.csv")
+        # print(self.df)
+        # self.df["COLOR"] = self.colors
+
+        # if remove rows, also need to adjust the colors for the tester subjects
+        self.df["COLOR"] = self.colors
+        self.remove_rows_with_percent_zero(50)
+        self.colors = self.df["COLOR"].to_numpy()
+        self.remove_columns(["COLOR"])
+
+        # self.df.to_csv(
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/compareAfter.csv")
+
+        print(self.df)
         # print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
@@ -115,7 +130,7 @@ class DataFile:
 
         self.normalize_columns()
         # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings6.csv")
+        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings7.csv")
         # self.df = self.df.iloc[::2]
         # self.df = self.df.iloc[::1]
         # print(self.df)
@@ -123,6 +138,16 @@ class DataFile:
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")
         self.df.dropna(inplace=True)
+
+    def remove_rows_with_percent_zero(self, percent):
+        # e.g. percent = 60: removes rows with 60 percent or more 0s (where less than 40% other values that != 0)
+
+        # remove rows with more than percent
+        # self.df = self.df[self.df.astype('bool').mean(axis=1) >= percent / 100]
+        # self.df = self.df[(self.df == 0).sum(axis=1) <
+        #                   self.df.shape[1] * (1 - (percent / 100))]
+        self.df = self.df[(self.df == 0).sum(axis=1) /
+                          len(self.df.columns) <= percent/100]
 
     def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
         print("  removing columns with many empty values...")

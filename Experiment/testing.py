@@ -82,6 +82,43 @@ class TestStringMethods(unittest.TestCase):
         result_optics = compare_scores(scores_1h_optics, scores_3h_optics)
         self.assertEqual(result_optics, 1)
 
+    def test_remove_rows_with_percent_zero(self):
+        data_file = DataFile("./testData/testRemoveRowsWithZero")
+        # print(data_file.df.to_json(orient='index'))
+        initial_file = pd.read_json(
+            './testData/testRemoveRowsWithZero/testData.json', orient='index')
+        assert_frame_equal(
+            data_file.df, initial_file,  check_dtype=False)
+
+        data_file.remove_rows_with_percent_zero(25)
+        result_after_removing_rows_more_25_percent_zero = pd.read_json(
+            './testData/testRemoveRowsWithZero/testRemove25Percent.json', orient='index')
+        assert_frame_equal(
+            data_file.df, result_after_removing_rows_more_25_percent_zero,  check_dtype=False)
+
+        data_file = DataFile("./testData/testRemoveRowsWithZero")
+        data_file.remove_rows_with_percent_zero(50)
+        result_after_removing_rows_more_50_percent_zero = pd.read_json(
+            './testData/testRemoveRowsWithZero/testRemove50Percent.json', orient='index')
+        assert_frame_equal(
+            data_file.df, result_after_removing_rows_more_50_percent_zero,  check_dtype=False)
+
+        data_file = DataFile("./testData/testRemoveRowsWithZero")
+        data_file.remove_rows_with_percent_zero(49)
+        print(data_file.df)
+        result_after_removing_rows_more_49_percent_zero = pd.read_json(
+            './testData/testRemoveRowsWithZero/testRemove49Percent.json', orient='index')
+        assert_frame_equal(
+            data_file.df, result_after_removing_rows_more_49_percent_zero,  check_dtype=False)
+
+        data_file = DataFile("./testData/testRemoveRowsWithZero")
+        data_file.remove_rows_with_percent_zero(75)
+        print(data_file.df)
+        result_after_removing_rows_more_75_percent_zero = pd.read_json(
+            './testData/testRemoveRowsWithZero/testRemove75Percent.json', orient='index')
+        assert_frame_equal(
+            data_file.df, result_after_removing_rows_more_75_percent_zero,  check_dtype=False)
+
 
 if __name__ == '__main__':
     unittest.main()

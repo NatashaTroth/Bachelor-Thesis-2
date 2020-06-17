@@ -50,7 +50,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
     # tsne = TSNE(n_components=number_components,
     # init='random', perplexity=10, n_iter=5000, learning_rate=250)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=45, n_iter=15000, learning_rate=50)
+                init='random', perplexity=50, n_iter=5000, learning_rate=50)
 
     # very good
     # tsne = TSNE(n_components=number_components,
