@@ -73,28 +73,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{27}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Find t-SNE parameters}{28}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}Find t-SNE parameters}{27}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Clustering}{28}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{28}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{29}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{30}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{29}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of cluster results of different time lengths}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation}{30}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation and Comparison of different time lengths}{30}{subsubsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Comparison of different time lengths}{30}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Discussion}{31}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{30}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{31}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{30}{section.6}%
+\contentsline {section}{Appendices}{35}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{34}{section*.15}%
+\contentsline {section}{\numberline {A}git-Repository}{35}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{34}{Appendix.a.A}%
+\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{35}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{34}{Appendix.a.B}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{35}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{36}{Appendix.a.C}%

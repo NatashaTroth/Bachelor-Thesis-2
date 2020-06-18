@@ -57,7 +57,7 @@ def calculate_ideal_TSNE_perplexity(df):
         # print(tsne.kl_divergence_)
         sPerp = 2*tsne.kl_divergence_+(math.log(n)*perp/n)
         print(sPerp)
-        sPerpArray.append(tsne.kl_divergence)
+        sPerpArray.append(sPerp)
         perp += 1
 
     plt.figure(figsize=(16, 10))

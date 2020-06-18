@@ -1251,6 +1251,52 @@
       \field{pages}{240\bibrangedash 251}
       \range{pages}{12}
     \endentry
+    \entry{wattenberg2016how}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c66133f96104e3c0dcd2f73e11469ab0}{%
+           family={Wattenberg},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fd60cad5301e91d54be24e6d15594a8}{%
+           family={Viégas},
+           familyi={V\bibinitperiod},
+           given={Fernanda},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7201a73ba867797477903e1eec2b65e4}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a942578aacf8f8892971dc8e38947d67}
+      \strng{fullhash}{a942578aacf8f8892971dc8e38947d67}
+      \strng{bibnamehash}{a942578aacf8f8892971dc8e38947d67}
+      \strng{authorbibnamehash}{a942578aacf8f8892971dc8e38947d67}
+      \strng{authornamehash}{a942578aacf8f8892971dc8e38947d67}
+      \strng{authorfullhash}{a942578aacf8f8892971dc8e38947d67}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Distill}
+      \field{title}{How to Use t-SNE Effectively}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.23915/distill.00002
+      \endverb
+      \verb{urlraw}
+      \verb http://distill.pub/2016/misread-tsne
+      \endverb
+      \verb{url}
+      \verb http://distill.pub/2016/misread-tsne
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

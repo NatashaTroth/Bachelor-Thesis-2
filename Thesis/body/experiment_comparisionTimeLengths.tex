@@ -1,6 +1,7 @@
 % in comparison of diff time lengths
-\subsubsection{Mathmatical Evaluation}
+\subsubsection{Mathmatical Evaluation and Comparison of different time lengths}
 !!! calinski harabasz - as said in document - higher score indicates better clustering (not directly said in paper - but can see in graphs on page 24)
 
-
-\subsubsection{Comparison of different time lengths}
+The three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, i.e. Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index were used to compare the resulting clusters. \textbf{TODO: also used to get best parameters for tsne?} They were each implemented using the sklearn library\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html}, \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html}, and \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.calinski_harabasz_score.html}}.
+As also explained in the respective sklearn documentations, the Silhouette Score indicates better, denser clustering, when it is closer to 1, and incorrect clustering results if the value is close to -1. The Davies-Bouldin Index indicates well chosen clusters, when the value is closer to 0 (lowest possible score). A higher Caliński-Harabasz Index suggests well separated and dense clusters.
+These three scores were calculated and stored for each data frame, after it each clustering algorithm was applied (DBSCAN and OPTICS) for each time length. The resulting values where then compared and are depicted in figure \textbf{todo: figure of evaluation score results.}. The first block (\textbf{lines...}) shows the results for the 1h data set, the second block (\textbf{lines...}) for the 3h data set, and the last block (\textbf{lines...}) compares the two (for the 1h and 3h time lengths). The light green field indicates, that from the data files (1h or 3h), this time length achieved the best and most distinct clusters, according to that score. Dark green fields highlight the best value for that score overall for all time lengths.
