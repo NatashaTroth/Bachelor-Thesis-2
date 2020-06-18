@@ -1,254 +1,632 @@
-% Select language used in document (ngerman or english). Automatically
-% generated text is translated accordingly.
-% use \selectthesislanguage in body.tex to switch to default language
 
-% \documentclass[english, paper]{mmt} % use for BA1
-\documentclass[english, bachelorthesis]{mmt} % use for BA2
-%\documentclass[ngerman, masterthesis]{mmt} % use for Master thesis
 
-\usepackage{mathptmx}
-\usepackage{graphicx}
-\usepackage{times}
-\usepackage{subfig}
-\usepackage{float}
-\usepackage[utf8]{inputenc}
-\usepackage{listings}
-\usepackage{makecell}
-\usepackage[toc,page]{appendix}
-\usepackage{hyperref}
-\usepackage{amssymb}
-\usepackage{titlesec}
-% \usepackage{subcaption}
-% \captionsetup{compatibility=false}
-% \usepackage{subcaption}
-% \usepackage{subfig}
+//Proceedings of the 2nd ACM SIGKDD
 
-%create subsubsubsection
-\setcounter{secnumdepth}{4}
-\titleformat{\paragraph}
-{\normalfont\normalsize}{\theparagraph}{1em}{}
-% BOLD: 
-%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+@article{sajana2016survey,
+  title={A survey on clustering techniques for big data mining},
+  author={Sajana, T and Rani, CM Sheela and Narayana, KV},
+  journal={Indian journal of Science and Technology},
+  volume={9},
+  number={3},
+  pages={1--12},
+  year={2016}
+},
 
-\hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
+@InProceedings{10.1007/978-3-319-44636-3_15,
+author="Luna-Romera, Jos{\'e} Mar{\'i}a
+and del Mar Mart{\'i}nez-Ballesteros, Mar{\'i}a
+and Garc{\'i}a-Guti{\'e}rrez, Jorge
+and Riquelme-Santos, Jos{\'e} C.",
+title="An Approach to Silhouette and Dunn Clustering Indices Applied to Big Data in Spark",
+booktitle="Advances in Artificial Intelligence",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="160--169",
+isbn="978-3-319-44636-3",
+location="Salamanca, Spain",
+month="Sep"
+},
+
+//editor="Luaces , Oscar
+and G{\'a}mez, Jos{\'e} A.
+and Barrenechea, Edurne
+and Troncoso, Alicia
+and Galar, Mikel
+and Quinti{\'a}n, H{\'e}ctor
+and Corchado, Emilio",
+
+@INPROCEEDINGS{silhouetteRelocatingMeasure, 
+author={S. {Aranganayagi} and K. {Thangavel}}, 
+booktitle={International Conference on Computational Intelligence and Multimedia Applications (ICCIMA 2007)}, 
+title={Clustering Categorical Data Using Silhouette Coefficient as a Relocating Measure}, 
+year={2007}, 
+volume={2}, 
+number={}, 
+pages={13-17}, 
+keywords={data analysis;data mining;pattern clustering;unsupervised learning;clustering categorical data;silhouette coefficient;relocating measure;cluster analysis;unsupervised learning method;intelligent data analysis process;data mining;Clustering algorithms;Data mining;Iterative algorithms;Frequency measurement;Frequency conversion;Application software;Computer science;Computational intelligence;Educational institutions;Art}, 
+doi={10.1109/ICCIMA.2007.328}, 
+ISSN={null}, 
+month={Dec},
+location={Sivakasi, Tamil Nadu, India }},
+
+@INPROCEEDINGS{convexhullDbscan, 
+author={R. {Dey} and S. {Chakraborty}}, 
+booktitle={2015 International Conference and Workshop on Computing and Communication (IEMCON)}, 
+title={Convex-hull DBSCAN clustering to predict future weather}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={1-8}, 
+keywords={agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}, 
+doi={10.1109/IEMCON.2015.7344438}, 
+ISSN={null}, 
+month={Oct},
+location={Vancouver, BC, Canada}},
+
+
+@book{han2011data,
+  title={Data mining: concepts and techniques},
+  author={Han, Jiawei and Pei, Jian and Kamber, Micheline},
+  year={2011},
+  publisher={Elsevier},
+  location={Burlington, Massachusetts}
+},
+//not sure if burlington location is correct
+
+
+@INPROCEEDINGS{8862218, 
+author={N. {Sapkota} and A. {Alsadoon} and P. W. C. {Prasad} and A. {Elchouemi} and A. K. {Singh}}, 
+booktitle={2019 International Conference on Machine Learning, Big Data, Cloud and Parallel Computing (COMITCon)}, 
+title={Data Summarization Using Clustering and Classification: Spectral Clustering Combined with k-Means Using NFPH}, 
+year={2019}, 
+volume={}, 
+number={}, 
+pages={146-151}, 
+keywords={data analysis;data mining;pattern classification;pattern clustering;NFPH;cluster centroids;open source data mining application;spectral clustering algorithm;data summarization;data miners;clustering algorithm;k-means algorithms;UCI data sets;WEKA;classification algorithm;Clustering algorithms;Data mining;Classification algorithms;Feature extraction;Knowledge discovery;Decision trees;Mathematical model;K-means;clustering;data-mining;Spectral clustering;NFPH}, 
+doi={10.1109/COMITCon.2019.8862218}, 
+ISSN={null}, 
+month={Feb},
+location={Faridabad, India}},
+
+@inproceedings{10.1145/2746539.2746569,
+author = {Cohen, Michael B. and Elder, Sam and Musco, Cameron and Musco, Christopher and Persu, Madalina},
+title = {Dimensionality Reduction for K-Means Clustering and Low Rank Approximation},
+year = {2015},
+isbn = {9781450335362},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2746539.2746569},
+doi = {10.1145/2746539.2746569},
+booktitle = {Proceedings of the Forty-Seventh Annual ACM Symposium on Theory of Computing},
+pages = {163–172},
+numpages = {10},
+keywords = {feature selection, feature extraction, low rank approximation, projection cost preserving, sketching, k-means, principal component analysis, singular value decomposition, clustering, streaming, Johnson-Lindenstrauss, distributed, dimensionality reduction},
+location = {Portland, Oregon, USA},
+series = {STOC ’15},
+month={June}
+},
+
+@INPROCEEDINGS{forensics, 
+author={N. {Bermad} and M. T. {Kechadi}}, 
+booktitle={2016 7th International Conference on Sciences of Electronics, Technologies of Information and Telecommunications (SETIT)}, 
+title={Evidence analysis to basis of clustering: Approach based on mobile forensic investigation}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={300-307}, 
+keywords={data mining;mobile investigation process;relational combinations;crime reconstruction;functional analysis;temporal and functional analysis;data mining;dynamic causality;reconstruction events;Forensics;Classification algorithms;Clustering algorithms;Mobile communication;Telecommunications;Functional analysis;Data mining;Digital Forensic Investigation;Mobile Forensic Investigation;Evidences Analysis;Smartphone;Data Mining;Clustering;Dynamic Causal;Temporal and Functional Analysis}, 
+doi={10.1109/SETIT.2016.7939884}, 
+ISSN={null}, 
+month={Dec},
+location={Hammamet, Tunisia}},
+
+@article{patel2011impact,
+  title={Impact of outlier removal and normalization approach in modified k-means clustering algorithm},
+  author={Patel, Vaishali R and Mehta, Rupa G},
+  journal={International Journal of Computer Science Issues (IJCSI)},
+  volume={8},
+  number={5},
+  pages={331-336},
+  year={2011},
+  publisher={Citeseer}
+},
+
+@INPROCEEDINGS{6471633, 
+author={M. S. {Mahmud} and M. M. {Rahman} and M. N. {Akhtar}}, 
+booktitle={2012 7th International Conference on Electrical and Computer Engineering}, 
+title={Improvement of K-means clustering algorithm with better initial centroids based on weighted average}, 
+year={2012}, 
+volume={}, 
+number={}, 
+pages={647-650}, 
+keywords={data analysis;pattern clustering;weighted average;similar data grouping;cluster analysis;data analysis techniques;partitioning clustering algorithm;initial centroid selection;performance improvement;k-means clustering algorithm;heuristic method;Clustering algorithms;Partitioning algorithms;Accuracy;Algorithm design and analysis;Standards;Clustering methods;Data mining;Data Mining;Clustering;K-means;Enhancing kmeans;improved Initial centroids}, 
+doi={10.1109/ICECE.2012.6471633}, 
+ISSN={null}, 
+month={Dec},
+location={Dhaka, Bangladesh}},
+
+@INPROCEEDINGS{5088944, 
+author={E. H. {Lu} and V. S. {Tseng}}, 
+booktitle={2009 Tenth International Conference on Mobile Data Management: Systems, Services and Middleware}, 
+title={Mining Cluster-Based Mobile Sequential Patterns in Location-Based Service Environments}, 
+year={2009}, 
+volume={}, 
+number={}, 
+pages={273-278}, 
+keywords={data mining;mobile computing;mining cluster-based mobile sequential pattern;location-based service environment;data mining algorithm;cluster-based mobile sequential pattern mine;transaction similarity measurement;location-based service alignment;mobile transaction sequences;transaction clustering algorithm;cluster-object based smart cluster affinity search technique;user cluster model;prediction strategy;mobile user;Data mining;Clustering algorithms;Mobile handsets;Mobile computing;Computer science;Business;Conference management;Environmental management;Engineering management;Middleware;Location-based services;Cluster-based mobile sequential patterns;Mobility pattern mining;Data mining}, 
+doi={10.1109/MDM.2009.40}, 
+ISSN={2375-0324}, 
+month={May},
+location={Taipei, Taiwan}},
+
+
+
+@ARTICLE{5560659, 
+author={E. H. {Lu} and V. S. {Tseng} and P. S. {Yu}}, 
+journal={IEEE Transactions on Knowledge and Data Engineering}, 
+title={Mining Cluster-Based Temporal Mobile Sequential Patterns in Location-Based Service Environments}, 
+year={2011}, 
+volume={23}, 
+number={6}, 
+pages={914-927}, 
+keywords={data mining;mobile computing;pattern clustering;cluster based temporal mobile sequential pattern mining;location based service environment;mobile movements prediction;differentiated mobile behaviors;prediction strategy;CTMSP-Mine;cluster object based smart cluster affinity search technique;CO-Smart-CAST;location based service alignment;time segmentation approach;Mobile communication;Data mining;Clustering algorithms;Transaction databases;Clustering methods;Algorithm design and analysis;Mobile computing;Data mining;transportation;mining methods and algorithms;mobile environments.},
+doi={10.1109/TKDE.2010.155}, 
+ISSN={2326-3865}, 
+month={June},},
+
+@INPROCEEDINGS{8638045, 
+author={M. {Karimzadeh} and Z. {Zhao} and F. {Gerber} and T. {Braun}}, 
+booktitle={2018 IEEE 43rd Conference on Local Computer Networks (LCN)}, 
+title={Mobile Users Location Prediction with Complex Behavior Understanding}, 
+year={2018}, 
+volume={}, 
+number={}, 
+pages={323-326}, 
+keywords={data analysis;Global Positioning System;location based services;Markov processes;mobile computing;smart phones;global positioning system;heterogeneous mobility data;location-based services;hybrid Markov chain;smartphone built-in sensors;trace data;Nokia mobile data challenge;mobile users location prediction;smartphone ubiquity;mobile user behavior;Zone of Interests;Markov processes;Prediction algorithms;Global Positioning System;Adaptation models;Predictive models;Clustering algorithms;Mathematical model;Mobile analysis;Mobility Prediction;Mobility Behavior;Location based Services},
+doi={10.1109/LCN.2018.8638045}, 
+ISSN={0742-1303}, 
+month={Oct},
+location={Chicago, IL, USA, USA}},
+
+@INPROCEEDINGS{6957787, 
+author={Y. {Chen} and J. {Kim} and H. S. {Mahmassani}}, 
+booktitle={17th International IEEE Conference on Intelligent Transportation Systems (ITSC)}, 
+title={Pattern recognition using clustering algorithm for scenario definition in traffic simulation-based decision support systems}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={798-803}, 
+keywords={data mining;data warehouses;decision support systems;pattern clustering;real-time systems;reliability;traffic engineering computing;transportation;pattern recognition;scenario definition;traffic simulation-based decision support systems;data warehouses;data mining;transportation projects;travel time reliability analysis;traffic estimation;prediction systems;real-time weather-responsive traffic management;WRTM;real-time traffic simulation;K-means clustering;squared Euclidean distance;Reliability;Snow;Rain;Indexes;Time series analysis;Euclidean distance;K-means Clustering;Hierarchical Clustering;Similarity Measures;Traffic Simulation;Scenarios-based Approach;Travel Time Reliability Analysis}, 
+doi={10.1109/ITSC.2014.6957787}, 
+ISSN={2153-0017}, 
+month={Oct},
+location={Qingdao, China}},
+
+@article{Wang2017,
+author="Wang, Bangjun
+and Zhang, Li
+and Wu, Caili
+and Li, Fan-zhang
+and Zhang, Zhao",
+title="Spectral clustering based on similarity and dissimilarity criterion",
+journal="Pattern Analysis and Applications",
+year="2017",
+month="May",
+day="01",
+volume="20",
+number="2",
+pages="495--506",
+publisher={Springer},
+abstract="The clustering assumption is to maximize the within-cluster similarity and simultaneously to minimize the between-cluster similarity for a given unlabeled dataset. This paper deals with a new spectral clustering algorithm based on a similarity and dissimilarity criterion by incorporating a dissimilarity criterion into the normalized cut criterion. The within-cluster similarity and the between-cluster dissimilarity can be enhanced to result in good clustering performance. Experimental results on toy and real-world datasets show that the new spectral clustering algorithm has a promising performance.",
+issn="1433-755X",
+doi="10.1007/s10044-015-0515-x",
+url="https://doi.org/10.1007/s10044-015-0515-x"
+},
+
+@Inbook{berkhin2006survey,
+author="Berkhin, P.",
+editor="Kogan, Jacob
+and Nicholas, Charles
+and Teboulle, Marc",
+title="A Survey of Clustering Data Mining Techniques",
+bookTitle="Grouping Multidimensional Data: Recent Advances in Clustering",
+year="2006",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="25--71",
+abstract="Clustering is the division of data into groups of similar objects. In clustering, some details are disregarded in exchange for data simplification. Clustering can be viewed as a data modeling technique that provides for concise summaries of the data. Clustering is therefore related to many disciplines and plays an important role in a broad range of applications. The applications of clustering usually deal with large datasets and data with many attributes. Exploration of such data is a subject of data mining. This survey concentrates on clustering algorithms from a data mining perspective.",
+isbn="978-3-540-28349-2",
+doi="10.1007/3-540-28349-8_2",
+url="https://doi.org/10.1007/3-540-28349-8_2"
+},
+
+
+@INPROCEEDINGS{patel2016best, 
+author={K. M. A. {Patel} and P. {Thakral}}, 
+booktitle={2016 International Conference on Communication and Signal Processing (ICCSP)}, 
+title={The best clustering algorithms in data mining}, 
+year={2016}, 
+volume={}, 
+number={}, 
+pages={2042-2046}, 
+keywords={data mining;pattern clustering;data mining;unsupervised learning;data object similarity;hierarchical clustering algorithm;density-based clustering algorithm;partitioning clustering algorithm;graph-based algorithm;grid-based algorithm;model-based clustering algorithm;combinational clustering algorithm;k-medoids;distributed k-means clustering algorithm;Clustering algorithms;Signal processing algorithms;Partitioning algorithms;Data mining;Algorithm design and analysis;Time complexity;Distributed databases;Cluster size;Clustering Algorithms;Data normalization;Time complexity of algorithm}, 
+doi={10.1109/ICCSP.2016.7754534}, 
+ISSN={null}, 
+month={April},
+location={Melmaruvathur, India},
 }
-\usepackage{breakurl}
 
-\usepackage{amsmath}
-\usepackage[autostyle,german=guillemets]{csquotes}
+@INPROCEEDINGS{8255031, 
+author={C. F. {Bublitz} and A. C. {Ribeiro-Teixeira} and T. A. {Pianoschi} and J. {Rochol} and C. B. {Both}}, 
+booktitle={GLOBECOM 2017 - 2017 IEEE Global Communications Conference}, 
+title={Unsupervised Segmentation and Classification of Snoring Events for Mobile Health}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={1-6}, 
+keywords={bioacoustics;expectation-maximisation algorithm;Gaussian processes;health care;medical disorders;medical signal processing;mobile computing;patient diagnosis;patient monitoring;pneumodynamics;signal classification;sleep;statistical analysis;mobile devices;patient health signals;remote monitoring;sleep disorders;serious comorbidities;unsupervised segmentation;classification;snoring events;snore;Mobile Health context;Obstructive Sleep Apnea snorers;OSA snorers;Sleep apnea;Feature extraction;Smart phones;Acoustics;Clustering algorithms;Algorithm design and analysis;Statistics}, 
+doi={10.1109/GLOCOM.2017.8255031}, 
+ISSN={null}, 
+month={Dec},
+location={Singapore, Singapore}},
 
-% moved to cls file. use \selectthesislanguage to switch to default language
-%\usepackage[english,ngerman]{babel}
+@article{maaten2008visualizing,
+  title={Visualizing data using t-SNE},
+  author={Maaten, Laurens van der and Hinton, Geoffrey},
+  journal={Journal of Machine Learning research},
+  volume={9},
+  number={Nov},
+  pages={2579--2605},
+  year={2008}
+},
 
-\usepackage{abbrevs}
-%% the following solves a bug in the abbrevs package, that adds an empty
-%% space after the abbrev
-\makeatletter
-\renewcommand\maybe@space@{%
-  % \@tempswatrue % <= this is in the original
-  \maybe@ictrue % <= this is new
-  \expandafter   \@tfor
-    \expandafter \reserved@a
-    \expandafter :%
-    \expandafter =%
-                 \nospacelist
-                 \do \t@st@ic
-  % \if@tempswa % <= this is in the original
-  \ifmaybe@ic % <= this is new
-    \space
-  \fi
+@book{kaufman2009finding,
+  title={Finding groups in data: an introduction to cluster analysis},
+  author={Kaufman, Leonard and Rousseeuw, Peter J},
+  volume={344},
+  year={2009},
+  publisher={John Wiley \& Sons},
+  location={Hoboken, New Jersey}
+},
+
+@book{DataMiningAndPredictiveAnalytics,
+title = {Data mining and predictive analytics},
+author = {Larose, Daniel T and Larose, Chantal D},
+series = {Wiley series on methods and applications in data mining},
+isbn = {9781118116197},
+year = {2015},
+edition = {2. ed..},
+publisher={John Wiley \& Sons},
+location={Hoboken, New Jersey}
+},
+
+
+
+
+
+
+
+
+
+
+
+//new papers:
+
+@article{dataPreprocessingSupervisedlearning,
+  title={Data preprocessing for supervised learning},
+  author={Kotsiantis, SB and Kanellopoulos, Dimitris and Pintelas, PE},
+  journal={International Journal of Computer Science},
+  volume={1},
+  number={2},
+  pages={111--117},
+  year={2006},
+  publisher={Citeseer}
+},
+
+@ARTICLE{advancedDataPreprocessing, 
+author={D. {Tanasa} and B. {Trousse}}, 
+journal={IEEE Intelligent Systems}, 
+title={Advanced data preprocessing for intersites Web usage mining}, 
+year={2004}, 
+volume={19}, 
+number={2}, 
+pages={59-65}, 
+keywords={Internet;Web design;data mining;user interfaces;Web usage mining;WUM;data mining procedure;user access analysis;KDD knowledge discovery;knowledge extraction;intersite;Web server log;data fusion;data cleaning;data structuration;data summarization;INRIA Web site;Data preprocessing;Web server;Web pages;Data mining;Performance analysis;Cleaning;Web sites;Displays;Web page design;Data analysis}, 
+doi={10.1109/MIS.2004.1274912}, 
+ISSN={1941-1294}, 
+month={March},},
+
+@ARTICLE{learningFromImbalancedData, 
+author={H. {He} and E. A. {Garcia}}, 
+journal={IEEE Transactions on Knowledge and Data Engineering}, 
+title={Learning from Imbalanced Data}, 
+year={2009}, 
+volume={21}, 
+number={9}, 
+pages={1263-1284}, 
+keywords={data mining;decision making;large-scale systems;learning (artificial intelligence);learning;imbalanced data;data availability;large-scale systems;complex systems;networked systems;knowledge discovery;decision making;data engineering;Availability;Large-scale systems;Surveillance;Data security;IP networks;Finance;Data analysis;Decision making;Data engineering;Knowledge representation;Imbalanced learning;classification;sampling methods;cost-sensitive learning;kernel-based learning;active learning;assessment metrics.}, 
+doi={10.1109/TKDE.2008.239}, 
+ISSN={2326-3865}, 
+month={Sep.},},
+
+@book{dataPreprocessingInDataMining,
+  title={Data preprocessing in data mining},
+  author={García, Salvador and Luengo, Julián and Herrera, Francisco},
+  year={2015},
+  publisher={Springer}
+},
+
+@book{dataPreparationForDataMining,
+  title={Data preparation for data mining},
+  author={Pyle, Dorian},
+  year={1999},
+  publisher={morgan kaufmann}
+},
+
+@book{bellman1957dynamic,
+  title={Dynamic Programming},
+  author={Bellman, R. E.},
+  isbn={9780691079516},
+  lccn={57005444},
+  series={Rand Corporation research study},
+  year={1957},
+  publisher={Princeton University Press}
 }
-\makeatother
-%%
+
+@book{bellman1961adaptive,
+  title={Adaptive Control Processes: A Guided Tour},
+  author={Bellman, R. E.},
+  isbn={9781400874668},
+  series={Princeton Legacy Library},
+  year={1961},
+  publisher={Princeton University Press}
+},
+
+@article{OnLinesAndPlanes1901,
+author = {Pearson, Karl},
+title = {LIII. On lines and planes of closest fit to systems of points in space},
+journal = {The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
+volume = {2},
+number = {11},
+pages = {559-572},
+year  = {1901},
+publisher = {Taylor & Francis},
+doi = {10.1080/14786440109462720},
+},
+
+@article{hotelling1933analysis,
+  title={Analysis of a complex of statistical variables into principal components.},
+  author={Hotelling, Harold},
+  journal={Journal of educational psychology},
+  volume={24},
+  number={6},
+  pages={417-441},
+  year={1933},
+  publisher={Warwick \& York},
+
+},
+
+@book{romesburg2004cluster,
+  title={Cluster Analysis for Researchers},
+  author={Romesburg, H. Charles},
+  isbn={9781411606173},
+  year={2004},
+  publisher={Lulu Press}
+},
+
+@book{hartigan1975clustering,
+  title={Clustering algorithms},
+  author={Hartigan, John A},
+  year={1975},
+  publisher={John Wiley \& Sons, Inc.}
+},
+
+@book{kaufman1990findingGroupsInData,
+  title={Finding Groups in Data: An Introduction to Cluster Analysis},
+  author={Kaufman, L. and Rousseeuw, P.J.},
+  year={1990},
+  publisher={John Wiley \& Sons, Inc.},
+  series={Wiley Series in Probability and Statistics},
+  isbn={9780470317488}
+},
+
+@article{rousseeuw1987silhouettes,
+  title={Silhouettes: a graphical aid to the interpretation and validation of cluster analysis},
+  author={Rousseeuw, Peter J},
+  journal={Journal of computational and applied mathematics},
+  volume={20},
+  pages={53--65},
+  year={1987},
+  publisher={North-Holland}
+},
+
+@book{jolliffe2002PCA,
+  title={Principal Component Analysis: Second Edition},
+  author={Jolliffe, I.T.},
+  isbn={0-387-95442-2},
+  doi={10.1007/b98835},
+  series={Springer Series in Statistics},
+  year={2002},
+  publisher={Springer-Verlag New York}
+},
+
+@article{van2010process,
+  title={Process mining: a two-step approach to balance between underfitting and overfitting},
+  author={van der Aalst, W M P and Rubin, V and Verbeek, H M W and van Dongen, B F and Kindler, E and G{\"{u}}nther, C W},
+  issn = {1619-1374},
+journal = {Software {\&} Systems Modeling},
+  volume={9},
+  number={1},
+  pages={87-111},
+  year={2010},
+  publisher={Springer},
+  doi={10.1007/s10270-008-0106-z},
+},
 
 
-\usepackage{listings}
-\usepackage{color}
-\definecolor{lightgray}{rgb}{.9,.9,.9}
-\definecolor{darkgray}{rgb}{.4,.4,.4}
-\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
-\lstdefinelanguage{JavaScript}{
-  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, let, const, void, while, with},
-  morecomment=[l]{//},
-  morecomment=[s]{/*}{*/},
-  morestring=[b]',
-  morestring=[b]",
-  ndkeywords={class, export, boolean, throw, implements, import, this},
-  keywordstyle=\color{blue}\bfseries,
-  ndkeywordstyle=\color{darkgray}\bfseries,
-  identifierstyle=\color{black},
-  commentstyle=\color{purple}\ttfamily,
-  stringstyle=\color{red}\ttfamily,
-  sensitive=true
+@inproceedings{AboutToEat2016Rahman, 
+author = {Rahman, Tauhidur and Czerwinski, Mary and Gilad-Bachrach, Ran and Johns, Paul}, 
+title = {Predicting \enquote{About-to-Eat} Moments for Just-in-Time Eating Intervention}, 
+year = {2016}, 
+isbn = {9781450342247}, 
+publisher = {Association for Computing Machinery}, 
+address = {New York, NY, USA}, 
+
+doi = {10.1145/2896338.2896359}, 
+booktitle = {Proceedings of the 6th International Conference on Digital Health Conference},
+pages={1-10},
+},
+
+@InProceedings{SmartphoneBasedStressPrediction2015,
+author="St{\"u}tz, Thomas
+and Kowar, Thomas
+and Kager, Michael
+and Tiefengrabner, Martin
+and Stuppner, Markus
+and Blechert, Jens
+and Wilhelm, Frank H.
+and Ginzinger, Simon",
+editor="Ricci, Francesco
+and Bontcheva, Kalina
+and Conlan, Owen
+and Lawless, S{\'e}amus",
+title="Smartphone Based Stress Prediction",
+booktitle="User Modeling, Adaptation and Personalization",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="240--251",
+abstract="Smartphone usage has tremendously increased and most users keep their smartphones close throughout the day. Smartphones have a broad variety of sensors, that could automatically map and track the user's life and behaviour. In this work we investigate whether automatically collected smartphone usage and sensor data can be employed to predict the experienced stress levels of a user using a customized brief version of the Perceived Stress Scale (PSS). To that end we have conducted a user study in which smartphone data and stress (as measured by the PSS seven times a day) were recorded for two weeks. We found significant correlations between stress scores and smartphone usage as well as sensor data, pointing to innovative ways for automatic stress measurements via smartphone technology. Stress is a prevalent risk factor for multiple diseases. Thus accurate and efficient prediction of stress levels could provide means for targeted prevention and intervention.",
+isbn="978-3-319-20267-9"
+},
+
+@INPROCEEDINGS{alcoholCravingPrediction,  
+author={P. {Sornbootnark} and P. {Khoenkaw}},  
+booktitle={2019 Joint International Conference on Digital Arts, Media and Technology with ECTI Northern Section Conference on Electrical, Electronics, Computer and Telecommunications Engineering (ECTI DAMT-NCON)},  
+title={Excessive Alcohol Craving Prediction Algorithm Using Smartphone Accelerometer Sensor},   
+year={2019},  
+volume={},  
+number={},  
+pages={335-338},},
+
+@article{pius2018automatic,
+  title={Automatic Annotation of Unlabeled Data from Smartphone-Based Motion and Location Sensors},
+  author={Pius Owoh, Nsikak and Mahinderjit Singh, Manmeet and Zaaba, Zarul Fitri},
+  journal={Sensors},
+  volume={18},
+  number={7},
+  pages={2134},
+  year={2018},
+  publisher={Multidisciplinary Digital Publishing Institute}
+},
+
+@INPROCEEDINGS{ClusterPassivelySensedData2018,  
+author={M. K. {Ameko} and L. {Cai} and M. {Boukhechba} and A. {Daros} and P. I. {Chow} and B. A. {Teachman} and M. S. {Gerber} and L. E. {Barnes}},  
+booktitle={2018 IEEE EMBS International Conference on Biomedical   Health Informatics (BHI)},  
+title={Cluster-based approach to improve affect recognition from passively sensed data},   
+year={2018},  
+volume={},  
+number={},  
+pages={434-437},}
+
+
+@book{mccue2014data,
+  title={Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis},
+  author={McCue, C.},
+  isbn={9780128004081},
+  url={https://books.google.at/books?id=re1MBAAAQBAJ},
+  year={2014},
+  publisher={Butterworth-Heinemann (Elsevier)}
 }
 
-\lstset{
-   language=JavaScript,
-   backgroundcolor=\color{lightgray},
-   extendedchars=true,
-   basicstyle=\footnotesize\ttfamily,
-   showstringspaces=false,
-   showspaces=false,
-   numbers=left,
-   numberstyle=\footnotesize,
-   numbersep=9pt,
-   tabsize=2,
-   breaklines=true,
-   showtabs=false,
-   captionpos=b
+
+@book{mccue2014data,
+  title={Data mining and predictive analysis: Intelligence gathering and crime analysis},
+  author={McCue, Colleen},
+  year={2014},
+  publisher={Butterworth-Heinemann}
 }
 
-\usepackage[authordate,bibencoding=auto,strict,noibid,backend=biber]{biblatex-chicago}
-\bibliography{bibliography}
+@inproceedings{hinton2003stochastic,
+  title={Stochastic neighbor embedding},
+  author={Hinton, Geoffrey E and Roweis, Sam T},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={833--840},
+  year={2003},
+  volume={15},
+  location={Cambridge, MA, USA},
 
-%% Add configuration options
-\include{_configuration}
+  }
 
-%% Paper title.
 
-\title{\titlename}
+  @ARTICLE{DaviesBouldin,
+  author={D. L. {Davies} and D. W. {Bouldin}},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={A Cluster Separation Measure}, 
+  year={1979},
+  volume={PAMI-1},
+  number={2},
+  pages={224-227},}
 
-%% This is h ow authors are specified in the conference style
 
-%% Author 
-\author{ \authorname\\ \scriptsize \authormail \\ \scriptsize 
-\ifmmtlanguagegerman FH Salzburg \else Salzburg University of Applied Sciences \fi
+  @article{calinskiHarabasz,
+author = {Caliński, Tadeusz and JA, Harabasz},
+year = {1974},
+month = {01},
+pages = {1-27},
+title = {A Dendrite Method for Cluster Analysis},
+volume = {3},
+journal = {Communications in Statistics - Theory and Methods},
+doi = {10.1080/03610927408827101}
 }
 
-%% A teaser figure can be included as follows, but is not recommended since
-%% the space is now taken up by a full width abstract.
-%\teaser{
-%  \includegraphics[width=1.5in]{sample.eps}
-%  \caption{This can be a teaser image of the thesis.}
-%}
+@inproceedings{DBSCAN,
+  title={A density-based algorithm for discovering clusters in large spatial databases with noise.},
+  author={Ester, M. and Kriegel, H. and Sander, J. and Xu, X.},
+  booktitle={Proc. 2nd Int. Conf. Knowledge Discovery and Data Mining (KDD’96)},
+  volume={96},
+  number={34},
+  pages={226--231},
+  year={1996},
+  location={Portland, Oregon},
+  month={Aug}
+},
 
-%% Abstract section for paper format.
-\abstract{
-    \ifmmtlanguagegerman 
-        \selectlanguage{ngerman}
-        \input{kurzfassung}
-    \else 
-        \selectlanguage{english}
-        \input{abstract}
-    \fi
+@article{OPTICS,
+author = {Ankerst, Mihael and Breunig, Markus M. and Kriegel, Hans-Peter and Sander, J\"{o}rg},
+title = {OPTICS: Ordering Points to Identify the Clustering Structure},
+year = {1999},
+issue_date = {June 1999},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {28},
+number = {2},
+issn = {0163-5808},
+url = {https://doi.org/10.1145/304181.304187},
+doi = {10.1145/304181.304187},
+journal = {SIGMOD Rec.},
+month = jun,
+pages = {49–60},
+numpages = {12},
+location = {Philadelphia, Pennsylvania, USA},
+series = {SIGMOD ’99},
+keywords = {cluster analysis, database mining, visualization}
+},
+  
+
+@article{tsneAutomaticPerplexity,
+  author    = {Yanshuai Cao and
+               Luyu Wang},
+  title     = {Automatic Selection of t-SNE Perplexity},
+  journal   = {CoRR},
+  volume    = {abs/1708.03229},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1708.03229},
+  archivePrefix = {arXiv},
+  eprint    = {1708.03229},
+  timestamp = {Mon, 13 Aug 2018 16:47:03 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1708-03229.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
-% TODO switch for english, german
-\selectthesislanguage
-
-\pagenumbering{gobble}
-
- % group open
-\ifmmtpaper 
-\begingroup 
-    % is required because paper template messes with sizes
-    \fontsize{12}{18}\selectfont        
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{5pt plus 2pt minus 1pt}
-    \sectionfont{\fontsize{14}{15}\selectfont}
-\fi
-
-    \input{title}        
-    \onecolumn           
-    
-    \pagenumbering{roman}
-    
-    \newpage
-    \input{affidavit}  % comment out for expose
-
-% group closing
-\ifmmtpaper
-\endgroup
-\fi
-
-%\ifmmtpaper\else
-    
-    \newpage
-    \selectlanguage{ngerman}
-    \section*{Kurzfassung}
-    \input{kurzfassung}
-    \ifmmtmasterthesis
-    
-    \vspace*{0.5cm} 
-    \textbf{Schlüsselwörter:~} \keywordsgerman
-    \fi
-    \newpage
-    \selectlanguage{english}
-    \section*{Abstract}
-    \input{abstract}
-    \ifmmtmasterthesis
-        
-    \vspace*{0.5cm} 
-    \textbf{Keywords:~} \keywordsenglish
-    \fi
-    \selectthesislanguage
-    
-    \newpage
-    \tableofcontents
-    
-    \newpage
-    \listoffigures
-    \lstlistoflistings
-    \listoftables
-    
-%\fi
-
-\mmtcolumnmode % switch back to column formatting of stylesheet
-
-\maketitle % used for paper formatting
-
-\ifmmtpaper\else
-\pagestyle{headings}
-\fi
-\pagenumbering{arabic}
-
-
-\input{body} % the main text
-
-%\input{acknowledgements}
-
-\ifmmtpaper
-
-\printbibliography
-
-\else % only use the following for thesis format
-
-\newpage
-\printbibliography
-
-\fi
-
-
- % group open
-\ifmmtpaper 
-\begingroup 
-    % is required because paper template messes with sizes
-    \fontsize{12}{18}\selectfont        
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{5pt plus 2pt minus 1pt}
-    \sectionfont{\fontsize{14}{15}\selectfont}
-\fi
-
-\newpage
-\onecolumn
-\input{appendix}
-
-% group closing
-\ifmmtpaper
-\endgroup
-\fi
-
-
-\end{document}

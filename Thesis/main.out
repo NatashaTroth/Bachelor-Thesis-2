@@ -27,15 +27,16 @@
 \BOOKMARK [3][-]{subsubsection.4.1.3}{Selection of columns \(attributes\)}{subsection.4.1}% 27
 \BOOKMARK [3][-]{subsubsection.4.1.4}{Chain shaped data}{subsection.4.1}% 28
 \BOOKMARK [2][-]{subsection.4.2}{Dimensionality Reduction}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.3}{Clustering}{section.4}% 30
-\BOOKMARK [3][-]{subsubsection.4.3.1}{DBSCAN}{subsection.4.3}% 31
-\BOOKMARK [3][-]{subsubsection.4.3.2}{OPTICS}{subsection.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.4}{Comparison and Evaluation of clusters of different time lengths}{section.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Mathmatical Evaluation}{subsection.4.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.4.2}{Comparison of different time lengths}{subsection.4.4}% 35
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 36
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 37
-\BOOKMARK [1][-]{section*.15}{Appendices}{}% 38
-\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 39
-\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 40
-\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 41
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Find t-SNE parameters}{subsection.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.3}{Clustering}{section.4}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.1}{DBSCAN}{subsection.4.3}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.2}{OPTICS}{subsection.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.4}{Comparison and Evaluation of clusters of different time lengths}{section.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Mathmatical Evaluation}{subsection.4.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Comparison of different time lengths}{subsection.4.4}% 36
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 37
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 38
+\BOOKMARK [1][-]{section*.15}{Appendices}{}% 39
+\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 40
+\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 41
+\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 42

@@ -58,8 +58,16 @@ The Davies-Bouldin Index equals:
 
 This metric can be used, to compare clustering results. The lower of the two \textit{\=R} values indicates the better partitioning.
 
-\paragraph{Calinski-Harabasz Index}
-\textcite{calinskiHarabasz} introduce their
+\paragraph{Caliński-Harabasz Index}
+As a third evaluation score, \textcite{calinskiHarabasz}[3, 7, 11, 23, 24, 26] is used to evaluate and compare the resulting clusters in the experiment. 
+The Caliński-Harabasz Index or Variance Ratio Criterion (VRC) is calculated as 
+% follows, where \texit{n} is the number of points \textit{k} is the number of clusters, \textit{WGSS} is the within-group (cluster) sum of squares, and \textit{BGSS} is the between-group (cluster) sum of squares.
+\[
+VRC = \frac{BGSS}{k-1}/\frac{WGSS}{n-k}
+\]
+If \textit{k} is not known, it is set to 2, then 3 and so on. The density of the clusters can be calculated with the sums of the squared distances from the cluster centroids, to the points. A higher VRC result indicates the "best number" of clusters (\textit{k}).
+
+%Determining the minimum of WGSS can be utilised for cluster analysis.
 
 
 

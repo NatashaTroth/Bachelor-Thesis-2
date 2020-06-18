@@ -11,6 +11,7 @@ import seaborn as sns
 import ipyvolume as ipv
 from sklearn.cluster import SpectralClustering, DBSCAN
 from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_tester_colors
+import math
 
 
 def calculate_PCA(df, number_components, graphs, colors):
@@ -34,14 +35,37 @@ def calculate_PCA(df, number_components, graphs, colors):
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
         if number_components == 2:
             create_2d_scatterplot_tester_colors(
-                df,  "pca-one", "pca-two", colors)
+                df,  "pca-one", "pca-two", colors, "PCA")
            # create_2d_scatterplot(df, "pca-one", "pca-two")
         if number_components == 3:
-            create_3d_scatterplot(df, "pca-one", "pca-two", "pca-three")
+            create_3d_scatterplot(df, "pca-one", "pca-two",
+                                  "pca-three", colors, "PCA")
 
     # calculate_TSNE(pd.DataFrame(pca_result[:, [0, 3]]))
     # print(pca_results)
     return pd.DataFrame(pca_results)
+
+
+def calculate_ideal_TSNE_perplexity(df):
+    print("  TSNE calculate ideal perplexity...")
+    n = df.shape[0]
+    perp = 1
+    sPerpArray = []
+    while perp <= 100:
+        tsne = TSNE(n_components=2, perplexity=perp)
+        tsne_results = tsne.fit_transform(df.to_numpy())
+        # print(tsne.kl_divergence_)
+        sPerp = 2*tsne.kl_divergence_+(math.log(n)*perp/n)
+        print(sPerp)
+        sPerpArray.append(sPerp)
+        perp += 1
+
+    plt.figure(figsize=(16, 10))
+    plt.plot(sPerpArray)
+    # plt.title('n-dist sorted graph')
+    plt.xlabel('Perplexity')
+    plt.ylabel('S(Perp)')
+    plt.show()
 
 
 def calculate_TSNE(df, number_components, graphs, colors):
@@ -50,8 +74,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
     # tsne = TSNE(n_components=number_components,
     # init='random', perplexity=10, n_iter=5000, learning_rate=250)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=50, n_iter=5000, learning_rate=50)
-
+                init='random', perplexity=20, n_iter=5000, learning_rate=50)
     # very good
     # tsne = TSNE(n_components=number_components,
     #             init='random', perplexity=50, n_iter=5000, learning_rate=10)
@@ -69,6 +92,8 @@ def calculate_TSNE(df, number_components, graphs, colors):
 
     # tsne_results = tsne.fit_transform(df)
     tsne_results = tsne.fit_transform(df.to_numpy())
+    # calculate_ideal_TSNE_perplexity(df, tsne)
+
     # print(df)
     # print(tsne_results)
 
@@ -82,8 +107,9 @@ def calculate_TSNE(df, number_components, graphs, colors):
         if number_components == 2:
             # create_2d_scatterplot(df, "tsne-one", "tsne-two")
             create_2d_scatterplot_tester_colors(
-                df,  "tsne-one", "tsne-two", colors)
+                df,  "tsne-one", "tsne-two", colors, "TSNE")
         if number_components == 3:
-            create_3d_scatterplot(df, "tsne-one", "tsne-two", "tsne-three")
+            create_3d_scatterplot(df, "tsne-one", "tsne-two",
+                                  "tsne-three", colors, "t-SNE")
 
     return pd.DataFrame(tsne_results)

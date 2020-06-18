@@ -409,6 +409,48 @@
       \verb 10.1080/03610927408827101
       \endverb
     \endentry
+    \entry{tsneAutomaticPerplexity}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1442bee96fca12bba345617209a137c6}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yanshuai},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57220e244ce835a013b1585edc6373eb}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Luyu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92ca25636968f6c7eedb92b038ab0e86}
+      \strng{fullhash}{92ca25636968f6c7eedb92b038ab0e86}
+      \strng{bibnamehash}{92ca25636968f6c7eedb92b038ab0e86}
+      \strng{authorbibnamehash}{92ca25636968f6c7eedb92b038ab0e86}
+      \strng{authornamehash}{92ca25636968f6c7eedb92b038ab0e86}
+      \strng{authorfullhash}{92ca25636968f6c7eedb92b038ab0e86}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Automatic Selection of t-SNE Perplexity}
+      \field{volume}{abs/1708.03229}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1708.03229
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1708.03229
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1708.03229
+      \endverb
+    \endentry
     \entry{DaviesBouldin}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=942ab34ba922ad6a1382fab461f33e7c}{%

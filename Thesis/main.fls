@@ -471,9 +471,9 @@ INPUT ./images/tsne10Files2Features.png
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/./images/tsneTestSubjectsColor.png
 INPUT ./images/tsneTestSubjectsColor.png
 INPUT ./images/tsneTestSubjectsColor.png
-INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/./images/tsneAfterChainRemoved.png
-INPUT ./images/tsneAfterChainRemoved.png
-INPUT ./images/tsneAfterChainRemoved.png
+INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/./images/tsneAfterChainRemoved(50Percent).png
+INPUT ./images/tsneAfterChainRemoved(50Percent).png
+INPUT ./images/tsneAfterChainRemoved(50Percent).png
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex
 INPUT /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex

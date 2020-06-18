@@ -8,7 +8,7 @@ import sys
 from sklearn.manifold import TSNE
 import ipyvolume as ipv
 import json
-from dimensionalityReduction import calculate_PCA, calculate_TSNE
+from dimensionalityReduction import calculate_PCA, calculate_TSNE, calculate_ideal_TSNE_perplexity
 from clustering import spectral_clustering, dbscan_clustering, optics_clustering, agglomerative_clustering, predict_eps_dbscan_parameter
 import random
 
@@ -107,11 +107,7 @@ class DataFile:
 
         # if remove rows, also need to adjust the colors for the tester subjects
         self.df["COLOR"] = self.colors
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/beforeRowRemoval.csv")
         self.extract_rows_with_percent_non_zero_values(50)
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/afterRowRemoval.csv")
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
 
@@ -246,6 +242,9 @@ class DataFile:
     def calculate_PCA(self, number_components, graphs):
         self.pca = calculate_PCA(
             self.df, number_components, graphs, self.colors)
+
+    def calculate_ideal_TSNE_perplexity(self):
+        calculate_ideal_TSNE_perplexity(self.df)
 
     def calculate_TSNE(self, number_components, graphs):
         self.tsne = calculate_TSNE(

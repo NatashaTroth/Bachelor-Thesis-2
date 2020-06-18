@@ -44,7 +44,7 @@ def create_2d_scatterplot(data, xName, yName):
     plt.show()
 
 
-def create_2d_scatterplot_tester_colors(data, xName, yName, colors):
+def create_2d_scatterplot_tester_colors(data, xName, yName, colors, title):
     print("CREATING TSNE PLOT-------")
     df = pd.DataFrame(data[[xName, yName]])
     plt.figure(figsize=(20, 10))
@@ -55,11 +55,11 @@ def create_2d_scatterplot_tester_colors(data, xName, yName, colors):
     # for line in range(0, data.shape[0]):
     #     plt.text(df.iat[line, 0], df.iat[line, 1], line,
     #              horizontalalignment='left', size=4, color='black', weight='regular')
-    plt.title("TSNE")
+    plt.title(title)
     plt.show()
 
 
-def create_3d_scatterplot(data, xName, yName, zName):
+def create_3d_scatterplot(data, xName, yName, zName, colors, title):
     ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
     # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
     #                     'pca-three': 'blue'}
@@ -69,10 +69,11 @@ def create_3d_scatterplot(data, xName, yName, zName):
         xs=data[xName],
         ys=data[yName],
         zs=data[zName],
-        # c=cvec
+        c=colors
         # c=list(range(0, 8)),
         # cmap='tab10'
     )
+    plt.title(title)
     ax.set_xlabel(xName)
     ax.set_ylabel(yName)
     ax.set_zlabel(zName)

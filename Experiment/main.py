@@ -6,7 +6,7 @@ from clusterEvaluation import compare_scores
 from pathlib import Path
 import sys
 
-number_dimensions = 2
+number_dimensions = 3
 
 # oneHourFile = DataFile(
 # "/Users/natashatroth/Documents/FHS/6Semester/Bac2/testData/1h")
@@ -25,14 +25,15 @@ one_hour_file.clean_data(1)
 
 # ---dimensionality reductions---
 # one_hour_file.calculate_PCA(number_dimensions, True)
-one_hour_file.calculate_TSNE(number_dimensions, True)
+one_hour_file.calculate_ideal_TSNE_perplexity()
+# one_hour_file.calculate_TSNE(number_dimensions, True)
 
 # ---clustering---
 # one_hour_file.spectral_clustering('PCA')
 # one_hour_file.spectral_clustering('TSNE')
 
 # one_hour_file.dbscan_clustering('PCA', True)
-one_hour_file.dbscan_clustering('TSNE', True)
+# one_hour_file.dbscan_clustering('TSNE', True)
 # one_hour_file.dbscan_clustering('', True)
 
 
@@ -68,7 +69,7 @@ one_hour_file.dbscan_clustering('TSNE', True)
 # # three_hour_file.dbscan_clustering('', True)
 
 # # three_hour_file.optics_clustering('PCA', True)
-# # three_hour_file.optics_clustering('TSNE', True)
+# three_hour_file.optics_clustering('TSNE', True)
 # # three_hour_file.optics_clustering('', True)
 
 # # three_hour_file.agglomerative_clustering('PCA', True)
