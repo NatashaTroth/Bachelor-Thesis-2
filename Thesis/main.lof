@@ -11,11 +11,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) \autocite {DBSCAN}[230].\relax }}{16}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Core-distance of object \textit {o} (MinPts = 4) and reachability-distances for objects \textit {p1} and \textit {p2} \autocite {OPTICS}[52].\relax }}{16}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Core-distance of object \textit {o} (MinPts = 4) and reachability-distances for objects \textit {p1} and \textit {p2} \autocite {OPTICS}[52].\relax }}{17}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5}{\ignorespaces OPTICS reachability plot for a 2D data set. Three "Gaussian bumps" can be seen \autocite {OPTICS}[54].\relax }}{17}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Since clusters are defined as the dips/dents in the reachability plots create by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite {OPTICS}[57].\relax }}{17}{figure.caption.6}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Since clusters are defined as the dips/dents in the reachability plots create by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite {OPTICS}[57].\relax }}{18}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces 1h data set, a chain of data points (light blue points) can be seen in the data set.\relax }}{24}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 

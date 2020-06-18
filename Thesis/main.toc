@@ -31,63 +31,63 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Cluster Analysis}{12}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Overview of Clustering Algorithms}{13}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Overview of Clustering Algorithms}{14}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}Partitioning Methods}{14}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1}Partitioning Methods}{15}{subsubsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}Hierarchical Methods}{14}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2}Hierarchical Methods}{15}{subsubsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.5.3}Density-Based Methods}{15}{subsubsection.3.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.3.1}DBSCAN}{15}{paragraph.3.5.3.1}%
+\contentsline {paragraph}{\numberline {3.5.3.1}DBSCAN}{16}{paragraph.3.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.3.2}OPTICS}{15}{paragraph.3.5.3.2}%
+\contentsline {paragraph}{\numberline {3.5.3.2}OPTICS}{16}{paragraph.3.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.4}Grid-Based Methods}{17}{subsubsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4}Grid-Based Methods}{18}{subsubsection.3.5.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6}Evaluating Clustering Results}{18}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.6.1}Assessment of the cluster tendency}{18}{subsubsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.6.2}Evaluation of the cluster quality}{18}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2}Evaluation of the cluster quality}{19}{subsubsection.3.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.6.2.1}Silhouette Coefficient}{18}{paragraph.3.6.2.1}%
+\contentsline {paragraph}{\numberline {3.6.2.1}Silhouette Coefficient}{19}{paragraph.3.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.6.2.2}Davies-Bouldin Index}{19}{paragraph.3.6.2.2}%
+\contentsline {paragraph}{\numberline {3.6.2.2}Davies-Bouldin Index}{20}{paragraph.3.6.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {3.6.2.3}Caliński-Harabasz Index}{20}{paragraph.3.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.6.3}Establishing the number of clusters}{20}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3}Establishing the number of clusters}{21}{subsubsection.3.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Method}{21}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the Data Set}{22}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the Data Set}{23}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1}Missing Values}{22}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Missing Values}{23}{subsubsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{22}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{23}{subsubsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.3}Selection of columns (attributes)}{23}{subsubsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.4}Chain shaped data}{23}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4}Chain shaped data}{24}{subsubsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{27}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}Find t-SNE parameters}{26}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}Find t-SNE parameters}{28}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering}{28}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{27}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{28}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{28}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{30}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of clusters of different time lengths}{29}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of cluster results of different time lengths}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation}{29}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation}{30}{subsubsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.2}Comparison of different time lengths}{29}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2}Comparison of different time lengths}{30}{subsubsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{29}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{30}{section.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusion}{30}{section.6}%
 \defcounter {refsection}{0}\relax 
