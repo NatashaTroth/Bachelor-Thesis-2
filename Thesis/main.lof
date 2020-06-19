@@ -29,6 +29,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {12}{\ignorespaces t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and dominant.\relax }}{28}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Sorted 4-dist graph of the 3h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.\relax }}{29}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.\relax }}{29}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Sorted 4-dist graph of the 1h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.\relax }}{30}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{35}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{37}{figure.caption.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{37}{figure.caption.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{38}{figure.caption.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{38}{figure.caption.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{39}{figure.caption.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{39}{figure.caption.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{40}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{40}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{41}{figure.caption.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{41}{figure.caption.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{42}{figure.caption.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{42}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{43}{figure.caption.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{43}{figure.caption.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{44}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {33}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{44}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {34}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{45}{figure.caption.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {35}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{45}{figure.caption.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {36}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{46}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {37}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{46}{figure.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {38}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{47}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {39}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{47}{figure.caption.40}%

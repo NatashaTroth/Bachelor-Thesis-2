@@ -74,7 +74,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
     # tsne = TSNE(n_components=number_components,
     # init='random', perplexity=10, n_iter=5000, learning_rate=250)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=20, n_iter=5000, learning_rate=50)
+                init='random', perplexity=40, n_iter=5000, learning_rate=30)
     # very good
     # tsne = TSNE(n_components=number_components,
     #             init='random', perplexity=50, n_iter=5000, learning_rate=10)
@@ -105,7 +105,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
 
     if graphs == True:
         if number_components == 2:
-            # create_2d_scatterplot(df, "tsne-one", "tsne-two")
+            # create_2d_scatterplot(df, "tsne-one", "tsne-two", "TSNE")
             create_2d_scatterplot_tester_colors(
                 df,  "tsne-one", "tsne-two", colors, "TSNE")
         if number_components == 3:

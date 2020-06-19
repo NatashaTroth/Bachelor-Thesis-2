@@ -79,20 +79,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{29}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{30}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Comparison and Evaluation of cluster results of different time lengths}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.4.1}Mathmatical Evaluation and Comparison of different time lengths}{30}{subsubsection.4.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{31}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{30}{section.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusion}{31}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{35}{section*.15}%
+\contentsline {section}{Appendices}{35}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}git-Repository}{35}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{35}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Vorlagen für Studienmaterial}{35}{Appendix.a.B}%
+\contentsline {subsection}{\numberline {A.1}Perplexity}{35}{subsection.a.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{36}{Appendix.a.C}%
+\contentsline {subsubsection}{\numberline {A.1.1}Perplexity = 5}{35}{subsubsection.a.A.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.2}Perplexity = 10}{36}{subsubsection.a.A.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.3}Perplexity = 20}{37}{subsubsection.a.A.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.4}Perplexity = 30}{38}{subsubsection.a.A.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.5}Perplexity = 40}{39}{subsubsection.a.A.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.6}Perplexity = 45}{40}{subsubsection.a.A.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.7}Perplexity = 50}{41}{subsubsection.a.A.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}Learning Rate}{42}{subsection.a.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.1}Learning Rate = 10}{42}{subsubsection.a.A.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.2}Learning Rate = 200}{43}{subsubsection.a.A.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.3}Learning Rate = 400}{44}{subsubsection.a.A.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.4}Learning Rate = 600}{45}{subsubsection.a.A.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.5}Learning Rate = 800}{46}{subsubsection.a.A.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.6}Learning Rate = 1000}{47}{subsubsection.a.A.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}git-Repository}{47}{Appendix.a.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Vorlagen für Studienmaterial}{48}{Appendix.a.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Archivierte Webseiten}{48}{Appendix.a.D}%

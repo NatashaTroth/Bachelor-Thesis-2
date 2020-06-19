@@ -4,81 +4,41 @@ The clustering algorithms used for the SmartEater data set, were DBSCAN and OPTI
 The DBSCAN algorithm was applied on the SmartEater data set using the sklearn DBSCAN\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html}} function.
 Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h data sets. The graphs contained the distances to the k nearest neighbors. As recommended by \textcite{DBSCAN}[230], MinPts and \textit{k} were set to 4 and the graphs were used to determine Eps. The idea is to select Eps suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
 
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN1h.png}
-  \caption{Sorted 4-dist graph of the 3h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
-  \label{figure:kDistGraphDBSCAN1h}
-\end{figure*}
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN1h.png}
+%   \caption{Sorted 4-dist graph of the 3h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
+%   \label{figure:kDistGraphDBSCAN1h}
+% \end{figure*}
 
-\begin{figure*}[h]
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN3h.png}
+%   \caption{Sorted 4-dist graph of the 1h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
+%   \label{figure:kDistGraphDBSCAN3h}
+% \end{figure*}
+
+
+\begin{figure}
   \centering
-  \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN3h.png}
-  \caption{Sorted 4-dist graph of the 1h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
-  \label{figure:kDistGraphDBSCAN3h}
-\end{figure*}
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.87\textwidth]{./images/kDistGraphDBSCAN1h.png}
+  \caption{1h dataset}
+  \label{figure:kDistGraphDBSCAN1h}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/kDistGraphDBSCAN3h.png}
+    \caption{3h data set}
+    \label{figure:kDistGraphDBSCAN3h}
+  \end{subfigure}
+  \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
+  \label{figure:kDistGraphDBSCAN}
+  \end{figure}
 
 The DBSCAN method applied, with the parameters eps = 2 and min\_samples (MinPts) = 4.  The results of this clustering method can be seen in \textbf{TODO: FIGURES}.
 
-
-% \begin{figure}
-%   \centering
-%   \parbox{5cm}{
-%     \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN1h.png}
-%       \caption{1h data set}
-%       \label{figure:kDistGraphDBSCAN1h}
-%   \qquad
-%   \begin{minipage}{5cm}
-
-%       \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN3h.png}
-%       \caption{3h data set}
-%       \label{figure:kDistGraphDBSCAN3h}
-%   \end{minipage}
-%   \end{figure}
-
-
-
-% \begin{figure}
-%   \centering
-%   \begin{subfigure}[b]{0.5\textwidth}
-%       \centering
-%       \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN1h.png}
-%       \caption{Sorted 4-dist graph of the 3h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
-%       \label{figure:kDistGraphDBSCAN1h}
-%   \end{subfigure}
-%   \hfill
-%   \begin{subfigure}[b]{0.5\textwidth}
-%       \centering
-%       \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN3h.png}
-%       \caption{Sorted 4-dist graph of the 1h data set (distance for each point to its fourth nearest neighbor). The valley starts at roughly the 4th nearest neighbor distance of 2.}
-%       \label{figure:kDistGraphDBSCAN3h}
-%   \end{subfigure}
-  
-%   \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
-%   \label{figure:kDistGraphDBSCAN}
-% \end{figure}
-
-% \begin{figure}
-%   \centering
-%   \begin{subfigure}{.5\textwidth}
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN1h.png}
-%   \caption{1h dataset}
-%   \label{figure:kDistGraphDBSCAN1h}
-%   \end{subfigure}%
-%   \begin{subfigure}{.5\textwidth}
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{./images/kDistGraphDBSCAN3h.png}
-%     \caption{3h data set}
-%     \label{figure:kDistGraphDBSCAN3h}
-%   \end{subfigure}
-%   \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
-%   \label{figure:kDistGraphDBSCAN}
-%   \end{figure}
-
-
-
-  
 
 
 \subsubsection{OPTICS}

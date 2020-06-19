@@ -32,10 +32,25 @@
 \BOOKMARK [3][-]{subsubsection.4.3.1}{DBSCAN}{subsection.4.3}% 32
 \BOOKMARK [3][-]{subsubsection.4.3.2}{OPTICS}{subsection.4.3}% 33
 \BOOKMARK [2][-]{subsection.4.4}{Comparison and Evaluation of cluster results of different time lengths}{section.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.4.1}{Mathmatical Evaluation and Comparison of different time lengths}{subsection.4.4}% 35
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 36
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 37
-\BOOKMARK [1][-]{section*.15}{Appendices}{}% 38
-\BOOKMARK [1][-]{Appendix.a.A}{git-Repository}{}% 39
-\BOOKMARK [1][-]{Appendix.a.B}{Vorlagen f\374r Studienmaterial}{}% 40
-\BOOKMARK [1][-]{Appendix.a.C}{Archivierte Webseiten}{}% 41
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 35
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 36
+\BOOKMARK [1][-]{section*.14}{Appendices}{}% 37
+\BOOKMARK [1][-]{Appendix.a.A}{t-SNE parameters comparison figures}{}% 38
+\BOOKMARK [2][-]{subsection.a.A.1}{Perplexity}{Appendix.a.A}% 39
+\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Perplexity = 5}{subsection.a.A.1}% 40
+\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Perplexity = 10}{subsection.a.A.1}% 41
+\BOOKMARK [3][-]{subsubsection.a.A.1.3}{Perplexity = 20}{subsection.a.A.1}% 42
+\BOOKMARK [3][-]{subsubsection.a.A.1.4}{Perplexity = 30}{subsection.a.A.1}% 43
+\BOOKMARK [3][-]{subsubsection.a.A.1.5}{Perplexity = 40}{subsection.a.A.1}% 44
+\BOOKMARK [3][-]{subsubsection.a.A.1.6}{Perplexity = 45}{subsection.a.A.1}% 45
+\BOOKMARK [3][-]{subsubsection.a.A.1.7}{Perplexity = 50}{subsection.a.A.1}% 46
+\BOOKMARK [2][-]{subsection.a.A.2}{Learning Rate}{Appendix.a.A}% 47
+\BOOKMARK [3][-]{subsubsection.a.A.2.1}{Learning Rate = 10}{subsection.a.A.2}% 48
+\BOOKMARK [3][-]{subsubsection.a.A.2.2}{Learning Rate = 200}{subsection.a.A.2}% 49
+\BOOKMARK [3][-]{subsubsection.a.A.2.3}{Learning Rate = 400}{subsection.a.A.2}% 50
+\BOOKMARK [3][-]{subsubsection.a.A.2.4}{Learning Rate = 600}{subsection.a.A.2}% 51
+\BOOKMARK [3][-]{subsubsection.a.A.2.5}{Learning Rate = 800}{subsection.a.A.2}% 52
+\BOOKMARK [3][-]{subsubsection.a.A.2.6}{Learning Rate = 1000}{subsection.a.A.2}% 53
+\BOOKMARK [1][-]{Appendix.a.B}{git-Repository}{}% 54
+\BOOKMARK [1][-]{Appendix.a.C}{Vorlagen f\374r Studienmaterial}{}% 55
+\BOOKMARK [1][-]{Appendix.a.D}{Archivierte Webseiten}{}% 56

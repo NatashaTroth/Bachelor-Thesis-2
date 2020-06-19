@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  18 JUN 2020 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  19 JUN 2020 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -125,41 +125,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@width=\dimen113
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
- (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen114
-\captionmargin@=\dimen115
-\captionwidth=\dimen116
-\caption@tempdima=\dimen117
-\caption@indent=\dimen118
-\caption@parindent=\dimen119
-\caption@hangindent=\dimen120
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count93
-\c@continuedfloat=\count94
-)
-\c@KVtest=\count95
-\sf@farskip=\skip43
-\sf@captopadj=\dimen121
-\sf@capskip=\skip44
-\sf@nearskip=\skip45
-\c@subfigure=\count96
-\c@subfigure@save=\count97
-\c@lofdepth=\count98
-\c@subtable=\count99
-\c@subtable@save=\count100
-\c@lotdepth=\count101
-\sf@top=\skip46
-\sf@bottom=\skip47
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count102
+\c@float@type=\count93
 \float@exts=\toks16
 \float@box=\box27
 \@float@everytoks=\toks17
@@ -169,22 +137,22 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count103
+\lst@mode=\count94
 \lst@gtempboxa=\box29
 \lst@token=\toks20
-\lst@length=\count104
-\lst@currlwidth=\dimen122
-\lst@column=\count105
-\lst@pos=\count106
-\lst@lostspace=\dimen123
-\lst@width=\dimen124
-\lst@newlines=\count107
-\lst@lineno=\count108
-\lst@maxwidth=\dimen125
+\lst@length=\count95
+\lst@currlwidth=\dimen114
+\lst@column=\count96
+\lst@pos=\count97
+\lst@lostspace=\dimen115
+\lst@width=\dimen116
+\lst@newlines=\count98
+\lst@lineno=\count99
+\lst@maxwidth=\dimen117
  (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count109
-\lst@skipnumbers=\count110
+\c@lstnumber=\count100
+\lst@skipnumbers=\count101
 \lst@framebox=\box30
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/09/10 1.8c listings configuration
@@ -194,22 +162,22 @@ Package: listings 2019/09/10 1.8c (Carsten Heinz)
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
  (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen126
+\col@sep=\dimen118
 \ar@mcellbox=\box31
-\extrarowheight=\dimen127
+\extrarowheight=\dimen119
 \NC@list=\toks21
-\extratabsurround=\skip48
-\backup@length=\skip49
+\extratabsurround=\skip43
+\backup@length=\skip44
 \ar@cellbox=\box32
 )
-\rotheadsize=\dimen128
-\c@nlinenum=\count111
+\rotheadsize=\dimen120
+\c@nlinenum=\count102
 \TeXr@lab=\toks22
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count112
-\c@@ppsavesec=\count113
-\c@@ppsaveapp=\count114
+\c@@pps=\count103
+\c@@ppsavesec=\count104
+\c@@ppsaveapp=\count105
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2019/11/10 v7.00c Hypertext links for LaTeX
  (/usr/local/texlive/2019/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -241,9 +209,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen129
-\Hy@linkcounter=\count115
-\Hy@pagecounter=\count116
+\@linkdim=\dimen121
+\Hy@linkcounter=\count106
+\Hy@pagecounter=\count107
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2019/11/10 v7.00c Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -253,7 +221,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count117
+\Hy@SavedSpaceFactor=\count108
  (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -264,21 +232,21 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count118
+\c@Hy@tempcnt=\count109
  (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5147.
-\XeTeXLinkMargin=\dimen130
+\XeTeXLinkMargin=\dimen122
  (/usr/local/texlive/2019/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count119
-\Field@Width=\dimen131
-\Fld@charsize=\dimen132
+\Fld@menulength=\count110
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6418.
 Package hyperref Info: Link nesting OFF on input line 6423.
 Package hyperref Info: Hyper index ON on input line 6426.
@@ -291,9 +259,9 @@ LaTeX Info: Redefining \pageref on input line 6492.
  (/usr/local/texlive/2019/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count120
-\c@Item=\count121
-\c@Hfootnote=\count122
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -302,8 +270,8 @@ File: hpdftex.def 2019/11/10 v7.00c Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count123
-\c@bookmark@seq@number=\count124
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
  (/usr/local/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -311,7 +279,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip50
+\Hy@SectionHShift=\skip45
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -324,16 +292,39 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box33
-\beforetitleunit=\skip51
-\aftertitleunit=\skip52
-\ttl@plus=\dimen133
-\ttl@minus=\dimen134
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen125
+\ttl@minus=\dimen126
 \ttl@toksa=\toks24
-\titlewidth=\dimen135
-\titlewidthlast=\dimen136
-\titlewidthfirst=\dimen137
+\titlewidth=\dimen127
+\titlewidthlast=\dimen128
+\titlewidthfirst=\dimen129
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen130
+\captionmargin@=\dimen131
+\captionwidth=\dimen132
+\caption@tempdima=\dimen133
+\caption@indent=\dimen134
+\caption@parindent=\dimen135
+\caption@hangindent=\dimen136
+Package caption Info: Standard document class detected.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+\c@caption@flags=\count116
+\c@continuedfloat=\count117
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/03 v1.3b Sub-captions (AR)
+\c@subfigure=\count118
+\c@subtable=\count119
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/breakurl/breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
  (/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -342,7 +333,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks25
 \XKV@tempa@toks=\toks26
 )
-\XKV@depth=\count125
+\XKV@depth=\count120
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
@@ -354,7 +345,7 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2019/11/16 v2.17d AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -362,47 +353,47 @@ Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen138
+\ex@=\dimen137
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen139
+\pmbraise@=\dimen138
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count126
+\inf@bad=\count121
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count127
-\leftroot@=\count128
+\uproot@=\count122
+\leftroot@=\count123
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count129
-\DOTSCASE@=\count130
+\classnum@=\count124
+\DOTSCASE@=\count125
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box34
 \strutbox@=\box35
-\big@size=\dimen140
+\big@size=\dimen139
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count131
-\c@MaxMatrixCols=\count132
+\macc@depth=\count126
+\c@MaxMatrixCols=\count127
 \dotsspace@=\muskip11
-\c@parentequation=\count133
-\dspbrk@lvl=\count134
+\c@parentequation=\count128
+\dspbrk@lvl=\count129
 \tag@help=\toks28
-\row@=\count135
-\column@=\count136
-\maxfields@=\count137
+\row@=\count130
+\column@=\count131
+\maxfields@=\count132
 \andhelp@=\toks29
-\eqnshift@=\dimen141
-\alignsep@=\dimen142
-\tagshift@=\dimen143
-\tagwidth@=\dimen144
-\totwidth@=\dimen145
-\lineht@=\dimen146
+\eqnshift@=\dimen140
+\alignsep@=\dimen141
+\tagshift@=\dimen142
+\tagwidth@=\dimen143
+\totwidth@=\dimen144
+\lineht@=\dimen145
 \@envbody=\toks30
-\multlinegap=\skip54
-\multlinetaggap=\skip55
+\multlinegap=\skip49
+\multlinetaggap=\skip50
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2858.
 LaTeX Info: Redefining \] on input line 2859.
@@ -410,14 +401,14 @@ LaTeX Info: Redefining \] on input line 2859.
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count138
+\etb@tempcnta=\count133
 )
-\csq@reset=\count139
-\csq@gtype=\count140
-\csq@glevel=\count141
-\csq@qlevel=\count142
-\csq@maxlvl=\count143
-\csq@tshold=\count144
+\csq@reset=\count134
+\csq@gtype=\count135
+\csq@glevel=\count136
+\csq@qlevel=\count137
+\csq@maxlvl=\count138
+\csq@tshold=\count139
 \csq@ltx@everypar=\toks32
  (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
@@ -444,7 +435,7 @@ LaTeX Info: Redefining \textslswitch on input line 196.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/frankenstein/slemph.cfg
 File: slemph.cfg 
 ))
-\c@tm@util=\count145
+\c@tm@util=\count140
  (/usr/local/texlive/2019/texmf-dist/tex/latex/frankenstein/abbrevs.cfg
 File: abbrevs.cfg 
  (/usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
@@ -461,67 +452,67 @@ Package: biblatex-chicago 2018/01/10 v 3.10 biblatex style
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count146
+\lrq@indent=\count141
  (/usr/local/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count147
-\c@listtotal=\count148
-\c@listcount=\count149
-\c@liststart=\count150
-\c@liststop=\count151
-\c@citecount=\count152
-\c@citetotal=\count153
-\c@multicitecount=\count154
-\c@multicitetotal=\count155
-\c@instcount=\count156
-\c@maxnames=\count157
-\c@minnames=\count158
-\c@maxitems=\count159
-\c@minitems=\count160
-\c@citecounter=\count161
-\c@maxcitecounter=\count162
-\c@savedcitecounter=\count163
-\c@uniquelist=\count164
-\c@uniquename=\count165
-\c@refsection=\count166
-\c@refsegment=\count167
-\c@maxextratitle=\count168
-\c@maxextratitleyear=\count169
-\c@maxextraname=\count170
-\c@maxextradate=\count171
-\c@maxextraalpha=\count172
-\c@abbrvpenalty=\count173
-\c@highnamepenalty=\count174
-\c@lownamepenalty=\count175
-\c@maxparens=\count176
-\c@parenlevel=\count177
-\blx@tempcnta=\count178
-\blx@tempcntb=\count179
-\blx@tempcntc=\count180
-\blx@maxsection=\count181
-\blx@maxsegment@0=\count182
-\blx@notetype=\count183
-\blx@parenlevel@text=\count184
-\blx@parenlevel@foot=\count185
-\blx@sectionciteorder@0=\count186
-\blx@entrysetcounter=\count187
-\labelnumberwidth=\skip56
-\labelalphawidth=\skip57
-\biblabelsep=\skip58
-\bibitemsep=\skip59
-\bibnamesep=\skip60
-\bibinitsep=\skip61
-\bibparsep=\skip62
-\bibhang=\skip63
+\c@tabx@nest=\count142
+\c@listtotal=\count143
+\c@listcount=\count144
+\c@liststart=\count145
+\c@liststop=\count146
+\c@citecount=\count147
+\c@citetotal=\count148
+\c@multicitecount=\count149
+\c@multicitetotal=\count150
+\c@instcount=\count151
+\c@maxnames=\count152
+\c@minnames=\count153
+\c@maxitems=\count154
+\c@minitems=\count155
+\c@citecounter=\count156
+\c@maxcitecounter=\count157
+\c@savedcitecounter=\count158
+\c@uniquelist=\count159
+\c@uniquename=\count160
+\c@refsection=\count161
+\c@refsegment=\count162
+\c@maxextratitle=\count163
+\c@maxextratitleyear=\count164
+\c@maxextraname=\count165
+\c@maxextradate=\count166
+\c@maxextraalpha=\count167
+\c@abbrvpenalty=\count168
+\c@highnamepenalty=\count169
+\c@lownamepenalty=\count170
+\c@maxparens=\count171
+\c@parenlevel=\count172
+\blx@tempcnta=\count173
+\blx@tempcntb=\count174
+\blx@tempcntc=\count175
+\blx@maxsection=\count176
+\blx@maxsegment@0=\count177
+\blx@notetype=\count178
+\blx@parenlevel@text=\count179
+\blx@parenlevel@foot=\count180
+\blx@sectionciteorder@0=\count181
+\blx@entrysetcounter=\count182
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language85
-\c@mincomprange=\count188
-\c@maxcomprange=\count189
-\c@mincompwidth=\count190
+\c@mincomprange=\count183
+\c@maxcomprange=\count184
+\c@mincompwidth=\count185
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -531,88 +522,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count191
-\c@savedafterword=\count192
-\c@annotator=\count193
-\c@savedannotator=\count194
-\c@author=\count195
-\c@savedauthor=\count196
-\c@bookauthor=\count197
-\c@savedbookauthor=\count198
-\c@commentator=\count199
-\c@savedcommentator=\count266
-\c@editor=\count267
-\c@savededitor=\count268
-\c@editora=\count269
-\c@savededitora=\count270
-\c@editorb=\count271
-\c@savededitorb=\count272
-\c@editorc=\count273
-\c@savededitorc=\count274
-\c@foreword=\count275
-\c@savedforeword=\count276
-\c@holder=\count277
-\c@savedholder=\count278
-\c@introduction=\count279
-\c@savedintroduction=\count280
-\c@namea=\count281
-\c@savednamea=\count282
-\c@nameb=\count283
-\c@savednameb=\count284
-\c@namec=\count285
-\c@savednamec=\count286
-\c@translator=\count287
-\c@savedtranslator=\count288
-\c@shortauthor=\count289
-\c@savedshortauthor=\count290
-\c@shorteditor=\count291
-\c@savedshorteditor=\count292
-\c@labelname=\count293
-\c@savedlabelname=\count294
-\c@institution=\count295
-\c@savedinstitution=\count296
-\c@lista=\count297
-\c@savedlista=\count298
-\c@listb=\count299
-\c@savedlistb=\count300
-\c@listc=\count301
-\c@savedlistc=\count302
-\c@listd=\count303
-\c@savedlistd=\count304
-\c@liste=\count305
-\c@savedliste=\count306
-\c@listf=\count307
-\c@savedlistf=\count308
-\c@location=\count309
-\c@savedlocation=\count310
-\c@organization=\count311
-\c@savedorganization=\count312
-\c@origlocation=\count313
-\c@savedoriglocation=\count314
-\c@origpublisher=\count315
-\c@savedorigpublisher=\count316
-\c@publisher=\count317
-\c@savedpublisher=\count318
-\c@language=\count319
-\c@savedlanguage=\count320
-\c@origlanguage=\count321
-\c@savedoriglanguage=\count322
-\c@pageref=\count323
-\c@savedpageref=\count324
-\shorthandwidth=\skip64
-\shortjournalwidth=\skip65
-\shortserieswidth=\skip66
-\shorttitlewidth=\skip67
-\shortauthorwidth=\skip68
-\shorteditorwidth=\skip69
-\locallabelnumberwidth=\skip70
-\locallabelalphawidth=\skip71
-\localshorthandwidth=\skip72
-\localshortjournalwidth=\skip73
-\localshortserieswidth=\skip74
-\localshorttitlewidth=\skip75
-\localshortauthorwidth=\skip76
-\localshorteditorwidth=\skip77
+\c@afterword=\count186
+\c@savedafterword=\count187
+\c@annotator=\count188
+\c@savedannotator=\count189
+\c@author=\count190
+\c@savedauthor=\count191
+\c@bookauthor=\count192
+\c@savedbookauthor=\count193
+\c@commentator=\count194
+\c@savedcommentator=\count195
+\c@editor=\count196
+\c@savededitor=\count197
+\c@editora=\count198
+\c@savededitora=\count199
+\c@editorb=\count266
+\c@savededitorb=\count267
+\c@editorc=\count268
+\c@savededitorc=\count269
+\c@foreword=\count270
+\c@savedforeword=\count271
+\c@holder=\count272
+\c@savedholder=\count273
+\c@introduction=\count274
+\c@savedintroduction=\count275
+\c@namea=\count276
+\c@savednamea=\count277
+\c@nameb=\count278
+\c@savednameb=\count279
+\c@namec=\count280
+\c@savednamec=\count281
+\c@translator=\count282
+\c@savedtranslator=\count283
+\c@shortauthor=\count284
+\c@savedshortauthor=\count285
+\c@shorteditor=\count286
+\c@savedshorteditor=\count287
+\c@labelname=\count288
+\c@savedlabelname=\count289
+\c@institution=\count290
+\c@savedinstitution=\count291
+\c@lista=\count292
+\c@savedlista=\count293
+\c@listb=\count294
+\c@savedlistb=\count295
+\c@listc=\count296
+\c@savedlistc=\count297
+\c@listd=\count298
+\c@savedlistd=\count299
+\c@liste=\count300
+\c@savedliste=\count301
+\c@listf=\count302
+\c@savedlistf=\count303
+\c@location=\count304
+\c@savedlocation=\count305
+\c@organization=\count306
+\c@savedorganization=\count307
+\c@origlocation=\count308
+\c@savedoriglocation=\count309
+\c@origpublisher=\count310
+\c@savedorigpublisher=\count311
+\c@publisher=\count312
+\c@savedpublisher=\count313
+\c@language=\count314
+\c@savedlanguage=\count315
+\c@origlanguage=\count316
+\c@savedoriglanguage=\count317
+\c@pageref=\count318
+\c@savedpageref=\count319
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -622,27 +613,27 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count325
-\c@textcitetotal=\count326
-\c@textcitemaxnames=\count327
-\c@biburlbigbreakpenalty=\count328
-\c@biburlbreakpenalty=\count329
-\c@biburlnumpenalty=\count330
-\c@biburlucpenalty=\count331
-\c@biburllcpenalty=\count332
+\c@textcitecount=\count320
+\c@textcitetotal=\count321
+\c@textcitemaxnames=\count322
+\c@biburlbigbreakpenalty=\count323
+\c@biburlbreakpenalty=\count324
+\c@biburlnumpenalty=\count325
+\c@biburlucpenalty=\count326
+\c@biburllcpenalty=\count327
 \biburlbigskip=\muskip12
 \biburlnumskip=\muskip13
 \biburlucskip=\muskip14
 \biburllcskip=\muskip15
-\c@smartand=\count333
+\c@smartand=\count328
 )
 Package biblatex Info: Trying to load bibliography style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.bbx' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.bbx
 File: chicago-authordate.bbx 2018/01/11 v 3.10 biblatex bibliography style
-\lositemsep=\skip78
-\c@bbx:relatedcount=\count334
-\c@bbx:relatedtotal=\count335
+\lositemsep=\skip73
+\c@bbx:relatedcount=\count329
+\c@bbx:relatedtotal=\count330
 )
 Package biblatex Info: Trying to load citation style 'chicago-authordate'...
 Package biblatex Info: ... file 'chicago-authordate.cbx' found.
@@ -680,21 +671,21 @@ Package csquotes Info: ... found 'babel' package.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 151.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -734,16 +725,16 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
-\scratchdimen=\dimen147
+\scratchcounter=\count331
+\scratchdimen=\dimen146
 \scratchbox=\box36
-\nofMPsegments=\count337
-\nofMParguments=\count338
+\nofMPsegments=\count332
+\nofMParguments=\count333
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count339
-\MPscratchDim=\dimen148
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen147
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks36
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2019-12-09 v2.10 Base part for package epstopdf
@@ -757,15 +748,9 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count342
+\c@lstlisting=\count337
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring ON on input line 147.
+Package hyperref Info: Link coloring ON on input line 151.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
@@ -773,15 +758,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count343
+\c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
+LaTeX Info: Redefining \ref on input line 151.
+LaTeX Info: Redefining \pageref on input line 151.
+LaTeX Info: Redefining \nameref on input line 151.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.out) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english' -> 'cms-american'...
 Package biblatex Info: ... file 'cms-american.lbx' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx
@@ -838,10 +825,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.bbl)
-Package biblatex Info: Reference section=0 on input line 147.
-Package biblatex Info: Reference segment=0 on input line 147.
+Package biblatex Info: Reference section=0 on input line 151.
+Package biblatex Info: Reference segment=0 on input line 151.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/title.tex
-<images/FHSLogo.jpg, id=168, 516.93124pt x 333.245pt>
+<images/FHSLogo.jpg, id=229, 516.93124pt x 333.245pt>
 File: images/FHSLogo.jpg Graphic file (type jpg)
 <use images/FHSLogo.jpg>
 Package pdftex.def Info: images/FHSLogo.jpg  used on input line 76.
@@ -888,12 +875,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 180.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 184.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/kurzfassung.tex) [2] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/abstract.tex) [3] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.toc [4])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof)
+ [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof [6] [7])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -905,7 +892,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
+ [8] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 18.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -925,13 +912,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
  [1
 
 ]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex [2] [3]
-<./images/windowSizePerformance.png, id=353, 694.595pt x 459.7175pt>
+<./images/windowSizePerformance.png, id=513, 694.595pt x 459.7175pt>
 File: ./images/windowSizePerformance.png Graphic file (type png)
 <use ./images/windowSizePerformance.png>
 Package pdftex.def Info: ./images/windowSizePerformance.png  used on input line 41.
 (pdftex.def)             Requested size: 227.62206pt x 150.64801pt.
  [4 <./images/windowSizePerformance.png>]) [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [6]
-<./images/biasTradeOff.png, id=389, 1740.5025pt x 375.4025pt>
+<./images/biasTradeOff.png, id=549, 1740.5025pt x 375.4025pt>
 File: ./images/biasTradeOff.png Graphic file (type png)
 <use ./images/biasTradeOff.png>
 Package pdftex.def Info: ./images/biasTradeOff.png  used on input line 16.
@@ -942,23 +929,23 @@ Overfull \hbox (10.4605pt too wide) in paragraph at lines 36--38
  []
 
 [14] [15]
-<./images/sortedKGraphDBSCAN.png, id=510, 281.05pt x 128.48pt>
+<./images/sortedKGraphDBSCAN.png, id=670, 281.05pt x 128.48pt>
 File: ./images/sortedKGraphDBSCAN.png Graphic file (type png)
 <use ./images/sortedKGraphDBSCAN.png>
 Package pdftex.def Info: ./images/sortedKGraphDBSCAN.png  used on input line 85.
 (pdftex.def)             Requested size: 227.62206pt x 104.05646pt.
  [16 <./images/sortedKGraphDBSCAN.png>]
-<./images/reachabilityDistanceOPTICS.png, id=522, 206.7725pt x 203.76125pt>
+<./images/reachabilityDistanceOPTICS.png, id=683, 206.7725pt x 203.76125pt>
 File: ./images/reachabilityDistanceOPTICS.png Graphic file (type png)
 <use ./images/reachabilityDistanceOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityDistanceOPTICS.png  used on input line 103.
 (pdftex.def)             Requested size: 136.57462pt x 134.58855pt.
-<./images/reachabilityPlotOPTICS.png, id=526, 424.58624pt x 205.76875pt>
+<./images/reachabilityPlotOPTICS.png, id=687, 424.58624pt x 205.76875pt>
 File: ./images/reachabilityPlotOPTICS.png Graphic file (type png)
 <use ./images/reachabilityPlotOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityPlotOPTICS.png  used on input line 115.
 (pdftex.def)             Requested size: 227.62206pt x 110.31282pt.
-<./images/clusterExtractionOPTICS.png, id=531, 277.035pt x 145.54375pt>
+<./images/clusterExtractionOPTICS.png, id=692, 277.035pt x 145.54375pt>
 File: ./images/clusterExtractionOPTICS.png Graphic file (type png)
 <use ./images/clusterExtractionOPTICS.png>
 Package pdftex.def Info: ./images/clusterExtractionOPTICS.png  used on input line 125.
@@ -973,12 +960,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []
 
 [23]
-<./images/tsneChain.png, id=610, 437.635pt x 322.20375pt>
+<./images/tsneChain.png, id=771, 437.635pt x 322.20375pt>
 File: ./images/tsneChain.png Graphic file (type png)
 <use ./images/tsneChain.png>
 Package pdftex.def Info: ./images/tsneChain.png  used on input line 24.
 (pdftex.def)             Requested size: 455.24411pt x 335.17249pt.
-<./images/pcaChain.png, id=611, 1334.9875pt x 866.23625pt>
+<./images/pcaChain.png, id=772, 1334.9875pt x 866.23625pt>
 File: ./images/pcaChain.png Graphic file (type png)
 <use ./images/pcaChain.png>
 Package pdftex.def Info: ./images/pcaChain.png  used on input line 32.
@@ -988,7 +975,7 @@ Package pdftex.def Info: ./images/pcaChain.png  used on input line 32.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./images/tsneChain.png>]
-<./images/tsne10Files.png, id=620, 1134.2375pt x 661.47125pt>
+<./images/tsne10Files.png, id=780, 1134.2375pt x 661.47125pt>
 File: ./images/tsne10Files.png Graphic file (type png)
 <use ./images/tsne10Files.png>
 Package pdftex.def Info: ./images/tsne10Files.png  used on input line 41.
@@ -997,7 +984,7 @@ Package pdftex.def Info: ./images/tsne10Files.png  used on input line 41.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/tsne10Files2Features.png, id=621, 1134.2375pt x 661.47125pt>
+<./images/tsne10Files2Features.png, id=781, 1134.2375pt x 661.47125pt>
 File: ./images/tsne10Files2Features.png Graphic file (type png)
 <use ./images/tsne10Files2Features.png>
 Package pdftex.def Info: ./images/tsne10Files2Features.png  used on input line 48.
@@ -1006,12 +993,12 @@ Package pdftex.def Info: ./images/tsne10Files2Features.png  used on input line 4
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25 <./images/pcaChain.png>] [26 <./images/tsne10Files.png> <./images/tsne10Files2Features.png>]
-<./images/tsneTestSubjectsColor.png, id=635, 1524.69624pt x 836.12375pt>
+<./images/tsneTestSubjectsColor.png, id=795, 1524.69624pt x 836.12375pt>
 File: ./images/tsneTestSubjectsColor.png Graphic file (type png)
 <use ./images/tsneTestSubjectsColor.png>
 Package pdftex.def Info: ./images/tsneTestSubjectsColor.png  used on input line 60.
 (pdftex.def)             Requested size: 409.71692pt x 224.67198pt.
-<./images/tsneAfterChainRemoved(50Percent).png, id=636, 1302.8675pt x 881.2925pt>
+<./images/tsneAfterChainRemoved(50Percent).png, id=796, 1302.8675pt x 881.2925pt>
 File: ./images/tsneAfterChainRemoved(50Percent).png Graphic file (type png)
 <use ./images/tsneAfterChainRemoved(50Percent).png>
 Package pdftex.def Info: ./images/tsneAfterChainRemoved(50Percent).png  used on input line 67.
@@ -1030,32 +1017,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . manifold .
  []
 
-[27 <./images/tsneTestSubjectsColor.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
+[27 <./images/tsneTestSubjectsColor.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex [28 <./images/tsneAfterChainRemoved(50Percent).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
-[28 <./images/tsneAfterChainRemoved(50Percent).png>]
-<./images/kDistGraphDBSCAN1h.png, id=665, 450.68375pt x 331.2375pt>
+<./images/kDistGraphDBSCAN1h.png, id=827, 450.68375pt x 331.2375pt>
 File: ./images/kDistGraphDBSCAN1h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN1h.png>
-Package pdftex.def Info: ./images/kDistGraphDBSCAN1h.png  used on input line 9.
-(pdftex.def)             Requested size: 227.62206pt x 167.29636pt.
-<./images/kDistGraphDBSCAN3h.png, id=666, 470.75874pt x 346.29375pt>
+Package pdftex.def Info: ./images/kDistGraphDBSCAN1h.png  used on input line 26.
+(pdftex.def)             Requested size: 198.03008pt x 145.54782pt.
+<./images/kDistGraphDBSCAN3h.png, id=828, 470.75874pt x 346.29375pt>
 File: ./images/kDistGraphDBSCAN3h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN3h.png>
-Package pdftex.def Info: ./images/kDistGraphDBSCAN3h.png  used on input line 16.
+Package pdftex.def Info: ./images/kDistGraphDBSCAN3h.png  used on input line 32.
 (pdftex.def)             Requested size: 227.62206pt x 167.43971pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
-) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex [29 <./images/kDistGraphDBSCAN1h.png>]
+[29 <./images/kDistGraphDBSCAN1h.png> <./images/kDistGraphDBSCAN3h.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
  []
@@ -1070,83 +1052,357 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
 \OT1/pcr/m/n/10 sklearn . metrics . davies _ bouldin _ score . html$[][]\OT1/ptm/m/n/10 , and [][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org /
  []
 
-) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) [30 <./images/kDistGraphDBSCAN3h.png>] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [31]
-Overfull \hbox (49.9578pt too wide) in paragraph at lines 230--230
+) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) [30] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [31]
+Overfull \hbox (49.9578pt too wide) in paragraph at lines 234--234
 [][]\OT1/ptm/m/n/12 Cao, Yan-shuai, and Luyu Wang. 2017. \  Au-to-matic Se-lec-tion of t-SNE Per-plex-ity." \OT1/ptm/m/sl/12 CoRR \OT1/ptm/m/n/12 abs/1708.03229.
  []
 
 
-Overfull \hbox (4.0431pt too wide) in paragraph at lines 230--230
+Overfull \hbox (4.0431pt too wide) in paragraph at lines 234--234
 [][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. \  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather."
  []
 
 [32]
-Overfull \hbox (17.45934pt too wide) in paragraph at lines 230--230
+Overfull \hbox (17.45934pt too wide) in paragraph at lines 234--234
 [][]\OT1/ptm/m/n/12 Romesburg, H. Charles. 2004. \OT1/ptm/m/sl/12 Clus-ter Anal-y-sis for Re-searchers. \OT1/ptm/m/n/12 Lulu Press. \OT1/ptm/m/sc/12 isbn\OT1/ptm/m/n/12 : 9781411606173. 
  []
 
 [33] [34] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/perplexityTest.tex
+<./images/tsneParametersTest/perplexity/perp5-1hTSNE.png, id=897, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png  used on input line 11.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png, id=898, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png  used on input line 17.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp5-3hTSNE.png, id=899, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png  used on input line 33.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png, id=900, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png  used on input line 39.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [35
 
-Overfull \hbox (13.03906pt too wide) in paragraph at lines 24--25
+ <./images/tsneParametersTest/perplexity/perp5-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp10-1hTSNE.png, id=907, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png  used on input line 55.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png, id=908, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png  used on input line 61.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp10-3hTSNE.png, id=909, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png  used on input line 74.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png, id=910, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png  used on input line 80.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp20-1hTSNE.png, id=911, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png  used on input line 95.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png, id=912, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png  used on input line 101.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [36 <./images/tsneParametersTest/perplexity/perp5-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp10-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp10-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp20-3hTSNE.png, id=924, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png  used on input line 114.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png, id=925, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png  used on input line 120.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp30-1hTSNE.png, id=926, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png  used on input line 137.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png, id=927, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png  used on input line 143.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [37 <./images/tsneParametersTest/perplexity/perp20-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp20-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp30-3hTSNE.png, id=936, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png  used on input line 156.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png, id=937, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png  used on input line 162.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp40-1hTSNE.png, id=938, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png  used on input line 179.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png, id=939, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png  used on input line 185.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [38 <./images/tsneParametersTest/perplexity/perp30-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp30-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp40-3hTSNE.png, id=948, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png  used on input line 198.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png, id=949, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png  used on input line 204.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp45-1hTSNE.png, id=950, 1206.5075pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png  used on input line 221.
+(pdftex.def)             Requested size: 204.85846pt x 146.22105pt.
+<./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png, id=951, 1206.5075pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png  used on input line 227.
+(pdftex.def)             Requested size: 204.85846pt x 146.22105pt.
+ [39 <./images/tsneParametersTest/perplexity/perp40-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp40-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp45-3hTSNE.png, id=960, 1206.5075pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png  used on input line 240.
+(pdftex.def)             Requested size: 204.85846pt x 146.22105pt.
+<./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png, id=961, 1206.5075pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png  used on input line 246.
+(pdftex.def)             Requested size: 204.85846pt x 146.22105pt.
+<./images/tsneParametersTest/perplexity/perp50-1hTSNE.png, id=962, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png  used on input line 263.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png, id=963, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png  used on input line 269.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [40 <./images/tsneParametersTest/perplexity/perp45-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp45-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png>]
+<./images/tsneParametersTest/perplexity/perp50-3hTSNE.png, id=973, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png  used on input line 282.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png, id=974, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png  used on input line 288.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/learningRateTest.tex
+<./images/tsneParametersTest/learningRate/lr10-1hTSNE.png, id=975, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png  used on input line 11.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png, id=976, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png  used on input line 17.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [41 <./images/tsneParametersTest/perplexity/perp50-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp50-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr10-3hTSNE.png, id=985, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png  used on input line 32.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png, id=986, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png  used on input line 38.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr200-1hTSNE.png, id=987, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png  used on input line 53.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png, id=988, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png  used on input line 59.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [42 <./images/tsneParametersTest/learningRate/lr10-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr10-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr200-3hTSNE.png, id=997, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png  used on input line 74.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png, id=998, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png  used on input line 80.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr400-1hTSNE.png, id=999, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png  used on input line 96.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png, id=1000, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png  used on input line 102.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [43 <./images/tsneParametersTest/learningRate/lr200-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr200-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr400-3hTSNE.png, id=1009, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png  used on input line 117.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png, id=1010, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png  used on input line 123.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr600-1hTSNE.png, id=1011, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png  used on input line 139.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png, id=1012, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png  used on input line 145.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [44 <./images/tsneParametersTest/learningRate/lr400-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr400-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr600-3hTSNE.png, id=1021, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png  used on input line 160.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png, id=1022, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png  used on input line 166.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr800-1hTSNE.png, id=1023, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png  used on input line 184.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png, id=1024, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png  used on input line 190.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [45 <./images/tsneParametersTest/learningRate/lr600-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr600-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr800-3hTSNE.png, id=1033, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png  used on input line 205.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png, id=1034, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png  used on input line 211.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png, id=1035, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png  used on input line 227.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png, id=1036, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png  used on input line 233.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+ [46 <./images/tsneParametersTest/learningRate/lr800-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr800-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png>]
+<./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png, id=1046, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png  used on input line 248.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png, id=1047, 1205.50375pt x 861.2175pt>
+File: ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png  used on input line 254.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+) [47 <./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png>]
+Overfull \hbox (13.03906pt too wide) in paragraph at lines 40--41
 []\OT1/ptm/m/n/12 Rohdaten und auf-bere-it-ete Daten der Evaluierun-gen (Log-Daten, Tabellen, Graphen, Scripts,
  []
 
 
-Overfull \hbox (20.95569pt too wide) in paragraph at lines 29--30
+Overfull \hbox (20.95569pt too wide) in paragraph at lines 45--46
 [][][]$\OT1/pcr/m/n/12 https : / / gitlab . mediacube . at / fhs123456 / Abschlussarbeiten-[]Max-[]Muster$[][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 [][]$\OT1/pcr/m/n/12 http : / / web . archive . org / web / 20160526143921 / http : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 \OT1/pcr/m/n/12 gamedev . net / page / resources / _ / technical / game-[]programming /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 [][][]$\OT1/pcr/m/n/12 http : / / web . archive . org / web / 20160526144551 / http : / / scottbilas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 \OT1/pcr/m/n/12 com / files / 2002 / gdc _ san _ jose / game _ objects _ slides _ with _ notes . pdf$[][]\OT1/ptm/m/n/12 ,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
- [35
-
-] [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+ [48]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B0C2ECD690ACA2AFDC48963CF831B248;3036.
+(rerunfilecheck)             Checksum: 3DA368DBC74D23A41FFD9AB0221D1FBC;4170.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
  ) 
 Here is how much of TeX's memory you used:
- 21052 strings out of 492162
- 367017 string characters out of 6125292
- 1192348 words of memory out of 5000000
- 24804 multiletter control sequences out of 15000+600000
- 50730 words of font info for 111 fonts, out of 8000000 for 9000
+ 21407 strings out of 492162
+ 385213 string characters out of 6125292
+ 1196561 words of memory out of 5000000
+ 25044 multiletter control sequences out of 15000+600000
+ 52315 words of font info for 113 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 80i,9n,131p,2126b,8676s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,9n,131p,2126b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (43 pages, 3852440 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (57 pages, 17054862 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
- 732 compressed objects within 8 object streams
- 158 named destinations out of 1000 (max. 500000)
- 404 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1157 PDF objects out of 1200 (max. 8388607)
+ 939 compressed objects within 10 object streams
+ 212 named destinations out of 1000 (max. 500000)
+ 784 words of extra memory for PDF output out of 10000 (max. 10000000)
 

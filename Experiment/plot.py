@@ -10,15 +10,15 @@ import ipyvolume as ipv
 
 
 def create_bar_plot(x, y, xName, yName):
-    plt.figure(figsize=(16, 10))
+    plt.figure(figsize=(20, 10))
     data = pd.DataFrame({xName: x, yName: y})
     sns.barplot(x=xName, y=yName, data=data)
 
     plt.show()
 
 
-def create_2d_scatterplot(data, xName, yName):
-    plt.figure(figsize=(16, 10))
+def create_2d_scatterplot(data, xName, yName, title):
+    plt.figure(figsize=(20, 10))
     p1 = sns.scatterplot(
         x=xName, y=yName,
         # x="pca-one", y="pca-two",
@@ -41,6 +41,7 @@ def create_2d_scatterplot(data, xName, yName):
     # for line in range(0, data.shape[0]):
     #     p1.text(df.iat[line, 0]+0.2, df.iat[line, 1], line,
     #             horizontalalignment='left', size=4, color='black', weight='regular')
+    plt.title(title)
     plt.show()
 
 
@@ -51,7 +52,8 @@ def create_2d_scatterplot_tester_colors(data, xName, yName, colors, title):
 
     # for i in range(0, data.shape[0]):
     #     plt.scatter(df.iat[0, i], df.iat[1, i], c=colors[i])
-    p1 = plt.scatter(df[xName], df[yName], c=colors)
+    p1 = plt.scatter(df[xName], df[yName])
+    # p1 = plt.scatter(df[xName], df[yName], c=colors)
     # for line in range(0, data.shape[0]):
     #     plt.text(df.iat[line, 0], df.iat[line, 1], line,
     #              horizontalalignment='left', size=4, color='black', weight='regular')
@@ -60,7 +62,7 @@ def create_2d_scatterplot_tester_colors(data, xName, yName, colors, title):
 
 
 def create_3d_scatterplot(data, xName, yName, zName, colors, title):
-    ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
+    ax = plt.figure(figsize=(20, 10)).gca(projection='3d')
     # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
     #                     'pca-three': 'blue'}
     # labels = ["pca-one", "pca-two", "pca-three"]
@@ -89,7 +91,7 @@ def create_clustering_plot(clustering_method, df, title):
 
 
 def create_2d_scatterplot_clustering(clustering_method, df, title):
-    plt.figure(figsize=(10, 7))
+    plt.figure(figsize=(20, 10))
     cluster_labels = clustering_method.fit_predict(df)
     plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
     plt.title(title)
@@ -120,7 +122,7 @@ def create_2d_scatterplot_clustering(clustering_method, df, title):
 
 def create_3d_scatterplot_clustering(clustering_method, df, title):
 
-    ax = plt.figure(figsize=(16, 10)).gca(projection='3d')
+    ax = plt.figure(figsize=(20, 10)).gca(projection='3d')
     cluster_labels = clustering_method.fit_predict(df)
 
     # label_color_dict = {'pca-one': 'magenta', 'pca-two': 'orange',
@@ -140,7 +142,7 @@ def create_3d_scatterplot_clustering(clustering_method, df, title):
     ax.set_ylabel("test2")
     ax.set_zlabel("test3")
 
-    # plt.figure(figsize=(16, 10)).gca(projection='3d')
+    # plt.figure(figsize=(20,10)).gca(projection='3d')
     # cluster_labels = clustering_method.fit_predict(df)
     # plt.scatter(xs=df[0], ys=df[1], zs=df[2], c=cluster_labels)
     plt.title(title)
@@ -148,7 +150,7 @@ def create_3d_scatterplot_clustering(clustering_method, df, title):
 
 
 def create_2d_pyplot(data):
-    plt.figure(figsize=(16, 10))
+    plt.figure(figsize=(20, 10))
     plt.plot(data, "ro")
     plt.title('n-dist sorted graph')
     plt.ylabel('distance to 4th nearest neighbor')

@@ -14,10 +14,12 @@ The first approach to find suitable t-SNE parameters to create the most distinct
 
 Perplexity was the next parameter to select. \textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter. Multiple values between the recommended 5 and 50 were tested. 
 
-% \textcite{tsneAutomaticPerplexity}[1-2] propose a method to automatically select the t-SNE parameter perplexity.\textbf{WHAT IS THE PERPLEXITY} This parameter influences the results received from t-SNE and is difficult to optimise for inexperienced users. The authors explain, that the Kullback-Leibler (KL) divergences received from different complexities cannot solely be compared to find the most suitable perplexity. As the perplexity rises, the KL falls, selecting the smallest KL would therefore result in a very high perplexity (e.g. 400), whereas \textcite{maaten2008visualizing}[2582] recommend setting the perplexity to between 5 and 50. \textcite{tsneAutomaticPerplexity}[2-] further explains, that when the perplexity set to the number of data points, no interesting structure is found, only a Gaussian or uniform like blob. Accordingly, it could be perceived, that a trade off between the final Kullback-Leibner divergence and the Perplexity (\textit{Perp}) might result in good t-SNE results. The authors propose the following formula:
+!!!TODO - RERUN PERPLEXITY WITH 40-50 TO BE SURE
 
-% \[
-%   S(Perp) = KL(P||Q) + log(n)\frac{Perp}{n}
-% \]
 
-% Its results - human experts agree
+
+
+
+
+
+To further confirm the t-SNE perplexity parameter, the equation reviewed in section \ref{section:tSNE} was implemented. However, the results were not as expected and so the results from the visual and evaluation score comparison were chosen.
