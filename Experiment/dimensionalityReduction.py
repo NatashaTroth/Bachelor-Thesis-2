@@ -71,32 +71,11 @@ def calculate_ideal_TSNE_perplexity(df):
 def calculate_TSNE(df, number_components, graphs, colors):
     print("calculating TSNE...")
     print(df)
-    # tsne = TSNE(n_components=number_components,
-    # init='random', perplexity=10, n_iter=5000, learning_rate=250)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=40, n_iter=5000, learning_rate=30)
-    # very good
-    # tsne = TSNE(n_components=number_components,
-    #             init='random', perplexity=50, n_iter=5000, learning_rate=10)
-    # tsne = TSNE(n_components=number_components,
-    #             init='random', perplexity=25, n_iter=5000, learning_rate=100)
-
-    # Goodish:
-    # tsne = TSNE(n_components=number_components,
-    #             init='random', perplexity=25, n_iter=2000, learning_rate=10)
-    # tsne = TSNE(n_components=2, verbose=0,
-    #             perplexity=40, n_iter=300, init='random')
-    # print(df)
-    # print("--------------------------END---------------------------")
-    # print(df.to_numpy())
+                init='random', perplexity=40, n_iter=5000, learning_rate=800)
 
     # tsne_results = tsne.fit_transform(df)
     tsne_results = tsne.fit_transform(df.to_numpy())
-    # calculate_ideal_TSNE_perplexity(df, tsne)
-
-    # print(df)
-    # print(tsne_results)
-
     df['tsne-one'] = tsne_results[:, 0]
     df['tsne-two'] = tsne_results[:, 1]
 

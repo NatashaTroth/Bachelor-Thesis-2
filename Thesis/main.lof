@@ -21,64 +21,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces There is a collection of points along a line. This same collection can also be visualised as a chain in the t-SNE data set.\relax }}{25}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces t-SNE calculated with only 10 data files and all features. The chain is as visible.\relax }}{26}{figure.caption.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces t-SNE result in a scatter plot, each colour indicates one test subject. The test subjects have clustered together slightly in the chain.\relax }}{26}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces t-SNE calculated with 10 data files and only 2 features. The chain is visible.\relax }}{26}{figure.caption.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and dominant.\relax }}{27}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces t-SNE result in a scatter plot, each colour indicates one test subject. The test subjects have clustered together slightly in the chain.\relax }}{27}{figure.caption.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces 2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.\relax }}{28}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and dominant.\relax }}{28}{figure.caption.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {perplexities}.\relax }}{29}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.\relax }}{29}{figure.caption.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {perplexities}.\relax }}{30}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{35}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values.\relax }}{31}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.16}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values.\relax }}{32}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.17}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values.\relax }}{32}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{36}{figure.caption.18}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values.\relax }}{33}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{37}{figure.caption.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.\relax }}{34}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{37}{figure.caption.20}%
+\contentsline {figure}{\numberline {20}{\ignorespaces \relax }}{35}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{38}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \relax }}{36}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{38}{figure.caption.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces \relax }}{36}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \relax }}{37}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces \relax }}{37}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Evaluation scores comparison from 1h run of t-SNE and clustering with a learning rate of 20.\relax }}{39}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{40}{figure.caption.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Evaluation scores comparison from 1h run of t-SNE and clustering with a learning rate of 20.\relax }}{39}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{41}{figure.caption.27}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Evaluation scores comparison averaged from figures \ref {figure:clusteringResults1} and \ref {figure:clusteringResults2}\relax }}{40}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 20.\relax }}{40}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 800.\relax }}{41}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Evaluation scores comparison averaged from figures \ref {figure:clusteringResults1}, \ref {figure:clusteringResults2}, \ref {figure:clusteringResults3}, \ref {figure:clusteringResults4}, and \ref {figure:clusteringResults5}.\relax }}{41}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Number of light green evaluation score "wins" (1h or 3h) for the 1h data files.\relax }}{42}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{43}{figure.caption.32}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Number of light green evaluation score "wins" (1h or 3h) for the 3h data files.\relax }}{42}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Number of dark green evaluation score "wins" (1h and 3h).\relax }}{43}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{44}{figure.caption.34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{45}{figure.caption.35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{45}{figure.caption.36}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{46}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{46}{figure.caption.38}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{47}{figure.caption.39}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{47}{figure.caption.40}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Top evaluation scores performers comparison from figures \ref {figure:clusteringResultsGraph1h}, \ref {figure:clusteringResultsGraph3h}, and \ref {figure:clusteringResultsGraphTotal}.\relax }}{43}{figure.caption.34}%

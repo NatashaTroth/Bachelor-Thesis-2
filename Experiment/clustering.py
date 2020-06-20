@@ -28,22 +28,10 @@ def spectral_clustering(df, dataType="", graphs=False):
 def dbscan_clustering(df, dataType="", graphs=False):
     print("\n- dbscan clustering (" + dataType + ")...")
     db = DBSCAN(eps=2, min_samples=4)
-    # db = DBSCAN(eps=3, min_samples=2) - with     tsne = TSNE(n_components=number_components,init='random', perplexity=50, n_iter=5000, learning_rate=200)
     clustering = db.fit(df)
-    # print(db)
-    # print(str(len(df.columns)))
     cluster_labels = db.fit_predict(df)
-    # # TODO - DELETE!!!
-    # print(cluster_labels)
-    # df["CLUSTERS"] = cluster_labels
-    # print(len(cluster_labels))
-    # df.to_csv(
-    #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings")
-
     if graphs == True:
         create_clustering_plot(db, df, "DBSCAN (" + dataType + ")")
-        # create_3d_scatterplot_clustering
-
     return cluster_evaluation(db, df)
 
 
@@ -59,26 +47,13 @@ def predict_eps_dbscan_parameter(df):
     distances = [distance[i][3] for i in range(len(distance))]
     distances.sort(reverse=True)
     create_2d_pyplot(distances)
-    # plt.plot(distances)
-    # plt.ylabel('n-dist sorted graph')
-    # plt.show()
-    # print(distances)
-
-    # print(nbrsResult)
-    # A = nbrsResult.kneighbors_graph(df)
-    # A.toarray()
-    # print(A)
-#
-    # knn = KNeighborsClassifier(n_neighbors=4, metric='euclidean')
-    # knnResult = knn.fit(df)
-    # print(knn)
 
 
 def optics_clustering(df, dataType="", graphs=False):
     print("\n- optics clustering (" + dataType + ")...")
     # optics = OPTICS(min_samples=10,  min_cluster_size=0.05)
-    optics = OPTICS(cluster_method='dbscan', eps=2)
-    # optics = OPTICS(min_samples=4, cluster_method="xi")
+    # optics = OPTICS(cluster_method='dbscan', eps=2)
+    optics = OPTICS(min_samples=4, cluster_method="xi")
     clustering = optics.fit(df)
     if graphs == True:
         create_clustering_plot(

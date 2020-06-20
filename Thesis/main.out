@@ -1,6 +1,6 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Related work}{}% 2
-\BOOKMARK [1][-]{section.3}{Theory/Literature Review}{}% 3
+\BOOKMARK [1][-]{section.3}{Literature Review}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Data Mining}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Data Preprocessing}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Noisy Data}{subsection.3.2}% 6
@@ -11,12 +11,12 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Principal Components Analysis \(PCA\)}{subsection.3.3}% 11
 \BOOKMARK [3][-]{subsubsection.3.3.2}{t-Distributed Stochastic Neighbor Embedding \(t-SNE\)}{subsection.3.3}% 12
 \BOOKMARK [2][-]{subsection.3.4}{Cluster Analysis}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.5}{Overview of Clustering Algorithms}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Overview of clustering algorithms}{section.3}% 14
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Partitioning Methods}{subsection.3.5}% 15
 \BOOKMARK [3][-]{subsubsection.3.5.2}{Hierarchical Methods}{subsection.3.5}% 16
 \BOOKMARK [3][-]{subsubsection.3.5.3}{Density-Based Methods}{subsection.3.5}% 17
 \BOOKMARK [3][-]{subsubsection.3.5.4}{Grid-Based Methods}{subsection.3.5}% 18
-\BOOKMARK [2][-]{subsection.3.6}{Evaluating Clustering Results}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.6}{Evaluating clustering results}{section.3}% 19
 \BOOKMARK [3][-]{subsubsection.3.6.1}{Assessment of the cluster tendency}{subsection.3.6}% 20
 \BOOKMARK [3][-]{subsubsection.3.6.2}{Evaluation of the cluster quality}{subsection.3.6}% 21
 \BOOKMARK [3][-]{subsubsection.3.6.3}{Establishing the number of clusters}{subsection.3.6}% 22
@@ -27,30 +27,18 @@
 \BOOKMARK [3][-]{subsubsection.4.1.3}{Selection of columns \(attributes\)}{subsection.4.1}% 27
 \BOOKMARK [3][-]{subsubsection.4.1.4}{Chain shaped data}{subsection.4.1}% 28
 \BOOKMARK [2][-]{subsection.4.2}{Dimensionality Reduction}{section.4}% 29
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Find t-SNE parameters}{subsection.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.3}{Clustering}{section.4}% 31
-\BOOKMARK [3][-]{subsubsection.4.3.1}{DBSCAN}{subsection.4.3}% 32
-\BOOKMARK [3][-]{subsubsection.4.3.2}{OPTICS}{subsection.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.4}{Comparison and Evaluation of cluster results of different time lengths}{section.4}% 34
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 35
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 36
-\BOOKMARK [1][-]{section*.14}{Appendices}{}% 37
-\BOOKMARK [1][-]{Appendix.a.A}{t-SNE parameters comparison figures}{}% 38
-\BOOKMARK [2][-]{subsection.a.A.1}{Perplexity}{Appendix.a.A}% 39
-\BOOKMARK [3][-]{subsubsection.a.A.1.1}{Perplexity = 5}{subsection.a.A.1}% 40
-\BOOKMARK [3][-]{subsubsection.a.A.1.2}{Perplexity = 10}{subsection.a.A.1}% 41
-\BOOKMARK [3][-]{subsubsection.a.A.1.3}{Perplexity = 20}{subsection.a.A.1}% 42
-\BOOKMARK [3][-]{subsubsection.a.A.1.4}{Perplexity = 30}{subsection.a.A.1}% 43
-\BOOKMARK [3][-]{subsubsection.a.A.1.5}{Perplexity = 40}{subsection.a.A.1}% 44
-\BOOKMARK [3][-]{subsubsection.a.A.1.6}{Perplexity = 45}{subsection.a.A.1}% 45
-\BOOKMARK [3][-]{subsubsection.a.A.1.7}{Perplexity = 50}{subsection.a.A.1}% 46
-\BOOKMARK [2][-]{subsection.a.A.2}{Learning Rate}{Appendix.a.A}% 47
-\BOOKMARK [3][-]{subsubsection.a.A.2.1}{Learning Rate = 10}{subsection.a.A.2}% 48
-\BOOKMARK [3][-]{subsubsection.a.A.2.2}{Learning Rate = 200}{subsection.a.A.2}% 49
-\BOOKMARK [3][-]{subsubsection.a.A.2.3}{Learning Rate = 400}{subsection.a.A.2}% 50
-\BOOKMARK [3][-]{subsubsection.a.A.2.4}{Learning Rate = 600}{subsection.a.A.2}% 51
-\BOOKMARK [3][-]{subsubsection.a.A.2.5}{Learning Rate = 800}{subsection.a.A.2}% 52
-\BOOKMARK [3][-]{subsubsection.a.A.2.6}{Learning Rate = 1000}{subsection.a.A.2}% 53
-\BOOKMARK [1][-]{Appendix.a.B}{git-Repository}{}% 54
-\BOOKMARK [1][-]{Appendix.a.C}{Vorlagen f\374r Studienmaterial}{}% 55
-\BOOKMARK [1][-]{Appendix.a.D}{Archivierte Webseiten}{}% 56
+\BOOKMARK [3][-]{subsubsection.4.2.1}{PCA}{subsection.4.2}% 30
+\BOOKMARK [3][-]{subsubsection.4.2.2}{t-SNE}{subsection.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.3}{Clustering}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.1}{DBSCAN}{subsection.4.3}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.2}{OPTICS}{subsection.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.4}{Comparison and evaluation of cluster results from different time lengths}{section.4}% 35
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 36
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 37
+\BOOKMARK [1][-]{section*.35}{Appendices}{}% 38
+\BOOKMARK [1][-]{Appendix.a.A}{t-SNE parameters comparison figures}{}% 39
+\BOOKMARK [2][-]{subsection.a.A.1}{Perplexity}{Appendix.a.A}% 40
+\BOOKMARK [2][-]{subsection.a.A.2}{Learning Rate}{Appendix.a.A}% 41
+\BOOKMARK [1][-]{Appendix.a.B}{git-Repository}{}% 42
+\BOOKMARK [1][-]{Appendix.a.C}{Vorlagen f\374r Studienmaterial}{}% 43
+\BOOKMARK [1][-]{Appendix.a.D}{Archivierte Webseiten}{}% 44

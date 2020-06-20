@@ -21,7 +21,7 @@ Initial visualisations of the data set (with t-SNE dimensionality reduction) sho
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=1\textwidth]{./images/tsneChain.png}
+  \includegraphics[width=0.7\textwidth]{./images/tsneChain.png}
   \caption{1h data set, a chain of data points (light blue points) can be seen in the data set.}
   \label{figure:tsneChain}
 \end{figure*}
@@ -29,26 +29,47 @@ Initial visualisations of the data set (with t-SNE dimensionality reduction) sho
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=1\textwidth]{./images/pcaChain.png}
+  \includegraphics[width=0.7\textwidth]{./images/pcaChain.png}
   \caption{There is a collection of points along a line. This same collection can also be visualised as a chain in the t-SNE data set.}
   \label{figure:pcaChain}
 \end{figure*}
 
 An initial thought, was that this chain was the result of the utilised t-SNE parameters. However, even with changing the t-SNE perplexity, learning rate and number of iterations parameters, the chain persisted in some form. Another thought, as to where these data points originated from or why they resulted in a chain, was that there were dependencies within the data or columns. For example the three APP columns, these indicate the percentage of time in a lag-interval that a type of app was used. Therefore, if say a communication app was used 100\% of this time, the APP\_COM cell for this time would be 1. By using this app for 100\% of the time, would mean that the values in the other APP columns for this time would have to be 0 (0\%), since they would not have been able to be used. To test this theory, the APP columns were removed from the data set and the 2D scatter plot was recalculated. The chain was still visible. Step by step each column was removed, to see if it was the cause of the chain. The chain did not disappear though, which indicated, that the problem was not due to the columns, but rather the rows. The chain was less visible when reducing the number of inserted .csv files (lower number of records) to 10 (see figure \ref{figure:tsne10Files}). When the number of features were reduced to only AUDIO and ACC (two columns), the chain was once again visible (see figure \ref{figure:tsne10Files2Features}). The presumption is that when there are less data points and more features (e.g. 10 files but using all the features), there are enough different data points and the chain less dense, making it less noticeable. When there are less data points but with less features (e.g. 10 files but using only 2 features), or when there are many data points even with multiple features (e.g. all data files and all the features), there are more rows with very similar of equal values and the chain appears more dense and prevalent.
 
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/tsne10Files.png}
-  \caption{t-SNE calculated with only 10 data files and all features. The chain is as visible.}
-  \label{figure:tsne10Files}
-\end{figure*}
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/tsne10Files.png}
+%   \caption{t-SNE calculated with only 10 data files and all features. The chain is as visible.}
+%   \label{figure:tsne10Files}
+% \end{figure*}
 
-\begin{figure*}[h]
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/tsne10Files2Features.png}
+%   \caption{t-SNE calculated with 10 data files and only 2 features. The chain is visible.}
+%   \label{figure:tsne10Files2Features}
+% \end{figure*}
+
+
+
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{./images/tsne10Files2Features.png}
-  \caption{t-SNE calculated with 10 data files and only 2 features. The chain is visible.}
-  \label{figure:tsne10Files2Features}
-\end{figure*}
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/tsne10Files.png}
+    \caption{t-SNE calculated with only 10 data files and all features. The chain is not as visible.}
+    \label{figure:tsne10Files}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/tsne10Files2Features.png}
+    \caption{t-SNE calculated with 10 data files and only 2 features. The chain is visible.}
+    \label{figure:tsne10Files2Features}
+  \end{subfigure}
+	% \caption{}
+  % \label{}
+\end{figure}
 
 One theory was that points from a same test subject were similar and might be causing the chain. To see which data points were contained in the chain, the row index number was added as a label to each data point in the scatter plot. Furthermore, each test user data file was assigned a different random colour, so that in the plot it was visible, which data points belonged to the same user. The resulting scatter plot is visualised in figure \ref{figure:tsneTestSubjectsColor}. From this plot it can be seen, that several data points from the same test subject cluster together in the chain, indicating similarity. There are however points from each user in different locations of the chart, not only in the chain. This implied, that the chain was not being caused by the subjects. 
 

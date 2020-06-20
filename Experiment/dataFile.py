@@ -37,10 +37,6 @@ class DataFile:
         #     df = pd.read_csv(str(path), index_col=None, header=0)
         #     li.append(df)
 
-        # frame = pd.concat(li, axis=0, ignore_index=True)
-
-        # color = "%06x" % random.randint(0, 0xFFFFFF)
-        print(list_of_files)
         if len(list_of_files) > 1:
             return pd.concat(map(self.read_csv_file_add_color, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
@@ -66,74 +62,30 @@ class DataFile:
 
     def clean_data(self, number_columns_to_use=1):
         print("cleaning data...")
-        # time_column = self.df['TIME']
-        # self.df = self.df.drop(columns=['TIME'])
         print(self.df)
-        # self.df = pd.DataFrame([np.arange(len(self.df)) % 2 == 1])
         # self.df = self.df.iloc[::3, :]
-        # self.df = self.df.iloc[::3, :]
-        # print(self.df)
-        # print(self.df)
-
         self.remove_columns(["TIME"])
-
-        # self.remove_columns(["TIME", "APP", "NOTIF", "SCRN", "LIGHT"])
-
-        # self.remove_columns(["TIME", "AUDIO", "SCRN", "LIGHT", "NOTIF", "APP"])
-        # self.remove_columns(["TIME", "APP", "SCRN", "LIGHT", "NOTIF", "AUDIO"])
-        # print("----------here---------------")
-        # print(self.df)
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
-
         # print(self.df)
         # print("MAX VALUES...")
         # print(self.df.max(axis=0))
         # print("\nMIN VALUES...")
         # print(self.df.min(axis=0))
-
         self.colors = self.df["COLOR"].to_numpy()
-        # print(self.colors)
         self.remove_columns(["COLOR"])
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings7-beforecompression.csv")
-
-        # print("----------------HERE..................")
         self.extract_columns(number_columns_to_use)
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/compareBefore.csv")
-        # print(self.df)
-        # self.df["COLOR"] = self.colors
 
         # if remove rows, also need to adjust the colors for the tester subjects
         self.df["COLOR"] = self.colors
         self.extract_rows_with_percent_non_zero_values(50)
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
-
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/compareDeleteZeroRows/compareAfter.csv")
-
         print(self.df)
-        # print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
-        # print(self.df)
-
-        # print(self.df)
-        # print("MAX VALUES...")
-        # print(self.df.max(axis=0))
-        # print("\nMIN VALUES...")
-        # print(self.df.min(axis=0))
-        # print("---------------HERE.----------------")
-        # print(self.df)
-
         self.normalize_columns()
-        # self.df.to_csv(
-        #     "/Users/natashatroth/Documents/FHS/6Semester/Bac2/EXPERIMENT_NOTES/DELETEFILES/clusterings7.csv")
-        # self.df = self.df.iloc[::2]
-        # self.df = self.df.iloc[::1]
-        # print(self.df)
+        print(self.df)
 
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")
@@ -209,7 +161,6 @@ class DataFile:
             print(column_name)
             self.df = self.df.drop(self.df.filter(
                 regex=column_name).columns, axis=1)
-        # self.df = self.df.drop(columns=column_names)
 
     def compress_same_attribute_columns(self, numberSameAttributes):
         print("  compressing same attribute columns...")
