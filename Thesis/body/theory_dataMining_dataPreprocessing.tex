@@ -21,6 +21,8 @@ To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[
 % The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
 
 
+As reported by \textcite{DataMiningAndPredictiveAnalytics}[45], ID fields should be removed from the data set used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there.
+
 
 % ------------- MISSING VALUES ---------------
 \subsubsection{Missing Values}
@@ -76,20 +78,20 @@ According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it i
 
 
 
-\subsubsection{Data Transformation}
-\label{section:Transformation}
+% \subsubsection{Data Transformation}
+% \label{section:Transformation}
 
-\textbf{Todo: complete (if needed)}
-% \textbf{NOT REALLY SURE WHAT TO DO HERE - LEAVE OPEN, WAIT AND SEE WHAT HAVE TO DO IN THE EXPERIMENT}
-%not sure if should explain these more, page 32 has Decimal Scaling.
+% \textbf{Todo: complete (if needed)}
+% % \textbf{NOT REALLY SURE WHAT TO DO HERE - LEAVE OPEN, WAIT AND SEE WHAT HAVE TO DO IN THE EXPERIMENT}
+% %not sure if should explain these more, page 32 has Decimal Scaling.
 
-%should state the difference between categorical and numerical data - maybe page 333
-%page 39-41
-As reported by \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
+% %should state the difference between categorical and numerical data - maybe page 333
+% %page 39-41
+% As reported by \textcite{DataMiningAndPredictiveAnalytics}[39-41, 45], flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k $\geq$ 3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
 
-%page 45
-ID fields should be removed from the data set, since the value is different for each record and not helpful.
+% %page 45
+% ID fields should be removed from the data set, since the value is different for each record and not helpful.
 
 %OTHER TOPICS - NOT SURE IF NEED:
 %page 38- z-score for detecting outliers, like in boxplot

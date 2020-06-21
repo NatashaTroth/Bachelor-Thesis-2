@@ -52,8 +52,8 @@ def predict_eps_dbscan_parameter(df):
 def optics_clustering(df, dataType="", graphs=False):
     print("\n- optics clustering (" + dataType + ")...")
     # optics = OPTICS(min_samples=10,  min_cluster_size=0.05)
-    # optics = OPTICS(cluster_method='dbscan', eps=2)
-    optics = OPTICS(min_samples=4, cluster_method="xi")
+    optics = OPTICS(cluster_method='dbscan', eps=2)
+    # optics = OPTICS(min_samples=4, cluster_method="xi")
     clustering = optics.fit(df)
     if graphs == True:
         create_clustering_plot(

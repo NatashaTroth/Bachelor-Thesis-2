@@ -3931,18 +3931,18 @@
     <bcf:citekey order="74">DataMiningAndPredictiveAnalytics</bcf:citekey>
     <bcf:citekey order="75">han2011data</bcf:citekey>
     <bcf:citekey order="76">han2011data</bcf:citekey>
-    <bcf:citekey order="77">dataPreparationForDataMining</bcf:citekey>
-    <bcf:citekey order="78">dataPreparationForDataMining</bcf:citekey>
-    <bcf:citekey order="79">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="80">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="81">dataPreparationForDataMining</bcf:citekey>
-    <bcf:citekey order="82">dataPreparationForDataMining</bcf:citekey>
-    <bcf:citekey order="83">han2011data</bcf:citekey>
-    <bcf:citekey order="84">han2011data</bcf:citekey>
-    <bcf:citekey order="85">dataPreprocessingInDataMining</bcf:citekey>
-    <bcf:citekey order="86">dataPreprocessingInDataMining</bcf:citekey>
-    <bcf:citekey order="87">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="88">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="77">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="78">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="79">dataPreparationForDataMining</bcf:citekey>
+    <bcf:citekey order="80">dataPreparationForDataMining</bcf:citekey>
+    <bcf:citekey order="81">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="82">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="83">dataPreparationForDataMining</bcf:citekey>
+    <bcf:citekey order="84">dataPreparationForDataMining</bcf:citekey>
+    <bcf:citekey order="85">han2011data</bcf:citekey>
+    <bcf:citekey order="86">han2011data</bcf:citekey>
+    <bcf:citekey order="87">dataPreprocessingInDataMining</bcf:citekey>
+    <bcf:citekey order="88">dataPreprocessingInDataMining</bcf:citekey>
     <bcf:citekey order="89">bellman1957dynamic</bcf:citekey>
     <bcf:citekey order="90">bellman1957dynamic</bcf:citekey>
     <bcf:citekey order="91">bellman1961adaptive</bcf:citekey>
@@ -4001,120 +4001,4 @@
     <bcf:citekey order="144">hinton2003stochastic</bcf:citekey>
     <bcf:citekey order="145">hinton2003stochastic</bcf:citekey>
     <bcf:citekey order="146">maaten2008visualizing</bcf:citekey>
-    <bcf:citekey order="147">maaten2008visualizing</bcf:citekey>
-    <bcf:citekey order="148">tsneAutomaticPerplexity</bcf:citekey>
-    <bcf:citekey order="149">tsneAutomaticPerplexity</bcf:citekey>
-    <bcf:citekey order="150">maaten2008visualizing</bcf:citekey>
-    <bcf:citekey order="151">maaten2008visualizing</bcf:citekey>
-    <bcf:citekey order="152">tsneAutomaticPerplexity</bcf:citekey>
-    <bcf:citekey order="153">tsneAutomaticPerplexity</bcf:citekey>
-    <bcf:citekey order="154">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="155">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="156">romesburg2004cluster</bcf:citekey>
-    <bcf:citekey order="157">romesburg2004cluster</bcf:citekey>
-    <bcf:citekey order="158">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="159">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="160">han2011data</bcf:citekey>
-    <bcf:citekey order="161">han2011data</bcf:citekey>
-    <bcf:citekey order="162">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="163">hartigan1975clustering</bcf:citekey>
-    <bcf:citekey order="164">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="165">DataMiningAndPredictiveAnalytics</bcf:citekey>
-    <bcf:citekey order="166">han2011data</bcf:citekey>
-    <bcf:citekey order="167">han2011data</bcf:citekey>
-    <bcf:citekey order="168">han2011data</bcf:citekey>
-    <bcf:citekey order="169">han2011data</bcf:citekey>
-    <bcf:citekey order="170">DBSCAN</bcf:citekey>
-    <bcf:citekey order="171">DBSCAN</bcf:citekey>
-    <bcf:citekey order="172">han2011data</bcf:citekey>
-    <bcf:citekey order="173">han2011data</bcf:citekey>
-    <bcf:citekey order="174">DBSCAN</bcf:citekey>
-    <bcf:citekey order="175">DBSCAN</bcf:citekey>
-    <bcf:citekey order="176">DBSCAN</bcf:citekey>
-    <bcf:citekey order="177">DBSCAN</bcf:citekey>
-    <bcf:citekey order="178">han2011data</bcf:citekey>
-    <bcf:citekey order="179">han2011data</bcf:citekey>
-    <bcf:citekey order="180">OPTICS</bcf:citekey>
-    <bcf:citekey order="181">OPTICS</bcf:citekey>
-    <bcf:citekey order="182">OPTICS</bcf:citekey>
-    <bcf:citekey order="183">OPTICS</bcf:citekey>
-    <bcf:citekey order="184">OPTICS</bcf:citekey>
-    <bcf:citekey order="185">OPTICS</bcf:citekey>
-    <bcf:citekey order="186">OPTICS</bcf:citekey>
-    <bcf:citekey order="187">OPTICS</bcf:citekey>
-    <bcf:citekey order="188">han2011data</bcf:citekey>
-    <bcf:citekey order="189">han2011data</bcf:citekey>
-    <bcf:citekey order="190">han2011data</bcf:citekey>
-    <bcf:citekey order="191">han2011data</bcf:citekey>
-    <bcf:citekey order="192">han2011data</bcf:citekey>
-    <bcf:citekey order="193">han2011data</bcf:citekey>
-    <bcf:citekey order="194">han2011data</bcf:citekey>
-    <bcf:citekey order="195">han2011data</bcf:citekey>
-    <bcf:citekey order="196">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="197">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="198">silhouetteRelocatingMeasure</bcf:citekey>
-    <bcf:citekey order="199">silhouetteRelocatingMeasure</bcf:citekey>
-    <bcf:citekey order="200">DaviesBouldin</bcf:citekey>
-    <bcf:citekey order="201">DaviesBouldin</bcf:citekey>
-    <bcf:citekey order="202">calinskiHarabasz</bcf:citekey>
-    <bcf:citekey order="203">calinskiHarabasz</bcf:citekey>
-    <bcf:citekey order="204">han2011data</bcf:citekey>
-    <bcf:citekey order="205">han2011data</bcf:citekey>
-    <bcf:citekey order="206">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="207">rousseeuw1987silhouettes</bcf:citekey>
-    <bcf:citekey order="208">wattenberg2016how</bcf:citekey>
-    <bcf:citekey order="209">wattenberg2016how</bcf:citekey>
-    <bcf:citekey order="210">wattenberg2016how</bcf:citekey>
-    <bcf:citekey order="211">wattenberg2016how</bcf:citekey>
-    <bcf:citekey order="212">DBSCAN</bcf:citekey>
-    <bcf:citekey order="213">DBSCAN</bcf:citekey>
-    <bcf:citekey order="214">OPTICS</bcf:citekey>
-    <bcf:citekey order="215">OPTICS</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="cms">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">namea</bcf:sortitem>
-      <bcf:sortitem order="4">editor</bcf:sortitem>
-      <bcf:sortitem order="5">nameb</bcf:sortitem>
-      <bcf:sortitem order="6">translator</bcf:sortitem>
-      <bcf:sortitem order="7">namec</bcf:sortitem>
-      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
-      <bcf:sortitem order="10">organization</bcf:sortitem>
-      <bcf:sortitem order="11">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">labelyear</bcf:sortitem>
-      <bcf:sortitem order="3">year</bcf:sortitem>
-      <bcf:sortitem order="4">origyear</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0000</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="cms/global//global/global"
-                type="entry"
-                sortingtemplatename="cms"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
-</bcf:controlfile>
+    <bcf:citekey order="147">maaten2008visualizing</bcf:citekey

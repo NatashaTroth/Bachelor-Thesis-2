@@ -52,7 +52,7 @@ In the following step, as stated by \textcite{han2011data}[95-96], the principal
 
 
 % \textbf{!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data}.
-\textbf{todo: more detail (if use PCA in experiment)}.
+% \textbf{todo: more detail (if use PCA in experiment)}.
 
 
 % \textcite{han2011data}[95-96]
@@ -97,11 +97,11 @@ In a similar way, the conditional probability between the low-dimensional data p
 %TODO!!! FINISH
 
 To apply t-SNE to a data set, \textcite{maaten2008visualizing}[2582] describe the $\sigma$\textsubscript{i} that has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find a overall optimal  $\sigma$\textsubscript{i} for the data set. \textcite{hinton2003stochastic}[2] declare that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbors or the so called perplexity. The perplexity is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
-\textcite{tsneAutomaticPerplexity}[1-2] point out, that this parameter has to be chosen by visually comparing the t-SNE outcomes. The authors propose a method to automatically select the t-SNE parameter perplexity. This parameter influences the results received from t-SNE and is difficult to optimise for inexperienced users. The authors explain, that the Kullback-Leibler (KL) divergences received from different complexities cannot solely be compared to find the most suitable perplexity. As the perplexity rises, the KL falls, selecting the smallest KL would therefore result in a very high perplexity (e.g. 400), whereas \textcite{maaten2008visualizing}[2582] recommend setting the perplexity to between 5 and 50. \textcite{tsneAutomaticPerplexity}[2-] further explains, that when the perplexity set to the number of data points, no interesting structure is found, only a Gaussian or uniform like blob. Accordingly, it could be perceived, that a trade off between the final Kullback-Leibner divergence and the Perplexity (\textit{Perp}) might result in good t-SNE results. The authors propose the following formula:
+% \textcite{tsneAutomaticPerplexity}[1-2] point out, that this parameter has to be chosen by visually comparing the t-SNE outcomes. The authors propose a method to automatically select the t-SNE parameter perplexity. This parameter influences the results received from t-SNE and is difficult to optimise for inexperienced users. The authors explain, that the Kullback-Leibler (KL) divergences received from different complexities cannot solely be compared to find the most suitable perplexity. As the perplexity rises, the KL falls, selecting the smallest KL would therefore result in a very high perplexity (e.g. 400), whereas \textcite{maaten2008visualizing}[2582] recommend setting the perplexity to between 5 and 50. \textcite{tsneAutomaticPerplexity}[2-] further explains, that when the perplexity set to the number of data points, no interesting structure is found, only a Gaussian or uniform like blob. Accordingly, it could be perceived, that a trade off between the final Kullback-Leibner divergence and the Perplexity (\textit{Perp}) might result in good t-SNE results. The authors propose the following formula:
 
-\[
-  S(Perp) = KL(P||Q) + log(n)\frac{Perp}{n}
-\]
+% \[
+%   S(Perp) = KL(P||Q) + log(n)\frac{Perp}{n}
+% \]
 
 
 

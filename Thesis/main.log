@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  21 JUN 2020 01:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  21 JUN 2020 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -867,7 +867,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 152.
 Package biblatex Info: Reference segment=0 on input line 152.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/title.tex
-<images/FHSLogo.jpg, id=180, 516.93124pt x 333.245pt>
+<images/FHSLogo.jpg, id=245, 516.93124pt x 333.245pt>
 File: images/FHSLogo.jpg Graphic file (type jpg)
 <use images/FHSLogo.jpg>
 Package pdftex.def Info: images/FHSLogo.jpg  used on input line 76.
@@ -919,12 +919,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 30--30
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
-
-
+ [5] [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
 Overfull \hbox (22.43608pt too wide) in paragraph at lines 32--32
  [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
  []
@@ -949,7 +944,47 @@ Overfull \hbox (22.43608pt too wide) in paragraph at lines 40--40
  [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
  []
 
-[6])
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 42--42
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+[7] [8]
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 90--90
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 92--92
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 118--118
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 120--120
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 122--122
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+[9]
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 124--124
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+
+Overfull \hbox (22.43608pt too wide) in paragraph at lines 126--126
+ [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -961,7 +996,7 @@ Overfull \hbox (22.43608pt too wide) in paragraph at lines 40--40
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [7] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
+ [10] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 18.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -981,13 +1016,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
  [1
 
 ]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex [2] [3]
-<./images/windowSizePerformance.png, id=431, 694.595pt x 459.7175pt>
+<./images/windowSizePerformance.png, id=627, 694.595pt x 459.7175pt>
 File: ./images/windowSizePerformance.png Graphic file (type png)
 <use ./images/windowSizePerformance.png>
 Package pdftex.def Info: ./images/windowSizePerformance.png  used on input line 41.
 (pdftex.def)             Requested size: 227.62206pt x 150.64801pt.
  [4 <./images/windowSizePerformance.png>]) [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [6]
-<./images/biasTradeOff.png, id=468, 1740.5025pt x 375.4025pt>
+<./images/biasTradeOff.png, id=663, 1740.5025pt x 375.4025pt>
 File: ./images/biasTradeOff.png Graphic file (type png)
 <use ./images/biasTradeOff.png>
 Package pdftex.def Info: ./images/biasTradeOff.png  used on input line 16.
@@ -997,382 +1032,191 @@ Overfull \hbox (10.4605pt too wide) in paragraph at lines 36--38
 []\OT1/ptm/b/n/12 todo: add im-ages to com-pare how dif-fer-ent meth-ods clus-ter []\OT1/ptm/m/n/12 Han, Pei, and Kam-ber ([][]2011[][])[366-
  []
 
-[14] [15]
-<./images/sortedKGraphDBSCAN.png, id=589, 281.05pt x 128.48pt>
+[14]
+<./images/sortedKGraphDBSCAN.png, id=776, 281.05pt x 128.48pt>
 File: ./images/sortedKGraphDBSCAN.png Graphic file (type png)
 <use ./images/sortedKGraphDBSCAN.png>
 Package pdftex.def Info: ./images/sortedKGraphDBSCAN.png  used on input line 85.
 (pdftex.def)             Requested size: 227.62206pt x 104.05646pt.
- [16 <./images/sortedKGraphDBSCAN.png>]
-<./images/reachabilityDistanceOPTICS.png, id=601, 206.7725pt x 203.76125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15]
+<./images/reachabilityDistanceOPTICS.png, id=788, 206.7725pt x 203.76125pt>
 File: ./images/reachabilityDistanceOPTICS.png Graphic file (type png)
 <use ./images/reachabilityDistanceOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityDistanceOPTICS.png  used on input line 103.
 (pdftex.def)             Requested size: 136.57462pt x 134.58855pt.
-<./images/reachabilityPlotOPTICS.png, id=605, 424.58624pt x 205.76875pt>
+<./images/reachabilityPlotOPTICS.png, id=792, 424.58624pt x 205.76875pt>
 File: ./images/reachabilityPlotOPTICS.png Graphic file (type png)
 <use ./images/reachabilityPlotOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityPlotOPTICS.png  used on input line 115.
 (pdftex.def)             Requested size: 227.62206pt x 110.31282pt.
-<./images/clusterExtractionOPTICS.png, id=610, 277.035pt x 145.54375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/clusterExtractionOPTICS.png, id=797, 277.035pt x 145.54375pt>
 File: ./images/clusterExtractionOPTICS.png Graphic file (type png)
 <use ./images/clusterExtractionOPTICS.png>
 Package pdftex.def Info: ./images/clusterExtractionOPTICS.png  used on input line 125.
 (pdftex.def)             Requested size: 227.62206pt x 119.58426pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./images/reachabilityDistanceOPTICS.png> <./images/reachabilityPlotOPTICS.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex [18 <./images/clusterExtractionOPTICS.png>] [19] [20]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex [21]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex [22]
+[16 <./images/sortedKGraphDBSCAN.png> <./images/reachabilityDistanceOPTICS.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_evaluatingClusteringResults.tex [17 <./images/reachabilityPlotOPTICS.png> <./images/clusterExtractionOPTICS.png>] [18] [19]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment.tex [20] [21]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_preparationDataSet.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][][][][]$\OT1/pcr/m/n/10 https : / / pandas . pydata . org / pandas-[]docs / stable / reference / api / pandas . read _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[][][][][]$\OT1/pcr/m/n/10 https : / / pandas . pydata . org / pandas-[]docs / stable / reference / api / pandas .
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
 [][][][][]$\OT1/pcr/m/n/10 https : / / pandas . pydata . org / pandas-[]docs / stable / reference / api / pandas .
  []
 
-[23]
-<./images/tsneChain.png, id=689, 437.635pt x 322.20375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[][][][][]$\OT1/pcr/m/n/10 http : / / scikit-[]learn . org / stable / modules / generated / sklearn . preprocessing .
+ []
+
+[22]
+<./images/tsneChain.png, id=889, 437.635pt x 322.20375pt>
 File: ./images/tsneChain.png Graphic file (type png)
 <use ./images/tsneChain.png>
 Package pdftex.def Info: ./images/tsneChain.png  used on input line 24.
 (pdftex.def)             Requested size: 318.66948pt x 234.6168pt.
-<./images/pcaChain.png, id=690, 1334.9875pt x 866.23625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/pcaChain.png, id=890, 1334.9875pt x 866.23625pt>
 File: ./images/pcaChain.png Graphic file (type png)
 <use ./images/pcaChain.png>
 Package pdftex.def Info: ./images/pcaChain.png  used on input line 32.
 (pdftex.def)             Requested size: 318.66948pt x 206.77744pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./images/tsneChain.png>]
-<./images/tsne10Files.png, id=699, 1134.2375pt x 661.47125pt>
+[23]
+<./images/tsne10Files.png, id=901, 1134.2375pt x 661.47125pt>
 File: ./images/tsne10Files.png Graphic file (type png)
 <use ./images/tsne10Files.png>
-Package pdftex.def Info: ./images/tsne10Files.png  used on input line 59.
+Package pdftex.def Info: ./images/tsne10Files.png  used on input line 61.
 (pdftex.def)             Requested size: 216.24373pt x 126.10475pt.
-<./images/tsne10Files2Features.png, id=700, 1134.2375pt x 661.47125pt>
+<./images/tsne10Files2Features.png, id=902, 1134.2375pt x 661.47125pt>
 File: ./images/tsne10Files2Features.png Graphic file (type png)
 <use ./images/tsne10Files2Features.png>
-Package pdftex.def Info: ./images/tsne10Files2Features.png  used on input line 66.
+Package pdftex.def Info: ./images/tsne10Files2Features.png  used on input line 68.
 (pdftex.def)             Requested size: 216.24373pt x 126.10475pt.
- [25 <./images/pcaChain.png> <./images/tsne10Files.png> <./images/tsne10Files2Features.png>]
-<./images/tsneTestSubjectsColor.png, id=711, 1524.69624pt x 836.12375pt>
+ [24 <./images/tsneChain.png> <./images/tsne10Files.png> <./images/tsne10Files2Features.png>]
+<./images/tsneTestSubjectsColor.png, id=912, 1524.69624pt x 836.12375pt>
 File: ./images/tsneTestSubjectsColor.png Graphic file (type png)
 <use ./images/tsneTestSubjectsColor.png>
-Package pdftex.def Info: ./images/tsneTestSubjectsColor.png  used on input line 81.
+Package pdftex.def Info: ./images/tsneTestSubjectsColor.png  used on input line 92.
 (pdftex.def)             Requested size: 409.71692pt x 224.67198pt.
-<./images/tsneAfterChainRemoved(50Percent).png, id=712, 1302.8675pt x 881.2925pt>
-File: ./images/tsneAfterChainRemoved(50Percent).png Graphic file (type png)
-<use ./images/tsneAfterChainRemoved(50Percent).png>
-Package pdftex.def Info: ./images/tsneAfterChainRemoved(50Percent).png  used on input line 88.
-(pdftex.def)             Requested size: 409.71692pt x 277.13794pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex [26 <./images/tsneTestSubjectsColor.png>]
+<./images/tsneAfterChainRemoved(50Percent).png, id=913, 1302.8675pt x 881.2925pt>
+File: ./images/tsneAfterChainRemoved(50Percent).png Graphic file (type png)
+<use ./images/tsneAfterChainRemoved(50Percent).png>
+Package pdftex.def Info: ./images/tsneAfterChainRemoved(50Percent).png  used on input line 99.
+(pdftex.def)             Requested size: 409.71692pt x 277.13794pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_dimensionalityReduction.tex [25 <./images/pcaChain.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
  []
 
-<./images/pca2d.png, id=723, 1187.43625pt x 803.0pt>
+<./images/pca2d.png, id=924, 1187.43625pt x 803.0pt>
 File: ./images/pca2d.png Graphic file (type png)
 <use ./images/pca2d.png>
 Package pdftex.def Info: ./images/pca2d.png  used on input line 12.
 (pdftex.def)             Requested size: 216.24373pt x 146.22464pt.
-<./images/pca3d.png, id=724, 1048.91875pt x 803.0pt>
+<./images/pca3d.png, id=925, 1048.91875pt x 803.0pt>
 File: ./images/pca3d.png Graphic file (type png)
 <use ./images/pca3d.png>
 Package pdftex.def Info: ./images/pca3d.png  used on input line 19.
 (pdftex.def)             Requested size: 216.24373pt x 165.53502pt.
-[27 <./images/tsneAfterChainRemoved(50Percent).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[26 <./images/tsneTestSubjectsColor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . manifold .
  []
 
-[28 <./images/pca2d.png> <./images/pca3d.png>]
-
-LaTeX Warning: Reference `compareAveragePerplexity' on page 29 undefined on input line 39.
-
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png, id=751, 782.925pt x 518.93875pt>
+[27 <./images/tsneAfterChainRemoved(50Percent).png> <./images/pca2d.png> <./images/pca3d.png>]
+<./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png, id=951, 782.925pt x 518.93875pt>
 File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png Graphic file (type png)
 <use ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png  used on input line 48.
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png  used on input line 50.
 (pdftex.def)             Requested size: 364.19667pt x 241.39905pt.
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png, id=752, 397.485pt x 519.9425pt>
+<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png, id=952, 397.485pt x 519.9425pt>
 File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png Graphic file (type png)
 <use ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png  used on input line 55.
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png  used on input line 57.
 (pdftex.def)             Requested size: 182.09486pt x 238.2006pt.
-
-LaTeX Warning: Reference `appendix:compareAverageLearningRate' on page 29 undefined on input line 62.
-
-
-LaTeX Warning: Reference `appendig:compareLearningRate20and800' on page 29 undefined on input line 62.
-
-
-LaTeX Warning: Reference `figure:learningRateEvaluationScoresAverageDetailed4' on page 29 undefined on input line 62.
-
-
-LaTeX Warning: Reference `figure:1h-learningRateComparison20and800' on page 29 undefined on input line 62.
-
-
-LaTeX Warning: Reference `figure:3h-learningRateComparison20and800' on page 29 undefined on input line 62.
-
-[29 <./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png, id=764, 817.0525pt x 521.95pt>
+ [28] [29 <./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png> <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>]
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png, id=976, 817.0525pt x 521.95pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png  used on input line 71.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png  used on input line 73.
 (pdftex.def)             Requested size: 364.19667pt x 232.66124pt.
- [30 <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png, id=770, 696.6025pt x 521.95pt>
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png, id=977, 696.6025pt x 521.95pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png  used on input line 78.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png  used on input line 80.
 (pdftex.def)             Requested size: 364.19667pt x 272.88098pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png, id=771, 697.60625pt x 519.9425pt>
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png, id=978, 697.60625pt x 519.9425pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png  used on input line 85.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png  used on input line 87.
 (pdftex.def)             Requested size: 364.19667pt x 271.4427pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png, id=772, 698.61pt x 523.9575pt>
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png, id=979, 698.61pt x 523.9575pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png  used on input line 92.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png  used on input line 94.
 (pdftex.def)             Requested size: 364.19667pt x 273.14703pt.
- [31 <./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>] [32 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png> <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png>] [33 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
+ [30] [31 <./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png> <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png>] [32 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png> <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
-<./images/kDistGraphDBSCAN1h.png, id=796, 450.68375pt x 331.2375pt>
+<./images/kDistGraphDBSCAN1h.png, id=1005, 450.68375pt x 331.2375pt>
 File: ./images/kDistGraphDBSCAN1h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN1h.png>
 Package pdftex.def Info: ./images/kDistGraphDBSCAN1h.png  used on input line 26.
 (pdftex.def)             Requested size: 198.03008pt x 145.54782pt.
-<./images/kDistGraphDBSCAN3h.png, id=797, 470.75874pt x 346.29375pt>
+<./images/kDistGraphDBSCAN3h.png, id=1006, 470.75874pt x 346.29375pt>
 File: ./images/kDistGraphDBSCAN3h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN3h.png>
 Package pdftex.def Info: ./images/kDistGraphDBSCAN3h.png  used on input line 32.
 (pdftex.def)             Requested size: 227.62206pt x 167.43971pt.
-[34
+[33
 
  <./images/kDistGraphDBSCAN1h.png> <./images/kDistGraphDBSCAN3h.png>]
-<./images/clusteringResults/1h-1-DBSCAN.png, id=807, 1205.50375pt x 862.22125pt>
+<./images/clusteringResults/1h-1-DBSCAN.png, id=1016, 1205.50375pt x 862.22125pt>
 File: ./images/clusteringResults/1h-1-DBSCAN.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-DBSCAN.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-DBSCAN.png  used on input line 47.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-DBSCAN.png, id=808, 1205.50375pt x 862.22125pt>
+(pdftex.def)             Requested size: 216.24373pt x 154.65372pt.
+<./images/clusteringResults/3h-1-DBSCAN.png, id=1017, 1205.50375pt x 862.22125pt>
 File: ./images/clusteringResults/3h-1-DBSCAN.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-DBSCAN.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-DBSCAN.png  used on input line 53.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+(pdftex.def)             Requested size: 216.24373pt x 154.65372pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
- []
-
-<./images/clusteringResults/1h-1-OPTICS-xi.png, id=814, 1205.50375pt x 862.22125pt>
-File: ./images/clusteringResults/1h-1-OPTICS-xi.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-OPTICS-xi.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS-xi.png  used on input line 75.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-OPTICS-xi.png, id=815, 1205.50375pt x 862.22125pt>
-File: ./images/clusteringResults/3h-1-OPTICS-xi.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-OPTICS-xi.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS-xi.png  used on input line 81.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-[35 <./images/clusteringResults/1h-1-DBSCAN.png> <./images/clusteringResults/3h-1-DBSCAN.png>]
-<./images/clusteringResults/1h-1-reachabilityPlot-xi.png, id=826, 1567.8575pt x 862.22125pt>
-File: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-reachabilityPlot-xi.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png  used on input line 93.
-(pdftex.def)             Requested size: 227.62206pt x 125.17017pt.
-<./images/clusteringResults/3h-1-reachabilityPlot-xi.png, id=827, 1567.8575pt x 862.22125pt>
-File: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-reachabilityPlot-xi.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png  used on input line 99.
-(pdftex.def)             Requested size: 227.62206pt x 125.17017pt.
-<./images/clusteringResults/1h-1-OPTICS.png, id=828, 1205.50375pt x 862.22125pt>
-File: ./images/clusteringResults/1h-1-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS.png  used on input line 111.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-OPTICS.png, id=829, 1205.50375pt x 862.22125pt>
-File: ./images/clusteringResults/3h-1-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS.png  used on input line 117.
-(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
- [36 <./images/clusteringResults/1h-1-OPTICS-xi.png> <./images/clusteringResults/3h-1-OPTICS-xi.png> <./images/clusteringResults/1h-1-reachabilityPlot-xi.png> <./images/clusteringResults/3h-1-reachabilityPlot-xi.png>]
-<./images/clusteringResults/1h-1-reachabilityPlot.png, id=838, 1567.8575pt x 862.22125pt>
-File: ./images/clusteringResults/1h-1-reachabilityPlot.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-reachabilityPlot.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot.png  used on input line 129.
-(pdftex.def)             Requested size: 227.62206pt x 125.17017pt.
-<./images/clusteringResults/3h-1-reachabilityPlot.png, id=839, 1567.8575pt x 862.22125pt>
-File: ./images/clusteringResults/3h-1-reachabilityPlot.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-reachabilityPlot.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot.png  used on input line 135.
-(pdftex.def)             Requested size: 227.62206pt x 125.17017pt.
-)
-Overfull \hbox (13.39928pt too wide) in paragraph at lines 59--59
-|[]\OT1/ptm/b/n/14.4 Comparison and eval-u-a-tion of clus-ter re-sults from dif-fer-ent time lengths| 
- []
-
-(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
-[][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
-\OT1/pcr/m/n/10 silhouette _ score . html$[][]\OT1/ptm/m/n/10 , [][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--5
-\OT1/pcr/m/n/10 sklearn . metrics . davies _ bouldin _ score . html$[][]\OT1/ptm/m/n/10 , and [][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org /
- []
-
-[37 <./images/clusteringResults/1h-1-OPTICS.png> <./images/clusteringResults/3h-1-OPTICS.png> <./images/clusteringResults/1h-1-reachabilityPlot.png> <./images/clusteringResults/3h-1-reachabilityPlot.png>]
-
-LaTeX Warning: Reference `igure:clusteringResults8' on page 38 undefined on input line 11.
-
-<./images/clusteringResults/clusteringResults1.png, id=867, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults1.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults1.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults1.png  used on input line 34.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResults2.png, id=868, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults2.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults2.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults2.png  used on input line 41.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResults3.png, id=869, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults3.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults3.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults3.png  used on input line 49.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResults4.png, id=874, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults4.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults4.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults4.png  used on input line 56.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResults5.png, id=875, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults5.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults5.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults5.png  used on input line 63.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResults6.png, id=876, 702.625pt x 520.94624pt>
-File: ./images/clusteringResults/clusteringResults6.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults6.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults6.png  used on input line 70.
-(pdftex.def)             Requested size: 364.19667pt x 270.03511pt.
-<./images/clusteringResults/clusteringResultsGraph1h.png, id=887, 863.225pt x 548.0475pt>
-File: ./images/clusteringResults/clusteringResultsGraph1h.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResultsGraph1h.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph1h.png  used on input line 81.
-(pdftex.def)             Requested size: 364.19667pt x 231.21533pt.
-<./images/clusteringResults/clusteringResultsGraph3h.png, id=888, 923.45pt x 545.03625pt>
-File: ./images/clusteringResults/clusteringResultsGraph3h.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResultsGraph3h.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph3h.png  used on input line 88.
-(pdftex.def)             Requested size: 364.19667pt x 214.95013pt.
-<./images/clusteringResults/clusteringResultsGraphTotal.png, id=889, 899.36pt x 563.10374pt>
-File: ./images/clusteringResults/clusteringResultsGraphTotal.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResultsGraphTotal.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraphTotal.png  used on input line 95.
-(pdftex.def)             Requested size: 364.19667pt x 228.02998pt.
-<./images/clusteringResults/clusteringResults8.png, id=890, 605.26125pt x 262.9825pt>
-File: ./images/clusteringResults/clusteringResults8.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults8.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults8.png  used on input line 116.
-(pdftex.def)             Requested size: 364.19667pt x 158.24013pt.
-) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [38] [39 <./images/clusteringResults/clusteringResults1.png> <./images/clusteringResults/clusteringResults2.png>] [40 <./images/clusteringResults/clusteringResults3.png> <./images/clusteringResults/clusteringResults4.png>] [41 <./images/clusteringResults/clusteringResults5.png> <./images/clusteringResults/clusteringResults6.png>] [42 <./images/clusteringResults/clusteringResultsGraph1h.png> <./images/clusteringResults/clusteringResultsGraph3h.png>] [43 <./images/clusteringResults/clusteringResultsGraphTotal.png> <./images/clusteringResults/clusteringResults8.png>] [44]
-Overfull \hbox (49.9578pt too wide) in paragraph at lines 235--235
-[][]\OT1/ptm/m/n/12 Cao, Yan-shuai, and Luyu Wang. 2017. \  Au-to-matic Se-lec-tion of t-SNE Per-plex-ity." \OT1/ptm/m/sl/12 CoRR \OT1/ptm/m/n/12 abs/1708.03229.
- []
-
-
-Overfull \hbox (4.0431pt too wide) in paragraph at lines 235--235
-[][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. \  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather."
- []
-
-[45]
-Overfull \hbox (17.45934pt too wide) in paragraph at lines 235--235
-[][]\OT1/ptm/m/n/12 Romesburg, H. Charles. 2004. \OT1/ptm/m/sl/12 Clus-ter Anal-y-sis for Re-searchers. \OT1/ptm/m/n/12 Lulu Press. \OT1/ptm/m/sc/12 isbn\OT1/ptm/m/n/12 : 9781411606173. 
- []
-
-[46] [47] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-
-Overfull \hbox (13.03906pt too wide) in paragraph at lines 40--41
-[]\OT1/ptm/m/n/12 Rohdaten und auf-bere-it-ete Daten der Evaluierun-gen (Log-Daten, Tabellen, Graphen, Scripts,
- []
-
-
-Overfull \hbox (20.95569pt too wide) in paragraph at lines 45--46
-[][][]$\OT1/pcr/m/n/12 https : / / gitlab . mediacube . at / fhs123456 / Abschlussarbeiten-[]Max-[]Muster$[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-[][]$\OT1/pcr/m/n/12 http : / / web . archive . org / web / 20160526143921 / http : / / www .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-\OT1/pcr/m/n/12 gamedev . net / page / resources / _ / technical / game-[]programming /
- []
-
-[48
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-[][][]$\OT1/pcr/m/n/12 http : / / web . archive . org / web / 20160526144551 / http : / / scottbilas .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
-\OT1/pcr/m/n/12 com / files / 2002 / gdc _ san _ jose / game _ objects _ slides _ with _ notes . pdf$[][]\OT1/ptm/m/n/12 ,
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
- [49]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
- (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5C84A1F033ACF8FBCB4954CC8799A710;3162.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
- ) 
-Here is how much of TeX's memory you used:
- 22038 strings out of 492162
- 390467 string characters out of 6125292
- 1207823 words of memory out of 5000000
- 25699 multiletter control sequences out of 15000+600000
- 52315 words of font info for 113 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 80i,9n,131p,2596b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (57 pages, 10330016 bytes).
-PDF statistics:
- 1072 PDF objects out of 1200 (max. 8388607)
- 894 compressed objects within 9 object streams
- 195 named destinations out of 1000 (max. 500000)
- 568 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+[][][][][]$\OT1
