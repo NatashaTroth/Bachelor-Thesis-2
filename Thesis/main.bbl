@@ -379,19 +379,19 @@
            given={Tadeusz},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=1cf2025c111a14c25a5710b8191d3409}{%
-           family={JA},
-           familyi={J\bibinitperiod},
-           given={Harabasz},
-           giveni={H\bibinitperiod},
+        {{un=0,uniquepart=base,hash=b8da180a2207695ec60cef5f87874b33}{%
+           family={Harabasz},
+           familyi={H\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
-      \strng{fullhash}{dd87803cd47dd22bf6cf5904c61ae4a9}
-      \strng{bibnamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
-      \strng{authorbibnamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
-      \strng{authornamehash}{dd87803cd47dd22bf6cf5904c61ae4a9}
-      \strng{authorfullhash}{dd87803cd47dd22bf6cf5904c61ae4a9}
+      \strng{namehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{fullhash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{bibnamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{authorbibnamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{authornamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{authorfullhash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
@@ -1015,34 +1015,6 @@
       \verb 10.1145/2896338.2896359
       \endverb
     \endentry
-    \entry{romesburg2004cluster}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=957d5b35eceef614bce9b95c97202696}{%
-           family={Romesburg},
-           familyi={R\bibinitperiod},
-           given={H.\bibnamedelimi Charles},
-           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Lulu Press}%
-      }
-      \strng{namehash}{957d5b35eceef614bce9b95c97202696}
-      \strng{fullhash}{957d5b35eceef614bce9b95c97202696}
-      \strng{bibnamehash}{957d5b35eceef614bce9b95c97202696}
-      \strng{authorbibnamehash}{957d5b35eceef614bce9b95c97202696}
-      \strng{authornamehash}{957d5b35eceef614bce9b95c97202696}
-      \strng{authorfullhash}{957d5b35eceef614bce9b95c97202696}
-      \field{sortinit}{R}
-      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781411606173}
-      \field{title}{Cluster Analysis for Researchers}
-      \field{year}{2004}
-    \endentry
     \entry{rousseeuw1987silhouettes}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
@@ -1256,6 +1228,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{romesburg2004cluster}
 \endrefsection
 \endinput
 

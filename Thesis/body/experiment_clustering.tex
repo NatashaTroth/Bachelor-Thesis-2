@@ -27,6 +27,7 @@ Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clusterin
   \caption{1h data set}
   \label{figure:kDistGraphDBSCAN1h}
   \end{subfigure}%
+  \hfill
   \begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/kDistGraphDBSCAN3h.png}
@@ -42,13 +43,14 @@ The DBSCAN method was applied, with the parameters eps = 2 and min\_samples (Min
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}{.475\textwidth}
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-DBSCAN.png}
   \caption{1h data set DBSCAN clustering (first column - 15 min).}
   % \label{figure:1h-1-DBSCAN}
   \end{subfigure}%
-  \begin{subfigure}{.475\textwidth}
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-DBSCAN.png}
     \caption{3h data set DBSCAN clustering (first column - 30 min).}
@@ -75,13 +77,14 @@ ty plot to bar chart}
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}{.475\textwidth}
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-OPTICS-xi.png}
   \caption{1h data set OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
   % \label{figure:1h-1-OPTICS}
   \end{subfigure}%
-  \begin{subfigure}{.475\textwidth}
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-OPTICS-xi.png}
     \caption{3h data set OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
@@ -93,13 +96,13 @@ ty plot to bar chart}
 
   \begin{figure}[H]
     \centering
-    \begin{subfigure}{.475\textwidth}
+    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-reachabilityPlot-xi.png}
     \caption{1h data set OPTICS clustering (first column - 15 min), using OPTICS automatic cluster extraction (xi).}
     % \label{figure:1h-1-reachabilityPlot}
     \end{subfigure}%
-    \begin{subfigure}{.475\textwidth}
+    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-reachabilityPlot-xi.png}
       \caption{3h data set OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
@@ -111,13 +114,14 @@ ty plot to bar chart}
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}{.475\textwidth}
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-OPTICS.png}
   \caption{1h data set OPTICS clustering (first column - 15 min), using DBSCAN clustering.}
   % \label{figure:1h-1-OPTICS}
   \end{subfigure}%
-  \begin{subfigure}{.475\textwidth}
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-OPTICS.png}
     \caption{3h data set OPTICS clustering (first column - 30 min), using DBSCAN clustering.}
@@ -129,13 +133,14 @@ ty plot to bar chart}
 
 \begin{figure}[H]
   \centering
-  \begin{subfigure}{.475\textwidth}
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-reachabilityPlot.png}
   \caption{1h data set OPTICS clustering (first column - 15 min), using DBSCAN clustering.}
   % \label{figure:1h-1-reachabilityPlot}
   \end{subfigure}%
-  \begin{subfigure}{.475\textwidth}
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-reachabilityPlot.png}
     \caption{3h data set OPTICS clustering (first column - 30 min), using DBSCAN clustering.}
@@ -144,6 +149,10 @@ ty plot to bar chart}
   \caption{}
   \label{figure:OPTICSResultsReachabilityPlot}
   \end{figure}
+
+
+
+The final DBSCAN and OPTICS clusterings scatter plots for each time delta are compared in appendix \ref{appendix:clusteringResults}.
 
 % \begin{figure}[H]
 %   \centering

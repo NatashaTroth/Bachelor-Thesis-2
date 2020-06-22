@@ -61,11 +61,11 @@ To aid in selecting the perplexity that creates the best clusters, the three mat
 
 
 The same principle was used to determine the ideal value for the learning rate parameter. The sklearn t-SNE documentation states, that the learning rate is normally set between 10 and 1000, hence the learning rate in the scatter plots was chosen in this interval.
-The various resulting scatter plots can be seen in the appendix \ref{appendix:tSNEParametersLearningRate}. The differences in the arrangement of the data points over the plots is not as substantial as it was when testing for the perplexity. The results, listed in figure \ref{figure:learningRateEvaluationScores} reveal, that the learning rate 10 scores highest with a learning rate of 800 coming in second. Since roughly 200 steps were taken when testing the learning rate value, smaller steps were taken (i.e. 50) around the winning value to see if an even better performance could be accomplished (figure \ref{figure:learningRateEvaluationScoresDetailed}). While 10 still achieved best in the one hour time length files, 800 came top in the three hour files, indicating that 10 might not be the best rate for these. Consequently, the values 20 and 30 were also evaluated (figure \ref{figure:learningRateEvaluationScoresDetailed2}). While a learning rate of 10 still came top in the one hour files, 30 came top in the three hour files. With the hope of finding a value in between 10 and 30 that satisfied both time lengths, the learning rates 10, 15, 20, 25, and 30 were ultimately compared exclusively. The results in figure \ref{figure:learningRateEvaluationScoresDetailed3} reveal, that this final comparison lead to the learning rate 20 being the most suitable. As with the perplexity, the learning rate tests were also reproduced, averaging two different t-SNE outcomes. The results are illustrated in appendix \ref{appendix:compareAverageLearningRate}. In general, the results are similiar. 800 appears to more dominant than the lower parameter values (e.g. 10 and the favourite 20). To further compare 20 and 800, appendix \ref{appendig:compareLearningRate20and800} contains a table (figure \ref{figure:learningRateEvaluationScoresAverageDetailed4}) comparing 4 different runs of scores from average t-SNE results. With 2 wins more than 20, 800 has the overall better score results. Figures \ref{figure:1h-learningRateComparison20and800} and \ref{figure:3h-learningRateComparison20and800} visually compare the scatter plots created with a learning rate of 20 and 800. The plots and clusters appear very similar. The clusters from perplexity 20 however seem slightly more compact (less smaller clusters). A learning rate of 20 was thus selected for the final learning rate parameter. However, 800 was also used in the final results.
+The various resulting scatter plots can be seen in the appendix \ref{appendix:tSNEParametersLearningRate}. The differences in the arrangement of the data points over the plots is not as substantial as it was when testing for the perplexity. The results, listed in figure \ref{figure:learningRateEvaluationScores} reveal, that the learning rate 10 scores highest with a learning rate of 800 coming in second. Since roughly 200 steps were taken when testing the learning rate value, smaller steps were taken (i.e. 50) around the winning value to see if an even better performance could be accomplished (figure \ref{figure:learningRateEvaluationScoresDetailed}, in appendix \ref{appendix:comparelearningRateDetailed}). While 10 still achieved best in the one hour time length files, 800 came top in the three hour files, indicating that 10 might not be the best rate for these. Consequently, the values 20 and 30 were also evaluated (figure \ref{figure:learningRateEvaluationScoresDetailed2}, in appendix \ref{appendix:comparelearningRateDetailed}). While a learning rate of 10 still came top in the one hour files, 30 came top in the three hour files. With the hope of finding a value in between 10 and 30 that satisfied both time lengths, the learning rates 10, 15, 20, 25, and 30 were ultimately compared exclusively. The results in figure \ref{figure:learningRateEvaluationScoresDetailed3} reveal, that this final comparison lead to the learning rate 20 being the most suitable. As with the perplexity, the learning rate tests were also reproduced, averaging two different t-SNE outcomes. The results are illustrated in appendix \ref{appendix:compareAverageLearningRate}. In general, the results are similiar. 800 appears to more dominant than the lower parameter values (e.g. 10 and the favourite 20). To further compare 20 and 800, appendix \ref{appendig:compareLearningRate20and800} contains a table (figure \ref{figure:learningRateEvaluationScoresAverageDetailed4}) comparing 4 different runs of scores from average t-SNE results. With 2 wins more than 20, 800 has the overall better score results. Figures \ref{figure:1h-learningRateComparison20and800} and \ref{figure:3h-learningRateComparison20and800} visually compare the scatter plots created with a learning rate of 20 and 800. The plots and clusters appear very similar. The clusters from perplexity 20 however seem slightly more compact (less smaller clusters). A learning rate of 20 was thus selected for the final learning rate parameter. However, 800 was also used in the final results.
 
 % These tests were conducted a second time (see apendix \textbf{todo}), using the average of two different t-SNE results for each time length (1h and 3h). While the scores are slightly different, a perplexity of 40 was again the overall result.
 
-The final t-SNE parameters, from which the results were then used by the DBSCAN and OPTICS clustering methods in the next section, were as follows: perplexity=40, learning\_rate = 20, and n\_iter=5000.
+The final t-SNE parameters, from which the results were then used by the DBSCAN and OPTICS clustering methods in the next section, were as follows: perplexity = 40, learning\_rate = 20, and n\_iter = 5000. A run of the resulting graphs are depicted in figures \ref{figure:finalTSNE1h} and \ref{figure:finalTSNE3h}.
 
 
 \begin{figure}
@@ -75,19 +75,19 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
   \label{figure:learningRateEvaluationScores}
 \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-  \label{figure:learningRateEvaluationScoresDetailed}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
+%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+%   \label{figure:learningRateEvaluationScoresDetailed}
+% \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-  \label{figure:learningRateEvaluationScoresDetailed2}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
+%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+%   \label{figure:learningRateEvaluationScoresDetailed2}
+% \end{figure}
 
 \begin{figure}
   \centering
@@ -97,7 +97,45 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
 \end{figure}
 
 
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNE.png}
+  % \caption{}
+  % \label{figure:}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png}
+    % \caption{}
+    % \label{figure:}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
+  \label{figure:finalTSNE3h}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNE.png}
+  % \caption{}
+  % \label{figure:}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png}
+    % \caption{}
+    % \label{figure:}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
+  \label{figure:finalTSNE1h}
+\end{figure}
 
 
 
-\clearpage
+
+
+% \clearpage

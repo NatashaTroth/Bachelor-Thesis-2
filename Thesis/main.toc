@@ -1,0 +1,142 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {ngerman}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Related work}{2}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Literature Review}{6}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Data Mining}{6}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Data Preprocessing}{7}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Noisy Data}{8}{subsubsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.2}Missing Values}{8}{subsubsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.3}Normalisation}{9}{subsubsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Dimensionality Reduction}{10}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}Principal Components Analysis (PCA)}{10}{subsubsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}t-Distributed Stochastic Neighbor Embedding (t-SNE)}{11}{subsubsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Cluster Analysis}{12}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Overview of clustering algorithms}{13}{subsection.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1}Partitioning Methods}{14}{subsubsection.3.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2}Hierarchical Methods}{14}{subsubsection.3.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.3}Density-Based Methods}{14}{subsubsection.3.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {3.5.3.1}DBSCAN}{15}{paragraph.3.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {3.5.3.2}OPTICS}{16}{paragraph.3.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.4}Grid-Based Methods}{17}{subsubsection.3.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Evaluating clustering results}{17}{subsection.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.1}Assessment of the cluster tendency}{18}{subsubsection.3.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.2}Evaluation of the cluster quality}{18}{subsubsection.3.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {3.6.2.1}Silhouette Coefficient}{18}{paragraph.3.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {3.6.2.2}Davies-Bouldin Index}{19}{paragraph.3.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {3.6.2.3}Caliński-Harabasz Index}{20}{paragraph.3.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.3}Establishing the number of clusters}{20}{subsubsection.3.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Method}{20}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Preparation of the Data Set}{22}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Missing Values}{22}{subsubsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{22}{subsubsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3}Selection of columns (attributes)}{23}{subsubsection.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.4}Chain shaped data}{23}{subsubsection.4.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{26}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}PCA}{26}{subsubsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}t-SNE}{28}{subsubsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Clustering}{30}{subsection.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{33}{subsubsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{34}{subsubsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of cluster results from different time lengths}{36}{subsection.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Discussion}{40}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusion}{42}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{46}{section*.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{46}{Appendix.a.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}Perplexity}{46}{subsection.a.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.1}Perplexity = 5}{46}{subsubsection.a.A.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.2}Perplexity = 10}{47}{subsubsection.a.A.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.3}Perplexity = 20}{48}{subsubsection.a.A.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.4}Perplexity = 30}{49}{subsubsection.a.A.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.5}Perplexity = 40}{50}{subsubsection.a.A.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.6}Perplexity = 45}{51}{subsubsection.a.A.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.7}Perplexity = 50}{52}{subsubsection.a.A.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.1.8}Perplexity Comparison Results (Average of two different t-SNE runs)}{53}{subsubsection.a.A.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}Learning Rate}{54}{subsection.a.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.1}Learning Rate = 10}{54}{subsubsection.a.A.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.2}Learning Rate = 200}{55}{subsubsection.a.A.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.3}Learning Rate = 400}{56}{subsubsection.a.A.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.4}Learning Rate = 600}{57}{subsubsection.a.A.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.5}Learning Rate = 800}{58}{subsubsection.a.A.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.6}Learning Rate = 1000}{59}{subsubsection.a.A.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.7}Learning Rate Detailed Comparison Results }{61}{subsubsection.a.A.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.8}Learning Rate Comparison Results (Average of two different t-SNE runs)}{61}{subsubsection.a.A.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.2.9}Learning Rate Comparison of 20 and 800}{64}{subsubsection.a.A.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}Clustering results}{66}{subsection.a.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.3.1}1h aggregated data files}{66}{subsubsection.a.A.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {A.3.2}3h aggregated data files}{68}{subsubsection.a.A.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.4}Clustering evaluation results}{71}{subsection.a.A.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}git-Repository}{75}{Appendix.a.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{75}{Appendix.a.C}%

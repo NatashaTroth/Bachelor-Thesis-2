@@ -72,7 +72,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
     print("calculating TSNE...")
     print(df)
     tsne = TSNE(n_components=number_components,
-                init='random', perplexity=40, n_iter=5000, learning_rate=800)
+                init='random', perplexity=40, n_iter=5000, learning_rate=20)
 
     # tsne_results = tsne.fit_transform(df)
     tsne_results = tsne.fit_transform(df.to_numpy())

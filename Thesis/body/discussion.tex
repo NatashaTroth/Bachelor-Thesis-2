@@ -1,11 +1,94 @@
-%(1000 words)
-% in discussion.tex
+% Interpretations: what do the results mean?
+% Implications: why do the results matter?
+% Limitations: what can’t the results tell us?
+% Recommendations: what practical actions or scientific studies should follow?
+
+Section \ref{section:ExperimentComparisonTimeLengths} reveals, that the 2h time length produced the most distinct and well defined clusters, according to the average Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index results. The 1h time length (from the 3h data set) came second, and the 30 min time delta (from the 1h data set) came third. When considering the highest number of evaluation score "wins" over different t-SNE and clustering results, the 30 min time delta (from the 1h data set) however came top, followed by the 1h time length (from the 3h data set) and then the 2h time length (see figure \ref{figure:clusteringResultsGraphTotal}). It can therefore be concluded, that these 3 time deltas are the best performers.
+
+To determine whether the 1 hour or 3 hour aggregation files led to better clusters, the average results of both time files are compared in figure \ref{figure:clusteringResults7}. Both the 1h and 3h data sets have the same amount of "wins". When scanning other comparisons of these files (also the ones concluded for finding the t-SNE parameters), it is noticeable, that the 1h and 3h data sets either have the same number of "wins", or the 3h data set has more. This indicates that overall, the three hour aggregation files produce more superior clusters.
 
 
-CHAIN ARGUMENTATION, e.g. explain why data from the same person could be together
-Answer research question by creating hypothesis (which i don't have to answer though)
+The 45 minute time delta in the 1 hour data files performed the lowest, with 0 "wins". The fact that 45 never out performed the other time lengths shows consistency, despite the different results. 1h 30 min(3h), 1h(1h), 2h 30 min (3h) and 3h (3h) all had no more than 2 wins. 
 
-can also see, when was comparing perplexity, learning rate - the 3h files mostly had the better values
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/clusteringResults/clusteringResults7.png}
+  \caption{Evaluation scores comparison from averaged 1h and 3h run of t-SNE and clustering.}
+  \label{figure:clusteringResults7}
+\end{figure}
+
+
+The results from \textcite{AboutToEat2016Rahman} (as mentioned in section \ref{section:RelatedWork}) showed, that higher time lengths (e.g. 100 minutes) performed better than shorter ones. They deducted, that smaller window sizes were susceptible to noise and had a higher gap between precision (exactness) and recall (completeness). 
+% Coarser ones however were unable to detect recent events, though performed better in the comparison of precision and recall.
+This discovery could also apply to the results of this experiment, considering that the 2h and 1h time lengths in the three hour data files were under the top 3 results.
+
+
+Of the 36 number of "wins" across all time deltas (the 1h and 3h aggregation files combined), 14 of these were achieved by the 1h data file time lengths (38.9\%), the other 22 by the 3 hour data set (61.1\%). A possible explanation, as to why the 3h data set might have created better clusters, was that the data set had more rows. After the data preparation step, the 1h aggregation set was left with an average (depending on number of time length columns considered) of 1654 rows, whilst the 3h set was left with over double the amount of rows with an average of 3976.5 rows. The use of more data could have resulted in more similar rows and more improved clusters. Another aspect to consider, is that shorter sensor data recorded for shorter time lengths might not be long enough to detect underlying stress patterns.
+
+Moreover, the higher the number of rows, the more robust the clusters could be towards potential outliers. As explained in section \ref{section:silhouetteCoefficient}, the Silhouette Score compares the within cluster distances to the distance of a neighbouring cluster. If many points are well placed within a cluster, an outlier will have little impact against the many short distances. However, if the cluster is not very dense and only contains a few "good" assigned data points, an outlier could have a larger impact on the result.
+
+
+In order to provide "just in time" aid, the SmartEater app would need to predict upcoming stress. Stress can be longer and build slowly (e.g. increasing worry as an exam gets closer), or sudden (e.g. find out you have failed an exam). \textbf{Kann ich das so sagen (ohne Zitat)? - weil es ist glaube ich eher etwas allgemein bekanntes.} The data points would need to account for and recognise these different lengths of stress. For example, if stress is short, then a longer time delta will likely make it seem less relevant, compared to all the unstressed data. However, if it is long, a shorter time delta might miss it or only perceive a small part of it. This could lead to false cluster assignments or noise. However, it could also create its own clusters. This could be the reason why middle time lengths, such as 2h, 1h (3h data files) created more distinct clusters, since it may have been more likely to recognise these differences. The fact that there was not one specific time length that always performed higher than the others shows, that a single time length may not be enough to be able to create clear clusters. Different time lengths might be needed to detect different patterns.
+
+When visually comparing the clusters in appendix \ref{appendix:clusteringResults}, the 3h data sets appear to be denser, whilst the 1h data sets have more whitespace. The 1h data set top performer, 30 minutes, seems to be scattered to a slightly different shape to the other scatter plots of the 1h data set. It appears to be spread out wider along the x axis, more like the 3h data files. The 30 minute time length achieved the highest number of wins in the 1h data set. It could be argued, that the shape of the scattering of the points with similarity to the 3h data scatter plots, that also performed well, could be an indicator for more enhanced clustering results.
+
+
+
+For future work, it might be advisable to get more data from users for a longer period of time. However, it would also be necessary confirm that the clusters were created for stress/not stress and for each user (since users behaviour could exhibit similarities). It might also be beneficial to support the mathematical evaluations with hand drawn clusters found by test users in user studies. Especially since the scores are different each time t-SNE is computed, sometimes leading to different results.
+% The fact however, that there might not be one specific time delta that is most suitable across all users.
+
+% The time lengths that average multiple columns could create rows with more values, .
+% maybe more columns - made the data more different in higher - but too high too different more scattered
+
+% For future work, it might be advisable to get more data from users for a longer period of time. However, it would also be necessary confirm that the clusters were created for stress/not stress and for each user (since users behaviour could exhibit similarities). It might also be beneficial to support the mathematical evaluations with hand drawn clusters found by test users in user studies. Especially since the scores are different each time t-SNE is computed, sometimes leading to different results.
+
+%todo: especially since the maths evaluation score
+
+% higher amount of rows - more robust to outliers
+
+ 
+
+% 30 min performed well in both aggregations
+
+
+
+%1: 1. Adam, T.C., Epel, E.S.: Stress, eating and the reward system. Physiology & behavior 91(4), 449–458 (2007)
+%21: 21. Schwabe, L., Dickinson, A., Wolf, O.T.: Stress, habits, and drug addiction: a psychoneuroendocrinological perspective. Experimental and clinical psychopharmacology 19(1), 53 (2011)
+
+
+
+
+
+%1h-1: 1681, 3h-1: 3949
+%1h-2: 1655, 3h-2: 3987
+%1h-3: 1650, 3h-3: 3967
+%1h-4: 1630, 3h-4: 3951
+%----------, 3h-5: 3993
+%----------, 3h-6: 4012
+%----------------------
+%averages:
+%----------------------
+%
+%
+%
+
+
+% Naturally, this reduced the total number of rows left. As an example, the number of rows left for the 1h data files only using the first feature columns (15 min) was 1681 from initial 8283 (20.29\%). In the 3h data set (first column, 30 min) only 3949 from 14091 rows remained (28.02\%).
+
+
+
+
+
+
+
+
+
+
+% CHAIN ARGUMENTATION, e.g. explain why data from the same person could be together
+% Answer research question by creating hypothesis (which i don't have to answer though)
+
+% can also see, when was comparing perplexity, learning rate - the 3h files mostly had the better values
 % Spalten wie NOTIF, SCRN, APP.. haben sehr oft 0 und sind auch teilweise von einander abhängig. Z.B. Wenn SCRN ausgeschaltet ist, ist in den meisten Spalten auch LIGHT, die APP Spalten und auch oft NOTIF 0. NOTIF ist generell sehr oft 0, weil man nicht ständig Notifikationen bekommt. LIGHT ist die Umgebungslicht. Oft wenn man das Handy nicht benutzt, hat man es in eine Tasche. Aus diesem Grund gibt es sehr viele ähnliche Spalten. (Ich habe auch nachgeschaut welche Spalten in diese Schleife sind und es sind fast immer solche (außer ein paar Ausreßer)).
 % Weiters kann man sehen, wenn SCRN 0 ist und es gibt Notifikationen, dann gibt es auch bei einer der APP Spalten Aktivität. Od ab und zu, wenn der SCRN angegangen ist, dann zeigt auch eine APP Aktivität.
 
@@ -14,7 +97,10 @@ can also see, when was comparing perplexity, learning rate - the 3h files mostly
 % Man sieht auch, dass öfters die Punkte von der gleichen Test Person gemeinsam „angehäufelt“ sind. Dies könnte sich vielleicht erklären lassen, dass die Daten einer Testperson ähnlich sind, weil er/sie die ähnlichen Handlungen machen (z.B. ähnliche schnelle Bewegungen, ähnliche Lautstärke, …)
 
 
-3h file might be better, cause got more lines, and was left with more lines. more columns - more features - 
 
 
-(Future): look over in more detail? or other evalutation methods, or also human look over
+
+% (Future): look over in more detail? or other evalutation methods, or also human look over
+
+
+\textbf{todo: finish}
