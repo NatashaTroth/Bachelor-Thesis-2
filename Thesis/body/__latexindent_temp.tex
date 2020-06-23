@@ -1,65 +1,154 @@
 
-As introduced in section \ref{section:Introduction}, SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} will be a mHealth (mobile health) app, that predicts future eating crises based on the user's past behaviour. The predictions are made on smartphone sensor and usage data, therefore reducing strenuous user input. The app will give the user content-dependent feedback, to avert a food craving episode. 
+
+\textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
+\begin{itemize}
+  \item Scalability
+  \item Ability to work with different attribute types
+  \item Recognising clusters with arbitrary shapes
+  \item Requirements for domain knowledge (for parameter selection)
+  \item Ability to handle noise
+  \item Incremental clustering (integrate updates without recomputation)
+  \item Insensitivity to the order of the input
+  \item Ability to cluster high-dimensional data 
+  \item Capability to cluster under certain constraints
+  \item Interpretability and usability of the results
+\end{itemize}
+% \begin{itemize}
+%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
+%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
+%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+%   \item Ability to handle noise (see section \ref{section:NoisyData})
+%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
+%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+%   \item Interpretability and usability of the results
+% \end{itemize}
+% \begin{itemize}
+%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
+%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
+%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+%   \item Ability to handle noise (see section \ref{section:NoisyData})
+%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
+%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+%   \item Interpretability and usability of the results
+% \end{itemize}
+
+% TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
+
+%TODO: check if all pages have been used - have been highlighting lines that have used test
+%TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
 
 
-%pages 1
-%in total, more or less all pages were used - therefore no pages
-\textcite{AboutToEat2016Rahman} introduced a similar idea in their paper. Their goal is to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). The authors state, that detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
-%page 2 - RELATED WORK
-%page 3:
-Rahman et al. learnt more on how people were currently tracking their meals by conducting a survey. The majority of participants stopped using a food tracking/journalling a tool,  48.9\% within the first month of using it. Respondents also  wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions.
-% that tried a revealed that they no longer use a food tracking/journalling a tool
+\textbf{todo: add images to compare how different methods cluster}
 
-% They asked 75 people with varied ages and body sizes. 34 of 75 participants revealed, that they had never used any type of eating tracking or food journals. The remaining 41 respondents were further asked how long they used the respective tool. 48.9\% of these had used the tool for less than a month. 65 of the 75 participants revealed that they no longer use a food tracking/journalling a tool. 
-% Further questions resulted in the following revelations: 33 of the 75 respondents wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions. Ideas for interventions included a calorie calculator, reminders to eat balanced or of calorie allowances, visualisations of previous food eaten, or a breakdown of the nutrients taken in.
-% %pages 1-2:
-The authors used a variety of different sensors to record the following data: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, electrodermal activity (good indicator for psychological arousal), chewing and swallowing sounds (for detection of current eating events) and GPS location. Furthermore, the test subjects recorded self-reports, such as when they started eating, emotional state when eating, intensity of desire/craving and hunger, and end of eating. Eight participants, aged 26-54, participated in this study for five days. The recorded data then underwent cleaning and preprocessing, feature extraction, feature selection and machine learning. 
-% Some of these steps included resampling, normalisation, recognising chewing and swallowing sounds, extracting longitude and longitude, etc. 
-In the feature extraction step, two parameters were used on the processed sensor time series to create windows. Firstly, the feature extraction window size parameter regulated the time duration in a specific window. While a short window duration could catch immediate characteristics in the sensor time series, a coarse one could be used for long term trends. The authors used a variety of window sizes, varying from 5 to 120 minutes. The prediction model results would decide the best window. The second parameter, the window shift size, established the time duration between two neighbouring windows, for example meaning window \textit{n} is shifted one minute compared to window \textit{(n - 1)}. A constant shift of one minute was used for all window sizes. Statistical functions (e.g. min, max, mean, standard deviation, etc.) were used to extract a total of 158 window-level features. Two features were added to the sensor streams: current time (minutes since the start of the day) and time since the last eating event (minutes) and number of eating events in that day.
-% Correlation-based Feature Selection (CFS) was used to select the 
-% In the feature selection step, the location features were dropped, since they merely represented noise.
 
-In the feature selection step, the most relevant features were selected (e.g. the location features were not beneficial and merely represented noise). Signal processing and machine learning were used on the sensor streams to train an "About-to-Eat" moment classifier. the classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarser ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
+\textcite{han2011data}[366-368,373, 374, 385] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods and grid-based methods.
+
+% (\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
+% \textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
+%TODO:maybe also look into performance comparisons
+  \subsubsection{Partitioning Methods}
+  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. Each group must contain at least one object. A data object can only be classified into one group (\textit{exclusive cluster separation}). Fuzzy partitioning methods relax this condition.
+  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects assigned to the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
+  
+
+
+
+
+  \subsubsection{Hierarchical Methods}
+  %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
+  The data is grouped into a hierarchy ("tree") of clusters. Depending on how the hierarchical decomposition is constructed, there are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a termination condition comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
+
+  % todo COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
+
+  
+%TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
+  %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
+  
+
+  \subsubsection{Density-Based Methods}
+  \label{section:densityBasedMethods}
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. These methods can also be used to cluster sub spaces. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS.
+
+  % Examples: DBSCAN, OPTICS, DENCLUE
+  %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
+
+
+
+\paragraph{DBSCAN}
+\label{section:DBSCAN}
+\textcite{DBSCAN}[226-229] introduce a new density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters with different shapes and work efficiently on large spatial datasets. The algorithm searches in a given radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exists, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of its Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius).
+% The goal is to keep adding neighbouring data points to the cluster
+% In doing so, core points and border points are distinguished.
+%todo: rewrite - that uses two global parameters instead of one - or say that only with one paramter
+According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
+
+\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the appropriate parameters for the "thinnest" cluster. The first step is to construct a sorted k-dist graph. For a specific \textit{k}, calculate the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour. Sort these distances in descending order and depict them on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour (the "thinnest" cluster). The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left with higher distances are likely to be noise and the points to the right are part of clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
+
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./images/windowSizePerformance.png}
-  \caption{This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.}
-  \label{figure:windowSize}
+  \includegraphics[width=0.5\textwidth]{./images/sortedKGraphDBSCAN.png}
+  \caption{Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) \autocite{DBSCAN}[230].}
+  \label{figure:sortedKGraphDBSCAN}
 \end{figure*}
 
-The performance for the "Time until Next Eating Event" model gained a correlation coefficient of 0.49. The most fitting feature extraction window size was assessed, the best performance was reached with a window size of 100 minutes. The authors further claim, that both models could be improved by incorporating person-dependent data from the target user to the models (e.g. person-specific eating pattern, lifestyle).
+% d = distance of point p to its k-th nearest neighbourhood
+% d-neighbourhood of p contains more than k+1 points - if several points have the same distance d from p as the kth point - unlikely
+%map each point from database to the distance from its kth nearest neighbour - sort in descending order - graph gives hints concerning density distribution in the db (= sorted k-dist graph)
 
 
 
-\textcite{SmartphoneBasedStressPrediction2015}[240, 242-249] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. Collected data included: activity, app usage, network traffic, reboot activity (power on and off events), calls (min, max and mean dB-values collected by the microphone), environment brightness, timestamps of received messages, noise exposure, and screen activity.
+\paragraph{OPTICS}
+\label{section:OPTICS}
+\textcite{han2011data}[388] mention, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
+\textcite{OPTICS}[49, 51-54, 57, 60] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the dataset according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o} is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the \textit{reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
 
-15 participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionnaires (at set times), which included the perceived stress score (PSS) and queried them on their current stress status. The stress levels were predicted by WEKA's machine learning algorithms. The mean absolute error (MAE) and Pearson correlation were used for the evaluation. The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it easier to spot longer periods of high stress than shorter ones. This paper is also a team publication featured in the research project from which SmartEater was developed.
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
+  \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
+  \label{figure:reachabilityDistanceOPTICS}
+\end{figure*}
+%TODO: i wrote this from the paper - not sure whether to add - end is missing - see optics page 53 - pseudo code explanation
+%The OPTICS algorithm takes an arbitrary core point, and orders its directly density-reachable objects (according to Eps and MinPts) and sorts them by their reachability-distance (to the selected core point). From the smallest to the largest reachability-distance, each point is selected and added to an OrderedFile, along with its calculated core-distance and reachability-distance.
 
-In their experiment, \textcite{ClusterPassivelySensedData2018} intend to predict user's negative affect states, in order to provide targeted just-in-time mental health interventions. 65 students participated in the study. Through a smartphone app, GPS location data, accelerometer (activity) data, phone calls, SMS, and ecological momentary assessments (EMA), data was collected and used to cluster participants according to their behavioural profiles. Grouping the participants this way seemed to improve the predictive model's performance.
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D dataset is depicted. 
 
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
+  \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
+  \label{figure:reachabilityPlotOPTICS}
+\end{figure*}
 
-Other related work: 
-\textcite{pius2018automatic} use the k-means clustering algorithm to create automatic annotation of unlabelled smartphone sensor data, to observe sensitive location information of mobile crowd sensing users. \textcite{alcoholCravingPrediction} use smartphone sensor data (e.g. accelerometer) to predict excessive alcohol consumption, in order to replace breathalysers. Their algorithm produced 100\% accuracy, however with 15 minute lags.
-
-
-
-
-
-
-
-% The authors used a variety of different sensors, which at the time, were not all available in one device. The list of utilised sensors and the recorded data are as follows:
-% %pages 2,4:
-% \begin{itemize}
-%   \item Microsoft Band: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, etc. 
-%   \item Affectiva Q sensor: measures electrodermal activity (good indicator for psychological arousal) 
-%   \item Wearable microphone: chewing and swallowing sounds (for detection of current eating events)
-%   \item Android smartphone application: GPS location, recording self-reports (right before eating: "Start of Eating Event" button, current emotional state when eating, intensity of desire/craving and hunger; when finished eating: "End of Eating Event" button)
-% \end{itemize}
-% Through location traces, physical activity traces (step count, speed, and calorie consumption) and the time of user's gestures/movements (accelerometer and gyroscope)
+The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots (as can also be seen in figure \ref{figure:reachabilityPlotOPTICS}). In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
 
 
-% In order to train an "About-to-Eat" moment classifier, signal processing and machine learning were used on the sensor streams. The classifier was trained to recognise the two classes "About-to-Eat" and "Not-About-to-Eat". The average recall of this model resulted in a recall, precision and F score of 0.77, 0.67 and 0.69 (respectively).
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
+  \caption{Since clusters are defined as the dips/dents in the reachability plots created by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
+  \label{figure:clusterExtractionOPTICS}
+\end{figure}
 
-% According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
-%\textcite{AboutToEat2016Rahman}'s
+%todo: In comparison to DBSCAN - problem with containment - optics page 52
+
+ 
+
+  \subsubsection{Grid-Based Methods}
+  %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
+  The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are performed on the grid structure. The processing time depends on the grid size (number of cells) in each dimension and not on the number of objects and is more accelerated than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
+  
+  
+
+  \vspace{5mm} %5mm vertical space
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
+
+
+  %TODO: paper book page 542 - kohonen networks

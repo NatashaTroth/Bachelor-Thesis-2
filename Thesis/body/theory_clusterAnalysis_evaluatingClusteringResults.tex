@@ -6,12 +6,12 @@ There are different steps to be taken in evaluating clusters, e.g. evaluation of
 
  
 
-  \subsubsection{Evaluation of the cluster quality}
+  % \subsubsection{Evaluation of the cluster quality}
   % (\textbf{Todo: adjust to the methods used in the experiment})
 
-  \textcite{han2011data}[399, 401] mentions, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
+  \textcite{han2011data}[399, 401] mention, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
   % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
-  The experiment described in this paper uses the intrinsic method silhouette coefficient, since there is no ground truth for comparison.
+  The experiment described in this paper uses intrinsic methods, since there is no ground truth for comparison.
   
   
   \paragraph{Silhouette Coefficient}
@@ -22,8 +22,8 @@ There are different steps to be taken in evaluating clusters, e.g. evaluation of
   % With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the dataset?
   %According to Rousseeuw, the silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters.
 
-  With the use of silhouettes, the author's goal is to find out, if the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity ob the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined, by firstly calculating the average dissimilarity, for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}.
   The formula is as follows:
+  With the use of silhouettes, the author's goal is to find out, if the quality of the clusters is high. Hence, the dissimilarities of the objects within a cluster are small, and the dissimilarities are large compared to the objects in other clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity of the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined by firstly calculating the average dissimilarity for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}. The formula for \textit{s(i)} is as follows:
   \[
     s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
   \]
@@ -39,7 +39,7 @@ There are different steps to be taken in evaluating clusters, e.g. evaluation of
 \]
 A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is the most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is unclear whether \textit{A} or the neighbouring cluster is a more suitable fit. If \textit{s(i)} is close to -1, then the dissimilarity within a cluster is larger than the dissimilarity to the neighbouring cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (misclassified).
 
-The \textit{average silhouette width} for each cluster is received by calculating the average of all objects that belong said cluster. An average score can also be calculated from each object \textit{i} for the entire plot (dataset), the so called \textit{overall average silhouette width}. 
+The \textit{average silhouette width} for each cluster is received by calculating the average of all objects that belong to said cluster. An average score can also be calculated from each object \textit{i} for the entire plot (dataset), the so called \textit{overall average silhouette width}. 
 
 % \textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm, which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
 
@@ -52,7 +52,7 @@ A second cluster evaluation method is the Davies-Bouldin Index, which was announ
 % The goal is to calculate the average similarity of a cluster with the cluster that is most similar to it. 
 
 The succeeding formula describes the average similarity of a cluster with the cluster that is most similar to it (\textit{R\textsubscript{ij}} ).
-\textit{i} and \textit{j} represent the determined clusters,\textit{S\textsubscript{i}} and \textit{S\textsubscript{j}} stand for the dispersions of the clusters, and \textit{M\textsubscript{ij}} is the distance between the two cluster centroids. 
+\textit{i} and \textit{j} represent the determined clusters, \textit{S\textsubscript{i}} and \textit{S\textsubscript{j}} stand for the dispersions of the clusters, and \textit{M\textsubscript{ij}} is the distance between the two cluster centroids. 
 
 \[
   R_{ij} = \frac{S_i + S_j}{M_{ij}}  

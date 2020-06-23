@@ -1,7 +1,4 @@
-# from __future__ import print_function
-# import time
 import numpy as np
-import pandas as pd
 from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 
 
@@ -17,7 +14,6 @@ def cluster_evaluation(clustering_method, df):
 
 
 def silhouette_score_evaluation(clustering_method, df):
-    # print("calculation silhouette score...")
     cluster_labels = clustering_method.fit_predict(df)
     if len(np.unique(cluster_labels)) > 1:
         score = silhouette_score(df, cluster_labels)
@@ -29,7 +25,6 @@ def silhouette_score_evaluation(clustering_method, df):
 
 
 def davies_bouldin_score_evaluation(clustering_method, df):
-    # print("calculation davies bouldin score...")
     cluster_labels = clustering_method.fit_predict(df)
 
     if len(np.unique(cluster_labels)) > 1:
@@ -42,7 +37,6 @@ def davies_bouldin_score_evaluation(clustering_method, df):
 
 
 def calinski_harabasz_score_evaluation(clustering_method, df):
-    # print("calculation calinski harabasz score...")
     cluster_labels = clustering_method.fit_predict(df)
     if len(np.unique(cluster_labels)) > 1:
         score = calinski_harabasz_score(df, cluster_labels)

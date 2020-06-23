@@ -1,3 +1,86 @@
-% (150-300 Worte)
+\begin{appendices}
+\textbf{\color{red} Anhänge löschen, die nicht verwendet werden.}
 
-SmartEater is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. Using machine learning,  smartphone sensor and usage data, stress and upcoming cravings can be predicted. The goal of this thesis is to use unsupervised machine learning to find the time delta to construct high quality clusterings from this data. Smartphone sensor and usage data used recorded includes accelerometer, volume of the audio, percentage of screen on time, number of notifications, light sensor values, and app usages in the categories “communication”, “video players”, and “other”. The data recorded from test subjects is aggregated into two datasets with different time lengths: 1 hour and 3 hours. After cleaning and normalising these datasets, the number of dimensions is reduced from eight to two using t-SNE. Suitable t-SNE parameters are tuned to create the best possible t-SNE visualisation. The density-based clustering methods DBSCAN and OPTICS are used to group data points into clusters for each of the ten time lengths. These results are compared using the mathematical evaluation scores Silhouette Score, Davies-Bouldin Index and Caliński-Harabasz Index. The results conclude, that the time deltas 30 minutes (from the 1h dataset), 1 hour, and 2 hours (both from the 3h dataset) create the most distinct and well-defined clusters.
+\section{t-SNE parameters comparison figures}
+\label{appendix:tSNEParameters}
+\subsection{Perplexity}
+\label{appendix:tSNEParametersPerplexity}
+\input{appendices/perplexityTest}
+
+\subsection{Learning Rate}
+\label{appendix:tSNEParametersLearningRate}
+\input{appendices/learningRateTest}
+
+
+\subsection{Clustering results}
+\label{appendix:clusteringResults}
+\input{appendices/clusteringResults}
+
+
+\subsection{Clustering evaluation results}
+\label{appendix:clusteringEvaluationResults}
+\input{appendices/clusteringEvaluationResults}
+
+
+
+
+
+
+
+
+%\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\section{git-Repository}
+
+% \url{https://gitlab.mediacube.at/fhs41216/BacThesis}
+\textbf{todo: list contents of git repo}
+
+Link to the GitLab Repository on {\url{gitlab.mediacube.at}}:
+
+{\color{red}\url{https://gitlab.mediacube.at/fhs41216/BacThesis}}
+
+\textbf{Git repository contents:}
+
+\begin{itemize}
+	\item \textbf{Experiment:} Source code of the experiment
+	\item \textbf{Thesis:} LaTeX-Code of the thesis
+	\item \textbf{Literature:} Reference papers available as PDF
+	\item alle Publikationen, die als pdf verfügbar sind.
+	\item \textbf{TODO!!!!!!! alle Webseiten als pdf}
+	\item 
+\end{itemize}
+
+
+
+Das Repository dient zur Dokumentation und Nachvollziehbarkeit der Arbeitsschritte. Stellen Sie sicher, dass der/die BetreuerIn Zugriff auf das Repository hat. Stellen im Sinne des Datenschutzes sicher, dass das Repository nicht für andere zugänglich ist.
+
+Verpflichtende Daten für Bachelorarbeit 1 und 2:
+
+\begin{itemize}
+	\item LaTeX-Code der finalen Version der Arbeit
+	\item alle Publikationen, die als pdf verfügbar sind.
+	\item alle Webseiten als pdf
+\end{itemize}
+
+Verpflichtende Daten für Bachelorarbeit 2:
+\begin{itemize}
+	\item Quellcode für praktischen Teil
+	\item Vorlagen für Studienmaterial (Fragebögen, Einverständniserklärung, ...)	
+	\item eingescanntes, ausgefülltes Studienmaterial (Fragebögen, Einverständniserklärung, ...)
+	\item Rohdaten und aufbereitete Daten der Evaluierungen (Log-Daten, Tabellen, Graphen, Scripts, ...)	
+\end{itemize}
+
+Link zum Repository auf dem MMT-git-Server {\url{gitlab.mediacube.at}}:
+
+	
+% \section{Vorlagen für Studienmaterial}
+
+% Vorlagen für Studienmaterial müssen in den Anhang. 
+
+\section{Archivierte Webseiten}
+% \show\UrlBreaks
+\sloppy
+\url{https://web.archive.org/web/20200623170602/https://distill.pub/2016/misread-tsne/}, snapshot 23.06.2020, 17:06:02
+
+
+\end{appendices}

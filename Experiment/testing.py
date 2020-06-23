@@ -1,15 +1,10 @@
 import unittest
 from pandas._testing import assert_frame_equal
 import pandas as pd
-# import numpy as np
 from dataFile import DataFile
-from dataFiles import DataFiles
-from pathlib import Path
-import sys
-from dimensionalityReduction import calculate_PCA
 from clusterEvaluation import compare_scores
 
-# Disclaimer: the numbers in the test *.csv files were created using a random generator (see randomNrs.js) - not from real test users!!
+# IMPORTANT: the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test users!!
 
 
 class TestStringMethods(unittest.TestCase):
@@ -35,7 +30,6 @@ class TestStringMethods(unittest.TestCase):
 
         # ---normalize data---
         data_file.normalize_columns()
-        print(data_file.df)
         result_after_normalization = pd.read_json(
             './testData/testNormal/resultAfterNormalization.json', orient='index')
         assert_frame_equal(
@@ -61,7 +55,6 @@ class TestStringMethods(unittest.TestCase):
         data_file = DataFile("./testData/testRemoveColumns")
         # ---remove rows with missing value & time column---
         data_file.df = data_file.df.drop(columns=['TIME'])
-        # print(data_file.df.to_json(orient="index"))
         data_file.remove_columns_with_many_empty_values(30, 4)
         result_after_removing_columns = pd.read_json(
             './testData/testRemoveColumns/resultAfterRemovingColumns.json', orient='index')
@@ -88,7 +81,6 @@ class TestStringMethods(unittest.TestCase):
                   "#ffffff", "#ffffff", "#ffffff", "#ffffff"]
         data_file = DataFile("./testData/testRemoveRowsWithZero")
         data_file.df["COLOR"] = colors
-        # print(data_file.df.to_json(orient='index'))
         initial_file = pd.read_json(
             './testData/testRemoveRowsWithZero/testData.json', orient='index')
         assert_frame_equal(

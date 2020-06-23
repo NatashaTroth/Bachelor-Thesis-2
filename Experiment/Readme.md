@@ -1,32 +1,63 @@
-Folder Structure:
-	"aggregated": contains data aggregated for each user (= filename)
-		- "1h": Data aggregated in 2.5h intervals. Each row is an aggregation of 1h in the past in 4 15min lags.
-		- "3h": Data aggregated in 1.5h intervals. Each row is an aggregation of 3h in the past in 6 30min lags.
+# Identifying the Ideal Length of Time to Record Smartphone Data, in Order to Obtain Distinct Clusters to Predict Eating Crises
 
-	"clusters": contains the cluster index for each data row of the aggregated data. Clusters were automatically detected by reducing the dimensionality of the aggregated data rows to 2 dimensions using t-SNE and then applying simple spectral clustering with k = 3.
+Bachelor Thesis 2, FH Salzburg, MultiMediaTechnology
+Salzburg, Austria, 29.06.2020
 
-Columns:
-	TIME: 			The timestamp of where the data is aggregated from (in format YYYY-DD-MM hh:mm:ss)
-	ACC (1-N): 		Accelerometer values (we calculate the "average jerk"; N averages of lag-interval minutes over the aggregation interval in the past)
-	-> Missing Values: ? average/median
+## Author: 
+Natasha Troth
 
-	AUDIO (1-N): 		Audio volume (same lagged averages as Accelerometer)
-	-> Missing Values: 0 or average
+## Advisor: 
+FH-Prof. DI Dr. Simon Ginzinger, MSc
 
-	SCRN (1-N): 		Percentage of Screen being on in lag-interval minutes (same lagged intervals as Accelerometer)
-	-> Missing Values: 0 or average
+# Files
+ - [main.py](./main.py): start programme, control what data goes in, what data is printed, which functions (e.g. dimensionality reduction, clustering) are used, how many dimensions, how many columns (time lengths)
+ - [dataFile.py](./dataFile.py): object that manages the data sets (read and concatenate .csv files, clean data, apply dimensionality reductions and clusterings)
+ - [dimensionalityReduction.py](./dimensionalityReduction.py): apply and plot t-SNE and PCA
+ - [clustering.py](./clustering.py): apply and plot DBSCAN, OPTICS, Spectral Clustering, and Agglomerative Clustering. Also predict DBSCAN Eps parameter (plot k-dist graphs).
+ - [clusterEvaluation.py](./clusterEvaluation.py): Calculate Silhouette Score, Davies Bouldin Score, and Caliński Harabasz Score
+ - [plot.py](./plot.py): Create 2d and 3d plots (Matplotlib and Seaborn)
+ - [testing.py](./testing.py): Unit tests (the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test users)
 
-	NOTIF (1-N): 		Notification amount in lag-interval minutes (same lagged intervals as Accelerometer)
-	-> Missing Values: 0 or average (if not activated)
 
-	LIGHT (1-N): 		Light Sensor values (same lagged intervals as Accelerometer)
-	-> Missing Values:  0
+# Run the programme 
+The programme starts from the main.py file and can run using Anaconda.
+Parameters/number of data files can be changed in main()
+How the data files are transformed can be changed in create_clustering_of_directory
+Other alterations are made directly in the corresponding functions (e.g. change t-SNE parameter directly in the t-SNE function in dimensionalityReduction.py)
 
-	APP_COM (1-N):		App usage of category 'Communication' in percent of lag-interval minutes (i.e. if apps of this category were used for 5 minutes in the past 15 minutes the value is 0.66666)
-	-> Missing Values: 0
+## Read in .csv files
+Read an entire directory of .csv files using Pandas
 
-	APP_VID (1-N):		App usage of category 'Video_Players', same principle as APP_COM
-	-> Missing Values: 0
+## Clean data
+ - drop TIME column
+ - remove rows with wrong values (missing values)
+ - extract columns (1-N)
+ - extract rows with minimum of percent non zero values (e.g. 50)
+ - compress same attribute columns (1-N)
+ - normalize columns (MinMaxScaler)
 
-	APP_OTHER (1-N):	App usage of all other categories (excluding 'Video_Players' and 'Communication')
-	-> Missing Values: ?
+Other options:
+ - (remove values with too many empty values)
+
+## Dimensionality reduction
+(True parameter to show graphs, False - default)
+ - TSNE - recommended! (extract 2 or 3 components)
+
+ Other options:
+ - PCA (extract 2 or 3 components)
+
+
+## Clustering
+ - dbscan_clustering - recommended!
+ - optics_clustering - recommended! (with DBSCAN cluster extraction, xi not recommended)
+
+ Other options:
+ - spectral_clustering (e.g. 3 clusters)
+ - aggolomerative_clustering
+
+## Cluster Evaluation
+ - Silhouette Score (1 -> clustering is better, -1 -> clustering is wrong)
+ - Davies Bouldin Score (Lower values (closer to zero) better)
+ - Calinksi Harabasz Score (Higher Calinski-Harabasz better)
+
+

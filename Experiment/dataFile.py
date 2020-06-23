@@ -1,18 +1,12 @@
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-# from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
 from pathlib import Path
-import sys
 from sklearn.manifold import TSNE
-import ipyvolume as ipv
-import json
-from dimensionalityReduction import calculate_PCA, calculate_TSNE, calculate_ideal_TSNE_perplexity
+from dimensionalityReduction import calculate_PCA, calculate_TSNE
 from clustering import spectral_clustering, dbscan_clustering, optics_clustering, agglomerative_clustering, predict_eps_dbscan_parameter
 import random
-
-# TODO: index data https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html
 
 
 class DataFile:
@@ -23,27 +17,18 @@ class DataFile:
                                    'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
 
     def create_data_frame(self, directory_path):
-        # print("in createDataFrame")
         pathlist = Path(directory_path).glob('**/*.csv')
         list_of_files = []
         list_of_dataframes = []
         test = 0
         for path in pathlist:
             list_of_files.append(str(path))
-
-            # test += 1
-            # if test == 25:
-            #     break
-        #     df = pd.read_csv(str(path), index_col=None, header=0)
-        #     li.append(df)
-
         if len(list_of_files) > 1:
             return pd.concat(map(self.read_csv_file_add_color, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
             return pd.read_csv(list_of_files[0])
         raise Exception(
             "No *.csv files found in the directory " + directory_path)
-        # return df
 
     def read_csv_file_add_color(self, path):
         df = pd.read_csv(path)
@@ -62,16 +47,9 @@ class DataFile:
 
     def clean_data(self, number_columns_to_use=1):
         print("cleaning data...")
-        print(self.df)
-        # self.df = self.df.iloc[::3, :]
         self.remove_columns(["TIME"])
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
-        # print(self.df)
-        # print("MAX VALUES...")
-        # print(self.df.max(axis=0))
-        # print("\nMIN VALUES...")
-        # print(self.df.min(axis=0))
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
         self.extract_columns(number_columns_to_use)
@@ -81,11 +59,9 @@ class DataFile:
         self.extract_rows_with_percent_non_zero_values(50)
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
-        print(self.df)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
         self.normalize_columns()
-        print(self.df)
 
     def remove_rows_with_wrong_values(self):
         print("  removing rows with wrong values...")
@@ -93,36 +69,11 @@ class DataFile:
 
     def extract_rows_with_percent_non_zero_values(self, percent):
         # e.g. percent = 60: removes rows with 60 percent or more 0s (where less than 40% other values that != 0)
-
-        # remove rows with more than percent
-        # self.df = self.df[self.df.astype('bool').mean(axis=1) >= percent / 100]
-        # self.df = self.df[(self.df == 0).sum(axis=1) <
-        #                   self.df.shape[1] * (1 - (percent / 100))]
-
-        # Color column added (but shouldn't count in percent)- 1  column to even it out
-
-        # print((self.df == 0).sum(axis=1))
-        # print((self.df != 0).sum(axis=1) - 1)
-        # print("nr not 0:")
-        # print(((self.df != 0).sum(axis=1) - 1))
-        # print("length:")
-        # print(len(self.df.columns) - 1)
-        # print("percent:")
-
-        # print(percent/100)
-        # print(self.df)
-        # print(((self.df != 0).sum(axis=1) - 1) /
-        #       (len(self.df.columns) - 1) >= percent/100)
         self.df = self.df[((self.df != 0).sum(axis=1) - 1) /
                           (len(self.df.columns) - 1) >= percent/100]
-        # print(self.df)
-
-        # self.df = self.df[((self.df == 0).sum(axis=1) + 1) /
-        #                   len(self.df.columns) <= percent/100]
 
     def remove_columns_with_many_empty_values(self, threshold, number_same_attributes):
         print("  removing columns with many empty values...")
-        # print(self.df.isnull().sum())
         # remove columns where percent of rows with empty is above threshold
         # row count ... 100%
         # no of null ... x
@@ -158,15 +109,11 @@ class DataFile:
 
     def remove_columns(self, column_names):
         for column_name in column_names:
-            print(column_name)
             self.df = self.df.drop(self.df.filter(
                 regex=column_name).columns, axis=1)
 
     def compress_same_attribute_columns(self, numberSameAttributes):
         print("  compressing same attribute columns...")
-        # self.print_file()
-        # distinctAttributes = ['ACC', 'AUDIO', 'SCRN', 'NOTIF',
-        #                       'LIGHT', 'APP_VID',  'APP_COMM',  'APP_OTHER']
         new_df = pd.DataFrame()
 
         for attribute in self.distinctAttributes:
@@ -185,7 +132,6 @@ class DataFile:
 
     def normalize_columns(self):
         print("  normalizing columns...")
-        # scaler = MinMaxScaler()
         scaler = StandardScaler()
         self.df[self.df.columns] = scaler.fit_transform(
             self.df[self.df.columns])
@@ -193,9 +139,6 @@ class DataFile:
     def calculate_PCA(self, number_components, graphs):
         self.pca = calculate_PCA(
             self.df, number_components, graphs, self.colors)
-
-    def calculate_ideal_TSNE_perplexity(self):
-        calculate_ideal_TSNE_perplexity(self.df)
 
     def calculate_TSNE(self, number_components, graphs):
         self.tsne = calculate_TSNE(

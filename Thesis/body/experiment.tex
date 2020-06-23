@@ -13,12 +13,13 @@ Various sensor and usage data was recorded for the SmartEater project, by the 46
 
 \begin{itemize}
 	\item TIME: timestamp, when the data was aggregated (format: YYYY-DD-MM hh:mm:ss)
-	\item ACC (1-N): values received from the accelerometer (average jerk)
+	\item ACC (1-N): values received from the accelerometer (average jerk). According to the Android developers documentation\footnote{\url{https://developer.android.com/guide/topics/sensors/sensors_motion}}, the accelerometer (acceleration sensor) records the acceleration (including the force of gravity) enforced onto the smartphone.  
 	\item AUDIO (1-N): volume of the audio 
 	\item SCRN (1-N): percentage of screen on time
 	\item NOTIF (1-N): number of notifications
 	\item LIGHT (1-N): light sensor values
-	\item APP\_COM (1-N): app usage in the category \textit{communication} in percent of lag-interval minutes (if communication apps were used for 5 minutes in a 15 minute interval, the value would be 0.66666)
+	\item APP\_COM (1-N): app usage in the category \textit{communication} in percent of lag-interval minutes 
+	%(if communication apps were used for 5 minutes in a 15 minute interval, the value would be 0.66666)
 	\item APP\_VID (1-N): app usage in the category \textit{video players}
 	\item APP\_OTHER (1-N): app usage of all other categories (excluding \textit{video players} and \textit{communication})
 \end{itemize}
