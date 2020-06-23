@@ -20,10 +20,10 @@ FH-Prof. DI Dr. Simon Ginzinger, MSc
 
 
 # Run the programme 
-The programme starts from the main.py file and can run using Anaconda.
+The programme starts from the [main.py](./main.py) file and can run using Anaconda.
 Parameters/number of data files can be changed in main()
 How the data files are transformed can be changed in create_clustering_of_directory
-Other alterations are made directly in the corresponding functions (e.g. change t-SNE parameter directly in the t-SNE function in dimensionalityReduction.py)
+Other alterations are made directly in the corresponding functions (e.g. change t-SNE parameter directly in the t-SNE function in [dimensionalityReduction.py](./dimensionalityReduction.py))
 
 ## Read in .csv files
 Read an entire directory of .csv files using Pandas
@@ -37,10 +37,10 @@ Read an entire directory of .csv files using Pandas
  - normalize columns (MinMaxScaler)
 
 Other options:
- - (remove values with too many empty values)
+ - remove values with too many empty values
 
 ## Dimensionality reduction
-(True parameter to show graphs, False - default)
+(graphs boolean parameter: True to show graphs, False to hide - default)
  - TSNE - recommended! (extract 2 or 3 components)
 
  Other options:
@@ -48,6 +48,7 @@ Other options:
 
 
 ## Clustering
+(graphs boolean parameter: True to show graphs, False to hide - default)
  - dbscan_clustering - recommended!
  - optics_clustering - recommended! (with DBSCAN cluster extraction, xi not recommended)
 
