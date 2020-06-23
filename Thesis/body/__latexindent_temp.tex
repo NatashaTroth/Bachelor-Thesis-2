@@ -1,31 +1,46 @@
-%https://books.google.at/books?hl=en&lr=&id=ZuIPv7OKm10C&oi=fnd&pg=PR5&dq=cluster+analysis&ots=7FXG9i4Yaa&sig=A0WB7hvq7hazTSWkYFrr_3iTAZU#v=onepage&q=cluster%20analysis&f=false
+
+As introduced in section \ref{section:Introduction}, SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} will be a mHealth (mobile health) app, that predicts future eating crises based on the user's past behaviour. The predictions are made on smartphone sensor and usage data, therefore reducing strenuous user input. The app will give the user content-dependent feedback, to avert a food craving episode. 
+
+
+%pages 1
+%in total, more or less all pages were used - therefore no pages
+\textcite{AboutToEat2016Rahman} introduced a similar idea in their paper. Their goal is to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). The authors state, that detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
+%page 2 - RELATED WORK
+%page 3:
+Rahman et al. learnt more on how people were currently tracking their meals by conducting a survey. The majority of participants stopped using a food tracking/journalling a tool,  48.9\% within the first month of using it. Respondents also  wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions.
+% that tried a revealed that they no longer use a food tracking/journalling a tool
+
+% They asked 75 people with varied ages and body sizes. 34 of 75 participants revealed, that they had never used any type of eating tracking or food journals. The remaining 41 respondents were further asked how long they used the respective tool. 48.9\% of these had used the tool for less than a month. 65 of the 75 participants revealed that they no longer use a food tracking/journalling a tool. 
+% Further questions resulted in the following revelations: 33 of the 75 respondents wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors previous assumptions. Ideas for interventions included a calorie calculator, reminders to eat balanced or of calorie allowances, visualisations of previous food eaten, or a breakdown of the nutrients taken in.
+% %pages 1-2:
+The authors used a variety of different sensors to record the following data: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, electrodermal activity (good indicator for psychological arousal), chewing and swallowing sounds (for detection of current eating events) and GPS location. Furthermore, the test subjects recorded self-reports, such as when they started eating, emotional state when eating, intensity of desire/craving and hunger, and end of eating. Eight participants, aged 26-54, participated in this study for five days. The recorded data then underwent cleaning and preprocessing, feature extraction, feature selection and machine learning. 
+% Some of these steps included resampling, normalisation, recognising chewing and swallowing sounds, extracting longitude and longitude, etc. 
+In the feature extraction step, two parameters were used on the processed sensor time series to create windows. Firstly, the feature extraction window size parameter regulated the time duration in a specific window. While a short window duration could catch immediate characteristics in the sensor time series, a coarse one could be used for long term trends. The authors used a variety of window sizes, varying from 5 to 120 minutes. The prediction model results would decide the best window. The second parameter, the window shift size, established the time duration between two neighbouring windows, for example meaning window \textit{n} is shifted one minute compared to window \textit{(n - 1)}. A constant shift of one minute was used for all window sizes. Statistical functions (e.g. min, max, mean, standard deviation, etc.) were used to extract a total of 158 window-level features. Two features were added to the sensor streams: current time (minutes since the start of the day) and time since the last eating event (minutes) and number of eating events in that day.
+% Correlation-based Feature Selection (CFS) was used to select the 
+% In the feature selection step, the location features were dropped, since they merely represented noise.
+
+In the feature selection step, the most relevant features were selected (e.g. the location features were not beneficial and merely represented noise). Signal processing and machine learning were used on the sensor streams to train an "About-to-Eat" moment classifier. the classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarser ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/windowSizePerformance.png}
+  \caption{This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.}
+  \label{figure:windowSize}
+\end{figure*}
+
+The performance for the "Time until Next Eating Event" model gained a correlation coefficient of 0.49. The most fitting feature extraction window size was assessed, the best performance was reached with a window size of 100 minutes. The authors further claim, that both models could be improved by incorporating person-dependent data from the target user to the models (e.g. person-specific eating pattern, lifestyle).
 
 
 
-\textcite{hartigan1975clustering}[1] describes clustering as a means to group similar objects together. For example, two planets are considered similar, if (given measurement error) it is probable they could be perceived as the same planet. \textcite{romesburg2004cluster}[2] gives the gathering of a variety of pebbles and sorting them into piles of similar attributes (e.g. shape, size, colour) as an example of cluster analysis. \textcite{hartigan1975clustering}[1-3, 6] further explains, that it can be expected from similar objects, for them to act and be treated the same. Clustering is also used to name, display, summarise, predict, and require explanation of the objects in the cluster. If some of the objects assigned to a cluster exhibit certain properties, it is expected that the other objects in this cluster will exhibit them as well. Clustering is almost equivalent to classification. Real-world examples of clustering include classifications of animals, plants and diseases.
+\textcite{SmartphoneBasedStressPrediction2015}[240, 242-249] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. Collected data included: activity, app usage, network traffic, reboot activity (power on and off events), calls (min, max and mean dB-values collected by the microphone), environment brightness, timestamps of received messages, noise exposure, and screen activity.
 
-\textcite{han2011data}[361-363] state, that cluster analysis is another term for clustering. It divides a data set of objects into subsets (clusters). The objects placed into one cluster are dissimilar to the objects assigned to other clusters. Therefore, such a cluster can also be defined as an implicit class. For this reason, clustering is occasionally referred to as automatic classification. The fact that cluster analysis can find groups by itself, gives it its unique advantage. As mentioned in section \ref{section:TheoryDataMining}, clustering is a type of unsupervised machine learning. It is unsupervised, since the class label for each group is unknown and needs to be discovered. In data mining, it is utilised to understand the distribution of the data and inspect the distinctions between clusters. Moreover, it can be used as a preprocessing tool for other data mining methods, such as characterisation, attribute subset selection, and classification.
-Cluster analysis is used in various fields, including: biology, security, business intelligence, image pattern recognition, and web search. It can be used to place customers into groups, organise projects into categories in project management, and to sort web search results into concise groups. Furthermore, it can be used to detect outliers, since these are located outside of clusters (as pointed out in section \ref{section:NoisyData}).
-%  The detection of outliers is useful in credit card fraud and for identifying criminal activity in e-commerce. 
+15 participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionnaires (at set times), which included the perceived stress score (PSS) and queried them on their current stress status. The stress levels were predicted by WEKA's machine learning algorithms. The mean absolute error (MAE) and Pearson correlation were used for the evaluation. The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it easier to spot longer periods of high stress than shorter ones. This paper is also a team publication featured in the research project from which SmartEater was developed.
 
-
-According to \textcite{hartigan1975clustering}[9-10], there are usually five different types of variables used in practice in clustering:
-\begin{itemize}
-  \item Counts: no arbitrary scale (e.g. number of legs on a spider) 
-  \item Ratio scale: only defined in proportion to a standard volume (e.g. volume of a liquid in a glass)
-  \item Interval scale: chosen from a standard position in a standard unit (e.g. height of a building)
-  \item Ordinal scale: ordered classification, can be changed by a monotonic transformation (e.g. socio-economic status)
-  \item Category scale: classification that can be adjusted by a one-to-one transformation (e.g. religion)
-\end{itemize}
-A data set can be comprised of various variable types (\textit{mixed}), of the same type but with different ranges (\textit{heterogeneous}), or of variables with the same range (\textit{homogenous}). There are also methods for conducting type or scale conversions.
-
-%data mining concepts..
+In their experiment, \textcite{ClusterPassivelySensedData2018} intend to predict user's negative affect states, in order to provide targeted just-in-time mental health interventions. 65 students participated in the study. Through a smartphone app, GPS location data, accelerometer (activity) data, phone calls, SMS, and ecological momentary assessments (EMA), data was collected and used to cluster participants according to their behavioural profiles. Grouping the participants this way seemed to improve the predictive model's performance.
 
 
-% According to \textcite{DataMiningAndPredictiveAnalytics}[524], clustering can also be used to prepare data (create clusters), for example for the input into neural networks.
-\textcite{DataMiningAndPredictiveAnalytics}[524-525] explain, that data should be normalised before being put into a clustering algorithm, thus optimising the performance. Min-max normalization or Z-score standardization can be used to do so (see section \ref{section:Normalisation}).
-% TODO:INSERT OTHER EXAMPLES HERE
-%TODO: MORE ON OUTLIER DETECTION IN CHAPTER 12
+Other related work: 
+\textcite{pius2018automatic} use the k-means clustering algorithm to create automatic annotation of unlabelled smartphone sensor data, to observe sensitive location information of mobile crowd sensing users. \textcite{alcoholCravingPrediction} use smartphone sensor data (e.g. accelerometer) to predict excessive alcohol consumption, in order to replace breathalysers. Their algorithm produced 100\% accuracy, however with 15 minute lags.
 
 
 
@@ -33,12 +48,18 @@ A data set can be comprised of various variable types (\textit{mixed}), of the s
 
 
 
-%p 362 2nd to last paragraph - also example on using clustering in image recognition, image of numbers to partition each number into cluster
+% The authors used a variety of different sensors, which at the time, were not all available in one device. The list of utilised sensors and the recorded data are as follows:
+% %pages 2,4:
+% \begin{itemize}
+%   \item Microsoft Band: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, etc. 
+%   \item Affectiva Q sensor: measures electrodermal activity (good indicator for psychological arousal) 
+%   \item Wearable microphone: chewing and swallowing sounds (for detection of current eating events)
+%   \item Android smartphone application: GPS location, recording self-reports (right before eating: "Start of Eating Event" button, current emotional state when eating, intensity of desire/craving and hunger; when finished eating: "End of Eating Event" button)
+% \end{itemize}
+% Through location traces, physical activity traces (step count, speed, and calorie consumption) and the time of user's gestures/movements (accelerometer and gyroscope)
 
-%TODO: use these sentences?:
-% Clustering algorithms are used to create clusters, instead of humans. Consequently, groups of data can be unearthed, that were undiscovered before.
 
-% Distance measures are used to determine the similarities and dissimilarities between objects. 
+% In order to train an "About-to-Eat" moment classifier, signal processing and machine learning were used on the sensor streams. The classifier was trained to recognise the two classes "About-to-Eat" and "Not-About-to-Eat". The average recall of this model resulted in a recall, precision and F score of 0.77, 0.67 and 0.69 (respectively).
 
-
-
+% According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
+%\textcite{AboutToEat2016Rahman}'s

@@ -1,31 +1,42 @@
-% As stated by \textcite{hartigan1975clustering}[11-12], clustering algorithms search through clusters to find a match for their data. Hartigan classifies the algorithms with the following properties:
-
-% \begin{itemize}
-%   \item Sorting:
-%   \item Switching
-%   \item Joining
-%   \item Splitting
-%   \item Adding
-%   \item Searching
-% \end{itemize}
-
-%TODO: ROUSSEEUW 1987 SILHOUETTES page 1: There are many algorithms for partitioning a set of objects into k clusters, such as the - maybe good sources k-means method [6,9,13] and the k-median approach [20].
-
 
 
 \textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
 \begin{itemize}
-  \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
-  \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
-  \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
-  \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
-  \item Ability to handle noise (see section \ref{section:NoisyData})
-  \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
-  \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
-  \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
-  \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+  \item Scalability
+  \item Ability to work with different attribute types
+  \item Recognising clusters with arbitrary shapes
+  \item Requirements for domain knowledge (for parameter selection)
+  \item Ability to handle noise
+  \item Incremental clustering (integrate updates without recomputation)
+  \item Insensitivity to the order of the input
+  \item Ability to cluster high-dimensional data 
+  \item Capability to cluster under certain constraints
   \item Interpretability and usability of the results
 \end{itemize}
+% \begin{itemize}
+%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
+%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
+%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+%   \item Ability to handle noise (see section \ref{section:NoisyData})
+%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
+%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+%   \item Interpretability and usability of the results
+% \end{itemize}
+% \begin{itemize}
+%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
+%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
+%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
+%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
+%   \item Ability to handle noise (see section \ref{section:NoisyData})
+%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
+%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
+%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
+%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
+%   \item Interpretability and usability of the results
+% \end{itemize}
 
 % TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
 
@@ -96,7 +107,7 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
 \paragraph{OPTICS}
 \label{section:OPTICS}
 \textcite{han2011data}[388] mentions, that OPTICS was create d to improve the selection of global parameters problem in DBSCAN.
-\textcite{OPTICS}[49, 51-] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the data set according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}  is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the {reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
+\textcite{OPTICS}[49, 51-] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the dataset according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}  is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the {reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
 
 \begin{figure*}[h]
   \centering
@@ -108,24 +119,24 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
 %TODO: i wrote this from the paper - not sure whether to add - end is missing - see optics page 53 - pseudo code explanation
 %The OPTICS algorithm takes an arbitrary core point, and orders its directly density-reachable objects (according to Eps and MinPts) and sorts them by their reachability-distance (to the selected core point). From the smallest to the largest reachability-distance, each point is selected and added to an OrderedFile, along with its calculated core-distance and reachability-distance.
 
-The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D data set is depicted. 
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D dataset is depicted. 
 
 \begin{figure*}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
-  \caption{OPTICS reachability plot for a 2D data set. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
+  \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
   \label{figure:reachabilityPlotOPTICS}
 \end{figure*}
 
 The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots (as can also be seen in figure \ref{figure:reachabilityPlotOPTICS}). In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
 
 
-\begin{figure*}[h]
+\begin{figure}
   \centering
   \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
   \caption{Since clusters are defined as the dips/dents in the reachability plots create by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
   \label{figure:clusterExtractionOPTICS}
-\end{figure*}
+\end{figure}
 
 %todo: In comparison to DBSCAN - problem with containment - optics page 52
 
@@ -138,7 +149,7 @@ The clusters can then be automatically constructed from the reachability plot by
   Examples: STING, CLIQUE
 
   \vspace{5mm} %5mm vertical space
-\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a data set with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
 
 
   %TODO: paper book page 542 - kohonen networks

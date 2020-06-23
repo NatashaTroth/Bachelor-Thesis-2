@@ -14,7 +14,7 @@ Data mining is used for description of patterns and trends, estimation of numeri
 There are two types of data mining methods: supervised and unsupervised.
 The majority of methods are supervised. In supervised methods, there is a predefined target variable. The method receives several examples, where the target variable value is defined, thus learning which values of the target variable correspond to which values of the predictor variable.
 The goal of the unsupervised approach is to find patterns and structure in the inserted variables. Therefore, no target variable is established. Clustering is the most known unsupervised method.
-Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent data set. %there is more info about this on page 161
+Problems that can occur in data mining methods are data dredging and overfitting. Data dredging is when false results arise in data mining due to random variations of data. Cross-validation is used to prevent data dredging, by guaranteeing that the results can be generalised to an independent dataset. %there is more info about this on page 161
 %WHAT ABOUT UNDER FITTING
 Overfitting arises, when the provisional model trys to fit perfectly to the training model, thus leading to the accuracy being higher on the training set than on the test set. ???
 BIAS-VARIANCE  TRADE-OFF
@@ -22,15 +22,15 @@ BIAS-VARIANCE  TRADE-OFF
 
 \subsubsection{Data preprocessing}
 %page 20
-Data sets first need to undergo a data preprocessing step, including data cleaning and data transformation. This aids in making the data useful in data mining. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
+Datasets first need to undergo a data preprocessing step, including data cleaning and data transformation. This aids in making the data useful in data mining. Raw data extracted directly from databases can be incomplete (values are missing) or be noisy (contains outliers), or may contain out-dated or redundant data. This unpreprocessed data may also not be in a correct form for data mining models. The goal is to decrease garbage in, garbage out (GIGO). Reducing the irrelevant data that is fed into the model (garbage in), the amount of irrelevant data received out of the model is reduced (garbage out).
 
 %page 26-27
 There are some data mining that have trouble functioning correctly when fed outliers. Moreover, outliers may be data errors. Graphical methods used to identify outliers include, histograms or two-dimensional scatter plots.
 %38
-The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the data set.
+The Z-score method can be used to numerically calculate outliers. Outliers should not automatically be removed from the dataset.
 
 %page 21-22
-Data cleaning is used to handle outliers, errors and unusual values found in the data set.
+Data cleaning is used to handle outliers, errors and unusual values found in the dataset.
 
 %page 23, 25
 One approach to handle records with missing values, is to delete said record. The author does not recommend this, since it could lead to a biased subset of data, if the missing values are systematic. Furthermore, it would mean wasting the data stored in the other fields of that record. A preferred approach is to substitute the missing value. The value can be replaced, either with a constant determined by the data analyst, with a field mean (for numerical values) or mode (for categorical values), with a random value, or with imputed values based on different features of the record. Replacing missing values can be a gamble, since it can possibly lead to invalid results. For example, the authors experimented with a database of cars. Substituting a missing brand with a random value (here "Japan") led to a car, that doesn't even exist. Data imputation takes into account the other attributes stored in the record and from these, calculates what the missing value would most likely be.
@@ -50,7 +50,7 @@ In some data mining algorithms, variables with higher ranges can unjustly influe
 Flag variables can be used to transform categorical variables into numerical. A flag variable can take on one of two values: 0 and 1 (e.g. female = 0, male = 1). When k>=3 (k being the amount of categorical predictors), the variables can be transformed into k-1 flag variables. Assigning categorical variables numerical values is not advised, since this orders the categorical variables. For example, if North = 1, East = 2, South = 3 and West = 4, West would be closer to South than to North, etc.
 
 %page 45
-ID fields should be removed from the data set, since the value is different for each record and not helpful.
+ID fields should be removed from the dataset, since the value is different for each record and not helpful.
 
 %OTHER TOPICS - NOT SURE IF NEED:
 %page 38- z-score for detecting outliers, like in boxplot

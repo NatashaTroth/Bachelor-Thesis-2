@@ -4,7 +4,7 @@
 
 
 
-% (\textbf{Todo: adapt to experiment}) 
+
 
 %TODO: also add a paper on eating crises...
 % the book
@@ -24,12 +24,12 @@ The authors divide the clustering algorithms into the following categories:
 
 %Related work
 %Evidence Analysis to Basis of Clustering
-\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
+% \textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
 % The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
 
 %Convex-Hull & DBSCAN Clustering to Predict Future Weather
 % Another example where clustering was implemented was by /textcite. 
-\textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
+% \textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
 
 %end related work
 
@@ -50,16 +50,16 @@ SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/reso
 %cite smarteater website  - as footnote
 This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with data sets that are not high-dimensional and have less than 10 attributes. Since the SmartEater data set only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
 
 %book page 93
-To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller data set with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
+To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
 % %Visualizing Data using t-SNE p2579 (abstract!)
-% Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the data set in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
+% Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the dataset in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
 
 %ies Pandas\footnote{\url{https://pandas.pydata.org}} and
-The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}, with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
-\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters are. Other mathematical evaluation scores used are Davies-Bouldin Index ( \textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
+The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
+\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters are. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
 
 % Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
 

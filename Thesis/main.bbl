@@ -19,78 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
-    \entry{van2010process}{article}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=db3cc5c3ac52a67c524d01a1f5e51928}{%
-           family={Aalst},
-           familyi={A\bibinitperiod},
-           given={W\bibnamedelima M\bibnamedelima P},
-           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0,
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=f0aad48c374987fb20568a449a4ad8ab}{%
-           family={Rubin},
-           familyi={R\bibinitperiod},
-           given={V},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d6c66f8e3207de935f6d33182b09a2e2}{%
-           family={Verbeek},
-           familyi={V\bibinitperiod},
-           given={H\bibnamedelima M\bibnamedelima W},
-           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6305c32472e584dc2ccccfb59ebcb75a}{%
-           family={Dongen},
-           familyi={D\bibinitperiod},
-           given={B\bibnamedelima F},
-           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0,
-           prefix={van},
-           prefixi={v\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=85a4f0d429c3ae117aa6e7a3ef99e01f}{%
-           family={Kindler},
-           familyi={K\bibinitperiod},
-           given={E},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9ba00e642bca49d56a81dfa50e91ec26}{%
-           family={G{ü}nther},
-           familyi={G\bibinitperiod},
-           given={C\bibnamedelima W},
-           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{c6b745bc3b958101430b324721b5aa42}
-      \strng{fullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
-      \strng{bibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
-      \strng{authorbibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
-      \strng{authornamehash}{c6b745bc3b958101430b324721b5aa42}
-      \strng{authorfullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1619-1374}
-      \field{journaltitle}{Software {\&} Systems Modeling}
-      \field{number}{1}
-      \field{title}{Process mining: a two-step approach to balance between underfitting and overfitting}
-      \field{volume}{9}
-      \field{year}{2010}
-      \field{pages}{87\bibrangedash 111}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1007/s10270-008-0106-z
-      \endverb
-    \endentry
     \entry{ClusterPassivelySensedData2018}{inproceedings}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=6fd4a34cc17aed930b22aee6fbd0435c}{%
@@ -226,49 +154,6 @@
       \endverb
       \keyw{cluster analysis,database mining,visualization}
     \endentry
-    \entry{silhouetteRelocatingMeasure}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=d0750e7d75a0173546d82f5e2a15314d}{%
-           family={{Aranganayagi}},
-           familyi={A\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b7ecaeb0e6e524a395428685bbc359cc}{%
-           family={{Thangavel}},
-           familyi={T\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Sivakasi, Tamil Nadu, India}%
-      }
-      \strng{namehash}{809de5298e01bf439cb7bb20e6ab283d}
-      \strng{fullhash}{809de5298e01bf439cb7bb20e6ab283d}
-      \strng{bibnamehash}{809de5298e01bf439cb7bb20e6ab283d}
-      \strng{authorbibnamehash}{809de5298e01bf439cb7bb20e6ab283d}
-      \strng{authornamehash}{809de5298e01bf439cb7bb20e6ab283d}
-      \strng{authorfullhash}{809de5298e01bf439cb7bb20e6ab283d}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{International Conference on Computational Intelligence and Multimedia Applications (ICCIMA 2007)}
-      \field{issn}{null}
-      \field{month}{12}
-      \field{title}{Clustering Categorical Data Using Silhouette Coefficient as a Relocating Measure}
-      \field{volume}{2}
-      \field{year}{2007}
-      \field{pages}{13\bibrangedash 17}
-      \range{pages}{5}
-      \verb{doi}
-      \verb 10.1109/ICCIMA.2007.328
-      \endverb
-      \keyw{data analysis;data mining;pattern clustering;unsupervised learning;clustering categorical data;silhouette coefficient;relocating measure;cluster analysis;unsupervised learning method;intelligent data analysis process;data mining;Clustering algorithms;Data mining;Iterative algorithms;Frequency measurement;Frequency conversion;Application software;Computer science;Computational intelligence;Educational institutions;Art}
-    \endentry
     \entry{bellman1957dynamic}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=484543699a93b5c7a771de9c1b191137}{%
@@ -328,48 +213,6 @@
       \field{series}{Princeton Legacy Library}
       \field{title}{Adaptive Control Processes: A Guided Tour}
       \field{year}{1961}
-    \endentry
-    \entry{forensics}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b4b89471bcba1a4f1def0101c8d10366}{%
-           family={{Bermad}},
-           familyi={B\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=03f24f6c25f9869b9bc454b00bf55093}{%
-           family={{Kechadi}},
-           familyi={K\bibinitperiod},
-           given={M.\bibnamedelimi T.},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Hammamet, Tunisia}%
-      }
-      \strng{namehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{fullhash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{bibnamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authorbibnamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authornamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authorfullhash}{1286800d5c590d82f5e56381999a99ef}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2016 7th International Conference on Sciences of Electronics, Technologies of Information and Telecommunications (SETIT)}
-      \field{issn}{null}
-      \field{month}{12}
-      \field{title}{Evidence analysis to basis of clustering: Approach based on mobile forensic investigation}
-      \field{year}{2016}
-      \field{pages}{300\bibrangedash 307}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/SETIT.2016.7939884
-      \endverb
-      \keyw{data mining;mobile investigation process;relational combinations;crime reconstruction;functional analysis;temporal and functional analysis;data mining;dynamic causality;reconstruction events;Forensics;Classification algorithms;Clustering algorithms;Mobile communication;Telecommunications;Functional analysis;Data mining;Digital Forensic Investigation;Mobile Forensic Investigation;Evidences Analysis;Smartphone;Data Mining;Clustering;Dynamic Causal;Temporal and Functional Analysis}
     \endentry
     \entry{calinskiHarabasz}{article}{}
       \name{author}{2}{}{%
@@ -443,48 +286,6 @@
       \field{year}{1979}
       \field{pages}{224\bibrangedash 227}
       \range{pages}{4}
-    \endentry
-    \entry{convexhullDbscan}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%
-           family={{Dey}},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=17d777989c89ecf12f1ff3b51386964b}{%
-           family={{Chakraborty}},
-           familyi={C\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Vancouver, BC, Canada}%
-      }
-      \strng{namehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{fullhash}{347b356a53f2209656afbac0bee1282d}
-      \strng{bibnamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authorbibnamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authornamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authorfullhash}{347b356a53f2209656afbac0bee1282d}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2015 International Conference and Workshop on Computing and Communication (IEMCON)}
-      \field{issn}{null}
-      \field{month}{10}
-      \field{title}{Convex-hull DBSCAN clustering to predict future weather}
-      \field{year}{2015}
-      \field{pages}{1\bibrangedash 8}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/IEMCON.2015.7344438
-      \endverb
-      \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
     \entry{DBSCAN}{inproceedings}{}
       \name{author}{4}{}{%
@@ -1015,6 +816,34 @@
       \verb 10.1145/2896338.2896359
       \endverb
     \endentry
+    \entry{romesburg2004cluster}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=957d5b35eceef614bce9b95c97202696}{%
+           family={Romesburg},
+           familyi={R\bibinitperiod},
+           given={H.\bibnamedelimi Charles},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Lulu Press}%
+      }
+      \strng{namehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{fullhash}{957d5b35eceef614bce9b95c97202696}
+      \strng{bibnamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authorbibnamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authornamehash}{957d5b35eceef614bce9b95c97202696}
+      \strng{authorfullhash}{957d5b35eceef614bce9b95c97202696}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781411606173}
+      \field{title}{Cluster Analysis for Researchers}
+      \field{year}{2004}
+    \endentry
     \entry{rousseeuw1987silhouettes}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=72d8129c9f4e6afddacb834fb2d8226f}{%
@@ -1228,7 +1057,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{romesburg2004cluster}
 \endrefsection
 \endinput
 
