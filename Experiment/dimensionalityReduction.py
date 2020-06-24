@@ -6,7 +6,9 @@ from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, 
 
 def calculate_PCA(df, number_components, graphs, colors):
     print("calculating PCA...")
-    pca = PCA(n_components=number_components)
+    print(df)
+    # pca = PCA(n_components=number_components)
+    pca = PCA()
     pca_results = pca.fit_transform(df[df.columns].values)
     df['pca-one'] = pca_results[:, 0]
     df['pca-two'] = pca_results[:, 1]

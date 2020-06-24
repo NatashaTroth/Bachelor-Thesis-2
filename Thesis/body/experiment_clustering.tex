@@ -2,7 +2,7 @@ The clustering algorithms used for the SmartEater dataset, were DBSCAN and OPTIC
 
 \subsubsection{DBSCAN}
 The DBSCAN algorithm was applied on the SmartEater dataset using the sklearn \textit{DBSCAN}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html}} function.
-Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances to the k nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea is to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
+Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances kth nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea was to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
 
 % \begin{figure*}[h]
 %   \centering
@@ -38,7 +38,7 @@ Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clusterin
   \label{figure:kDistGraphDBSCAN}
   \end{figure}
 
-The DBSCAN method was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}.
+The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}.
 
 
 \begin{figure}[H]

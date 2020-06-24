@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  24 JUN 2020 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  25 JUN 2020 00:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -867,7 +867,7 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 152.
 Package biblatex Info: Reference segment=0 on input line 152.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/title.tex
-<images/FHSLogo.jpg, id=245, 516.93124pt x 333.245pt>
+<images/FHSLogo.jpg, id=168, 516.93124pt x 333.245pt>
 File: images/FHSLogo.jpg Graphic file (type jpg)
 <use images/FHSLogo.jpg>
 Package pdftex.def Info: images/FHSLogo.jpg  used on input line 76.
@@ -919,7 +919,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5] [6] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
+ [5] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.lof
 Overfull \hbox (22.43608pt too wide) in paragraph at lines 28--28
  [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
  []
@@ -939,7 +939,7 @@ Overfull \hbox (22.43608pt too wide) in paragraph at lines 34--34
  [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
  []
 
-[7]
+[6]
 Overfull \hbox (9.93115pt too wide) in paragraph at lines 36--36
  [][] [][][]\OT1/ptm/m/n/12 Final t-SNE pa-ram-e-ters (1h data files): per-plex-ity=40, n[]iter=5000, learn-ing[]rate=20[][] [][]  
  []
@@ -949,52 +949,22 @@ Overfull \hbox (9.93115pt too wide) in paragraph at lines 38--38
  [][] [][][]\OT1/ptm/m/n/12 Final t-SNE pa-ram-e-ters (3h data files): per-plex-ity=40, n[]iter=5000, learn-ing[]rate=20[][] [][]  
  []
 
-[8]
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 90--90
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page vii undefined on input line 52.
 
 
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 92--92
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
-
-[9]
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 118--118
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
+LaTeX Warning: Reference `figure:clusteringResults2' on page vii undefined on input line 52.
 
 
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 120--120
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
+LaTeX Warning: Reference `figure:clusteringResults3' on page vii undefined on input line 52.
 
 
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 122--122
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
+LaTeX Warning: Reference `figure:clusteringResults4' on page vii undefined on input line 52.
 
 
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 124--124
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
+LaTeX Warning: Reference `figure:clusteringResults5' on page vii undefined on input line 52.
 
-
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 126--126
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
-
-
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 128--128
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
-
-
-Overfull \hbox (22.43608pt too wide) in paragraph at lines 130--130
- [][] [][][]\OT1/ptm/m/n/12 Comparison of Sil-hou-ette Co-ef-fi-cient, Davies-Bouldin In-dex, and Cali[]nski-Harabasz 
- []
-
-[10])
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1006,7 +976,7 @@ Overfull \hbox (22.43608pt too wide) in paragraph at lines 130--130
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [11] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
+ [7] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 18.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -1026,7 +996,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
  [1
 
 ]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex [2]
-<./images/windowSizePerformance.png, id=681, 1389.19pt x 919.435pt>
+<./images/windowSizePerformance.png, id=397, 1389.19pt x 919.435pt>
 File: ./images/windowSizePerformance.png Graphic file (type png)
 <use ./images/windowSizePerformance.png>
 Package pdftex.def Info: ./images/windowSizePerformance.png  used on input line 26.
@@ -1036,12 +1006,12 @@ Package pdftex.def Info: ./images/windowSizePerformance.png  used on input line 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining.tex [4 <./images/windowSizePerformance.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dataMining_dataPreprocessing.tex [5] [6]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_dimensionalityReduction.tex [7] [8]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis.tex [9]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/theory_clusterAnalysis_overviewClusteringAlgorithms.tex [10] [11]
-<./images/sortedKGraphDBSCAN.png, id=807, 562.1pt x 256.96pt>
+<./images/sortedKGraphDBSCAN.png, id=524, 562.1pt x 256.96pt>
 File: ./images/sortedKGraphDBSCAN.png Graphic file (type png)
 <use ./images/sortedKGraphDBSCAN.png>
 Package pdftex.def Info: ./images/sortedKGraphDBSCAN.png  used on input line 96.
 (pdftex.def)             Requested size: 227.62206pt x 104.05646pt.
-<./images/reachabilityDistanceOPTICS.png, id=813, 413.545pt x 407.5225pt>
+<./images/reachabilityDistanceOPTICS.png, id=530, 413.545pt x 407.5225pt>
 File: ./images/reachabilityDistanceOPTICS.png Graphic file (type png)
 <use ./images/reachabilityDistanceOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityDistanceOPTICS.png  used on input line 114.
@@ -1050,7 +1020,7 @@ Package pdftex.def Info: ./images/reachabilityDistanceOPTICS.png  used on input 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/reachabilityPlotOPTICS.png, id=817, 849.1725pt x 411.5375pt>
+<./images/reachabilityPlotOPTICS.png, id=534, 849.1725pt x 411.5375pt>
 File: ./images/reachabilityPlotOPTICS.png Graphic file (type png)
 <use ./images/reachabilityPlotOPTICS.png>
 Package pdftex.def Info: ./images/reachabilityPlotOPTICS.png  used on input line 125.
@@ -1058,7 +1028,7 @@ Package pdftex.def Info: ./images/reachabilityPlotOPTICS.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/clusterExtractionOPTICS.png, id=822, 554.07pt x 291.0875pt>
+<./images/clusterExtractionOPTICS.png, id=539, 554.07pt x 291.0875pt>
 File: ./images/clusterExtractionOPTICS.png Graphic file (type png)
 <use ./images/clusterExtractionOPTICS.png>
 Package pdftex.def Info: ./images/clusterExtractionOPTICS.png  used on input line 135.
@@ -1079,44 +1049,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--8
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
 [][][][][]$\OT1/pcr/m/n/10 http : / / scikit-[]learn . org / stable / modules / generated / sklearn . preprocessing .
  []
 
-<./images/tsneChain.png, id=906, 875.27pt x 644.4075pt>
+<./images/tsneChain.png, id=623, 875.27pt x 644.4075pt>
 File: ./images/tsneChain.png Graphic file (type png)
 <use ./images/tsneChain.png>
-Package pdftex.def Info: ./images/tsneChain.png  used on input line 24.
+Package pdftex.def Info: ./images/tsneChain.png  used on input line 26.
 (pdftex.def)             Requested size: 318.66948pt x 234.6119pt.
-[18]
-<./images/pcaChain.png, id=917, 2669.975pt x 1732.4725pt>
-File: ./images/pcaChain.png Graphic file (type png)
-<use ./images/pcaChain.png>
-Package pdftex.def Info: ./images/pcaChain.png  used on input line 32.
-(pdftex.def)             Requested size: 318.66948pt x 206.77744pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./images/tsneChain.png>]
-<./images/tsneTestSubjectsColor.png, id=926, 3049.3925pt x 1672.2475pt>
+<./images/pcaChain.png, id=624, 2669.975pt x 1732.4725pt>
+File: ./images/pcaChain.png Graphic file (type png)
+<use ./images/pcaChain.png>
+Package pdftex.def Info: ./images/pcaChain.png  used on input line 34.
+(pdftex.def)             Requested size: 318.66948pt x 206.77744pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18] [19 <./images/tsneChain.png>]
+<./images/tsneTestSubjectsColor.png, id=642, 3049.3925pt x 1672.2475pt>
 File: ./images/tsneTestSubjectsColor.png Graphic file (type png)
 <use ./images/tsneTestSubjectsColor.png>
-Package pdftex.def Info: ./images/tsneTestSubjectsColor.png  used on input line 92.
+Package pdftex.def Info: ./images/tsneTestSubjectsColor.png  used on input line 94.
 (pdftex.def)             Requested size: 409.71692pt x 224.67198pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/tsneAfterChainRemoved(50Percent).png, id=927, 2605.735pt x 1762.585pt>
+<./images/tsneAfterChainRemoved(50Percent).png, id=643, 2605.735pt x 1762.585pt>
 File: ./images/tsneAfterChainRemoved(50Percent).png Graphic file (type png)
 <use ./images/tsneAfterChainRemoved(50Percent).png>
-Package pdftex.def Info: ./images/tsneAfterChainRemoved(50Percent).png  used on input line 99.
+Package pdftex.def Info: ./images/tsneAfterChainRemoved(50Percent).png  used on input line 101.
 (pdftex.def)             Requested size: 409.71692pt x 277.1245pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1127,133 +1098,163 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--6
  []
 
 [20 <./images/pcaChain.png>]
-<./images/pca2d.png, id=938, 2374.8725pt x 1606.0pt>
+<./images/pca2d.png, id=657, 2374.8725pt x 1606.0pt>
 File: ./images/pca2d.png Graphic file (type png)
 <use ./images/pca2d.png>
-Package pdftex.def Info: ./images/pca2d.png  used on input line 12.
+Package pdftex.def Info: ./images/pca2d.png  used on input line 14.
 (pdftex.def)             Requested size: 216.24373pt x 146.22464pt.
-<./images/pca3d.png, id=939, 2097.8375pt x 1606.0pt>
+<./images/pca3d.png, id=658, 2097.8375pt x 1606.0pt>
 File: ./images/pca3d.png Graphic file (type png)
 <use ./images/pca3d.png>
-Package pdftex.def Info: ./images/pca3d.png  used on input line 19.
+Package pdftex.def Info: ./images/pca3d.png  used on input line 21.
 (pdftex.def)             Requested size: 216.24373pt x 165.53502pt.
- [21 <./images/tsneTestSubjectsColor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . manifold .
  []
 
-[22 <./images/tsneAfterChainRemoved(50Percent).png> <./images/pca2d.png> <./images/pca3d.png>]
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png, id=964, 1565.85pt x 1037.8775pt>
+[21 <./images/tsneTestSubjectsColor.png> <./images/pca2d.png> <./images/pca3d.png>] [22 <./images/tsneAfterChainRemoved(50Percent).png>]
+
+LaTeX Warning: Reference `appendix:compareAveragePerplexity' on page 23 undefined on input line 42.
+
+<./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png, id=683, 1565.85pt x 1037.8775pt>
 File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png Graphic file (type png)
 <use ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png  used on input line 50.
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png  used on input line 52.
 (pdftex.def)             Requested size: 364.19667pt x 241.38321pt.
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png, id=965, 794.97pt x 1039.885pt>
+<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png, id=684, 794.97pt x 1039.885pt>
 File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png Graphic file (type png)
 <use ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png  used on input line 59.
+Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png  used on input line 61.
 (pdftex.def)             Requested size: 182.09486pt x 238.18474pt.
- [23] [24 <./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png> <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png, id=993, 1634.105pt x 1043.9pt>
+
+LaTeX Warning: Reference `figure:learningRateEvaluationScoresDetailed' on page 23 undefined on input line 68.
+
+
+LaTeX Warning: Reference `appendix:comparelearningRateDetailed' on page 23 undefined on input line 68.
+
+
+LaTeX Warning: Reference `figure:learningRateEvaluationScoresDetailed2' on page 23 undefined on input line 68.
+
+
+LaTeX Warning: Reference `appendix:comparelearningRateDetailed' on page 23 undefined on input line 68.
+
+
+LaTeX Warning: Reference `appendix:compareAverageLearningRate' on page 23 undefined on input line 70.
+
+
+LaTeX Warning: Reference `appendig:compareLearningRate20and800' on page 23 undefined on input line 70.
+
+
+LaTeX Warning: Reference `figure:learningRateEvaluationScoresAverageDetailed4' on page 23 undefined on input line 70.
+
+
+LaTeX Warning: Reference `figure:1h-learningRateComparison20and800' on page 23 undefined on input line 70.
+
+
+LaTeX Warning: Reference `figure:3h-learningRateComparison20and800' on page 23 undefined on input line 70.
+
+[23] [24 <./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png> <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>]
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png, id=702, 1634.105pt x 1043.9pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png  used on input line 75.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png  used on input line 79.
 (pdftex.def)             Requested size: 364.19667pt x 232.65329pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png, id=994, 1397.22pt x 1047.915pt>
+<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png, id=703, 1397.22pt x 1047.915pt>
 File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png Graphic file (type png)
 <use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png  used on input line 96.
+Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png  used on input line 100.
 (pdftex.def)             Requested size: 364.19667pt x 273.13904pt.
-<./images/tsneParametersTest/1h-1-finalTSNE.png, id=995, 2411.0075pt x 1724.4425pt>
+<./images/tsneParametersTest/1h-1-finalTSNE.png, id=704, 2411.0075pt x 1724.4425pt>
 File: ./images/tsneParametersTest/1h-1-finalTSNE.png Graphic file (type png)
 <use ./images/tsneParametersTest/1h-1-finalTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNE.png  used on input line 106.
+Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNE.png  used on input line 110.
 (pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png, id=996, 2411.0075pt x 1724.4425pt>
+<./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png, id=705, 2411.0075pt x 1724.4425pt>
 File: ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png Graphic file (type png)
 <use ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png  used on input line 112.
+Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png  used on input line 116.
 (pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/tsneParametersTest/3h-1-finalTSNE.png, id=997, 2411.0075pt x 1722.435pt>
+<./images/tsneParametersTest/3h-1-finalTSNE.png, id=706, 2411.0075pt x 1722.435pt>
 File: ./images/tsneParametersTest/3h-1-finalTSNE.png Graphic file (type png)
 <use ./images/tsneParametersTest/3h-1-finalTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNE.png  used on input line 125.
+Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNE.png  used on input line 129.
 (pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png, id=998, 2411.0075pt x 1722.435pt>
+<./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png, id=707, 2411.0075pt x 1722.435pt>
 File: ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png Graphic file (type png)
 <use ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png  used on input line 131.
+Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png  used on input line 135.
 (pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
 ) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
-[25]
-<./images/kDistGraphDBSCAN1h.png, id=1012, 901.3675pt x 662.475pt>
+[25 <./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>] [26 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png> <./images/tsneParametersTest/1h-1-finalTSNE.png> <./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png>]
+<./images/kDistGraphDBSCAN1h.png, id=727, 901.3675pt x 662.475pt>
 File: ./images/kDistGraphDBSCAN1h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN1h.png>
 Package pdftex.def Info: ./images/kDistGraphDBSCAN1h.png  used on input line 26.
 (pdftex.def)             Requested size: 198.03008pt x 145.54277pt.
-<./images/kDistGraphDBSCAN3h.png, id=1013, 941.5175pt x 692.5875pt>
+<./images/kDistGraphDBSCAN3h.png, id=728, 941.5175pt x 692.5875pt>
 File: ./images/kDistGraphDBSCAN3h.png Graphic file (type png)
 <use ./images/kDistGraphDBSCAN3h.png>
 Package pdftex.def Info: ./images/kDistGraphDBSCAN3h.png  used on input line 33.
 (pdftex.def)             Requested size: 227.62206pt x 167.43971pt.
- [26 <./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>] [27 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png> <./images/tsneParametersTest/1h-1-finalTSNE.png> <./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png>]
-<./images/clusteringResults/1h-1-DBSCAN.png, id=1029, 2411.0075pt x 1724.4425pt>
+ [27 <./images/tsneParametersTest/3h-1-finalTSNE.png> <./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png>]
+<./images/clusteringResults/1h-1-DBSCAN.png, id=738, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/1h-1-DBSCAN.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-DBSCAN.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-DBSCAN.png  used on input line 48.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-DBSCAN.png, id=1030, 2411.0075pt x 1724.4425pt>
+<./images/clusteringResults/3h-1-DBSCAN.png, id=739, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/3h-1-DBSCAN.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-DBSCAN.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-DBSCAN.png  used on input line 55.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
- [28 <./images/tsneParametersTest/3h-1-finalTSNE.png> <./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png> <./images/kDistGraphDBSCAN1h.png> <./images/kDistGraphDBSCAN3h.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 69--69
 [][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
-<./images/clusteringResults/1h-1-OPTICS-xi.png, id=1045, 2411.0075pt x 1724.4425pt>
+[28 <./images/kDistGraphDBSCAN1h.png> <./images/kDistGraphDBSCAN3h.png> <./images/clusteringResults/1h-1-DBSCAN.png> <./images/clusteringResults/3h-1-DBSCAN.png>]
+<./images/clusteringResults/1h-1-OPTICS-xi.png, id=756, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/1h-1-OPTICS-xi.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-OPTICS-xi.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS-xi.png  used on input line 81.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-OPTICS-xi.png, id=1046, 2411.0075pt x 1724.4425pt>
+<./images/clusteringResults/3h-1-OPTICS-xi.png, id=757, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/3h-1-OPTICS-xi.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-OPTICS-xi.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS-xi.png  used on input line 88.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-[29 <./images/clusteringResults/1h-1-DBSCAN.png> <./images/clusteringResults/3h-1-DBSCAN.png>]
-<./images/clusteringResults/1h-1-reachabilityPlot-xi.png, id=1055, 3135.715pt x 1724.4425pt>
+<./images/clusteringResults/1h-1-reachabilityPlot-xi.png, id=758, 3135.715pt x 1724.4425pt>
 File: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-reachabilityPlot-xi.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png  used on input line 100.
 (pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
-<./images/clusteringResults/3h-1-reachabilityPlot-xi.png, id=1056, 3135.715pt x 1724.4425pt>
+<./images/clusteringResults/3h-1-reachabilityPlot-xi.png, id=759, 3135.715pt x 1724.4425pt>
 File: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-reachabilityPlot-xi.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png  used on input line 106.
 (pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
-<./images/clusteringResults/1h-1-OPTICS.png, id=1057, 2411.0075pt x 1724.4425pt>
+<./images/clusteringResults/1h-1-OPTICS.png, id=760, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/1h-1-OPTICS.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-OPTICS.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS.png  used on input line 118.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
-<./images/clusteringResults/3h-1-OPTICS.png, id=1058, 2411.0075pt x 1724.4425pt>
+<./images/clusteringResults/3h-1-OPTICS.png, id=761, 2411.0075pt x 1724.4425pt>
 File: ./images/clusteringResults/3h-1-OPTICS.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-OPTICS.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS.png  used on input line 125.
 (pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
- [30 <./images/clusteringResults/1h-1-OPTICS-xi.png> <./images/clusteringResults/3h-1-OPTICS-xi.png> <./images/clusteringResults/1h-1-reachabilityPlot-xi.png> <./images/clusteringResults/3h-1-reachabilityPlot-xi.png>]
-<./images/clusteringResults/1h-1-reachabilityPlot.png, id=1067, 3135.715pt x 1724.4425pt>
+ [29 <./images/clusteringResults/1h-1-OPTICS-xi.png> <./images/clusteringResults/3h-1-OPTICS-xi.png> <./images/clusteringResults/1h-1-reachabilityPlot-xi.png> <./images/clusteringResults/3h-1-reachabilityPlot-xi.png>]
+<./images/clusteringResults/1h-1-reachabilityPlot.png, id=771, 3135.715pt x 1724.4425pt>
 File: ./images/clusteringResults/1h-1-reachabilityPlot.png Graphic file (type png)
 <use ./images/clusteringResults/1h-1-reachabilityPlot.png>
 Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot.png  used on input line 137.
 (pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
-<./images/clusteringResults/3h-1-reachabilityPlot.png, id=1068, 3135.715pt x 1724.4425pt>
+<./images/clusteringResults/3h-1-reachabilityPlot.png, id=772, 3135.715pt x 1724.4425pt>
 File: ./images/clusteringResults/3h-1-reachabilityPlot.png Graphic file (type png)
 <use ./images/clusteringResults/3h-1-reachabilityPlot.png>
 Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot.png  used on input line 144.
@@ -1263,13 +1264,60 @@ Overfull \hbox (13.39928pt too wide) in paragraph at lines 59--59
 |[]\OT1/ptm/b/n/14.4 Comparison and eval-u-a-tion of clus-ter re-sults from dif-fer-ent time lengths| 
  []
 
-(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex [31 <./images/clusteringResults/1h-1-OPTICS.png> <./images/clusteringResults/3h-1-OPTICS.png> <./images/clusteringResults/1h-1-reachabilityPlot.png> <./images/clusteringResults/3h-1-reachabilityPlot.png>]
-<./images/clusteringResults/clusteringResults6.png, id=1094, 1400.23125pt x 1041.8925pt>
+(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 30 undefined on input line 13.
+
+[30 <./images/clusteringResults/1h-1-OPTICS.png> <./images/clusteringResults/3h-1-OPTICS.png> <./images/clusteringResults/1h-1-reachabilityPlot.png> <./images/clusteringResults/3h-1-reachabilityPlot.png>]
+<./images/clusteringResults/clusteringResults6.png, id=793, 1400.23125pt x 1041.8925pt>
 File: ./images/clusteringResults/clusteringResults6.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResults6.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResults6.png  used on input line 74.
 (pdftex.def)             Requested size: 364.19667pt x 270.98105pt.
-<./images/clusteringResults/clusteringResultsGraph1h.png, id=1105, 1300.86pt x 1045.9075pt>
+
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 31 undefined on input line 75.
+
+<./images/clusteringResults/clusteringResultsGraph1h.png, id=794, 1300.86pt x 1045.9075pt>
 File: ./images/clusteringResults/clusteringResultsGraph1h.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResultsGraph1h.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph1h.png  used on input line 86.
@@ -1279,7 +1327,7 @@ Overfull \hbox (43.24808pt too wide) in paragraph at lines 86--87
  [][] 
  []
 
-<./images/clusteringResults/clusteringResultsGraph3h.png, id=1106, 1210.5225pt x 927.465pt>
+<./images/clusteringResults/clusteringResultsGraph3h.png, id=795, 1210.5225pt x 927.465pt>
 File: ./images/clusteringResults/clusteringResultsGraph3h.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResultsGraph3h.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph3h.png  used on input line 93.
@@ -1289,523 +1337,45 @@ Overfull \hbox (43.24808pt too wide) in paragraph at lines 93--94
  [] 
  []
 
-<./images/clusteringResults/clusteringResultsGraphTotal.png, id=1107, 1439.3775pt x 1039.885pt>
+<./images/clusteringResults/clusteringResultsGraphTotal.png, id=796, 1439.3775pt x 1039.885pt>
 File: ./images/clusteringResults/clusteringResultsGraphTotal.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResultsGraphTotal.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraphTotal.png  used on input line 118.
 (pdftex.def)             Requested size: 318.66948pt x 230.21933pt.
-<./images/clusteringResults/clusteringResults8.png, id=1108, 1207.51125pt x 457.71pt>
+<./images/clusteringResults/clusteringResults8.png, id=797, 1207.51125pt x 457.71pt>
 File: ./images/clusteringResults/clusteringResults8.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResults8.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResults8.png  used on input line 139.
 (pdftex.def)             Requested size: 364.19667pt x 138.04738pt.
-[32] [33 <./images/clusteringResults/clusteringResults6.png>] [34 <./images/clusteringResults/clusteringResultsGraph1h.png> <./images/clusteringResults/clusteringResultsGraph3h.png> <./images/clusteringResults/clusteringResultsGraphTotal.png>] [35 <./images/clusteringResults/clusteringResults8.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex
-<./images/clusteringResults/clusteringResults7.png, id=1140, 607.26875pt x 519.9425pt>
+[31] [32 <./images/clusteringResults/clusteringResults6.png>] [33 <./images/clusteringResults/clusteringResultsGraph1h.png> <./images/clusteringResults/clusteringResultsGraph3h.png> <./images/clusteringResults/clusteringResultsGraphTotal.png>] [34 <./images/clusteringResults/clusteringResults8.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex
+<./images/clusteringResults/clusteringResults7.png, id=828, 607.26875pt x 519.9425pt>
 File: ./images/clusteringResults/clusteringResults7.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResults7.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResults7.png  used on input line 16.
 (pdftex.def)             Requested size: 227.62206pt x 194.88275pt.
- [36
+ [35
 
  <./images/clusteringResults/clusteringResults7.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 41--41
 [][][][][]$\OT1/pcr/m/n/10 https : / / humanstress . ca / stress / understand-[]your-[]stress /
  []
 
-[37]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [38]
+[36]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [37]
 Overfull \hbox (4.0431pt too wide) in paragraph at lines 235--235
 [][]\OT1/ptm/m/n/12 Dey, R., and S. Chakraborty. 2015. \  Convex-hull DB-SCAN clus-ter-ing to pre-dict fu-ture weather."
  []
 
-[39]
+[38]
 Overfull \hbox (17.45934pt too wide) in paragraph at lines 235--235
 [][]\OT1/ptm/m/n/12 Romesburg, H. Charles. 2004. \OT1/ptm/m/sl/12 Clus-ter Anal-y-sis for Re-searchers. \OT1/ptm/m/n/12 Lulu Press. \OT1/ptm/m/sc/12 isbn\OT1/ptm/m/n/12 : 9781411606173. 
  []
 
-[40] [41] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
+[39] [40] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
- (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/perplexityTest.tex
-<./images/tsneParametersTest/perplexity/perp5-1hTSNE.png, id=1193, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-1hTSNE.png  used on input line 11.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png, id=1194, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png  used on input line 17.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp5-3hTSNE.png, id=1195, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-3hTSNE.png  used on input line 33.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png, id=1196, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png  used on input line 39.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [42
+ [41
 
- <./images/tsneParametersTest/perplexity/perp5-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp5-1hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp10-1hTSNE.png, id=1203, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-1hTSNE.png  used on input line 55.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png, id=1204, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png  used on input line 61.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp10-3hTSNE.png, id=1205, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-3hTSNE.png  used on input line 74.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png, id=1206, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png  used on input line 80.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp20-1hTSNE.png, id=1207, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-1hTSNE.png  used on input line 95.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png, id=1208, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png  used on input line 101.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [43 <./images/tsneParametersTest/perplexity/perp5-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp5-3hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp10-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp10-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp10-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp10-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp20-3hTSNE.png, id=1220, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-3hTSNE.png  used on input line 114.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png, id=1221, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png  used on input line 120.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp30-1hTSNE.png, id=1222, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-1hTSNE.png  used on input line 137.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png, id=1223, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png  used on input line 143.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [44 <./images/tsneParametersTest/perplexity/perp20-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp20-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp20-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp20-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp30-3hTSNE.png, id=1233, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-3hTSNE.png  used on input line 156.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png, id=1234, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png  used on input line 162.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp40-1hTSNE.png, id=1235, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-1hTSNE.png  used on input line 179.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png, id=1236, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png  used on input line 185.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [45 <./images/tsneParametersTest/perplexity/perp30-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp30-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp30-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp30-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp40-3hTSNE.png, id=1245, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-3hTSNE.png  used on input line 198.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png, id=1246, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png  used on input line 204.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp45-1hTSNE.png, id=1247, 2413.015pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-1hTSNE.png  used on input line 221.
-(pdftex.def)             Requested size: 204.85846pt x 146.20792pt.
-<./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png, id=1248, 2413.015pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png  used on input line 227.
-(pdftex.def)             Requested size: 204.85846pt x 146.20792pt.
- [46 <./images/tsneParametersTest/perplexity/perp40-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp40-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp40-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp40-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp45-3hTSNE.png, id=1257, 2413.015pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-3hTSNE.png  used on input line 240.
-(pdftex.def)             Requested size: 204.85846pt x 146.20792pt.
-<./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png, id=1258, 2413.015pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png  used on input line 246.
-(pdftex.def)             Requested size: 204.85846pt x 146.20792pt.
-<./images/tsneParametersTest/perplexity/perp50-1hTSNE.png, id=1259, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-1hTSNE.png  used on input line 263.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png, id=1260, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png  used on input line 269.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [47 <./images/tsneParametersTest/perplexity/perp45-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp45-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp45-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp45-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perp50-3hTSNE.png, id=1269, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-3hTSNE.png  used on input line 282.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png, id=1270, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png  used on input line 288.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresAverage.png, id=1271, 1571.8725pt x 1041.8925pt>
-File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresAverage.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresAverage.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresAverage.png  used on input line 305.
-(pdftex.def)             Requested size: 364.19667pt x 241.39491pt.
- [48 <./images/tsneParametersTest/perplexity/perp50-1hTSNE.png> <./images/tsneParametersTest/perplexity/perp50-1hDBSCAN.png> <./images/tsneParametersTest/perplexity/perp50-3hTSNE.png> <./images/tsneParametersTest/perplexity/perp50-3hDBSCAN.png>]
-<./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailedAverage.png, id=1280, 794.97pt x 1043.9pt>
-File: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailedAverage.png Graphic file (type png)
-<use ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailedAverage.png>
-Package pdftex.def Info: ./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailedAverage.png  used on input line 312.
-(pdftex.def)             Requested size: 182.09486pt x 239.10437pt.
- [49 <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresAverage.png> <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailedAverage.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/learningRateTest.tex
-<./images/tsneParametersTest/learningRate/lr10-1hTSNE.png, id=1288, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-1hTSNE.png  used on input line 11.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png, id=1289, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png  used on input line 17.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr10-3hTSNE.png, id=1290, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-3hTSNE.png  used on input line 32.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png, id=1291, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png  used on input line 38.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr200-1hTSNE.png, id=1292, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-1hTSNE.png  used on input line 53.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png, id=1293, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png  used on input line 59.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [50
-
- <./images/tsneParametersTest/learningRate/lr10-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr10-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr10-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr10-3hDBSCAN.png>]
-<./images/tsneParametersTest/learningRate/lr200-3hTSNE.png, id=1302, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-3hTSNE.png  used on input line 74.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png, id=1303, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png  used on input line 80.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr400-1hTSNE.png, id=1304, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-1hTSNE.png  used on input line 96.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png, id=1305, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png  used on input line 102.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [51 <./images/tsneParametersTest/learningRate/lr200-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr200-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr200-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr200-3hDBSCAN.png>]
-<./images/tsneParametersTest/learningRate/lr400-3hTSNE.png, id=1314, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-3hTSNE.png  used on input line 117.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png, id=1315, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png  used on input line 123.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr600-1hTSNE.png, id=1316, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-1hTSNE.png  used on input line 139.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png, id=1317, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png  used on input line 145.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [52 <./images/tsneParametersTest/learningRate/lr400-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr400-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr400-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr400-3hDBSCAN.png>]
-<./images/tsneParametersTest/learningRate/lr600-3hTSNE.png, id=1326, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-3hTSNE.png  used on input line 160.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png, id=1327, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png  used on input line 166.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr800-1hTSNE.png, id=1328, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-1hTSNE.png  used on input line 184.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png, id=1329, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png  used on input line 190.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [53 <./images/tsneParametersTest/learningRate/lr600-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr600-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr600-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr600-3hDBSCAN.png>]
-<./images/tsneParametersTest/learningRate/lr800-3hTSNE.png, id=1338, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-3hTSNE.png  used on input line 205.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png, id=1339, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png  used on input line 211.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png, id=1340, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png  used on input line 227.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png, id=1341, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png  used on input line 233.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
- [54 <./images/tsneParametersTest/learningRate/lr800-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr800-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr800-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr800-3hDBSCAN.png>]
-<./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png, id=1350, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png  used on input line 248.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png, id=1351, 2411.0075pt x 1722.435pt>
-File: ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png  used on input line 254.
-(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png, id=1352, 1393.205pt x 1043.9pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png  used on input line 269.
-(pdftex.def)             Requested size: 364.19667pt x 272.87303pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png, id=1353, 1395.2125pt x 1039.885pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png  used on input line 276.
-(pdftex.def)             Requested size: 364.19667pt x 271.4427pt.
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png, id=1354, 1533.73pt x 941.5175pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png  used on input line 288.
-(pdftex.def)             Requested size: 364.19667pt x 223.56963pt.
- [55 <./images/tsneParametersTest/learningRate/lr1000-1hTSNE.png> <./images/tsneParametersTest/learningRate/lr1000-1hDBSCAN.png> <./images/tsneParametersTest/learningRate/lr1000-3hTSNE.png> <./images/tsneParametersTest/learningRate/lr1000-3hDBSCAN.png>] [56 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png> <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png, id=1370, 1308.89pt x 973.6375pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png  used on input line 295.
-(pdftex.def)             Requested size: 364.19667pt x 270.90814pt.
- [57 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png, id=1376, 1308.89pt x 973.6375pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png  used on input line 302.
-(pdftex.def)             Requested size: 364.19667pt x 270.90814pt.
- [58 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png, id=1382, 1312.905pt x 971.63pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png  used on input line 309.
-(pdftex.def)             Requested size: 364.19667pt x 269.51932pt.
- [59 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png>]
-<./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png, id=1388, 1985.4175pt x 973.6375pt>
-File: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png  used on input line 324.
-(pdftex.def)             Requested size: 455.24411pt x 223.2485pt.
-<./images/tsneParametersTest/learningRate/lr201h-DBSCANCompare.png, id=1389, 2411.0075pt x 1724.4425pt>
-File: ./images/tsneParametersTest/learningRate/lr201h-DBSCANCompare.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr201h-DBSCANCompare.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr201h-DBSCANCompare.png  used on input line 334.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/tsneParametersTest/learningRate/lr8001h-DBSCANCompare.png, id=1390, 2411.0075pt x 1724.4425pt>
-File: ./images/tsneParametersTest/learningRate/lr8001h-DBSCANCompare.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr8001h-DBSCANCompare.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr8001h-DBSCANCompare.png  used on input line 340.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/tsneParametersTest/learningRate/lr203h-DBSCANCompare.png, id=1391, 2411.0075pt x 1724.4425pt>
-File: ./images/tsneParametersTest/learningRate/lr203h-DBSCANCompare.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr203h-DBSCANCompare.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr203h-DBSCANCompare.png  used on input line 352.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/tsneParametersTest/learningRate/lr8003h-DBSCANCompare.png, id=1392, 2411.0075pt x 1724.4425pt>
-File: ./images/tsneParametersTest/learningRate/lr8003h-DBSCANCompare.png Graphic file (type png)
-<use ./images/tsneParametersTest/learningRate/lr8003h-DBSCANCompare.png>
-Package pdftex.def Info: ./images/tsneParametersTest/learningRate/lr8003h-DBSCANCompare.png  used on input line 358.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [60 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png> <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png>] [61 <./images/tsneParametersTest/learningRate/lr201h-DBSCANCompare.png> <./images/tsneParametersTest/learningRate/lr8001h-DBSCANCompare.png> <./images/tsneParametersTest/learningRate/lr203h-DBSCANCompare.png> <./images/tsneParametersTest/learningRate/lr8003h-DBSCANCompare.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/clusteringResults.tex
-File: ./images/clusteringResults/1h-1-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-DBSCAN.png  used on input line 7.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-File: ./images/clusteringResults/1h-1-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/1h-1-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS.png  used on input line 13.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/1h-2-DBSCAN.png, id=1409, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-2-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/1h-2-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-2-DBSCAN.png  used on input line 25.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/1h-2-OPTICS.png, id=1410, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-2-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/1h-2-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-2-OPTICS.png  used on input line 31.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/1h-3-DBSCAN.png, id=1411, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-3-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/1h-3-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-3-DBSCAN.png  used on input line 43.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/1h-3-OPTICS.png, id=1412, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-3-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/1h-3-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-3-OPTICS.png  used on input line 49.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [62
-
- <./images/clusteringResults/1h-2-DBSCAN.png> <./images/clusteringResults/1h-2-OPTICS.png>]
-<./images/clusteringResults/1h-4-DBSCAN.png, id=1419, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-4-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/1h-4-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-4-DBSCAN.png  used on input line 61.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/1h-4-OPTICS.png, id=1420, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/1h-4-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/1h-4-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/1h-4-OPTICS.png  used on input line 67.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-File: ./images/clusteringResults/3h-1-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-DBSCAN.png  used on input line 89.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-File: ./images/clusteringResults/3h-1-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-1-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS.png  used on input line 95.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [63 <./images/clusteringResults/1h-3-DBSCAN.png> <./images/clusteringResults/1h-3-OPTICS.png> <./images/clusteringResults/1h-4-DBSCAN.png> <./images/clusteringResults/1h-4-OPTICS.png>]
-<./images/clusteringResults/3h-2-DBSCAN.png, id=1429, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-2-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-2-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-2-DBSCAN.png  used on input line 109.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-2-OPTICS.png, id=1430, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-2-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-2-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-2-OPTICS.png  used on input line 115.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-3-DBSCAN.png, id=1431, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-3-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-3-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-3-DBSCAN.png  used on input line 127.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-3-OPTICS.png, id=1432, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-3-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-3-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-3-OPTICS.png  used on input line 133.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [64 <./images/clusteringResults/3h-2-DBSCAN.png> <./images/clusteringResults/3h-2-OPTICS.png>]
-<./images/clusteringResults/3h-4-DBSCAN.png, id=1439, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-4-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-4-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-4-DBSCAN.png  used on input line 145.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-4-OPTICS.png, id=1440, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-4-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-4-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-4-OPTICS.png  used on input line 151.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-5-DBSCAN.png, id=1441, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-5-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-5-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-5-DBSCAN.png  used on input line 164.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-5-OPTICS.png, id=1442, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-5-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-5-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-5-OPTICS.png  used on input line 170.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [65 <./images/clusteringResults/3h-3-DBSCAN.png> <./images/clusteringResults/3h-3-OPTICS.png> <./images/clusteringResults/3h-4-DBSCAN.png> <./images/clusteringResults/3h-4-OPTICS.png>]
-<./images/clusteringResults/3h-6-DBSCAN.png, id=1451, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-6-DBSCAN.png Graphic file (type png)
-<use ./images/clusteringResults/3h-6-DBSCAN.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-6-DBSCAN.png  used on input line 183.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
-<./images/clusteringResults/3h-6-OPTICS.png, id=1452, 2411.0075pt x 1724.4425pt>
-File: ./images/clusteringResults/3h-6-OPTICS.png Graphic file (type png)
-<use ./images/clusteringResults/3h-6-OPTICS.png>
-Package pdftex.def Info: ./images/clusteringResults/3h-6-OPTICS.png  used on input line 189.
-(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
- [66 <./images/clusteringResults/3h-5-DBSCAN.png> <./images/clusteringResults/3h-5-OPTICS.png> <./images/clusteringResults/3h-6-DBSCAN.png> <./images/clusteringResults/3h-6-OPTICS.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendices/clusteringEvaluationResults.tex
-<./images/clusteringResults/clusteringResults1.png, id=1461, 1405.25pt x 1041.8925pt>
-File: ./images/clusteringResults/clusteringResults1.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults1.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults1.png  used on input line 5.
-(pdftex.def)             Requested size: 364.19667pt x 270.02718pt.
-<./images/clusteringResults/clusteringResults2.png, id=1462, 1405.25pt x 1041.8925pt>
-File: ./images/clusteringResults/clusteringResults2.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults2.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults2.png  used on input line 12.
-(pdftex.def)             Requested size: 364.19667pt x 270.02718pt.
- [67
-
- <./images/clusteringResults/clusteringResults1.png>]
-<./images/clusteringResults/clusteringResults3.png, id=1469, 1405.25pt x 1041.8925pt>
-File: ./images/clusteringResults/clusteringResults3.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults3.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults3.png  used on input line 20.
-(pdftex.def)             Requested size: 364.19667pt x 270.02718pt.
-<./images/clusteringResults/clusteringResults4.png, id=1474, 1405.25pt x 1041.8925pt>
-File: ./images/clusteringResults/clusteringResults4.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults4.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults4.png  used on input line 27.
-(pdftex.def)             Requested size: 364.19667pt x 270.02718pt.
- [68 <./images/clusteringResults/clusteringResults2.png> <./images/clusteringResults/clusteringResults3.png>]
-<./images/clusteringResults/clusteringResults5.png, id=1481, 1405.25pt x 1041.8925pt>
-File: ./images/clusteringResults/clusteringResults5.png Graphic file (type png)
-<use ./images/clusteringResults/clusteringResults5.png>
-Package pdftex.def Info: ./images/clusteringResults/clusteringResults5.png  used on input line 34.
-(pdftex.def)             Requested size: 364.19667pt x 270.02718pt.
- [69 <./images/clusteringResults/clusteringResults4.png>] [70 <./images/clusteringResults/clusteringResults5.png>])
+]
 Overfull \hbox (13.03906pt too wide) in paragraph at lines 70--71
 []\OT1/ptm/m/n/12 Rohdaten und auf-bere-it-ete Daten der Evaluierun-gen (Log-Daten, Tabellen, Graphen, Scripts,
  []
@@ -1817,15 +1387,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
- [71
-
-]
+ [42]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BCB2CF0F4A0F91FAEE868532F42E16B9;4582.
+(rerunfilecheck)             Checksum: 031FC8334188F977B07713680415174E;2879.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1836,18 +1407,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
  ) 
 Here is how much of TeX's memory you used:
- 22664 strings out of 492162
- 419915 string characters out of 6125292
- 1223508 words of memory out of 5000000
- 26143 multiletter control sequences out of 15000+600000
+ 21966 strings out of 492162
+ 387872 string characters out of 6125292
+ 1209613 words of memory out of 5000000
+ 25649 multiletter control sequences out of 15000+600000
  52315 words of font info for 113 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 80i,9n,131p,2756b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,9n,131p,1810b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (83 pages, 15467423 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (50 pages, 3860585 bytes).
 PDF statistics:
- 1606 PDF objects out of 1728 (max. 8388607)
- 1235 compressed objects within 13 object streams
- 281 named destinations out of 1000 (max. 500000)
- 1101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 988 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 

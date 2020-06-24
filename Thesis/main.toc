@@ -65,72 +65,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Dimensionality Reduction}{20}{subsection.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1}PCA}{21}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}PCA}{20}{subsubsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.2}t-SNE}{23}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2}t-SNE}{22}{subsubsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Clustering}{25}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{26}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{27}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{28}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of cluster results from different time lengths}{31}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of cluster results from different time lengths}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{36}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{35}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{38}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{37}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{42}{section*.28}%
+\contentsline {section}{Appendices}{41}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{42}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{41}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Perplexity}{42}{subsection.a.A.1}%
+\contentsline {subsection}{\numberline {A.1}Perplexity}{41}{subsection.a.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.1}Perplexity = 5}{42}{subsubsection.a.A.1.1}%
+\contentsline {subsection}{\numberline {A.2}Learning Rate}{41}{subsection.a.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2}Perplexity = 10}{43}{subsubsection.a.A.1.2}%
+\contentsline {subsection}{\numberline {A.3}Clustering results}{41}{subsection.a.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.3}Perplexity = 20}{44}{subsubsection.a.A.1.3}%
+\contentsline {subsection}{\numberline {A.4}Clustering evaluation results}{41}{subsection.a.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.4}Perplexity = 30}{45}{subsubsection.a.A.1.4}%
+\contentsline {section}{\numberline {B}git-Repository}{41}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.5}Perplexity = 40}{46}{subsubsection.a.A.1.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.6}Perplexity = 45}{47}{subsubsection.a.A.1.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.7}Perplexity = 50}{48}{subsubsection.a.A.1.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.8}Perplexity Comparison Results (Average of two different t-SNE runs)}{49}{subsubsection.a.A.1.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Learning Rate}{50}{subsection.a.A.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.1}Learning Rate = 10}{50}{subsubsection.a.A.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.2}Learning Rate = 200}{51}{subsubsection.a.A.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.3}Learning Rate = 400}{52}{subsubsection.a.A.2.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.4}Learning Rate = 600}{53}{subsubsection.a.A.2.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.5}Learning Rate = 800}{54}{subsubsection.a.A.2.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.6}Learning Rate = 1000}{55}{subsubsection.a.A.2.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.7}Learning Rate Detailed Comparison Results }{57}{subsubsection.a.A.2.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.8}Learning Rate Comparison Results (Average of two different t-SNE runs)}{57}{subsubsection.a.A.2.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.9}Learning Rate Comparison of 20 and 800}{60}{subsubsection.a.A.2.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3}Clustering results}{62}{subsection.a.A.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.3.1}1h aggregated data files}{62}{subsubsection.a.A.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.3.2}3h aggregated data files}{64}{subsubsection.a.A.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.4}Clustering evaluation results}{67}{subsection.a.A.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}git-Repository}{71}{Appendix.a.B}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archivierte Webseiten}{71}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archivierte Webseiten}{42}{Appendix.a.C}%
