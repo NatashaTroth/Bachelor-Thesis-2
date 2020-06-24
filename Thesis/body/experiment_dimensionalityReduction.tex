@@ -35,7 +35,7 @@ The t-SNE algorithm was implemented using the sklearn \textit{t-SNE}\footnote{\u
 To be able effectively apply the t-SNE algorithm, it was important to identify the parameters (perplexity, learning \textbf{todo: explain what the learning rate is}, and number of iterations) most suitable to the SmartEater dataset, as described in section \ref{section:tSNE}. The number of iterations was originally set to the default value 1000, but was later raised to 5000, to avoid receiving significantly different results each time t-SNE was run. Raising the number of iterations provided more consistent results. The overall structure of these were the same, though usually rotated differently. 5000 iterations was also used in the experiments by \textcite{wattenberg2016how}, who claimed that their t-SNE plot had reached a stable point by then.
 
 To find suitable perplexity and learning rate t-SNE parameters to create the most distinct clusters possible, multiple results created using various parameter values were compared. For this, 2D t-SNE scatter plots were created using different perplexity and learning rate values. 
-First to the perplexity. \textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter. Multiple values between the recommended 5 and 50 were tested. The resulting scatter plots are listed in the appendix \ref{appendix:tSNEParametersPerplexity}. The graphs on the left depict the t-SNE results, while the scatter plots on the right illustrate DBSCAN clustering of these results. The DBSCAN cluster colourings were placed here to support in perceiving the differences between the t-SNE structured data and to see when the most distinct and well defined clusters are formed. When visually comparing the different perplexities, the data points in the lower perplexity graphs (e.g. 5 and 10) appear to be randomly scattered and have no stucture. The higher the perplexity gets, the more the data points take on structure and more distinct and well defined clusters appear. From a perplexity of 20, the one hour data files appear to start forming such clusters. When scanning the higher perplexities, it can be seen, that clusters become more separated. The scatter plots from perplexity 30 to 50 appear to have formed well defined clusters. 
+The first parameter to determine was the perplexity. \textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter. Multiple values between the recommended 5 and 50, in steps of 10 (except for the first one, 5, 10, 20, etc.) were tested. The resulting scatter plots are listed in the appendix \ref{appendix:tSNEParametersPerplexity}. The graphs on the left depict the t-SNE results, while the scatter plots on the right illustrate DBSCAN clustering of these results. The DBSCAN cluster colourings were placed here to support in perceiving the differences between the t-SNE structured data and to see when the most distinct and well defined clusters are formed. When visually comparing the different perplexities, the data points in the lower perplexity graphs (e.g. 5 and 10) appear to be randomly scattered and have no stucture. The higher the perplexity gets, the more the data points take on structure and more distinct and well defined clusters appear. From a perplexity of 20, the one hour data files appear to start forming such clusters. When scanning the higher perplexities, it can be seen, that clusters become more separated. The scatter plots from perplexity 30 to 50 appear to have formed well defined clusters. 
 
 To aid in selecting the perplexity that creates the best clusters, the three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults} were compared. Figure \ref{figure:perplexityEvaluationScores} displays the Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index were calculated for the DBSCAN and OPTICS clusterings of different perplexities. The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files). With 4 "wins", a perplexity of 20 has the highest number of best achieving score values. The perplexities of 10, 40, and 45 tied in second place with 2 "wins". While according to the scores, perplexity 20 creates the best clusters. Visually the clusters appear better defined with a perplexity between 30 and 50. For this reason, the focus of the comparison of the scores was moved to the scores that came second and whose perplexity was between 30 and 50. Perplexity 40 is a clear winner in figure \ref{figure:perplexityEvaluationScoresDetailed} and was chosen as the final parameter. These tests were conducted a second time (see appendix \ref{appendix:compareAveragePerplexity}), using the average of two different t-SNE results for 1h and 3h files. While the scores are slightly different, a perplexity of 40 was again the overall winning result.
 %todo: i read somewhere, that you should always look at visually, even if the numbers are better, can't remember where though
@@ -48,14 +48,16 @@ To aid in selecting the perplexity that creates the best clusters, the three mat
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities}.}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities}. The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:perplexityEvaluationScores}
 \end{figure}
+
+% The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files).
 
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities}.}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities}. The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:perplexityEvaluationScoresDetailed}
 \end{figure}
 
@@ -71,7 +73,7 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:learningRateEvaluationScores}
 \end{figure}
 
@@ -92,7 +94,7 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:learningRateEvaluationScoresDetailed3}
 \end{figure}
 

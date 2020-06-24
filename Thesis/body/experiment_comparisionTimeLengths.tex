@@ -2,8 +2,12 @@
 % \subsubsection{Mathmatical Evaluation and Comparison of different time lengths}
 % !!! todo: calinski harabasz - as said in document - higher score indicates better clustering (not directly said in paper - but can see in graphs on page 24)
 
-The three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, i.e. Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index were used to compare the resulting clusters.  They were each implemented using the sklearn library\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html}, \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html}, and \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.calinski_harabasz_score.html}}, the same way as in section \ref{section:experimentTSNE}.
-As also explained in the respective sklearn documentations, the Silhouette Score indicates better, denser clustering, when it is closer to 1, and incorrect clustering results if the value is close to -1. The Davies-Bouldin Index indicates well chosen clusters, when the value is closer to 0 (lowest possible score). A higher Caliński-Harabasz Index suggests well separated and dense clusters.
+%\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html}, \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html}, and \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.calinski_harabasz_score.html}}
+
+The three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, i.e. Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index were used to compare the resulting clusters.  They were each implemented using the sklearn library, the same way as in section \ref{section:experimentTSNE}.
+As explained in section  section \ref{section:TheoryEvaluatingClusteringResults}, the Silhouette Score indicates better, denser clustering, when it is closer to 1, and incorrect clustering results if the value is close to -1. The lower of two Davies-Bouldin Index and the higher of the Caliński-Harabasz Index scores suggests well better clustering.
+
+
 These three scores were calculated and stored for each data frame, after each clustering algorithm was applied (DBSCAN and OPTICS) for each time length. The resulting values where then compared and are depicted in figures below. 
 The experiment was run on each time length (1h files: 15 min, 30 min, 45 min, 1h; 3h files: 30 min, 1h, 1 h 30 min, 2h, 2h 30 min, 3h).
 The numbers were different for each time the results were calculated, since t-SNE produces slightly different results. Therefore, the t-SNE and clustering was run multiple times and the results were compared. In appendix \ref{appendix:clusteringEvaluationResults} figures \ref{figure:clusteringResults1} and \ref{figure:clusteringResults2} two individual t-SNE and clusterings were run, figure \ref{figure:clusteringResults3} depicts the average scores of these two. Figure \ref{figure:clusteringResults4} depicts an average of a different two runs. These mentioned runs all held the learning rate parameter 20. Since 800 also proved to be a viable choice for this parameter, the t-SNE and clustering was also run twice and averaged (figure \ref{figure:clusteringResults5}) with a learning rate of 800. The mean was taken from all these revealed results, thus creating figure \ref{figure:clusteringResults6} (the figure can be seen in this section). From these, there is no clear winner, although there are some stronger candidates, i.e. 15 min (1h), 30 min (1h), 1h (3h), and 2h (3h). 
@@ -68,7 +72,7 @@ Like before, when comparing the t-SNE results, the light green field indicate th
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{./images/clusteringResults/clusteringResults6.png}
-  \caption{Evaluation scores comparison averaged from figures \ref{figure:clusteringResults1}, \ref{figure:clusteringResults2}, \ref{figure:clusteringResults3}, \ref{figure:clusteringResults4}, and \ref{figure:clusteringResults5}.}
+  \caption{Evaluation scores comparison averaged from figures \ref{figure:clusteringResults1}, \ref{figure:clusteringResults2}, \ref{figure:clusteringResults3}, \ref{figure:clusteringResults4}, and \ref{figure:clusteringResults5}. The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:clusteringResults6}
 \end{figure}
 
@@ -90,7 +94,7 @@ Like before, when comparing the t-SNE results, the light green field indicate th
     \caption{Number of light green evaluation score "wins" (1h or 3h) for the 3h data files.}
     \label{figure:clusteringResultsGraph3h}
   \end{subfigure}
-	% \caption{Number of light green evaluation score "wins" (1h or 3h) for the 3h data files.}
+	\caption{ The lighter green highlighted values indicated the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   % \label{figure:PCA}
 \end{figure}
 

@@ -1,6 +1,6 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Related work}{}% 2
-\BOOKMARK [1][-]{section.3}{Literature Review}{}% 3
+\BOOKMARK [1][-]{section.3}{Methods}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Data Mining}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Data Preprocessing}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Noisy Data}{subsection.3.2}% 6
@@ -16,7 +16,7 @@
 \BOOKMARK [3][-]{subsubsection.3.5.3}{Density-Based Methods}{subsection.3.5}% 16
 \BOOKMARK [3][-]{subsubsection.3.5.4}{Grid-Based Methods}{subsection.3.5}% 17
 \BOOKMARK [2][-]{subsection.3.6}{Evaluating clustering results}{section.3}% 18
-\BOOKMARK [1][-]{section.4}{Method}{}% 19
+\BOOKMARK [1][-]{section.4}{Results}{}% 19
 \BOOKMARK [2][-]{subsection.4.1}{Preparation of the Data Set}{section.4}% 20
 \BOOKMARK [3][-]{subsubsection.4.1.1}{Missing Values}{subsection.4.1}% 21
 \BOOKMARK [3][-]{subsubsection.4.1.2}{Normalisation}{subsection.4.1}% 22
