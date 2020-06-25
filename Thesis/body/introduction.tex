@@ -22,14 +22,14 @@ The authors divide the clustering algorithms into the following categories:
 \end{itemize}
 
 
-%Related work
-%Evidence Analysis to Basis of Clustering
-\textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
-The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
+% %Related work
+% %Evidence Analysis to Basis of Clustering
+% \textcite{forensics} introduce in their paper, how clustering can be used in digital forensics to provide information on all the events that led up to a certain crime. They used ascending hierarchical clustering to receive clusters of events (e.g. phone calls, SMS) ordered in time, thus creating a timeline of events leading up to the incident.
+% The idea was by using a hierarchical fusion process, it would be possible to create a chain of events 
 
-%Convex-Hull & DBSCAN Clustering to Predict Future Weather
-% Another example where clustering was implemented was by /textcite. 
-\textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
+% %Convex-Hull & DBSCAN Clustering to Predict Future Weather
+% % Another example where clustering was implemented was by /textcite. 
+% \textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
 
 %end related work
 
@@ -50,7 +50,8 @@ SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/reso
 %cite smarteater website  - as footnote
 This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore utilise these clustering methods. Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare these types clustering methods. 
+%Since different clustering algorithms can yield different results, multiple methods will be used and compared.
 
 %book page 93
 To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.

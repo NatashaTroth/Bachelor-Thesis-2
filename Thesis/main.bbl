@@ -220,48 +220,6 @@
       \field{title}{Adaptive Control Processes: A Guided Tour}
       \field{year}{1961}
     \endentry
-    \entry{forensics}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=b4b89471bcba1a4f1def0101c8d10366}{%
-           family={{Bermad}},
-           familyi={B\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=03f24f6c25f9869b9bc454b00bf55093}{%
-           family={{Kechadi}},
-           familyi={K\bibinitperiod},
-           given={M.\bibnamedelimi T.},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Hammamet, Tunisia}%
-      }
-      \strng{namehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{fullhash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{bibnamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authorbibnamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authornamehash}{1286800d5c590d82f5e56381999a99ef}
-      \strng{authorfullhash}{1286800d5c590d82f5e56381999a99ef}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2016 7th International Conference on Sciences of Electronics, Technologies of Information and Telecommunications (SETIT)}
-      \field{issn}{null}
-      \field{month}{12}
-      \field{title}{Evidence analysis to basis of clustering: Approach based on mobile forensic investigation}
-      \field{year}{2016}
-      \field{pages}{300\bibrangedash 307}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/SETIT.2016.7939884
-      \endverb
-      \keyw{data mining;mobile investigation process;relational combinations;crime reconstruction;functional analysis;temporal and functional analysis;data mining;dynamic causality;reconstruction events;Forensics;Classification algorithms;Clustering algorithms;Mobile communication;Telecommunications;Functional analysis;Data mining;Digital Forensic Investigation;Mobile Forensic Investigation;Evidences Analysis;Smartphone;Data Mining;Clustering;Dynamic Causal;Temporal and Functional Analysis}
-    \endentry
     \entry{calinskiHarabasz}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=74b28f30912e45b424de18f111b69b81}{%
@@ -338,48 +296,6 @@
       \verb{doi}
       \verb 10.1109/TPAMI.1979.4766909
       \endverb
-    \endentry
-    \entry{convexhullDbscan}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%
-           family={{Dey}},
-           familyi={D\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=17d777989c89ecf12f1ff3b51386964b}{%
-           family={{Chakraborty}},
-           familyi={C\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Vancouver, BC, Canada}%
-      }
-      \strng{namehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{fullhash}{347b356a53f2209656afbac0bee1282d}
-      \strng{bibnamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authorbibnamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authornamehash}{347b356a53f2209656afbac0bee1282d}
-      \strng{authorfullhash}{347b356a53f2209656afbac0bee1282d}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2015 International Conference and Workshop on Computing and Communication (IEMCON)}
-      \field{issn}{null}
-      \field{month}{10}
-      \field{title}{Convex-hull DBSCAN clustering to predict future weather}
-      \field{year}{2015}
-      \field{pages}{1\bibrangedash 8}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/IEMCON.2015.7344438
-      \endverb
-      \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
     \endentry
     \entry{DBSCAN}{inproceedings}{}
       \name{author}{4}{}{%
