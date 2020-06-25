@@ -82,6 +82,9 @@ In a similar way, the conditional probability between the low-dimensional data p
 %TODO!!! FINISH
 
 To apply t-SNE to a dataset, \textcite{maaten2008visualizing}[2582] describe, the $\sigma$\textsubscript{i} has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find an overall optimal  $\sigma$\textsubscript{i} for the dataset. \textcite{hinton2003stochastic}[2] declare, that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbors or the so called perplexity. The perplexity is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
+Another parameter to be set is the learning rate. \textcite{han2011data}[332] clarify, that the learning rate parameter is used to support the finding of global minimums, instead of being caught in a local minimum. A learning rate set too low will result in slow learning. In contrast, a learning rate set too high could lead to poor results.
+
+
 
 
 % @article{tsneAutomaticPerplexity,
