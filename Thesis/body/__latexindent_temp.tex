@@ -1,58 +1,80 @@
-% (500 words)
-%LEITFADEN:
-% Die Einleitung dient der Einführung in das Thema, indem eine spezifische Fragestellung (For- schungsfrage) herausgearbeitet, plausibel formuliert, differenziert und begründet wird. Die methodische Vorgehensweise („Wie wird das Thema bearbeitet?“) muss begründet und auf das Thema und die Frage- und Problemstellung der Arbeit bezogen werden. Des Weiteren sollte in der Einleitung oder in einem gesonderten Kapitel (Verwandte Arbeiten) die zur Bearbeitung herangezogene wissenschaftliche Literatur sowie die spezifische Auswahl von Quellen und Texten dargestellt und erläutert werden.
+The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396, 398] describe this stage as assessing the quality of the results.
+There are different steps to be taken in evaluating clusters, e.g. evaluation of the cluster quality, assessment of the cluster tendency (whether non random stuctures exist), and establishing the number of clusters (e.g. for k-means clustering). The experiment described in this thesis used mathmathical evaluation methods to compare cluster quality among the different time lengths. 
+ 
+  % \subsubsection{Assessment of the cluster tendency}
+  % As explained by \textcite{han2011data}[396-397], the tendency must be assessed, meaning it is tested, whether structures exist that aren't random. Running a clustering algorithm on any dataset will return clusters. However, only non random structures are significant and not misleading. For example, if a dataset consists of data points that are uniformly distributed, if a clustering algorithm delivers clusters, these will be random and have no purpose. Spatial randomness tests (e.g. Hopkins Statistic) can be used to measure how likely the data was created by uniform data distribution.
+
+ 
+
+  \textcite{han2011data}[399, 401] mention, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
+  % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
+  The experiment described in this paper uses intrinsic methods, since there is no ground truth for comparison.
+  
+  
+  \paragraph{Silhouette Coefficient}
+  \label{section:silhouetteCoefficient}
+  In his paper, \textcite{rousseeuw1987silhouettes}[53-57, 59] proposes a new graphical display using silhouettes, to help determine how well objects belong to their assigned clusters. It can be used to interpret and validate the results of clustering. It is also utilised to compare the resulting clusters with those output using alternative algorithms (the input data being the same). 
+  
+  % In an example, where countries are assigned a value of how dissimilar they are to another country, the results are listed in a table. A structure contained in the results (consisting of 66 numbers), is hard to identify. Therefore, the countries are categorised into clusters using k-median. It is however uncertain, whether the clusters follow a specific structure, or if the groups are simply artificial. 
+  % With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the dataset?
+  %According to Rousseeuw, the silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters.
+
+  The formula is as follows:
+  With the use of silhouettes, the author's goal is to find out, if the quality of the clusters is high. Hence, the dissimilarities of the objects within a cluster are small, and the dissimilarities are large compared to the objects in other clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity of the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined by firstly calculating the average dissimilarity for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}. The formula for \textit{s(i)} is as follows:
+  \[
+    s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
+  \]
+  The resulting value \textit{s(i)} is a number in the range of \textit{-1 $\leq$ \textit{s(i)} $\leq$ 1}:
+
+  \[ s(i) =
+  \begin{cases}
+    1 - a(i)/b(i)       & \quad \text{if } a(i) < b(i)\\
+    0       & \quad \text{if } a(i) = b(i)\\
+ b(i)/a(i) - 1      & \quad \text{if } a(i) > b(i)
+
+  \end{cases}
+\]
+A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is uncertain whether cluster \textit{A} or its neighbour is a more suitable fit. If \textit{s(i)} is near -1, then the dissimilarity within a cluster is larger than the dissimilarity to the next closest cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (misclassified).
+
+The \textit{average silhouette width} can be calculated for single clusters. It is received by calculating the average of all objects that belong to said cluster. An average score can also be calculated from each object \textit{i} for the whole chart (dataset), the so called \textit{overall average silhouette width}. 
+
+
+\paragraph{Davies-Bouldin Index}
+A second cluster evaluation method is the Davies-Bouldin Index, which was announced by \textcite{DaviesBouldin}[224-227]. 
+% The goal is to calculate the average similarity of a cluster with the cluster that is most similar to it. 
+
+The succeeding formula describes the average similarity of a cluster with the cluster that is most similar to it (\textit{R\textsubscript{ij}} ).
+\textit{i} and \textit{j} represent the determined clusters, \textit{S\textsubscript{i}} and \textit{S\textsubscript{j}} stand for the dispersions of the clusters, and \textit{M\textsubscript{ij}} is the distance between the two cluster centroids. 
+
+\[
+  R_{ij} = \frac{S_i + S_j}{M_{ij}}  
+\]
+
+The Davies-Bouldin Index equals:
+\[
+\overline{R} = \frac{1}{N}\sum_{i=1}^{N}R_i
+\]
+
+This metric can be used, to compare clustering results. The lower of the two \textit{\=R} values indicates the better partitioning.
+
+\paragraph{Caliński-Harabasz Index}
+As a third evaluation score, \textcite{calinskiHarabasz}[3, 7, 11, 23, 24, 26] is used to evaluate and compare the resulting clusters in the experiment. 
+The Caliński-Harabasz Index or Variance Ratio Criterion (VRC) is calculated as follows, where \textit{n} is the number of points, \textit{k} is the number of clusters, \textit{WGSS} is the within-group (cluster) sum of squares, and \textit{BGSS} is the between-group (cluster) sum of squares.
+
+\[
+VRC = \frac{BGSS}{k-1}/\frac{WGSS}{n-k}
+\]
+If \textit{k} is not known, it is set to 2, then 3 and so on. The density of the clusters can be calculated with the sums of the squared distances from the cluster centroids, to the points. The more natural the clusterings are, the higher VRC will be, since the variation within the cluster is lower.
+
+
+%Determining the minimum of WGSS can be utilised for cluster analysis.
 
 
 
+% \subsubsection{Establishing the number of clusters}
+%  \textcite{han2011data}[398] states, that the number of clusters (\textit{k}) found in the dataset needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
+% \textcite{rousseeuw1987silhouettes}[59] describes, how silhouettes can be used to determine the ideal amount of clusters. Picture a dataset with dense clusters which each have large distances to the other clusters. When \textit{k} is chosen too small, naturally occurring clusters must be artificially joined, to satisfy the value \textit{k}. Implementing the silhouette calculation will result in high within-cluster dissimilarities (\textit{a(i)}) leading to a narrow silhouette (small \textit{s(i)}). Likewise, if \textit{k} is chosen too large, natural clusters will have to be artificially split, in order to gain \textit{k} clusters. The objects in a split natural cluster will however still be very close to the other half of their cluster, therefore resulting in low dissimilarities between clusters (\textit{b(i)}) and a small \textit{s(i)}.
+% This logic denotes, that silhouettes should be capable of finding the most 'natural' number of clusters in a dataset.
 
 
-
-% the book
-
-% Talk about SmartEater.
-SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor and usage data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
-
-\begin{enumerate}
-	\item Movement of the smartphone (accelerometer)
-	\item Volume of the audio
-	\item Percentage of screen-on-time
-	\item Number of notifications
-	\item Light sensor values
-	\item App usages in the categories communication, video players, and other
-\end{enumerate}
-
-
-
-%cite smarteater website  - as footnote
-This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
-
-\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data. Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
-
-There are several different methods to create clustering. \textcite{han2011data}[364, 366-367, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhatten distance measures). 
-The authors divide the clustering algorithms into the following categories:
-\begin{itemize}
-	\item Partitioning methods (examples: k-means, k-medoids)
-	\item Hierarchical methods (examples: BIRCH, Chameleon)
-	\item Density-based methods (examples: DBSCAN, OPTICS)
-	\item Grid-based methods (examples: STING, CLIQUE)
-\end{itemize}
-
-
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare these types clustering methods. 
-%Since different clustering algorithms can yield different results, multiple methods will be used and compared.
-
-%book page 93
-To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
-% %Visualizing Data using t-SNE p2579 (abstract!)
-% Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the dataset in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
-
-%ies Pandas\footnote{\url{https://pandas.pydata.org}} and
-The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
-\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
-
-% Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
-
-
-
-The thesis will be structured as follows: Section \ref{section:RelatedWork} will briefly present existing work relating to this subject. The following chapter, section \ref{section:Theory}, will concentrate on the theory of data mining and cluster analysis. After covering these topics, section \ref{section:Experiment} will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
-
+  
