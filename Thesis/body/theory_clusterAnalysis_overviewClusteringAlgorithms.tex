@@ -13,35 +13,6 @@
   \item Capability to cluster under certain constraints
   \item Interpretability and usability of the results
 \end{itemize}
-% \begin{itemize}
-%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
-%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
-%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
-%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
-%   \item Ability to handle noise (see section \ref{section:NoisyData})
-%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
-%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
-%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
-%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
-%   \item Interpretability and usability of the results
-% \end{itemize}
-% \begin{itemize}
-%   \item Scalability: clustering algorithms need to work on large databases, which may contain millions or billions of entries.
-%   \item Ability to work with different attribute types: The algorithm must be able to handle various data types, for example: binary, nominal (categorical), and ordinal data. More complex data types include graphs, sequences, images, and documents.
-%   \item Recognising clusters with arbitrary shapes: Methods that use distance measures (e.g. Euclidean or Manhattan) to compute clusters usually find clusters of spherical shape. The size and density also tend to be similar. Clusters could however be of any shape, therefore the algorithms need to be capable of detecting any shape.
-%   \item Requirements for domain knowledge: For some clustering algorithms, parameters (e.g. desired number of clusters) need to be determined. These can affect the cluster results. Parameters are hard to define, if the data is not understood.
-%   \item Ability to handle noise (see section \ref{section:NoisyData})
-%   \item Incremental clustering: The method should be able to integrate incremental data updates into existing structures, without recomputing the clustering.
-%   \item Insensitivity to the order of the input: The clustering results should be the same, regardless of the order the objects are inserted into the algorithm.
-%   \item Ability to cluster high-dimensional data (see section \ref{section:TheoryDimensionalityReduction}) %there is quite a good explanation here, but not really sure if need it
-%   \item Capability to cluster under certain constraints %TODO: do i need an example constraint? not explained very well in the book
-%   \item Interpretability and usability of the results
-% \end{itemize}
-
-% TODO: ON PAGE 356 - THERE ARE TECHNIQUES ON HOW TO COMPARE CLUSTERING METHODS - NOT SURE IF NEED
-
-%TODO: check if all pages have been used - have been highlighting lines that have used test
-%TODO IMPORTANT: this might not be 366-296 - depends on if i end up explaining in more detail - at end, find which pages i actually used
 
 
 \textbf{todo: add images to compare how different methods cluster}
@@ -49,9 +20,6 @@
 
 \textcite{han2011data}[366-368, 373, 374, 385] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
 
-% (\textbf{Todo: Explain used methods in more detail after Experiment and add figures of graphs})
-% \textbf{TODO: ONLY EXPLAIN IN DETAIL, WHICH METHODS ARE USED IN THE EXPERIMENT}
-%TODO:maybe also look into performance comparisons
   \subsubsection{Partitioning Methods}
   Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}), and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition.
   Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
@@ -64,12 +32,6 @@
   %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
   The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
 
-  % todo COULD GO MORE INTO DETAIL ABOUT AGGLOMERATIVE AND DIVISIVE CLUSTERING, SEE PAGES 375-377 - but not sure if need, depends if being used
-
-  
-%TODO: PAPER BOOK PAGE 526 - quite interesting- linkage (how to determine distance between clusters)
-  %TODO: CHECK, I THINK PARTITIONING AND HIERARCHICAL DON'T FILTER OUT NOISE AND OUTLIERS, BECAUSE THEY PARTITION THE ENTIRE DATA SET, SO EVERY OBJECT IS IN A CLUSTER. WOULD BE GOOD TO MENTION
-  
 
   \subsubsection{Density-Based Methods}
   \label{section:densityBasedMethods}
@@ -137,7 +99,6 @@ The clusters can then be automatically constructed from the reachability plot by
   \label{figure:clusterExtractionOPTICS}
 \end{figure}
 
-%todo: In comparison to DBSCAN - problem with containment - optics page 52
 
  
 
@@ -150,5 +111,3 @@ The clusters can then be automatically constructed from the reachability plot by
   \vspace{5mm} %5mm vertical space
 \textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
 
-
-  %TODO: paper book page 542 - kohonen networks

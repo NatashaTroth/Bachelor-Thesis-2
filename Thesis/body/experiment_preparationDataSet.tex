@@ -5,7 +5,6 @@ Initially, the raw data was distributed into multiple .csv files (one file per u
 The raw data contained several rows with empty cells. Section \ref{section:MissingValues} mentions substitution of missing data, thus preserving rows, which could otherwise contain important information. In doing so however, the existing patterns could be disrupted. In order to maintain the data's patterns, rows with missing values were removed. Using the Pandas' \textit{dropna}\footnote{\url{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html}} function (deletes rows with missing values), all rows containing empty cells were dropped. Of the original 8283 rows from the 1 hour time period files, only 3279 (39.59\%) rows were complete and remained. In the 3 hour files, only 6218 from 14091 (44.13\%) persisted.
 
 \subsubsection{Normalisation}
-%tododelete: can reduce here
 The recorded values from the different smartphone sensors were spread over different number ranges. For example, whilst the values that describe the screen-on-time ranged between -20 and 2.0, the light sensor values could reach from 0 to over 60,000. As explained in \ref{section:Normalisation}, values with higher ranges can inadvertently outweigh smaller values. To be sure that the values are weighted the same, the sklearn \textit{StandardScaler}\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}}(Z-score Normalization) was used to normalize the data. As mentioned in section \ref{section:Normalisation}, Z-score normalization is more robust to outliers, that could otherwise bias Min-Max Normalization. Therefore, Z-score Normalization was used instead of Min-Max Normalization.
 
 
@@ -13,7 +12,7 @@ The recorded values from the different smartphone sensors were spread over diffe
 % To be sure that the values are weighted the same, initially the sklearn \textit{MinMaxScaler}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html}} (Min-Max Normalization) was used to map all the values into the common range, e.g. [0,1]. Most of the values in the dataset ranged between 0 and just over 100. The light sensor values were the exception, with its values reaching above 60,000. 
 
 \subsubsection{Selection of columns (attributes)}
-% TODO:
+
 % Also - compressing 1-N columns
 In order to only use meaningful data to receive significant results, it was important to remove columns that did not contain any predictive content. The TIME column was removed for this reason. Since the TIME column only showed the time and date when the data was recorded periodically (in fixed intervals), it was different for each row (per user) like an index. It could have however bias the results if left in. 
 
@@ -139,10 +138,3 @@ The ensuing step, was to use the data point indices to look for similarities in 
 
 % Each unique feature only requires one column, and it therefore reduces the number of columns by 
 
-%tod0: say with min max - high value, rest squished together
-% \subsubsection{Feature reduction}
-% \textbf{todo - finish or remove}
-% The deletion of rows with missing values led to the loss of over 50\% of the rows in all time periods. With the intention to preserve as many of these rows as possible, columns with equal to or more than 30\% of rows with missing values were removed. This resulted in only 4 to 5 features of the original 8 being sustained. The results appeared to be unchanged and so, this feature reduction was eventually removed.
-
-
-% In order to check the functionality of the data preprocessing functions, python tests were written using random mock data.

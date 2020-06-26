@@ -6,9 +6,6 @@ There are different steps to be taken in evaluating clusters, e.g. evaluation of
 
  
 
-  % \subsubsection{Evaluation of the cluster quality}
-  % (\textbf{Todo: adjust to the methods used in the experiment})
-
   \textcite{han2011data}[399, 401] mention, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
   % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
   The experiment described in this paper uses intrinsic methods, since there is no ground truth for comparison.
@@ -41,11 +38,6 @@ A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluste
 
 The \textit{average silhouette width} can be calculated for single clusters. It is received by calculating the average of all objects that belong to said cluster. An average score can also be calculated from each object \textit{i} for the whole chart (dataset), the so called \textit{overall average silhouette width}. 
 
-% \textcite{silhouetteRelocatingMeasure}[15] use the silhouette coefficient in their proposed clustering algorithm, which clusters categorical data. The coefficient was used assess the quality of the clusters and to relocate objects to more fitting clusters. The cluster efficiency in their algorithm was therefore enhanced.
-
-
-
-% %TODO: there is some more about it with examples - but not sure if need - from p. 584
 
 \paragraph{Davies-Bouldin Index}
 A second cluster evaluation method is the Davies-Bouldin Index, which was announced by \textcite{DaviesBouldin}[224-227]. 

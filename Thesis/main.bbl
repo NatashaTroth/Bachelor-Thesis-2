@@ -87,7 +87,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 IEEE EMBS International Conference on Biomedical Health Informatics (BHI)}
       \field{month}{3}
-      \field{title}{Cluster-based approach to improve affect recognition from passively sensed data}
+      \field{title}{Cluster-based Approach to Improve Affect Recognition from Passively Sensed Data}
       \field{year}{2018}
       \field{pages}{434\bibrangedash 437}
       \range{pages}{4}
@@ -222,25 +222,25 @@
     \endentry
     \entry{calinskiHarabasz}{article}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=74b28f30912e45b424de18f111b69b81}{%
+        {{un=0,uniquepart=base,hash=ca449b99faca9e3268f9cd5089ee374b}{%
            family={Caliński},
            familyi={C\bibinitperiod},
-           given={Tadeusz},
+           given={T.},
            giveni={T\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=b8da180a2207695ec60cef5f87874b33}{%
+        {{un=0,uniquepart=base,hash=9fca4f269165e117e1e19179c9571c72}{%
            family={Harabasz},
            familyi={H\bibinitperiod},
-           given={JA},
+           given={J.},
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
-      \strng{fullhash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
-      \strng{bibnamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
-      \strng{authorbibnamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
-      \strng{authornamehash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
-      \strng{authorfullhash}{fba0dee0ffb04b28c70d2bc8cdbcefa5}
+      \strng{namehash}{04758f598b9a1ccb2e19147486c6d66e}
+      \strng{fullhash}{04758f598b9a1ccb2e19147486c6d66e}
+      \strng{bibnamehash}{04758f598b9a1ccb2e19147486c6d66e}
+      \strng{authorbibnamehash}{04758f598b9a1ccb2e19147486c6d66e}
+      \strng{authornamehash}{04758f598b9a1ccb2e19147486c6d66e}
+      \strng{authorfullhash}{04758f598b9a1ccb2e19147486c6d66e}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
       \field{extradatescope}{labelyear}
@@ -391,10 +391,10 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-319-10246-7}
-      \field{title}{Data preprocessing in data mining}
+      \field{title}{Data Preprocessing in Data Mining}
       \field{year}{2015}
       \verb{doi}
-      \verb doi:10.1007/978-3-319-10247-4
+      \verb 10.1007/978-3-319-10247-4
       \endverb
     \endentry
     \entry{han2011data}{book}{}
@@ -438,7 +438,6 @@
       \field{labeltitlesource}{title}
       \field{edition}{3rd Edition}
       \field{isbn}{978-0-12-381479-1}
-      \field{series}{The Morgan Kaufmann Series in Data Management Systems}
       \field{title}{Data Mining: Concepts and Techniques}
       \field{year}{2011}
     \endentry
@@ -470,7 +469,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-471-35645-5}
-      \field{title}{Clustering algorithms}
+      \field{title}{Clustering Algorithms}
       \field{year}{1975}
     \endentry
     \entry{hinton2003stochastic}{inproceedings}{}
@@ -652,7 +651,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Machine Learning research}
       \field{number}{Nov}
-      \field{title}{Visualizing data using t-SNE}
+      \field{title}{Visualizing Data using t-SNE}
       \field{volume}{9}
       \field{year}{2008}
       \field{pages}{2579\bibrangedash 2605}
@@ -684,9 +683,7 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
       \field{isbn}{9780128004081}
-      \field{title}{Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis}
       \field{year}{2014}
     \endentry
     \entry{OnLinesAndPlanes1901}{article}{}
@@ -772,7 +769,7 @@
       \field{pages}{2134}
       \range{pages}{1}
       \verb{doi}
-      \verb doi:10.3390/s18072134
+      \verb 10.3390/s18072134
       \endverb
     \endentry
     \entry{dataPreparationForDataMining}{book}{}
