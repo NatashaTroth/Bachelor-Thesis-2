@@ -667,6 +667,9 @@
            giveni={C\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Oxford}%
+      }
       \list{publisher}{1}{%
         {Butterworth-Heinemann (Elsevier)}%
       }
@@ -685,12 +688,6 @@
       \field{isbn}{9780128004081}
       \field{title}{Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis}
       \field{year}{2014}
-      \verb{urlraw}
-      \verb https://books.google.at/books?id=re1MBAAAQBAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.at/books?id=re1MBAAAQBAJ
-      \endverb
     \endentry
     \entry{OnLinesAndPlanes1901}{article}{}
       \name{author}{1}{}{%
@@ -748,6 +745,9 @@
            giveni={Z\bibinitperiod\bibinitdelim F\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Basel}%
+      }
       \list{publisher}{1}{%
         {Multidisciplinary Digital Publishing Institute}%
       }
@@ -764,38 +764,46 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Sensors}
+      \field{month}{7}
       \field{number}{7}
       \field{title}{Automatic Annotation of Unlabeled Data from Smartphone-Based Motion and Location Sensors}
       \field{volume}{18}
       \field{year}{2018}
       \field{pages}{2134}
       \range{pages}{1}
+      \verb{doi}
+      \verb doi:10.3390/s18072134
+      \endverb
     \endentry
     \entry{dataPreparationForDataMining}{book}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b2ecaa7a0ee1ecf23d81ac45279295bd}{%
+        {{un=0,uniquepart=base,hash=f9f5f28c73cabaa819ef331c609371ff}{%
            family={Pyle},
            familyi={P\bibinitperiod},
-           given={Dorian},
+           given={D.},
            giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {morgan kaufmann}%
+      \list{location}{1}{%
+        {Burlington, Massachusetts}%
       }
-      \strng{namehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
-      \strng{fullhash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
-      \strng{bibnamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
-      \strng{authorbibnamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
-      \strng{authornamehash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
-      \strng{authorfullhash}{b2ecaa7a0ee1ecf23d81ac45279295bd}
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{f9f5f28c73cabaa819ef331c609371ff}
+      \strng{fullhash}{f9f5f28c73cabaa819ef331c609371ff}
+      \strng{bibnamehash}{f9f5f28c73cabaa819ef331c609371ff}
+      \strng{authorbibnamehash}{f9f5f28c73cabaa819ef331c609371ff}
+      \strng{authornamehash}{f9f5f28c73cabaa819ef331c609371ff}
+      \strng{authorfullhash}{f9f5f28c73cabaa819ef331c609371ff}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Data preparation for data mining}
+      \field{isbn}{9781558605299}
+      \field{title}{Data Preparation for Data Mining}
       \field{year}{1999}
     \endentry
     \entry{AboutToEat2016Rahman}{inproceedings}{}
@@ -826,7 +834,7 @@
            givenun=0}}%
       }
       \list{location}{1}{%
-        {New York, NY, USA}%
+        {Montréal, Québec, Canada}%
       }
       \list{publisher}{1}{%
         {Association for Computing Machinery}%
@@ -845,13 +853,21 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 6th International Conference on Digital Health Conference}
       \field{isbn}{9781450342247}
-      \field{title}{Predicting \enquote{About-to-Eat} Moments for Just-in-Time Eating Intervention}
+      \field{month}{4}
+      \field{title}{Predicting “About-to-Eat” Moments for Just-in-Time Eating Intervention}
       \field{year}{2016}
-      \field{pages}{1\bibrangedash 10}
+      \field{pages}{141\bibrangedash 150}
       \range{pages}{10}
       \verb{doi}
       \verb 10.1145/2896338.2896359
       \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2896338.2896359
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2896338.2896359
+      \endverb
+      \keyw{eating habit modeling,just-in-time eating intervention,next eating event prediction}
     \endentry
     \entry{romesburg2004cluster}{book}{}
       \name{author}{1}{}{%
@@ -861,6 +877,9 @@
            given={H.\bibnamedelimi Charles},
            giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Morrisville, North Carolina}%
       }
       \list{publisher}{1}{%
         {Lulu Press}%
@@ -911,6 +930,9 @@
       \field{year}{1987}
       \field{pages}{53\bibrangedash 65}
       \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/0377-0427(87)90125-7
+      \endverb
     \endentry
     \entry{alcoholCravingPrediction}{inproceedings}{}
       \name{author}{2}{}{%
@@ -927,6 +949,9 @@
            giveni={P\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Nan, Thailand}%
+      }
       \strng{namehash}{3501ddaffe3cb420b12a6b44bfc5648f}
       \strng{fullhash}{3501ddaffe3cb420b12a6b44bfc5648f}
       \strng{bibnamehash}{3501ddaffe3cb420b12a6b44bfc5648f}
@@ -940,10 +965,14 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2019 Joint International Conference on Digital Arts, Media and Technology with ECTI Northern Section Conference on Electrical, Electronics, Computer and Telecommunications Engineering (ECTI DAMT-NCON)}
+      \field{month}{1}
       \field{title}{Excessive Alcohol Craving Prediction Algorithm Using Smartphone Accelerometer Sensor}
       \field{year}{2019}
       \field{pages}{335\bibrangedash 338}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ECTI-NCON.2019.8692267
+      \endverb
     \endentry
     \entry{SmartphoneBasedStressPrediction2015}{inproceedings}{}
       \name{author}{8}{}{%
@@ -1081,6 +1110,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Distill}
+      \field{month}{10}
       \field{title}{How to Use t-SNE Effectively}
       \field{year}{2016}
       \verb{doi}

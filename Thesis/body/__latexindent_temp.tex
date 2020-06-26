@@ -1,140 +1,119 @@
-%https://www.amazon.de/dp/069107951X/ref=sr_1_1?dchild=1&keywords=9780691079516&qid=1584700659&sr=8-1
-%  author={Bellman, R. and Rand Corporation and Karreman Mathematics Research Collection},
-%https://books.google.at/books?hl=en&lr=&id=iwbWCgAAQBAJ&oi=fnd&pg=PR9&dq=Adaptive+Control+Processes&ots=bDJ9XsIa7c&sig=Rc5D_JAZc7a4FigIbt3DmiNYhJI#v=snippet&q=curse%20of%20dimensionality&f=false
-\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however, will not be suitable for prediction. 
-\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated dataset, whilst mostly keeping the integrity of the initial dataset. Principal components analysis and t-SNE are dimensionality reduction techniques used to reduce the SmartEater dataset.
-%TODO: not sure if i've understood this next bit right:
-% \textcite{bellman1961adaptive}[94, 198] further gives the following example: Imagine if the variables of a function take on the values between 1 and 100. While a function with one variable would need to tabulate 100 values, a function with 2 variables would need to tabulate 100 x 100 = 10\textsuperscript{4} values and a function with 3 variables 10\textsuperscript{6}. Each additional variable adds more complexity.
-%...adds more complexity to the ?
-% Multidimensional variational problems require more complex methods to solve them. 
+% Interpretations: what do the results mean?
+% Implications: why do the results matter?
+% Limitations: what can’t the results tell us?
+% Recommendations: what practical actions or scientific studies should follow?
 
-% Imagine, for example, the variables are defined between 0 and 1 (e.g. u(t), where 0 $\leq$ t $\leq$ 1), at the points k(0.01). A function with one variable would require 100 values (the variable would take the numbers 0 to 100) to be tabulated. 
+Section \ref{section:ExperimentComparisonTimeLengths} reveals, that the 2h time length (from the 3h dataset) produced the most distinct and well defined clusters, according to the average Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index results. The 1h time length (from the 3h dataset) came second, and the 30 min time delta (from the 1h dataset) came third. When considering the highest number of evaluation score "wins" over different t-SNE and clustering results, the 30 min time delta (from the 1h dataset) however came top, followed by the 1h time length (from the 3h dataset) and then the 2h time length (see figure \ref{figure:clusteringResultsGraphTotal}). It can therefore be concluded, that these 3 time deltas are the best performers.
+
+To determine whether the 1 hour or 3 hour aggregation files led to better clusters, the average results of both time files are compared in figure \ref{figure:clusteringResults7}. Both the 1h and 3h datasets have the same amount of wins. When scanning other comparisons of these files (also the ones concluded for finding the t-SNE parameters), it is noticeable, that the 1h and 3h datasets either have the same number of wins, or the 3h dataset has more. This indicates that overall, the three hour aggregation files produce more superior clusters.
 
 
+The 45 minute time delta in the 1 hour data files performed the lowest, with 0 wins. The fact that 45 never out performed the other time lengths shows consistency, despite the different results. 1h 30 min(3h), 1h(1h), 2h 30 min (3h) and 3h (3h) all had no more than 2 wins. 
 
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/clusteringResults/clusteringResults7.png}
+  \caption{Evaluation scores comparison from averaged 1h and 3h run of t-SNE and clustering.}
+  \label{figure:clusteringResults7}
+\end{figure}
 
-%TODO: FIND OUT HOW PRINCIPAL COMPONENTS ARE CALCULATED IN THE FIRST PLACE
-% %TODO: FIND OUT WHO FIRST SUGGESTED IT FOR DATA MINING? ALTHOUGH DON'T THINK I'LL FIND MUCH
-% According to \textcite{DataMiningAndPredictiveAnalytics}[92, 93], a high amount of predictor variables in data mining can lead to overfitting and overlooking crucial relationships between predictors. Dimensionality reduction techniques have the ability to reduce the number of predictor items, aid in ensuring that these predictor items are independent, and present a framework for interpretability of the results.
+
+The results from \textcite{AboutToEat2016Rahman} (as mentioned in section \ref{section:RelatedWork}) showed, that higher time lengths (e.g. 100 minutes) performed better than shorter ones. They deducted, that smaller window sizes were susceptible to noise and had a higher gap between precision (exactness) and recall (completeness). 
+% Coarser ones however were unable to detect recent events, though performed better in the comparison of precision and recall.
+This discovery could also apply to the results of this experiment, considering that the 2h and 1h time lengths in the three hour data files were under the top 3 results.
 
 
+Of the 36 number of wins across all time deltas (the 1h and 3h aggregation files combined), 14 of these were achieved by the 1h data file time lengths (38.9\%), the other 22 by the 3 hour dataset (61.1\%). A possible explanation, as to why the 3h dataset might have created better clusters, was that the dataset had more rows. After the data preparation step, the 1h aggregation set was left with an average (depending on number of time length columns considered) of 1654 rows, whilst the 3h set was left with over double the amount of rows with an average of 3976.5 rows. The use of more data could have resulted in more similar rows and more improved clusters. Another aspect to consider, is that shorter sensor data recorded for shorter time lengths might not be long enough to detect underlying stress patterns.
 
-
-
-%Analysis of a complex of statistical variables by harold hotelling
-%https://babel.hathitrust.org/cgi/pt?id=wu.89097139406&view=1up&seq=20
-%On lines and planes of closest fit to systems of points in space
-%-pdf
-\subsubsection{Principal Components Analysis (PCA)}
-Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
-Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
-\textcite{hotelling1933analysis}[5] introduces his method as the method of principal components. In his paper, \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
-derivation was announced by \textcite{hotelling1933analysis}. According to \textcite{han2011data}[95-96], the general idea is to calculate k orthonormal vectors, the so called principal components. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. \textcite{hotelling1933analysis}[4, 5, 15, 18] explains, that the components are chosen with decreasing amount of variance. Therefore, the one with the highest variance is chosen first. The next highest is chosen orthogonal to the one before, and so on. \textcite{han2011data}[93, 95-96] mentions, in data mining, the vectors with the lowest variance are removed, thus reducing the number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
-
-%TODO: NOT SURE WHAT n IS - PAGE 1 SAYS NUMBER OF VARIABLES, BUT NOT SURE IF THAT REALLY MAKES SENCE HERE - pretty sure its dimensions, mentioned in next paragraph:
-% The next highest (\textit{$\gamma$\textsubscript{2}}) is chosen orthogonal to \textit{$\gamma$\textsubscript{1}} and so on, until the number \textit{n} dimensions are reached (\textit{$\gamma$\textsubscript{n}}). The components left with small variance are disregarded, since they are trivial. 
-% The method results in selecting a new set of coordinate axes which correspond to the principal axes of ellipsoids. 
-%NOT SURE IF UNDERSTOOD THIS RIGHT, END PAGE 24&25:
-% In an example, Helling selects the two of four calculated principal components with the highest variance, therefore being able to display the data on a two dimensional scatter diagram. (?)
-%10
-% Geometrically, the new coordinate axes are rotated to lie along the principal axes of the ellipsoids.
+Moreover, the higher the number of rows, the more robust the clusters could be towards potential outliers. As explained in section \ref{section:silhouetteCoefficient}, the Silhouette Score compares the within cluster distances to the distance of a neighbouring cluster. If many points are well placed within a cluster, an outlier will have little impact against the many short distances. However, if the cluster is not very dense and only contains a few "good" assigned data points, an outlier could have a larger impact on the result.
 
 
 
 
 
-% \textbf{!!!TODO: IF USE PCA, GO MORE INTO DETAIL AND TAKE IT FROM jolliffe2002PCA (=pdf) INSTEAD OF han2011data}.
-% \textbf{todo: more detail (if use PCA in experiment)}.
+%e.g. fight or flight https://humanstress.ca/stress/what-is-stress/history-of-stress/
 
 
-% \textcite{han2011data}[95-96]
-% \begin{enumerate}
-%   \item The first step is to standardise the input data, therefore making the data-range identical. \textcite{DataMiningAndPredictiveAnalytics}[94] declares, that after standardising the data, the mean is zero and the standard deviation is one.
-%   \item Next, k orthonormal vectors are calculated, the so called \textit{principal components}. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. 
-%   \item In the following step, as stated by \textcite{han2011data}[95-96], the principal components are put into order by their decreasing significance/strength, thus presenting their variance. These vectors are used as new axes for the data, the first axis exhibits the highest variance.
-%   \item Due to the decreasing order  of variance, the vectors with the lowest variance can be removed, therefore reducing the amount of data and number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
-% \end{enumerate}
+% This is stress resulting from specific events or situations that involve novelty, unpredictability, a threat to the ego, and leave us with a poor sense of control N.U.T.S. This ‘on the spot’ type of stress can be good for you because the stress hormones released help your mind and body to deal with the situation.
 
-%TODO: EXPLAIN MORE IN DETAIL!! ALTHOUGH - MIGHT BE DONE IN PRACTICAL PART - ASK
+% i.e.: Almost getting into a car accident or giving a speech in front of people. You feel your heart beat in your throat, you become hyper aware of everything around you, and feel pumped. These are signs that your stress hormones are hard at work!
+In order to provide Just-in-Time Intervention, the SmartEater app would need to predict upcoming stress. There are different types of stress. The Canadian Centre for Studies on Human Stress (CSHS) \footnote{\url{https://humanstress.ca/stress/understand-your-stress/acute-vs-chronic-stress/}} differentiate acute and chronic stress. Acute stress is caused by a particular event or setting, for example like a presentation in front of people. When something is new and feels out of control. Chronic stress is longer term and caused by repeated situations that cause stress. Stress can be longer and build slowly (e.g. increasing worry as an exam gets closer), or sudden (e.g. find out you have failed an exam). 
 
-%TODO: explain what variance is, maybe also skewed data
-%variance = range, want data as spread out as we can find it
-%either, find highest variance (where points are spread out the most), or minimum error(distance to axis)
-%retain most of the information
-%since eigenvalues - each principal component ends up orthogonal
-%youtuber video: which direction will you pick, that maximizes the variance
-%page 93
+The data points would need to account for and recognise these different lengths of stress. For example, if stress is short, then a longer time delta will likely make it seem less relevant, compared to all the unstressed data. However, if it is long, a shorter time delta might miss it or only perceive a small part of it. This could lead to false cluster assignments or noise. However, it could also create its own clusters. This could be the reason why middle time lengths, such as 2h, 1h (3h data files) created more distinct clusters, since it may have been more likely to recognise these differences. The fact that there was not one specific time length that always performed higher than the others shows, that a single time length may not be enough to be able to create clear clusters. Different time lengths might be needed to detect different patterns.
+
+When visually comparing the clusters in appendix \ref{appendix:clusteringResults}, the 3h datasets appear to be denser, whilst the 1h datasets have more wider non-populated regions between clusters. The 1h dataset top performer, 30 minutes, seems to be scattered to a slightly different shape to the other scatter plots of the 1h dataset. It appears to be spread out wider along the x axis, more like the 3h data files. The 30 minute time length achieved the highest number of wins in the 1h dataset. It could be argued, that the shape of the scattering of the points with similarity to the 3h data scatter plots, that also performed well, could be an indicator for more enhanced clustering results.
 
 
 
-\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
-\label{section:tSNE}
-In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE, a method of dimensionality reduction and visualising high dimensional data on a two or three-dimensional plot. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points are apart from each other, they are typically unable to bring similar low-dimensional representations near. 
+For future work, it might be advisable to get more data from users for a longer period of time. However, it would also be necessary confirm that the clusters were created for stress/not stress and for each user (since users behaviour could exhibit similarities). It might also be beneficial to support the mathematical evaluations with hand drawn clusters found by test users in user studies. Especially since the scores are different each time t-SNE is computed, sometimes leading to different results.
+% The fact however, that there might not be one specific time delta that is most suitable across all users.
 
-The authors describe, that t-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. \textcite{maaten2008visualizing}[2581] explain, that the first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. According to \textcite{hinton2003stochastic}[2], such a probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two data points \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour. \textcite{maaten2008visualizing}[2581] clarify, that this is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour under the circumstance, that the neighbours were chosen according to their probability density under a Gaussian, \textit{x\textsubscript{i}} being its centre. This results in the conditional probability being high for close data points and imperceptibly small for those further apart.
-In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}}, is calculated. 
-\textcite{maaten2008visualizing}[2581] state, that if the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. 
+% The time lengths that average multiple columns could create rows with more values, .
+% maybe more columns - made the data more different in higher - but too high too different more scattered
 
+% For future work, it might be advisable to get more data from users for a longer period of time. However, it would also be necessary confirm that the clusters were created for stress/not stress and for each user (since users behaviour could exhibit similarities). It might also be beneficial to support the mathematical evaluations with hand drawn clusters found by test users in user studies. Especially since the scores are different each time t-SNE is computed, sometimes leading to different results.
 
-\textcite{hinton2003stochastic}[2] further explain, that the goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data. This is accomplished by minimising a cost function, comprised of the sum of the Kullback-Leibler divergences between {p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. 
-\textcite{maaten2008visualizing}[2583] then list the advantages of t-SNE over SNE are the improvement of its cost function (symmetrised version of SNE) and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
-%TODO!!! FINISH
+%todo: especially since the maths evaluation score
 
-To apply t-SNE to a dataset, \textcite{maaten2008visualizing}[2582] describe, the $\sigma$\textsubscript{i} has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find an overall optimal  $\sigma$\textsubscript{i} for the dataset. \textcite{hinton2003stochastic}[2] declare, that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbors or the so called perplexity. The perplexity is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
-Another parameter to be set is the learning rate. \textcite{han2011data}[332] clarify, that the learning rate parameter is used to support the finding of global minimums, instead of being caught in a local minimum. A learning rate set too low will result in slow learning. In contrast, a learning rate set too high could lead to poor results.
+% higher amount of rows - more robust to outliers
 
-
-
-
-% @article{tsneAutomaticPerplexity,
-%   author    = {Yanshuai Cao and             Luyu Wang},
-%   title     = {Automatic Selection of t-SNE Perplexity},
-%   journal   = {CoRR},
-%   volume    = {abs/1708.03229},
-%   year      = {2017},
-%   url       = {http://arxiv.org/abs/1708.03229},
-%   archivePrefix = {arXiv},
-%   eprint    = {1708.03229},
-%   timestamp = {Mon, 13 Aug 2018 16:47:03 +0200},
-%   biburl    = {https://dblp.org/rec/journals/corr/abs-1708-03229.bib},
-%   bibsource = {dblp computer science bibliography, https://dblp.org}
-% }
-
-% \textcite{tsneAutomaticPerplexity}[1-2] point out, that this parameter has to be chosen by visually comparing the t-SNE outcomes. The authors propose a method to automatically select the t-SNE parameter perplexity. This parameter influences the results received from t-SNE and is difficult to optimise for inexperienced users. The authors explain, that the Kullback-Leibler (KL) divergences received from different complexities cannot solely be compared to find the most suitable perplexity. As the perplexity rises, the KL falls, selecting the smallest KL would therefore result in a very high perplexity (e.g. 400), whereas \textcite{maaten2008visualizing}[2582] recommend setting the perplexity to between 5 and 50. \textcite{tsneAutomaticPerplexity}[2-] further explains, that when the perplexity set to the number of data points, no interesting structure is found, only a Gaussian or uniform like blob. Accordingly, it could be perceived, that a trade off between the final Kullback-Leibner divergence and the Perplexity (\textit{Perp}) might result in good t-SNE results. The authors propose the following formula:
-
-% \[
-%   S(Perp) = KL(P||Q) + log(n)\frac{Perp}{n}
-% \]
-
-
-
-% would be the conditional probability, that the point \textit{x\textsubscript{i}} would pick the point \textit{x\textsubscript{j}} as its' neighbour.
-
-
-% The similarity
-% of datapoint x j to datapoint xi is the conditional probability, p jji, that xi would pick x j as its neighbor
-% if neighbors were picked in proportion to their probability density under a Gaussian centered at xi.
-
-
-
-% Notes from https://www.youtube.com/watch?v=RJVL80Gg3lA :
-% Represent each highdimensional data by a point
-% similar data by close points
-% dissimilar data by points further away
-% embed points in low dimensional map - visualise as scattterplot
-
-% distances in the low d map should reflect the similarities in the high d map
-
-% discrepancy: an illogical or surprising lack of compatibility or similarity between two or more facts.pca -  concerned with preserving large pairwise distances in the map - but are such distances very reliable?
-
-% tsne: in hd space- measure similarities between points.
-% gaussian over point and measure density of all other points under it and then renormalize
-%  - like probability of points where probability is proportional to similarity of the points
-%  - We set the bandwith sigmai such that the conditional has a fixed perplexity (fixed number of points in gaussian, to account for denser regions)
-
-%  then do the same for low dim space (qij) - if qij and pij are similar - then good mapping - qij should reflect pijs as well as possible
  
-%  layout qijs values in map so that as similar as possible to pij - move points around, so that kl kullback-leibler divergence becomes small
 
-%  2 hd points similar (close together) - large pij value - have to make sure also gets large qij value
+% 30 min performed well in both aggregations
+
+
+
+%1: 1. Adam, T.C., Epel, E.S.: Stress, eating and the reward system. Physiology & behavior 91(4), 449–458 (2007)
+%21: 21. Schwabe, L., Dickinson, A., Wolf, O.T.: Stress, habits, and drug addiction: a psychoneuroendocrinological perspective. Experimental and clinical psychopharmacology 19(1), 53 (2011)
+
+
+
+
+
+%1h-1: 1681, 3h-1: 3949
+%1h-2: 1655, 3h-2: 3987
+%1h-3: 1650, 3h-3: 3967
+%1h-4: 1630, 3h-4: 3951
+%----------, 3h-5: 3993
+%----------, 3h-6: 4012
+%----------------------
+%averages:
+%----------------------
+%
+%
+%
+
+
+% Naturally, this reduced the total number of rows left. As an example, the number of rows left for the 1h data files only using the first feature columns (15 min) was 1681 from initial 8283 (20.29\%). In the 3h dataset (first column, 30 min) only 3949 from 14091 rows remained (28.02\%).
+
+
+
+
+
+
+
+
+
+
+% CHAIN ARGUMENTATION, e.g. explain why data from the same person could be together
+% Answer research question by creating hypothesis (which i don't have to answer though)
+
+% can also see, when was comparing perplexity, learning rate - the 3h files mostly had the better values
+% Spalten wie NOTIF, SCRN, APP.. haben sehr oft 0 und sind auch teilweise von einander abhängig. Z.B. Wenn SCRN ausgeschaltet ist, ist in den meisten Spalten auch LIGHT, die APP Spalten und auch oft NOTIF 0. NOTIF ist generell sehr oft 0, weil man nicht ständig Notifikationen bekommt. LIGHT ist die Umgebungslicht. Oft wenn man das Handy nicht benutzt, hat man es in eine Tasche. Aus diesem Grund gibt es sehr viele ähnliche Spalten. (Ich habe auch nachgeschaut welche Spalten in diese Schleife sind und es sind fast immer solche (außer ein paar Ausreßer)).
+% Weiters kann man sehen, wenn SCRN 0 ist und es gibt Notifikationen, dann gibt es auch bei einer der APP Spalten Aktivität. Od ab und zu, wenn der SCRN angegangen ist, dann zeigt auch eine APP Aktivität.
+
+% Warum die Schleife noch da war, wie nur die AUDIO und ACC Spalten verwendet werden, ist vermutlich deshalb, weil die Accelerometer Werte auch sehr ähnlich waren. Beim Untersuchen der Tabelle, wo nur diese zwei Spalten verwendet wurden ist aufgefallen, dass mehr als 50% der ACC Werte zwischen in ein Intervall von 0.1 (z.B. zwischen 0.2 & 0.3) lagen, obwohl die ACC Werte in dem Bespiel insgesamt eine Spannungsbreite von 7.89069115 Werte (z.B. zw. 0 & 7.89069115) einnahmen.
+
+% Man sieht auch, dass öfters die Punkte von der gleichen Test Person gemeinsam „angehäufelt“ sind. Dies könnte sich vielleicht erklären lassen, dass die Daten einer Testperson ähnlich sind, weil er/sie die ähnlichen Handlungen machen (z.B. ähnliche schnelle Bewegungen, ähnliche Lautstärke, …)
+
+
+
+
+
+% (Future): look over in more detail? or other evalutation methods, or also human look over
+
+
+\textbf{todo: finish}
+
+in section \ref{section:TheoryDataMining} they say about how need constant human supervison - for this reason didn'T fully trust numbers

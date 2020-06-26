@@ -52,10 +52,10 @@ According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it i
 % In some data mining algorithms, variables with higher ranges can unjustly influence the results, having more influence than smaller ones. Therefore, the authors recommend to normalise numerical data. 
 
 %THIS IS ALSO EXPLAINED BY DATA PROCESSING IN DATA MINING ON PAGE 47
-\textcite{han2011data}[105-106] describe normalisation as giving the attributes of a dataset equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. Income would, for instance, have a larger range than binary attributes. 
+\textcite{han2011data}[105-106] describe normalisation as giving the attributes of a dataset equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. People's income would, for instance, have a larger range than binary attributes. 
 
 % %data mining concepts and techniques
-\textcite{dataPreprocessingInDataMining}[46-48] explain the following normalisation methods: \textit{Min-Max Normalization}, \textit{Z-score Normalization}, and \textit{Decimal Scaling Normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
+\textcite{dataPreprocessingInDataMining}[46-48] review the following normalisation methods: \textit{Min-Max Normalization}, \textit{Z-score Normalization}, and \textit{Decimal Scaling Normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
 \begin{itemize}
   \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
   \[

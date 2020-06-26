@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  25 JUN 2020 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  26 JUN 2020 12:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -977,22 +977,22 @@ LaTeX Warning: Reference `figure:clusteringResults5' on page vii undefined on in
 \openout8 = `main.lot'.
 
  [7] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body.tex (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/introduction.tex
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 18.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 37.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 13.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 34.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
  [1
 
 ]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/relatedWork.tex [2]
@@ -1158,4 +1158,242 @@ Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNE.png  used on
 (pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
 <./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png, id=676, 2411.0075pt x 1724.4425pt>
 File: ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png Graphic file (type png)
-<use ./images
+<use ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png  used on input line 116.
+(pdftex.def)             Requested size: 204.85846pt x 146.50989pt.
+<./images/tsneParametersTest/3h-1-finalTSNE.png, id=677, 2411.0075pt x 1722.435pt>
+File: ./images/tsneParametersTest/3h-1-finalTSNE.png Graphic file (type png)
+<use ./images/tsneParametersTest/3h-1-finalTSNE.png>
+Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNE.png  used on input line 129.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+<./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png, id=678, 2411.0075pt x 1722.435pt>
+File: ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png Graphic file (type png)
+<use ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png>
+Package pdftex.def Info: ./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png  used on input line 135.
+(pdftex.def)             Requested size: 204.85846pt x 146.33932pt.
+) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_clustering.tex [24 <./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
+ []
+
+<./images/kDistGraphDBSCAN1h.png, id=691, 901.3675pt x 662.475pt>
+File: ./images/kDistGraphDBSCAN1h.png Graphic file (type png)
+<use ./images/kDistGraphDBSCAN1h.png>
+Package pdftex.def Info: ./images/kDistGraphDBSCAN1h.png  used on input line 26.
+(pdftex.def)             Requested size: 198.03008pt x 145.54277pt.
+<./images/kDistGraphDBSCAN3h.png, id=692, 941.5175pt x 692.5875pt>
+File: ./images/kDistGraphDBSCAN3h.png Graphic file (type png)
+<use ./images/kDistGraphDBSCAN3h.png>
+Package pdftex.def Info: ./images/kDistGraphDBSCAN3h.png  used on input line 33.
+(pdftex.def)             Requested size: 227.62206pt x 167.43971pt.
+[25 <./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png>] [26 <./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png> <./images/tsneParametersTest/1h-1-finalTSNE.png> <./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png>]
+<./images/clusteringResults/1h-1-DBSCAN.png, id=709, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/1h-1-DBSCAN.png Graphic file (type png)
+<use ./images/clusteringResults/1h-1-DBSCAN.png>
+Package pdftex.def Info: ./images/clusteringResults/1h-1-DBSCAN.png  used on input line 48.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+<./images/clusteringResults/3h-1-DBSCAN.png, id=710, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/3h-1-DBSCAN.png Graphic file (type png)
+<use ./images/clusteringResults/3h-1-DBSCAN.png>
+Package pdftex.def Info: ./images/clusteringResults/3h-1-DBSCAN.png  used on input line 55.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+ [27 <./images/tsneParametersTest/3h-1-finalTSNE.png> <./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png> <./images/kDistGraphDBSCAN1h.png> <./images/kDistGraphDBSCAN3h.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[][][][][]$\OT1/pcr/m/n/10 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
+ []
+
+<./images/clusteringResults/1h-1-OPTICS-xi.png, id=725, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/1h-1-OPTICS-xi.png Graphic file (type png)
+<use ./images/clusteringResults/1h-1-OPTICS-xi.png>
+Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS-xi.png  used on input line 81.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+<./images/clusteringResults/3h-1-OPTICS-xi.png, id=726, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/3h-1-OPTICS-xi.png Graphic file (type png)
+<use ./images/clusteringResults/3h-1-OPTICS-xi.png>
+Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS-xi.png  used on input line 88.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+[28 <./images/clusteringResults/1h-1-DBSCAN.png> <./images/clusteringResults/3h-1-DBSCAN.png>]
+<./images/clusteringResults/1h-1-reachabilityPlot-xi.png, id=735, 3135.715pt x 1724.4425pt>
+File: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png Graphic file (type png)
+<use ./images/clusteringResults/1h-1-reachabilityPlot-xi.png>
+Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot-xi.png  used on input line 100.
+(pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
+<./images/clusteringResults/3h-1-reachabilityPlot-xi.png, id=736, 3135.715pt x 1724.4425pt>
+File: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png Graphic file (type png)
+<use ./images/clusteringResults/3h-1-reachabilityPlot-xi.png>
+Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot-xi.png  used on input line 106.
+(pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
+<./images/clusteringResults/1h-1-OPTICS.png, id=737, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/1h-1-OPTICS.png Graphic file (type png)
+<use ./images/clusteringResults/1h-1-OPTICS.png>
+Package pdftex.def Info: ./images/clusteringResults/1h-1-OPTICS.png  used on input line 118.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+<./images/clusteringResults/3h-1-OPTICS.png, id=738, 2411.0075pt x 1724.4425pt>
+File: ./images/clusteringResults/3h-1-OPTICS.png Graphic file (type png)
+<use ./images/clusteringResults/3h-1-OPTICS.png>
+Package pdftex.def Info: ./images/clusteringResults/3h-1-OPTICS.png  used on input line 125.
+(pdftex.def)             Requested size: 227.62206pt x 162.79753pt.
+ [29 <./images/clusteringResults/1h-1-OPTICS-xi.png> <./images/clusteringResults/3h-1-OPTICS-xi.png> <./images/clusteringResults/1h-1-reachabilityPlot-xi.png> <./images/clusteringResults/3h-1-reachabilityPlot-xi.png>]
+<./images/clusteringResults/1h-1-reachabilityPlot.png, id=748, 3135.715pt x 1724.4425pt>
+File: ./images/clusteringResults/1h-1-reachabilityPlot.png Graphic file (type png)
+<use ./images/clusteringResults/1h-1-reachabilityPlot.png>
+Package pdftex.def Info: ./images/clusteringResults/1h-1-reachabilityPlot.png  used on input line 137.
+(pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
+<./images/clusteringResults/3h-1-reachabilityPlot.png, id=749, 3135.715pt x 1724.4425pt>
+File: ./images/clusteringResults/3h-1-reachabilityPlot.png Graphic file (type png)
+<use ./images/clusteringResults/3h-1-reachabilityPlot.png>
+Package pdftex.def Info: ./images/clusteringResults/3h-1-reachabilityPlot.png  used on input line 144.
+(pdftex.def)             Requested size: 227.62206pt x 125.17018pt.
+)
+Overfull \hbox (13.39928pt too wide) in paragraph at lines 59--59
+|[]\OT1/ptm/b/n/14.4 Comparison and eval-u-a-tion of clus-ter re-sults from dif-fer-ent time lengths| 
+ []
+
+(/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/experiment_comparisionTimeLengths.tex
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 30 undefined on input line 13.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 30 undefined on input line 13.
+
+[30 <./images/clusteringResults/1h-1-OPTICS.png> <./images/clusteringResults/3h-1-OPTICS.png> <./images/clusteringResults/1h-1-reachabilityPlot.png> <./images/clusteringResults/3h-1-reachabilityPlot.png>]
+<./images/clusteringResults/clusteringResults6.png, id=770, 1400.23125pt x 1041.8925pt>
+File: ./images/clusteringResults/clusteringResults6.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResults6.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResults6.png  used on input line 74.
+(pdftex.def)             Requested size: 364.19667pt x 270.98105pt.
+
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults1' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults2' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults3' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults4' on page 31 undefined on input line 75.
+
+
+LaTeX Warning: Reference `figure:clusteringResults5' on page 31 undefined on input line 75.
+
+<./images/clusteringResults/clusteringResultsGraph1h.png, id=771, 1300.86pt x 1045.9075pt>
+File: ./images/clusteringResults/clusteringResultsGraph1h.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResultsGraph1h.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph1h.png  used on input line 86.
+(pdftex.def)             Requested size: 259.4918pt x 208.63518pt.
+
+Overfull \hbox (43.24808pt too wide) in paragraph at lines 86--87
+ [][] 
+ []
+
+<./images/clusteringResults/clusteringResultsGraph3h.png, id=772, 1210.5225pt x 927.465pt>
+File: ./images/clusteringResults/clusteringResultsGraph3h.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResultsGraph3h.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraph3h.png  used on input line 93.
+(pdftex.def)             Requested size: 259.4918pt x 198.8067pt.
+
+Overfull \hbox (43.24808pt too wide) in paragraph at lines 93--94
+ [] 
+ []
+
+<./images/clusteringResults/clusteringResultsGraphTotal.png, id=773, 1439.3775pt x 1039.885pt>
+File: ./images/clusteringResults/clusteringResultsGraphTotal.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResultsGraphTotal.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraphTotal.png  used on input line 118.
+(pdftex.def)             Requested size: 318.66948pt x 230.21933pt.
+<./images/clusteringResults/clusteringResults8.png, id=774, 1207.51125pt x 457.71pt>
+File: ./images/clusteringResults/clusteringResults8.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResults8.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResults8.png  used on input line 139.
+(pdftex.def)             Requested size: 364.19667pt x 138.04738pt.
+[31] [32 <./images/clusteringResults/clusteringResults6.png>] [33 <./images/clusteringResults/clusteringResultsGraph1h.png> <./images/clusteringResults/clusteringResultsGraph3h.png> <./images/clusteringResults/clusteringResultsGraphTotal.png>] [34 <./images/clusteringResults/clusteringResults8.png>]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/discussion.tex
+<./images/clusteringResults/clusteringResults7.png, id=805, 607.26875pt x 519.9425pt>
+File: ./images/clusteringResults/clusteringResults7.png Graphic file (type png)
+<use ./images/clusteringResults/clusteringResults7.png>
+Package pdftex.def Info: ./images/clusteringResults/clusteringResults7.png  used on input line 16.
+(pdftex.def)             Requested size: 227.62206pt x 194.88275pt.
+ [35
+
+ <./images/clusteringResults/clusteringResults7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[][][][][]$\OT1/pcr/m/n/10 https : / / humanstress . ca / stress / understand-[]your-[]stress /
+ []
+
+[36]) (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/body/conclusion.tex)) [37] [38] [39] [40] (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/appendix.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+ [41
+
+]
+Overfull \hbox (13.03906pt too wide) in paragraph at lines 70--71
+[]\OT1/ptm/m/n/12 Rohdaten und auf-bere-it-ete Daten der Evaluierun-gen (Log-Daten, Tabellen, Graphen, Scripts,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200623170602 / https : / / distill . pub /
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
+ (/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 88897E7A619BA22BB1730C25077E3806;2805.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
+ ) 
+Here is how much of TeX's memory you used:
+ 21946 strings out of 492162
+ 386563 string characters out of 6125292
+ 1209409 words of memory out of 5000000
+ 25633 multiletter control sequences out of 15000+600000
+ 52315 words of font info for 113 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 80i,9n,131p,1828b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (50 pages, 3857513 bytes).
+PDF statistics:
+ 964 PDF objects out of 1000 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 511 words of extra memory for PDF output out of 10000 (max. 10000000)
+

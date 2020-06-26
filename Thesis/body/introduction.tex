@@ -8,9 +8,25 @@
 
 %TODO: also add a paper on eating crises...
 % the book
-\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data.
-% (17) This includes cleaning data, combining multiple sources, selecting and transforming relevant data, and extracting and evaluating data patterns.
-Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
+
+% Talk about SmartEater.
+SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor and usage data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
+
+\begin{enumerate}
+	\item Movement of the smartphone (accelerometer)
+	\item Volume of the audio
+	\item Percentage of screen-on-time
+	\item Number of notifications
+	\item Light sensor values
+	\item App usages in the categories communication, video players, and other
+\end{enumerate}
+
+
+
+%cite smarteater website  - as footnote
+This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
+
+\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data. Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
 
 There are several different methods to create clustering. \textcite{han2011data}[364, 366-367, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhatten distance measures). 
 The authors divide the clustering algorithms into the following categories:
@@ -33,23 +49,6 @@ The authors divide the clustering algorithms into the following categories:
 
 %end related work
 
-% Talk about SmartEater.
-SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
-
-\begin{enumerate}
-	\item Movement of the smartphone (accelerometer)
-	\item Volume of the audio
-	\item Percentage of screen-on-time
-	\item Number of notifications
-	\item Light sensor values
-	\item App usages in the categories communication, video players, and other
-\end{enumerate}
-
-
-
-%cite smarteater website  - as footnote
-This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
-
 According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare these types clustering methods. 
 %Since different clustering algorithms can yield different results, multiple methods will be used and compared.
 
@@ -60,7 +59,7 @@ To reduce the size and amount of data, dimensionality reduction will be used. \t
 
 %ies Pandas\footnote{\url{https://pandas.pydata.org}} and
 The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
-\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters are. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
+\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
 
 % Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
 
