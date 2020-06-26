@@ -26,9 +26,15 @@ In the feature selection step, the most relevant features were selected (e.g. th
 \begin{figure*}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{./images/windowSizePerformance.png}
-  \caption{This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.}
+  \caption{This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier \autocite{AboutToEat2016Rahman}[148]. According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the as positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score is a measure that combines precision and recall (harmonic mean).}
   \label{figure:windowSize}
 \end{figure*}
+
+
+% According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
+
+
+
 
 The performance for the "Time until Next Eating Event" model gained a correlation coefficient of 0.49. The most fitting feature extraction window size was assessed, the best performance was reached with a window size of 100 minutes. The authors further claim, that both models could be improved by incorporating person-dependent data from the target user to the models (e.g. person-specific eating pattern, lifestyle).
 
@@ -61,5 +67,5 @@ Other related work:
 
 % In order to train an "About-to-Eat" moment classifier, signal processing and machine learning were used on the sensor streams. The classifier was trained to recognise the two classes "About-to-Eat" and "Not-About-to-Eat". The average recall of this model resulted in a recall, precision and F score of 0.77, 0.67 and 0.69 (respectively).
 
-% According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score (or F\textsubscript{1} score) is a measure that combines precision and recall (harmonic mean).
-%\textcite{AboutToEat2016Rahman}'s
+
+% \textcite{AboutToEat2016Rahman}'s

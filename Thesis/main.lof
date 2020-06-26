@@ -5,7 +5,7 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier.\relax }}{3}{figure.caption.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces This graph depicts the F measure with the different feature extraction window sizes of the "About-to-Eat" classifier \autocite {AboutToEat2016Rahman}[148]. According to \textcite {han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the as positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score is a measure that combines precision and recall (harmonic mean).\relax }}{4}{figure.caption.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) \autocite {DBSCAN}[230].\relax }}{11}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
