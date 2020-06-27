@@ -36,7 +36,7 @@ def optics_clustering(df, dataType="", graphs=False):
     if graphs == True:
         create_clustering_plot(
             optics, df, "OPTICS (" + dataType + ")")
-    create_reachability_plot(df, clustering)
+        create_reachability_plot(df, clustering)
     return cluster_evaluation(optics, df)
 
 

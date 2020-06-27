@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib as matplotlib
 import seaborn as sns
+import random
 
 
 def create_bar_plot(x, y, xName, yName):
@@ -71,7 +73,17 @@ def create_clustering_plot(clustering_method, df, title):
 def create_2d_scatterplot_clustering(clustering_method, df, title):
     plt.figure(figsize=(20, 10))
     cluster_labels = clustering_method.fit_predict(df)
-    plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
+    colors = get_array_random_colors(len(np.unique(cluster_labels)) - 1)
+    cluster_colors = []
+    i = 0
+    while i < len(cluster_labels):
+        cluster_colors.append(colors[cluster_labels[i]])
+        i += 1
+
+    print("PLOT cluster LABELS")
+    print(cluster_labels)
+    plt.scatter(df[0], df[1], c=cluster_colors, cmap='Paired')
+    # plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
     plt.title(title)
     plt.show()
 
@@ -100,24 +112,59 @@ def create_2d_pyplot(data):
     plt.show()
 
 
+def get_array_random_colors(size):
+    random.seed(42)
+    colors = []
+    i = 0
+    while i < size:
+
+        random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
+        colors.append(random_color)
+        i += 1
+    return colors
+
+
 def create_reachability_plot(df, clustering):
+
+    print("COLORS")
+    print(matplotlib.colors)
     space = np.arange(len(df))
     reachability = clustering.reachability_[clustering.ordering_]
     labels = clustering.labels_[clustering.ordering_]
     # Defining the framework of the visualization
     plt.figure(figsize=(50, 10))
-    # G = gridspec.GridSpec(2, 3)
+    # # G = gridspec.GridSpec(2, 3)
+    # plt.plot(reachability)
+    # plt.ylabel('some numbers')
+    # plt.show()
+
+    print("LABELS")
+    print(np.unique(labels))
+    unique_labels = np.unique(labels)
+
     ax1 = plt.subplot()
+    # ax1 = freq_series.plot(kind='bar')
 
     # Plotting the Reachability-Distance Plot
-    colors = ['c.', 'b.', 'r.', 'y.', 'g.']
-    for Class, colour in zip(range(0, 5), colors):
+
+    colors = get_array_random_colors(len(unique_labels) - 1)
+    for Class, color in zip(range(0, unique_labels[len(unique_labels) - 1]), colors):
+        print(Class)
+        # for Class, colour in zip(range(0, 5), colors):
+        # for all points with labels (clusters), first cluster 1, then 2...
         Xk = space[labels == Class]
+        # print("Xk")
+        # print(Xk)
         Rk = reachability[labels == Class]
-        ax1.bar(Xk, Rk, colour, alpha=0.3)
-    ax1.bar(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
-    ax1.bar(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
-    ax1.bar(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
+        # print("Rk")
+        # print(Rk)
+        ax1.bar(Xk, Rk, color=color, width=1)
+    ax1.bar(space[labels == -1], reachability[labels == -1],
+            color='k', width=1)
+    ax1.plot(space, np.full_like(space, 2., dtype=float), color='k', alpha=0.5)
+    ax1.plot(space, np.full_like(space, 0.5, dtype=float), color='k', alpha=0.5)
+    ax1.fill_between(0, space)
+    ax1.set_ylim([0, 7.5])
     ax1.set_ylabel('Reachability Distance')
     ax1.set_title('Reachability Plot')
     plt.show()

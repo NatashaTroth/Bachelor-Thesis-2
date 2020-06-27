@@ -10,7 +10,7 @@ def create_clustering_of_directory(directory, number_columns_to_use=1, number_di
 
     # ---dimensionality reductions---
     # data_file.calculate_PCA(number_dimensions, True)
-    data_file.calculate_TSNE(number_dimensions, True)
+    data_file.calculate_TSNE(number_dimensions, False)
 
     # ---clustering---
     # data_file.dbscan_clustering('PCA', True)

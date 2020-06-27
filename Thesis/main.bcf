@@ -4010,4 +4010,64 @@
     <bcf:citekey order="154">DaviesBouldin</bcf:citekey>
     <bcf:citekey order="155">DaviesBouldin</bcf:citekey>
     <bcf:citekey order="156">calinskiHarabasz</bcf:citekey>
-    <bcf:citekey order="157">calinskiHarabasz</bcf:
+    <bcf:citekey order="157">calinskiHarabasz</bcf:citekey>
+    <bcf:citekey order="158">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="159">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="160">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="161">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="162">DBSCAN</bcf:citekey>
+    <bcf:citekey order="163">DBSCAN</bcf:citekey>
+    <bcf:citekey order="164">OPTICS</bcf:citekey>
+    <bcf:citekey order="165">OPTICS</bcf:citekey>
+    <bcf:citekey order="166">AboutToEat2016Rahman</bcf:citekey>
+    <bcf:citekey order="167">AboutToEat2016Rahman</bcf:citekey>
+    <bcf:citekey order="168">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="169">DataMiningAndPredictiveAnalytics</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="cms">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">namea</bcf:sortitem>
+      <bcf:sortitem order="4">editor</bcf:sortitem>
+      <bcf:sortitem order="5">nameb</bcf:sortitem>
+      <bcf:sortitem order="6">translator</bcf:sortitem>
+      <bcf:sortitem order="7">namec</bcf:sortitem>
+      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
+      <bcf:sortitem order="10">organization</bcf:sortitem>
+      <bcf:sortitem order="11">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">labelyear</bcf:sortitem>
+      <bcf:sortitem order="3">year</bcf:sortitem>
+      <bcf:sortitem order="4">origyear</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="cms/global//global/global"
+                type="entry"
+                sortingtemplatename="cms"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
