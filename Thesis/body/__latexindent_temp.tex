@@ -1,124 +1,34 @@
-The clustering algorithms used for the SmartEater dataset, were DBSCAN and OPTICS. One of the advantages of these density-based clustering methods (as mentioned in section \ref{section:densityBasedMethods}) are that there are less parameters to configure. Another reason for choosing these methods, is that there is no need to define a fixed number of \textit{k} clusters to find, since the cluster boundaries are regulated by density. This technique also allows arbitrary-shaped clusters to be correctly identified. The t-SNE dimensionality reduction approach provided more significant results than PCA. Thus, the cleaned data and t-SNE modified data (with two components) was fed into the clustering algorithms DBSCAN and OPTICS.
+SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater} (last visited 27. June 2020, 19:40)} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor and usage data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
 
-\subsubsection{DBSCAN}
-The DBSCAN algorithm was applied on the SmartEater dataset using the sklearn \textit{DBSCAN}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html}} function.
-Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances kth nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea was to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
+\begin{enumerate}
+	\item Movement of the smartphone (accelerometer)
+	\item Volume of the audio
+	\item Percentage of screen-on-time
+	\item Number of notifications
+	\item Light sensor values
+	\item App usages in the categories communication, video players, and other
+\end{enumerate}
 
+This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.87\textwidth]{./images/kDistGraphDBSCAN1h.png}
-  \caption{1h dataset}
-  \label{figure:kDistGraphDBSCAN1h}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/kDistGraphDBSCAN3h.png}
-    \caption{3h dataset}
-    \label{figure:kDistGraphDBSCAN3h}
-  \end{subfigure}
-  \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
-  \label{figure:kDistGraphDBSCAN}
-  \end{figure}
+\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data. Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
 
-The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}.
+There are several different methods to create clustering. \textcite{han2011data}[364, 366-367, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhattan distance measures). 
+The authors divide the clustering algorithms into the following categories:
+\begin{itemize}
+	\item Partitioning methods (examples: k-means, k-medoids)
+	\item Hierarchical methods (examples: BIRCH, Chameleon)
+	\item Density-based methods (examples: DBSCAN, OPTICS)
+	\item Grid-based methods (examples: STING, CLIQUE)
+\end{itemize}
 
 
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-DBSCAN.png}
-  \caption{1h dataset DBSCAN clustering (first column - 15 min).}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-DBSCAN.png}
-    \caption{3h dataset DBSCAN clustering (first column - 30 min).}
-  \end{subfigure}
-  \caption{}
-  \label{figure:DBSCANResults}
-  \end{figure}
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare the results of these types of clustering methods. 
 
+To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
 
+The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/} (last visited 27. June 2020, 19:53)}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/} (last visited 27. June 2020, 19:53)}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
+\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
 
+The thesis will be structured as follows: Section \ref{section:RelatedWork} will briefly present existing work relating to this subject. The following chapter, section \ref{section:Theory}, will concentrate on the theory of data mining and cluster analysis. After covering these topics, section \ref{section:Experiment} will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
 
-
-
-\subsubsection{OPTICS}
-The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as explained in section \ref{section:OPTICS} and introduced in \textcite{OPTICS}[57]. The visual results of these clusterings appeared to contain many points that were not assigned to clusters, as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots showed many points that weren't assigned to a cluster (no colour). This resulted in the DBSCAN method being used to cluster the OPTICS results. The Eps parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}.
-
-
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-xi.png}
-  \caption{1h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-xi.png}
-    \caption{3h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
-  \end{subfigure}
-  \caption{}
-  \label{figure:OPTICSXiResults}
-  \end{figure}
-
-  \begin{figure}[H]
-    \centering
-    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-xi.png}
-    \caption{1h dataset OPTICS reachability plot (first column - 15 min), using OPTICS automatic cluster extraction (xi).}
-    \end{subfigure}%
-    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-xi.png}
-      \caption{3h dataset OPTICS reachability plot (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
-    \end{subfigure}
-    \caption{}
-    \label{figure:OPTICSResultsReachabilityPlot}
-    \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-DBSCAN.png}
-  \caption{1h dataset OPTICS clustering (first column - 15 min), using DBSCAN clustering.}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-DBSCAN.png}
-    \caption{3h dataset OPTICS clustering (first column - 30 min), using DBSCAN clustering.}
-  \end{subfigure}
-  \caption{}
-  \label{figure:OPTICSResults}
-  \end{figure}
-
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-DBSCAN.png}
-  \caption{1h dataset OPTICS reachability plot (first column - 15 min), using DBSCAN clustering.}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-DBSCAN.png}
-    \caption{3h dataset OPTICS reachability plot (first column - 30 min), using DBSCAN clustering.}
-  \end{subfigure}
-  \caption{}
-  \label{figure:OPTICSResultsReachabilityPlot}
-  \end{figure}
-
-
-The final DBSCAN and OPTICS clusterings scatter plots for each time delta are compared in appendix \ref{appendix:clusteringResults}.
