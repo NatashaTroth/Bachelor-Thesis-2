@@ -1,15 +1,3 @@
-% (500 words)
-%LEITFADEN:
-% Die Einleitung dient der Einführung in das Thema, indem eine spezifische Fragestellung (For- schungsfrage) herausgearbeitet, plausibel formuliert, differenziert und begründet wird. Die methodische Vorgehensweise („Wie wird das Thema bearbeitet?“) muss begründet und auf das Thema und die Frage- und Problemstellung der Arbeit bezogen werden. Des Weiteren sollte in der Einleitung oder in einem gesonderten Kapitel (Verwandte Arbeiten) die zur Bearbeitung herangezogene wissenschaftliche Literatur sowie die spezifische Auswahl von Quellen und Texten dargestellt und erläutert werden.
-
-
-
-
-
-
-% the book
-
-% Talk about SmartEater.
 SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor and usage data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
 
 \begin{enumerate}
@@ -21,9 +9,6 @@ SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/reso
 	\item App usages in the categories communication, video players, and other
 \end{enumerate}
 
-
-
-%cite smarteater website  - as footnote
 This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
 
 \textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data. Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
@@ -38,21 +23,12 @@ The authors divide the clustering algorithms into the following categories:
 \end{itemize}
 
 
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare these types clustering methods. 
-%Since different clustering algorithms can yield different results, multiple methods will be used and compared.
+According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare the results of these types of clustering methods. 
 
-%book page 93
 To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
-% %Visualizing Data using t-SNE p2579 (abstract!)
-% Furthermore, T-Distributed Stochastic Neighbor Embedding (t-SNE) will be employed to depict the dataset in this thesis. \textcite{maaten2008visualizing}[2579] first introduce t-SNE, which is used to visualise data with a higher dimensionality. 
 
-%ies Pandas\footnote{\url{https://pandas.pydata.org}} and
 The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/}}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/}}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
 \textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
-
-% Evaluation examples given by \textcite{han2011data}[396-399] include clustering tendency, intrinsic and extrinsic measurements. 
-
-
 
 The thesis will be structured as follows: Section \ref{section:RelatedWork} will briefly present existing work relating to this subject. The following chapter, section \ref{section:Theory}, will concentrate on the theory of data mining and cluster analysis. After covering these topics, section \ref{section:Experiment} will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
 

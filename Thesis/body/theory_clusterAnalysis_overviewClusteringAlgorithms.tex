@@ -1,5 +1,3 @@
-
-
 \textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
 \begin{itemize}
   \item Scalability
@@ -15,9 +13,6 @@
 \end{itemize}
 
 
-\textbf{todo: add images to compare how different methods cluster}
-
-
 \textcite{han2011data}[366-368, 373, 374, 385] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
 
   \subsubsection{Partitioning Methods}
@@ -25,11 +20,7 @@
   Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
   
 
-
-
-
   \subsubsection{Hierarchical Methods}
-  %CAREFUL!, sentence from book is similar:  A hierarchical clustering method works by grouping data objects into a hierarchy or “tree” of clusters.
   The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
 
 
@@ -37,17 +28,14 @@
   \label{section:densityBasedMethods}
   The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. These methods can also be used to cluster sub spaces. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS.
 
-  % Examples: DBSCAN, OPTICS, DENCLUE
   %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
 
 
 
 \paragraph{DBSCAN}
 \label{section:DBSCAN}
-\textcite{DBSCAN}[226-229] introduce a density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters with different shapes and work efficiently on large spatial datasets. The algorithm searches in a given radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exists, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of its Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius).
-% The goal is to keep adding neighbouring data points to the cluster
-% In doing so, core points and border points are distinguished.
-%todo: rewrite - that uses two global parameters instead of one - or say that only with one paramter
+\textcite{DBSCAN}[226-229] introduce a density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters with different shapes and work efficiently on large spatial datasets. The algorithm searches in a given radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exists, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of its Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius). 
+
 According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
 
 \textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the ideal parameters for the "thinnest" cluster. The first step is to construct a sorted \textit{k}-dist graph. For a specific \textit{k}, the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour is calculated. These distances are then sorted in descending order and depicted on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour (the "thinnest" cluster). The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left of it with higher distances are likely to be noise and the points to the right are part of clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
@@ -59,11 +47,6 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
   \caption{Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) to calculate DBSCAN Eps parameter. The first point in the "valley" is supposedly the ideal value. The points to the left with higher distances are likely to be noise and the points to the right are part of clusters \autocite{DBSCAN}[230].}
   \label{figure:sortedKGraphDBSCAN}
 \end{figure*}
-
-% d = distance of point p to its k-th nearest neighbourhood
-% d-neighbourhood of p contains more than k+1 points - if several points have the same distance d from p as the kth point - unlikely
-%map each point from database to the distance from its kth nearest neighbour - sort in descending order - graph gives hints concerning density distribution in the db (= sorted k-dist graph)
-
 
 
 \paragraph{OPTICS}
@@ -77,8 +60,7 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
   \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
   \label{figure:reachabilityDistanceOPTICS}
 \end{figure*}
-%TODO: i wrote this from the paper - not sure whether to add - end is missing - see optics page 53 - pseudo code explanation
-%The OPTICS algorithm takes an arbitrary core point, and orders its directly density-reachable objects (according to Eps and MinPts) and sorts them by their reachability-distance (to the selected core point). From the smallest to the largest reachability-distance, each point is selected and added to an OrderedFile, along with its calculated core-distance and reachability-distance.
+
 
 The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D dataset is depicted. 
 
@@ -102,12 +84,11 @@ The clusters can then be automatically constructed from the reachability plot by
 
  
 
-  \subsubsection{Grid-Based Methods}
-  %not sure if correct - sentence from book page 367: The main advantage of this approach is its fast processing time, which is typically independent of the number of data objects and dependent only on the number of cells in each dimension in the quantized space.
-  The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are executed on the grid structure. The grid size (number of cells) determines the processing time. It is faster than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
-  
+\subsubsection{Grid-Based Methods}
+The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are executed on the grid structure. The grid size (number of cells) determines the processing time. It is faster than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
+
   
 
-  \vspace{5mm} %5mm vertical space
+\vspace{5mm} %5mm vertical space
 \textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
 

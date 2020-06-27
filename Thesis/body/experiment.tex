@@ -2,8 +2,6 @@
 
 The goal of this paper is to identify, which time delta for aggregation is ideal to construct distinct clusters from smartphone sensor and usage data. The data for this experiment was collected for the upcoming SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} mobile health app. The goal of this app is to present the user with content-dependent feedback, with the hope to prevent food craving episodes. By evaluating the user's behaviour (through smartphone sensor and usage data), the app predicts eating crises through stress, therefore eliminating the need of intense user input. 
 
-
-% This project used data recorded for the SmartEater project. 46 participants recorded data
 Various sensor and usage data was recorded for the SmartEater project, by the 46 testers' smartphones (for different periods of time). The columns of the data were organised as follows (N is the number of times the data was recorded in the time period, app usage in percent of lag-interval minutes):
  
 
@@ -15,7 +13,6 @@ Various sensor and usage data was recorded for the SmartEater project, by the 46
 	\item NOTIF (1-N): number of notifications
 	\item LIGHT (1-N): (environment) light sensor values
 	\item APP\_COM (1-N): app usage in the category \textit{communication} 
-	%(if communication apps were used for 5 minutes in a 15 minute interval, the value would be 0.66666)
 	\item APP\_VID (1-N): app usage in the category \textit{video players}
 	\item APP\_OTHER (1-N): app usage of all other categories (excluding \textit{video players} and \textit{communication})
 \end{itemize}

@@ -1,145 +1,28 @@
-% in clustering after dim red
 
-The dimensionality reduction methods PCA and t-SNE were used to reduce the number of dimensions (number of attributes, so in this case number of columns). 
-
-\subsubsection{PCA}
-PCA was the initial approach used in the experiment. The sklearn \textit{PCA}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}} function was used to reduce the number of dimensions to 2, which simplified visualisation in 2D scatterplots. Before the removal of the chain (section \ref{section:chainShapedData}), the PCA allowed 65\%-95\% (depending on data preparation type) of the data's important structures to be accounted for in only the first two or three principle components. After the removal of the chain, the first three components only contained almost 50\% of the important structures. Of the 8 components, 7 would have been needed to account for over 90\% of these formations. As figure \ref{figure:PCA}a shows, the resulting data from these components did not show any significant clusters, in comparison to the t-SNE results. The principle components were further depicted in a 3D scatter plot, to evaluate whether the extra dimension revealed more structure. However, as can be seen in \ref{figure:PCA}b, the results were almost identical. It is considered, that as PCA is a linear dimensionality reduction method, it might not be suitable to transform the SmartEater dataset.
-
-%Suspectedly, might not be suitable for the SmartEater dataset
-
-\begin{figure}[H]
-  \centering
-  \begin{subfigure}{.475\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/pca2d.png}
-    % \caption{2D scatter plot with the PCA results. It only appears to form one cluster.}
-    % \label{figure:}
-  \end{subfigure}%
-  \hfill
-  \begin{subfigure}{.475\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/pca3d.png}
-    % \caption{3D scatter plot with the PCA results. It only appears to form one cluster.}
-    % \label{figure:}
-  \end{subfigure}
-	\caption{2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.}
-  \label{figure:PCA}
-\end{figure}
+\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however, will not be suitable for prediction. 
+\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated dataset, whilst mostly keeping the integrity of the initial dataset. Principal components analysis and t-SNE are dimensionality reduction techniques used to reduce the SmartEater dataset.
 
 
-
-\subsubsection{t-SNE}
-\label{section:experimentTSNE}
-% \subsubsection{Find t-SNE parameters}
-The t-SNE results proved to be more significant than the PCA ones. The t-SNE algorithm was implemented using the sklearn \textit{t-SNE}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html}} implementation.
-To effectively apply the t-SNE algorithm, it was important to identify the parameters (perplexity, learning, and number of iterations) most suitable to the SmartEater dataset, as described in section \ref{section:tSNE}. The number of iterations was originally set to the default value 1000, but was later raised to 5000, to avoid receiving significantly different results each time t-SNE was run. Raising the number of iterations provided more consistent results. The overall structure of these were the same, though usually rotated differently. \textcite{wattenberg2016how} also used 5000 iterations in their experiments and stated that their t-SNE plot had reached a stable point by then.
-
-To find suitable perplexity and learning rate t-SNE parameters to create the most distinct clusters possible, multiple results created using various parameter values were compared. For this, 2D t-SNE scatter plots were created using different perplexity and learning rate values. 
-The first parameter to determine was the perplexity. \textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter. Multiple values between the recommended 5 and 50, in steps of 10 (except for the first step which was 5) were tested. A perplexity of 45 was further added, since it had shown good results in tests performed before the chain described in section \ref{section:chainShapedData} was removed. The resulting scatter plots are listed in the appendix \ref{appendix:tSNEParametersPerplexity}. In the appendix, the plots on the left side depict the t-SNE results, while the scatter plots on the right illustrate DBSCAN clustering of these results. The DBSCAN cluster colourings were placed here to support in perceiving the differences between the t-SNE structured data and to see when the most distinct and well defined clusters were formed. When visually comparing the different perplexities, the data points in the lower perplexity graphs (e.g. 5 and 10) appear to be randomly scattered and have no stucture. The higher the perplexity gets, the more the data points take on structure and more distinct and well defined clusters appear. From a perplexity of 20, the one hour data files appear to start forming such clusters. When scanning the higher perplexities, it can be seen, that clusters become more separated. The scatter plots from perplexity 30 to 50 appear to have formed well defined clusters. 
-
-To assist in selecting the perplexity that creates the best clusters, the three mathematical evaluation scores, mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, were compared. Figure \ref{figure:perplexityEvaluationScores} displays the Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, calculated for the DBSCAN and OPTICS clusterings of different perplexities. The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files). The number of these best scoring fields will henceforth be referred to as number of "wins". With 4 wins, a perplexity of 20 has the highest number of best achieving score values. The perplexities of 10, 40, and 45 tied in second place with 2 wins. While according to the scores, perplexity 20 creates the best clusters, visually the clusters appear better defined with a perplexity between 30 and 50.  For this reason, the focus of the comparison of the scores was moved to the scores that were highest, whose perplexity was between 30 and 50. Perplexity 40 had the most wins in figure \ref{figure:perplexityEvaluationScoresDetailed} and was chosen as the final parameter. These tests were conducted a second time (see appendix \ref{appendix:compareAveragePerplexity}), using the average of two different t-SNE results for 1h and 3h files. While the scores are slightly different, a perplexity of 40 was again the overall best achieving value.
-
-% Comparing these results with the scatter plots and allowing for error, the 
-
-% To further confirm the t-SNE perplexity parameter, the equation reviewed in section \ref{section:tSNE} was implemented. However, the results were not as expected and so the results from the visual and evaluation score comparison were chosen.
-
-% The first block (\textbf{lines...}) shows the results for the 1h dataset, the second block (\textbf{lines...}) for the 3h dataset, and the last block (\textbf{lines...}) compares the two (for the 1h and 3h time lengths). The light green field indicates, that from the data files (1h or 3h), this time length achieved the best and most distinct clusters, according to that score. Dark green fields highlight the best value for that score overall for all time lengths.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
-  \label{figure:perplexityEvaluationScores}
-\end{figure}
-
-% The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files).
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.4\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png}
-  \caption{Comparison of the evaluation scores of the top three perplexity candidates 40, 45, and 50. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
-  \label{figure:perplexityEvaluationScoresDetailed}
-\end{figure}
+\subsubsection{Principal Components Analysis (PCA)}
+Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
+Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
+\textcite{hotelling1933analysis}[5] introduces his method as the method of principal components. \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
+derivation was announced by \textcite{hotelling1933analysis}. According to \textcite{han2011data}[95-96], the general idea is to calculate k orthonormal vectors, the so called principal components. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. \textcite{hotelling1933analysis}[4, 5, 15, 18] explains, that the components are chosen with decreasing amount of variance. Therefore, the one with the highest variance is chosen first. The next highest is chosen orthogonal to the one before, and so on. \textcite{han2011data}[93, 95-96] mentions, in data mining, the vectors with the lowest variance are removed, thus reducing the number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
 
 
-The same principle was used to determine the ideal value for the learning rate parameter. The sklearn t-SNE documentation states, that the learning rate is normally set between 10 and 1000, hence the learning rate in the scatter plots was chosen in this interval.
-The various resulting scatter plots can be seen in the appendix \ref{appendix:tSNEParametersLearningRate}. The differences in the arrangement of the data points over the plots is not as substantial as it was when testing for the perplexity. The results, listed in figure \ref{figure:learningRateEvaluationScores} revealed, that the learning rate 10 scores highest with a learning rate of 800 coming in second. Since roughly 200 steps were taken between the learning rate values, smaller steps were taken (i.e. 50) around the winning value to see if an even better performance could be accomplished (figure \ref{figure:learningRateEvaluationScoresDetailed}, in appendix \ref{appendix:comparelearningRateDetailed}). While 10 still achieved best in the one hour time length files, 800 came top in the three hour files, indicating that 10 might not be the best rate for these. Consequently, the values 20 and 30 were also evaluated (figure \ref{figure:learningRateEvaluationScoresDetailed2}, in appendix \ref{appendix:comparelearningRateDetailed}). While a learning rate of 10 still came top in the one hour files, 30 came top in the three hour files. With the hope of finding a value in between 10 and 30 that satisfied both time lengths, the learning rates 10, 15, 20, 25, and 30 were ultimately compared exclusively. The results in figure \ref{figure:learningRateEvaluationScoresDetailed3} exposed, that this final comparison lead to the learning rate 20 being the most suitable. 
+\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
+\label{section:tSNE}
+In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE, a method of dimensionality reduction and visualising high dimensional data on a two or three-dimensional plot. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points are apart from each other, they are typically unable to bring similar low-dimensional representations near. 
 
-As with the perplexity, the learning rate tests were also reproduced, averaging two different t-SNE outcomes. The results are illustrated in appendix \ref{appendix:compareAverageLearningRate}. In general, the results are similar. 800 appears to be more dominant than the lower parameter values (e.g. 10 and the favourite 20). To further compare 20 and 800, appendix \ref{appendig:compareLearningRate20and800} contains a table (figure \ref{figure:learningRateEvaluationScoresAverageDetailed4}) comparing 4 different runs of scores from average t-SNE results. With 2 wins more than 20, 800 has the overall better score results. Figures \ref{figure:1h-learningRateComparison20and800} and \ref{figure:3h-learningRateComparison20and800} visually compare the scatter plots created with a learning rate of 20 and 800. The plots and clusters appear very similar. The clusters from perplexity 20 however seem slightly more compact (less smaller clusters). A learning rate of 20 was thus selected for the final learning rate parameter. However, 800 was also used in the final results.
-
-
-The final t-SNE parameters, from which the results were then used by the DBSCAN and OPTICS clustering methods in the next section, were as follows: perplexity = 40, learning\_rate = 20, and n\_iter = 5000. A run of the resulting graphs are depicted in figures \ref{figure:finalTSNE1h} and \ref{figure:finalTSNE3h}.
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in  (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
-  \label{figure:learningRateEvaluationScores}
-\end{figure}
-
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
-%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-%   \label{figure:learningRateEvaluationScoresDetailed}
-% \end{figure}
-
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
-%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-%   \label{figure:learningRateEvaluationScoresDetailed2}
-% \end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. The goal is to find a perplexity value between 10
-  and 30, that satisfies both the 1h and 3h datasets. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
-  \label{figure:learningRateEvaluationScoresDetailed3}
-\end{figure}
+The authors describe, that t-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. \textcite{maaten2008visualizing}[2581] explain, that the first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. According to \textcite{hinton2003stochastic}[2], such a probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two data points \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour. \textcite{maaten2008visualizing}[2581] clarify, that this is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour under the circumstance, that the neighbours were chosen according to their probability density under a Gaussian, \textit{x\textsubscript{i}} being its centre. This results in the conditional probability being high for close data points and imperceptibly small for those further apart.
+In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}}, is calculated. 
+\textcite{maaten2008visualizing}[2581] state, that if the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. 
 
 
-\begin{figure}
-  \centering
-	\begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNE.png}
-  % \caption{}
-  % \label{figure:}
-  \end{subfigure}%
-  \begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png}
-    % \caption{}
-    % \label{figure:}
-	\end{subfigure}
-	\caption{Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
-  \label{figure:finalTSNE1h}
-\end{figure}
+\textcite{hinton2003stochastic}[2] further explain, that the goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data. This is accomplished by minimising a cost function, comprised of the sum of the Kullback-Leibler divergences between {p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. 
+\textcite{maaten2008visualizing}[2583] then list the advantages of t-SNE over SNE are the improvement of its cost function (symmetrised version of SNE) and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
 
 
-\begin{figure}
-  \centering
-	\begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNE.png}
-  % \caption{}
-  % \label{figure:}
-  \end{subfigure}%
-  \begin{subfigure}{.5\textwidth}
-    \centering
-    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png}
-    % \caption{}
-    % \label{figure:}
-	\end{subfigure}
-	\caption{Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
-  \label{figure:finalTSNE3h}
-\end{figure}
+To apply t-SNE to a dataset, \textcite{maaten2008visualizing}[2582] describe, the $\sigma$\textsubscript{i} has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find an overall optimal  $\sigma$\textsubscript{i} for the dataset. \textcite{hinton2003stochastic}[2] declare, that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbours or the so called perplexity. The perplexity is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
+Another parameter to be set is the learning rate. \textcite{han2011data}[332] clarify, that the learning rate parameter is used to support the finding of global minimums, instead of being caught in a local minimum. A learning rate set too low will result in slow learning. In contrast, a learning rate set too high could lead to poor results.
 
-
-
-
-
-% \clearpage

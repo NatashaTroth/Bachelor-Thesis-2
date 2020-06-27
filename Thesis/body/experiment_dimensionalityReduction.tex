@@ -1,26 +1,20 @@
-% in clustering after dim red
 
 The dimensionality reduction methods PCA and t-SNE were used to reduce the number of dimensions (number of attributes, so in this case number of columns). 
 
 \subsubsection{PCA}
 PCA was the initial approach used in the experiment. The sklearn \textit{PCA}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}} function was used to reduce the number of dimensions to 2, which simplified visualisation in 2D scatterplots. Before the removal of the chain (section \ref{section:chainShapedData}), the PCA allowed 65\%-95\% (depending on data preparation type) of the data's important structures to be accounted for in only the first two or three principle components. After the removal of the chain, the first three components only contained almost 50\% of the important structures. Of the 8 components, 7 would have been needed to account for over 90\% of these formations. As figure \ref{figure:PCA}a shows, the resulting data from these components did not show any significant clusters, in comparison to the t-SNE results. The principle components were further depicted in a 3D scatter plot, to evaluate whether the extra dimension revealed more structure. However, as can be seen in \ref{figure:PCA}b, the results were almost identical. It is considered, that as PCA is a linear dimensionality reduction method, it might not be suitable to transform the SmartEater dataset.
 
-%Suspectedly, might not be suitable for the SmartEater dataset
 
 \begin{figure}[H]
   \centering
   \begin{subfigure}{.475\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/pca2d.png}
-    % \caption{2D scatter plot with the PCA results. It only appears to form one cluster.}
-    % \label{figure:}
   \end{subfigure}%
   \hfill
   \begin{subfigure}{.475\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/pca3d.png}
-    % \caption{3D scatter plot with the PCA results. It only appears to form one cluster.}
-    % \label{figure:}
   \end{subfigure}
 	\caption{2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.}
   \label{figure:PCA}
@@ -30,7 +24,6 @@ PCA was the initial approach used in the experiment. The sklearn \textit{PCA}\fo
 
 \subsubsection{t-SNE}
 \label{section:experimentTSNE}
-% \subsubsection{Find t-SNE parameters}
 The t-SNE results proved to be more significant than the PCA ones. The t-SNE algorithm was implemented using the sklearn \textit{t-SNE}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html}} implementation.
 To effectively apply the t-SNE algorithm, it was important to identify the parameters (perplexity, learning, and number of iterations) most suitable to the SmartEater dataset, as described in section \ref{section:tSNE}. The number of iterations was originally set to the default value 1000, but was later raised to 5000, to avoid receiving significantly different results each time t-SNE was run. Raising the number of iterations provided more consistent results. The overall structure of these were the same, though usually rotated differently. \textcite{wattenberg2016how} also used 5000 iterations in their experiments and stated that their t-SNE plot had reached a stable point by then.
 
@@ -39,20 +32,12 @@ The first parameter to determine was the perplexity. \textcite{wattenberg2016how
 
 To assist in selecting the perplexity that creates the best clusters, the three mathematical evaluation scores, mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, were compared. Figure \ref{figure:perplexityEvaluationScores} displays the Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, calculated for the DBSCAN and OPTICS clusterings of different perplexities. The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files). The number of these best scoring fields will henceforth be referred to as number of "wins". With 4 wins, a perplexity of 20 has the highest number of best achieving score values. The perplexities of 10, 40, and 45 tied in second place with 2 wins. While according to the scores, perplexity 20 creates the best clusters, visually the clusters appear better defined with a perplexity between 30 and 50.  For this reason, the focus of the comparison of the scores was moved to the scores that were highest, whose perplexity was between 30 and 50. Perplexity 40 had the most wins in figure \ref{figure:perplexityEvaluationScoresDetailed} and was chosen as the final parameter. These tests were conducted a second time (see appendix \ref{appendix:compareAveragePerplexity}), using the average of two different t-SNE results for 1h and 3h files. While the scores are slightly different, a perplexity of 40 was again the overall best achieving value.
 
-% Comparing these results with the scatter plots and allowing for error, the 
-
-% To further confirm the t-SNE perplexity parameter, the equation reviewed in section \ref{section:tSNE} was implemented. However, the results were not as expected and so the results from the visual and evaluation score comparison were chosen.
-
-% The first block (\textbf{lines...}) shows the results for the 1h dataset, the second block (\textbf{lines...}) for the 3h dataset, and the last block (\textbf{lines...}) compares the two (for the 1h and 3h time lengths). The light green field indicates, that from the data files (1h or 3h), this time length achieved the best and most distinct clusters, according to that score. Dark green fields highlight the best value for that score overall for all time lengths.
-
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png}
   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
   \label{figure:perplexityEvaluationScores}
 \end{figure}
-
-% The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files).
 
 \begin{figure}
   \centering
@@ -78,19 +63,6 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
   \label{figure:learningRateEvaluationScores}
 \end{figure}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
-%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-%   \label{figure:learningRateEvaluationScoresDetailed}
-% \end{figure}
-
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
-%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
-%   \label{figure:learningRateEvaluationScoresDetailed2}
-% \end{figure}
 
 \begin{figure}
   \centering
@@ -106,14 +78,10 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
 	\begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNE.png}
-  % \caption{}
-  % \label{figure:}
-  \end{subfigure}%
+  \end{subfigure}
   \begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png}
-    % \caption{}
-    % \label{figure:}
 	\end{subfigure}
 	\caption{Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
   \label{figure:finalTSNE1h}
@@ -125,21 +93,11 @@ The final t-SNE parameters, from which the results were then used by the DBSCAN 
 	\begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNE.png}
-  % \caption{}
-  % \label{figure:}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
     \centering
     \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png}
-    % \caption{}
-    % \label{figure:}
 	\end{subfigure}
 	\caption{Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
   \label{figure:finalTSNE3h}
 \end{figure}
-
-
-
-
-
-% \clearpage
