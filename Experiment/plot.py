@@ -75,9 +75,14 @@ def create_2d_scatterplot_clustering(clustering_method, df, title):
     cluster_labels = clustering_method.fit_predict(df)
     colors = get_array_random_colors(len(np.unique(cluster_labels)) - 1)
     cluster_colors = []
+
     i = 0
     while i < len(cluster_labels):
-        cluster_colors.append(colors[cluster_labels[i]])
+        if(cluster_labels[i] == -1):
+            # noise should be
+            cluster_colors.append("#000000")
+        else:
+            cluster_colors.append(colors[cluster_labels[i]])
         i += 1
 
     print("PLOT cluster LABELS")
@@ -86,6 +91,28 @@ def create_2d_scatterplot_clustering(clustering_method, df, title):
     # plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
     plt.title(title)
     plt.show()
+
+# for reachability plot
+# def create_2d_scatterplot_clustering(clustering_method, df, title):
+#     plt.figure(figsize=(20, 10))
+#     cluster_labels = clustering_method.fit_predict(df)
+#     colors = get_array_random_colors(len(np.unique(cluster_labels)) - 1)
+#     cluster_colors = []
+#     i = 0
+#     while i < len(cluster_labels):
+#         if(cluster_labels[i] == -1):
+#             # noise should be
+#             cluster_colors.append("#000000")
+#         else:
+#             cluster_colors.append(colors[cluster_labels[i]])
+#         i += 1
+
+#     print("PLOT cluster LABELS")
+#     print(cluster_labels)
+#     plt.scatter(df[0], df[1], c=cluster_colors, cmap='Paired')
+#     # plt.scatter(df[0], df[1], c=cluster_labels, cmap='Paired')
+#     plt.title(title)
+#     plt.show()
 
 
 def create_3d_scatterplot_clustering(clustering_method, df, title):
@@ -113,15 +140,18 @@ def create_2d_pyplot(data):
 
 
 def get_array_random_colors(size):
-    random.seed(42)
-    colors = []
+    random.seed(70)
+    # random.seed(21)
+    colors = set()
     i = 0
     while i < size:
-
         random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
-        colors.append(random_color)
+        # to avoid duplicate colors
+        while(random_color in colors):
+            random_color = "#" + "%06x" % random.randint(0, 0xFFFFFF)
+        colors.add(random_color)
         i += 1
-    return colors
+    return list(colors)
 
 
 def create_reachability_plot(df, clustering):
@@ -148,21 +178,18 @@ def create_reachability_plot(df, clustering):
     # Plotting the Reachability-Distance Plot
 
     colors = get_array_random_colors(len(unique_labels) - 1)
+
+    # add color to the points in a cluster
     for Class, color in zip(range(0, unique_labels[len(unique_labels) - 1]), colors):
-        print(Class)
-        # for Class, colour in zip(range(0, 5), colors):
-        # for all points with labels (clusters), first cluster 1, then 2...
         Xk = space[labels == Class]
-        # print("Xk")
-        # print(Xk)
         Rk = reachability[labels == Class]
-        # print("Rk")
-        # print(Rk)
         ax1.bar(Xk, Rk, color=color, width=1)
     ax1.bar(space[labels == -1], reachability[labels == -1],
             color='k', width=1)
-    ax1.plot(space, np.full_like(space, 2., dtype=float), color='k', alpha=0.5)
-    ax1.plot(space, np.full_like(space, 0.5, dtype=float), color='k', alpha=0.5)
+
+    # add the points in no cluster (noise) with the color black
+    # ax1.plot(space, np.full_like(space, 2, dtype=float), color='k', alpha=0.5)
+    # ax1.plot(space, np.full_like(space, 0.5, dtype=float), color='k', alpha=0.5)
     ax1.fill_between(0, space)
     ax1.set_ylim([0, 7.5])
     ax1.set_ylabel('Reachability Distance')

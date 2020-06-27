@@ -30,6 +30,14 @@ def predict_eps_dbscan_parameter(df):
 
 def optics_clustering(df, dataType="", graphs=False):
     print("\n- optics clustering (" + dataType + ")...")
+    # optics = OPTICS(cluster_method='dbscan', eps=2)
+    optics = OPTICS(min_samples=10, cluster_method="xi")
+    clustering = optics.fit(df)
+    if graphs == True:
+        create_clustering_plot(
+            optics, df, "OPTICS (" + dataType + ")")
+        create_reachability_plot(df, clustering)
+
     optics = OPTICS(cluster_method='dbscan', eps=2)
     # optics = OPTICS(min_samples=4, cluster_method="xi")
     clustering = optics.fit(df)

@@ -1,28 +1,127 @@
+The clustering algorithms used for the SmartEater dataset, were DBSCAN and OPTICS. One of the advantages of these density-based clustering methods (as mentioned in section \ref{section:densityBasedMethods}) are that there are less parameters to configure. Another reason for choosing these methods, is that there is no need to define a fixed number of \textit{k} clusters to find, since the cluster boundaries are regulated by density. This technique also allows arbitrary-shaped clusters to be correctly identified. The t-SNE dimensionality reduction approach provided more significant results than PCA. Thus, the cleaned data and t-SNE modified data (with two components) was fed into the clustering algorithms DBSCAN and OPTICS.
 
-\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however, will not be suitable for prediction. 
-\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated dataset, whilst mostly keeping the integrity of the initial dataset. Principal components analysis and t-SNE are dimensionality reduction techniques used to reduce the SmartEater dataset.
-
-
-\subsubsection{Principal Components Analysis (PCA)}
-Principal Components Analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
-Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
-\textcite{hotelling1933analysis}[5] introduces his method as the method of principal components. \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
-derivation was announced by \textcite{hotelling1933analysis}. According to \textcite{han2011data}[95-96], the general idea is to calculate k orthonormal vectors, the so called principal components. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. \textcite{hotelling1933analysis}[4, 5, 15, 18] explains, that the components are chosen with decreasing amount of variance. Therefore, the one with the highest variance is chosen first. The next highest is chosen orthogonal to the one before, and so on. \textcite{han2011data}[93, 95-96] mentions, in data mining, the vectors with the lowest variance are removed, thus reducing the number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
+\subsubsection{DBSCAN}
+The DBSCAN algorithm was applied on the SmartEater dataset using the sklearn \textit{DBSCAN}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html}} function.
+Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances kth nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea was to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
 
 
-\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
-\label{section:tSNE}
-In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE, a method of dimensionality reduction and visualising high dimensional data on a two or three-dimensional plot. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points are apart from each other, they are typically unable to bring similar low-dimensional representations near. 
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.87\textwidth]{./images/kDistGraphDBSCAN1h.png}
+  \caption{1h dataset}
+  \label{figure:kDistGraphDBSCAN1h}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/kDistGraphDBSCAN3h.png}
+    \caption{3h dataset}
+    \label{figure:kDistGraphDBSCAN3h}
+  \end{subfigure}
+  \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
+  \label{figure:kDistGraphDBSCAN}
+  \end{figure}
 
-The authors describe, that t-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. \textcite{maaten2008visualizing}[2581] explain, that the first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. According to \textcite{hinton2003stochastic}[2], such a probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two data points \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour. \textcite{maaten2008visualizing}[2581] clarify, that this is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour under the circumstance, that the neighbours were chosen according to their probability density under a Gaussian, \textit{x\textsubscript{i}} being its centre. This results in the conditional probability being high for close data points and imperceptibly small for those further apart.
-In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}}, is calculated. 
-\textcite{maaten2008visualizing}[2581] state, that if the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. 
+The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}.
 
 
-\textcite{hinton2003stochastic}[2] further explain, that the goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data. This is accomplished by minimising a cost function, comprised of the sum of the Kullback-Leibler divergences between {p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. 
-\textcite{maaten2008visualizing}[2583] then list the advantages of t-SNE over SNE are the improvement of its cost function (symmetrised version of SNE) and the use of Student-t distribution as opposed to Gaussian, for the similarity calculation in the low-dimensional area.
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/clusteringResults/1h-1-DBSCAN.png}
+  \caption{1h dataset DBSCAN clustering (first column - 15 min).}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/clusteringResults/3h-1-DBSCAN.png}
+    \caption{3h dataset DBSCAN clustering (first column - 30 min).}
+  \end{subfigure}
+  \caption{}
+  \label{figure:DBSCANResults}
+  \end{figure}
 
 
-To apply t-SNE to a dataset, \textcite{maaten2008visualizing}[2582] describe, the $\sigma$\textsubscript{i} has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find an overall optimal  $\sigma$\textsubscript{i} for the dataset. \textcite{hinton2003stochastic}[2] declare, that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbours or the so called perplexity. The perplexity is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
-Another parameter to be set is the learning rate. \textcite{han2011data}[332] clarify, that the learning rate parameter is used to support the finding of global minimums, instead of being caught in a local minimum. A learning rate set too low will result in slow learning. In contrast, a learning rate set too high could lead to poor results.
 
+
+
+
+\subsubsection{OPTICS}
+The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as explained in section \ref{section:OPTICS} and introduced in \textcite{OPTICS}[57]. The visual results of these clusterings appeared to contain many points that were not assigned to clusters, as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots showed many points that weren't assigned to a cluster (no colour). This resulted in the DBSCAN method being used to cluster the OPTICS results. The Eps parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}.
+
+\textbf{todo: see reachability plots full size in appendix}
+\textbf{todo: convert reachability plot to bar chart}
+
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-xi.png}
+  \caption{1h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-xi.png}
+    \caption{3h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+  \end{subfigure}
+  \caption{}
+  \label{figure:OPTICSXiResults}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+      \centering
+      \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-xi.png}
+    \caption{1h dataset OPTICS reachability plot (first column - 15 min), using OPTICS automatic cluster extraction (xi).}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+      \centering
+      \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-xi.png}
+      \caption{3h dataset OPTICS reachability plot (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+    \end{subfigure}
+    \caption{}
+    \label{figure:OPTICSResultsReachabilityPlot}
+    \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-DBSCAN.png}
+  \caption{1h dataset OPTICS clustering (first column - 15 min), using DBSCAN clustering.}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-DBSCAN.png}
+    \caption{3h dataset OPTICS clustering (first column - 30 min), using DBSCAN clustering.}
+  \end{subfigure}
+  \caption{}
+  \label{figure:OPTICSResults}
+  \end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-DBSCAN.png}
+  \caption{1h dataset OPTICS reachability plot (first column - 15 min), using DBSCAN clustering.}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-DBSCAN.png}
+    \caption{3h dataset OPTICS reachability plot (first column - 30 min), using DBSCAN clustering.}
+  \end{subfigure}
+  \caption{}
+  \label{figure:OPTICSResultsReachabilityPlot}
+  \end{figure}
+
+
+The final DBSCAN and OPTICS clusterings scatter plots for each time delta are compared in appendix \ref{appendix:clusteringResults}.

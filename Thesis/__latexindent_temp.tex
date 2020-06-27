@@ -1,1 +1,83 @@
-SmartEater ist eine bevorstehende mHealth-Smartphone-App (Mobile Health) mit dem Ziel, dem Benutzer inhaltsabhängiges Feedback zu geben, um eine Episode mit Verlangen nach Essen abzuwenden. Mithilfe von Machine Learning und Smartphone Sensor- und Nutzungsdaten können Stress und bevorstehendes Verlangen vorhergesagt werden. Das Ziel dieser Arbeit ist es, Unsupervised Machine Learning zu verwenden, um das beste Zeit Delta zu finden, um aus diesen Daten qualitativ hochwertige Cluster zu erstellen. Die aufgezeichneten Smartphone Sensor- und Nutzungsdaten umfassen den Beschleunigungsmesser, die Lautstärke des Audios, den Prozentsatz der Einschaltdauer des Bildschirms, die Anzahl der Benachrichtigungen, die Lichtsensorwerte und die App-Nutzung in den Kategorien „Kommunikation“, „Videoplayer“ und „Sonstige“. Die von Testpersonen aufgezeichneten Daten werden in zwei Datensätzen (1 Stunde und 3 Stunden) mit jeweils mehreren Zeitlängen aggregiert. Nach dem Bereinigen und Normalisieren dieser Datensätze, wird die Anzahl der Dimensionen, mithilfe von t-SNE, von acht auf zwei reduziert. Geeignete t-SNE-Parameter werden abgestimmt, um die bestmögliche t-SNE-Visualisierung zu erzielen. Die dichtebasierten Clustering-Methoden DBSCAN und OPTICS werden verwendet, um Datenpunkte für jede der insgesamt zehn Zeitlängen in Cluster zu gruppieren. Die Ergebnisse werden unter Verwendung der mathematischen Bewertungsmaße Silhouette Score, Davies-Bouldin Index und Caliński-Harabasz Index verglichen. Die Ergebnisse zeigen, dass die Zeit Deltas 30 Minuten (aus dem 1-Stunden-Datensatz), 1 Stunde und 2 Stunden (beide aus dem 3-Stunden-Datensatz) die deutlichsten und klarsten Cluster bilden.
+\begin{appendices}
+\textbf{\color{red} Anhänge löschen, die nicht verwendet werden.}
+
+\section{t-SNE parameters comparison figures}
+\label{appendix:tSNEParameters}
+\subsection{Perplexity}
+\label{appendix:tSNEParametersPerplexity}
+\input{appendices/perplexityTest}
+
+\subsection{Learning Rate}
+\label{appendix:tSNEParametersLearningRate}
+\input{appendices/learningRateTest}
+
+
+\subsection{Clustering results}
+\label{appendix:clusteringResults}
+\input{appendices/clusteringResults}
+% 
+
+\subsection{Clustering evaluation results}
+\label{appendix:clusteringEvaluationResults}
+\input{appendices/clusteringEvaluationResults}
+
+
+
+
+
+
+
+
+%\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\section{git-Repository}
+
+% \url{https://gitlab.mediacube.at/fhs41216/BacThesis}
+
+
+Link to the GitLab Repository on {\url{gitlab.mediacube.at}}:
+
+{\color{red}\url{https://gitlab.mediacube.at/fhs41216/BacThesis}}
+
+\textbf{Git repository contents:}
+
+\begin{itemize}
+	\item \textbf{Experiment:} Source code of the experiment
+	\item \textbf{Thesis:} LaTeX code of the thesis
+	\item \textbf{Literature:} Reference papers available as PDF
+\end{itemize}
+
+
+
+% Das Repository dient zur Dokumentation und Nachvollziehbarkeit der Arbeitsschritte. Stellen Sie sicher, dass der/die BetreuerIn Zugriff auf das Repository hat. Stellen im Sinne des Datenschutzes sicher, dass das Repository nicht für andere zugänglich ist.
+
+% Verpflichtende Daten für Bachelorarbeit 1 und 2:
+
+% \begin{itemize}
+% 	\item LaTeX-Code der finalen Version der Arbeit
+% 	\item alle Publikationen, die als pdf verfügbar sind.
+% 	\item alle Webseiten als pdf
+% \end{itemize}
+
+% Verpflichtende Daten für Bachelorarbeit 2:
+% \begin{itemize}
+% 	\item Quellcode für praktischen Teil
+% 	\item Vorlagen für Studienmaterial (Fragebögen, Einverständniserklärung, ...)	
+% 	\item eingescanntes, ausgefülltes Studienmaterial (Fragebögen, Einverständniserklärung, ...)
+% 	\item Rohdaten und aufbereitete Daten der Evaluierungen (Log-Daten, Tabellen, Graphen, Scripts, ...)	
+% \end{itemize}
+
+% Link zum Repository auf dem MMT-git-Server {\url{gitlab.mediacube.at}}:
+
+	
+% \section{Vorlagen für Studienmaterial}
+
+% Vorlagen für Studienmaterial müssen in den Anhang. 
+
+\section{Archived Websites}
+% \show\UrlBreaks
+\sloppy
+\url{https://web.archive.org/web/20200623170602/https://distill.pub/2016/misread-tsne/}, snapshot 23.06.2020, 17:06:02
+
+
+\end{appendices}
