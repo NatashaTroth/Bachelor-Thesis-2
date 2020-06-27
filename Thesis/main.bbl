@@ -683,7 +683,9 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
       \field{isbn}{9780128004081}
+      \field{title}{Data Mining and Predictive Analysis: Intelligence Gathering and Crime Analysis}
       \field{year}{2014}
     \endentry
     \entry{OnLinesAndPlanes1901}{article}{}

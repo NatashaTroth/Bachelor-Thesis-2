@@ -40,7 +40,7 @@ Other options:
  - remove values with too many empty values
 
 ## Dimensionality reduction
-(graphs boolean parameter: True to show graphs, False to hide - default)
+(graphs Boolean parameter: True to show graphs, False to hide - default)
  - TSNE - recommended! (extract 2 or 3 components)
 
  Other options:
@@ -48,7 +48,7 @@ Other options:
 
 
 ## Clustering
-(graphs boolean parameter: True to show graphs, False to hide - default)
+(graphs Boolean parameter: True to show graphs, False to hide - default)
  - dbscan_clustering - recommended!
  - optics_clustering - recommended! (with DBSCAN cluster extraction, xi not recommended)
 

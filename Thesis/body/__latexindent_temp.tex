@@ -52,9 +52,6 @@ The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (
 \subsubsection{OPTICS}
 The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as explained in section \ref{section:OPTICS} and introduced in \textcite{OPTICS}[57]. The visual results of these clusterings appeared to contain many points that were not assigned to clusters, as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots showed many points that weren't assigned to a cluster (no colour). This resulted in the DBSCAN method being used to cluster the OPTICS results. The Eps parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}.
 
-\textbf{todo: see reachability plots full size in appendix}
-\textbf{todo: convert reachability plot to bar chart}
-
 
 \begin{figure}[H]
   \centering

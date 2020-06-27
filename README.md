@@ -13,5 +13,6 @@ FH-Prof. DI Dr. Simon Ginzinger, MSc
 ## Contents of this repository: 
 * Thesis: LaTeX source code for the thesis and the papers referenced in the thesis
 * Experiment: Experiment source code in python - run with Anaconda from main.py
-* Literature: Reference papers in PDF
+* Literature: Reference papers as PDF
+* Websites: Referenced websites as PDF
 

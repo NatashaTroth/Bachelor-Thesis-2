@@ -9,156 +9,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) to calculate DBSCAN Eps parameter. The first point in the "valley" is supposedly the ideal value. The points to the left with higher distances are likely to be noise and the points to the right are part of clusters \autocite {DBSCAN}[230].\relax }}{11}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Core-distance of object \textit {o} (MinPts = 4) and reachability-distances for objects \textit {p1} and \textit {p2} \autocite {OPTICS}[52].\relax }}{12}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.\relax }}{12}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite {OPTICS}[54].\relax }}{12}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces OPTICS reachability plot constructed from the clustering in figure \ref {figure:1h-1-example-OPTICS-DBSCAN-zoom}. "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.\relax }}{13}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Since clusters are defined as the dips/dents in the reachability plots created by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite {OPTICS}[57].\relax }}{13}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces 1h dataset, a chain of data points (light blue points) can be seen in the dataset.\relax }}{19}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces 1h dataset, a chain of data points (light blue points) can be seen in the dataset.\relax }}{18}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces There is a collection of points along a line. This same collection can also be visualised as a chain in the t-SNE dataset in figure \ref {figure:tsneChain}.\relax }}{20}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces There is a collection of points along a line. This same collection can also be visualised as a chain in the t-SNE dataset in figure \ref {figure:tsneChain}.\relax }}{19}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces t-SNE result in a scatter plot, each colour indicates one test subject. The test subjects have clustered together slightly in the chain.\relax }}{21}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces t-SNE result in a scatter plot, each colour indicates one test subject. The test subjects have clustered together slightly in the chain.\relax }}{20}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces 2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.\relax }}{21}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and less dominant.\relax }}{21}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and less dominant.\relax }}{22}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces 2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.\relax }}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{23}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of the evaluation scores of the top three perplexity candidates 40, 45, and 50. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{24}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Comparison of the evaluation scores of the top three perplexity candidates 40, 45, and 50. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values, in (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{25}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values, in (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. The goal is to find a perplexity value between 10 and 30, that satisfies both the 1h and 3h datasets. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{26}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. The goal is to find a perplexity value between 10 and 30, that satisfies both the 1h and 3h datasets. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20\relax }}{27}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20\relax }}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20\relax }}{27}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20\relax }}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.\relax }}{28}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.\relax }}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \relax }}{29}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces \relax }}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {18}{\ignorespaces \relax }}{30}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {19}{\ignorespaces \relax }}{30}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces \relax }}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces \relax }}{31}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {21}{\ignorespaces \relax }}{31}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces \relax }}{31}{figure.caption.23}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Evaluation scores comparison averaged from figures \ref {figure:clusteringResults1}, \ref {figure:clusteringResults2}, \ref {figure:clusteringResults3}, \ref {figure:clusteringResults4}, and \ref {figure:clusteringResults5}. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{33}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Evaluation scores comparison averaged from figures \ref {figure:clusteringResults1}, \ref {figure:clusteringResults2}, \ref {figure:clusteringResults3}, \ref {figure:clusteringResults4}, and \ref {figure:clusteringResults5}. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{33}{figure.caption.24}%
+\contentsline {figure}{\numberline {23}{\ignorespaces The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{33}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{33}{figure.caption.25}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Number of dark green evaluation score wins (1h and 3h dataset).\relax }}{34}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Number of dark green evaluation score wins (1h and 3h dataset).\relax }}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Comparison of top evaluation score performers (of clusterings) from figures \ref {figure:clusteringResultsGraph1h}, \ref {figure:clusteringResultsGraph3h}, and \ref {figure:clusteringResultsGraphTotal}. The light green highlighted cells indicate the best value across the different time lengths for that score.\relax }}{34}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces Comparison of top evaluation score performers (of clusterings) from figures \ref {figure:clusteringResultsGraph1h}, \ref {figure:clusteringResultsGraph3h}, and \ref {figure:clusteringResultsGraphTotal}. The light green highlighted cells indicate the best value across the different time lengths for that score.\relax }}{34}{figure.caption.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces Evaluation scores comparison from averaged 1h and 3h dataset runs of t-SNE and clustering.\relax }}{35}{figure.caption.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{41}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=5}, n\_iter=5000, learning\_rate=50\relax }}{42}{figure.caption.31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{42}{figure.caption.32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=10}, n\_iter=5000, learning\_rate=50\relax }}{42}{figure.caption.33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{43}{figure.caption.34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=20}, n\_iter=5000, learning\_rate=50\relax }}{43}{figure.caption.35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{44}{figure.caption.36}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=30}, n\_iter=5000, learning\_rate=50\relax }}{44}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{45}{figure.caption.38}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=40}, n\_iter=5000, learning\_rate=50\relax }}{45}{figure.caption.39}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{46}{figure.caption.40}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=45}, n\_iter=5000, learning\_rate=50\relax }}{46}{figure.caption.41}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{47}{figure.caption.42}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: \textbf {perplexity=50}, n\_iter=5000, learning\_rate=50\relax }}{47}{figure.caption.43}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Comparison of the average of two Silhouette Coefficients, Davies-Bouldin Indices, and Caliński-Harabasz Indices for different t-SNE \textbf {perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{48}{figure.caption.44}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces Comparison of the average of two evaluation scores of the top three perplexity candidates 40, 45, and 50. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{49}{figure.caption.45}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{50}{figure.caption.46}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {45}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=10}\relax }}{50}{figure.caption.47}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {46}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{51}{figure.caption.48}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {47}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=200}\relax }}{51}{figure.caption.49}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {48}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{52}{figure.caption.50}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {49}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=400}\relax }}{52}{figure.caption.51}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {50}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{53}{figure.caption.52}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {51}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=600}\relax }}{53}{figure.caption.53}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {52}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{54}{figure.caption.54}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {53}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=800}\relax }}{54}{figure.caption.55}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {54}{\ignorespaces \textbf {1h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{55}{figure.caption.56}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {55}{\ignorespaces \textbf {3h} data files, t-SNE calculated with the following parameters: perplexity=40, n\_iter=5000, \textbf {learning\_rate=1000}\relax }}{55}{figure.caption.57}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {56}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. Smaller learning rate value steps were taken (i.e. 50, except for the first step which is 40 and the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{56}{figure.caption.58}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {57}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. Smaller learning rate value steps were taken (i.e. 10, except for the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{57}{figure.caption.59}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {58}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values, in steps of 200 (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{58}{figure.caption.60}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {59}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. Smaller learning rate value steps were taken (i.e. 50, except for the first step which is 40 and the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{59}{figure.caption.61}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {60}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values. Smaller learning rate value steps were taken (i.e. 10, except for the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{60}{figure.caption.62}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {61}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf {learning rate} values, in steps of 5. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{61}{figure.caption.63}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {62}{\ignorespaces Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for the t-SNE \textbf {learning rate} values 20 and 80. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{62}{figure.caption.64}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {63}{\ignorespaces \textbf {1h} data files comparison of learning rate: a) 20, b) 800\relax }}{62}{figure.caption.65}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {64}{\ignorespaces \textbf {3h} data files comparison of learning rate: a) 20, b) 800\relax }}{63}{figure.caption.66}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {65}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the 1st column, so the first \textbf {15 minutes} (1h data files: first 15 minutes).\relax }}{64}{figure.caption.67}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {66}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column and 2nd column, so the first \textbf {30 minutes} (1h data files: 15 minutes \& 30 minutes).\relax }}{64}{figure.caption.68}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {67}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 3rd column, so the first \textbf {45 minutes} (1h data files: 15 minutes, 30 minutes \& 45 minutes).\relax }}{65}{figure.caption.69}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {68}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 4th column, so the whole \textbf {1 hour} (1h data files: 15 minutes, 30 minutes, 45 minutes \& 1 hour).\relax }}{65}{figure.caption.70}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {69}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the 1st column, so the first \textbf {30 minutes} (3h data files: first 30 minutes).\relax }}{66}{figure.caption.71}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {70}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column and 2nd column, so the first \textbf {1 hour} (3h data files: 30 minutes \& 1 hour).\relax }}{66}{figure.caption.72}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {71}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 3rd column, so the first \textbf {1.5 hours} (3h data files: 30 minutes, 1 hour \& 1 hour 30 minutes).\relax }}{67}{figure.caption.73}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {72}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 4th column, so the first \textbf {2 hours} (3h data files: 30 minutes, 1 hour, 1 hour 30 minutes \& 2 hours).\relax }}{67}{figure.caption.74}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {73}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 5th column, so the first \textbf {2.5 hours} (3h data files: 30 minutes, 1 hour, 1 hour 30 minutes, 2 hours \& 2 hours 30 minutes).\relax }}{68}{figure.caption.75}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {74}{\ignorespaces Comparison of the scatter plots from the DBSCAN (a) and OPTICS (b) clusterings of the average of the 1st column to the 6th column, so all \textbf {3 hours} (3h data files: 30 minutes, 1 hour, 1 hour 30 minutes, 2 hours, 2 hours 30 minutes \& 3 hours).\relax }}{68}{figure.caption.76}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {75}{\ignorespaces Evaluation scores comparison from the first 1h run of t-SNE and clustering with a learning rate of 20. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{69}{figure.caption.77}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {76}{\ignorespaces Evaluation scores comparison from the second 1h run of t-SNE and clustering with a learning rate of 20. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{70}{figure.caption.78}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {77}{\ignorespaces Evaluation scores comparison averaged from figures \ref {figure:clusteringResults1} and \ref {figure:clusteringResults2}. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{71}{figure.caption.79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {78}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 20. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{72}{figure.caption.80}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {79}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 800. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{73}{figure.caption.81}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Evaluation scores comparison from averaged 1h and 3h dataset runs of t-SNE and clustering.\relax }}{35}{figure.caption.27}%

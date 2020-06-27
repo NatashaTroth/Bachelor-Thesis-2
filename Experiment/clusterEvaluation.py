@@ -3,6 +3,19 @@ from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_har
 
 
 def cluster_evaluation(clustering_method, df):
+    """ return Silhouette Score, Davies Bouldin Score, Calinski Harabasz Score in a list
+
+        Parameters
+        ----------
+        clustering_method : object
+            clustering method (before being fit to the dataset)
+        df : dataFrame
+            dataFrame object with the data to be reduced
+
+        Returns
+        -------
+        list of the evaluation score results ([silhouette_score_evaluation, davies_bouldin_score_evaluation, calinski_harabasz_score_evaluation])
+    """
     cluster_evaluation_scores = []
     cluster_evaluation_scores.append(silhouette_score_evaluation(
         clustering_method, df))
@@ -14,6 +27,19 @@ def cluster_evaluation(clustering_method, df):
 
 
 def silhouette_score_evaluation(clustering_method, df):
+    """ calculate overall average silhouette width for the dataFrame
+
+        Parameters
+        ----------
+        clustering_method : object
+            clustering method (before being fit to the dataset)
+        df : dataFrame
+            dataFrame object with the data to be reduced
+
+        Returns
+        -------
+        silhouette score as float
+    """
     cluster_labels = clustering_method.fit_predict(df)
     if len(np.unique(cluster_labels)) > 1:
         score = silhouette_score(df, cluster_labels)
@@ -25,6 +51,19 @@ def silhouette_score_evaluation(clustering_method, df):
 
 
 def davies_bouldin_score_evaluation(clustering_method, df):
+    """ calculate overall davies-bouldin index for the dataFrame
+
+        Parameters
+        ----------
+        clustering_method : object
+            clustering method (before being fit to the dataset)
+        df : dataFrame
+            dataFrame object with the data to be reduced
+
+        Returns
+        -------
+        davies-bouldin index as float
+    """
     cluster_labels = clustering_method.fit_predict(df)
 
     if len(np.unique(cluster_labels)) > 1:
@@ -37,6 +76,19 @@ def davies_bouldin_score_evaluation(clustering_method, df):
 
 
 def calinski_harabasz_score_evaluation(clustering_method, df):
+    """ calculate overall calinski-harabasz index for the dataFrame
+
+        Parameters
+        ----------
+        clustering_method : object
+            clustering method (before being fit to the dataset)
+        df : dataFrame
+            dataFrame object with the data to be reduced
+
+        Returns
+        -------
+        calinski-harabasz index as float
+    """
     cluster_labels = clustering_method.fit_predict(df)
     if len(np.unique(cluster_labels)) > 1:
         score = calinski_harabasz_score(df, cluster_labels)
@@ -47,8 +99,18 @@ def calinski_harabasz_score_evaluation(clustering_method, df):
         return None
 
 
-# returns 1 if first scores are better, returns 2 if second scores are better, returns 0 if tie
 def compare_scores(scores_1, scores_2):
+    """ determine winning file when comparing Silhouette Scores, Davies Bouldin Scores, Calinski Harabasz Scores from two different dataFiles
+
+        Parameters
+        ----------
+        scores_1 : list (array)
+        scores_2 : list (array)
+
+        Returns
+        -------
+        1 if first scores are better, 2 if second scores are better, 0 if tie
+    """
     scores_1_wins = 0
     scores_2_wins = 0
     # silhouette score (score closer to 1 better, closer to -1 not so good - higher values better)

@@ -52,34 +52,72 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
 \paragraph{OPTICS}
 \label{section:OPTICS}
 \textcite{han2011data}[388] mention, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
-\textcite{OPTICS}[49, 51-54, 57, 60] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the dataset according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}, is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the \textit{reachability-distance} of \textit{p} is undefined. The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
+\textcite{OPTICS}[49, 51-54, 57, 60] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the dataset according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}, is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the \textit{reachability-distance} of \textit{p} is undefined. 
+
+% The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
+
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
+%   \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
+%   \label{figure:reachabilityDistanceOPTICS}
+% \end{figure*}
+
+
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom} a reachability plot calculated from the SmartEater (reduced through t-SNE) is depicted. 
+
+% \begin{figure*}[h]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
+%   \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
+%   \label{figure:reachabilityPlotOPTICS}
+% \end{figure*}
+
+
+The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots. Figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom} depicts a scatter plot with OPTICS clustering. The coloured points indicated clusters, whilst the black points highlight noise. The corresponding reachability plot (figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}) shows that the clusters were formed from the dips.
+% In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
-  \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
-  \label{figure:reachabilityDistanceOPTICS}
+  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
+  \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
+  \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
 \end{figure*}
-
-
-The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:reachabilityPlotOPTICS} a reachability plot calculated from a 2D dataset is depicted. 
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
-  \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
-  \label{figure:reachabilityPlotOPTICS}
+  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-reachabilityPlot-DBSCAN-zoom.png}
+  \caption{OPTICS reachability plot constructed from the clustering in figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom}. "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
+  \label{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}
 \end{figure*}
 
-The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots (as can also be seen in figure \ref{figure:reachabilityPlotOPTICS}). In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
-  \caption{Since clusters are defined as the dips/dents in the reachability plots created by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
-  \label{figure:clusterExtractionOPTICS}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\begin{subfigure}{.475\textwidth}
+%     \centering
+%     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
+%     \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
+%     \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
+%   \end{subfigure}%
+%   \hfill  
+%   \begin{subfigure}{.475\textwidth}
+%     \centering
+%     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-reachabilityPlot-DBSCAN-zoom.png}
+%     \caption{OPTICS reachability plot constructed from the clustering in figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom}. "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
+%     \label{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}
+% 	\end{subfigure}
+
+% \end{figure}
+
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
+%   \caption{Since clusters are defined as the dips/dents in the reachability plots created by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
+%   \label{figure:clusterExtractionOPTICS}
+% \end{figure}
 
 
  

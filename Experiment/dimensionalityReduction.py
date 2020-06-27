@@ -1,14 +1,30 @@
 import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
-from plot import create_bar_plot, create_2d_scatterplot, create_3d_scatterplot, create_2d_scatterplot_tester_colors
+from plot import create_bar_plot, create_3d_scatterplot, create_2d_scatterplot
 
 
 def calculate_PCA(df, number_components, graphs, colors):
+    """ apply PCA dimensionality reduction to a given dataFrame and print scatter plots and bar charts of the principle components
+
+        Parameters
+        ----------
+        df : dataFrame
+            dataFrame object with the data to be reduced
+        number_components : int
+            number of components to return
+        graphs : Boolean
+            render PCA scatter plots and component bar chart graphs (True), or not (False)
+        colors : list
+            list (array) of colors to apply to the scatter plot (e.g. color per test subject)
+
+        Returns
+        -------
+        dataFrame object of the requested number of components
+    """
     print("calculating PCA...")
-    print(df)
-    # pca = PCA(n_components=number_components)
-    pca = PCA()
+
+    pca = PCA(n_components=number_components)
     pca_results = pca.fit_transform(df[df.columns].values)
     df['pca-one'] = pca_results[:, 0]
     df['pca-two'] = pca_results[:, 1]
@@ -25,9 +41,8 @@ def calculate_PCA(df, number_components, graphs, colors):
         create_bar_plot(list(range(0, len(pca.explained_variance_ratio_))), pca.explained_variance_ratio_,
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
         if number_components == 2:
-            create_2d_scatterplot_tester_colors(
+            create_2d_scatterplot(
                 df,  "pca-one", "pca-two", colors, "PCA")
-           # create_2d_scatterplot(df, "pca-one", "pca-two")
         if number_components == 3:
             create_3d_scatterplot(df, "pca-one", "pca-two",
                                   "pca-three", colors, "PCA")
@@ -35,6 +50,23 @@ def calculate_PCA(df, number_components, graphs, colors):
 
 
 def calculate_TSNE(df, number_components, graphs, colors):
+    """ apply t-SNE dimensionality reduction to a given dataFrame and print scatter plots of the resulting components
+
+        Parameters
+        ----------
+        df : dataFrame
+            dataFrame object with the data to be reduced
+        number_components : int
+            number of components to return
+        graphs : Boolean
+            render t-SNE scatter plots (True), or not (False)
+        colors : list
+            list (array) of colors to apply to the scatter plot (e.g. color per test subject)
+
+        Returns
+        -------
+        dataFrame object of the requested number of components
+    """
     print("calculating TSNE...")
     tsne = TSNE(n_components=number_components,
                 init='random', perplexity=40, n_iter=5000, learning_rate=20)
@@ -48,8 +80,7 @@ def calculate_TSNE(df, number_components, graphs, colors):
 
     if graphs == True:
         if number_components == 2:
-            # create_2d_scatterplot(df, "tsne-one", "tsne-two", "TSNE")
-            create_2d_scatterplot_tester_colors(
+            create_2d_scatterplot(
                 df,  "tsne-one", "tsne-two", colors, "TSNE")
         if number_components == 3:
             create_3d_scatterplot(df, "tsne-one", "tsne-two",
