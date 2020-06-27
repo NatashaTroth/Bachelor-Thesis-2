@@ -114,10 +114,10 @@ def create_reachability_plot(df, clustering):
     for Class, colour in zip(range(0, 5), colors):
         Xk = space[labels == Class]
         Rk = reachability[labels == Class]
-        ax1.plot(Xk, Rk, colour, alpha=0.3)
-    ax1.plot(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
-    ax1.plot(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
-    ax1.plot(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
+        ax1.bar(Xk, Rk, colour, alpha=0.3)
+    ax1.bar(space[labels == -1], reachability[labels == -1], 'k.', alpha=0.3)
+    ax1.bar(space, np.full_like(space, 2., dtype=float), 'k-', alpha=0.5)
+    ax1.bar(space, np.full_like(space, 0.5, dtype=float), 'k-.', alpha=0.5)
     ax1.set_ylabel('Reachability Distance')
     ax1.set_title('Reachability Plot')
     plt.show()

@@ -1,80 +1,145 @@
-The resulting clusters received from the previously mentioned clustering algorithms are assessed in the \textit{cluster evaluation} step. \textcite{han2011data}[396, 398] describe this stage as assessing the quality of the results.
-There are different steps to be taken in evaluating clusters, e.g. evaluation of the cluster quality, assessment of the cluster tendency (whether non random stuctures exist), and establishing the number of clusters (e.g. for k-means clustering). The experiment described in this thesis used mathmathical evaluation methods to compare cluster quality among the different time lengths. 
- 
-  % \subsubsection{Assessment of the cluster tendency}
-  % As explained by \textcite{han2011data}[396-397], the tendency must be assessed, meaning it is tested, whether structures exist that aren't random. Running a clustering algorithm on any dataset will return clusters. However, only non random structures are significant and not misleading. For example, if a dataset consists of data points that are uniformly distributed, if a clustering algorithm delivers clusters, these will be random and have no purpose. Spatial randomness tests (e.g. Hopkins Statistic) can be used to measure how likely the data was created by uniform data distribution.
+% in clustering after dim red
 
- 
+The dimensionality reduction methods PCA and t-SNE were used to reduce the number of dimensions (number of attributes, so in this case number of columns). 
 
-  \textcite{han2011data}[399, 401] mention, that the cluster quality needs to be evaluated. Generally, there are two ways to measure the quality of clustering: extrinsic methods and intrinsic methods. In extrinsic methods, there is a ground truth available, therefore these are also referred to as supervised methods. This ground truth is usually produced by experts (humans). Intrinsic methods are used, when there is no ground truth available. In intrinsic methods, the clusters are evaluated by how well they are separated from one another and how compact they are (e.g. \textit{silhouette coefficient}).
-  % NOT SURE IF SHOULD EXPLAIN EXTRINSIC, SINCE DON'T THINK USING.
-  The experiment described in this paper uses intrinsic methods, since there is no ground truth for comparison.
-  
-  
-  \paragraph{Silhouette Coefficient}
-  \label{section:silhouetteCoefficient}
-  In his paper, \textcite{rousseeuw1987silhouettes}[53-57, 59] proposes a new graphical display using silhouettes, to help determine how well objects belong to their assigned clusters. It can be used to interpret and validate the results of clustering. It is also utilised to compare the resulting clusters with those output using alternative algorithms (the input data being the same). 
-  
-  % In an example, where countries are assigned a value of how dissimilar they are to another country, the results are listed in a table. A structure contained in the results (consisting of 66 numbers), is hard to identify. Therefore, the countries are categorised into clusters using k-median. It is however uncertain, whether the clusters follow a specific structure, or if the groups are simply artificial. 
-  % With the use of silhouettes, the author's goal is to answer the following questions: Is the quality of the clusters high, therefore the dissimilarities of the objects within a cluster are small, and large compared to the objects in other clusters? Are the objects well-classified, misclassified and which ones were not classified (between clusters)? Is it possible to perceive which "natural" clusters are available in the dataset?
-  %According to Rousseeuw, the silhouettes are ideal when the distance between objects are on a ratio scale (e.g. Euclidean distances) and when the goal is to receive clear and compact clusters.
+\subsubsection{PCA}
+PCA was the initial approach used in the experiment. The sklearn \textit{PCA}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}} function was used to reduce the number of dimensions to 2, which simplified visualisation in 2D scatterplots. Before the removal of the chain (section \ref{section:chainShapedData}), the PCA allowed 65\%-95\% (depending on data preparation type) of the data's important structures to be accounted for in only the first two or three principle components. After the removal of the chain, the first three components only contained almost 50\% of the important structures. Of the 8 components, 7 would have been needed to account for over 90\% of these formations. As figure \ref{figure:PCA}a shows, the resulting data from these components did not show any significant clusters, in comparison to the t-SNE results. The principle components were further depicted in a 3D scatter plot, to evaluate whether the extra dimension revealed more structure. However, as can be seen in \ref{figure:PCA}b, the results were almost identical. It is considered, that as PCA is a linear dimensionality reduction method, it might not be suitable to transform the SmartEater dataset.
 
-  The formula is as follows:
-  With the use of silhouettes, the author's goal is to find out, if the quality of the clusters is high. Hence, the dissimilarities of the objects within a cluster are small, and the dissimilarities are large compared to the objects in other clusters. For each object \textit{i} (in cluster \textit{A}) the value \textit{s(i)} is calculated. \textit{a(i)} contains the average dissimilarity of the object \textit{i} to each other object in the same cluster. If there are no other objects in the cluster, \textit{s(i)} is set to zero (most neutral value). \textit{b(i)} is determined by firstly calculating the average dissimilarity for each neighbouring cluster that isn't \textit{A}. The shortest of these values, therefore the next closest cluster to \textit{A}, is then assigned to \textit{b(i)}. This cluster can so to say be seen as the next best choice for \textit{i}. \textit{b(i)} can only be calculated, if there are other clusters beside \textit{A}. The formula for \textit{s(i)} is as follows:
-  \[
-    s(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}  
-  \]
-  The resulting value \textit{s(i)} is a number in the range of \textit{-1 $\leq$ \textit{s(i)} $\leq$ 1}:
+%Suspectedly, might not be suitable for the SmartEater dataset
 
-  \[ s(i) =
-  \begin{cases}
-    1 - a(i)/b(i)       & \quad \text{if } a(i) < b(i)\\
-    0       & \quad \text{if } a(i) = b(i)\\
- b(i)/a(i) - 1      & \quad \text{if } a(i) > b(i)
-
-  \end{cases}
-\]
-A \textit{s(i)} value close to 1 reveals, that the dissimilarity within a cluster is smaller than the dissimilarity to the neighbouring cluster. Therefore it suggests, that the assignment of that object is good, since it is most likely the most suitable cluster for \textit{i} (well-classified). A \textit{s(i)} value close to 0 means that \textit{a(i)} and \textit{b(i)} are almost equal and it is uncertain whether cluster \textit{A} or its neighbour is a more suitable fit. If \textit{s(i)} is near -1, then the dissimilarity within a cluster is larger than the dissimilarity to the next closest cluster. Thus, it would have been more natural to assign \textit{i} to the neighbouring cluster, since it is closer to it (misclassified).
-
-The \textit{average silhouette width} can be calculated for single clusters. It is received by calculating the average of all objects that belong to said cluster. An average score can also be calculated from each object \textit{i} for the whole chart (dataset), the so called \textit{overall average silhouette width}. 
-
-
-\paragraph{Davies-Bouldin Index}
-A second cluster evaluation method is the Davies-Bouldin Index, which was announced by \textcite{DaviesBouldin}[224-227]. 
-% The goal is to calculate the average similarity of a cluster with the cluster that is most similar to it. 
-
-The succeeding formula describes the average similarity of a cluster with the cluster that is most similar to it (\textit{R\textsubscript{ij}} ).
-\textit{i} and \textit{j} represent the determined clusters, \textit{S\textsubscript{i}} and \textit{S\textsubscript{j}} stand for the dispersions of the clusters, and \textit{M\textsubscript{ij}} is the distance between the two cluster centroids. 
-
-\[
-  R_{ij} = \frac{S_i + S_j}{M_{ij}}  
-\]
-
-The Davies-Bouldin Index equals:
-\[
-\overline{R} = \frac{1}{N}\sum_{i=1}^{N}R_i
-\]
-
-This metric can be used, to compare clustering results. The lower of the two \textit{\=R} values indicates the better partitioning.
-
-\paragraph{Caliński-Harabasz Index}
-As a third evaluation score, \textcite{calinskiHarabasz}[3, 7, 11, 23, 24, 26] is used to evaluate and compare the resulting clusters in the experiment. 
-The Caliński-Harabasz Index or Variance Ratio Criterion (VRC) is calculated as follows, where \textit{n} is the number of points, \textit{k} is the number of clusters, \textit{WGSS} is the within-group (cluster) sum of squares, and \textit{BGSS} is the between-group (cluster) sum of squares.
-
-\[
-VRC = \frac{BGSS}{k-1}/\frac{WGSS}{n-k}
-\]
-If \textit{k} is not known, it is set to 2, then 3 and so on. The density of the clusters can be calculated with the sums of the squared distances from the cluster centroids, to the points. The more natural the clusterings are, the higher VRC will be, since the variation within the cluster is lower.
-
-
-%Determining the minimum of WGSS can be utilised for cluster analysis.
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/pca2d.png}
+    % \caption{2D scatter plot with the PCA results. It only appears to form one cluster.}
+    % \label{figure:}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/pca3d.png}
+    % \caption{3D scatter plot with the PCA results. It only appears to form one cluster.}
+    % \label{figure:}
+  \end{subfigure}
+	\caption{2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.}
+  \label{figure:PCA}
+\end{figure}
 
 
 
-% \subsubsection{Establishing the number of clusters}
-%  \textcite{han2011data}[398] states, that the number of clusters (\textit{k}) found in the dataset needs to be established. For some clustering methods (e.g. \textit{k}-means), this number is defined before the clustering process. This number can be challenging to determine and depends on the shape and scale of the input data. A good number of clusters creates a balance between \textit{compressibility} and \textit{accuracy}. Having only one cluster would have maximum compression, but no value. Contrarily, if each data object formed its own cluster, the clusters would be most accurate, but not allow for summarisation of the data. 
-% \textcite{rousseeuw1987silhouettes}[59] describes, how silhouettes can be used to determine the ideal amount of clusters. Picture a dataset with dense clusters which each have large distances to the other clusters. When \textit{k} is chosen too small, naturally occurring clusters must be artificially joined, to satisfy the value \textit{k}. Implementing the silhouette calculation will result in high within-cluster dissimilarities (\textit{a(i)}) leading to a narrow silhouette (small \textit{s(i)}). Likewise, if \textit{k} is chosen too large, natural clusters will have to be artificially split, in order to gain \textit{k} clusters. The objects in a split natural cluster will however still be very close to the other half of their cluster, therefore resulting in low dissimilarities between clusters (\textit{b(i)}) and a small \textit{s(i)}.
-% This logic denotes, that silhouettes should be capable of finding the most 'natural' number of clusters in a dataset.
+\subsubsection{t-SNE}
+\label{section:experimentTSNE}
+% \subsubsection{Find t-SNE parameters}
+The t-SNE results proved to be more significant than the PCA ones. The t-SNE algorithm was implemented using the sklearn \textit{t-SNE}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html}} implementation.
+To effectively apply the t-SNE algorithm, it was important to identify the parameters (perplexity, learning, and number of iterations) most suitable to the SmartEater dataset, as described in section \ref{section:tSNE}. The number of iterations was originally set to the default value 1000, but was later raised to 5000, to avoid receiving significantly different results each time t-SNE was run. Raising the number of iterations provided more consistent results. The overall structure of these were the same, though usually rotated differently. \textcite{wattenberg2016how} also used 5000 iterations in their experiments and stated that their t-SNE plot had reached a stable point by then.
+
+To find suitable perplexity and learning rate t-SNE parameters to create the most distinct clusters possible, multiple results created using various parameter values were compared. For this, 2D t-SNE scatter plots were created using different perplexity and learning rate values. 
+The first parameter to determine was the perplexity. \textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter. Multiple values between the recommended 5 and 50, in steps of 10 (except for the first step which was 5) were tested. A perplexity of 45 was further added, since it had shown good results in tests performed before the chain described in section \ref{section:chainShapedData} was removed. The resulting scatter plots are listed in the appendix \ref{appendix:tSNEParametersPerplexity}. In the appendix, the plots on the left side depict the t-SNE results, while the scatter plots on the right illustrate DBSCAN clustering of these results. The DBSCAN cluster colourings were placed here to support in perceiving the differences between the t-SNE structured data and to see when the most distinct and well defined clusters were formed. When visually comparing the different perplexities, the data points in the lower perplexity graphs (e.g. 5 and 10) appear to be randomly scattered and have no stucture. The higher the perplexity gets, the more the data points take on structure and more distinct and well defined clusters appear. From a perplexity of 20, the one hour data files appear to start forming such clusters. When scanning the higher perplexities, it can be seen, that clusters become more separated. The scatter plots from perplexity 30 to 50 appear to have formed well defined clusters. 
+
+To assist in selecting the perplexity that creates the best clusters, the three mathematical evaluation scores, mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, were compared. Figure \ref{figure:perplexityEvaluationScores} displays the Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, calculated for the DBSCAN and OPTICS clusterings of different perplexities. The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files). The number of these best scoring fields will henceforth be referred to as number of "wins". With 4 wins, a perplexity of 20 has the highest number of best achieving score values. The perplexities of 10, 40, and 45 tied in second place with 2 wins. While according to the scores, perplexity 20 creates the best clusters, visually the clusters appear better defined with a perplexity between 30 and 50.  For this reason, the focus of the comparison of the scores was moved to the scores that were highest, whose perplexity was between 30 and 50. Perplexity 40 had the most wins in figure \ref{figure:perplexityEvaluationScoresDetailed} and was chosen as the final parameter. These tests were conducted a second time (see appendix \ref{appendix:compareAveragePerplexity}), using the average of two different t-SNE results for 1h and 3h files. While the scores are slightly different, a perplexity of 40 was again the overall best achieving value.
+
+% Comparing these results with the scatter plots and allowing for error, the 
+
+% To further confirm the t-SNE perplexity parameter, the equation reviewed in section \ref{section:tSNE} was implemented. However, the results were not as expected and so the results from the visual and evaluation score comparison were chosen.
+
+% The first block (\textbf{lines...}) shows the results for the 1h dataset, the second block (\textbf{lines...}) for the 3h dataset, and the last block (\textbf{lines...}) compares the two (for the 1h and 3h time lengths). The light green field indicates, that from the data files (1h or 3h), this time length achieved the best and most distinct clusters, according to that score. Dark green fields highlight the best value for that score overall for all time lengths.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities} in steps of 5 and 10. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \label{figure:perplexityEvaluationScores}
+\end{figure}
+
+% The light green highlighted values illustrate the best values (best defined and distinct clusters) for the one hour or three hour time lengths, whilst the darker green features the overall best value (1h and 3h files).
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png}
+  \caption{Comparison of the evaluation scores of the top three perplexity candidates 40, 45, and 50. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \label{figure:perplexityEvaluationScoresDetailed}
+\end{figure}
 
 
-  
+The same principle was used to determine the ideal value for the learning rate parameter. The sklearn t-SNE documentation states, that the learning rate is normally set between 10 and 1000, hence the learning rate in the scatter plots was chosen in this interval.
+The various resulting scatter plots can be seen in the appendix \ref{appendix:tSNEParametersLearningRate}. The differences in the arrangement of the data points over the plots is not as substantial as it was when testing for the perplexity. The results, listed in figure \ref{figure:learningRateEvaluationScores} revealed, that the learning rate 10 scores highest with a learning rate of 800 coming in second. Since roughly 200 steps were taken between the learning rate values, smaller steps were taken (i.e. 50) around the winning value to see if an even better performance could be accomplished (figure \ref{figure:learningRateEvaluationScoresDetailed}, in appendix \ref{appendix:comparelearningRateDetailed}). While 10 still achieved best in the one hour time length files, 800 came top in the three hour files, indicating that 10 might not be the best rate for these. Consequently, the values 20 and 30 were also evaluated (figure \ref{figure:learningRateEvaluationScoresDetailed2}, in appendix \ref{appendix:comparelearningRateDetailed}). While a learning rate of 10 still came top in the one hour files, 30 came top in the three hour files. With the hope of finding a value in between 10 and 30 that satisfied both time lengths, the learning rates 10, 15, 20, 25, and 30 were ultimately compared exclusively. The results in figure \ref{figure:learningRateEvaluationScoresDetailed3} exposed, that this final comparison lead to the learning rate 20 being the most suitable. 
+
+As with the perplexity, the learning rate tests were also reproduced, averaging two different t-SNE outcomes. The results are illustrated in appendix \ref{appendix:compareAverageLearningRate}. In general, the results are similar. 800 appears to be more dominant than the lower parameter values (e.g. 10 and the favourite 20). To further compare 20 and 800, appendix \ref{appendig:compareLearningRate20and800} contains a table (figure \ref{figure:learningRateEvaluationScoresAverageDetailed4}) comparing 4 different runs of scores from average t-SNE results. With 2 wins more than 20, 800 has the overall better score results. Figures \ref{figure:1h-learningRateComparison20and800} and \ref{figure:3h-learningRateComparison20and800} visually compare the scatter plots created with a learning rate of 20 and 800. The plots and clusters appear very similar. The clusters from perplexity 20 however seem slightly more compact (less smaller clusters). A learning rate of 20 was thus selected for the final learning rate parameter. However, 800 was also used in the final results.
+
+
+The final t-SNE parameters, from which the results were then used by the DBSCAN and OPTICS clustering methods in the next section, were as follows: perplexity = 40, learning\_rate = 20, and n\_iter = 5000. A run of the resulting graphs are depicted in figures \ref{figure:finalTSNE1h} and \ref{figure:finalTSNE3h}.
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in  (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \label{figure:learningRateEvaluationScores}
+\end{figure}
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
+%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+%   \label{figure:learningRateEvaluationScoresDetailed}
+% \end{figure}
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
+%   \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values.}
+%   \label{figure:learningRateEvaluationScoresDetailed2}
+% \end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. The goal is to find a perplexity value between 10
+  and 30, that satisfies both the 1h and 3h datasets. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \label{figure:learningRateEvaluationScoresDetailed3}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNE.png}
+  % \caption{}
+  % \label{figure:}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png}
+    % \caption{}
+    % \label{figure:}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (1h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
+  \label{figure:finalTSNE1h}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNE.png}
+  % \caption{}
+  % \label{figure:}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png}
+    % \caption{}
+    % \label{figure:}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (3h data files): perplexity=40, n\_iter=5000, learning\_rate=20}
+  \label{figure:finalTSNE3h}
+\end{figure}
+
+
+
+
+
+% \clearpage
