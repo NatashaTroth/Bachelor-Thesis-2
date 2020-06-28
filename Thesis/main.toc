@@ -129,6 +129,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.4}Clustering evaluation results}{70}{subsection.a.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}git-Repository}{75}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}git-Repository}{76}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Archived Websites}{75}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Archived Websites}{76}{Appendix.a.C}%

@@ -160,3 +160,5 @@
 \contentsline {figure}{\numberline {77}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 20. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{73}{figure.caption.79}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {78}{\ignorespaces Evaluation scores comparison averaged from 2 runs of t-SNE and clustering with a learning rate of 800. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).\relax }}{74}{figure.caption.80}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {79}{\ignorespaces Evaluation scores comparison to determine 2nd, 3rd, 4th, 5th, and 6th place.\relax }}{75}{figure.caption.81}%

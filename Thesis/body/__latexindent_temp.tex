@@ -1,49 +1,28 @@
 
-The three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, i.e. Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, were used to compare the resulting clusters.  They were each implemented using the sklearn library, the same way as in section \ref{section:experimentTSNE}. These three scores were calculated and stored for each DataFrame, after each clustering algorithm was applied (DBSCAN and OPTICS) for each time length. The resulting values where then compared and detailed in this section.
-The experiment was run on each time length (\textit{1h files:} 15 min, 30 min, 45 min, 1h; \textit{3h files:} 30 min, 1h, 1 h 30 min, 2h, 2h 30 min, 3h).
-The numbers were different for each time the results were calculated, since t-SNE produces slightly different results. Therefore, the t-SNE and clustering was run multiple times and the results were compared. In appendix \ref{appendix:clusteringEvaluationResults} figures \ref{figure:clusteringResults1} and \ref{figure:clusteringResults2}, two individual t-SNE and clusterings were run, figure \ref{figure:clusteringResults3} depicts the average scores of these two. Figure \ref{figure:clusteringResults4} depicts an average of a different two runs. These mentioned runs all held the learning rate parameter 20. Since a learning rate of 800 also proved to be a viable choice, the t-SNE and clustering was also run twice and averaged with this learning rate (figure \ref{figure:clusteringResults5}). The mean was taken from all these results, thus creating figure \ref{figure:clusteringResults6} (this figure can be seen in this section). From these, there is no clear winner, although there are some stronger candidates, i.e. 15 min (1h), 1h (1h), and 2h (3h). 
-
-Like in section \ref{section:experimentTSNE}, when comparing the t-SNE results, the green fields indicate the best and most distinct clusters from the 1h or 3h data files, while the dark green fields also highlight the best value for that score overall for all time lengths (over all datasets). The green fields from all the above mentioned results, or number of wins, were summed to see which time length had the best number of scores the most times. The wins per dataset (1h or 3h - all green fields) for the 1h data files are pictured in figure \ref{figure:clusteringResultsGraph1h}, in figure \ref{figure:clusteringResultsGraph3h} for the 3 hour data files. Figure \ref{figure:clusteringResultsGraphTotal} shows the comparison of the dark green wins (1h and 3h). The two top winners for the 1h data files and the 3h data files, were: 30 min (1h), 15 min (1h), 2h (3h), and 1h (3h). The top four results when comparing all time lengths, despite which files they were aggregated to, were: 30 min (1h), 1h (3h), 2h (3h), and 30 min (3h). The number of wins is to some extent reliable on the resulting scores from other time lengths it happened to be compared with. It also does not fully factor in the full extent of how far this time length was better. For this reason, time lengths that was among the stronger candidates at least once (either in figures \ref{figure:clusteringResults6}, \ref{figure:clusteringResultsGraph1h} and \ref{figure:clusteringResultsGraph3h}, over \ref{figure:clusteringResultsGraphTotal}) were compared solely to each other. The results are detailed in figure \ref{figure:clusteringResults8}. The 2h time delta achieved the majority of best scores in this final comparison. When removing the 2h column, 1h (1h) comes in second place.
-After removing the 1h (1h) column, 30 min (1h) and 1h (3h) come in third place. 1h (3h) however out performs when compared directly to 30 min (1h).
-
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/clusteringResults/clusteringResults6.png}
-  \caption{Evaluation scores comparison averaged from figures \ref{figure:clusteringResults1}, \ref{figure:clusteringResults2}, \ref{figure:clusteringResults3}, \ref{figure:clusteringResults4}, and \ref{figure:clusteringResults5}. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files). The time lengths with the highest number of wins includes 15 min (1h), 1h (1h), and 2h (3h). }
-  \label{figure:clusteringResults6}
-\end{figure}
+\textcite{bellman1957dynamic}[20-22] first introduces the \textit{curse of dimensionality}. The curse effects a mathematical model, when there are a large number of variables. The real world is complex and by trying to incorporate as many real world features into a mathematical model as possible, it becomes complicated. A too simple model however, will not be suitable for prediction. 
+\textcite{bellman1961adaptive}[94] further details the results of \textit{the curse of dimensionality}. Functions with one variable can be visualised as curve in a 2D space and a function with two variables in a 3D space. Depicting functions with more variables however, is more problematic (both for visualisation and tabulation). As stated by \textcite{han2011data}[93], dimensionality reduction is a data reduction method. Data reduction is utilised to attain a smaller, more concentrated dataset, whilst mostly keeping the integrity of the initial dataset. Principal components analysis and t-SNE are the dimensionality reduction techniques used to reduce the SmartEater dataset.
 
 
-\begin{figure}
-  \centering
-  \begin{subfigure}{.475\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{./images/clusteringResults/clusteringResultsGraph1h.png}
-    \caption{Number of evaluation score wins (1h or 3h dataset) for the 1h data files.}
-    \label{figure:clusteringResultsGraph1h}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}{.475\textwidth}
-    \centering
-    \  \includegraphics[width=1.2\textwidth]{./images/clusteringResults/clusteringResultsGraph3h.png}
-    \caption{Number of evaluation score wins (1h or 3h dataset) for the 3h data files.}
-    \label{figure:clusteringResultsGraph3h}
-  \end{subfigure}
-	\caption{ The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
-\end{figure}
+\subsubsection{Principal Components Analysis (PCA)}
+Principal components analysis was first proposed by \textcite{OnLinesAndPlanes1901} and \textcite{hotelling1933analysis}.
+Pearson's approach is to identify a line or plane that best fits the collected variables plotted to a plane. In order to determine the best fitting line or plane, means, standard-deviations, and correlations are used \autocite{OnLinesAndPlanes1901}[559-560].
+\textcite{hotelling1933analysis}[5] introduces his method as the method of principal components. \textcite{jolliffe2002PCA}[7] clarifies, that while these two papers used different methods, the standard algebraic
+derivation was announced by \textcite{hotelling1933analysis}. According to \textcite{han2011data}[95-96], the general idea is to calculate k orthonormal vectors, the so called principal components. These unit vectors present a basis for the input data, which are a linear combination of the principal components. \textcite{DataMiningAndPredictiveAnalytics}[94] explain, that the principal components can be discovered, by rotating the initial coordinate system to the direction of maximum variability. These then create a new coordinate system. \textcite{hotelling1933analysis}[4, 5, 15] reveals, that the components are chosen with decreasing amount of variance. Therefore, the one with the highest variance is chosen first. The next highest is chosen orthogonal to the one before, and so on. \textcite{han2011data}[96] mention, that in data mining, the vectors with the lowest variance are removed, thus reducing the number of dimensions. Despite the loss of data, the components with higher variance can approximate the original data.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.7\textwidth]{./images/clusteringResults/clusteringResultsGraphTotal.png}
-  \caption{Number of dark green evaluation score wins (1h and 3h dataset).}
-  \label{figure:clusteringResultsGraphTotal}
-\end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{./images/clusteringResults/clusteringResults8.png}
-  \caption{Comparison of top evaluation score performers (of clusterings) from figures \ref{figure:clusteringResultsGraph1h}, \ref{figure:clusteringResultsGraph3h}, and \ref{figure:clusteringResultsGraphTotal}. The light green highlighted cells indicate the best value across the different time lengths for that score.}
-  \label{figure:clusteringResults8}
-\end{figure}
+\subsubsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
+\label{section:tSNE}
+In their paper, \textcite{maaten2008visualizing}[2579-2580] introduce t-SNE, a method of dimensionality reduction and visualising high dimensional data on a two or three-dimensional plot. The authors mention, that while linear methods like PCA concentrate on making sure low-dimensional representations of data points are apart from each other, they are typically unable to bring similar low-dimensional representations near. 
 
-\clearpage
+The authors describe, that t-SNE is a variation of Stochastic Neighbor Embedding (SNE), introduced by \textcite{hinton2003stochastic}. \textcite{maaten2008visualizing}[2581] explain, that the first step in SNE is to transform the Euclidean distances between points in high-dimensional space into the conditional similarity probabilities. According to \textcite{hinton2003stochastic}[858], such a probability \textit{p\textsubscript{i,j}} would arise from the similarity between the two data points \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}. This is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour. \textcite{maaten2008visualizing}[2581] clarify, that this is the probability of \textit{x\textsubscript{i}} picking the point \textit{x\textsubscript{j}} as its neighbour under the circumstance, that the neighbours were chosen according to their probability density under a Gaussian, \textit{x\textsubscript{i}} being its centre. This results in the conditional probability being high for close data points and imperceptibly small for those further apart.
+In a similar way, the conditional probability between the low-dimensional data points \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}} (counterparts to high-dimensional \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}}), represented by \textit{q\textsubscript{i,j}}, is calculated. 
+\textcite{maaten2008visualizing}[2581] state, that if the similarity of \textit{x\textsubscript{i}} and \textit{x\textsubscript{j}} has been correctly mapped by \textit{y\textsubscript{i}} and \textit{y\textsubscript{j}}, then \textit{p\textsubscript{i,j}} will be equal to \textit{q\textsubscript{i,j}}. 
+
+
+\textcite{hinton2003stochastic}[858] further explain, that the goal is to reduce the difference between \textit{p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}, thus finding a suitable low-dimensional representation of the high-dimensional data. This is accomplished by minimising a cost function, comprised of the sum of the Kullback-Leibler divergences between {p\textsubscript{i,j}} and \textit{q\textsubscript{i,j}}. 
+\textcite{maaten2008visualizing}[2583] reveal, that the advantages of t-SNE over SNE are, the improvement of its cost function (symmetrised version of SNE) and the use of Student-t distribution as opposed to Gaussian for the similarity calculation in the low-dimensional area.
+
+
+To apply t-SNE to a dataset, \textcite{maaten2008visualizing}[2582] describe, the $\sigma$\textsubscript{i} has to be chosen for variance of the Gaussian centred over \textit{x\textsubscript{i}}. Depending on the density, different values of $\sigma$\textsubscript{i} provide better results. For example, in a denser region, a smaller $\sigma$\textsubscript{i} is recommended, but not in less denser regions. This makes it unlikely to be able to find an overall optimal  $\sigma$\textsubscript{i} for the dataset. \textcite{hinton2003stochastic}[858] declare, that $\sigma$\textsubscript{i} can be chosen by hand or is found using a binary search. This would equalise the distribution entropy to log\textit{k}, \textit{k} being the effective number of local neighbours or the so called \textit{perplexity}. The \textit{perplexity} is a parameter chosen by the user for the SNE by hand. \textcite{maaten2008visualizing}[2582] imply, that this parameter should be chosen between 5 and 50 and that SNE is quite robust to the chosen value. 
+Another parameter to be set is the learning rate. \textcite{han2011data}[332] clarify, that the learning rate parameter is used to support the finding of global minimums, instead of being caught in a local minimum. A learning rate set too low will result in slow learning. In contrast, a learning rate set too high could lead to poor results.
+
