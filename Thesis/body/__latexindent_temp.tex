@@ -1,136 +1,34 @@
-\textcite{han2011data}[363-365] list the following requirements  clustering methods must meet:
+In his book, \textcite{mccue2014data}[53] mentions, that generally in data mining, the analysis itself requires 20\% of the time. The other 80\% is the preparation of the data.
+
+To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] state, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define, the goal is to decrease the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model. The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
+
+
+
+\subsubsection{Missing values}
+\label{section:MissingValues}
+
+According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values, however, do have underlying values, they simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record, that might contain relevant information. Substituting the value means, that the record can be used. A consideration is how to substitute the missing value, without adding bias to the dataset. An inadequately chosen replacement value could distort the dataset, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables. Substitution of values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
+
+
+\subsubsection{Normalisation}
+\label{section:Normalisation}
+
+\textcite{han2011data}[105] describe normalisation as giving the attributes of a dataset equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. People's income would, for instance, have a larger range than binary attributes. 
+
+\textcite{dataPreprocessingInDataMining}[46-48] review the following normalisation methods: \textit{min-max normalization}, \textit{z-score normalization}, and \textit{decimal scaling normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
 \begin{itemize}
-  \item Scalability
-  \item Ability to work with different attribute types
-  \item Recognising clusters with arbitrary shapes
-  \item Requirements for domain knowledge (for parameter selection)
-  \item Ability to handle noise
-  \item Incremental clustering (integrate updates without recomputation)
-  \item Insensitivity to the order of the input
-  \item Ability to cluster high-dimensional data 
-  \item Capability to cluster under certain constraints
-  \item Interpretability and usability of the results
-\end{itemize}
+  \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
+  \[
+    v' = \frac{v - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
+  \]
+  The intervals [0, 1] and [-1, 1] are common intervals for normalisation. 
 
+  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of the values \textit{A}.
+  \[
+    v' = \frac{v - \overline{A}}{\sigma_A}
+  \]
+  After this transformation, the mean equals zero and the standard deviation is one. The advantages of this normalisation method take effect, when the min and max values of \textit{A} are not known, or when there are outliers that could bias the min-max method.
 
-\textcite{han2011data}[366-367] present different clustering algorithms. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
-
-%They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories.
-
-  \subsubsection{Partitioning methods}
-  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
-  
-  %The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}) and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters.Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  
-
-  \subsubsection{Hierarchical methods}
-  The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step, it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together and are divided until each object is contained in its own cluster, or a condition is met to terminate the process. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen since it cannot be undone. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
-  %Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Once a merge or split step has been performed, it cannot be reversed and the objects also cannot swap cluster.
-
-
-  \subsubsection{Density-Based methods}
-  \label{section:densityBasedMethods}
-  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with various shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS \autocite{han2011data}[367, 385].
-  %These methods can also be used to cluster subspaces. 
-  
-
-\paragraph{DBSCAN}
-\label{section:DBSCAN}
-\textcite{DBSCAN}[226-229] introduce a density-based clustering algorithm, the Density Based Spatial Clustering of Applications with Noise. This method is able to find clusters with different shapes and work efficiently on large spatial datasets. The algorithm searches in a given radius (Eps = epsilon parameter) around a data point. If within this radius a minimum number of points (MinPts parameter) exists, then this point is added to the cluster (core point). A data point (\textit{p}) is considered a border point, if inside of its Eps neighbourhood there is a core point (\textit{q}). A data point is labelled as noise, if it does not belong to any clusters (has no core points within the given radius). 
-
-According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
-
-
-\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the ideal parameters for the "thinnest" cluster. The first step is to construct a sorted \textit{k}-dist graph. For a specific \textit{k}, the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour is calculated. These distances are then sorted in descending order and depicted on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour in the "thinnest" cluster. The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left of it with higher distances are likely to be noise and the points to the right belong to clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
-
-
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{./images/sortedKGraphDBSCAN.png}
-  \caption{Sorted 4-dist graph (distance for each point to its fourth nearest neighbour) to calculate DBSCAN Eps parameter. The first point in the "valley" is supposedly the ideal value. The points to the left with higher distances are likely to be noise and the points to the right are part of clusters \autocite{DBSCAN}[230].}
-  \label{figure:sortedKGraphDBSCAN}
-\end{figure*}
-
-
-\paragraph{OPTICS}
-\label{section:OPTICS}
-\textcite{han2011data}[388] mention, that OPTICS was created to improve the selection of global parameters problem in DBSCAN.
-\textcite{OPTICS}[49, 51-54, 57, 60] present the density base clustering algorithm OPTICS (Ordering Points To Identify the Clustering Structure). This method in itself does not specifically create clusters. Instead, it orders the dataset according to its density-based clustering structure. For each object, the values \textit{core-distance} and \textit{reachability-distance} are calculated. The \textit{core-distance} of an arbitrary data point (object) \textit{o} is the distance to the nearest point within Eps that completes the MinPts rule and therefore labels point \textit{o} as a core point. If there is not the number of MinPts in the Eps neighbourhood, then the \textit{core-distance} of that point is undefined. The \textit{reachability-distance} of an object \textit{p} to core object \textit{o}, is defined as the max value of the core-distance and the distance from object \textit{o} to object \textit{p}. Likewise, if \textit{o} is not a core object, then the \textit{reachability-distance} of \textit{p} is undefined. 
-
-% The \textit{core-distance} and \textit{reachability-distance} are visualised in figure \ref{figure:reachabilityDistanceOPTICS}.
-
-% \begin{figure*}[h]
-%   \centering
-%   \includegraphics[width=0.3\textwidth]{./images/reachabilityDistanceOPTICS.png}
-%   \caption{Core-distance of object \textit{o} (MinPts = 4) and reachability-distances for objects \textit{p1} and \textit{p2} \autocite{OPTICS}[52].}
-%   \label{figure:reachabilityDistanceOPTICS}
-% \end{figure*}
-
-
-The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}, a reachability plot calculated from a portion of the SmartEater dataset (reduced through t-SNE) is depicted. 
-
-% \begin{figure*}[h]
-%   \centering
-%   \includegraphics[width=0.5\textwidth]{./images/reachabilityPlotOPTICS.png}
-%   \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen \autocite{OPTICS}[54].}
-%   \label{figure:reachabilityPlotOPTICS}
-% \end{figure*}
-
-
-Clusters can be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots. Figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom} depicts a scatter plot with OPTICS clustering. The coloured points indicated clusters, whilst the black points highlight noise. The corresponding reachability plot (figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}) shows that the clusters were formed from the dips.
-% In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-reachabilityPlot-DBSCAN-zoom.png}
-  \caption{OPTICS reachability plot constructed from a portion of the SmartEater dataset (reduced through t-SNE). Dips can be seen, where clusters (bars that are not black) have been highlighted. The black bars indicate noise.}
-  \label{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}
-\end{figure}
-
-\begin{figure}
-  \centering
-  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
-  \caption{OPTICS clustering, extracted from the reachability plot in figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}. The cluster colours can be compared to the colours in the dips of the reachability plot. The black points indicate noise.}
-  \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
-\end{figure}
-
-
-
-% \begin{figure}[H]
-% 	\centering
-% 	\begin{subfigure}{.475\textwidth}
-%     \centering
-%     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
-%     \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
-%     \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
-%   \end{subfigure}%
-%   \hfill  
-%   \begin{subfigure}{.475\textwidth}
-%     \centering
-%     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-reachabilityPlot-DBSCAN-zoom.png}
-%     \caption{OPTICS reachability plot constructed from the clustering in figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom}. "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
-%     \label{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}
-% 	\end{subfigure}
-
-% \end{figure}
-
-
-% \begin{figure}
-%   \centering
-%   \includegraphics[width=0.5\textwidth]{./images/clusterExtractionOPTICS.png}
-%   \caption{Since clusters are defined as the dips/dents in the reachability plots created by the OPTICS algorithm, a cluster can be extracted from this plot starting at the 3rd data point and ending with the 16th. The x-axis of the reachability plot depicts the order of the data points (objects) and the y-axis the reachability-distance for each datapoint \autocite{OPTICS}[57].}
-%   \label{figure:clusterExtractionOPTICS}
-% \end{figure}
-
-
+  \item Decimal scaling is another normalisation method.
  
-
-\subsubsection{Grid-Based methods}
-The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are executed on the grid structure. The grid size (number of cells) determines the processing time. Grid-based methods perform faster than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
-
-  
-
-\vspace{5mm} %5mm vertical space
-\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. 
-% Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
-
+\end{itemize}

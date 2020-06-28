@@ -45,10 +45,6 @@ The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (
   \end{figure}
 
 
-
-
-
-
 \subsubsection{OPTICS}
 The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as introduced by \textcite{OPTICS}. The visual results of these clusterings appeared to contain many points that were not assigned to clusters (noise, black coloured data points), as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots (figure \ref{figure:OPTICSXiResultsReachabilityPlot}) showed many points that were not assigned to a cluster (also coloured black). This resulted in the DBSCAN method being used to cluster the OPTICS results instead. The \textit{Eps} parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}. As can be seen, the DBSCAN clustering contains much less noise (less black data points and less black bars in the reachability plot). The clusters appear larger and more well defined.
 
@@ -70,21 +66,21 @@ The OPTICS algorithm was also implemented with its sklearn implementation\footno
   \label{figure:OPTICSXiResults}
   \end{figure}
 
-  \begin{figure}[H]
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
-    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-xi.png}
-    \caption{1h dataset (first column - 15 min)}
-    \end{subfigure}%
-    \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
-      \centering
-      \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-xi.png}
-      \caption{3h dataset (first column - 30 min)}
-    \end{subfigure}
-    \caption{OPTICS reachability plot using OPTICS automatic cluster extraction (xi). The coloured bars highlight clusters, whilst the black ones indicate noise.}
-    \label{figure:OPTICSXiResultsReachabilityPlot}
-    \end{figure}
+    \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-xi.png}
+  \caption{1h dataset (first column - 15 min)}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-xi.png}
+    \caption{3h dataset (first column - 30 min)}
+  \end{subfigure}
+  \caption{OPTICS reachability plot using OPTICS automatic cluster extraction (xi). The coloured bars highlight clusters, whilst the black ones indicate noise.}
+  \label{figure:OPTICSXiResultsReachabilityPlot}
+  \end{figure}
 
 \begin{figure}[H]
   \centering
