@@ -10,7 +10,7 @@ Natasha Troth
 FH-Prof. DI Dr. Simon Ginzinger, MSc
 
 # Files
- - [main.py](./main.py): start programme, control what data goes in, what data is printed, which functions (e.g. dimensionality reduction, clustering) are used, how many dimensions, how many columns (time lengths)
+ - [main.py](./main.py): start programme, control what data goes in, what data is printed, which functions (e.g. dimensionality reduction, clustering) are used, how many dimensions, how many columns (time lengths). The file names for the 1h dataset directory and for the 3h dataset directory, can be added as commandline arguments in the respective order (e.g. python main.py "/directoryFiles/1h" "/directoryFiles/3h")
  - [dataFile.py](./dataFile.py): object that manages the data sets (read and concatenate .csv files, clean data, apply dimensionality reductions and clusterings)
  - [dimensionalityReduction.py](./dimensionalityReduction.py): apply and plot t-SNE and PCA
  - [clustering.py](./clustering.py): apply and plot DBSCAN and OPTICS. Also predict DBSCAN Eps parameter (plot k-dist graphs).

@@ -1,5 +1,6 @@
 from dataFile import DataFile
 from clusterEvaluation import compare_scores
+import sys
 
 
 def create_clustering_of_directory(directory, number_columns_to_use=1, number_dimensions=2):
@@ -89,13 +90,31 @@ def print_average_scores(data_file_1, data_file_2):
 
 
 def main():
+    """ starting point, controls which dataFile objects are created and which scores are compared
+
+    sys.argv arguments
+    ----------
+    one_hour_file_directory 1 : str
+    three_hour_file_directory : str
+    """
+
+    one_hour_file_directory = ""
+    three_hour_file_directory = ""
+
+    if len(sys.argv) >= 1:
+        one_hour_file_directory = sys.argv[1]
+        three_hour_file_directory = sys.argv[2]
+
+    print("one_hour_file_directory: " + one_hour_file_directory)
+    print("three_hour_file_directory: " + three_hour_file_directory)
+
     print("----1 HOUR FILES----")
     one_hour_file = create_clustering_of_directory(
-        "/Volumes/BATroth/aggregated/1h", 1)
+        one_hour_file_directory, 1)
 
     print("----3 HOUR FILES----")
     three_hour_file = create_clustering_of_directory(
-        "/Volumes/BATroth/aggregated/3h", 1)
+        three_hour_file_directory, 1)
 
     # ----- Average of two files -----
     # print("----1 HOUR FILES 2----")
