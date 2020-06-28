@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from pathlib import Path
 from sklearn.manifold import TSNE
 from dimensionalityReduction import calculate_PCA, calculate_TSNE
-from clustering import spectral_clustering, dbscan_clustering, optics_clustering, agglomerative_clustering, predict_eps_dbscan_parameter
+from clustering import dbscan_clustering, optics_clustering, predict_eps_dbscan_parameter
 import random
 
 
@@ -281,43 +281,3 @@ class DataFile:
                 self.tsne, data_type, graphs)
         else:
             self.optics_scores = optics_clustering(self.df)
-
-    # ---------- OTHER CLUSTERING METHODS ----------
-
-    def spectral_clustering(self, data_type, graphs=False):
-        """ apply spectral clustering to the dataFrame
-            the resulting scores are saved into the self.spectral_scores property
-
-            Parameters
-            ----------
-            data_type : str
-                type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
-            graphs : Boolean
-                render clustering scatter plot graphs (True), or not (False)
-        """
-        if data_type == 'PCA':
-            self.spectral_scores = spectral_clustering(
-                self.pca, data_type, graphs)
-        if data_type == 'TSNE':
-            self.spectral_scores = spectral_clustering(
-                self.tsne, data_type, graphs)
-
-    def agglomerative_clustering(self, data_type, graphs=False):
-        """ apply agglomerative clustering to the dataFrame
-            the resulting scores are saved into the self.agglomerative_scores property
-
-            Parameters
-            ----------
-            data_type : str
-                type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
-            graphs : Boolean
-                render clustering scatter plot graphs (True), or not (False)
-        """
-        if data_type == 'PCA':
-            self.agglomerative_scores = agglomerative_clustering(
-                self.pca, data_type, graphs)
-        elif data_type == 'TSNE':
-            self.agglomerative_scores = agglomerative_clustering(
-                self.tsne, data_type, graphs)
-        else:
-            self.agglomerative_scores = agglomerative_clustering(self.df)

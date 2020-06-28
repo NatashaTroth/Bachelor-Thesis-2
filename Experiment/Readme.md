@@ -13,7 +13,7 @@ FH-Prof. DI Dr. Simon Ginzinger, MSc
  - [main.py](./main.py): start programme, control what data goes in, what data is printed, which functions (e.g. dimensionality reduction, clustering) are used, how many dimensions, how many columns (time lengths)
  - [dataFile.py](./dataFile.py): object that manages the data sets (read and concatenate .csv files, clean data, apply dimensionality reductions and clusterings)
  - [dimensionalityReduction.py](./dimensionalityReduction.py): apply and plot t-SNE and PCA
- - [clustering.py](./clustering.py): apply and plot DBSCAN, OPTICS, Spectral Clustering, and Agglomerative Clustering. Also predict DBSCAN Eps parameter (plot k-dist graphs).
+ - [clustering.py](./clustering.py): apply and plot DBSCAN and OPTICS. Also predict DBSCAN Eps parameter (plot k-dist graphs).
  - [clusterEvaluation.py](./clusterEvaluation.py): Calculate Silhouette Score, Davies Bouldin Score, and Caliński Harabasz Score
  - [plot.py](./plot.py): Create 2d and 3d plots (Matplotlib)
  - [testing.py](./testing.py): Unit tests (the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test subjects)
@@ -51,10 +51,6 @@ Other options:
 (graphs Boolean parameter: True to show graphs, False to hide - default)
  - dbscan_clustering - recommended!
  - optics_clustering - recommended! (with DBSCAN cluster extraction, xi not recommended)
-
- Other options:
- - spectral_clustering (e.g. 3 clusters)
- - aggolomerative_clustering
 
 ## Cluster Evaluation
  - Silhouette Score (1 -> clustering is better, -1 -> clustering is wrong)

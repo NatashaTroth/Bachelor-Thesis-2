@@ -27,24 +27,16 @@ def create_clustering_of_directory(directory, number_columns_to_use=1, number_di
 
     # ---dimensionality reductions---
     data_file.calculate_TSNE(number_dimensions, True)
-    data_file.calculate_PCA(number_dimensions, True)
+    # data_file.calculate_PCA(number_dimensions, True)
 
-    # ---clustering (recommended methods)---
+    # ---clustering---
     data_file.dbscan_clustering('TSNE', True)
-    data_file.dbscan_clustering('PCA', True)
-    # data_file.dbscan_clustering('', True)
+    # data_file.dbscan_clustering('PCA', True)
+    # data_file.dbscan_clustering('')
 
     data_file.optics_clustering('TSNE', True)
-    data_file.optics_clustering('PCA', True)
-    # data_file.optics_clustering('', True)
-
-    # ---other clustering methods---
-    # data_file.spectral_clustering('TSNE')
-    # data_file.spectral_clustering('PCA')
-
-    # data_file.agglomerative_clustering('PCA', True)
-    # data_file.agglomerative_clustering('TSNE', True)
-    # data_file.agglomerative_clustering('', True)
+    # data_file.optics_clustering('PCA', True)
+    # data_file.optics_clustering('')
 
     return data_file
 

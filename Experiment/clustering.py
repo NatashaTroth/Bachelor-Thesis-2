@@ -1,4 +1,4 @@
-from sklearn.cluster import SpectralClustering, DBSCAN, OPTICS, AgglomerativeClustering
+from sklearn.cluster import DBSCAN, OPTICS
 from plot import create_2d_scatterplot_clustering, create_clustering_plot, create_2d_pyplot, create_reachability_plot
 from sklearn.neighbors import NearestNeighbors
 from clusterEvaluation import cluster_evaluation
@@ -75,56 +75,3 @@ def optics_clustering(df, dataType="", graphs=False):
             optics, df, "OPTICS (" + dataType + ")")
         create_reachability_plot(df, clustering, True)
     return cluster_evaluation(optics, df)
-
-
-# ---------- OTHER CLUSTERING METHODS ----------
-
-def spectral_clustering(df, dataType="", graphs=False):
-    """ apply spectral clustering algorithm to the dataFrame
-
-        Parameters
-        ----------
-        df : dataFrame
-            dataFrame object with the data to be reduced
-        data_type : str
-            type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
-        graphs : Boolean
-            render clustering scatter plot graphs (True), or not (False)
-
-        Returns
-        -------
-        list of the evaluation score results ([silhouette_score_evaluation, davies_bouldin_score_evaluation, calinski_harabasz_score_evaluation])
-    """
-    print("\n- spectral clustering (" + dataType + ")...")
-    sc = SpectralClustering(
-        n_clusters=3, assign_labels="discretize", random_state=0)
-    clustering = sc.fit(df)
-    if graphs == True:
-        create_clustering_plot(
-            sc, df, "Spectral Clustering (" + dataType + ")")
-    return cluster_evaluation(sc, df)
-
-
-def agglomerative_clustering(df, dataType="", graphs=False):
-    """ apply agglomerative clustering algorithm to the dataFrame
-
-        Parameters
-        ----------
-        df : dataFrame
-            dataFrame object with the data to be reduced
-        data_type : str
-            type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
-        graphs : Boolean
-            render clustering scatter plot graphs (True), or not (False)
-
-        Returns
-        -------
-        list of the evaluation score results ([silhouette_score_evaluation, davies_bouldin_score_evaluation, calinski_harabasz_score_evaluation])
-    """
-    print("\n- agglomerative clustering (" + dataType + ")...")
-    agglomerative = AgglomerativeClustering()
-    clustering = agglomerative.fit(df)
-    if graphs == True:
-        create_clustering_plot(
-            agglomerative, df, "Agglomerative Clustering (" + dataType + ")")
-    return cluster_evaluation(agglomerative, df)
