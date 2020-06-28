@@ -1,34 +1,104 @@
-In his book, \textcite{mccue2014data}[53] mentions, that generally in data mining, the analysis itself requires 20\% of the time. The other 80\% is the preparation of the data.
 
-To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] state, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define, the goal is to decrease the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model. The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
+The dimensionality reduction methods PCA and t-SNE were used to reduce the number of dimensions (number of attributes, so in this case number of columns). 
 
-
-
-\subsubsection{Missing values}
-\label{section:MissingValues}
-
-According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values, however, do have underlying values, they simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record, that might contain relevant information. Substituting the value means, that the record can be used. A consideration is how to substitute the missing value, without adding bias to the dataset. An inadequately chosen replacement value could distort the dataset, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables. Substitution of values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
+\subsubsection{PCA}
+PCA was the initial approach used in the experiment. The sklearn \textit{PCA}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}} function was used to reduce the number of dimensions to 2, which simplified visualisation in 2D scatterplots. Before the removal of the chain (section \ref{section:chainShapedData}), the PCA allowed 65\%-95\% (depending on data preparation type and aggreation files) of the data's important structures to be accounted for in only the first two or three principle components. After the removal of the chain, the first three components only contained almost 50\% of the important structures. Of the 8 components, 7 would have been needed to account for over 90\% of these formations (for both the 1h and 3h datasets). As figure \ref{figure:PCA}a shows, the resulting data from these components did not show any significant clusters, in comparison to the t-SNE results. The principle components were further depicted in a 3D scatter plot, to evaluate whether the extra dimension revealed more structure. However, as can be seen in \ref{figure:PCA}b, only very little more structure was revealed. It is considered, that as PCA is a linear dimensionality reduction method, it might not be suitable to transform the SmartEater dataset.
 
 
-\subsubsection{Normalisation}
-\label{section:Normalisation}
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/pca2d.png}
+  \end{subfigure}%
+  \hfill
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/pca3d.png}
+  \end{subfigure}
+	\caption{2D (a) and 3D (b) scatter plots of the PCA results. The data points only appear to form one cluster with little visible structure.}
+  \label{figure:PCA}
+\end{figure}
 
-\textcite{han2011data}[105] describe normalisation as giving the attributes of a dataset equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. People's income would, for instance, have a larger range than binary attributes. 
 
-\textcite{dataPreprocessingInDataMining}[46-48] review the following normalisation methods: \textit{min-max normalization}, \textit{z-score normalization}, and \textit{decimal scaling normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
-\begin{itemize}
-  \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
-  \[
-    v' = \frac{v - min_A}{max_A - min_A}(newMax_A - newMin_A) + newMin_A
-  \]
-  The intervals [0, 1] and [-1, 1] are common intervals for normalisation. 
+\subsubsection{t-SNE}
+\label{section:experimentTSNE}
+The t-SNE results proved to be more significant than the PCA ones. The t-SNE algorithm was implemented using the sklearn \textit{t-SNE}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html}} implementation.
+To effectively apply the t-SNE algorithm, it was important to identify the parameters (perplexity, learning, and number of iterations) most suitable to the SmartEater dataset, as described in section \ref{section:tSNE}. The number of iterations was originally set to the default value 1000, but was later raised to 5000, to avoid receiving significantly different results each time t-SNE was run. Raising the number of iterations provided more consistent results. The overall structure of these were the same, though usually rotated differently. \textcite{wattenberg2016how} also used 5000 iterations in their experiments and stated that their t-SNE plots had reached a stable point by then.
 
-  \item Z-score (or zero-mean) normalization normalises the values using the mean (\textit{\={A}}) and standard deviation \textit{$\sigma$\textsubscript{A}} of the values \textit{A}.
-  \[
-    v' = \frac{v - \overline{A}}{\sigma_A}
-  \]
-  After this transformation, the mean equals zero and the standard deviation is one. The advantages of this normalisation method take effect, when the min and max values of \textit{A} are not known, or when there are outliers that could bias the min-max method.
+To find suitable perplexity and learning rate t-SNE parameters to create the most distinct clusters possible, multiple 2D t-SNE scatter plots were created using different perplexity and learning rate values. 
+The to determine the perplexity parameter\footnote{\textcite{wattenberg2016how} proved to be a helpful source in tuning this parameter.}, multiple values between the recommended 5 and 50, in steps of 10 (except for the first step which was 5) were tested. A perplexity of 45 was further added, since it had shown good results in tests performed before the chain described in section \ref{section:chainShapedData} was removed. The resulting scatter plots are listed in the appendix \ref{appendix:tSNEParametersPerplexity}. When visually comparing the different perplexities, the data points in the lower perplexity graphs (e.g. 5 and 10) appear to be randomly scattered and have no structure. The higher the perplexity gets, the more the data points take on structure and more distinct and well defined clusters appear. From a perplexity of 20, the 1h data files appear to start forming such clusters. When scanning the higher perplexities, it can be seen, that clusters become more separated. The scatter plots from perplexity 30 to 50 appear to have formed well defined clusters. 
 
-  \item Decimal scaling is another normalisation method.
- 
-\end{itemize}
+To assist in selecting the perplexity parameter, the three mathematical evaluation scores, mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, were compared. Figure \ref{figure:perplexityEvaluationScores} displays the Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, calculated for the DBSCAN and OPTICS clusterings from different perplexities. As explained in section \ref{section:TheoryEvaluatingClusteringResults}, the Silhouette Score indicates better, denser clustering, when it is closer to 1, and incorrect clustering if the value is close to -1. The lower of two Davies-Bouldin Index and the higher of the Caliński-Harabasz Index scores suggests better clustering. The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).
+The number of these best scoring fields will henceforth be referred to as number of "wins". With 4 wins, a perplexity of 20 has the highest number of best achieving score values. The perplexities of 10, 40, and 45 tied in second place with 2 wins. While according to the scores, perplexity 20 creates the best clusters, visually the clusters appear better defined with a perplexity between 30 and 50. For this reason, the focus of the comparison of the scores was moved to the scores that were highest, whose perplexity was between 30 and 50. Perplexity 40 had the most wins in figure \ref{figure:perplexityEvaluationScoresDetailed} and was chosen as the final parameter. These tests were conducted a second time (see appendix \ref{appendix:compareAveragePerplexity}), using the average of two different t-SNE results for each of the datasets. While the scores are slightly different, a perplexity of 40 was again the overall best achieving value.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScores.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{perplexities} in steps of 5 and 10. The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).}
+  \label{figure:perplexityEvaluationScores}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.4\textwidth]{./images/tsneParametersTest/perplexity/perplexityEvaluationScoresDetailed.png}
+  \caption{Comparison of the evaluation scores of the top three perplexity candidates 40, 45, and 50. The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).}
+  \label{figure:perplexityEvaluationScoresDetailed}
+\end{figure}
+
+
+The same principle was used to determine the ideal value for the learning rate parameter. The sklearn t-SNE documentation states, that the learning rate is normally set between 10 and 1000, hence the learning rate in the scatter plots was chosen in this interval.
+The various resulting scatter plots can be seen in the appendix \ref{appendix:tSNEParametersLearningRate}. The differences in the arrangement of the data points over the plots is not as substantial as it was when testing for the perplexity. The results, listed in figure \ref{figure:learningRateEvaluationScores} revealed, that the learning rate 10 scores highest with a learning rate of 800 coming in second. Since roughly 200 steps were taken between the learning rate values, smaller steps were taken (i.e. 50) around the winning value, to see if an even better performance could be accomplished (figure \ref{figure:learningRateEvaluationScoresDetailed}, in appendix \ref{appendix:comparelearningRateDetailed}). While 10 still achieved best in the one hour time length files, 800 came top in the three hour files, indicating that 10 might not be the best rate for these. Consequently, the values 20 and 30 were also evaluated (figure \ref{figure:learningRateEvaluationScoresDetailed2}, in appendix \ref{appendix:comparelearningRateDetailed}). While a learning rate of 10 still came top in the one hour files, 30 came top in the three hour files. With the hope of finding a value in between 10 and 30 that satisfied both time lengths, the learning rates 10, 15, 20, 25, and 30 were ultimately compared exclusively. The results in figure \ref{figure:learningRateEvaluationScoresDetailed3} exposed, that this final comparison lead to the learning rate 20 being the most suitable. 
+
+As with the perplexity, the learning rate tests were also reproduced, averaging two different t-SNE outcomes. The results are illustrated in appendix \ref{appendix:compareAverageLearningRate}. The value 800 appears to be more dominant than the lower parameter values (e.g. 10 and the favourite 20). To further compare 20 and 800, appendix \ref{appendig:compareLearningRate20and800} contains a table (figure \ref{figure:learningRateEvaluationScoresAverageDetailed4}) comparing 4 different runs of scores from average t-SNE results. With 2 wins more than 20, 800 has the overall better score results. Figures \ref{figure:1h-learningRateComparison20and800} and \ref{figure:3h-learningRateComparison20and800} (in appendix \ref{appendix:compareAverageLearningRate}) visually compare the scatter plots created with a learning rate of 20 and 800. The plots and clusters appear very similar. The clusters from perplexity 20 however seem slightly more compact (less smaller clusters). A learning rate of 20 was thus selected for the final learning rate parameter. However, 800 was also used in the final results.
+
+
+The final t-SNE parameters, from which the results were then used by the DBSCAN and OPTICS clustering methods in the next section, were as follows: perplexity = 40, learning\_rate = 20, and n\_iter = 5000. A run of the resulting graphs are depicted in figures \ref{figure:finalTSNE1h} and \ref{figure:finalTSNE3h}.
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScores.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in  (except the first step of 190). The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).}
+  \label{figure:learningRateEvaluationScores}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed3.png}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. The goal is to find a learning rate value between 10
+  and 30, that satisfies both the 1h and 3h datasets. The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).}
+  \label{figure:learningRateEvaluationScoresDetailed3}
+\end{figure}
+
+
+
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNE.png}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/1h-1-finalTSNEDBSCAN.png}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (1h data files): perplexity=40, learning\_rate=20, n\_iter=5000 }
+  \label{figure:finalTSNE1h}
+\end{figure}
+
+\begin{figure}
+  \centering
+	\begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNE.png}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{./images/tsneParametersTest/3h-1-finalTSNEDBSCAN.png}
+	\end{subfigure}
+	\caption{Final t-SNE parameters (3h data files): perplexity=40, learning\_rate=20, n\_iter=5000}
+  \label{figure:finalTSNE3h}
+\end{figure}
+

@@ -194,8 +194,6 @@
 
 % -- 3h, lr 1000 --
 \begin{figure}[H]
-	\centering
-	
   \centering
 	\begin{subfigure}{.5\textwidth}
     \centering
@@ -211,53 +209,54 @@
 
 
 
-\subsubsection{Learning Rate Detailed Comparison Results }
+\subsubsection{Learning Rate Detailed Comparison Results}
 \label{appendix:comparelearningRateDetailed}
+In the following figures, the green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value steps were taken (i.e. 50, except for the first step which is 40 and the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value \textbf{steps of 50} were taken (except for the first step which is 40 and the last step to 800) between each test.}
   \label{figure:learningRateEvaluationScoresDetailed}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresDetailed2.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value steps were taken (i.e. 10, except for the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value \textbf{steps of 10} were taken (except for the last step to 800) between each test.}
   \label{figure:learningRateEvaluationScoresDetailed2}
 \end{figure}
 
 %.................................COMPARISON AVERAGES..................................
 \subsubsection{Learning Rate Comparison Results (Average of two different t-SNE runs)}
 \label{appendix:compareAverageLearningRate}
-
+In the following figures, the green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverage.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in steps of 200 (except the first step of 190). The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in \textbf{steps of 200} (except the first step of 190).}
   \label{figure:learningRateEvaluationScoresAverage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value steps were taken (i.e. 50, except for the first step which is 40 and the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value \textbf{steps of 50} were taken (except for the first step which is 40 and the last step to 800) between each test.}
   \label{figure:learningRateEvaluationScoresAverageDetailed}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed2.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value steps were taken (i.e. 10, except for the last step to 800) between each test. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values. Smaller learning rate value \textbf{steps of 10} were taken (except for the last step to 800) between each test.}
   \label{figure:learningRateEvaluationScoresAverageDetailed2}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed3.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in steps of 5. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for different t-SNE \textbf{learning rate} values, in \textbf{steps of 5}.}
   \label{figure:learningRateEvaluationScoresAverageDetailed3}
 \end{figure}
 
@@ -272,7 +271,7 @@
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{./images/tsneParametersTest/learningRate/learningRateEvaluationScoresAverageDetailed4.png}
-  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for the t-SNE \textbf{learning rate} values 20 and 80. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+  \caption{Comparison of Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index for the t-SNE \textbf{learning rate} \textbf{values 20 and 80}. The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).}
   \label{figure:learningRateEvaluationScoresAverageDetailed4}
 \end{figure}
 

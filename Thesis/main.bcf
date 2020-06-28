@@ -3940,4 +3940,125 @@
     <bcf:citekey order="79">hotelling1933analysis</bcf:citekey>
     <bcf:citekey order="80">han2011data</bcf:citekey>
     <bcf:citekey order="81">han2011data</bcf:citekey>
-    <bcf:citekey order="82">maaten20
+    <bcf:citekey order="82">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="83">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="84">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="85">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="86">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="87">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="88">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="89">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="90">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="91">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="92">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="93">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="94">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="95">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="96">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="97">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="98">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="99">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="100">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="101">hinton2003stochastic</bcf:citekey>
+    <bcf:citekey order="102">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="103">maaten2008visualizing</bcf:citekey>
+    <bcf:citekey order="104">han2011data</bcf:citekey>
+    <bcf:citekey order="105">han2011data</bcf:citekey>
+    <bcf:citekey order="106">hartigan1975clustering</bcf:citekey>
+    <bcf:citekey order="107">hartigan1975clustering</bcf:citekey>
+    <bcf:citekey order="108">romesburg2004cluster</bcf:citekey>
+    <bcf:citekey order="109">romesburg2004cluster</bcf:citekey>
+    <bcf:citekey order="110">hartigan1975clustering</bcf:citekey>
+    <bcf:citekey order="111">hartigan1975clustering</bcf:citekey>
+    <bcf:citekey order="112">han2011data</bcf:citekey>
+    <bcf:citekey order="113">han2011data</bcf:citekey>
+    <bcf:citekey order="114">han2011data</bcf:citekey>
+    <bcf:citekey order="115">han2011data</bcf:citekey>
+    <bcf:citekey order="116">han2011data</bcf:citekey>
+    <bcf:citekey order="117">han2011data</bcf:citekey>
+    <bcf:citekey order="118">han2011data</bcf:citekey>
+    <bcf:citekey order="119">han2011data</bcf:citekey>
+    <bcf:citekey order="120">han2011data</bcf:citekey>
+    <bcf:citekey order="121">DBSCAN</bcf:citekey>
+    <bcf:citekey order="122">DBSCAN</bcf:citekey>
+    <bcf:citekey order="123">han2011data</bcf:citekey>
+    <bcf:citekey order="124">han2011data</bcf:citekey>
+    <bcf:citekey order="125">DBSCAN</bcf:citekey>
+    <bcf:citekey order="126">DBSCAN</bcf:citekey>
+    <bcf:citekey order="127">DBSCAN</bcf:citekey>
+    <bcf:citekey order="128">DBSCAN</bcf:citekey>
+    <bcf:citekey order="129">han2011data</bcf:citekey>
+    <bcf:citekey order="130">han2011data</bcf:citekey>
+    <bcf:citekey order="131">OPTICS</bcf:citekey>
+    <bcf:citekey order="132">OPTICS</bcf:citekey>
+    <bcf:citekey order="133">han2011data</bcf:citekey>
+    <bcf:citekey order="134">han2011data</bcf:citekey>
+    <bcf:citekey order="135">han2011data</bcf:citekey>
+    <bcf:citekey order="136">han2011data</bcf:citekey>
+    <bcf:citekey order="137">han2011data</bcf:citekey>
+    <bcf:citekey order="138">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="139">rousseeuw1987silhouettes</bcf:citekey>
+    <bcf:citekey order="140">DaviesBouldin</bcf:citekey>
+    <bcf:citekey order="141">DaviesBouldin</bcf:citekey>
+    <bcf:citekey order="142">calinskiHarabasz</bcf:citekey>
+    <bcf:citekey order="143">calinskiHarabasz</bcf:citekey>
+    <bcf:citekey order="144">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="145">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="146">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="147">wattenberg2016how</bcf:citekey>
+    <bcf:citekey order="148">DBSCAN</bcf:citekey>
+    <bcf:citekey order="149">DBSCAN</bcf:citekey>
+    <bcf:citekey order="150">OPTICS</bcf:citekey>
+    <bcf:citekey order="151">OPTICS</bcf:citekey>
+    <bcf:citekey order="152">AboutToEat2016Rahman</bcf:citekey>
+    <bcf:citekey order="153">AboutToEat2016Rahman</bcf:citekey>
+    <bcf:citekey order="154">DataMiningAndPredictiveAnalytics</bcf:citekey>
+    <bcf:citekey order="155">DataMiningAndPredictiveAnalytics</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="cms">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">namea</bcf:sortitem>
+      <bcf:sortitem order="4">editor</bcf:sortitem>
+      <bcf:sortitem order="5">nameb</bcf:sortitem>
+      <bcf:sortitem order="6">translator</bcf:sortitem>
+      <bcf:sortitem order="7">namec</bcf:sortitem>
+      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
+      <bcf:sortitem order="10">organization</bcf:sortitem>
+      <bcf:sortitem order="11">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">labelyear</bcf:sortitem>
+      <bcf:sortitem order="3">year</bcf:sortitem>
+      <bcf:sortitem order="4">origyear</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="cms/global//global/global"
+                type="entry"
+                sortingtemplatename="cms"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
