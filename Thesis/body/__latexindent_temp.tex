@@ -1,34 +1,49 @@
-SmartEater \footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater} (last visited 27. June 2020, 19:40)} is an upcoming mHealth (mobile health) app, with the goal to provide the user with content-dependent feedback, to avert a food craving episode. The app will predict future eating crises based on the user's past behaviour. In order to reduce intense user input, the app records and uses various smartphone sensor and usage data. With the help of data mining, machine learning algorithms, and pattern recognition, this recorded situational context data will aid in predicting stress. The following data is recorded by the app:
 
-\begin{enumerate}
-	\item Movement of the smartphone (accelerometer)
-	\item Volume of the audio
-	\item Percentage of screen-on-time
-	\item Number of notifications
-	\item Light sensor values
-	\item App usages in the categories communication, video players, and other
-\end{enumerate}
+The three mathematical evaluation scores mentioned in section \ref{section:TheoryEvaluatingClusteringResults}, i.e. Silhouette Coefficient, Davies-Bouldin Index, and Caliński-Harabasz Index, were used to compare the resulting clusters.  They were each implemented using the sklearn library, the same way as in section \ref{section:experimentTSNE}. These three scores were calculated and stored for each DataFrame, after each clustering algorithm was applied (DBSCAN and OPTICS) for each time length. The resulting values where then compared and detailed in this section.
+The experiment was run on each time length (\textit{1h files:} 15 min, 30 min, 45 min, 1h; \textit{3h files:} 30 min, 1h, 1 h 30 min, 2h, 2h 30 min, 3h).
+The numbers were different for each time the results were calculated, since t-SNE produces slightly different results. Therefore, the t-SNE and clustering was run multiple times and the results were compared. In appendix \ref{appendix:clusteringEvaluationResults} figures \ref{figure:clusteringResults1} and \ref{figure:clusteringResults2}, two individual t-SNE and clusterings were run, figure \ref{figure:clusteringResults3} depicts the average scores of these two. Figure \ref{figure:clusteringResults4} depicts an average of a different two runs. These mentioned runs all held the learning rate parameter 20. Since a learning rate of 800 also proved to be a viable choice, the t-SNE and clustering was also run twice and averaged with this learning rate (figure \ref{figure:clusteringResults5}). The mean was taken from all these results, thus creating figure \ref{figure:clusteringResults6} (this figure can be seen in this section). From these, there is no clear winner, although there are some stronger candidates, i.e. 15 min (1h), 1h (1h), and 2h (3h). 
 
-This sensor data was recorded for different lengths of time on different test subjects and aggregated to 1 hour and 3 hour files. It is necessary to establish which time period will be most fitting to make accurate predictions for the future. This thesis will use cluster analysis to determine which time period is most significant.
+Like in section \ref{section:experimentTSNE}, when comparing the t-SNE results, the green fields indicate the best and most distinct clusters from the 1h or 3h data files, while the dark green fields also highlight the best value for that score overall for all time lengths (over all datasets). The green fields from all the above mentioned results, or number of wins, were summed to see which time length had the best number of scores the most times. The wins per dataset (1h or 3h - all green fields) for the 1h data files are pictured in figure \ref{figure:clusteringResultsGraph1h}, in figure \ref{figure:clusteringResultsGraph3h} for the 3 hour data files. Figure \ref{figure:clusteringResultsGraphTotal} shows the comparison of the dark green wins (1h and 3h). The two top winners for the 1h data files and the 3h data files, were: 30 min (1h), 15 min (1h), 2h (3h), and 1h (3h). The top four results when comparing all time lengths, despite which files they were aggregated to, were: 30 min (1h), 1h (3h), 2h (3h), and 30 min (3h). The number of wins is to some extent reliable on the resulting scores from other time lengths it happened to be compared with. It also does not fully factor in the full extent of how far this time length was better. For this reason, time lengths that was among the stronger candidates at least once (either in figures \ref{figure:clusteringResults6}, \ref{figure:clusteringResultsGraph1h} and \ref{figure:clusteringResultsGraph3h}, over \ref{figure:clusteringResultsGraphTotal}) were compared solely to each other. The results are detailed in figure \ref{figure:clusteringResults8}. The 2h time delta achieved the majority of best scores in this final comparison. When removing the 2h column, 1h (1h) comes in second place.
+After removing the 1h (1h) column, 30 min (1h) and 1h (3h) come in third place. 1h (3h) however out performs when compared directly to 30 min (1h).
 
-\textcite{han2011data}[18, 32, 362, 363, 367] declare, that data mining is used to discover patterns and knowledge from data. Cluster Analysis is a type of machine learning algorithm known as unsupervised machine learning. It is used in data mining to divide data into groups (clusters). Each cluster contains data that is similar to each other, but dissimilar to the data allocated to other clusters. Cluster Analysis can be used to acquire knowledge on the distribution of the data, discover characteristics, detect outliers and reduce noise, or to pre-process data for other algorithms. 
-
-There are several different methods to create clustering. \textcite{han2011data}[364, 366-367, 374, 385, 392] explain, that objects are often arranged into clusters using distance measures (e.g. Euclidean or Manhattan distance measures). 
-The authors divide the clustering algorithms into the following categories:
-\begin{itemize}
-	\item Partitioning methods (examples: k-means, k-medoids)
-	\item Hierarchical methods (examples: BIRCH, Chameleon)
-	\item Density-based methods (examples: DBSCAN, OPTICS)
-	\item Grid-based methods (examples: STING, CLIQUE)
-\end{itemize}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/clusteringResults/clusteringResults6.png}
+  \caption{Evaluation scores comparison averaged from figures \ref{figure:clusteringResults1}, \ref{figure:clusteringResults2}, \ref{figure:clusteringResults3}, \ref{figure:clusteringResults4}, and \ref{figure:clusteringResults5}. The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files). The time lengths with the highest number of wins includes 15 min (1h), 1h (1h), and 2h (3h). }
+  \label{figure:clusteringResults6}
+\end{figure}
 
 
-According to \textcite{han2011data}[414], the above-mentioned clustering methods work well with datasets that are not high-dimensional and have less than 10 attributes. Since the SmartEater dataset only has 8 unique dimensions (columns), it is not considered high-dimensional. This paper will therefore be able utilise and compare the results of these types of clustering methods. 
+\begin{figure}
+  \centering
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{./images/clusteringResults/clusteringResultsGraph1h.png}
+    \caption{Number of evaluation score wins (1h or 3h dataset) for the 1h data files.}
+    \label{figure:clusteringResultsGraph1h}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{.475\textwidth}
+    \centering
+    \  \includegraphics[width=1.2\textwidth]{./images/clusteringResults/clusteringResultsGraph3h.png}
+    \caption{Number of evaluation score wins (1h or 3h dataset) for the 3h data files.}
+    \label{figure:clusteringResultsGraph3h}
+  \end{subfigure}
+	\caption{ The lighter green highlighted values indicate the best values of that file aggregation (1h or 3h files). The dark green highlighted values illustrate the overall best values over all files (1h and 3h files).}
+\end{figure}
 
-To reduce the size and amount of data, dimensionality reduction will be used. \textcite{han2011data}[93] define dimensionality reduction as a type of data reduction, which removes random attributes and creates a smaller dataset with close to equal integrity. This thesis will compare principal component analysis (PCA) and t-SNE to reduce the dimensionality.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{./images/clusteringResults/clusteringResultsGraphTotal.png}
+  \caption{Number of dark green evaluation score wins (1h and 3h dataset).}
+  \label{figure:clusteringResultsGraphTotal}
+\end{figure}
 
-The clustering methods will be implemented using the Python machine learning platform (e.g. Anaconda\footnote{\url{https://www.anaconda.com/} (last visited 27. June 2020, 19:53)}), with the library scikit-learn\footnote{\url{https://scikit-learn.org/stable/} (last visited 27. June 2020, 19:53)}. These will be implemented on all the time lengths. The resulting clusters of each time length will be compared to one another and evaluated. 
-\textcite{rousseeuw1987silhouettes} reveals how silhouettes can be used to measure the separation between clusters and therefore evaluate the quality of the resulting clusters. Other mathematical evaluation scores used are Davies-Bouldin Index (\textcite{DaviesBouldin}) and Caliński-Harabasz Index (\textcite{calinskiHarabasz}).
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\textwidth]{./images/clusteringResults/clusteringResults8.png}
+  \caption{Comparison of top evaluation score performers (of clusterings) from figures \ref{figure:clusteringResultsGraph1h}, \ref{figure:clusteringResultsGraph3h}, and \ref{figure:clusteringResultsGraphTotal}. The light green highlighted cells indicate the best value across the different time lengths for that score.}
+  \label{figure:clusteringResults8}
+\end{figure}
 
-The thesis will be structured as follows: Section \ref{section:RelatedWork} will briefly present existing work relating to this subject. The following chapter, section \ref{section:Theory}, will concentrate on the theory of data mining and cluster analysis. After covering these topics, section \ref{section:Experiment} will describe the conducted experiment and its results. In the final sections, the findings of the experiment will be discussed and summarised. 
-
+\clearpage

@@ -2,7 +2,7 @@ The clustering algorithms used for the SmartEater dataset, were DBSCAN and OPTIC
 
 \subsubsection{DBSCAN}
 The DBSCAN algorithm was applied on the SmartEater dataset using the sklearn \textit{DBSCAN}\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html}} function.
-Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN, is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, k-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances kth nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea was to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance of 2. 
+Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clustering method. As mentioned, one of the disadvantages of DBSCAN is the need to specify parameters, which can change the outcome of the results. In order to establish suitable parameters, \textit{k}-dist graphs were generated for the 1h and 3h datasets. The graphs contained the distances kth nearest neighbors. As recommended by \textcite{DBSCAN}[230], \textit{MinPts} and \textit{k} were set to 4 and the graphs were used to determine \textit{Eps}. The idea was to select \textit{Eps} suitable for the "thinnest" cluster, however being careful to avoid noise. As can be seen in figures \ref{figure:kDistGraphDBSCAN1h} and \ref{figure:kDistGraphDBSCAN3h}, the valley starts at roughly a 4th nearest neighbor distance (threshold) of 2. 
 
 
 \begin{figure}[H]
@@ -20,11 +20,11 @@ Section \ref{section:DBSCAN} describes the functionality of the DBSCAN clusterin
     \caption{3h dataset}
     \label{figure:kDistGraphDBSCAN3h}
   \end{subfigure}
-  \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable Eps parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore Eps should be 2.}
+  \caption{Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable \textit{Eps} parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore \textit{Eps} should be 2.}
   \label{figure:kDistGraphDBSCAN}
   \end{figure}
 
-The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}.
+The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (MinPts) = 4. The results of this clustering method can be seen in figure \ref{figure:DBSCANResults}. Black coloured data points were labelled as noise.
 
 
 \begin{figure}[H]
@@ -50,7 +50,7 @@ The DBSCAN algorithm was applied, with the parameters eps = 2 and min\_samples (
 
 
 \subsubsection{OPTICS}
-The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as explained in section \ref{section:OPTICS} and introduced in \textcite{OPTICS}[57]. The visual results of these clusterings appeared to contain many points that were not assigned to clusters, as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots showed many points that weren't assigned to a cluster (no colour). This resulted in the DBSCAN method being used to cluster the OPTICS results. The Eps parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}.
+The OPTICS algorithm was also implemented with its sklearn implementation\footnote{\url{https://scikit-learn.org/stable/modules/generated/sklearn.cluster.OPTICS.html}}. As stated in section \ref{section:OPTICS}, the OPTICS algorithm creates a reachability plot for the data points. Initially, the clusters were extracted using the clustering method "xi". This is the automatic cluster extraction method, as introduced by \textcite{OPTICS}. The visual results of these clusterings appeared to contain many points that were not assigned to clusters (noise, black coloured data points), as can be seen in figure \ref{figure:OPTICSXiResults}. Moreover, the corresponding reachability plots (figure \ref{figure:OPTICSXiResultsReachabilityPlot}) showed many points that were not assigned to a cluster (also coloured black). This resulted in the DBSCAN method being used to cluster the OPTICS results instead. The \textit{Eps} parameter was set to 2, as determined before for the DBSCAN clustering algorithm. The resulting clusters are depicted in figure \ref{figure:OPTICSResults}. The corresponding reachability plots are illustrated in figure \ref{figure:OPTICSResultsReachabilityPlot}. As can be seen, the DBSCAN clustering contains much less noise (less black data points and less black bars in the reachability plot). The clusters appear larger and more well defined.
 
 
 \begin{figure}[H]
@@ -58,15 +58,15 @@ The OPTICS algorithm was also implemented with its sklearn implementation\footno
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-xi.png}
-  \caption{1h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+  \caption{1h dataset (first column - 15 min).}
   \end{subfigure}%
   \hfill
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-xi.png}
-    \caption{3h dataset OPTICS clustering (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+    \caption{3h dataset (first column - 30 min)}
   \end{subfigure}
-  \caption{}
+  \caption{OPTICS automatic cluster extraction (xi) results. The coloured data points highlight clusters, whilst the black data points indicate noise. The corresponding reachability plots are depicted in figure \ref{figure:OPTICSXiResultsReachabilityPlot}.}
   \label{figure:OPTICSXiResults}
   \end{figure}
 
@@ -75,15 +75,15 @@ The OPTICS algorithm was also implemented with its sklearn implementation\footno
     \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-xi.png}
-    \caption{1h dataset OPTICS reachability plot (first column - 15 min), using OPTICS automatic cluster extraction (xi).}
+    \caption{1h dataset (first column - 15 min)}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
       \centering
       \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-xi.png}
-      \caption{3h dataset OPTICS reachability plot (first column - 30 min), using OPTICS automatic cluster extraction (xi).}
+      \caption{3h dataset (first column - 30 min)}
     \end{subfigure}
-    \caption{}
-    \label{figure:OPTICSResultsReachabilityPlot}
+    \caption{OPTICS reachability plot using OPTICS automatic cluster extraction (xi). The coloured bars highlight clusters, whilst the black ones indicate noise.}
+    \label{figure:OPTICSXiResultsReachabilityPlot}
     \end{figure}
 
 \begin{figure}[H]
@@ -91,15 +91,15 @@ The OPTICS algorithm was also implemented with its sklearn implementation\footno
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-OPTICS-DBSCAN.png}
-  \caption{1h dataset OPTICS clustering (first column - 15 min), using DBSCAN clustering.}
+  \caption{1h dataset (first column - 15 min)}
   \end{subfigure}%
   \hfill
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-OPTICS-DBSCAN.png}
-    \caption{3h dataset OPTICS clustering (first column - 30 min), using DBSCAN clustering.}
+    \caption{3h dataset (first column - 30 min)}
   \end{subfigure}
-  \caption{}
+  \caption{OPTICS clustering results using DBSCAN clustering. The coloured data points highlight clusters, whilst the black data points indicate noise. The corresponding reachability plots are depicted in figure \ref{figure:OPTICSResultsReachabilityPlot}.}
   \label{figure:OPTICSResults}
   \end{figure}
 
@@ -108,15 +108,15 @@ The OPTICS algorithm was also implemented with its sklearn implementation\footno
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-reachabilityPlot-DBSCAN.png}
-  \caption{1h dataset OPTICS reachability plot (first column - 15 min), using DBSCAN clustering.}
+  \caption{1h dataset (first column - 15 min)}
   \end{subfigure}%
   \hfill
   \begin{subfigure}{.5\textwidth}\captionsetup{width=.8\linewidth}
     \centering
     \includegraphics[width=1\textwidth]{./images/OPTICS/3h-1-reachabilityPlot-DBSCAN.png}
-    \caption{3h dataset OPTICS reachability plot (first column - 30 min), using DBSCAN clustering.}
+    \caption{3h dataset (first column - 30 min)}
   \end{subfigure}
-  \caption{}
+  \caption{OPTICS reachability plot using DBSCAN clustering. The coloured bars highlight clusters, whilst the black ones indicate noise. The eps parameter, set at 2, his highlighted with a horizontal line.}
   \label{figure:OPTICSResultsReachabilityPlot}
   \end{figure}
 

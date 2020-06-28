@@ -1,10 +1,10 @@
-In his book, \textcite{mccue2014data}[53] mentions, that generally in data mining, the analysis itself on requires 20\% of the time. The other 80\% is the preparation of the data.
+In his book, \textcite{mccue2014data}[53] mentions, that generally in data mining, the analysis itself requires 20\% of the time. The other 80\% is the preparation of the data.
 
-To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] states, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define the goal as to decrease garbage in, garbage out (GIGO). To clarify, decreasing \textit{garbage in} means to reduce the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model (\textit{garbage out}). The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
+To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] state, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define the goal as to decrease garbage in, garbage out (GIGO). To clarify, decreasing \textit{garbage in} means to reduce the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model (\textit{garbage out}). The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
 
 
 
-\subsubsection{Missing Values}
+\subsubsection{Missing values}
 \label{section:MissingValues}
 
 %todo 81 - PROVIDE THIS PDF - CAUSE CAN'T FIND ACTUAL COPY SO MIGHT BE WRONG PAGE NUMBERs - MAYBE MENTION THE CHAPTERS?
@@ -16,7 +16,7 @@ According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it i
 
 \textcite{han2011data}[105-106] describe normalisation as giving the attributes of a dataset equal weight. For example, it can transform the data to fall in a smaller, common range (e.g. [-1, 1]). It therefore hinders variables with large ranges from outweighing ones with smaller ranges. People's income would, for instance, have a larger range than binary attributes. 
 
-\textcite{dataPreprocessingInDataMining}[46-48] review the following normalisation methods: \textit{Min-Max Normalization}, \textit{Z-score Normalization}, and \textit{Decimal Scaling Normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
+\textcite{dataPreprocessingInDataMining}[46-48] review the following normalisation methods: \textit{min-max normalization}, \textit{z-score normalization}, and \textit{decimal scaling normalization}. For the following examples, \textit{A} is a numerical attribute from a dataset, a single value of this attribute is represented with \textit{v}:
 \begin{itemize}
   \item Min-max normalization scales the original numerical values to a newly defined range, with a new minimum (\textit{newMin\textsubscript{A}}) and maximum (\textit{newMax\textsubscript{A}}) (e.g. 0.0 and 1.0). The original minimum and maximum values found in \textit{A} are presented as \textit{min\textsubscript{A}} and \textit{max\textsubscript{A}} respectively:
   \[

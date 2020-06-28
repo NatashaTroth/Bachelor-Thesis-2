@@ -15,19 +15,19 @@
 
 \textcite{han2011data}[366-368, 373, 374, 385] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
 
-  \subsubsection{Partitioning Methods}
-  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}), and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition.
+  \subsubsection{Partitioning methods}
+  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}) and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition.
   Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
   
 
-  \subsubsection{Hierarchical Methods}
-  The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed. Once merged/split, the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
+  \subsubsection{Hierarchical methods}
+  The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step, it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed and the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
 
 
-  \subsubsection{Density-Based Methods}
+  \subsubsection{Density-Based methods}
   \label{section:densityBasedMethods}
-  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with random shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. These methods can also be used to cluster sub spaces. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS.
-
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with various shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. These methods can also be used to cluster subspaces. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS \autocite{han2011data}[367, 385].
+  
   %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
 
 
@@ -38,7 +38,8 @@
 
 According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that the results rely on the chosen parameters. If these are selected differently, the clustering results can differ. These parameters can often be challenging to select.
 
-\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the ideal parameters for the "thinnest" cluster. The first step is to construct a sorted \textit{k}-dist graph. For a specific \textit{k}, the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour is calculated. These distances are then sorted in descending order and depicted on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour (the "thinnest" cluster). The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left of it with higher distances are likely to be noise and the points to the right are part of clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
+
+\textcite{DBSCAN}[230] supports the selection of the Eps and MinPts parameters. The idea is to select the ideal parameters for the "thinnest" cluster. The first step is to construct a sorted \textit{k}-dist graph. For a specific \textit{k}, the distance \textit{d} of every point \textit{p} to its \textit{k}th nearest neighbour is calculated. These distances are then sorted in descending order and depicted on a graph. Such a graph can be seen in figure \ref{figure:sortedKGraphDBSCAN}. The goal is to locate the \textit{threshold} of the highest distance to the \textit{k}th nearest neighbour in the "thinnest" cluster. The first point in the "valley", as can be seen at the tip of the arrow in figure \ref{figure:sortedKGraphDBSCAN}, is this threshold point. The points to the left of it with higher distances are likely to be noise and the points to the right belong to clusters. The authors suggest selecting 4 for \textit{k}. Experiments have shown that the results for higher values for \textit{k} do not vary greatly. They therefore recommend defining MinPts as 4 and using a 4-dist graph to estimate the Eps parameter.
 
 
 \begin{figure*}[h]
@@ -64,7 +65,7 @@ According to \textcite{han2011data}[388], a weakness of DBSCAN is the fact that 
 % \end{figure*}
 
 
-The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom} a reachability plot calculated from the SmartEater (reduced through t-SNE) is depicted. 
+The data points are ordered by the OPTICS algorithm (using their reachability-distance) to create a reachability plot. This plot is relatively stable towards the input parameters. In figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}, a reachability plot calculated from a portion of the SmartEater dataset (reduced through t-SNE) is depicted. 
 
 % \begin{figure*}[h]
 %   \centering
@@ -74,22 +75,23 @@ The data points are ordered by the OPTICS algorithm (using their reachability-di
 % \end{figure*}
 
 
-The clusters can then be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots. Figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom} depicts a scatter plot with OPTICS clustering. The coloured points indicated clusters, whilst the black points highlight noise. The corresponding reachability plot (figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}) shows that the clusters were formed from the dips.
+Clusters can be automatically constructed from the reachability plot by pinpointing the start-of-cluster and end-of-cluster regions and combining regions that match into clusters (or nested clusters). Since the reachability-distance of a point is the distance from the set of its predecessors and through OPTICS' specific ordering, the clusters are the dips in the reachability plots. Figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom} depicts a scatter plot with OPTICS clustering. The coloured points indicated clusters, whilst the black points highlight noise. The corresponding reachability plot (figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}) shows that the clusters were formed from the dips.
 % In figure \ref{figure:clusterExtractionOPTICS}, a cluster could hence be extracted from this plot starting at the 3rd data point and ending with the 16th.
 
-\begin{figure*}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
-  \caption{OPTICS reachability plot for a 2D dataset. Three "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
-  \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
-\end{figure*}
 
-\begin{figure*}[h]
+\begin{figure}
   \centering
   \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-reachabilityPlot-DBSCAN-zoom.png}
-  \caption{OPTICS reachability plot constructed from the clustering in figure \ref{figure:1h-1-example-OPTICS-DBSCAN-zoom}. "Gaussian bumps" can be seen, where clusters (bars that are not black) have been extracted.}
+  \caption{OPTICS reachability plot constructed from a portion of the SmartEater dataset (reduced through t-SNE). Dips can be seen, where clusters (bars that are not black) have been highlighted. The black bars indicate noise.}
   \label{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}
-\end{figure*}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{./images/OPTICS/1h-1-example-OPTICS-DBSCAN-zoom.png}
+  \caption{OPTICS clustering, extracted from the reachability plot in figure \ref{figure:1h-1-example-reachabilityPlot-DBSCAN-zoom}. The cluster colours can be compared to the colours in the dips of the reachability plot. The black points indicate noise.}
+  \label{figure:1h-1-example-OPTICS-DBSCAN-zoom}
+\end{figure}
 
 
 
@@ -122,8 +124,8 @@ The clusters can then be automatically constructed from the reachability plot by
 
  
 
-\subsubsection{Grid-Based Methods}
-The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are executed on the grid structure. The grid size (number of cells) determines the processing time. It is faster than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
+\subsubsection{Grid-Based methods}
+The previously mentioned clustering methods are data-driven (they accommodate the distribution of the data objects). Grid-based methods are space-driven (they do not rely on the distribution of the data objects). The data objects are quantised into grid cells on a multiresolution grid. The actions required for clustering are executed on the grid structure. The grid size (number of cells) determines the processing time. Grid-based methods perform faster than other clustering methods. Examples: STING, CLIQUE \autocite{han2011data}[367, 392].
 
   
 

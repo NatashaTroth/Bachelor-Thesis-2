@@ -78,9 +78,8 @@ class DataFile:
         """
         print("cleaning data...")
         self.remove_columns(["TIME"])
-        # self.df = self.df.iloc[::3, :]
-        # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
+        # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
         self.extract_columns(number_columns_to_use)
