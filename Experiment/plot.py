@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib as matplotlib
-import seaborn as sns
 import random
 
 
@@ -23,8 +22,7 @@ def create_bar_plot(x, y, xName, yName):
     """
     plt.figure(figsize=(20, 10))
     data = pd.DataFrame({xName: x, yName: y})
-    sns.barplot(x=xName, y=yName, data=data)
-
+    plt.bar(x=data[xName], height=data[yName])
     plt.show()
 
 
@@ -179,7 +177,7 @@ def create_2d_pyplot(data):
 
 
 def get_array_random_colors(size):
-     """ create array of size number of random hex colors
+    """ create array of size number of random hex colors
 
         Parameters
         ----------

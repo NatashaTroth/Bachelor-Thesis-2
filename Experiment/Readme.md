@@ -1,4 +1,4 @@
-# Identifying the Ideal Length of Time to Record Smartphone Data, in Order to Obtain Distinct Clusters to Predict Eating Crises
+# Identifying the Ideal Length of Time to Aggregate Smartphone Data, in Order to Obtain Distinct Clusters to Predict Eating Crises
 
 Bachelor Thesis 2, FH Salzburg, MultiMediaTechnology
 Salzburg, Austria, 29.06.2020
@@ -15,8 +15,8 @@ FH-Prof. DI Dr. Simon Ginzinger, MSc
  - [dimensionalityReduction.py](./dimensionalityReduction.py): apply and plot t-SNE and PCA
  - [clustering.py](./clustering.py): apply and plot DBSCAN, OPTICS, Spectral Clustering, and Agglomerative Clustering. Also predict DBSCAN Eps parameter (plot k-dist graphs).
  - [clusterEvaluation.py](./clusterEvaluation.py): Calculate Silhouette Score, Davies Bouldin Score, and Caliński Harabasz Score
- - [plot.py](./plot.py): Create 2d and 3d plots (Matplotlib and Seaborn)
- - [testing.py](./testing.py): Unit tests (the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test users)
+ - [plot.py](./plot.py): Create 2d and 3d plots (Matplotlib)
+ - [testing.py](./testing.py): Unit tests (the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test subjects)
 
 
 # Run the programme 

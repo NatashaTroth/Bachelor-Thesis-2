@@ -26,11 +26,13 @@ def calculate_PCA(df, number_components, graphs, colors):
 
     pca = PCA(n_components=number_components)
     pca_results = pca.fit_transform(df[df.columns].values)
-    df['pca-one'] = pca_results[:, 0]
-    df['pca-two'] = pca_results[:, 1]
+
+    newDf = pd.DataFrame()
+    newDf['pca-one'] = pca_results[:, 0]
+    newDf['pca-two'] = pca_results[:, 1]
 
     if number_components > 2:
-        df['pca-three'] = pca_results[:, 2]
+        newDf['pca-three'] = pca_results[:, 2]
 
     print('Explained variation per principal component: {}'.format(
         pca.explained_variance_ratio_))
@@ -42,9 +44,9 @@ def calculate_PCA(df, number_components, graphs, colors):
                         'Principle Components (ordered by highest variance to lowest)', 'Variance Ratio')
         if number_components == 2:
             create_2d_scatterplot(
-                df,  "pca-one", "pca-two", colors, "PCA")
+                newDf,  "pca-one", "pca-two", colors, "PCA")
         if number_components == 3:
-            create_3d_scatterplot(df, "pca-one", "pca-two",
+            create_3d_scatterplot(newDf, "pca-one", "pca-two",
                                   "pca-three", colors, "PCA")
     return pd.DataFrame(pca_results)
 
@@ -72,18 +74,20 @@ def calculate_TSNE(df, number_components, graphs, colors):
                 init='random', perplexity=40, n_iter=5000, learning_rate=20)
 
     tsne_results = tsne.fit_transform(df.to_numpy())
-    df['tsne-one'] = tsne_results[:, 0]
-    df['tsne-two'] = tsne_results[:, 1]
+
+    newDf = pd.DataFrame()
+    newDf['tsne-one'] = tsne_results[:, 0]
+    newDf['tsne-two'] = tsne_results[:, 1]
 
     if number_components > 2:
-        df['tsne-three'] = tsne_results[:, 2]
+        newDf['tsne-three'] = tsne_results[:, 2]
 
     if graphs == True:
         if number_components == 2:
             create_2d_scatterplot(
-                df,  "tsne-one", "tsne-two", colors, "TSNE")
+                newDf,  "tsne-one", "tsne-two", colors, "TSNE")
         if number_components == 3:
-            create_3d_scatterplot(df, "tsne-one", "tsne-two",
+            create_3d_scatterplot(newDf, "tsne-one", "tsne-two",
                                   "tsne-three", colors, "t-SNE")
 
     return pd.DataFrame(tsne_results)

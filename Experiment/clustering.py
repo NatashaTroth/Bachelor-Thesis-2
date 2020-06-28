@@ -1,5 +1,5 @@
 from sklearn.cluster import SpectralClustering, DBSCAN, OPTICS, AgglomerativeClustering
-from plot import create_bar_plot, create_2d_scatterplot_clustering, create_clustering_plot, create_2d_pyplot, create_reachability_plot
+from plot import create_2d_scatterplot_clustering, create_clustering_plot, create_2d_pyplot, create_reachability_plot
 from sklearn.neighbors import NearestNeighbors
 from clusterEvaluation import cluster_evaluation
 
@@ -23,7 +23,7 @@ def dbscan_clustering(df, dataType="", graphs=False):
     print("\n- dbscan clustering (" + dataType + ")...")
     db = DBSCAN(eps=2, min_samples=4)
     clustering = db.fit(df)
-    cluster_labels = db.fit_predict(df)
+
     if graphs == True:
         create_clustering_plot(db, df, "DBSCAN (" + dataType + ")")
     return cluster_evaluation(db, df)
@@ -76,6 +76,8 @@ def optics_clustering(df, dataType="", graphs=False):
         create_reachability_plot(df, clustering, True)
     return cluster_evaluation(optics, df)
 
+
+# ---------- OTHER CLUSTERING METHODS ----------
 
 def spectral_clustering(df, dataType="", graphs=False):
     """ apply spectral clustering algorithm to the dataFrame

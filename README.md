@@ -1,4 +1,4 @@
-# Identifying the Ideal Length of Time to Record Smartphone Data, in Order to Obtain Distinct Clusters to Predict Eating Crises
+# Identifying the Ideal Length of Time to Aggregate Smartphone Data, in Order to Obtain Distinct Clusters to Predict Eating Crises
 
 Bachelor Thesis 2, FH Salzburg, MultiMediaTechnology
 

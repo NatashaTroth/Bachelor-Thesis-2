@@ -31,12 +31,9 @@ class DataFile:
         pathlist = Path(directory_path).glob('**/*.csv')
         list_of_files = []
         list_of_dataframes = []
-        # test = 0
         for path in pathlist:
             list_of_files.append(str(path))
-            # if test >= 10:
-            #     break
-            # test += 1
+
         if len(list_of_files) > 1:
             return pd.concat(map(self.read_csv_file_add_color, list_of_files), ignore_index=True)
         if len(list_of_files) == 1:
@@ -78,8 +75,10 @@ class DataFile:
         """
         print("cleaning data...")
         self.remove_columns(["TIME"])
-        self.remove_rows_with_wrong_values()
         # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
+        self.remove_rows_with_wrong_values()
+
+        # extract test subject colors column
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
         self.extract_columns(number_columns_to_use)
@@ -89,8 +88,11 @@ class DataFile:
         self.extract_rows_with_percent_non_zero_values(50)
         self.colors = self.df["COLOR"].to_numpy()
         self.remove_columns(["COLOR"])
+
+        # compress the columns (e.g. ACC1-N -> ACC)
         if number_columns_to_use > 1:
             self.compress_same_attribute_columns(number_columns_to_use)
+
         self.normalize_columns()
 
     def remove_rows_with_wrong_values(self):
@@ -100,7 +102,7 @@ class DataFile:
 
     def extract_rows_with_percent_non_zero_values(self, percent):
         """ removes rows with not enough non-zero values
-            e.g. percent = 75: Keep rows with at least 75% values that aren't 0. Removes rows with more than 25% cells with 0. 
+            e.g. percent = 75: Keep rows with at least 75% values that aren't 0. Removes rows with more than 25% cells with 0.
 
             Parameters
             ----------
@@ -239,24 +241,6 @@ class DataFile:
         self.tsne = calculate_TSNE(
             self.df, number_components, graphs, self.colors)
 
-    def spectral_clustering(self, data_type, graphs=False):
-        """ apply spectral clustering to the dataFrame
-            the resulting scores are saved into the self.spectral_scores property
-
-            Parameters
-            ----------
-            data_type : str
-                type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
-            graphs : Boolean
-                render clustering scatter plot graphs (True), or not (False)
-        """
-        if data_type == 'PCA':
-            self.spectral_scores = spectral_clustering(
-                self.pca, data_type, graphs)
-        if data_type == 'TSNE':
-            self.spectral_scores = spectral_clustering(
-                self.tsne, data_type, graphs)
-
     def dbscan_clustering(self, data_type, graphs=False):
         """ apply DBSCAN clustering to the dataFrame
             the resulting scores are saved into the self.dbscan_scores property
@@ -297,6 +281,26 @@ class DataFile:
                 self.tsne, data_type, graphs)
         else:
             self.optics_scores = optics_clustering(self.df)
+
+    # ---------- OTHER CLUSTERING METHODS ----------
+
+    def spectral_clustering(self, data_type, graphs=False):
+        """ apply spectral clustering to the dataFrame
+            the resulting scores are saved into the self.spectral_scores property
+
+            Parameters
+            ----------
+            data_type : str
+                type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
+            graphs : Boolean
+                render clustering scatter plot graphs (True), or not (False)
+        """
+        if data_type == 'PCA':
+            self.spectral_scores = spectral_clustering(
+                self.pca, data_type, graphs)
+        if data_type == 'TSNE':
+            self.spectral_scores = spectral_clustering(
+                self.tsne, data_type, graphs)
 
     def agglomerative_clustering(self, data_type, graphs=False):
         """ apply agglomerative clustering to the dataFrame
