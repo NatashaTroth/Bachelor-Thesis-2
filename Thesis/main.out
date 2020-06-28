@@ -54,9 +54,10 @@
 \BOOKMARK [3][-]{subsubsection.a.A.2.7}{Learning Rate Detailed Comparison Results }{subsection.a.A.2}% 54
 \BOOKMARK [3][-]{subsubsection.a.A.2.8}{Learning Rate Comparison Results \(Average of two different t-SNE runs\)}{subsection.a.A.2}% 55
 \BOOKMARK [3][-]{subsubsection.a.A.2.9}{Learning Rate Comparison of 20 and 800}{subsection.a.A.2}% 56
-\BOOKMARK [2][-]{subsection.a.A.3}{Clustering results}{Appendix.a.A}% 57
-\BOOKMARK [3][-]{subsubsection.a.A.3.1}{1h aggregated data files}{subsection.a.A.3}% 58
-\BOOKMARK [3][-]{subsubsection.a.A.3.2}{3h aggregated data files}{subsection.a.A.3}% 59
-\BOOKMARK [2][-]{subsection.a.A.4}{Clustering evaluation results}{Appendix.a.A}% 60
-\BOOKMARK [1][-]{Appendix.a.B}{git-Repository}{}% 61
-\BOOKMARK [1][-]{Appendix.a.C}{Archived Websites}{}% 62
+\BOOKMARK [1][-]{Appendix.a.B}{Clustering results}{}% 57
+\BOOKMARK [2][-]{subsection.a.B.1}{Clustering scatter plots}{Appendix.a.B}% 58
+\BOOKMARK [3][-]{subsubsection.a.B.1.1}{1h aggregated data files}{subsection.a.B.1}% 59
+\BOOKMARK [3][-]{subsubsection.a.B.1.2}{3h aggregated data files}{subsection.a.B.1}% 60
+\BOOKMARK [2][-]{subsection.a.B.2}{Clustering evaluation results}{Appendix.a.B}% 61
+\BOOKMARK [1][-]{Appendix.a.C}{git-Repository}{}% 62
+\BOOKMARK [1][-]{Appendix.a.D}{Archived Websites}{}% 63

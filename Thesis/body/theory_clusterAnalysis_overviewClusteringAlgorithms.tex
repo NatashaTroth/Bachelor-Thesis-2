@@ -13,24 +13,25 @@
 \end{itemize}
 
 
-\textcite{han2011data}[366-368, 373, 374, 385] present different clustering algorithms. They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
+\textcite{han2011data}[366-367] present different clustering algorithms. The general categories are partitioning methods, hierarchical methods, density-based methods, and grid-based methods.
+
+%They state, that it is not easy to divide these into distinct categories, since some algorithms share features from other categories.
 
   \subsubsection{Partitioning methods}
-  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}) and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition.
-  Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters. Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
+  Partitioning methods are the easiest and most significant types of clustering methods. The data is divided into \textit{k} (generally pre-defined) number of groups (clusters). Many of the partitioning methods use distance measures to calculate their clusters. If the number of clusters (\textit{k}) is pre-defined, then the clustering algorithm will create an initial segregation into \textit{k} clusters. Objects are then relocated to improve the partitioning. Examples: k-means, k-medoids \autocite{han2011data}[366, 368].
   
+  %The data consists of \textit{n} objects, thus \textit{k $\geq$ n}. A data object can only be classified into one group (\textit{exclusive cluster separation}) and every group has to have a minimum of one object. Fuzzy partitioning methods relax this condition. The partitioning is considered good, when objects in the same cluster are "similar" and "dissimilar" from the objects in the other clusters.Traditional partitioning methods can also be applied onto subspaces (for many attributes and sparse data).  
 
   \subsubsection{Hierarchical methods}
-  The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step, it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together. Step by step, each cluster is divided, until each object is contained in its own cluster, or a condition is met to terminate the process. Once a merge or split step has been performed, it cannot be reversed and the objects also cannot swap cluster. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen. Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
+  The data is grouped into a hierarchy ("tree") of clusters. There are two different approaches: \textit{agglomerative} or \textit{divisive}. In the \textit{agglomerative} or \textit{bottom-up} approach, each object creates its own cluster. Step by step, it is then merged into its closest neighbours until all objects belong to one cluster, or a condition for termination comes true. In the \textit{divisive} or \textit{top-down} approach, all objects initially form one cluster together and are divided until each object is contained in its own cluster, or a condition is met to terminate the process. Each merge or split decision influences the quality of the resulting clusters and must therefore be well chosen since it cannot be undone. Examples: BIRCH, Chameleon \autocite{han2011data}[366, 367, 373, 374].
+  %Hierarchical methods can be used in subspaces and can use distance measures, or can be density- and continuity-based. Once a merge or split step has been performed, it cannot be reversed and the objects also cannot swap cluster.
 
 
   \subsubsection{Density-Based methods}
   \label{section:densityBasedMethods}
-  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with various shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. These methods can also be used to cluster subspaces. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS \autocite{han2011data}[367, 385].
+  The majority of clustering methods (e.g. partitioning and hierarchical methods) use distance-based approaches, which results in only finding clusters with spherical shapes. Density-based methods have the ability to find clusters with various shapes. In these methods, objects are continuously added to the cluster, so long as the number of objects/data points (density) close by is larger than a given threshold. The clusters are comprised of high-density areas of objects. These are separated by spaces with low-density. Accordingly, this method is also useful for removing noise and outliers. The following two density-based clustering algorithms were used in the experiment: DBSCAN and OPTICS \autocite{han2011data}[367, 385].
+  %These methods can also be used to cluster subspaces. 
   
-  %TODO: page 385 - good figure of density based clustering - however might be better to fetch from a paper.
-
-
 
 \paragraph{DBSCAN}
 \label{section:DBSCAN}
@@ -130,5 +131,6 @@ The previously mentioned clustering methods are data-driven (they accommodate th
   
 
 \vspace{5mm} %5mm vertical space
-\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
+\textcite{han2011data}[414, 416] clarify, that the clustering methods mentioned above have a good functionality when used on a dataset with fewer than 10 attributes. 
+% Another way to cluster high-dimensional data is \textit{subspace clustering}, in which subspaces (subset of attributes) are investigated to find clusters. The CLIQUE method is used for subspace clustering. 
 

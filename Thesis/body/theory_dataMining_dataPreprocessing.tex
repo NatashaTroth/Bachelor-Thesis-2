@@ -1,14 +1,13 @@
 In his book, \textcite{mccue2014data}[53] mentions, that generally in data mining, the analysis itself requires 20\% of the time. The other 80\% is the preparation of the data.
 
-To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] state, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define the goal as to decrease garbage in, garbage out (GIGO). To clarify, decreasing \textit{garbage in} means to reduce the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model (\textit{garbage out}). The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
+To make data useful in data mining, \textcite{DataMiningAndPredictiveAnalytics}[20] point out, that datasets first need to undergo a data preprocessing step. Raw data extracted directly from databases can be incomplete (values are missing), noisy (contains outliers), or may contain out-dated or redundant data. \textcite{dataPreprocessingInDataMining}[45] state, that dirty data can impact the produced model, making it less reliable. The significance of its effect depends on the implemented data mining method. \textcite{DataMiningAndPredictiveAnalytics}[20, 45] define, the goal is to decrease the irrelevant data that is fed into the model, thus reducing the amount of irrelevant data received out of the model. The authors also report, that ID fields should be removed from the dataset used in data mining algorithms, since the value is different for each record and not helpful. It could however prove harmful, since a relationship might be presumed that isn't there. Further information preparation steps are outlined in the next sections below.
 
 
 
 \subsubsection{Missing values}
 \label{section:MissingValues}
 
-%todo 81 - PROVIDE THIS PDF - CAUSE CAN'T FIND ACTUAL COPY SO MIGHT BE WRONG PAGE NUMBERs - MAYBE MENTION THE CHAPTERS?
-According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values, however, do have underlying values, they simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record. These fields may contain relevant information. Substituting the value means, that the record can be used. One of the problems with not having these values, is that this missing information content (e.g. predictive or inferential) could be carried by the pattern. Another consideration is how to substitute the missing value, without adding bias to the dataset. An inadequately chosen replacement value could distort the dataset, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables. Substitution of values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
+According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it is good practice to differentiate "empty" values from "missing" ones. Empty values do not have a comparable real-world value. Missing values, however, do have underlying values, they simply weren't recorded. The author does not recommend ignoring the record with the missing value, since it would mean wasting the data stored in the other fields of that record, that might contain relevant information. Substituting the value means, that the record can be used. A consideration is how to substitute the missing value, without adding bias to the dataset. An inadequately chosen replacement value could distort the dataset, by adding data which doesn't exist in the real world. A crucial focus is reserving the relationship between variables. Substitution of values, if not suitable, may disrupt the between-variable variability, thus hiding or distorting patterns in the data. 
 
 
 \subsubsection{Normalisation}
@@ -30,8 +29,9 @@ According to \textcite{dataPreparationForDataMining}[81-82, 260, 264, 267], it i
   \]
   After this transformation, the mean equals zero and the standard deviation is one. The advantages of this normalisation method take effect, when the min and max values of \textit{A} are not known, or when there are outliers that could bias the min-max method.
 
-  \item The decimal scaling method moves the decimal point enough spaces, so that the maximum absolute attribute value of \textit{A} is below one. The smallest required number of digits to move the decimal point, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
-  \[
-    v' = \frac{v}{10^j}
-  \]
+  \item Decimal scaling is another normalisation method.
+  % method moves the decimal point enough spaces, so that the maximum absolute attribute value of \textit{A} is below one. The smallest required number of digits to move the decimal point, so that the largest absolute number in \textit{A} is below zero, is represented by \textit{j}:
+  % \[
+  %   v' = \frac{v}{10^j}
+  % \]
 \end{itemize}
