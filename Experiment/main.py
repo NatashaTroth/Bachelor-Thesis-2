@@ -108,7 +108,7 @@ def main():
     print("one hour file directory: " + one_hour_file_directory)
     print("three hour file directory: " + three_hour_file_directory)
 
-    print("----1 HOUR FILES----")
+    print("\n\n----1 HOUR FILES----")
     # --- 1-4 columns (number_columns_to_use) ---
     one_hour_file = create_clustering_of_directory(
         one_hour_file_directory, 1)
@@ -122,13 +122,13 @@ def main():
     # print("\n\n----1 HOUR FILES 2----")
     # # --- 1-4 columns (number_columns_to_use) ---
     # one_hour_file_2 = create_clustering_of_directory(
-    #     "/Volumes/BATroth/aggregated/1h", 1)
+    #     one_hour_file_directory, 1)
     # print_average_scores(one_hour_file, one_hour_file_2)
 
     # print("\n\n----3 HOUR FILES 2----")
     # # --- 1-6 columns (number_columns_to_use) ---
     # three_hour_file_2 = create_clustering_of_directory(
-    #     "/Volumes/BATroth/aggregated/3h", 1)
+    #     three_hour_file_directory, 1)
     # print_average_scores(three_hour_file, three_hour_file_2)
 
 
