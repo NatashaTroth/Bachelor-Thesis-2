@@ -15,4 +15,5 @@ FH-Prof. DI Dr. Simon Ginzinger, MSc
 * Experiment: Experiment source code in python - run with Anaconda from main.py
 * Literature: Reference papers as PDF
 * Websites: Referenced websites as PDF
+* EvaluationResults: Excel spreadsheets of cluster evaluation score results
 

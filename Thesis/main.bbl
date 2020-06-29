@@ -846,12 +846,6 @@
       \verb{doi}
       \verb 10.1145/2896338.2896359
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1145/2896338.2896359
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1145/2896338.2896359
-      \endverb
       \keyw{eating habit modeling,just-in-time eating intervention,next eating event prediction}
     \endentry
     \entry{romesburg2004cluster}{book}{}
@@ -1055,11 +1049,13 @@
       \field{labeltitlesource}{title}
       \field{abstract}{Smartphone usage has tremendously increased and most users keep their smartphones close throughout the day. Smartphones have a broad variety of sensors, that could automatically map and track the user's life and behaviour. In this work we investigate whether automatically collected smartphone usage and sensor data can be employed to predict the experienced stress levels of a user using a customized brief version of the Perceived Stress Scale (PSS). To that end we have conducted a user study in which smartphone data and stress (as measured by the PSS seven times a day) were recorded for two weeks. We found significant correlations between stress scores and smartphone usage as well as sensor data, pointing to innovative ways for automatic stress measurements via smartphone technology. Stress is a prevalent risk factor for multiple diseases. Thus accurate and efficient prediction of stress levels could provide means for targeted prevention and intervention.}
       \field{booktitle}{User Modeling, Adaptation and Personalization}
-      \field{isbn}{978-3-319-20267-9}
       \field{title}{Smartphone Based Stress Prediction}
       \field{year}{2015}
       \field{pages}{240\bibrangedash 251}
       \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-3-319-20267-9_20
+      \endverb
     \endentry
     \entry{wattenberg2016how}{article}{}
       \name{author}{3}{}{%

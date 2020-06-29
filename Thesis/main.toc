@@ -41,23 +41,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.5.4}Grid-Based methods}{12}{subsubsection.3.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Evaluating clustering results}{14}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.6}Evaluating clustering results}{13}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.6.1}Silhouette Coefficient}{14}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.1}Silhouette Coefficient}{13}{subsubsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.6.2}Davies-Bouldin Index}{15}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2}Davies-Bouldin Index}{14}{subsubsection.3.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.6.3}Caliński-Harabasz Index}{15}{subsubsection.3.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Results}{15}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Preparation of the dataset}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Preparation of the dataset}{16}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.1}Missing values}{17}{subsubsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.2}Normalisation}{17}{subsubsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.3}Selection of columns (attributes)}{18}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3}Selection of columns (attributes)}{17}{subsubsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.1.4}Chain shaped data}{18}{subsubsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
@@ -67,71 +67,71 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.2}t-SNE}{22}{subsubsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Clustering}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Clustering}{24}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{26}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}DBSCAN}{25}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{29}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}OPTICS}{28}{subsubsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of cluster results from different time lengths}{31}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Comparison and evaluation of cluster results from different time lengths}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Discussion}{35}{section.5}%
+\contentsline {section}{\numberline {5}Discussion}{34}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Conclusion}{37}{section.6}%
+\contentsline {section}{\numberline {6}Conclusion}{36}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Appendices}{41}{section*.28}%
+\contentsline {section}{Appendices}{40}{section*.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{41}{Appendix.a.A}%
+\contentsline {section}{\numberline {A}t-SNE parameters comparison figures}{40}{Appendix.a.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1}Perplexity}{41}{subsection.a.A.1}%
+\contentsline {subsection}{\numberline {A.1}Perplexity}{40}{subsection.a.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.1}Perplexity = 5}{41}{subsubsection.a.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Perplexity = 5}{40}{subsubsection.a.A.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.2}Perplexity = 10}{42}{subsubsection.a.A.1.2}%
+\contentsline {subsubsection}{\numberline {A.1.2}Perplexity = 10}{41}{subsubsection.a.A.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.3}Perplexity = 20}{43}{subsubsection.a.A.1.3}%
+\contentsline {subsubsection}{\numberline {A.1.3}Perplexity = 20}{42}{subsubsection.a.A.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.4}Perplexity = 30}{44}{subsubsection.a.A.1.4}%
+\contentsline {subsubsection}{\numberline {A.1.4}Perplexity = 30}{43}{subsubsection.a.A.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.5}Perplexity = 40}{45}{subsubsection.a.A.1.5}%
+\contentsline {subsubsection}{\numberline {A.1.5}Perplexity = 40}{44}{subsubsection.a.A.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.6}Perplexity = 45}{46}{subsubsection.a.A.1.6}%
+\contentsline {subsubsection}{\numberline {A.1.6}Perplexity = 45}{45}{subsubsection.a.A.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.7}Perplexity = 50}{47}{subsubsection.a.A.1.7}%
+\contentsline {subsubsection}{\numberline {A.1.7}Perplexity = 50}{46}{subsubsection.a.A.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.1.8}Perplexity Comparison Results (Average of two different t-SNE runs)}{47}{subsubsection.a.A.1.8}%
+\contentsline {subsubsection}{\numberline {A.1.8}Perplexity Comparison Results (Average of two different t-SNE runs)}{46}{subsubsection.a.A.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2}Learning Rate}{49}{subsection.a.A.2}%
+\contentsline {subsection}{\numberline {A.2}Learning Rate}{48}{subsection.a.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.1}Learning Rate = 10}{49}{subsubsection.a.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.1}Learning Rate = 10}{48}{subsubsection.a.A.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.2}Learning Rate = 200}{50}{subsubsection.a.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.2}Learning Rate = 200}{49}{subsubsection.a.A.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.3}Learning Rate = 400}{51}{subsubsection.a.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.3}Learning Rate = 400}{50}{subsubsection.a.A.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.4}Learning Rate = 600}{52}{subsubsection.a.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.4}Learning Rate = 600}{51}{subsubsection.a.A.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.5}Learning Rate = 800}{53}{subsubsection.a.A.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.5}Learning Rate = 800}{52}{subsubsection.a.A.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.6}Learning Rate = 1000}{54}{subsubsection.a.A.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.6}Learning Rate = 1000}{53}{subsubsection.a.A.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.7}Learning Rate Detailed Comparison Results}{54}{subsubsection.a.A.2.7}%
+\contentsline {subsubsection}{\numberline {A.2.7}Learning Rate Detailed Comparison Results}{53}{subsubsection.a.A.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.8}Learning Rate Comparison Results (Average of two different t-SNE runs)}{56}{subsubsection.a.A.2.8}%
+\contentsline {subsubsection}{\numberline {A.2.8}Learning Rate Comparison Results (Average of two different t-SNE runs)}{55}{subsubsection.a.A.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {A.2.9}Learning Rate Comparison of 20 and 800}{60}{subsubsection.a.A.2.9}%
+\contentsline {subsubsection}{\numberline {A.2.9}Learning Rate Comparison of 20 and 800}{59}{subsubsection.a.A.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B}Optics reachability plots}{62}{Appendix.a.B}%
+\contentsline {section}{\numberline {B}Optics reachability plots}{61}{Appendix.a.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Clustering results}{64}{Appendix.a.C}%
+\contentsline {section}{\numberline {C}Clustering results}{63}{Appendix.a.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.1}Clustering scatter plots}{64}{subsection.a.C.1}%
+\contentsline {subsection}{\numberline {C.1}Clustering scatter plots}{63}{subsection.a.C.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {C.1.1}1h aggregated data files}{65}{subsubsection.a.C.1.1}%
+\contentsline {subsubsection}{\numberline {C.1.1}1h aggregated data files}{64}{subsubsection.a.C.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {C.1.2}3h aggregated data files}{67}{subsubsection.a.C.1.2}%
+\contentsline {subsubsection}{\numberline {C.1.2}3h aggregated data files}{66}{subsubsection.a.C.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {C.2}Clustering evaluation results}{70}{subsection.a.C.2}%
+\contentsline {subsection}{\numberline {C.2}Clustering evaluation results}{69}{subsection.a.C.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {D}git-Repository}{75}{Appendix.a.D}%
 \defcounter {refsection}{0}\relax 

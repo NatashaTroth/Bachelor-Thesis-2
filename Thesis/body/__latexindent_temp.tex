@@ -1,28 +1,66 @@
+Initially, the raw data was distributed into multiple .csv files (one file per user, per time interval). The files were read and processed by the Python Pandas\footnote{\url{https://pandas.pydata.org, https://pandas.pydata.org/about/}} tool. This programming library offers fast and flexible functionalities for data analysis. It utilises DataFrames which are fast and efficient 2D data structures, used to store tabular data. Using the Pandas \textit{read\_csv}\footnote{\url{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html}} and \textit{concat}\footnote{\url{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html}} methods, the files with identical time periods were transformed and concatenated to one collective DataFrame. 
 
-As introduced in section \ref{section:Introduction}, SmartEater\footnote{\url{https://sites.google.com/site/eatingandanxietylab/resources/smarteater}} will be a mHealth (mobile health) app, that predicts future eating crises based on the user's past behaviour. The predictions are made on smartphone sensor and usage data, therefore reducing strenuous user input. The app will give the user content-dependent feedback, to avert a food craving episode. 
 
-\textcite{AboutToEat2016Rahman}[141-148] introduced a similar idea in their paper. Their goal was to predict "About-to-Eat" and "Time until the Next Eating Event" stages by using wearable sensing devices, in order to reduce serious health issues (e.g. obesity). The authors state, that detecting when a person is eating is not helpful. It is more beneficial to predict moments shortly before the user is about to eat ("About-To-Eat").
+\subsubsection{Missing values}
+The raw data contained several rows with empty cells. Section \ref{section:MissingValues} mentions substitution of missing data, thus preserving rows which could otherwise contain important information. In doing so however, the existing patterns could be disrupted. In order to maintain the data's patterns, rows with missing values were removed. Using the Pandas' \textit{dropna}\footnote{\url{https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html}} function (deletes rows with missing values), all rows containing empty cells were dropped. Of the original 8283 rows from the 1 hour time period files, only 3279 (39.59\%) rows were complete and remained. In the 3 hour files, only 6218 from 14091 (44.13\%) persisted.
 
-Rahman et al. investigated how people were currently tracking their meals by conducting a survey. Under half of the participants had previously used food tracking/journalling tools. 48.9\% of these stopped using them within the first month. Respondents also  wished for the app to take action directly before a meal/snack ("About-to-Eat" moments), thus supporting the authors' previous assumptions.
+\subsubsection{Normalisation}
+The recorded values from the different smartphone sensors were spread over different number ranges. For example, whilst the values that describe the screen-on-time ranged between -20 and 2.0, the light sensor values could reach from 0 to over 60,000. As explained in \ref{section:Normalisation}, values with higher ranges can inadvertently outweigh smaller values. To be sure that the values are weighted the same, the sklearn \textit{StandardScaler}\footnote{\url{http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}}(z-score normalization) was used to normalize the data. As mentioned in section \ref{section:Normalisation}, z-score normalization is more robust to outliers, that could otherwise bias min-max normalization. Therefore, z-score normalization was used instead of min-max normalization.
 
-The authors used a variety of different sensors to record the following data: physical movement (raw accelerometer, gyroscope, step count, speed), caloric expenditure, heart rate, skin temperature, electrodermal activity (good indicator for psychological arousal), chewing and swallowing sounds (for detection of current eating events), and GPS location. Furthermore, the test subjects recorded self-reports, such as when they started eating, emotional state when eating, intensity of desire/craving and hunger, and end of eating. Eight participants, aged 26-54, took part in this study for five days. The recorded data then underwent cleaning and preprocessing, feature extraction, feature selection, and machine learning. 
-In the feature extraction step, two parameters were used on the processed sensor time series to create windows. Firstly, the feature extraction window size parameter regulated the time duration in a specific window. While a short window duration could catch immediate characteristics in the sensor time series, a coarse one could be used for long term trends. The authors used a variety of window sizes, varying from 5 to 120 minutes. The prediction model results would decide the best window. The second parameter, the window shift size, established the time duration between two neighbouring windows, for example meaning window \textit{n} was shifted one minute compared to window \textit{(n - 1)}. A constant shift of one minute was used for all window sizes. 
 
-In the feature selection step, the most relevant features were selected (e.g. the location features, as they were not beneficial and merely represented noise). Signal processing and machine learning were used on the sensor streams to train an "About-to-Eat" moment classifier. The classifier's performance was further inspected, in order to see how the different feature extraction window sizes affected it. The small window sizes were vulnerable to noise and the coarse ones were unable to detect recent events, which were crucial in creating the classifier. As can be seen in figure \ref{figure:windowSize}, the smaller window sizes have a higher gap between precision and recall\footnote{According to \textcite{han2011data}[306-307], precision and recall are measures used in classification. Precision describes the exactness (how many of the as positive selected items are positive), recall defines the completeness (how many positive items have been correctly selected). The F-score is a measure that combines precision and recall (harmonic mean).}. The performance with window sizes between 60 and 80 minutes is higher and more consistent.
+\subsubsection{Selection of columns (attributes)}
+In order to only use meaningful data to receive significant results, it was important to remove columns that did not contain any predictive content. The TIME column was removed for this reason. Since the TIME column only showed the time and date when the data was recorded periodically (in fixed intervals), it was different for each row (per user), like an index. It could have however bias the results if left in. 
+
+Depending on what time length was being assessed, a different number of columns per feature was extracted. For example, if in the 1h dataset a time length of 30 minutes was requested, the first two columns (first two 15 minutes) would be extracted for each feature (ACC, SCRN, etc.).
+
+To reduce the number of dimensions (number of columns), columns that had recorded the same feature but at different time lags (e.g. ACC1-N), were compressed to one column, by calculating their mean. Each unique feature only required one column. This step therefore reduced the number of columns to only 8 instead (of the total 32 in the 1h dataset and 48 in the 3h dataset, when using all the columns).
+
+
+\subsubsection{Chain shaped data}
+\label{section:chainShapedData}
+Initial visualisations of the dataset (with t-SNE dimensionality reduction) showed a chain formalisation of the data across various t-SNE parameters. This chain can be seen in figure \ref{figure:tsneChain} (light blue data points, almost swirl shaped). A similar accumulation of the same data points, though this time shaped as a line, can further also be seen in the PCA dimensionality reduced dataset (see figure \ref{figure:pcaChain}). 
+
 
 \begin{figure*}[h]
   \centering
-  \includegraphics[width=0.5\textwidth]{./images/windowSizePerformance.png}
-  \caption{This graph depicts the F measure of the different feature extraction window sizes of the "About-to-Eat" classifier \autocite{AboutToEat2016Rahman}[148]. The performance with window sizes between 60 and 80 minutes is higher and more consistent. }
-  \label{figure:windowSize}
+  \includegraphics[width=0.7\textwidth]{./images/tsneChain.png}
+  \caption{1h dataset with DBSCAN clustering. A chain of data points (light blue points) can be seen in the dataset.}
+  \label{figure:tsneChain}
 \end{figure*}
 
-The performance for the "Time until Next Eating Event" model gained a correlation coefficient of 0.49. The most fitting feature extraction window size was assessed, the best performance was reached with a window size of 100 minutes. The authors further claim, that both models could be improved by incorporating person-dependent data from the target user to the models (e.g. person-specific eating pattern, lifestyle).
 
-\textcite{SmartphoneBasedStressPrediction2015}[240, 242-248] research, whether data collected by a user's smartphone can be used to predict stress. In their study, they used an android smartphone app called "TheStressCollector" (TSC) to collect smartphone usage and sensor data in the background. Collected data included: activity, app usage, network traffic, reboot activity (power on and off events), calls (min, max and mean dB-values collected by the microphone), environment brightness, timestamps of received messages, noise exposure, and screen activity. Fifteen participants installed the app on their smartphone and took part in the conducted study for two weeks. Seven times a day they would fill out questionnaires (at set times), which included the perceived stress score (PSS) and their current stress status. The stress levels were predicted by WEKA's machine learning algorithms. The mean absolute error (MAE) and Pearson correlation were used for the evaluation. The results of this study presented compelling correlations between PSS and the data collected by the smartphone app. The weekly PSS average, as opposed to the daily one, included the highest correlation coefficient. Thus, it is expected, that it is easier to spot longer periods of high stress than shorter ones. This paper is also a team publication featured in the research project from which SmartEater was developed.
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{./images/pcaChain.png}
+  \caption{There is a collection of points along a line. This same accumulation can also be visualised as a chain in the t-SNE dataset in figure \ref{figure:tsneChain}.}
+  \label{figure:pcaChain}
+\end{figure*}
 
-In their experiment, \textcite{ClusterPassivelySensedData2018} intend to predict user's negative affect states, in order to provide targeted just-in-time mental health interventions. Sixty-five students participated in the study. Through a smartphone app, GPS location data, accelerometer (activity) data, phone calls, SMS, and ecological momentary assessments (EMA), data was collected and used to cluster participants according to their behavioural profiles. Grouping the participants this way seemed to improve the predictive model's performance.
 
-Other related work: 
-\textcite{convexhullDbscan}[1,2,6,7] give an example, where clustering was implemented to predict future weather. Air pollutant data was preprocessed and then arranged into clusters using (incremental) DBSCAN clustering. Finally, priority based protocol was used on them to predict weather conditions and a temperature range. The accuracy of the technique, based on hit and miss times, was calculated to approximately 74.5\%.
-\textcite{alcoholCravingPrediction} use smartphone sensor data (e.g. accelerometer) to predict excessive alcohol consumption, in order to replace breathalysers. Their algorithm produced 100\% accuracy, however with 15 minute lags.
+An initial thought, was that the chain was a consequence of dependencies within the data or columns. For example, the three APP columns indicate the percentage of time in a lag-interval a certain type of app was used. Therefore, if say a communication app was used 100\% of this time, the APP\_COM cell for this time would be 1. Using this app for 100\% of the time would mean, that the values in the other APP columns for this time would have to be 0 (0\%), since they would not have been able to be used. To test this theory, the APP columns were removed from the dataset and the 2D scatter plot was recalculated. The chain however was still visible. Step by step, each column was removed, to see if it was the cause of the chain. The chain did not disappear though, which indicated, that the problem was not due to the columns, but rather the rows.  The chain also became less dense and less visible when reducing the number of inserted .csv files (lower number of records). This supported the notion, that the rows could be the cause.
+
+The next theory, was that points from a same test subject might exhibit similarities and were therefore causing the chain. To see which data points were contained in the chain, the row index number was added as a label to each data point in the scatter plot. Furthermore, each test user data file was assigned a different random colour, so that it became visible in the plot, which data points belonged to the same user. The resulting scatter plot is visualised in figure \ref{figure:tsneTestSubjectsColor}. From this plot it can be seen, that several data points from the same test subject cluster together in the chain, indicating similarity. There are however points from each user in different locations of the chart, not only in the chain. This implied, that the chain was not being caused by the test subjects, but rather by certain rows. 
+
+The ensuing step was to use the data point indices to look for similarities in the row values. By comparing the rows in the chain, it became evident, that multiple rows shared a lot of the same feature values. Rows not in the chain however, had different values. Looking at the same rows in the unclean dataset (after concatenation of the .csv data files and removal of rows with missing values), rows found in the chain had several columns all with the value 0. Further inspection showed, that when the SCRN value was 0, LIGHT, NOTIF and the APP columns where also 0. When a smartphone screen is off, the apps are not being used (apart from, for example, notifications), which explains why the APP columns were mostly 0. The NOTIF values were often 0, presumably because the user was not constantly receiving notifications. The environment light was also often 0 when SCRN was 0, maybe because it was in a pocket or bag. To test whether these rows were causing the chain to occur, rows that didn't have at least 50\% of non-zero values were removed. As can be seen in figure \ref{figure:tsneAfterChainRemoved(50Percent)}, the chain is much less prevalent. The colours belonging to the test users also appear to be more distributed. Naturally, this reduced the total number of rows left. The average number of rows left for the 1h data files, depending on the chosen time length, was 1654 from initial 8283 (19.97\%). In the 3h dataset, only an average of 3976.5 from the original 14091 rows remained (28.22\%).
+
+
+% 8283 .... 100%
+% 1654...x
+
+% 14091...100%
+% 3976.5 ....x
+
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./images/tsneTestSubjectsColor.png}
+  \caption{t-SNE results in a scatter plot, the chain is visible. Each colour indicates one test subject. The test subjects have clustered together slightly in the chain. The index of each data point is also displayed.}
+  \label{figure:tsneTestSubjectsColor}
+\end{figure*}
+
+\begin{figure*}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./images/tsneAfterChainRemoved(50Percent).png}
+  \caption{t-SNE calculated after the removal of rows with less than 50\% of values that weren't 0. The chain is less visible and less dominant.}
+  \label{figure:tsneAfterChainRemoved(50Percent)}
+\end{figure*}
