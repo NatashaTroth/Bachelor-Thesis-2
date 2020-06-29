@@ -75,7 +75,6 @@ class DataFile:
         """
         print("cleaning data...")
         self.remove_columns(["TIME"])
-        # self.remove_columns_with_many_empty_values(30, number_columns_to_use)
         self.remove_rows_with_wrong_values()
 
         # extract test subject colors column
@@ -101,7 +100,7 @@ class DataFile:
         self.df.dropna(inplace=True)
 
     def extract_rows_with_percent_non_zero_values(self, percent):
-        """ removes rows with not enough non-zero values
+        """ extracts rows with not at least percent of non-zero values
             e.g. percent = 75: Keep rows with at least 75% values that aren't 0. Removes rows with more than 25% cells with 0.
 
             Parameters
@@ -109,38 +108,10 @@ class DataFile:
             percent : int
                 percent of non-zero values
         """
+        print("  extracting rows with at least " +
+              str(percent) + "% non zero values...")
         self.df = self.df[((self.df != 0).sum(axis=1) - 1) /
                           (len(self.df.columns) - 1) >= percent/100]
-
-    def remove_columns_with_many_empty_values(self, threshold, number_columns_to_use):
-        """ remove columns, where the number of values exceeds a given threshold
-            Parameters
-            ----------
-            threshold : int
-                remove columns where number of empty fields is above it
-            number_columns_to_use : int
-                number of columns (1-N) to average and calculate with (default 1)
-        """
-
-        print("  removing columns with many empty values...")
-        # remove columns where percent of rows with empty is above threshold
-        # row count ... 100%
-        # no of null ... x
-
-        row_count = self.df.shape[0]
-        nulls_count = self.df.isnull().sum().to_frame()
-        count = 0
-        average = 0
-        for index, row in nulls_count.iterrows():
-            average += row[0]
-            count += 1
-            if(count == number_columns_to_use):
-                average /= number_columns_to_use
-                if(100/row_count*average >= threshold):
-                    for i in range(1, number_columns_to_use + 1):
-                        self.df.drop(index[:-1] + str(i), axis=1, inplace=True)
-                count = 0
-                average = 0
 
     def extract_columns(self, number_columns_to_use):
         """ extract the given number of columns to use (1-N)
@@ -262,6 +233,21 @@ class DataFile:
         else:
             # predict_eps_dbscan_parameter(self.df)
             self.dbscan_scores = dbscan_clustering(self.df)
+
+    def predict_eps_dbscan_parameter(self, data_type):
+        """ predict DBSCAN Eps parameter using 4-dist graph
+
+            Parameters
+            ----------
+            data_type : str
+                type of data from the dataFrame to feed into the clustering algorithm (options: "PCA", "t-SNE", or "" which means the entire dataFrame)
+        """
+        if data_type == 'PCA':
+            predict_eps_dbscan_parameter(self.pca)
+        elif data_type == 'TSNE':
+            predict_eps_dbscan_parameter(self.tsne)
+        else:
+            predict_eps_dbscan_parameter(self.df)
 
     def optics_clustering(self, data_type, graphs=False):
         """ apply OPTICS clustering to the dataFrame

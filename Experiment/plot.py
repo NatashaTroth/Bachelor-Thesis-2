@@ -6,7 +6,7 @@ import matplotlib as matplotlib
 import random
 
 
-def create_bar_plot(x, y, xName, yName):
+def create_bar_plot(x, y, xName, yName, title="Principle Components"):
     """ render bar plot
 
         Parameters
@@ -23,6 +23,7 @@ def create_bar_plot(x, y, xName, yName):
     plt.figure(figsize=(20, 10))
     data = pd.DataFrame({xName: x, yName: y})
     plt.bar(x=data[xName], height=data[yName])
+    plt.title(title)
     plt.show()
 
 
@@ -46,10 +47,10 @@ def create_2d_scatterplot(data, xName, yName, colors, title):
     # render with one color
     p1 = plt.scatter(df[xName], df[yName])
 
-    # render with given colors
+    # # --- render with given colors ---
     # p1 = plt.scatter(df[xName], df[yName], c=colors)
 
-    # render with index labels per data point
+    # # --- render with index labels per data point ---
     # for line in range(0, data.shape[0]):
     #     plt.text(df.iat[line, 0], df.iat[line, 1], line,
     #              horizontalalignment='left', size=4, color='black', weight='regular')

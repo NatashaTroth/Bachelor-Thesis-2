@@ -1,5 +1,4 @@
 from dataFile import DataFile
-from clusterEvaluation import compare_scores
 import sys
 
 
@@ -31,6 +30,7 @@ def create_clustering_of_directory(directory, number_columns_to_use=1, number_di
     # data_file.calculate_PCA(number_dimensions, True)
 
     # ---clustering---
+    # data_file.predict_eps_dbscan_parameter('TSNE')
     data_file.dbscan_clustering('TSNE', True)
     # data_file.dbscan_clustering('PCA', True)
     # data_file.dbscan_clustering('')
@@ -94,7 +94,7 @@ def main():
 
     sys.argv arguments
     ----------
-    one_hour_file_directory 1 : str
+    one_hour_file_directory : str
     three_hour_file_directory : str
     """
 
@@ -105,36 +105,31 @@ def main():
         one_hour_file_directory = sys.argv[1]
         three_hour_file_directory = sys.argv[2]
 
-    print("one_hour_file_directory: " + one_hour_file_directory)
-    print("three_hour_file_directory: " + three_hour_file_directory)
+    print("one hour file directory: " + one_hour_file_directory)
+    print("three hour file directory: " + three_hour_file_directory)
 
     print("----1 HOUR FILES----")
+    # --- 1-4 columns (number_columns_to_use) ---
     one_hour_file = create_clustering_of_directory(
         one_hour_file_directory, 1)
 
-    print("----3 HOUR FILES----")
+    print("\n\n----3 HOUR FILES----")
+    # --- 1-6 columns (number_columns_to_use) ---
     three_hour_file = create_clustering_of_directory(
         three_hour_file_directory, 1)
 
-    # ----- Average of two files -----
-    # print("----1 HOUR FILES 2----")
+    # # ----- Average of two files -----
+    # print("\n\n----1 HOUR FILES 2----")
+    # # --- 1-4 columns (number_columns_to_use) ---
     # one_hour_file_2 = create_clustering_of_directory(
     #     "/Volumes/BATroth/aggregated/1h", 1)
     # print_average_scores(one_hour_file, one_hour_file_2)
 
-    # print("----3 HOUR FILES 2----")
+    # print("\n\n----3 HOUR FILES 2----")
+    # # --- 1-6 columns (number_columns_to_use) ---
     # three_hour_file_2 = create_clustering_of_directory(
     #     "/Volumes/BATroth/aggregated/3h", 1)
     # print_average_scores(three_hour_file, three_hour_file_2)
-
-    # ----- Compare Results -----
-    print("\n\n----Compare Results----")
-    result_dbscan = compare_scores(
-        one_hour_file.dbscan_scores, three_hour_file.dbscan_scores)
-    print("result_dbscan " + str(result_dbscan))
-    result_optics = compare_scores(
-        one_hour_file.optics_scores, three_hour_file.optics_scores)
-    print("result_optics " + str(result_optics))
 
 
 if __name__ == "__main__":

@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1593381203 "main.bcf" "main.bbl" "main" 1593382208
+["biber main"] 1593381203 "main.bcf" "main.bbl" "main" 1593385360
   "bibliography.bib" 1593288328 10269 ff2ceb21889e97ab61f2bc5a1cd2ffcb ""
   "main.bcf" 1593382208 170119 b8c80ac0e1e2d7441d86261f2758732c "pdflatex"
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1593382171 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf" "main" 1593382208
+  "main.blg"
+["pdflatex"] 1593382171 "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf" "main" 1593385360
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.aux" 1593382208 86413 1eb583147e44eba8a699fb9a3715dd69 ""
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.tex" 1593298272 6103 3ccbf42fff0d1dd43edf5144173e2ad5 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -192,7 +192,7 @@
   "appendices/clusteringResults.tex" 1593380834 6338 96494a9a902c571a3621b44f336d396e ""
   "appendices/learningRateTest.tex" 1593379776 13221 eff154725b826c229d53b5148ed05935 ""
   "appendices/perplexityTest.tex" 1593379588 9804 90869e572d6943c35252618a744c8639 ""
-  "appendix.tex" 1593382171 5484 40eeae7ddbc8d88da42bcf33c1f79b1d ""
+  "appendix.tex" 1593385359 5484 40eeae7ddbc8d88da42bcf33c1f79b1d ""
   "body.tex" 1593338256 1825 b245f7c13f2b5a94e6bd564888458083 ""
   "body/conclusion.tex" 1593371456 1429 386b542784c679beb4b35959291cdcd5 ""
   "body/discussion.tex" 1593381128 6665 cb9333120e983a9f7a34f5a7bb4d3dad ""
@@ -346,14 +346,14 @@
   "mmt.cls" 1535953540 18986 ecbfa67db78d6613ab36e37870a0da60 ""
   "title.tex" 1535953540 2471 fcf4edee76107b1965a4a424604ec929 ""
   (generated)
-  "main.lof"
-  "main.pdf"
   "main.toc"
-  "main.out"
-  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf"
   "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.log"
+  "main.log"
   "main.run.xml"
+  "main.aux"
+  "main.out"
+  "main.pdf"
   "_configuration.aux"
   "main.bcf"
-  "main.aux"
-  "main.log"
+  "/Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf"
+  "main.lof"

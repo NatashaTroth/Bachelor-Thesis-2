@@ -2,7 +2,6 @@ import unittest
 from pandas._testing import assert_frame_equal
 import pandas as pd
 from dataFile import DataFile
-from clusterEvaluation import compare_scores
 
 # IMPORTANT: the numbers in the test *.csv files were created using a random number generator (see randomNrs.js) - not from real test users!!
 
@@ -10,7 +9,6 @@ from clusterEvaluation import compare_scores
 class TestStringMethods(unittest.TestCase):
 
     def test_clean_data(self):
-
         data_file = DataFile("./testData/testNormal")
         # ---remove rows with missing value & time column---
         data_file.df = data_file.df.drop(columns=['TIME'])
@@ -50,30 +48,6 @@ class TestStringMethods(unittest.TestCase):
             './testData/testNormal/resultsAfterExtractColumns.json', orient='index')
         assert_frame_equal(
             data_file.df, result_after_extract_columns,  check_dtype=False)
-
-    def test_remove_colums_with_many_missing_values(self):
-        data_file = DataFile("./testData/testRemoveColumns")
-        # ---remove rows with missing value & time column---
-        data_file.df = data_file.df.drop(columns=['TIME'])
-        data_file.remove_columns_with_many_empty_values(30, 4)
-        result_after_removing_columns = pd.read_json(
-            './testData/testRemoveColumns/resultAfterRemovingColumns.json', orient='index')
-        assert_frame_equal(
-            data_file.df, result_after_removing_columns,  check_dtype=False)
-
-    def test_evaluation_compare_scores(self):
-        scores_1h_dbscan = [-0.4465066, 2.3737173437900196, 34.818951039037465]
-        scores_3h_dbscan = [-0.2325946, 2.082509570770939, 176.03847255411213]
-
-        result_dbscan = compare_scores(scores_1h_dbscan, scores_3h_dbscan)
-        self.assertEqual(result_dbscan, 2)
-
-        scores_1h_optics = [-0.10805944, 1.234722639643406, 18.19778900973744]
-        scores_3h_optics = [-0.06738582,
-                            1.6176452947156887, 16.683104491741254]
-
-        result_optics = compare_scores(scores_1h_optics, scores_3h_optics)
-        self.assertEqual(result_optics, 1)
 
     def test_extract_rows_with_percent_non_zero_values(self):
 
