@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  29 JUN 2020 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.20)  29 JUN 2020 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1253,11 +1253,11 @@ Overfull \hbox (43.24808pt too wide) in paragraph at lines 28--29
  [] 
  []
 
-<./images/clusteringResults/clusteringResultsGraphTotal.png, id=1209, 1439.3775pt x 1039.885pt>
+<./images/clusteringResults/clusteringResultsGraphTotal.png, id=1209, 1537.745pt x 1078.0275pt>
 File: ./images/clusteringResults/clusteringResultsGraphTotal.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResultsGraphTotal.png>
 Package pdftex.def Info: ./images/clusteringResults/clusteringResultsGraphTotal.png  used on input line 36.
-(pdftex.def)             Requested size: 318.66948pt x 230.21933pt.
+(pdftex.def)             Requested size: 318.66948pt x 223.39867pt.
 <./images/clusteringResults/clusteringResults8.png, id=1210, 1401.235pt x 456.70625pt>
 File: ./images/clusteringResults/clusteringResults8.png Graphic file (type png)
 <use ./images/clusteringResults/clusteringResults8.png>
@@ -1794,139 +1794,139 @@ File: ./images/clusteringResults/clusteringResultsPlaces.png Graphic file (type 
 Package pdftex.def Info: ./images/clusteringResults/clusteringResultsPlaces.png  used on input line 42.
 (pdftex.def)             Requested size: 364.19667pt x 528.52904pt.
  [73 <./images/clusteringResults/clusteringResults5.png>] [74 <./images/clusteringResults/clusteringResultsPlaces.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 [][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200624031033 / https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200624072345 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200626201341 / https : / / matplotlib .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200624221340 / https : / / developer .
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 95--96
+Underfull \hbox (badness 1038) in paragraph at lines 70--71
 \OT1/pcr/m/n/12 android . com / guide / topics / sensors / sensors _ motion$[][]\OT1/ptm/m/n/12 , snap-shot 24.06.2020,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200620043347 / https : / / tools . ietf .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200626201347 / https : / / pandas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200506182431 / https : / / pandas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200614223428 / https : / / pandas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 \OT1/pcr/m/n/12 pydata . org / pandas-[]docs / stable / reference / api / pandas . read _ csv .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200616004253 / https : / / pandas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT1/pcr/m/n/12 pydata . org / pandas-[]docs / stable / reference / api / pandas . concat . html$[][]\OT1/ptm/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200608042012 / https : / / pandas .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 \OT1/pcr/m/n/12 pydata . org / pandas-[]docs / stable / reference / api / pandas . DataFrame .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200605104434 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 \OT1/pcr/m/n/12 scikit-[]learn . org / stable / modules / generated / sklearn .
  []
 
 [75
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200623125839 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 \OT1/pcr/m/n/12 scikit-[]learn . org / stable / modules / generated / sklearn .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200609055322 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 \OT1/pcr/m/n/12 scikit-[]learn . org / stable / modules / generated / sklearn . manifold .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200623170602 / https : / / distill . pub /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200610080206 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \OT1/pcr/m/n/12 scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200520193202 / https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 \OT1/pcr/m/n/12 scikit-[]learn . org / stable / modules / generated / sklearn . cluster .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 [][][]$\OT1/pcr/m/n/12 https : / / web . archive . org / web / 20200512220200 / https : / / humanstress .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 \OT1/pcr/m/n/12 ca / stress / understand-[]your-[]stress / acute-[]vs-[]chronic-[]stress/$[][]\OT1/ptm/m/n/12 , snap-
  []
 
@@ -1953,7 +1953,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  80i,9n,131p,1867b,8674s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (90 pages, 17087495 bytes).
+Output written on /Users/natashatroth/Documents/FHS/6Semester/Bac2/git/Thesis/main.pdf (90 pages, 17036290 bytes).
 PDF statistics:
  1789 PDF objects out of 2073 (max. 8388607)
  1397 compressed objects within 14 object streams
