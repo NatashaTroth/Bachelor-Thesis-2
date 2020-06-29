@@ -297,6 +297,48 @@
       \verb 10.1109/TPAMI.1979.4766909
       \endverb
     \endentry
+    \entry{convexhullDbscan}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=aec64670e36e7267fcf6daaf63424d6f}{%
+           family={{Dey}},
+           familyi={D\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17d777989c89ecf12f1ff3b51386964b}{%
+           family={{Chakraborty}},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \strng{namehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{fullhash}{347b356a53f2209656afbac0bee1282d}
+      \strng{bibnamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authorbibnamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authornamehash}{347b356a53f2209656afbac0bee1282d}
+      \strng{authorfullhash}{347b356a53f2209656afbac0bee1282d}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 International Conference and Workshop on Computing and Communication (IEMCON)}
+      \field{issn}{null}
+      \field{month}{10}
+      \field{title}{Convex-hull DBSCAN clustering to predict future weather}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IEMCON.2015.7344438
+      \endverb
+      \keyw{agriculture;data mining;food safety;learning (artificial intelligence);weather forecasting;Convex-Hull Clustering;Weather Predict;machine learning method;synoptic analysis;information extraction;agriculture;food security;India;density-based clustering approach;unstructured data;DBSCAN clustering algorithm;weather forecasting database;Kolkata;West Bengal;Databases;Weather forecasting;Air pollution;Wind;Protocols;Clustering algorithms;Clustering;Weather Forecasting;DBSCAN;Convex-Hull;Prediction}
+    \endentry
     \entry{DBSCAN}{inproceedings}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=13f9e0185bd6f9498266a9e5786eeeda}{%
@@ -716,57 +758,6 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1080/14786440109462720
-      \endverb
-    \endentry
-    \entry{pius2018automatic}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=fb111f1811570d95e4773dbd4b1b006c}{%
-           family={Pius\bibnamedelima Owoh},
-           familyi={P\bibinitperiod\bibinitdelim O\bibinitperiod},
-           given={Nsikak},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1496e67ebd0460d5bdee59137507e2ee}{%
-           family={Mahinderjit\bibnamedelima Singh},
-           familyi={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Manmeet},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f131379c288a6c95eeb95018255d5de3}{%
-           family={Zaaba},
-           familyi={Z\bibinitperiod},
-           given={Zarul\bibnamedelima Fitri},
-           giveni={Z\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Basel}%
-      }
-      \list{publisher}{1}{%
-        {Multidisciplinary Digital Publishing Institute}%
-      }
-      \strng{namehash}{dec98bc75d17589c05e680f9fe3415d6}
-      \strng{fullhash}{dec98bc75d17589c05e680f9fe3415d6}
-      \strng{bibnamehash}{dec98bc75d17589c05e680f9fe3415d6}
-      \strng{authorbibnamehash}{dec98bc75d17589c05e680f9fe3415d6}
-      \strng{authornamehash}{dec98bc75d17589c05e680f9fe3415d6}
-      \strng{authorfullhash}{dec98bc75d17589c05e680f9fe3415d6}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sensors}
-      \field{month}{7}
-      \field{number}{7}
-      \field{title}{Automatic Annotation of Unlabeled Data from Smartphone-Based Motion and Location Sensors}
-      \field{volume}{18}
-      \field{year}{2018}
-      \field{pages}{2134}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3390/s18072134
       \endverb
     \endentry
     \entry{dataPreparationForDataMining}{book}{}
