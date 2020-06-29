@@ -15,7 +15,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5}{\ignorespaces 1h dataset with DBSCAN clustering. A chain of data points (light blue points) can be seen in the dataset.\relax }}{18}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces There is a collection of points along a line. This same accumulation can also be visualised as a chain in the t-SNE dataset in figure \ref {figure:tsneChain}.\relax }}{19}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces There is a collection of points along a line. This same accumulation can also be visualised as a chain in the t-SNE reduced dataset in figure \ref {figure:tsneChain}.\relax }}{19}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces t-SNE results in a scatter plot, the chain is visible. Each colour indicates one test subject. The test subjects have clustered together slightly in the chain. The index of each data point is also displayed.\relax }}{20}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
@@ -35,9 +35,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {15}{\ignorespaces Final t-SNE parameters (3h data files): perplexity=40, learning\_rate=20, n\_iter=5000\relax }}{27}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable \textit {Eps} parameter for the DBSCAN algorithm. The valley starts at roughly the 4th nearest neighbor distance of 2, therefore \textit {Eps} should be 2.\relax }}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Sorted 4-dist graphs (distance for each point to its fourth nearest neighbor), used to determine a suitable \textit {Eps} parameter for the DBSCAN algorithm. The "valley" starts at roughly the 4th nearest neighbor distance of 2, therefore \textit {Eps} should be 2.\relax }}{27}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces \relax }}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {17}{\ignorespaces DBSCAN clustering results.\relax }}{28}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {18}{\ignorespaces OPTICS automatic cluster extraction (xi) results. The coloured data points highlight clusters, whilst the black data points indicate noise. The corresponding reachability plots are depicted in figure \ref {figure:OPTICSXiResultsReachabilityPlot}.\relax }}{29}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
@@ -49,7 +49,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {22}{\ignorespaces \textbf {Evaluation scores} comparison averaged from \textbf {figures \ref {figure:clusteringResults1}, \ref {figure:clusteringResults2}, \ref {figure:clusteringResults3}, \ref {figure:clusteringResults4}, and \ref {figure:clusteringResults5}} (located in appendix \ref {appendix:clusteringEvaluationResults}). The green highlighted values indicate the best achieving evaluation score values (1h or 3h files), for the corresponding clustering method. Furthermore, the dark green highlighted values also accentuate the overall best scoring values over all datasets (1h and 3h files).\relax }}{32}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces \relax }}{32}{figure.caption.24}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Comparison of number of evaluation score wins (1h or 3h dataset).\relax }}{32}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {24}{\ignorespaces Number of dark green evaluation score wins (overall wins in 1h and 3h dataset).\relax }}{33}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
